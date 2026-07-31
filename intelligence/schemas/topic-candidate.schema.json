@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agt-rsn-004/topic-candidate.schema.json",
+  "title": "TopicCandidate",
+  "type": "object",
+  "required": [
+    "topicId",
+    "radarId",
+    "title",
+    "angle",
+    "whyNow",
+    "targetAudience",
+    "jovaaiConnection",
+    "recommendedFormats",
+    "primaryTrack",
+    "trackLabel",
+    "score",
+    "topicValueScore",
+    "scoreBreakdown",
+    "scoreConfidence",
+    "dataCoverage",
+    "sourceDiversity",
+    "freshnessWindow",
+    "supportSourceIds",
+    "supportSources",
+    "evidenceStatus",
+    "researchReadiness",
+    "collectionChannels",
+    "riskWarnings",
+    "formalEligible",
+    "approvalStatus",
+    "snapshotHash"
+  ],
+  "properties": {
+    "topicId": {
+      "type": "string"
+    },
+    "radarId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "angle": {
+      "type": "string"
+    },
+    "whyNow": {
+      "type": "string"
+    },
+    "targetAudience": {
+      "type": "string"
+    },
+    "jovaaiConnection": {
+      "type": "string"
+    },
+    "recommendedFormats": {
+      "type": "array"
+    },
+    "sourceTitle": {
+      "type": "string"
+    },
+    "titleNeedsEditorialReview": {
+      "type": "boolean"
+    },
+    "primaryTrack": {
+      "enum": [
+        "HOT_EVENT",
+        "PUBLIC_VOICE",
+        "ENTERPRISE_AI"
+      ]
+    },
+    "trackLabel": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "topicValueScore": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "scoreBreakdown": {
+      "type": "object"
+    },
+    "scoreConfidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "dataCoverage": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "sourceDiversity": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "freshnessWindow": {
+      "type": "string"
+    },
+    "supportSourceIds": {
+      "type": "array"
+    },
+    "supportSources": {
+      "type": "array"
+    },
+    "evidenceStatus": {
+      "enum": [
+        "SUPPORTED",
+        "PARTIAL",
+        "LEAD_ONLY"
+      ]
+    },
+    "researchReadiness": {
+      "enum": [
+        "READY_TO_EXPAND",
+        "NEEDS_CROSS_CHECK",
+        "NEEDS_SOURCE_RECOVERY"
+      ]
+    },
+    "collectionChannels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "riskWarnings": {
+      "type": "array"
+    },
+    "approvalStatus": {
+      "enum": [
+        "PENDING_APPROVAL",
+        "APPROVED",
+        "REJECTED"
+      ]
+    },
+    "formalEligible": {
+      "type": "boolean"
+    },
+    "snapshotHash": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,138 @@
+# AGT-RSN-004 每日选题雷达｜2026-07-31
+
+- Radar ID：`RADAR-20260731-4E64920B29`
+- 实际时间窗：72 小时
+- 候选数：7
+- 观察线索：73
+
+## 来源健康状态
+
+- aihot：SUCCESS，最近运行 `aihot-20260731T091108-a5b42a27`，读取 54 条
+- agentreach：DEGRADED，最近运行 `agentreach-20260731T091631-eefd60d1`，读取 13 条
+- follow-builders：SUCCESS，最近运行 `follow-builders-20260731T091805-d028f8a4`，读取 203 条
+
+## 候选选题
+
+### 1. T-20260731-44BB508A｜Aaron Levie：The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise｜87.2分
+
+- 主赛道：人物观点（`PUBLIC_VOICE`）
+- 分赛道得分：热点 47.4；人物 87.2；企业AI 39.6
+- 为什么现在值得做：07月30日捕获到一手或可追溯人物表达，完整观点具备内容加工价值；热度不足不会自动否决长期思想价值。
+- 建议角度：拆解一手公开表达中的核心判断、现实启示和适用边界
+- 目标受众：企业管理者、AI从业者、Builder与知识工作者
+- 与 JovaAI 的连接：可连接企业AI、人的工作方式、组织变化及产业级Agentic OS。
+- 建议形式：微信观点文章、X观点短帖、短视频口播
+- 选题价值：87.2；研究准备度：NEEDS_CROSS_CHECK
+- 证据状态：PARTIAL；评分置信度：MEDIUM
+- 数据覆盖率：100%；独立来源数：1
+- 采集通道：follow-builders
+- 相关资料：
+  - [Aaron Levie：The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise](https://x.com/levie/status/2082514776392175844)｜原始来源：Aaron Levie｜采集通道：follow-builders｜2026-07-29T17:13:08+00:00
+- 风险提示：当前只有一个独立来源，创作前必须补充交叉验证。
+
+### 2. T-20260731-5E9449B5｜Peter Yang：AI has been great for my productivity, but I’m starting to recognize three dark patterns:｜83.1分
+
+- 主赛道：人物观点（`PUBLIC_VOICE`）
+- 分赛道得分：热点 44.1；人物 83.1；企业AI 18.6
+- 为什么现在值得做：07月30日捕获到一手或可追溯人物表达，完整观点具备内容加工价值；热度不足不会自动否决长期思想价值。
+- 建议角度：拆解一手公开表达中的核心判断、现实启示和适用边界
+- 目标受众：企业管理者、AI从业者、Builder与知识工作者
+- 与 JovaAI 的连接：可连接企业AI、人的工作方式、组织变化及产业级Agentic OS。
+- 建议形式：微信观点文章、X观点短帖、短视频口播
+- 选题价值：83.1；研究准备度：NEEDS_CROSS_CHECK
+- 证据状态：PARTIAL；评分置信度：MEDIUM
+- 数据覆盖率：100%；独立来源数：1
+- 采集通道：follow-builders
+- 相关资料：
+  - [Peter Yang：AI has been great for my productivity, but I’m starting to recognize three dark patterns:](https://x.com/petergyang/status/2082642205811106158)｜原始来源：Peter Yang｜采集通道：follow-builders｜2026-07-30T01:39:30+00:00
+- 风险提示：当前只有一个独立来源，创作前必须补充交叉验证。
+
+### 3. T-20260731-5D502A35｜Sam Altman：so excited for this｜71.1分
+
+- 主赛道：人物观点（`PUBLIC_VOICE`）
+- 分赛道得分：热点 49.1；人物 71.1；企业AI 10.1
+- 为什么现在值得做：07月30日捕获到一手或可追溯人物表达，完整观点具备内容加工价值；热度不足不会自动否决长期思想价值。
+- 建议角度：拆解一手公开表达中的核心判断、现实启示和适用边界
+- 目标受众：企业管理者、AI从业者、Builder与知识工作者
+- 与 JovaAI 的连接：可连接企业AI、人的工作方式、组织变化及产业级Agentic OS。
+- 建议形式：微信观点文章、X观点短帖、短视频口播
+- 选题价值：71.1；研究准备度：NEEDS_CROSS_CHECK
+- 证据状态：PARTIAL；评分置信度：MEDIUM
+- 数据覆盖率：100%；独立来源数：1
+- 采集通道：follow-builders
+- 相关资料：
+  - [Sam Altman：so excited for this](https://x.com/sama/status/2082628413769003269)｜原始来源：Sam Altman｜采集通道：follow-builders｜2026-07-30T00:44:41+00:00
+- 风险提示：当前只有一个独立来源，创作前必须补充交叉验证。；原始标题上下文不足，候选标题由摘要提取，进入创作前需要人工确认。
+
+### 4. T-20260731-D4B0DC41｜Advancing the price-performance frontier with GPT-5.6｜70.2分
+
+- 主赛道：人物观点（`PUBLIC_VOICE`）
+- 分赛道得分：热点 42.1；人物 70.2；企业AI 31.1
+- 为什么现在值得做：07月30日捕获到一手或可追溯人物表达，完整观点具备内容加工价值；热度不足不会自动否决长期思想价值。
+- 建议角度：拆解一手公开表达中的核心判断、现实启示和适用边界
+- 目标受众：企业管理者、AI从业者、Builder与知识工作者
+- 与 JovaAI 的连接：可连接企业AI、人的工作方式、组织变化及产业级Agentic OS。
+- 建议形式：微信观点文章、X观点短帖、短视频口播
+- 选题价值：70.2；研究准备度：NEEDS_CROSS_CHECK
+- 证据状态：PARTIAL；评分置信度：MEDIUM
+- 数据覆盖率：83%；独立来源数：1
+- 采集通道：agentreach
+- 相关资料：
+  - [Advancing the price-performance frontier with GPT-5.6](https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6)｜原始来源：OpenAI Blog｜采集通道：agentreach｜2026-07-30T10:00:00+00:00
+- 风险提示：当前只有一个独立来源，创作前必须补充交叉验证。
+
+### 5. T-20260731-13B3633F｜OpenAI 失控模型二次入侵 Modal 客户｜57.8分
+
+- 主赛道：热点事件（`HOT_EVENT`）
+- 分赛道得分：热点 57.8；人物 53.9；企业AI 30.3
+- 为什么现在值得做：07月29日出现1条可追溯事件信号；当前热度仅表示本地资讯源中的时效、重复出现与已有公开热度字段。
+- 建议角度：从正在升温的事件中提炼对企业AI和产业变化的实际影响
+- 目标受众：企业决策者、AI负责人、产业观察者
+- 与 JovaAI 的连接：优先判断事件是否改变企业AI落地条件、产业协同或智能体治理边界。
+- 建议形式：微信热点解读、X快评、视频解读
+- 选题价值：57.8；研究准备度：NEEDS_SOURCE_RECOVERY
+- 证据状态：LEAD_ONLY；评分置信度：LOW
+- 数据覆盖率：83%；独立来源数：1
+- 采集通道：aihot
+- 相关资料：
+  - [OpenAI 失控模型二次入侵 Modal 客户](https://x.com/AISafetyMemes/status/2082223372214448303)｜原始来源：X：AI Safety Memes (@AISafetyMemes)｜采集通道：aihot｜2026-07-28T21:55:12+00:00
+- 风险提示：当前只有一个独立来源，创作前必须补充交叉验证。；尚未确认原始官方来源，当前资料只能支撑选题判断。
+
+### 6. T-20260731-37419496｜OpenAI 发布 Codex 安全 CLI 与 SDK｜56.4分
+
+- 主赛道：热点事件（`HOT_EVENT`）
+- 分赛道得分：热点 56.4；人物 45.9；企业AI 10.6
+- 为什么现在值得做：07月29日出现1条可追溯事件信号；当前热度仅表示本地资讯源中的时效、重复出现与已有公开热度字段。
+- 建议角度：从正在升温的事件中提炼对企业AI和产业变化的实际影响
+- 目标受众：企业决策者、AI负责人、产业观察者
+- 与 JovaAI 的连接：优先判断事件是否改变企业AI落地条件、产业协同或智能体治理边界。
+- 建议形式：微信热点解读、X快评、视频解读
+- 选题价值：56.4；研究准备度：NEEDS_SOURCE_RECOVERY
+- 证据状态：LEAD_ONLY；评分置信度：LOW
+- 数据覆盖率：83%；独立来源数：1
+- 采集通道：aihot
+- 相关资料：
+  - [OpenAI 发布 Codex 安全 CLI 与 SDK](https://x.com/thsottiaux/status/2082241164850364555)｜原始来源：X：Tibo (@thsottiaux)｜采集通道：aihot｜2026-07-28T23:05:54+00:00
+- 风险提示：当前只有一个独立来源，创作前必须补充交叉验证。；尚未确认原始官方来源，当前资料只能支撑选题判断。
+
+### 7. T-20260731-17B0F4D7｜1100多名AI员工联名呼吁美国政府控制AI发展速度，OpenAI CEO奥尔特曼表态支持｜55.0分
+
+- 主赛道：热点事件（`HOT_EVENT`）
+- 分赛道得分：热点 55.0；人物 50.0；企业AI 15.1
+- 为什么现在值得做：07月29日出现1条可追溯事件信号；当前热度仅表示本地资讯源中的时效、重复出现与已有公开热度字段。
+- 建议角度：从正在升温的事件中提炼对企业AI和产业变化的实际影响
+- 目标受众：企业决策者、AI负责人、产业观察者
+- 与 JovaAI 的连接：优先判断事件是否改变企业AI落地条件、产业协同或智能体治理边界。
+- 建议形式：微信热点解读、X快评、视频解读
+- 选题价值：55.0；研究准备度：NEEDS_SOURCE_RECOVERY
+- 证据状态：LEAD_ONLY；评分置信度：LOW
+- 数据覆盖率：83%；独立来源数：1
+- 采集通道：aihot
+- 相关资料：
+  - [1100多名AI员工联名呼吁美国政府控制AI发展速度，OpenAI CEO奥尔特曼表态支持](https://www.ithome.com/0/982/816.htm)｜原始来源：IT之家（RSS）｜采集通道：aihot｜2026-07-29T00:20:32+00:00
+- 风险提示：当前只有一个独立来源，创作前必须补充交叉验证。；尚未确认原始官方来源，当前资料只能支撑选题判断。
+
+## 确认方式
+
+可以回复选题 ID，例如：`T-YYYYMMDD-XXXXXXXX 进入创作`。编号只对应本报告。
+选题价值分只回答“值不值得研究”；研究准备度决定能否直接扩展研究包，不会用证据不足反向抹杀好选题。

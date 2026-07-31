@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agt-rsn-004/research-pack.schema.json",
+  "title": "ResearchPack",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "researchPackId",
+    "missionId",
+    "topic",
+    "status",
+    "sources",
+    "claims",
+    "evidenceGaps",
+    "createdAt",
+    "contentHash"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "researchPackId": {
+      "type": "string"
+    },
+    "missionId": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "RESEARCHING",
+        "RESEARCH_READY",
+        "EVIDENCE_INSUFFICIENT",
+        "FAILED"
+      ]
+    },
+    "sources": {
+      "type": "array"
+    },
+    "claims": {
+      "type": "array"
+    },
+    "evidenceGaps": {
+      "type": "array"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "contentHash": {
+      "type": "string"
+    }
+  }
+}

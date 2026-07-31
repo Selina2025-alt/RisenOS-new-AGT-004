@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0",
+  "radarId": "RADAR-20260730-D0E2326F77",
+  "date": "2026-07-30",
+  "generatedAt": "2026-07-30T01:45:00+00:00",
+  "windowHours": 24,
+  "inputHash": "D0E2326F7756887A391D62ED638818F598517882D16D839FE2DDE640161C9551",
+  "sourceHealth": [
+    {
+      "feedId": "aihot",
+      "status": "SUCCESS",
+      "runId": "aihot-20260729T095208-36fb9dc2",
+      "collectedAt": "2026-07-29T01:52:08+00:00",
+      "itemCount": 20,
+      "errors": []
+    },
+    {
+      "feedId": "agentreach",
+      "status": "MISSING",
+      "runId": null,
+      "collectedAt": null,
+      "itemCount": 0,
+      "errors": [
+        "No READY run found in the last 7 days"
+      ]
+    },
+    {
+      "feedId": "follow-builders",
+      "status": "SUCCESS",
+      "runId": "follow-builders-20260730T165000-f02bd318",
+      "collectedAt": "2026-07-30T08:50:00+00:00",
+      "itemCount": 34,
+      "errors": []
+    }
+  ],
+  "policy": {
+    "dailyCandidateMinimum": 5,
+    "dailyCandidateMaximum": 8,
+    "noTemplateBackfill": true,
+    "heatMeaning": "signal_heat_only"
+  },
+  "topics": [
+    {
+      "topicId": "T-20260730-B19531E2",
+      "radarId": "RADAR-20260730-D0E2326F77",
+      "title": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents.\n\nThere are tons of measures that enterpris",
+      "angle": "政策变化对企业智能体落地边界的影响",
+      "whyNow": "07月30日出现2条可追溯信号，适合在信息仍具时效性时进行事实核验和产业视角解读。",
+      "targetAudience": "企业管理者、AI负责人、合规负责人",
+      "jovaaiConnection": "可连接产业级 Agentic OS 的授权、行为围栏和可追溯能力。",
+      "recommendedFormats": [
+        "微信深度文章",
+        "X观点短帖",
+        "视频解读"
+      ],
+      "theme": "政策与治理",
+      "score": 66.7,
+      "scoreBreakdown": {
+        "strategyFit": {
+          "raw": 3.1,
+          "weight": 20,
+          "weighted": 12.4
+        },
+        "audienceNeed": {
+          "raw": 1.5,
+          "weight": 15,
+          "weighted": 4.5
+        },
+        "freshness": {
+          "raw": 5,
+          "weight": 10,
+          "weighted": 10.0
+        },
+        "signalHeat": {
+          "raw": 3.7,
+          "weight": 10,
+          "weighted": 7.4
+        },
+        "evidenceStrength": {
+          "raw": 3.3,
+          "weight": 10,
+          "weighted": 6.6
+        },
+        "sourceAuthority": {
+          "raw": 3.0,
+          "weight": 10,
+          "weighted": 6.0
+        },
+        "differentiation": {
+          "raw": 3.7,
+          "weight": 10,
+          "weighted": 7.4
+        },
+        "contentExtensibility": {
+          "raw": 4.5,
+          "weight": 5,
+          "weighted": 4.5
+        },
+        "businessNarrativeValue": {
+          "raw": 2.9,
+          "weight": 5,
+          "weighted": 2.9
+        },
+        "complianceFeasibility": {
+          "raw": 5,
+          "weight": 5,
+          "weighted": 5.0
+        }
+      },
+      "scoreConfidence": "MEDIUM",
+      "dataCoverage": 1.0,
+      "sourceDiversity": 2,
+      "freshnessWindow": "24h",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-7742E41C33B2",
+        "SIG-FOLLOWBUILDERS-AE410A1C4815"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-FOLLOWBUILDERS-7742E41C33B2",
+          "title": "incredibly good write up \n\nbad actors will obviously try to use models to do stuff like this on purpose in the future. \n\non the bright side:\n\n- OpenAI?s safety classifiers were turned off, the model was explicitly directed to do exploits\n- HG?s AI actually surfaced the attack aut",
+          "url": "https://x.com/danshipper/status/2082608994275725650",
+          "sourceName": "Dan Shipper",
+          "publishedAt": "2026-07-29T23:27:31+00:00",
+          "sourceRole": "opinion",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only"
+        },
+        {
+          "sourceId": "SIG-FOLLOWBUILDERS-AE410A1C4815",
+          "title": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents.\n\nThere are tons of measures that enterpris",
+          "url": "https://x.com/levie/status/2082514776392175844",
+          "sourceName": "Aaron Levie",
+          "publishedAt": "2026-07-29T17:13:08+00:00",
+          "sourceRole": "opinion",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only"
+        }
+      ],
+      "evidenceStatus": "PARTIAL",
+      "riskWarnings": [
+        "尚未确认原始官方来源，当前资料只能支撑选题判断。"
+      ],
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "0F72F75268192BC51368442519ABA744ECC2BA2536D37E4DB82D2EA301751215"
+    }
+  ],
+  "observationLeads": [],
+  "status": "READY"
+}

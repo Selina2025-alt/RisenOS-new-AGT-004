@@ -1,0 +1,89 @@
+{
+  "source_id": "SRC-20260718-COMPANY-PRODUCT",
+  "source_file": "20260718公司简介与产品介绍（重点关注2条产品线，4大产品矩阵）.docx",
+  "original_path": "D:\\company project\\0.BSC内容资产库\\20260718公司简介与产品介绍（重点关注2条产品线，4大产品矩阵）.docx",
+  "declared_use": "企业介绍与产品矩阵",
+  "sha256": "9527BDAD3CC502062565D35F96EF94BCBA41C078BAAD86CDEE715DE184FDD24C",
+  "size_bytes": 15445,
+  "modified_at": "2026-07-27T14:12:49",
+  "ingested_at": "2026-07-30T13:02:03+08:00",
+  "core_properties": {
+    "title": "",
+    "subject": "",
+    "author": "DingTalk",
+    "keywords": "",
+    "comments": "DingTalk Document",
+    "created": "1970-01-01T00:00:00+00:00",
+    "modified": "2026-07-27T06:12:49+00:00",
+    "last_modified_by": "冬阳没有温度。",
+    "revision": 1
+  },
+  "counts": {
+    "document_paragraphs": 49,
+    "nonempty_document_paragraphs": 42,
+    "tables": 0,
+    "table_rows": 0,
+    "ordered_nonempty_blocks": 42,
+    "ordered_paragraph_blocks": 42,
+    "ordered_table_blocks": 0,
+    "sections": 3,
+    "media_assets": 0,
+    "extracted_characters": 2460
+  },
+  "headers_footers": {
+    "headers": [],
+    "footers": []
+  },
+  "media": [],
+  "section_index": [
+    {
+      "title": "智能体团队产品线",
+      "level": 4,
+      "start_locator": "P00001",
+      "end_locator": "P00014",
+      "block_count": 14,
+      "char_count": 845,
+      "topics": {
+        "产品与架构": 15,
+        "客户与场景": 11,
+        "智能体能力": 11,
+        "企业战略": 3,
+        "品牌定位": 3,
+        "案例与证据": 2
+      },
+      "file": "sections/001_智能体团队产品线.md"
+    },
+    {
+      "title": "500 字版本企业简介（7.18）",
+      "level": 1,
+      "start_locator": "P00015",
+      "end_locator": "P00043",
+      "block_count": 23,
+      "char_count": 1524,
+      "topics": {
+        "产品与架构": 38,
+        "智能体能力": 12,
+        "客户与场景": 4,
+        "案例与证据": 2,
+        "企业战略": 1,
+        "合规与保密": 1,
+        "品牌定位": 1
+      },
+      "file": "sections/002_500_字版本企业简介（7.18）.md"
+    },
+    {
+      "title": "3.建模能力：全球首个跨产业实时交易算法 ICB、3000+ 功能元",
+      "level": 3,
+      "start_locator": "P00044",
+      "end_locator": "P00048",
+      "block_count": 5,
+      "char_count": 169,
+      "topics": {
+        "案例与证据": 9,
+        "产品与架构": 2,
+        "企业战略": 1
+      },
+      "file": "sections/003_3.建模能力：全球首个跨产业实时交易算法_ICB、3000+_功能元.md"
+    }
+  ]
+}

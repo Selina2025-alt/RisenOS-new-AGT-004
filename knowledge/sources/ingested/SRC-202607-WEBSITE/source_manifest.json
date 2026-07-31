@@ -1,0 +1,193 @@
+{
+  "source_id": "SRC-202607-WEBSITE",
+  "source_file": "艾氪智能新官网设计 202607.docx",
+  "original_path": "D:\\company project\\0.BSC内容资产库\\艾氪智能新官网设计 202607.docx",
+  "declared_use": "官网内容、信息架构与视觉需求",
+  "sha256": "85444B95F138AC867CD4D8ECB672E23B41928BC48FEFF8EA0CC4F8C015EF61E3",
+  "size_bytes": 60587,
+  "modified_at": "2026-07-07T16:55:23",
+  "ingested_at": "2026-07-30T13:02:03+08:00",
+  "core_properties": {
+    "title": "",
+    "subject": "",
+    "author": "Frederick Duan",
+    "keywords": "",
+    "comments": "",
+    "created": "2026-07-06T09:10:00+00:00",
+    "modified": "2026-07-07T08:50:00+00:00",
+    "last_modified_by": "Frederick Duan",
+    "revision": 8
+  },
+  "counts": {
+    "document_paragraphs": 600,
+    "nonempty_document_paragraphs": 520,
+    "tables": 20,
+    "table_rows": 98,
+    "ordered_nonempty_blocks": 540,
+    "ordered_paragraph_blocks": 520,
+    "ordered_table_blocks": 20,
+    "sections": 8,
+    "media_assets": 0,
+    "extracted_characters": 14602
+  },
+  "headers_footers": {
+    "headers": [],
+    "footers": []
+  },
+  "media": [],
+  "section_index": [
+    {
+      "title": "二、客户认知路径",
+      "level": 2,
+      "start_locator": "P00001",
+      "end_locator": "P00009",
+      "block_count": 10,
+      "char_count": 1038,
+      "topics": {
+        "产品与架构": 9,
+        "企业战略": 8,
+        "客户与场景": 6,
+        "智能体能力": 4,
+        "案例与证据": 4,
+        "官网与视觉": 3,
+        "品牌定位": 2,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/001_二、客户认知路径.md"
+    },
+    {
+      "title": "三、每屏细节",
+      "level": 2,
+      "start_locator": "P00011",
+      "end_locator": "P00101",
+      "block_count": 88,
+      "char_count": 2900,
+      "topics": {
+        "智能体能力": 25,
+        "产品与架构": 23,
+        "客户与场景": 19,
+        "企业战略": 16,
+        "案例与证据": 10,
+        "合规与保密": 6,
+        "品牌定位": 2,
+        "官网与视觉": 2,
+        "竞品与壁垒": 2,
+        "历史内容": 1
+      },
+      "file": "sections/002_三、每屏细节.md"
+    },
+    {
+      "title": "第 1 屏",
+      "level": 1,
+      "start_locator": "P00103",
+      "end_locator": "P00175",
+      "block_count": 69,
+      "char_count": 2739,
+      "topics": {
+        "产品与架构": 21,
+        "官网与视觉": 19,
+        "智能体能力": 18,
+        "客户与场景": 9,
+        "案例与证据": 9,
+        "企业战略": 6,
+        "竞品与壁垒": 6,
+        "品牌定位": 4,
+        "历史内容": 1,
+        "合规与保密": 1
+      },
+      "file": "sections/003_第_1_屏.md"
+    },
+    {
+      "title": "第3 屏",
+      "level": 1,
+      "start_locator": "P00178",
+      "end_locator": "P00336",
+      "block_count": 136,
+      "char_count": 3340,
+      "topics": {
+        "产品与架构": 44,
+        "智能体能力": 43,
+        "企业战略": 23,
+        "客户与场景": 18,
+        "案例与证据": 8,
+        "合规与保密": 7,
+        "竞品与壁垒": 3,
+        "品牌定位": 2,
+        "官网与视觉": 1
+      },
+      "file": "sections/004_第3_屏.md"
+    },
+    {
+      "title": "第5 屏",
+      "level": 1,
+      "start_locator": "P00339",
+      "end_locator": "T0018",
+      "block_count": 39,
+      "char_count": 1288,
+      "topics": {
+        "客户与场景": 16,
+        "企业战略": 9,
+        "智能体能力": 8,
+        "官网与视觉": 4,
+        "历史内容": 3,
+        "产品与架构": 1,
+        "品牌定位": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/005_第5_屏.md"
+    },
+    {
+      "title": "06 AI 采销联盟模式",
+      "level": 3,
+      "start_locator": "P00381",
+      "end_locator": "P00452",
+      "block_count": 67,
+      "char_count": 1015,
+      "topics": {
+        "客户与场景": 23,
+        "智能体能力": 11,
+        "产品与架构": 7,
+        "品牌定位": 4
+      },
+      "file": "sections/006_06_AI_采销联盟模式.md"
+    },
+    {
+      "title": "第 6 屏",
+      "level": 1,
+      "start_locator": "P00454",
+      "end_locator": "P00567",
+      "block_count": 105,
+      "char_count": 2360,
+      "topics": {
+        "产品与架构": 43,
+        "客户与场景": 26,
+        "品牌定位": 15,
+        "企业战略": 5,
+        "智能体能力": 5,
+        "合规与保密": 3,
+        "案例与证据": 3,
+        "历史内容": 2,
+        "官网与视觉": 2
+      },
+      "file": "sections/007_第_6_屏.md"
+    },
+    {
+      "title": "第 7-2 屏",
+      "level": 1,
+      "start_locator": "P00570",
+      "end_locator": "P00597",
+      "block_count": 26,
+      "char_count": 986,
+      "topics": {
+        "产品与架构": 9,
+        "企业战略": 5,
+        "历史内容": 4,
+        "客户与场景": 4,
+        "智能体能力": 3,
+        "品牌定位": 1,
+        "官网与视觉": 1
+      },
+      "file": "sections/008_第_7-2_屏.md"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agt-rsn-004/signal-item.schema.json",
+  "title": "SignalItem",
+  "type": "object",
+  "required": [
+    "signalId",
+    "title",
+    "url",
+    "canonicalUrl",
+    "sourceName",
+    "sourceType",
+    "publishedAt",
+    "discoveredAt",
+    "summary",
+    "category",
+    "language",
+    "rawHeatSignals",
+    "sourceFeed",
+    "provenance",
+    "verificationStatus"
+  ],
+  "properties": {
+    "signalId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string"
+    },
+    "canonicalUrl": {
+      "type": "string"
+    },
+    "sourceName": {
+      "type": "string"
+    },
+    "sourceType": {
+      "type": "string"
+    },
+    "author": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publishedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "discoveredAt": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "rawHeatSignals": {
+      "type": "object"
+    },
+    "sourceFeed": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "array"
+    },
+    "verificationStatus": {
+      "enum": [
+        "traceable",
+        "metadata_only",
+        "unverified",
+        "rejected"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

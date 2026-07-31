@@ -1,0 +1,113 @@
+{
+  "batch_id": "BATCH-20260730-BSC-6DOCX",
+  "ingested_at": "2026-07-30T13:02:10+08:00",
+  "source_count": 6,
+  "total_blocks": 12763,
+  "total_characters": 574816,
+  "total_sections": 474,
+  "total_media_assets": 0,
+  "sources": [
+    {
+      "source_id": "SRC-20260716-ALLHANDS",
+      "source_file": "7月16日_老板全员大会演讲稿整理版_AItoB统一修订.docx",
+      "sha256": "E517447E15C2E1126DE71E6421873AFB4D588E76DFC4B370EC314F2854017CD3",
+      "counts": {
+        "document_paragraphs": 105,
+        "nonempty_document_paragraphs": 105,
+        "tables": 0,
+        "table_rows": 0,
+        "ordered_nonempty_blocks": 105,
+        "ordered_paragraph_blocks": 105,
+        "ordered_table_blocks": 0,
+        "sections": 2,
+        "media_assets": 0,
+        "extracted_characters": 19891
+      }
+    },
+    {
+      "source_id": "SRC-20260718-COMPANY-PRODUCT",
+      "source_file": "20260718公司简介与产品介绍（重点关注2条产品线，4大产品矩阵）.docx",
+      "sha256": "9527BDAD3CC502062565D35F96EF94BCBA41C078BAAD86CDEE715DE184FDD24C",
+      "counts": {
+        "document_paragraphs": 49,
+        "nonempty_document_paragraphs": 42,
+        "tables": 0,
+        "table_rows": 0,
+        "ordered_nonempty_blocks": 42,
+        "ordered_paragraph_blocks": 42,
+        "ordered_table_blocks": 0,
+        "sections": 3,
+        "media_assets": 0,
+        "extracted_characters": 2460
+      }
+    },
+    {
+      "source_id": "SRC-202607-WEBSITE",
+      "source_file": "艾氪智能新官网设计 202607.docx",
+      "sha256": "85444B95F138AC867CD4D8ECB672E23B41928BC48FEFF8EA0CC4F8C015EF61E3",
+      "counts": {
+        "document_paragraphs": 600,
+        "nonempty_document_paragraphs": 520,
+        "tables": 20,
+        "table_rows": 98,
+        "ordered_nonempty_blocks": 540,
+        "ordered_paragraph_blocks": 520,
+        "ordered_table_blocks": 20,
+        "sections": 8,
+        "media_assets": 0,
+        "extracted_characters": 14602
+      }
+    },
+    {
+      "source_id": "SRC-V8-AGENTIC-OS",
+      "source_file": "01_艾氪智能产业级 Agentic OS 战略与壁垒手册V8.0.docx",
+      "sha256": "2A54570A74A772D1012D0575CEA17DF96F275FA695FD750DF624A5A49DCB7A36",
+      "counts": {
+        "document_paragraphs": 3761,
+        "nonempty_document_paragraphs": 3676,
+        "tables": 0,
+        "table_rows": 0,
+        "ordered_nonempty_blocks": 3676,
+        "ordered_paragraph_blocks": 3676,
+        "ordered_table_blocks": 0,
+        "sections": 149,
+        "media_assets": 0,
+        "extracted_characters": 160356
+      }
+    },
+    {
+      "source_id": "SRC-V7-GROUP-STRATEGY",
+      "source_file": "01_艾氪智能集团战略手册 V7.0.docx",
+      "sha256": "872C6977977F38CFA28E5A7D674D280DF1223C8AFE939FC88EDBEF056E0060A2",
+      "counts": {
+        "document_paragraphs": 4758,
+        "nonempty_document_paragraphs": 4755,
+        "tables": 0,
+        "table_rows": 0,
+        "ordered_nonempty_blocks": 4755,
+        "ordered_paragraph_blocks": 4755,
+        "ordered_table_blocks": 0,
+        "sections": 198,
+        "media_assets": 0,
+        "extracted_characters": 202312
+      }
+    },
+    {
+      "source_id": "SRC-20260724-LEADERSHIP-REPORT",
+      "source_file": "01_《JovaAI 艾氪智能全球领先性研究报告：从企业智能体到产业级 Agentic OS 的代际跃迁》.docx",
+      "sha256": "2BCEDB52F4994EC1B7281337D88DF9814450CE6051CC4A3E5B76C1786AEB57AC",
+      "counts": {
+        "document_paragraphs": 3829,
+        "nonempty_document_paragraphs": 3645,
+        "tables": 0,
+        "table_rows": 0,
+        "ordered_nonempty_blocks": 3645,
+        "ordered_paragraph_blocks": 3645,
+        "ordered_table_blocks": 0,
+        "sections": 114,
+        "media_assets": 0,
+        "extracted_characters": 175195
+      }
+    }
+  ]
+}

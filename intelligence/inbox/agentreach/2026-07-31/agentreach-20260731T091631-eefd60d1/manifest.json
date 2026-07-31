@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "feedId": "agentreach",
+  "runId": "agentreach-20260731T091631-eefd60d1",
+  "windowStart": "2026-07-30T01:16:31+00:00",
+  "windowEnd": "2026-07-31T01:16:31+00:00",
+  "collectedAt": "2026-07-31T01:16:31+00:00",
+  "status": "DEGRADED",
+  "errors": [
+    "agent-reach doctor timed out after 34 seconds",
+    "Exa MCP returned HTTP 429 free rate limit on all explicit mcporter searches",
+    "Google Developers AI RSS returned 404",
+    "Microsoft AI Blog RSS returned 410",
+    "Anthropic News RSS returned 404"
+  ],
+  "inputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287",
+  "itemCount": 13
+}

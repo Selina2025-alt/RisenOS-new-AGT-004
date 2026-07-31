@@ -1,0 +1,516 @@
+{
+  "schemaVersion": "1.0",
+  "radarId": "RADAR-20260730-C7F14F09E0",
+  "date": "2026-07-30",
+  "generatedAt": "2026-07-30T01:45:00+00:00",
+  "windowHours": 24,
+  "inputHash": "C7F14F09E0AF88A40537AD880DAE22E01C1FFF62EE6E6CC711E53D956112DA33",
+  "sourceHealth": [
+    {
+      "feedId": "aihot",
+      "status": "SUCCESS",
+      "runId": "aihot-20260729T095208-36fb9dc2",
+      "collectedAt": "2026-07-29T01:52:08+00:00",
+      "itemCount": 20,
+      "errors": []
+    },
+    {
+      "feedId": "agentreach",
+      "status": "MISSING",
+      "runId": null,
+      "collectedAt": null,
+      "itemCount": 0,
+      "errors": [
+        "No READY run found in the last 7 days"
+      ]
+    },
+    {
+      "feedId": "follow-builders",
+      "status": "SUCCESS",
+      "runId": "follow-builders-20260730T165000-f02bd318",
+      "collectedAt": "2026-07-30T08:50:00+00:00",
+      "itemCount": 34,
+      "errors": []
+    }
+  ],
+  "policy": {
+    "dailyCandidateMinimum": 5,
+    "dailyCandidateMaximum": 8,
+    "noTemplateBackfill": true,
+    "heatMeaning": "signal_heat_only"
+  },
+  "topics": [
+    {
+      "topicId": "T-20260730-BEAB969A",
+      "radarId": "RADAR-20260730-C7F14F09E0",
+      "title": "incredibly good write up \n\nbad actors will obviously try to use models to do stuff like this on purpose in the future. \n\non the bright side:\n\n- OpenAI?s safety classifiers were turned off, the model was explicitly directed to do exploits\n- HG?s AI actually surfaced the attack aut",
+      "angle": "政策变化对企业智能体落地边界的影响",
+      "whyNow": "07月30日出现1条可追溯信号，适合在信息仍具时效性时进行事实核验和产业视角解读。",
+      "targetAudience": "企业管理者、AI负责人、合规负责人",
+      "jovaaiConnection": "可连接产业级 Agentic OS 的授权、行为围栏和可追溯能力。",
+      "recommendedFormats": [
+        "微信深度文章",
+        "X观点短帖",
+        "视频解读"
+      ],
+      "theme": "政策与治理",
+      "score": 62.3,
+      "scoreBreakdown": {
+        "strategyFit": {
+          "raw": 3.1,
+          "weight": 20,
+          "weighted": 12.4
+        },
+        "audienceNeed": {
+          "raw": 1.5,
+          "weight": 15,
+          "weighted": 4.5
+        },
+        "freshness": {
+          "raw": 5,
+          "weight": 10,
+          "weighted": 10.0
+        },
+        "signalHeat": {
+          "raw": 2.9,
+          "weight": 10,
+          "weighted": 5.8
+        },
+        "evidenceStrength": {
+          "raw": 2.4,
+          "weight": 10,
+          "weighted": 4.8
+        },
+        "sourceAuthority": {
+          "raw": 3.0,
+          "weight": 10,
+          "weighted": 6.0
+        },
+        "differentiation": {
+          "raw": 3.2,
+          "weight": 10,
+          "weighted": 6.4
+        },
+        "contentExtensibility": {
+          "raw": 4.5,
+          "weight": 5,
+          "weighted": 4.5
+        },
+        "businessNarrativeValue": {
+          "raw": 2.9,
+          "weight": 5,
+          "weighted": 2.9
+        },
+        "complianceFeasibility": {
+          "raw": 5,
+          "weight": 5,
+          "weighted": 5.0
+        }
+      },
+      "scoreConfidence": "LOW",
+      "dataCoverage": 1.0,
+      "sourceDiversity": 1,
+      "freshnessWindow": "24h",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-7742E41C33B2"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-FOLLOWBUILDERS-7742E41C33B2",
+          "title": "incredibly good write up \n\nbad actors will obviously try to use models to do stuff like this on purpose in the future. \n\non the bright side:\n\n- OpenAI?s safety classifiers were turned off, the model was explicitly directed to do exploits\n- HG?s AI actually surfaced the attack aut",
+          "url": "https://x.com/danshipper/status/2082608994275725650",
+          "sourceName": "Dan Shipper",
+          "publishedAt": "2026-07-29T23:27:31+00:00",
+          "sourceRole": "secondary",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only"
+        }
+      ],
+      "evidenceStatus": "LEAD_ONLY",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。",
+        "尚未确认原始官方来源，当前资料只能支撑选题判断。"
+      ],
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "969F29D74A4113E3FC5C6BC0F98FE26103C6B0B2FA01FD3BB674E0E142B8A835"
+    },
+    {
+      "topicId": "T-20260730-2FF2E8E6",
+      "radarId": "RADAR-20260730-C7F14F09E0",
+      "title": "AI has been great for my productivity, but I?m starting to recognize three dark patterns:\n\n1. Becoming too lazy to read anything\n\nIt's too easy to just read AI summaries over the original piece or let agents go wild changing my files without reviewing what they did.\n\n2. Getting d",
+      "angle": "从技术更新看企业智能体从单点工具走向系统协同",
+      "whyNow": "07月30日出现1条可追溯信号，适合在信息仍具时效性时进行事实核验和产业视角解读。",
+      "targetAudience": "企业AI负责人、开发者、产品负责人",
+      "jovaaiConnection": "可连接五级 JovaOS、多智能体协同和产业级执行体系。",
+      "recommendedFormats": [
+        "微信技术解读",
+        "X技术短帖",
+        "视频脚本"
+      ],
+      "theme": "Agent与开发者",
+      "score": 59.9,
+      "scoreBreakdown": {
+        "strategyFit": {
+          "raw": 2.5,
+          "weight": 20,
+          "weighted": 10.0
+        },
+        "audienceNeed": {
+          "raw": 1.5,
+          "weight": 15,
+          "weighted": 4.5
+        },
+        "freshness": {
+          "raw": 5,
+          "weight": 10,
+          "weighted": 10.0
+        },
+        "signalHeat": {
+          "raw": 3.1,
+          "weight": 10,
+          "weighted": 6.2
+        },
+        "evidenceStrength": {
+          "raw": 2.4,
+          "weight": 10,
+          "weighted": 4.8
+        },
+        "sourceAuthority": {
+          "raw": 3.0,
+          "weight": 10,
+          "weighted": 6.0
+        },
+        "differentiation": {
+          "raw": 3.2,
+          "weight": 10,
+          "weighted": 6.4
+        },
+        "contentExtensibility": {
+          "raw": 4.5,
+          "weight": 5,
+          "weighted": 4.5
+        },
+        "businessNarrativeValue": {
+          "raw": 2.5,
+          "weight": 5,
+          "weighted": 2.5
+        },
+        "complianceFeasibility": {
+          "raw": 5,
+          "weight": 5,
+          "weighted": 5.0
+        }
+      },
+      "scoreConfidence": "LOW",
+      "dataCoverage": 1.0,
+      "sourceDiversity": 1,
+      "freshnessWindow": "24h",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-B4B3370BBFC9"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-FOLLOWBUILDERS-B4B3370BBFC9",
+          "title": "AI has been great for my productivity, but I?m starting to recognize three dark patterns:\n\n1. Becoming too lazy to read anything\n\nIt's too easy to just read AI summaries over the original piece or let agents go wild changing my files without reviewing what they did.\n\n2. Getting d",
+          "url": "https://x.com/petergyang/status/2082642205811106158",
+          "sourceName": "Peter Yang",
+          "publishedAt": "2026-07-30T01:39:30+00:00",
+          "sourceRole": "secondary",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only"
+        }
+      ],
+      "evidenceStatus": "LEAD_ONLY",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。",
+        "尚未确认原始官方来源，当前资料只能支撑选题判断。"
+      ],
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "C9EC102FF852BBE0BA8C48A247F66AC3736B8EC051A870C9CCC8A0C373A49299"
+    },
+    {
+      "topicId": "T-20260730-B4379CD0",
+      "radarId": "RADAR-20260730-C7F14F09E0",
+      "title": "your agents, anywhere\n\ntry Cursor on iOS today https://t.co/cUpj159sqj",
+      "angle": "从技术更新看企业智能体从单点工具走向系统协同",
+      "whyNow": "07月30日出现1条可追溯信号，适合在信息仍具时效性时进行事实核验和产业视角解读。",
+      "targetAudience": "企业AI负责人、开发者、产品负责人",
+      "jovaaiConnection": "可连接五级 JovaOS、多智能体协同和产业级执行体系。",
+      "recommendedFormats": [
+        "微信技术解读",
+        "X技术短帖",
+        "视频脚本"
+      ],
+      "theme": "Agent与开发者",
+      "score": 59.9,
+      "scoreBreakdown": {
+        "strategyFit": {
+          "raw": 2.5,
+          "weight": 20,
+          "weighted": 10.0
+        },
+        "audienceNeed": {
+          "raw": 1.5,
+          "weight": 15,
+          "weighted": 4.5
+        },
+        "freshness": {
+          "raw": 5,
+          "weight": 10,
+          "weighted": 10.0
+        },
+        "signalHeat": {
+          "raw": 3.1,
+          "weight": 10,
+          "weighted": 6.2
+        },
+        "evidenceStrength": {
+          "raw": 2.4,
+          "weight": 10,
+          "weighted": 4.8
+        },
+        "sourceAuthority": {
+          "raw": 3.0,
+          "weight": 10,
+          "weighted": 6.0
+        },
+        "differentiation": {
+          "raw": 3.2,
+          "weight": 10,
+          "weighted": 6.4
+        },
+        "contentExtensibility": {
+          "raw": 4.5,
+          "weight": 5,
+          "weighted": 4.5
+        },
+        "businessNarrativeValue": {
+          "raw": 2.5,
+          "weight": 5,
+          "weighted": 2.5
+        },
+        "complianceFeasibility": {
+          "raw": 5,
+          "weight": 5,
+          "weighted": 5.0
+        }
+      },
+      "scoreConfidence": "LOW",
+      "dataCoverage": 1.0,
+      "sourceDiversity": 1,
+      "freshnessWindow": "24h",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-C328312ADB9E"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-FOLLOWBUILDERS-C328312ADB9E",
+          "title": "your agents, anywhere\n\ntry Cursor on iOS today https://t.co/cUpj159sqj",
+          "url": "https://x.com/ryolu_/status/2082539893729972320",
+          "sourceName": "Ryo Lu",
+          "publishedAt": "2026-07-29T18:52:57+00:00",
+          "sourceRole": "secondary",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only"
+        }
+      ],
+      "evidenceStatus": "LEAD_ONLY",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。",
+        "尚未确认原始官方来源，当前资料只能支撑选题判断。"
+      ],
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "EEBCBA02A05BFFF8D24B8BF6977EBC4BC441AA5843B7246827542C1EBC92AB4D"
+    },
+    {
+      "topicId": "T-20260730-AB3F4AE1",
+      "radarId": "RADAR-20260730-C7F14F09E0",
+      "title": "Some observations from our Demo Faire yesterday:\n\n1/ There is a tremendous amount of interest from the larger investor community for frontier technology. Robots. Drones. Semiconductors. Bring it all. \n\n2/ The interest in Frontier Tech is legitimately Based. People want ???? to wi",
+      "angle": "从事件信号判断企业 AI 和产业 AI 的下一步变化",
+      "whyNow": "07月30日出现1条可追溯信号，适合在信息仍具时效性时进行事实核验和产业视角解读。",
+      "targetAudience": "企业决策者、AI负责人、产业从业者",
+      "jovaaiConnection": "可连接企业 AI 化与全球产业级智能体网络愿景。",
+      "recommendedFormats": [
+        "微信趋势文章",
+        "X观点短帖",
+        "视频解读"
+      ],
+      "theme": "AI产业趋势",
+      "score": 59.2,
+      "scoreBreakdown": {
+        "strategyFit": {
+          "raw": 2.5,
+          "weight": 20,
+          "weighted": 10.0
+        },
+        "audienceNeed": {
+          "raw": 1.5,
+          "weight": 15,
+          "weighted": 4.5
+        },
+        "freshness": {
+          "raw": 5,
+          "weight": 10,
+          "weighted": 10.0
+        },
+        "signalHeat": {
+          "raw": 3.0,
+          "weight": 10,
+          "weighted": 6.0
+        },
+        "evidenceStrength": {
+          "raw": 2.4,
+          "weight": 10,
+          "weighted": 4.8
+        },
+        "sourceAuthority": {
+          "raw": 3.0,
+          "weight": 10,
+          "weighted": 6.0
+        },
+        "differentiation": {
+          "raw": 3.2,
+          "weight": 10,
+          "weighted": 6.4
+        },
+        "contentExtensibility": {
+          "raw": 4,
+          "weight": 5,
+          "weighted": 4.0
+        },
+        "businessNarrativeValue": {
+          "raw": 2.5,
+          "weight": 5,
+          "weighted": 2.5
+        },
+        "complianceFeasibility": {
+          "raw": 5,
+          "weight": 5,
+          "weighted": 5.0
+        }
+      },
+      "scoreConfidence": "LOW",
+      "dataCoverage": 1.0,
+      "sourceDiversity": 1,
+      "freshnessWindow": "24h",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-0E4BD64FDF48"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-FOLLOWBUILDERS-0E4BD64FDF48",
+          "title": "Some observations from our Demo Faire yesterday:\n\n1/ There is a tremendous amount of interest from the larger investor community for frontier technology. Robots. Drones. Semiconductors. Bring it all. \n\n2/ The interest in Frontier Tech is legitimately Based. People want ???? to wi",
+          "url": "https://x.com/adityaag/status/2082538703432630398",
+          "sourceName": "Aditya Agarwal",
+          "publishedAt": "2026-07-29T18:48:13+00:00",
+          "sourceRole": "secondary",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only"
+        }
+      ],
+      "evidenceStatus": "LEAD_ONLY",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。",
+        "尚未确认原始官方来源，当前资料只能支撑选题判断。"
+      ],
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "53F2ED740C634BA8185E9E7556958CD12D14123F740C8713C04CEC381CD41C01"
+    },
+    {
+      "topicId": "T-20260730-1373C040",
+      "radarId": "RADAR-20260730-C7F14F09E0",
+      "title": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents.\n\nThere are tons of measures that enterpris",
+      "angle": "从技术更新看企业智能体从单点工具走向系统协同",
+      "whyNow": "07月30日出现1条可追溯信号，适合在信息仍具时效性时进行事实核验和产业视角解读。",
+      "targetAudience": "企业AI负责人、开发者、产品负责人",
+      "jovaaiConnection": "可连接五级 JovaOS、多智能体协同和产业级执行体系。",
+      "recommendedFormats": [
+        "微信技术解读",
+        "X技术短帖",
+        "视频脚本"
+      ],
+      "theme": "Agent与开发者",
+      "score": 59.9,
+      "scoreBreakdown": {
+        "strategyFit": {
+          "raw": 2.5,
+          "weight": 20,
+          "weighted": 10.0
+        },
+        "audienceNeed": {
+          "raw": 1.5,
+          "weight": 15,
+          "weighted": 4.5
+        },
+        "freshness": {
+          "raw": 5,
+          "weight": 10,
+          "weighted": 10.0
+        },
+        "signalHeat": {
+          "raw": 3.1,
+          "weight": 10,
+          "weighted": 6.2
+        },
+        "evidenceStrength": {
+          "raw": 2.4,
+          "weight": 10,
+          "weighted": 4.8
+        },
+        "sourceAuthority": {
+          "raw": 3.0,
+          "weight": 10,
+          "weighted": 6.0
+        },
+        "differentiation": {
+          "raw": 3.2,
+          "weight": 10,
+          "weighted": 6.4
+        },
+        "contentExtensibility": {
+          "raw": 4.5,
+          "weight": 5,
+          "weighted": 4.5
+        },
+        "businessNarrativeValue": {
+          "raw": 2.5,
+          "weight": 5,
+          "weighted": 2.5
+        },
+        "complianceFeasibility": {
+          "raw": 5,
+          "weight": 5,
+          "weighted": 5.0
+        }
+      },
+      "scoreConfidence": "LOW",
+      "dataCoverage": 1.0,
+      "sourceDiversity": 1,
+      "freshnessWindow": "24h",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-AE410A1C4815"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-FOLLOWBUILDERS-AE410A1C4815",
+          "title": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents.\n\nThere are tons of measures that enterpris",
+          "url": "https://x.com/levie/status/2082514776392175844",
+          "sourceName": "Aaron Levie",
+          "publishedAt": "2026-07-29T17:13:08+00:00",
+          "sourceRole": "secondary",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only"
+        }
+      ],
+      "evidenceStatus": "LEAD_ONLY",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。",
+        "尚未确认原始官方来源，当前资料只能支撑选题判断。"
+      ],
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "471D42A14DFED45AB8C516943B1FFF0F2792D095E0E7A93E91823F3D5BBC1395"
+    }
+  ],
+  "observationLeads": [],
+  "status": "READY"
+}

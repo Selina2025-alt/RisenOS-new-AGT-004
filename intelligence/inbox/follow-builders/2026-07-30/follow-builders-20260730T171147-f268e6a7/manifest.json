@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "feedId": "follow-builders",
+  "runId": "follow-builders-20260730T171147-f268e6a7",
+  "windowStart": "2026-07-29T09:11:47+00:00",
+  "windowEnd": "2026-07-30T09:11:47+00:00",
+  "collectedAt": "2026-07-30T09:11:47+00:00",
+  "status": "DEGRADED",
+  "errors": [
+    "Could not parse JSON from https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json: terminated",
+    "Could not fetch podcast feed"
+  ],
+  "inputHash": "F268E6A7D5CA83A7C6F427917698ED85C412992B1C262BFF2473656736FA972D",
+  "itemCount": 33
+}

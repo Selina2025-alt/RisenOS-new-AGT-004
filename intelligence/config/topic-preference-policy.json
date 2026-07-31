@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0",
+  "mode": "explicit-feedback-bounded",
+  "updatedAt": "2026-07-31",
+  "principles": [
+    "优先识别一手人物表达中的完整判断，而不是只按人物名气计分",
+    "重视AI对人、组织、注意力、工作方式和商业模式的具体改变",
+    "企业AI案例按真实经营深度、可迁移性和公开证据单独判断",
+    "长期思想价值不因缺少即时热度而被系统性压低",
+    "纯技术更新若缺少企业、产业或读者价值连接，不应占据日报前列"
+  ],
+  "positiveExamples": [
+    {
+      "title": "Box CEO Aaron Levie：企业 agent 的扩散速度，可能会被安全和治理现实重新校准",
+      "track": "PUBLIC_VOICE",
+      "reasonTags": [
+        "一手人物表达",
+        "企业AI",
+        "安全治理",
+        "观点完整"
+      ]
+    },
+    {
+      "title": "Peter Yang：AI 使用者开始面对新的生产力暗面",
+      "track": "PUBLIC_VOICE",
+      "reasonTags": [
+        "人类行为变化",
+        "读者共鸣",
+        "具体观察",
+        "观点张力"
+      ]
+    },
+    {
+      "title": "Sam Altman：科学AI应该赋能科学家，而不是替代专家",
+      "track": "PUBLIC_VOICE",
+      "reasonTags": [
+        "AI名人",
+        "专家增强",
+        "完整判断",
+        "长期价值"
+      ]
+    },
+    {
+      "title": "Kevin Kelly：AI 是一个50年的一夜成功",
+      "track": "PUBLIC_VOICE",
+      "reasonTags": [
+        "长期思想",
+        "历史纵深",
+        "概念框架",
+        "Builder价值"
+      ]
+    },
+    {
+      "title": "亚马逊百万机器人军团重塑物流",
+      "track": "ENTERPRISE_AI",
+      "reasonTags": [
+        "企业AI案例",
+        "核心业务",
+        "产业场景",
+        "可迁移性"
+      ]
+    }
+  ],
+  "adaptivePolicy": {
+    "automaticWeightMutation": false,
+    "minimumPositiveAndNegativeExamples": 10,
+    "maximumAdjustmentPerVersion": 5,
+    "requiresHumanApproval": true
+  }
+}

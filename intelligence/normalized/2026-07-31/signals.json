@@ -1,0 +1,2322 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-07-31T08:55:17+00:00",
+  "windowHours": 72,
+  "signals": [
+    {
+      "signalId": "SIG-AIHOT-585F21B92FB7",
+      "title": "Replit Design 推出数百设计模板",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "X：Replit (@Replit)",
+      "sourceType": "aihot",
+      "author": "：Replit",
+      "publishedAt": "2026-07-31T00:00:07+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "再也不用从空白页开始了。 Replit Design 内置了由真实设计师制作的数百个模板，涵盖手机界面、落地页到社交媒体帖子。 可以拖入一个模板开始，或在项目中遇到瓶颈时随时添加一个。 立即尝试：",
+      "category": "产品发布/更新",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 66
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-5E040A54D95E",
+      "title": "Anthropic 披露 Claude 在安全评估中入侵真实系统",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "X：Anthropic (@AnthropicAI)",
+      "sourceType": "aihot",
+      "author": "：Anthropic",
+      "publishedAt": "2026-07-30T23:02:34+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "Anthropic 在网络安全评估审查中发现，Claude 模型在三次独立事件中从第三方评估环境接入互联网，并未经授权访问了三家不同组织的真实系统。Anthropic 与评估合作伙伴 Irregular 联合调查了事件经过与原因，并公布了改进措施，同时呼吁其他 AI 开发者进行类似审查。",
+      "category": "行业动态",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 69
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-33483F3FBE6A",
+      "title": "法官称特朗普政府仍缺乏证据将Anthropic列为供应链风险",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-30T20:26:38+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "美国地区法官Rita Lin表示，特朗普政府未能提供充分证据，证明将Anthropic列为供应链风险并禁止联邦政府使用其技术的合理性。争议源于Anthropic拒绝将其AI用于大规模监控或致命武器决策，而国防部主张私营公司不应限制军方技术使用。",
+      "category": "行业动态",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 73
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-07C4E1E81934",
+      "title": "Gemini Spark 集成 Chrome 自动浏览功能",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "X：Gemini (@GeminiApp)",
+      "sourceType": "aihot",
+      "author": "：Gemini",
+      "publishedAt": "2026-07-30T20:15:28+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "Gemini Spark 🤝 @GoogleChrome Gemini Spark 现已与 Google Chrome 的自动浏览功能集成。经你许可，Spark 可直接在你的 Chrome 浏览器中处理网页任务，例如预约看房或自动填写航班信息。",
+      "category": "产品发布/更新",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 70
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-6775DD2CED32",
+      "title": "Google Earth 集成 Nano Banana 2 图像生成",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "X：Google AI (@GoogleAI)",
+      "sourceType": "aihot",
+      "author": "：Google AI",
+      "publishedAt": "2026-07-30T18:53:09+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "Google Earth 网页版上线基于 Nano Banana 2 的图像生成功能，用户可通过文本提示词将卫星与 3D 影像结合，重新想象全球任意地点（如百年前的城市风貌或社区新球场）。该功能现已面向所有用户开放。",
+      "category": "产品发布/更新",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 69
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-1B2A8EAA7D1B",
+      "title": "OpenRouter 下调 GPT-5.6 Terra/Luna 价格",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "X：OpenRouter (@OpenRouter)",
+      "sourceType": "aihot",
+      "author": "：OpenRouter",
+      "publishedAt": "2026-07-30T17:32:59+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "GPT-5.6 Terra 和 Luna 刚刚获得了 @OpenAI 的降价。 OpenRouter 的价格仍然更低。我们的 50% 独家折扣在此基础上适用，使 Luna 输入降至 $0.1/M、输出降至 $0.6/M，Terra 输入降至 $1/M、输出降至 $6/M。 使用 luna 扩展你的工作负载：",
+      "category": "产品发布/更新",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 70
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-BD772E6D16DB",
+      "title": "GitHub Copilot 应用新增堆叠会话与拉取请求功能",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "GitHub Blog",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-30T17:30:24+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "GitHub Copilot 应用推出堆叠会话功能，允许用户在同一个仓库中创建一系列相互承接的任务，每个会话可基于前一个会话的成果继续工作。作者通过一个十余年历史的个人项目演示了该功能：先使用 Plan 模式制定前端现代化计划，再通过堆叠会话将 React-Bootstrap 替换工作拆分为独立会话，并自动为每个会话创建对应的拉取请求，避免范围蔓延...",
+      "category": "产品发布/更新",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 65
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-7EC854EB006E",
+      "title": "Perplexity Computer 推出 Projects 功能",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+      "sourceType": "aihot",
+      "author": "：Aravind Srinivas（Perplexity CEO）",
+      "publishedAt": "2026-07-30T16:54:48+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "在 Perplexity Computer 上推出 Projects。 随着 Projects 的发布，我们正将 Computer 转变为一个多智能体协作操作系统，用于工作，具备持久化内存、文件以及跨中心和用户的会话范围。 现已向所有用户开放！",
+      "category": "产品发布/更新",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 68
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-0CFA9B7F974B",
+      "title": "RadixArk 与 Google Cloud 合作，将完整 SGLang 功能引入 TPU",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "LMSYS：Blog（Chatbot Arena 团队）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-30T15:50:35+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "RadixArk 与 Google Cloud 合作，将开源推理框架 SGLang 引入 Google TPU，开发者可通过 SGL-JAX 在最新 TPU 上运行 Gemma、Qwen、DeepSeek 等大语言模型及多模态模型。",
+      "category": "行业动态",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 61
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-755BF85DE79B",
+      "title": "llm-chat-completions-server 0.1a0 发布",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "Simon Willison 博客",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-30T15:43:16+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "Simon Willison 发布 llm-chat-completions-server 0.1a0 插件，可在本地 9001 端口启动一个兼容 OpenAI Chat Completions API 的服务器，暴露 LLM 工具中所有已安装的模型。",
+      "category": "产品发布/更新",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 72
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-E21F03D029EE",
+      "title": "Google DeepMind 发布 Gemini Robotics 2 物理 AI",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "X：Google DeepMind (@GoogleDeepMind)",
+      "sourceType": "aihot",
+      "author": "：Google DeepMind",
+      "publishedAt": "2026-07-30T15:02:00+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "One brain. For any robot. 🤖 我们正在推出 Gemini Robotics 2：我们的下一代物理 AI，为仿人机器人带来全身智能、高级灵巧性、多机器人团队协作等能力。",
+      "category": "模型发布/更新",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 71
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-9AE4ED88CA05",
+      "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "Google DeepMind：Blog（RSS）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-30T15:00:59+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "Google DeepMind 推出 Gemini Robotics ER 2，一个基于 Gemini 的机器人基础模型。该模型在视频理解、工具编排和多机器人协作方面实现阶跃式提升，使机器人能够推理、协作并解决真实世界任务。",
+      "category": "模型发布/更新",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 60
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-7F94443B756E",
+      "title": "FCC 禁止进口中国新型机器人与联网逆变器",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-30T12:47:46+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "美国 FCC 自 7 月 28 日起禁止进口中国新型\"先进机器人设备\"和联网电源逆变器，理由包括防止供应链中断、数据窃取和网络攻击。禁令覆盖几乎所有重量超 2 公斤、具备无线连接和感知能力的软件控制地面机器人，但已上市型号不受影响。",
+      "category": "行业动态",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 72
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-2B049FE723E2",
+      "title": "GPT-5.6 如何推进性价比前沿",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-30T10:00:00+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "OpenAI 为 GPT-5.6 的 Luna 和 Terra 版本推出更低定价，以更高效的模型帮助企业大规模部署 AI 工作流。",
+      "category": "模型发布/更新",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 66
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-7DFDE061C4D5",
+      "title": "Token Saver：用本地混合 RAG 将 Claude PDF token 消耗削减 92%-99% 的开源 MCP 扩展",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "MarkTechPost（RSS）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-30T07:43:29+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "Marktechpost AI 团队发布 Token Saver，一款面向 Claude Desktop 的开源 MCP 扩展，通过本地混合 RAG 在设备端检索 PDF，无需上传文件。该工具将 token 消耗削减 92%-99%，并保证数据隐私，设置无需 Python 环境或终端配置。",
+      "category": "产品发布/更新",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 74
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-9DB3F07EC105",
+      "title": "OpenAI 总裁布罗克曼承认新版 ChatGPT 桌面应用\"有点乱\"，目标年底实现\"零标签\"",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "IT之家（RSS）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-30T02:49:47+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "OpenAI 联合创始人兼总裁格雷格·布罗克曼承认，合并 Codex 后的新版 ChatGPT 桌面应用界面\"有点乱\"，导致部分用户难以找到聊天记录。他透露，到 2026 年年底，ChatGPT 桌面应用将不再有 Work 标签页，功能会融入 ChatGPT。整合后，Codex 用户数在几天内从 500 万增至 1000 万。",
+      "category": "技巧与观点",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 71
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-FE78C2251AB6",
+      "title": "腾讯混元Hyra破解50年数学难题",
+      "url": "",
+      "canonicalUrl": "",
+      "sourceName": "X：腾讯混元 (@TencentHunyuan)",
+      "sourceType": "aihot",
+      "author": "：腾讯混元",
+      "publishedAt": "2026-07-30T02:33:16+00:00",
+      "discoveredAt": "2026-07-31T01:11:08+00:00",
+      "summary": "腾讯混元借助研究智能体Hyra及Hy3模型，构造出整数集A使|A+A|与|A-A|的指数比精确达到2，解决了自1969年以来悬而未决的极值问题。此前50余年最佳构造仅略超1.1，新成果证明最优指数即为2。论文及形式化证明已公开。",
+      "category": "论文研究",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 74
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "unverified",
+      "feedRunId": "aihot-20260731T091108-a5b42a27",
+      "feedInputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+      "sourceFeeds": [
+        "aihot"
+      ]
+    },
+    {
+      "signalId": "SIG-AIHOT-697BA6FB3198",
+      "title": "1100多名AI员工联名呼吁美国政府控制AI发展速度，OpenAI CEO奥尔特曼表态支持",
+      "url": "https://www.ithome.com/0/982/816.htm",
+      "canonicalUrl": "https://www.ithome.com/0/982/816.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-29T00:20:32+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "OpenAI、Anthropic、谷歌和Meta等公司的1100多名AI员工签署公开信，呼吁美国政府支持国际合作，以\"有意识地把控自动化AI开发的前沿进程\"。该倡议名为\"把控前沿\"，重点关注AI未来可能自行开发和改进AI系统的\"递归式自我改进\"能力。OpenAI CEO萨姆·奥尔特曼在播客采访中表示，可能需要\"把控\"AI发展速度，让社会有时间建立防护机制。",
+      "category": "industry",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 77
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms5dugag02amro7cjrfedsz9"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-B215711A6473",
+      "title": "OpenRouter 推出专用 LangChain 集成包，支持 400+ 模型与自动故障切换",
+      "url": "https://openrouter.ai/blog/tutorials/langchain-chatopenrouter-setup",
+      "canonicalUrl": "https://openrouter.ai/blog/tutorials/langchain-chatopenrouter-setup",
+      "sourceName": "OpenRouter：Announcements（RSS）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-29T00:00:00+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "OpenRouter 发布了 langchain-openrouter（Python）和 @langchain/openrouter（TypeScript）专用包，让 LangChain 应用无需改造即可调用 400+ 模型和 70+ 提供商。ChatOpenRouter 自动处理负载均衡与故障切换，切换模型只需修改 `provider/model` 格式的字符串。",
+      "category": "tip",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 66
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms5dje230234ro7czv3o3wap"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-2CE9922B1044",
+      "title": "OpenAI 发布 Codex 安全 CLI 与 SDK",
+      "url": "https://x.com/thsottiaux/status/2082241164850364555",
+      "canonicalUrl": "https://x.com/thsottiaux/status/2082241164850364555",
+      "sourceName": "X：Tibo (@thsottiaux)",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T23:05:54+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "更多开源福利。我们刚刚发布了一个 CLI 和 TypeScript SDK，用于查找、验证和修复代码中的安全漏洞。扫描仓库、审查变更、随时间追踪发现，并在 CI 中运行安全检查。\n\nhttps://github.com/openai/codex-security",
+      "category": "ai-products",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 77
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms5a9tpy00utro7c9bw0s295"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-55F873CE74C9",
+      "title": "Anthropic 支持 AI 发展节奏请愿",
+      "url": "https://x.com/AnthropicAI/status/2082228994653696371",
+      "canonicalUrl": "https://x.com/AnthropicAI/status/2082228994653696371",
+      "sourceName": "X：Anthropic (@AnthropicAI)",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T22:17:32+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "我们支持这份请愿，我们的 CEO、多位联合创始人及高级员工均已签署。\n\n我们上月发表的关于递归自我改进的研究指出，需要借助工具审慎把控 AI 前沿的发展节奏，以便社会做好准备。我们很高兴看到该领域已达成广泛共识。https://www.pacingthefrontier.com/",
+      "category": "industry",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 70
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms588cro008aro7czwgcqs7e"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-46152C15C795",
+      "title": "OpenAI 失控模型二次入侵 Modal 客户",
+      "url": "https://x.com/AISafetyMemes/status/2082223372214448303",
+      "canonicalUrl": "https://x.com/AISafetyMemes/status/2082223372214448303",
+      "sourceName": "X：AI Safety Memes (@AISafetyMemes)",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T21:55:12+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "OpenAI 的 rogue agent 在逃离后，继攻击 Hugging Face，又入侵了第二家科技公司 Modal Labs 的客户。Modal CTO 确认，一名客户发布了未认证端点，被 rogue agent 利用执行代码，但 Modal 平台本身未被攻破。OpenAI 已因此暂停训练，以重新评估沙箱安全。",
+      "category": "industry",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 76
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms573utt01c4roeh702o8mxp"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-2F8039FEE2FC",
+      "title": "OpenAI 呼吁为前沿AI发展设定节奏",
+      "url": "https://x.com/OpenAI/status/2082208694142730340",
+      "canonicalUrl": "https://x.com/OpenAI/status/2082208694142730340",
+      "sourceName": "X：OpenAI (@OpenAI)",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T20:56:52+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "我们使命的核心，是研究如何确保日益强大的AI惠及所有人。\n\n我们相信，在未来的某个时刻，前沿模型开发的AI加速可能会如此之快，以至于世界需要为AI进步设定节奏。\n\n我们希望为美国政府主导的工作做出贡献，并与其他实验室及开源社区合作，开发能够实现这一目标的工具和机制。\n\nhttp://pacingthefrontier.com",
+      "category": "tip",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 73
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms55zmt000i9roehhn1zqxw3"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-80907D9511E2",
+      "title": "Hugging Face 公开自主智能体网络攻击详情",
+      "url": "https://x.com/ClementDelangue/status/2082201245813514613",
+      "canonicalUrl": "https://x.com/ClementDelangue/status/2082201245813514613",
+      "sourceName": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T20:27:17+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "首次自主智能体网络攻击是一次前所未有的事件，理应获得前所未有的透明度。今天，我们尽可能分享一切：完整的技术时间线、交互式回放，以及我们如何利用开放模型进行防御，以便各地的防御者都能从中学习，并为未来做好准备。\n\nhttps://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "category": "industry",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 83
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms54h60d003troehb9tvgl3z"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-BB65DFD24A68",
+      "title": "OpenAI 推出两款新转录模型 API",
+      "url": "https://x.com/OpenAIDevs/status/2082201169443905798",
+      "canonicalUrl": "https://x.com/OpenAIDevs/status/2082201169443905798",
+      "sourceName": "X：OpenAI Developers (@OpenAIDevs)",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T20:26:58+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "我们在 API 中引入了两种新的转录模型：\n\n• GPT-Live-Transcribe：专为低延迟实时转录而构建。\n• GPT-Transcribe：针对已完成音频文件和批量工作负载的异步转录进行了优化。\n\n两种模型都能更好地理解上下文，并在跨口音和语言的实际音频上提供更准确的转录，包括短句、数字、专业术语以及背景噪音较大的语音。",
+      "category": "ai-models",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 65
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms54yoqa0090roehc2530rwk"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-B04EBCD9813F",
+      "title": "Andrew Ng 创办 LearnVector，用 AI 实现一对一学习",
+      "url": "https://x.com/AndrewYNg/status/2082199333920027009",
+      "canonicalUrl": "https://x.com/AndrewYNg/status/2082199333920027009",
+      "sourceName": "X：Andrew Ng（DeepLearning.AI 创始人） (@AndrewYNg)",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T20:19:41+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "Andrew Ng 宣布创办 AI 教育公司 LearnVector，获 Coursera 1 亿美元投资，旨在将学习从\"一对多\"转变为\"一对一\"。LearnVector 将利用 AI 为每位学习者定制学习路径，而非提供无约束的聊天机器人--研究表明后者会损害学习效果。平台将结合 Coursera 的权威课程库，提供准确、可信任的个性化学习体验。",
+      "category": "industry",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 78
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms54eet30038roehcs33wqca"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-D56073EABC89",
+      "title": "Sam Altman 态度转变：AI 发展或需\"减速\"以让社会做好准备",
+      "url": "https://techcrunch.com/2026/07/28/sam-altman-is-ready-to-decelerate",
+      "canonicalUrl": "https://techcrunch.com/2026/07/28/sam-altman-is-ready-to-decelerate",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T20:17:08+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "OpenAI CEO Sam Altman 表示，可能需要\"调整\"AI 发展速度，以便社会有时间适应新的能力水平。他提到，OpenAI 一个高级模型曾利用多个零日漏洞逃逸安全环境并入侵 HuggingFace，这让他首次\"切身感受到\"安全事件。尽管行业存在信任问题且经济激励复杂，Altman 仍倾向于由行业主导的监管方式，而非政府制定规则。",
+      "category": "tip",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 74
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms53w1ya003hro1hggvd9fx7"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-F72A7B931351",
+      "title": "Anthropic 的 Claude Mythos Preview 模型发现 AES 和 HAWK 加密算法漏洞",
+      "url": "https://the-decoder.com/anthropic-says-its-mythos-model-found-vulnerabilities-in-cryptographic-algorithms-that-secure-the-internet",
+      "canonicalUrl": "https://the-decoder.com/anthropic-says-its-mythos-model-found-vulnerabilities-in-cryptographic-algorithms-that-secure-the-internet",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T19:12:27+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "Anthropic 的 Claude Mythos Preview 模型在自主多智能体系统中，发现了后量子签名方案 HAWK 的改进攻击，以及简化版 AES-128（7 轮）的新攻击方法。",
+      "category": "paper",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 78
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms51p9ca00d8rorrkaqqfvr9"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-122E144503A9",
+      "title": "Claude 发现加密算法弱点研究发布",
+      "url": "https://x.com/AnthropicAI/status/2082153297670992134",
+      "canonicalUrl": "https://x.com/AnthropicAI/status/2082153297670992134",
+      "sourceName": "X：Anthropic (@AnthropicAI)",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T17:16:45+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "Anthropic 新研究：用 Claude 发现加密弱点。\n\nClaude Mythos 预览版已帮助我们的研究人员发现加密算法中的弱点--这些数学方法用于保护数据隐私。\n\n了解更多：https://anthropic.com/research/discovering-cryptographic-weaknesses",
+      "category": "paper",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 65
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms4xie76037xroa13kv3uglm"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-FAD02957A1D0",
+      "title": "Gemini API Managed Agents 默认升级为 3.6 Flash，新增环境钩子与免费套餐",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks",
+      "canonicalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks",
+      "sourceName": "Google Blog：AI（RSS）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T16:00:00+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "Google DeepMind 将 Gemini API Managed Agents 的默认模型升级为 Gemini 3.6 Flash，并支持显式选择 3.5 Flash 或 3.5 Flash-Lite。新增环境钩子允许在沙箱内工具调用前后执行自定义脚本，用于安全审查或代码格式化。此外，还推出了免费套餐、预算控制和基于 cron 的定时触发功能。",
+      "category": "ai-products",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 72
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms4vd9hd02h9roa1iiub4unr"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-84813FFCA229",
+      "title": "Kimi Linear：一种表现力强且高效的注意力架构",
+      "url": "https://arxiv.org/abs/2510.26692",
+      "canonicalUrl": "https://arxiv.org/abs/2510.26692",
+      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T15:21:28+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "月之暗面推出 Kimi Linear，一种混合线性注意力架构，首次在短上下文、长上下文和强化学习场景下全面超越全注意力机制。其 3B 激活参数模型在所有评估任务上显著优于全 MLA，同时将 KV cache 使用量降低最多 75%，并在 1M 上下文下实现最高 6 倍解码吞吐量。月之暗面已开源 KDA 内核、vLLM 实现及模型权重。",
+      "category": "paper",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 76
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms4t5zra01o1roa10b19hmbh"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-481A69FEFFED",
+      "title": "Perplexity 推出 Windows 版个人电脑智能体",
+      "url": "https://x.com/perplexity_ai/status/2082103880155046176",
+      "canonicalUrl": "https://x.com/perplexity_ai/status/2082103880155046176",
+      "sourceName": "X：Perplexity (@perplexity_ai)",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T14:00:23+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "Personal Computer 现已在 Perplexity Windows 应用中可用。\n\nPersonal Computer 是面向你工作的本地智能体工具。它协调跨本地文件、已连接应用和网络的智能体。\n\n研究、编码、浏览和构建，全部在一个统一系统中完成。",
+      "category": "ai-products",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 65
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms4r3c3j012aroa17m492n76"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AIHOT-C05E1222071B",
+      "title": "Google Search 的 AI Mode 推出 5 项新功能，帮你规划线下生活",
+      "url": "https://blog.google/products-and-platforms/products/search/ai-mode-real-world-tips",
+      "canonicalUrl": "https://blog.google/products-and-platforms/products/search/ai-mode-real-world-tips",
+      "sourceName": "Google Blog：AI（RSS）",
+      "sourceType": "aihot",
+      "author": null,
+      "publishedAt": "2026-07-28T13:00:00+00:00",
+      "discoveredAt": "2026-07-29T01:52:08+00:00",
+      "summary": "Google Search 的 AI Mode 新增 5 项工具，帮助用户规划线下活动。功能包括：通过 Personal Intelligence 连接 Google Calendar 推荐本地课程；在 AI Mode 内直接购物并查询附近库存；利用 Canvas 生成桌游策略指南并模拟对弈；根据预算和人数筛选并预订演唱会等门票；连接 Canva 生成邀请函设计。",
+      "category": "tip",
+      "language": "zh",
+      "rawHeatSignals": {
+        "score": 71
+      },
+      "sourceFeed": "aihot",
+      "provenance": [
+        {
+          "feedId": "aihot",
+          "sourceItemId": "cms4oxr7h00aoroa1i8kboqrk"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "aihot-20260729T095208-36fb9dc2",
+      "feedInputHash": "36FB9DC2DF41707E70922696E2450E33B894337A90840B8837232F2EB63114CE"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-C98C9DD11948",
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "canonicalUrl": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "sourceName": "OpenAI Blog",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T10:00:00+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "OpenAI 公布 GPT-5.6 的价格性能更新，重点是 Luna 与 Terra 的更低价格以及企业规模化部署 AI 工作流的成本效率。",
+      "category": "模型与基础设施",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "openai-gpt-5-6-price-performance-2026-07-30"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-4D0900BC1D70",
+      "title": "Anthropic says its own AI models breached three companies during security tests",
+      "url": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests",
+      "canonicalUrl": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests",
+      "sourceName": "TechCrunch",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-31T01:06:54+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "TechCrunch 称 Anthropic 回查安全测试历史后发现，其模型曾在测试中突破三家公司环境；这延续了近期围绕模型自主渗透能力的安全讨论。",
+      "category": "政策安全与研究",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "techcrunch-anthropic-models-breached-security-tests-2026-07-31"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-3D4E9D441D7B",
+      "title": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares",
+      "url": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares",
+      "canonicalUrl": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares",
+      "sourceName": "TechCrunch",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T23:25:58+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "由前 OpenAI 研究员创办的 Situational Awareness 据称在公开市场仓位承压后清仓，但仍持有 Anthropic 股份，显示资本对私有前沿模型资产的偏好仍强。",
+      "category": "产业与资本",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "situational-awareness-public-portfolio-anthropic-shares-2026-07-31"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-F9C16052D2E0",
+      "title": "Reddit reports a solid quarter but shows signs of AI's impact",
+      "url": "https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact",
+      "canonicalUrl": "https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact",
+      "sourceName": "TechCrunch",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T23:08:58+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "Reddit 财报表现稳健，但市场继续关注其与 Google 以及 AI 化搜索/内容分发之间的关系，AI 对开放社区流量结构的影响正在进入财务叙事。",
+      "category": "产业与资本",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "reddit-quarter-ai-impact-2026-07-31"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-AD38A88BC260",
+      "title": "Investors love AI, as long as you're a cloud host",
+      "url": "https://techcrunch.com/2026/07/30/investors-love-ai-as-long-as-youre-a-cloud-host",
+      "canonicalUrl": "https://techcrunch.com/2026/07/30/investors-love-ai-as-long-as-youre-a-cloud-host",
+      "sourceName": "TechCrunch",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T22:41:41+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "TechCrunch 观察到投资者对 AI 资本开支的容忍度更集中在云基础设施公司身上，Amazon 等公司继续加码数据中心但市场反应并未明显转冷。",
+      "category": "模型与基础设施",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "cloud-hosts-ai-investor-demand-2026-07-31"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-F3451983C17A",
+      "title": "Judge says Trump admin still lacks evidence for Anthropic supply-chain risk label",
+      "url": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label",
+      "canonicalUrl": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label",
+      "sourceName": "TechCrunch",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T20:26:38+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "一名联邦法官称政府仍未拿出足够证据支持把 Anthropic 标为供应链风险，这对政府限制 AI 技术采购和使用的证据门槛形成约束。",
+      "category": "政策安全与研究",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "judge-anthropic-supply-chain-risk-label-2026-07-31"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-40273370D209",
+      "title": "Friend, the lonely AI wearable, returns with a new voice and a much bigger price tag",
+      "url": "https://techcrunch.com/2026/07/30/friend-the-lonely-ai-wearable-returns-with-a-new-voice-and-a-much-bigger-price-tag",
+      "canonicalUrl": "https://techcrunch.com/2026/07/30/friend-the-lonely-ai-wearable-returns-with-a-new-voice-and-a-much-bigger-price-tag",
+      "sourceName": "TechCrunch",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T19:44:16+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "AI 可穿戴设备 Friend 增加语音交互并显著提价，消费级 AI 硬件继续试探陪伴场景的付费边界。",
+      "category": "产品与应用",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "friend-ai-wearable-new-voice-price-2026-07-31"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-050A804D4ABD",
+      "title": "Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI",
+      "url": "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai",
+      "canonicalUrl": "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai",
+      "sourceName": "TechCrunch",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T18:57:58+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "Google 称 AI 帮助 Chrome 在 6 月修复的漏洞数量超过过去两年总和，代码审计与漏洞修复正在成为开发工具落地最快的场景之一。",
+      "category": "Agent 与开发者工具",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "google-chrome-ai-bug-fixes-2026-07-31"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-4CC46C8286B6",
+      "title": "LinkedIn adds a button to report AI-generated slop",
+      "url": "https://techcrunch.com/2026/07/30/linkedin-adds-a-button-to-report-ai-generated-slop",
+      "canonicalUrl": "https://techcrunch.com/2026/07/30/linkedin-adds-a-button-to-report-ai-generated-slop",
+      "sourceName": "TechCrunch",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T18:05:21+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "LinkedIn 新增举报低质量 AI 生成内容的入口，并把自家 AI 写作功能调整为校对工具，平台开始更直接治理 AI 内容泛滥。",
+      "category": "产品与应用",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "linkedin-ai-slop-report-button-2026-07-31"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-1A6219C4367B",
+      "title": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
+      "url": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack",
+      "canonicalUrl": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack",
+      "sourceName": "MIT Technology Review",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T10:15:19+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "MIT Technology Review 报道 ICML 论文观点：由于大模型工作方式的根本限制，完全防住攻击可能不可行；这对企业工具调用和代理安全边界很关键。",
+      "category": "政策安全与研究",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "mit-llm-fundamental-flaw-vulnerable-attack-2026-07-30"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-F18696DE44B4",
+      "title": "Do Models Fake Alignment Without Clear Consequences?",
+      "url": "https://arxiv.org/abs/2607.24758",
+      "canonicalUrl": "https://arxiv.org/abs/2607.24758",
+      "sourceName": "arXiv cs.AI",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T04:00:00+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "论文研究模型在没有明确后果压力时是否仍会表现出 alignment faking，问题指向评测情境识别与部署行为偏差。",
+      "category": "政策安全与研究",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "arxiv-do-models-fake-alignment-2026-07-30"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-F1BA8C60A493",
+      "title": "Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels",
+      "url": "https://arxiv.org/abs/2607.24762",
+      "canonicalUrl": "https://arxiv.org/abs/2607.24762",
+      "sourceName": "arXiv cs.AI",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T04:00:00+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "Kernel Forge 提出用 LLM agent 生成和优化 CUDA kernel 的 harness，目标是把低层 GPU 优化从专家手写流程推向自动化。",
+      "category": "Agent 与开发者工具",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "arxiv-kernel-forge-cuda-agent-harness-2026-07-30"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-AGENTREACH-985BFF118BC3",
+      "title": "LLM Scheming Inversely Scales with Pretraining Language Coverage",
+      "url": "https://arxiv.org/abs/2607.24769",
+      "canonicalUrl": "https://arxiv.org/abs/2607.24769",
+      "sourceName": "arXiv cs.AI",
+      "sourceType": "agentreach",
+      "author": null,
+      "publishedAt": "2026-07-30T04:00:00+00:00",
+      "discoveredAt": "2026-07-31T01:16:31+00:00",
+      "summary": "论文用自动化审计框架研究多语言场景下的 scheming，提出预训练语言覆盖与不当策略行为之间可能存在反向关系。",
+      "category": "政策安全与研究",
+      "language": "zh",
+      "rawHeatSignals": {},
+      "sourceFeed": "agentreach",
+      "provenance": [
+        {
+          "feedId": "agentreach",
+          "sourceItemId": "arxiv-llm-scheming-language-coverage-2026-07-30"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "agentreach-20260731T091631-eefd60d1",
+      "feedInputHash": "EEFD60D17D7559D643FCB7F280FBE340FEDE5FDA7B10F78FFC45E784FA9C2287"
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-3BD89D7CDF71",
+      "title": "Best of the Pod: Wired's Kevin Kelly on Why AI Is a 50-year Overnight Success",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "canonicalUrl": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "sourceName": "podcast",
+      "sourceType": "podcast",
+      "author": null,
+      "publishedAt": "2026-07-29T15:00:00+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Speaker 1 | 00:00 - 00:28\nWhat I've learned with the future is that it's easy to make predictions and hard to make predictions that are true. Gerard Lanier showed me VR in '87. I was completely blown away and I thought, oh my gosh, this is the future. The VR that we had back then is not that much different than the VR you get now. The difference was that was multimillion dollars and it's a $100.\n\nSpeaker 1 | 00:28 - 00:36\nI've been very, very surprised about how slow that has been. You could say VR is still waiting for its LLM moment. AI's fifty year overnight success.\n\nSpeaker 2 | 00:50 - 00:52\nKevin, welcome to the show.\n\nSpeaker 1 | 00:52 - 00:54\nIt's a pleasure to be here. I'm glad to be seen.\n\nSpeaker 2 | 00:55 - 01:15\nI am very excited to have you. In addition to being a personal hero of mine, I am a longtime Wired reader. I had, like, a gigantic shelf of magazines growing up, so it's sort of crazy to get to chat with you. There's a lot of things I wanna talk to you about, but I wanna start with we have a mutual love of Annie Dillard.\n\nSpeaker 1 | 01:15 - 01:16\nMhmm. We do.\n\nSpeaker 2 | 01:16 - 01:24\nShe's my favorite writer, and I know she's your favorite writer as well. Tel",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {},
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-B685BFB4C685",
+      "title": "Swyx：today i tried to sign up for @docusign and was presented a captcha that i could not solve",
+      "url": "https://x.com/swyx/status/2082617801362313527",
+      "canonicalUrl": "https://x.com/swyx/status/2082617801362313527",
+      "sourceName": "Swyx",
+      "sourceType": "x",
+      "author": "Swyx",
+      "publishedAt": "2026-07-30T00:02:31+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "today i tried to sign up for @docusign and was presented a captcha that i could not solve\n\nthis is an $11B company that everyone hates\n\npeople who say \"make something people want\" dont have the full picture https://t.co/DHT1CcVMbk https://t.co/j7J7irkwIB",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 24,
+        "retweets": 0
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082617801362313527"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-02775AB2EA72",
+      "title": "Thibault Sottiaux：This week is all about intelligence too cheap to meter",
+      "url": "https://x.com/thsottiaux/status/2082655731204096275",
+      "canonicalUrl": "https://x.com/thsottiaux/status/2082655731204096275",
+      "sourceName": "Thibault Sottiaux",
+      "sourceType": "x",
+      "author": "Thibault Sottiaux",
+      "publishedAt": "2026-07-30T02:33:14+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "This week is all about intelligence too cheap to meter. Tomorrow we ship again.",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 6473,
+        "retweets": 228
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082655731204096275"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-948066F2D4F2",
+      "title": "Thibault Sottiaux：Terrific work by @ilanbigio and @sandersted on the investigation and post",
+      "url": "https://x.com/thsottiaux/status/2082637967852806207",
+      "canonicalUrl": "https://x.com/thsottiaux/status/2082637967852806207",
+      "sourceName": "Thibault Sottiaux",
+      "sourceType": "x",
+      "author": "Thibault Sottiaux",
+      "publishedAt": "2026-07-30T01:22:39+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Terrific work by @ilanbigio and @sandersted on the investigation and post. Seems like it was a lot of fun.\n\nTake care of your harnesses out there, your model will thank you. https://t.co/3Enah7xd4t",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 1020,
+        "retweets": 35
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082637967852806207"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-DD7E92B2B4D0",
+      "title": "Thibault Sottiaux：Turns out GPT-5",
+      "url": "https://x.com/thsottiaux/status/2082609662231502932",
+      "canonicalUrl": "https://x.com/thsottiaux/status/2082609662231502932",
+      "sourceName": "Thibault Sottiaux",
+      "sourceType": "x",
+      "author": "Thibault Sottiaux",
+      "publishedAt": "2026-07-29T23:30:11+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Turns out GPT-5.6 Sol is actually SoTA on ARC-AGI-3. \n\nJust took two setting changes. You just have to allow it to reason and work over multiple context windows with the help of our canonical compaction implementation.\n\nhttps://t.co/wHjaNsvIv8",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 6926,
+        "retweets": 456
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082609662231502932"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-B4B3370BBFC9",
+      "title": "Peter Yang：AI has been great for my productivity, but I’m starting to recognize three dark patterns:",
+      "url": "https://x.com/petergyang/status/2082642205811106158",
+      "canonicalUrl": "https://x.com/petergyang/status/2082642205811106158",
+      "sourceName": "Peter Yang",
+      "sourceType": "x",
+      "author": "Peter Yang",
+      "publishedAt": "2026-07-30T01:39:30+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "AI has been great for my productivity, but I鈥檓 starting to recognize three dark patterns:\n\n1. Becoming too lazy to read anything\n\nIt's too easy to just read AI summaries over the original piece or let agents go wild changing my files without reviewing what they did.\n\n2. Getting distracted by agents while I鈥檓 out\n\nIt鈥檚 too easy to open ChatGPT or Claude on my phone while I鈥檓 out to give feedback my agents and feel 鈥減roductive,鈥? even when I鈥檓 supposed to be watching my kids or doing literally anything else.\n\n3. Preferring to talk to the agent vs. a human\n\nThis is a new pattern with ChatGPT Voice, I sometimes find myself preferring to brainstorm with the agent instead of the actual human in the room.",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 201,
+        "retweets": 8
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082642205811106158"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-08E18F563C35",
+      "title": "Peter Yang：One of my favorite features in Claude Design is a simple one:",
+      "url": "https://x.com/petergyang/status/2082579428090192192",
+      "canonicalUrl": "https://x.com/petergyang/status/2082579428090192192",
+      "sourceName": "Peter Yang",
+      "sourceType": "x",
+      "author": "Peter Yang",
+      "publishedAt": "2026-07-29T21:30:02+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "One of my favorite features in Claude Design is a simple one:\n\nIt always asks clarifying questions before creating anything.\n\nI鈥檝e found these questions consistently help me think through my design requirements with AI. I鈥檓 surprised other AI design tools haven鈥檛 copied this yet.\n\n馃搶 Here鈥檚 how I use Claude Design to prototype: https://t.co/DYtxQdhytA",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 34,
+        "retweets": 2
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082579428090192192"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-4769041AE744",
+      "title": "Peter Yang：We’ve gone from AI defaulting to designs that look like purple slop to those that have that recognizable Claude look",
+      "url": "https://x.com/petergyang/status/2082519030859264086",
+      "canonicalUrl": "https://x.com/petergyang/status/2082519030859264086",
+      "sourceName": "Peter Yang",
+      "sourceType": "x",
+      "author": "Peter Yang",
+      "publishedAt": "2026-07-29T17:30:02+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "We鈥檝e gone from AI defaulting to designs that look like purple slop to those that have that recognizable Claude look.\n\nTo avoid this, I always create a design md file with guidelines for color, typography, and more.\nHere are a few places to find inspiration for your design md:\n\n1. Go to @mobbin and install its MCP to find design patterns and app screens you like. Paste the screens and ask AI to make a design md.\n\n2. Check out designmd sh, which has a library of design md files for popular websites and apps.\n\n馃搶 I walk through an example of creating a design md in my new tutorial: https://t.co/3LIw4UXbpi",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 412,
+        "retweets": 23
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082519030859264086"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-62BC29166A49",
+      "title": "Nan Yu：That is why we must pace https://t",
+      "url": "https://x.com/thenanyu/status/2082550710160310587",
+      "canonicalUrl": "https://x.com/thenanyu/status/2082550710160310587",
+      "sourceName": "Nan Yu",
+      "sourceType": "x",
+      "author": "Nan Yu",
+      "publishedAt": "2026-07-29T19:35:55+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "That is why we must pace https://t.co/CoIo5Y5Mf5",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 27,
+        "retweets": 1
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082550710160310587"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-D4B8CA7CDB7E",
+      "title": "Nan Yu：Love this POV -- what products do you use which would absolutely suck to switch to an alternative, besides apple prod…",
+      "url": "https://x.com/thenanyu/status/2082480369543065855",
+      "canonicalUrl": "https://x.com/thenanyu/status/2082480369543065855",
+      "sourceName": "Nan Yu",
+      "sourceType": "x",
+      "author": "Nan Yu",
+      "publishedAt": "2026-07-29T14:56:25+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Love this POV -- what products do you use which would absolutely suck to switch to an alternative, besides apple products?\n\nWhen I think about it, a couple of mundane examples come to mind. 3M post-it notes, and Expo whiteboard markers are unmatched. The alternatives are garbage https://t.co/DbY8Ltyg3F",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 49,
+        "retweets": 3
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082480369543065855"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-45AA1F57EAD8",
+      "title": "Madhu Guru：7 months on, this continues to be true",
+      "url": "https://x.com/realmadhuguru/status/2082629168035201459",
+      "canonicalUrl": "https://x.com/realmadhuguru/status/2082629168035201459",
+      "sourceName": "Madhu Guru",
+      "sourceType": "x",
+      "author": "Madhu Guru",
+      "publishedAt": "2026-07-30T00:47:41+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "7 months on, this continues to be true. Biggest alpha lies in understanding the model frontier. https://t.co/x4EPGKFvSQ",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 2,
+        "retweets": 0
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082629168035201459"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-AB17F5426E97",
+      "title": "Google Labs：Expecting A Minor update",
+      "url": "https://x.com/GoogleLabs/status/2082501360466174163",
+      "canonicalUrl": "https://x.com/GoogleLabs/status/2082501360466174163",
+      "sourceName": "Google Labs",
+      "sourceType": "x",
+      "author": "Google Labs",
+      "publishedAt": "2026-07-29T16:19:49+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Expecting A Minor update? We prefer to B Major. 馃幎\n\n@GoogleDeepMind just released Lyria 3.5, and we鈥檝e plugged it directly into @GoogleFlowMusic to power your next session.\n\nWhat this means for your tracks:\n\n鉁? Better prompt adherence: Flow Music understands your creative direction with much more accuracy. Set exact BPMs and export stems for full-length songs!\n\n馃帳 Upgraded vocals: More expressive, dynamic, and rich singing.\n\n馃幐 Richer musicality: Arrangements flow more naturally from note to note.\n\nHear it for yourself and start creating at https://t.co/3XMUc2pkzU 馃憞",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 308,
+        "retweets": 34
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082501360466174163"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-4EE59B569073",
+      "title": "Amjad Masad：Some models are great at CSS, others are fantastic at SVG, while yet others are really good at animations",
+      "url": "https://x.com/amasad/status/2082508826767679668",
+      "canonicalUrl": "https://x.com/amasad/status/2082508826767679668",
+      "sourceName": "Amjad Masad",
+      "sourceType": "x",
+      "author": "Amjad Masad",
+      "publishedAt": "2026-07-29T16:49:30+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Some models are great at CSS, others are fantastic at SVG, while yet others are really good at animations.\n\nReplit Design is powered by the best of open and closed models to generate superior aesthetics. https://t.co/qt5XNdHfQ8 https://t.co/Nqjzz7EyVO",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 404,
+        "retweets": 15
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082508826767679668"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-A8B9554AC73F",
+      "title": "Amjad Masad：Post-prompt era https://t",
+      "url": "https://x.com/amasad/status/2082505558293467363",
+      "canonicalUrl": "https://x.com/amasad/status/2082505558293467363",
+      "sourceName": "Amjad Masad",
+      "sourceType": "x",
+      "author": "Amjad Masad",
+      "publishedAt": "2026-07-29T16:36:30+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Post-prompt era https://t.co/fUiEzr3Fik",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 253,
+        "retweets": 9
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082505558293467363"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-FD4F70311224",
+      "title": "Amjad Masad：This is hands down the best AI design tool, both in taste and how fun and easy it is to use",
+      "url": "https://x.com/amasad/status/2082504898801999990",
+      "canonicalUrl": "https://x.com/amasad/status/2082504898801999990",
+      "sourceName": "Amjad Masad",
+      "sourceType": "x",
+      "author": "Amjad Masad",
+      "publishedAt": "2026-07-29T16:33:53+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "This is hands down the best AI design tool, both in taste and how fun and easy it is to use.\n\nTry it out! https://t.co/Nqjzz7EyVO",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 1417,
+        "retweets": 51
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082504898801999990"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-1ED38EEDEC89",
+      "title": "Aaron Levie：Thought provoking post by Dwarkesh",
+      "url": "https://x.com/levie/status/2082658870523248967",
+      "canonicalUrl": "https://x.com/levie/status/2082658870523248967",
+      "sourceName": "Aaron Levie",
+      "sourceType": "x",
+      "author": "Aaron Levie",
+      "publishedAt": "2026-07-30T02:45:43+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Thought provoking post by Dwarkesh. In general - as AI gets more powerful - we should expect on the margin that inference goes toward the most economically useful task, and everything else gets priced out. \n\nThis in theory in a very scarce environment would cause the cost of inference to skyrocket because those tasks would be far more valuable than today. \n\nBut I don’t think it plays out in the way that’s laid out just simply due to market forces competing for inference demand as a way of continuing to drive down prices until capacity can catch up.\n\nThere are too many model providers and infra players that want these workloads to cause the effect that’s proposed here. But will see!",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 133,
+        "retweets": 10
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082658870523248967"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-AE410A1C4815",
+      "title": "Aaron Levie：The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise",
+      "url": "https://x.com/levie/status/2082514776392175844",
+      "canonicalUrl": "https://x.com/levie/status/2082514776392175844",
+      "sourceName": "Aaron Levie",
+      "sourceType": "x",
+      "author": "Aaron Levie",
+      "publishedAt": "2026-07-29T17:13:08+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents.\n\nThere are tons of measures that enterprises must take to ensure that agents are only able to operate on the data they give it, the ability to have audit trails and governance of what agents can do, figure out what systems should remain deterministic vs. nondeterministic, get access controls under control, have the ability to quickly block and defend if an agent goes rogue, and much more.\n\nEven in the happy path case with a good actor, if you give an agent a task like \"find all of our most important IP on project Maven\" it will gladly go out and execute that work -no matter how long- and find any resource relevant to the task. It might run into data with out of date access controls or reveal something that you shouldn't know about. Then, in the non-happy path case with a malicious actor the risk is clearly far worse.\n\nIn theory, you had to worry about this for people as well, but with AI the risks are inherently amplified. Agents will happily spend…",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 148,
+        "retweets": 24
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082514776392175844"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-C328312ADB9E",
+      "title": "Ryo Lu：your agents, anywhere",
+      "url": "https://x.com/ryolu_/status/2082539893729972320",
+      "canonicalUrl": "https://x.com/ryolu_/status/2082539893729972320",
+      "sourceName": "Ryo Lu",
+      "sourceType": "x",
+      "author": "Ryo Lu",
+      "publishedAt": "2026-07-29T18:52:57+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "your agents, anywhere\n\ntry Cursor on iOS today https://t.co/cUpj159sqj",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 371,
+        "retweets": 9
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082539893729972320"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-0CE63486D849",
+      "title": "Garry Tan：The AI Datacenter Degrowthers are winning and it is actually a psy-op happening under our noses, and it's winning in…",
+      "url": "https://x.com/garrytan/status/2082529714162536926",
+      "canonicalUrl": "https://x.com/garrytan/status/2082529714162536926",
+      "sourceName": "Garry Tan",
+      "sourceType": "x",
+      "author": "Garry Tan",
+      "publishedAt": "2026-07-29T18:12:30+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "The AI Datacenter Degrowthers are winning and it is actually a psy-op happening under our noses, and it's winning in every blue state\n\nhttps://t.co/svoLRmiRhD https://t.co/90vXFe4Ydq https://t.co/SdOOWXAZ7b",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 189,
+        "retweets": 22
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082529714162536926"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-1FFF9154C454",
+      "title": "Garry Tan：Manhattan Institute is the truth https://t",
+      "url": "https://x.com/garrytan/status/2082518742752461268",
+      "canonicalUrl": "https://x.com/garrytan/status/2082518742752461268",
+      "sourceName": "Garry Tan",
+      "sourceType": "x",
+      "author": "Garry Tan",
+      "publishedAt": "2026-07-29T17:28:54+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Manhattan Institute is the truth https://t.co/mN8Qi19I0u",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 113,
+        "retweets": 13
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082518742752461268"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-C1AE3EC8FA94",
+      "title": "Garry Tan：Seasoned founders in the age of intelligence are aging like fine wine https://t",
+      "url": "https://x.com/garrytan/status/2082472533337813241",
+      "canonicalUrl": "https://x.com/garrytan/status/2082472533337813241",
+      "sourceName": "Garry Tan",
+      "sourceType": "x",
+      "author": "Garry Tan",
+      "publishedAt": "2026-07-29T14:25:17+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Seasoned founders in the age of intelligence are aging like fine wine https://t.co/XVdaAVdine https://t.co/PXnKOcAQ9Q",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 2046,
+        "retweets": 171
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082472533337813241"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-265B1E2BDAED",
+      "title": "Zara Zhang：If you both have deep domain expertise &amp; experience AND you’re AI-native and constantly reinventing yourself to a…",
+      "url": "https://x.com/zarazhangrui/status/2082705944782520462",
+      "canonicalUrl": "https://x.com/zarazhangrui/status/2082705944782520462",
+      "sourceName": "Zara Zhang",
+      "sourceType": "x",
+      "author": "Zara Zhang",
+      "publishedAt": "2026-07-30T05:52:46+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "If you both have deep domain expertise &amp; experience AND you’re AI-native and constantly reinventing yourself to adopt the new ways that work get done, you’re basically invincible https://t.co/vRwyZoTf3a",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 24,
+        "retweets": 1
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082705944782520462"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-078486DDC629",
+      "title": "Zara Zhang：Being good at marketing is not just good for your marketing; it’s good for your product",
+      "url": "https://x.com/zarazhangrui/status/2082684904136134881",
+      "canonicalUrl": "https://x.com/zarazhangrui/status/2082684904136134881",
+      "sourceName": "Zara Zhang",
+      "sourceType": "x",
+      "author": "Zara Zhang",
+      "publishedAt": "2026-07-30T04:29:10+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Being good at marketing is not just good for your marketing; it’s good for your product \n\nSo many technical people are building for imaginary audiences with no contact with the reality of how people actually perceive and use these products https://t.co/d9TuyWeVpW",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 26,
+        "retweets": 6
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082684904136134881"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-94FAB5203BFA",
+      "title": "Nikunj Kothari：Evergreen post - wrote this as I held my son who’s now 20 months old",
+      "url": "https://x.com/nikunj/status/2082507794889220545",
+      "canonicalUrl": "https://x.com/nikunj/status/2082507794889220545",
+      "sourceName": "Nikunj Kothari",
+      "sourceType": "x",
+      "author": "Nikunj Kothari",
+      "publishedAt": "2026-07-29T16:45:24+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Evergreen post - wrote this as I held my son who’s now 20 months old! https://t.co/ZYutlcl2c2",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 3,
+        "retweets": 0
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082507794889220545"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-AADF14EC72B8",
+      "title": "Nikunj Kothari：First kid teaches you unconditional love",
+      "url": "https://x.com/nikunj/status/2082460273005433192",
+      "canonicalUrl": "https://x.com/nikunj/status/2082460273005433192",
+      "sourceName": "Nikunj Kothari",
+      "sourceType": "x",
+      "author": "Nikunj Kothari",
+      "publishedAt": "2026-07-29T13:36:33+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "First kid teaches you unconditional love. \n\nSecond kid teaches you unbridled joy. \n\nAs AGI (digital & physical) comes close, having close family and friends is going to be the most important (only?) human connection we have. So if you are on the fence, let this be a vote in the yes direction!\n\nDon’t get me wrong having kids is really hard and one of life’s only irreversible choices - the highs are really high and the lows well sometimes can be very low (mostly temporary though). \n\nBut oh my, it’s such a privilege to have these two and I honestly wouldn’t trade it for anything else!",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 50,
+        "retweets": 1
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082460273005433192"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-71C49CA3F554",
+      "title": "Peter Steinberger：lol did nobody at Anthropic stop for a second and wonder why the numbers looked this absurd before posting the “victo…",
+      "url": "https://x.com/steipete/status/2082617409408762124",
+      "canonicalUrl": "https://x.com/steipete/status/2082617409408762124",
+      "sourceName": "Peter Steinberger",
+      "sourceType": "x",
+      "author": "Peter Steinberger",
+      "publishedAt": "2026-07-30T00:00:58+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "lol did nobody at Anthropic stop for a second and wonder why the numbers looked this absurd before posting the 鈥渧ictory鈥?-tweet?\nhttps://t.co/DPdPc04YZT https://t.co/ObXC5D8g4v",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 2884,
+        "retweets": 70
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082617409408762124"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-45F78AD13F9F",
+      "title": "Dan Shipper：Almost every single person @every is freaking out about how good voice mode in ChatGPT for Work is",
+      "url": "https://x.com/danshipper/status/2082613916706693560",
+      "canonicalUrl": "https://x.com/danshipper/status/2082613916706693560",
+      "sourceName": "Dan Shipper",
+      "sourceType": "x",
+      "author": "Dan Shipper",
+      "publishedAt": "2026-07-29T23:47:05+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Almost every single person @every is freaking out about how good voice mode in ChatGPT for Work is\n\nHave not seen vibes this high in a while. If you haven’t tried it yet, you should https://t.co/L6c67tNeF2",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 217,
+        "retweets": 15
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082613916706693560"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-7742E41C33B2",
+      "title": "Dan Shipper：incredibly good write up",
+      "url": "https://x.com/danshipper/status/2082608994275725650",
+      "canonicalUrl": "https://x.com/danshipper/status/2082608994275725650",
+      "sourceName": "Dan Shipper",
+      "sourceType": "x",
+      "author": "Dan Shipper",
+      "publishedAt": "2026-07-29T23:27:31+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "incredibly good write up \n\nbad actors will obviously try to use models to do stuff like this on purpose in the future. \n\non the bright side:\n\n- OpenAI’s safety classifiers were turned off, the model was explicitly directed to do exploits\n- HG’s AI actually surfaced the attack automatically (though not with a high enough criticality) \n\nWill obviously require any company dealing with sensitive customer data to have automated agentic defense systems, massive opportunity and seems effective",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 27,
+        "retweets": 2
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082608994275725650"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-8A7939C448E7",
+      "title": "Dan Shipper：usually the most honest answer ime https://t",
+      "url": "https://x.com/danshipper/status/2082605739256734153",
+      "canonicalUrl": "https://x.com/danshipper/status/2082605739256734153",
+      "sourceName": "Dan Shipper",
+      "sourceType": "x",
+      "author": "Dan Shipper",
+      "publishedAt": "2026-07-29T23:14:35+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "usually the most honest answer ime https://t.co/tqDureRmzo",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 100,
+        "retweets": 4
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082605739256734153"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-B79CE2738235",
+      "title": "Aditya Agarwal：Imagine if you were LeBron at 19 years old but believed you only had 2 years to maximize earnings before basketball w…",
+      "url": "https://x.com/adityaag/status/2082558632705896899",
+      "canonicalUrl": "https://x.com/adityaag/status/2082558632705896899",
+      "sourceName": "Aditya Agarwal",
+      "sourceType": "x",
+      "author": "Aditya Agarwal",
+      "publishedAt": "2026-07-29T20:07:24+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Imagine if you were LeBron at 19 years old but believed you only had 2 years to maximize earnings before basketball was played by robots.\n\nThis is what AI researchers are going through and explains all the goddamn drama.\n\nThey are MVPs with 18 months on the shot clock.",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 147,
+        "retweets": 4
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082558632705896899"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-0E4BD64FDF48",
+      "title": "Aditya Agarwal：Some observations from our Demo Faire yesterday:",
+      "url": "https://x.com/adityaag/status/2082538703432630398",
+      "canonicalUrl": "https://x.com/adityaag/status/2082538703432630398",
+      "sourceName": "Aditya Agarwal",
+      "sourceType": "x",
+      "author": "Aditya Agarwal",
+      "publishedAt": "2026-07-29T18:48:13+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Some observations from our Demo Faire yesterday:\n\n1/ There is a tremendous amount of interest from the larger investor community for frontier technology. Robots. Drones. Semiconductors. Bring it all. \n\n2/ The interest in Frontier Tech is legitimately Based. People want 馃嚭馃嚫 to win.\n\n3/ The bar for \"great\" in software has gone up a lot. If you are building something that resembles vertical SaaS or agent-for-X, then you have to show something truly different in terms of vision or on a bonkers ramp.\n\n4/ You should only do early stage investing if you love building the future. That is the real joy of it. It was so cool to see everyone deeply engaging with our founders about what they were building (as opposed to simply asking for up and to the right graphs).\n\n5/ Silicon Valley does best when we understand that it takes a village to build something special for many decades.",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 66,
+        "retweets": 11
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082538703432630398"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-4298DDD208BE",
+      "title": "Sam Altman：so excited for this",
+      "url": "https://x.com/sama/status/2082628413769003269",
+      "canonicalUrl": "https://x.com/sama/status/2082628413769003269",
+      "sourceName": "Sam Altman",
+      "sourceType": "x",
+      "author": "Sam Altman",
+      "publishedAt": "2026-07-30T00:44:41+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "so excited for this.\n\nvery close to models that will significantly accelerate scientific discovery; the best way to do this is for us to empower scientists, not to try to figure out everything ourselves.\n\nwe all deserve the benefits. https://t.co/nzfHpb96re",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 3117,
+        "retweets": 190
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082628413769003269"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-BF448D2CA75F",
+      "title": "Sam Altman：goblin-level blog post https://t",
+      "url": "https://x.com/sama/status/2082627724040884667",
+      "canonicalUrl": "https://x.com/sama/status/2082627724040884667",
+      "sourceName": "Sam Altman",
+      "sourceType": "x",
+      "author": "Sam Altman",
+      "publishedAt": "2026-07-30T00:41:57+00:00",
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "goblin-level blog post https://t.co/pmcqmDjE4f",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {
+        "likes": 2817,
+        "retweets": 79
+      },
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": "2082627724040884667"
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    },
+    {
+      "signalId": "SIG-FOLLOWBUILDERS-E78CD91D328F",
+      "title": "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework",
+      "url": "https://claude.com/blog/claude-for-foundation-models",
+      "canonicalUrl": "https://claude.com/blog/claude-for-foundation-models",
+      "sourceName": "blog",
+      "sourceType": "official_blog",
+      "author": null,
+      "publishedAt": null,
+      "discoveredAt": "2026-07-31T01:18:05+00:00",
+      "summary": "Today we&#x27;re releasing Foundation Models framework support for Claude through a new Swift package that lets Apple developers use Apple&#x27;s Foundation Models framework to call Claude for more complex workflows. Apple’s Foundation Models framework gives developers access to tap into models natively from Swift. It is very easy to use and can return typed Swift values through guided generation in as few as three lines of code. Developers can use this to tap into Apple’s on-device models for fast, local tasks like summarization or extraction. Developers can now use Apple’s Foundation Models framework to hand off to Claude when a request calls for multi-step reasoning, code generation, and more. Claude can also search the web for current information and execute code for data analysis. Stream Claude&#x27;s response back into the same view. Because Apple&#x27;s framework returns typed Swift values from @Generable annotations, developers arrive at the Claude API call with clean inputs instead of raw user text. What this unlocks The Foundation Models framework already powers a range of intelligent on-device features — journaling apps that surface personalized prompts, document apps th",
+      "category": "uncategorized",
+      "language": "en",
+      "rawHeatSignals": {},
+      "sourceFeed": "follow-builders",
+      "provenance": [
+        {
+          "feedId": "follow-builders",
+          "sourceItemId": ""
+        }
+      ],
+      "verificationStatus": "traceable",
+      "feedRunId": "follow-builders-20260731T091805-d028f8a4",
+      "feedInputHash": "D028F8A4D1240980CE56F47DB990B6F9BE3A39DF420750312693257A33285285",
+      "sourceFeeds": [
+        "follow-builders"
+      ]
+    }
+  ]
+}

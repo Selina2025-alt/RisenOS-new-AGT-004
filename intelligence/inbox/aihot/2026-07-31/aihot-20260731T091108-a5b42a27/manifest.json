@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "feedId": "aihot",
+  "runId": "aihot-20260731T091108-a5b42a27",
+  "windowStart": "2026-07-30T01:00:00+00:00",
+  "windowEnd": "2026-07-31T01:00:00+00:00",
+  "collectedAt": "2026-07-31T01:11:08+00:00",
+  "status": "SUCCESS",
+  "errors": [],
+  "inputHash": "A5B42A27C5AF46E1B4EA84042C701CAB481D88D2418CB2508F454FED1C3A9197",
+  "itemCount": 17
+}

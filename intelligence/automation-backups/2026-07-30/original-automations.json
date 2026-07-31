@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "capturedAt": "2026-07-30",
+  "purpose": "Rollback reference before adding AGT-RSN-004 local feed output.",
+  "automations": [
+    {
+      "id": "ai",
+      "name": "Daily AI HOT Digest Email",
+      "status": "ACTIVE",
+      "schedule": "daily 09:00 Asia/Shanghai",
+      "originalBehavior": "使用 AI HOT 最近24小时精选资讯生成中文邮件并通过 Gmail 发送，不要求写入 AGT-RSN-004。"
+    },
+    {
+      "id": "daily-agentreach-ai-news-email",
+      "name": "Daily AgentReach AI News Email",
+      "status": "ACTIVE",
+      "schedule": "daily 09:11 Asia/Shanghai",
+      "originalBehavior": "使用 AgentReach 路由抓取8至15条AI资讯，生成中文邮件并通过 Gmail 发送，不要求写入 AGT-RSN-004。"
+    },
+    {
+      "id": "daily-follow-builders-digest-email",
+      "name": "Daily Follow Builders Digest Email",
+      "status": "ACTIVE",
+      "schedule": "daily 09:12 Asia/Shanghai",
+      "originalBehavior": "运行 prepare-digest.js，生成中文 Builders Digest 并通过 Resend 发送，不要求写入 AGT-RSN-004。"
+    }
+  ],
+  "rollback": "通过 Codex automation_update 恢复上述 originalBehavior；本文件不包含密钥、Cookie 或邮件正文。"
+}

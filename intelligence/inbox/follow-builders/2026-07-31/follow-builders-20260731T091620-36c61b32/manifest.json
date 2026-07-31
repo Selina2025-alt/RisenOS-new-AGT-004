@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "feedId": "follow-builders",
+  "runId": "follow-builders-20260731T091620-36c61b32",
+  "windowStart": "2026-07-30T01:16:20+00:00",
+  "windowEnd": "2026-07-31T01:16:20+00:00",
+  "collectedAt": "2026-07-31T01:16:20+00:00",
+  "status": "SUCCESS",
+  "errors": [],
+  "inputHash": "36C61B32A771F678202E8AB3F7264B3B0BD7050C9FDF4B5D7182428442201C23",
+  "itemCount": 34
+}

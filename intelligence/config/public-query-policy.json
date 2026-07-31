@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0",
+  "maximumQueryLength": 180,
+  "allowedInformation": [
+    "公开产品名称",
+    "公开行业术语",
+    "公开人物和公司名称",
+    "公开政策、论文和产品主题"
+  ],
+  "blockedMarkers": [
+    "内部版",
+    "机密",
+    "严格保密",
+    "客户名单",
+    "未公开路线图",
+    "未发布产品",
+    "交易数据明细",
+    "内部竞争策略",
+    "受限文档原文",
+    "RESEND_API_KEY",
+    "OPENAI_API_KEY",
+    "SERPER_API_KEY",
+    "YOUTUBE_API_KEY",
+    "authorization: bearer",
+    "cookie:"
+  ],
+  "secretPatterns": [
+    "(?i)\\b(?:api[_-]?key|access[_-]?token|refresh[_-]?token|client[_-]?secret|password)\\s*[:=]\\s*\\S+",
+    "(?i)\\bbearer\\s+[a-z0-9._~+/-]{12,}",
+    "\\bsk-[A-Za-z0-9_-]{12,}"
+  ],
+  "neverTransmitKnowledgePaths": [
+    "knowledge/security/",
+    "knowledge/sources/ingested/",
+    "restricted/"
+  ]
+}

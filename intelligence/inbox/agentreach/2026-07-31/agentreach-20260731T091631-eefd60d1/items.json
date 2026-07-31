@@ -1,0 +1,301 @@
+[
+  {
+    "signalId": "SIG-AGENTREACH-C98C9DD11948",
+    "title": "Advancing the price-performance frontier with GPT-5.6",
+    "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+    "canonicalUrl": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+    "sourceName": "OpenAI Blog",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T10:00:00+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "OpenAI 公布 GPT-5.6 的价格性能更新，重点是 Luna 与 Terra 的更低价格以及企业规模化部署 AI 工作流的成本效率。",
+    "category": "模型与基础设施",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "openai-gpt-5-6-price-performance-2026-07-30"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-4D0900BC1D70",
+    "title": "Anthropic says its own AI models breached three companies during security tests",
+    "url": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests",
+    "canonicalUrl": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests",
+    "sourceName": "TechCrunch",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-31T01:06:54+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "TechCrunch 称 Anthropic 回查安全测试历史后发现，其模型曾在测试中突破三家公司环境；这延续了近期围绕模型自主渗透能力的安全讨论。",
+    "category": "政策安全与研究",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "techcrunch-anthropic-models-breached-security-tests-2026-07-31"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-3D4E9D441D7B",
+    "title": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares",
+    "url": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares",
+    "canonicalUrl": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares",
+    "sourceName": "TechCrunch",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T23:25:58+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "由前 OpenAI 研究员创办的 Situational Awareness 据称在公开市场仓位承压后清仓，但仍持有 Anthropic 股份，显示资本对私有前沿模型资产的偏好仍强。",
+    "category": "产业与资本",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "situational-awareness-public-portfolio-anthropic-shares-2026-07-31"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-F9C16052D2E0",
+    "title": "Reddit reports a solid quarter but shows signs of AI's impact",
+    "url": "https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact",
+    "canonicalUrl": "https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact",
+    "sourceName": "TechCrunch",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T23:08:58+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "Reddit 财报表现稳健，但市场继续关注其与 Google 以及 AI 化搜索/内容分发之间的关系，AI 对开放社区流量结构的影响正在进入财务叙事。",
+    "category": "产业与资本",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "reddit-quarter-ai-impact-2026-07-31"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-AD38A88BC260",
+    "title": "Investors love AI, as long as you're a cloud host",
+    "url": "https://techcrunch.com/2026/07/30/investors-love-ai-as-long-as-youre-a-cloud-host",
+    "canonicalUrl": "https://techcrunch.com/2026/07/30/investors-love-ai-as-long-as-youre-a-cloud-host",
+    "sourceName": "TechCrunch",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T22:41:41+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "TechCrunch 观察到投资者对 AI 资本开支的容忍度更集中在云基础设施公司身上，Amazon 等公司继续加码数据中心但市场反应并未明显转冷。",
+    "category": "模型与基础设施",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "cloud-hosts-ai-investor-demand-2026-07-31"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-F3451983C17A",
+    "title": "Judge says Trump admin still lacks evidence for Anthropic supply-chain risk label",
+    "url": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label",
+    "canonicalUrl": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label",
+    "sourceName": "TechCrunch",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T20:26:38+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "一名联邦法官称政府仍未拿出足够证据支持把 Anthropic 标为供应链风险，这对政府限制 AI 技术采购和使用的证据门槛形成约束。",
+    "category": "政策安全与研究",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "judge-anthropic-supply-chain-risk-label-2026-07-31"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-40273370D209",
+    "title": "Friend, the lonely AI wearable, returns with a new voice and a much bigger price tag",
+    "url": "https://techcrunch.com/2026/07/30/friend-the-lonely-ai-wearable-returns-with-a-new-voice-and-a-much-bigger-price-tag",
+    "canonicalUrl": "https://techcrunch.com/2026/07/30/friend-the-lonely-ai-wearable-returns-with-a-new-voice-and-a-much-bigger-price-tag",
+    "sourceName": "TechCrunch",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T19:44:16+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "AI 可穿戴设备 Friend 增加语音交互并显著提价，消费级 AI 硬件继续试探陪伴场景的付费边界。",
+    "category": "产品与应用",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "friend-ai-wearable-new-voice-price-2026-07-31"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-050A804D4ABD",
+    "title": "Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI",
+    "url": "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai",
+    "canonicalUrl": "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai",
+    "sourceName": "TechCrunch",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T18:57:58+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "Google 称 AI 帮助 Chrome 在 6 月修复的漏洞数量超过过去两年总和，代码审计与漏洞修复正在成为开发工具落地最快的场景之一。",
+    "category": "Agent 与开发者工具",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "google-chrome-ai-bug-fixes-2026-07-31"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-4CC46C8286B6",
+    "title": "LinkedIn adds a button to report AI-generated slop",
+    "url": "https://techcrunch.com/2026/07/30/linkedin-adds-a-button-to-report-ai-generated-slop",
+    "canonicalUrl": "https://techcrunch.com/2026/07/30/linkedin-adds-a-button-to-report-ai-generated-slop",
+    "sourceName": "TechCrunch",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T18:05:21+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "LinkedIn 新增举报低质量 AI 生成内容的入口，并把自家 AI 写作功能调整为校对工具，平台开始更直接治理 AI 内容泛滥。",
+    "category": "产品与应用",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "linkedin-ai-slop-report-button-2026-07-31"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-1A6219C4367B",
+    "title": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
+    "url": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack",
+    "canonicalUrl": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack",
+    "sourceName": "MIT Technology Review",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T10:15:19+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "MIT Technology Review 报道 ICML 论文观点：由于大模型工作方式的根本限制，完全防住攻击可能不可行；这对企业工具调用和代理安全边界很关键。",
+    "category": "政策安全与研究",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "mit-llm-fundamental-flaw-vulnerable-attack-2026-07-30"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-F18696DE44B4",
+    "title": "Do Models Fake Alignment Without Clear Consequences?",
+    "url": "https://arxiv.org/abs/2607.24758",
+    "canonicalUrl": "https://arxiv.org/abs/2607.24758",
+    "sourceName": "arXiv cs.AI",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T04:00:00+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "论文研究模型在没有明确后果压力时是否仍会表现出 alignment faking，问题指向评测情境识别与部署行为偏差。",
+    "category": "政策安全与研究",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "arxiv-do-models-fake-alignment-2026-07-30"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-F1BA8C60A493",
+    "title": "Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels",
+    "url": "https://arxiv.org/abs/2607.24762",
+    "canonicalUrl": "https://arxiv.org/abs/2607.24762",
+    "sourceName": "arXiv cs.AI",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T04:00:00+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "Kernel Forge 提出用 LLM agent 生成和优化 CUDA kernel 的 harness，目标是把低层 GPU 优化从专家手写流程推向自动化。",
+    "category": "Agent 与开发者工具",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "arxiv-kernel-forge-cuda-agent-harness-2026-07-30"
+      }
+    ],
+    "verificationStatus": "traceable"
+  },
+  {
+    "signalId": "SIG-AGENTREACH-985BFF118BC3",
+    "title": "LLM Scheming Inversely Scales with Pretraining Language Coverage",
+    "url": "https://arxiv.org/abs/2607.24769",
+    "canonicalUrl": "https://arxiv.org/abs/2607.24769",
+    "sourceName": "arXiv cs.AI",
+    "sourceType": "agentreach",
+    "author": null,
+    "publishedAt": "2026-07-30T04:00:00+00:00",
+    "discoveredAt": "2026-07-31T01:16:31+00:00",
+    "summary": "论文用自动化审计框架研究多语言场景下的 scheming，提出预训练语言覆盖与不当策略行为之间可能存在反向关系。",
+    "category": "政策安全与研究",
+    "language": "zh",
+    "rawHeatSignals": {},
+    "sourceFeed": "agentreach",
+    "provenance": [
+      {
+        "feedId": "agentreach",
+        "sourceItemId": "arxiv-llm-scheming-language-coverage-2026-07-30"
+      }
+    ],
+    "verificationStatus": "traceable"
+  }
+]

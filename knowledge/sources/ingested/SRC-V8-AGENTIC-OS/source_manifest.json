@@ -1,0 +1,2621 @@
+{
+  "source_id": "SRC-V8-AGENTIC-OS",
+  "source_file": "01_艾氪智能产业级 Agentic OS 战略与壁垒手册V8.0.docx",
+  "original_path": "D:\\company project\\0.BSC内容资产库\\通用资料库\\01_艾氪智能产业级 Agentic OS 战略与壁垒手册V8.0.docx",
+  "declared_use": "产业级 Agentic OS 战略与壁垒",
+  "sha256": "2A54570A74A772D1012D0575CEA17DF96F275FA695FD750DF624A5A49DCB7A36",
+  "size_bytes": 305659,
+  "modified_at": "2026-06-24T18:10:35",
+  "ingested_at": "2026-07-30T13:02:06+08:00",
+  "core_properties": {
+    "title": "",
+    "subject": "",
+    "author": "Frederick Duan",
+    "keywords": "",
+    "comments": "",
+    "created": "2026-06-04T03:46:00+00:00",
+    "modified": "2026-06-04T06:34:00+00:00",
+    "last_modified_by": "Frederick Duan",
+    "revision": 3
+  },
+  "counts": {
+    "document_paragraphs": 3761,
+    "nonempty_document_paragraphs": 3676,
+    "tables": 0,
+    "table_rows": 0,
+    "ordered_nonempty_blocks": 3676,
+    "ordered_paragraph_blocks": 3676,
+    "ordered_table_blocks": 0,
+    "sections": 149,
+    "media_assets": 0,
+    "extracted_characters": 160356
+  },
+  "headers_footers": {
+    "headers": [
+      {
+        "section": 1,
+        "text": "艾氪智能内部保密资料"
+      }
+    ],
+    "footers": []
+  },
+  "media": [],
+  "section_index": [
+    {
+      "title": "第 2 章：艾氪智能的第一性原理不是 AI，而是产业交易\t28",
+      "level": 2,
+      "start_locator": "P00004",
+      "end_locator": "P00053",
+      "block_count": 44,
+      "char_count": 916,
+      "topics": {
+        "产品与架构": 9,
+        "企业战略": 8,
+        "竞品与壁垒": 8,
+        "案例与证据": 4,
+        "客户与场景": 3,
+        "品牌定位": 2,
+        "历史内容": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/001_第_2_章：艾氪智能的第一性原理不是_AI，而是产业交易_28.md"
+    },
+    {
+      "title": "6.2 ICB 的核心难点：不是知道行业，而是知道拆到什么颗粒度\t53",
+      "level": 3,
+      "start_locator": "P00054",
+      "end_locator": "P00087",
+      "block_count": 34,
+      "char_count": 889,
+      "topics": {
+        "产品与架构": 8,
+        "企业战略": 2,
+        "竞品与壁垒": 2,
+        "智能体能力": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/002_6.2_ICB_的核心难点：不是知道行业，而是知道拆到什么颗粒度_53.md"
+    },
+    {
+      "title": "9.6 组织认知壁垒为什么难复制\t80",
+      "level": 3,
+      "start_locator": "P00088",
+      "end_locator": "P00117",
+      "block_count": 30,
+      "char_count": 865,
+      "topics": {
+        "竞品与壁垒": 8,
+        "产品与架构": 5,
+        "客户与场景": 3,
+        "案例与证据": 3,
+        "智能体能力": 2,
+        "企业战略": 1
+      },
+      "file": "sections/003_9.6_组织认知壁垒为什么难复制_80.md"
+    },
+    {
+      "title": "13.1 这一章要解决的核心误解\t101",
+      "level": 3,
+      "start_locator": "P00118",
+      "end_locator": "P00145",
+      "block_count": 28,
+      "char_count": 872,
+      "topics": {
+        "产品与架构": 6,
+        "竞品与壁垒": 6,
+        "案例与证据": 3,
+        "客户与场景": 2,
+        "企业战略": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/004_13.1_这一章要解决的核心误解_101.md"
+    },
+    {
+      "title": "15.2 Palantir 强在哪里：企业内部 data、logic、action、security 的四重集成\t117",
+      "level": 3,
+      "start_locator": "P00146",
+      "end_locator": "P00165",
+      "block_count": 20,
+      "char_count": 864,
+      "topics": {
+        "竞品与壁垒": 6,
+        "合规与保密": 5,
+        "产品与架构": 3,
+        "客户与场景": 3,
+        "案例与证据": 1
+      },
+      "file": "sections/005_15.2_Palantir_强在哪里：企业内部_data、logic、action、security_的四重集成_117.md"
+    },
+    {
+      "title": "17.2 UiPath：强在机器人、流程自动化和 Agentic Orchestration\t132",
+      "level": 3,
+      "start_locator": "P00166",
+      "end_locator": "P00185",
+      "block_count": 20,
+      "char_count": 871,
+      "topics": {
+        "案例与证据": 7,
+        "产品与架构": 5,
+        "竞品与壁垒": 3,
+        "合规与保密": 2,
+        "企业战略": 1
+      },
+      "file": "sections/006_17.2_UiPath：强在机器人、流程自动化和_Agentic_Orchestration_132.md"
+    },
+    {
+      "title": "19.2 海尔卡奥斯 COSMOPlat：大规模定制和工业互联网生态很强，但主场是制造与工业协同\t147",
+      "level": 3,
+      "start_locator": "P00186",
+      "end_locator": "P00206",
+      "block_count": 21,
+      "char_count": 861,
+      "topics": {
+        "产品与架构": 16,
+        "客户与场景": 7,
+        "竞品与壁垒": 4,
+        "企业战略": 1,
+        "智能体能力": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/007_19.2_海尔卡奥斯_COSMOPlat：大规模定制和工业互联网生态很强，但主场是制造与工业协同_147.md"
+    },
+    {
+      "title": "第 22 章：侨交会跨境出海案例——从境外展会管理系统到 AI 出海交易服务平台\t167",
+      "level": 2,
+      "start_locator": "P00207",
+      "end_locator": "P00233",
+      "block_count": 27,
+      "char_count": 859,
+      "topics": {
+        "案例与证据": 13,
+        "产品与架构": 7,
+        "客户与场景": 5,
+        "企业战略": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/008_第_22_章：侨交会跨境出海案例——从境外展会管理系统到_AI_出海交易服务平台_167.md"
+    },
+    {
+      "title": "25.3 问题二：大厂什么做不了？技术不都能实现吗？\t183",
+      "level": 3,
+      "start_locator": "P00234",
+      "end_locator": "P00262",
+      "block_count": 29,
+      "char_count": 856,
+      "topics": {
+        "客户与场景": 13,
+        "案例与证据": 8,
+        "竞品与壁垒": 4,
+        "产品与架构": 1,
+        "企业战略": 1
+      },
+      "file": "sections/009_25.3_问题二：大厂什么做不了？技术不都能实现吗？_183.md"
+    },
+    {
+      "title": "28.3 面向 Agent 平台对比的金句\t201",
+      "level": 3,
+      "start_locator": "P00263",
+      "end_locator": "P00289",
+      "block_count": 27,
+      "char_count": 865,
+      "topics": {
+        "客户与场景": 5,
+        "产品与架构": 4,
+        "历史内容": 4,
+        "竞品与壁垒": 4,
+        "智能体能力": 1
+      },
+      "file": "sections/010_28.3_面向_Agent_平台对比的金句_201.md"
+    },
+    {
+      "title": "31.8 本章结论\t222",
+      "level": 3,
+      "start_locator": "P00290",
+      "end_locator": "P00321",
+      "block_count": 32,
+      "char_count": 865,
+      "topics": {
+        "客户与场景": 10,
+        "案例与证据": 5,
+        "历史内容": 4,
+        "智能体能力": 3,
+        "产品与架构": 2,
+        "企业战略": 1,
+        "合规与保密": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/011_31.8_本章结论_222.md"
+    },
+    {
+      "title": "35.4 客户高层版\t241",
+      "level": 3,
+      "start_locator": "P00322",
+      "end_locator": "P00353",
+      "block_count": 32,
+      "char_count": 864,
+      "topics": {
+        "案例与证据": 4,
+        "合规与保密": 3,
+        "客户与场景": 3,
+        "竞品与壁垒": 3,
+        "产品与架构": 2,
+        "智能体能力": 2,
+        "企业战略": 1,
+        "品牌定位": 1
+      },
+      "file": "sections/012_35.4_客户高层版_241.md"
+    },
+    {
+      "title": "为什么必须把艾氪智能的壁垒讲清楚",
+      "level": 3,
+      "start_locator": "P00354",
+      "end_locator": "P00382",
+      "block_count": 28,
+      "char_count": 1969,
+      "topics": {
+        "产品与架构": 20,
+        "客户与场景": 11,
+        "竞品与壁垒": 10,
+        "智能体能力": 7,
+        "企业战略": 4,
+        "合规与保密": 3,
+        "案例与证据": 2
+      },
+      "file": "sections/013_为什么必须把艾氪智能的壁垒讲清楚.md"
+    },
+    {
+      "title": "3. 这是一本销售作战手册",
+      "level": 3,
+      "start_locator": "P00384",
+      "end_locator": "P00401",
+      "block_count": 18,
+      "char_count": 836,
+      "topics": {
+        "竞品与壁垒": 12,
+        "客户与场景": 10,
+        "产品与架构": 5,
+        "品牌定位": 3,
+        "企业战略": 2,
+        "历史内容": 2,
+        "合规与保密": 2,
+        "智能体能力": 2
+      },
+      "file": "sections/014_3._这是一本销售作战手册.md"
+    },
+    {
+      "title": "5. APR 平台研发中心",
+      "level": 3,
+      "start_locator": "P00402",
+      "end_locator": "P00419",
+      "block_count": 17,
+      "char_count": 920,
+      "topics": {
+        "产品与架构": 12,
+        "客户与场景": 9,
+        "企业战略": 4,
+        "智能体能力": 3,
+        "案例与证据": 3,
+        "竞品与壁垒": 2,
+        "合规与保密": 1
+      },
+      "file": "sections/015_5._APR_平台研发中心.md"
+    },
+    {
+      "title": "2. 阅读时要先抓住一条主线",
+      "level": 3,
+      "start_locator": "P00420",
+      "end_locator": "P00436",
+      "block_count": 16,
+      "char_count": 903,
+      "topics": {
+        "客户与场景": 14,
+        "产品与架构": 10,
+        "竞品与壁垒": 7,
+        "企业战略": 6,
+        "案例与证据": 4,
+        "历史内容": 3,
+        "合规与保密": 2,
+        "品牌定位": 2,
+        "智能体能力": 2
+      },
+      "file": "sections/016_2._阅读时要先抓住一条主线.md"
+    },
+    {
+      "title": "第一遍：建立战略全局",
+      "level": 3,
+      "start_locator": "P00437",
+      "end_locator": "P00458",
+      "block_count": 21,
+      "char_count": 887,
+      "topics": {
+        "客户与场景": 21,
+        "产品与架构": 11,
+        "案例与证据": 3,
+        "企业战略": 2,
+        "竞品与壁垒": 2
+      },
+      "file": "sections/017_第一遍：建立战略全局.md"
+    },
+    {
+      "title": "五、最重要的几条使用原则",
+      "level": 2,
+      "start_locator": "P00459",
+      "end_locator": "P00482",
+      "block_count": 23,
+      "char_count": 1002,
+      "topics": {
+        "竞品与壁垒": 13,
+        "产品与架构": 11,
+        "客户与场景": 11,
+        "案例与证据": 9,
+        "历史内容": 2,
+        "品牌定位": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/018_五、最重要的几条使用原则.md"
+    },
+    {
+      "title": "1.1 先把战场定义清楚",
+      "level": 3,
+      "start_locator": "P00484",
+      "end_locator": "P00508",
+      "block_count": 23,
+      "char_count": 1338,
+      "topics": {
+        "产品与架构": 10,
+        "客户与场景": 8,
+        "案例与证据": 5,
+        "竞品与壁垒": 4,
+        "合规与保密": 3,
+        "智能体能力": 3,
+        "企业战略": 2,
+        "历史内容": 1
+      },
+      "file": "sections/019_1.1_先把战场定义清楚.md"
+    },
+    {
+      "title": "1.2 全球 AI Agent 的五层结构",
+      "level": 3,
+      "start_locator": "P00509",
+      "end_locator": "P00533",
+      "block_count": 25,
+      "char_count": 2199,
+      "topics": {
+        "客户与场景": 15,
+        "案例与证据": 10,
+        "合规与保密": 9,
+        "竞品与壁垒": 8,
+        "产品与架构": 5,
+        "智能体能力": 4,
+        "企业战略": 3
+      },
+      "file": "sections/020_1.2_全球_AI_Agent_的五层结构.md"
+    },
+    {
+      "title": "1.3 为什么“Agent Builder”不够",
+      "level": 3,
+      "start_locator": "P00534",
+      "end_locator": "P00547",
+      "block_count": 14,
+      "char_count": 1122,
+      "topics": {
+        "客户与场景": 12,
+        "产品与架构": 4,
+        "智能体能力": 3,
+        "案例与证据": 3,
+        "合规与保密": 2
+      },
+      "file": "sections/021_1.3_为什么“Agent_Builder”不够.md"
+    },
+    {
+      "title": "1.4 为什么产业级 Agentic OS 是时代必然",
+      "level": 3,
+      "start_locator": "P00548",
+      "end_locator": "P00564",
+      "block_count": 17,
+      "char_count": 1078,
+      "topics": {
+        "客户与场景": 11,
+        "产品与架构": 9,
+        "智能体能力": 6,
+        "案例与证据": 5,
+        "企业战略": 4,
+        "合规与保密": 1
+      },
+      "file": "sections/022_1.4_为什么产业级_Agentic_OS_是时代必然.md"
+    },
+    {
+      "title": "2.1 为什么必须从产业交易讲起",
+      "level": 3,
+      "start_locator": "P00565",
+      "end_locator": "P00596",
+      "block_count": 31,
+      "char_count": 1523,
+      "topics": {
+        "产品与架构": 10,
+        "竞品与壁垒": 6,
+        "客户与场景": 3,
+        "合规与保密": 2,
+        "企业战略": 1,
+        "历史内容": 1,
+        "智能体能力": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/023_2.1_为什么必须从产业交易讲起.md"
+    },
+    {
+      "title": "2.2 ToC 是逛超市，ToB 是谈生意",
+      "level": 3,
+      "start_locator": "P00597",
+      "end_locator": "P00611",
+      "block_count": 15,
+      "char_count": 979,
+      "topics": {
+        "客户与场景": 11,
+        "产品与架构": 5,
+        "合规与保密": 2,
+        "企业战略": 1
+      },
+      "file": "sections/024_2.2_ToC_是逛超市，ToB_是谈生意.md"
+    },
+    {
+      "title": "2.4 为什么传统软件很难承载真实产业交易",
+      "level": 3,
+      "start_locator": "P00612",
+      "end_locator": "P00642",
+      "block_count": 31,
+      "char_count": 1647,
+      "topics": {
+        "客户与场景": 22,
+        "合规与保密": 17,
+        "智能体能力": 4,
+        "案例与证据": 4,
+        "产品与架构": 2,
+        "企业战略": 2,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/025_2.4_为什么传统软件很难承载真实产业交易.md"
+    },
+    {
+      "title": "2.6 为什么中心化总智能体不适合产业网络",
+      "level": 3,
+      "start_locator": "P00643",
+      "end_locator": "P00665",
+      "block_count": 23,
+      "char_count": 1225,
+      "topics": {
+        "客户与场景": 7,
+        "智能体能力": 7,
+        "产品与架构": 5,
+        "案例与证据": 4,
+        "合规与保密": 3,
+        "企业战略": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/026_2.6_为什么中心化总智能体不适合产业网络.md"
+    },
+    {
+      "title": "2.8 本章结论",
+      "level": 3,
+      "start_locator": "P00666",
+      "end_locator": "P00686",
+      "block_count": 21,
+      "char_count": 1012,
+      "topics": {
+        "产品与架构": 8,
+        "企业战略": 7,
+        "智能体能力": 6,
+        "案例与证据": 6,
+        "客户与场景": 2,
+        "历史内容": 1,
+        "合规与保密": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/027_2.8_本章结论.md"
+    },
+    {
+      "title": "3.1 JovaAI 的起点不是 Agent，而是多元复杂交易",
+      "level": 3,
+      "start_locator": "P00689",
+      "end_locator": "P00707",
+      "block_count": 19,
+      "char_count": 1505,
+      "topics": {
+        "产品与架构": 11,
+        "客户与场景": 7,
+        "智能体能力": 6,
+        "合规与保密": 2,
+        "竞品与壁垒": 2
+      },
+      "file": "sections/028_3.1_JovaAI_的起点不是_Agent，而是多元复杂交易.md"
+    },
+    {
+      "title": "3.2 ToB 交易的复杂性，不是流程多，而是交易规则多",
+      "level": 3,
+      "start_locator": "P00708",
+      "end_locator": "P00721",
+      "block_count": 14,
+      "char_count": 1252,
+      "topics": {
+        "客户与场景": 15,
+        "产品与架构": 3,
+        "合规与保密": 3,
+        "案例与证据": 3,
+        "历史内容": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/029_3.2_ToB_交易的复杂性，不是流程多，而是交易规则多.md"
+    },
+    {
+      "title": "3.3 ICB 的形成过程：解构线下，重构线上",
+      "level": 3,
+      "start_locator": "P00722",
+      "end_locator": "P00735",
+      "block_count": 14,
+      "char_count": 993,
+      "topics": {
+        "产品与架构": 12,
+        "客户与场景": 8,
+        "官网与视觉": 3,
+        "企业战略": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/030_3.3_ICB_的形成过程：解构线下，重构线上.md"
+    },
+    {
+      "title": "3.5 ICB 为什么是 JovaAI 的能力心脏",
+      "level": 3,
+      "start_locator": "P00736",
+      "end_locator": "P00759",
+      "block_count": 24,
+      "char_count": 1392,
+      "topics": {
+        "产品与架构": 23,
+        "客户与场景": 16,
+        "智能体能力": 3,
+        "案例与证据": 2,
+        "企业战略": 1,
+        "合规与保密": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/031_3.5_ICB_为什么是_JovaAI_的能力心脏.md"
+    },
+    {
+      "title": "4.1 为什么不能只做软件",
+      "level": 3,
+      "start_locator": "P00760",
+      "end_locator": "P00785",
+      "block_count": 25,
+      "char_count": 1209,
+      "topics": {
+        "客户与场景": 13,
+        "产品与架构": 8,
+        "案例与证据": 2,
+        "企业战略": 1,
+        "历史内容": 1,
+        "合规与保密": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/032_4.1_为什么不能只做软件.md"
+    },
+    {
+      "title": "4.3 为什么 OS 是产业级 AI 的必然形态",
+      "level": 3,
+      "start_locator": "P00786",
+      "end_locator": "P00809",
+      "block_count": 24,
+      "char_count": 1610,
+      "topics": {
+        "客户与场景": 12,
+        "产品与架构": 7,
+        "官网与视觉": 3,
+        "案例与证据": 3,
+        "合规与保密": 2,
+        "智能体能力": 1
+      },
+      "file": "sections/033_4.3_为什么_OS_是产业级_AI_的必然形态.md"
+    },
+    {
+      "title": "4.5 OS 如何承载场景产品化",
+      "level": 3,
+      "start_locator": "P00810",
+      "end_locator": "P00828",
+      "block_count": 19,
+      "char_count": 1367,
+      "topics": {
+        "客户与场景": 8,
+        "智能体能力": 8,
+        "案例与证据": 5,
+        "产品与架构": 2,
+        "历史内容": 2,
+        "合规与保密": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/034_4.5_OS_如何承载场景产品化.md"
+    },
+    {
+      "title": "5.1 为什么中心化平台和私有化系统都不够",
+      "level": 3,
+      "start_locator": "P00829",
+      "end_locator": "P00848",
+      "block_count": 19,
+      "char_count": 1061,
+      "topics": {
+        "产品与架构": 12,
+        "客户与场景": 3,
+        "案例与证据": 3,
+        "智能体能力": 2,
+        "历史内容": 1,
+        "合规与保密": 1,
+        "品牌定位": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/035_5.1_为什么中心化平台和私有化系统都不够.md"
+    },
+    {
+      "title": "5.3 从产业独立站到 AI 独立站",
+      "level": 3,
+      "start_locator": "P00849",
+      "end_locator": "P00875",
+      "block_count": 27,
+      "char_count": 1227,
+      "topics": {
+        "客户与场景": 11,
+        "产品与架构": 10,
+        "智能体能力": 9,
+        "案例与证据": 3,
+        "企业战略": 2,
+        "历史内容": 2,
+        "合规与保密": 2,
+        "官网与视觉": 2,
+        "品牌定位": 1
+      },
+      "file": "sections/036_5.3_从产业独立站到_AI_独立站.md"
+    },
+    {
+      "title": "5.4 AI 独立站如何形成商业模式网络",
+      "level": 3,
+      "start_locator": "P00876",
+      "end_locator": "P00893",
+      "block_count": 18,
+      "char_count": 859,
+      "topics": {
+        "客户与场景": 10,
+        "智能体能力": 7,
+        "产品与架构": 6,
+        "企业战略": 4,
+        "合规与保密": 1,
+        "品牌定位": 1
+      },
+      "file": "sections/037_5.4_AI_独立站如何形成商业模式网络.md"
+    },
+    {
+      "title": "5.6 本章结论",
+      "level": 3,
+      "start_locator": "P00894",
+      "end_locator": "P00915",
+      "block_count": 22,
+      "char_count": 1157,
+      "topics": {
+        "产品与架构": 13,
+        "智能体能力": 8,
+        "客户与场景": 3,
+        "案例与证据": 3,
+        "企业战略": 2,
+        "历史内容": 1,
+        "合规与保密": 1,
+        "官网与视觉": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/038_5.6_本章结论.md"
+    },
+    {
+      "title": "6.1 为什么必须把 ICB 讲成“交易语法”",
+      "level": 3,
+      "start_locator": "P00918",
+      "end_locator": "P00941",
+      "block_count": 24,
+      "char_count": 1035,
+      "topics": {
+        "产品与架构": 21,
+        "客户与场景": 12,
+        "竞品与壁垒": 4,
+        "案例与证据": 1
+      },
+      "file": "sections/039_6.1_为什么必须把_ICB_讲成“交易语法”.md"
+    },
+    {
+      "title": "6.2 ICB 的核心难点：不是知道行业，而是知道拆到什么颗粒度",
+      "level": 3,
+      "start_locator": "P00942",
+      "end_locator": "P00956",
+      "block_count": 15,
+      "char_count": 837,
+      "topics": {
+        "产品与架构": 7,
+        "合规与保密": 4,
+        "客户与场景": 2,
+        "案例与证据": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/040_6.2_ICB_的核心难点：不是知道行业，而是知道拆到什么颗粒度.md"
+    },
+    {
+      "title": "6.4 ICB 如何让智能体从“回答问题”进入“做生意”",
+      "level": 3,
+      "start_locator": "P00957",
+      "end_locator": "P00985",
+      "block_count": 29,
+      "char_count": 1501,
+      "topics": {
+        "客户与场景": 13,
+        "产品与架构": 11,
+        "案例与证据": 5,
+        "合规与保密": 4,
+        "历史内容": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/041_6.4_ICB_如何让智能体从“回答问题”进入“做生意”.md"
+    },
+    {
+      "title": "6.6 ICB 的对外表达方式",
+      "level": 3,
+      "start_locator": "P00986",
+      "end_locator": "P01006",
+      "block_count": 21,
+      "char_count": 1153,
+      "topics": {
+        "产品与架构": 16,
+        "客户与场景": 10,
+        "竞品与壁垒": 2,
+        "官网与视觉": 1,
+        "智能体能力": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/042_6.6_ICB_的对外表达方式.md"
+    },
+    {
+      "title": "7.1 为什么“有很多智能体”不等于“有产业级 AI”",
+      "level": 3,
+      "start_locator": "P01007",
+      "end_locator": "P01031",
+      "block_count": 24,
+      "char_count": 1029,
+      "topics": {
+        "客户与场景": 9,
+        "智能体能力": 9,
+        "产品与架构": 6,
+        "竞品与壁垒": 4,
+        "案例与证据": 2,
+        "历史内容": 1,
+        "合规与保密": 1
+      },
+      "file": "sections/043_7.1_为什么“有很多智能体”不等于“有产业级_AI”.md"
+    },
+    {
+      "title": "7.2 JovaAI OS 要承载六种秩序",
+      "level": 3,
+      "start_locator": "P01032",
+      "end_locator": "P01053",
+      "block_count": 22,
+      "char_count": 1151,
+      "topics": {
+        "客户与场景": 16,
+        "案例与证据": 8,
+        "产品与架构": 4,
+        "智能体能力": 4,
+        "竞品与壁垒": 3,
+        "合规与保密": 2,
+        "历史内容": 1
+      },
+      "file": "sections/044_7.2_JovaAI_OS_要承载六种秩序.md"
+    },
+    {
+      "title": "7.4 JovaAI OS 与企业软件 AI 的差异",
+      "level": 3,
+      "start_locator": "P01054",
+      "end_locator": "P01080",
+      "block_count": 27,
+      "char_count": 1471,
+      "topics": {
+        "客户与场景": 16,
+        "合规与保密": 8,
+        "产品与架构": 6,
+        "竞品与壁垒": 6,
+        "智能体能力": 4,
+        "案例与证据": 2,
+        "企业战略": 1
+      },
+      "file": "sections/045_7.4_JovaAI_OS_与企业软件_AI_的差异.md"
+    },
+    {
+      "title": "7.6 JovaAI OS 的真正壁垒：组织、工具、数据、规则、智能体的一体化",
+      "level": 3,
+      "start_locator": "P01081",
+      "end_locator": "P01101",
+      "block_count": 21,
+      "char_count": 1105,
+      "topics": {
+        "产品与架构": 6,
+        "智能体能力": 5,
+        "案例与证据": 4,
+        "合规与保密": 3,
+        "客户与场景": 3,
+        "企业战略": 2,
+        "竞品与壁垒": 2
+      },
+      "file": "sections/046_7.6_JovaAI_OS_的真正壁垒：组织、工具、数据、规则、智能体的一体化.md"
+    },
+    {
+      "title": "8.1 为什么案例不是宣传，而是壁垒证据",
+      "level": 3,
+      "start_locator": "P01102",
+      "end_locator": "P01122",
+      "block_count": 20,
+      "char_count": 896,
+      "topics": {
+        "案例与证据": 16,
+        "智能体能力": 8,
+        "竞品与壁垒": 8,
+        "客户与场景": 5,
+        "产品与架构": 4,
+        "历史内容": 2,
+        "企业战略": 1,
+        "合规与保密": 1
+      },
+      "file": "sections/047_8.1_为什么案例不是宣传，而是壁垒证据.md"
+    },
+    {
+      "title": "8.2 雅迪关务：陌生复杂场景如何快速智能体化",
+      "level": 3,
+      "start_locator": "P01123",
+      "end_locator": "P01148",
+      "block_count": 26,
+      "char_count": 1530,
+      "topics": {
+        "客户与场景": 21,
+        "合规与保密": 9,
+        "案例与证据": 9,
+        "产品与架构": 2,
+        "智能体能力": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/048_8.2_雅迪关务：陌生复杂场景如何快速智能体化.md"
+    },
+    {
+      "title": "8.3 博华会展：线下资源如何被交易激活",
+      "level": 3,
+      "start_locator": "P01149",
+      "end_locator": "P01164",
+      "block_count": 16,
+      "char_count": 989,
+      "topics": {
+        "产品与架构": 10,
+        "案例与证据": 5,
+        "历史内容": 3,
+        "企业战略": 2,
+        "客户与场景": 2
+      },
+      "file": "sections/049_8.3_博华会展：线下资源如何被交易激活.md"
+    },
+    {
+      "title": "8.4 侨交会：从境外展会管理系统到 AI 出海交易服务平台",
+      "level": 3,
+      "start_locator": "P01165",
+      "end_locator": "P01187",
+      "block_count": 23,
+      "char_count": 1139,
+      "topics": {
+        "案例与证据": 15,
+        "产品与架构": 5,
+        "客户与场景": 2,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/050_8.4_侨交会：从境外展会管理系统到_AI_出海交易服务平台.md"
+    },
+    {
+      "title": "8.6 数字采购与优盟：采购不是系统，而是产业资源组织网络",
+      "level": 3,
+      "start_locator": "P01188",
+      "end_locator": "P01217",
+      "block_count": 30,
+      "char_count": 1390,
+      "topics": {
+        "客户与场景": 31,
+        "产品与架构": 7,
+        "智能体能力": 6,
+        "案例与证据": 5,
+        "企业战略": 1,
+        "合规与保密": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/051_8.6_数字采购与优盟：采购不是系统，而是产业资源组织网络.md"
+    },
+    {
+      "title": "8.8 场景产品化壁垒的本质",
+      "level": 3,
+      "start_locator": "P01218",
+      "end_locator": "P01235",
+      "block_count": 18,
+      "char_count": 929,
+      "topics": {
+        "客户与场景": 11,
+        "竞品与壁垒": 10,
+        "产品与架构": 4,
+        "案例与证据": 4,
+        "智能体能力": 1
+      },
+      "file": "sections/052_8.8_场景产品化壁垒的本质.md"
+    },
+    {
+      "title": "9.1 为什么“组织认知”也是壁垒",
+      "level": 3,
+      "start_locator": "P01236",
+      "end_locator": "P01261",
+      "block_count": 24,
+      "char_count": 1203,
+      "topics": {
+        "竞品与壁垒": 11,
+        "客户与场景": 8,
+        "案例与证据": 8,
+        "产品与架构": 5,
+        "企业战略": 2,
+        "历史内容": 2,
+        "合规与保密": 1
+      },
+      "file": "sections/053_9.1_为什么“组织认知”也是壁垒.md"
+    },
+    {
+      "title": "9.3 报纸导读是“认知路由系统”",
+      "level": 3,
+      "start_locator": "P01262",
+      "end_locator": "P01286",
+      "block_count": 25,
+      "char_count": 1523,
+      "topics": {
+        "客户与场景": 37,
+        "产品与架构": 11,
+        "企业战略": 10,
+        "案例与证据": 4,
+        "合规与保密": 2,
+        "智能体能力": 1
+      },
+      "file": "sections/054_9.3_报纸导读是“认知路由系统”.md"
+    },
+    {
+      "title": "9.5 “AI 员工”不是助手话术，而是组织结构话术",
+      "level": 3,
+      "start_locator": "P01287",
+      "end_locator": "P01309",
+      "block_count": 23,
+      "char_count": 1424,
+      "topics": {
+        "客户与场景": 27,
+        "产品与架构": 5,
+        "智能体能力": 5,
+        "合规与保密": 2,
+        "案例与证据": 2,
+        "竞品与壁垒": 2,
+        "企业战略": 1
+      },
+      "file": "sections/055_9.5_“AI_员工”不是助手话术，而是组织结构话术.md"
+    },
+    {
+      "title": "10.1 JovaAI 的终局不是卖软件，也不是卖几个 AI 员工",
+      "level": 3,
+      "start_locator": "P01310",
+      "end_locator": "P01341",
+      "block_count": 31,
+      "char_count": 1335,
+      "topics": {
+        "客户与场景": 15,
+        "产品与架构": 12,
+        "企业战略": 7,
+        "竞品与壁垒": 6,
+        "案例与证据": 4,
+        "合规与保密": 2,
+        "历史内容": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/056_10.1_JovaAI_的终局不是卖软件，也不是卖几个_AI_员工.md"
+    },
+    {
+      "title": "10.3 Wtree 为什么不是普通应用市场",
+      "level": 3,
+      "start_locator": "P01342",
+      "end_locator": "P01369",
+      "block_count": 28,
+      "char_count": 1366,
+      "topics": {
+        "客户与场景": 17,
+        "产品与架构": 13,
+        "案例与证据": 4,
+        "企业战略": 2,
+        "智能体能力": 2,
+        "竞品与壁垒": 2,
+        "合规与保密": 1
+      },
+      "file": "sections/057_10.3_Wtree_为什么不是普通应用市场.md"
+    },
+    {
+      "title": "10.5 客户成功是网络节点激活，而不是项目收尾",
+      "level": 3,
+      "start_locator": "P01370",
+      "end_locator": "P01398",
+      "block_count": 29,
+      "char_count": 1196,
+      "topics": {
+        "客户与场景": 28,
+        "产品与架构": 8,
+        "案例与证据": 5,
+        "企业战略": 2,
+        "竞品与壁垒": 2,
+        "合规与保密": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/058_10.5_客户成功是网络节点激活，而不是项目收尾.md"
+    },
+    {
+      "title": "10.7 本章结论",
+      "level": 3,
+      "start_locator": "P01399",
+      "end_locator": "P01418",
+      "block_count": 20,
+      "char_count": 865,
+      "topics": {
+        "产品与架构": 12,
+        "客户与场景": 9,
+        "企业战略": 2,
+        "竞品与壁垒": 2,
+        "历史内容": 1,
+        "合规与保密": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/059_10.7_本章结论.md"
+    },
+    {
+      "title": "11.1 为什么不能把所有竞争对手放在同一张表里简单比较",
+      "level": 3,
+      "start_locator": "P01420",
+      "end_locator": "P01431",
+      "block_count": 12,
+      "char_count": 861,
+      "topics": {
+        "竞品与壁垒": 14,
+        "产品与架构": 5,
+        "客户与场景": 2,
+        "合规与保密": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/060_11.1_为什么不能把所有竞争对手放在同一张表里简单比较.md"
+    },
+    {
+      "title": "11.3 第二层：Agent 开发与协议层",
+      "level": 3,
+      "start_locator": "P01432",
+      "end_locator": "P01453",
+      "block_count": 22,
+      "char_count": 1200,
+      "topics": {
+        "客户与场景": 6,
+        "竞品与壁垒": 4,
+        "产品与架构": 3,
+        "合规与保密": 2,
+        "案例与证据": 2,
+        "智能体能力": 1
+      },
+      "file": "sections/061_11.3_第二层：Agent_开发与协议层.md"
+    },
+    {
+      "title": "11.5 第四层：企业数据、本体与行动层",
+      "level": 3,
+      "start_locator": "P01454",
+      "end_locator": "P01479",
+      "block_count": 26,
+      "char_count": 1394,
+      "topics": {
+        "案例与证据": 9,
+        "竞品与壁垒": 9,
+        "客户与场景": 8,
+        "合规与保密": 6,
+        "产品与架构": 4,
+        "智能体能力": 2
+      },
+      "file": "sections/062_11.5_第四层：企业数据、本体与行动层.md"
+    },
+    {
+      "title": "11.7 为什么五层模型能帮助销售和投资人理解艾氪",
+      "level": 3,
+      "start_locator": "P01480",
+      "end_locator": "P01501",
+      "block_count": 22,
+      "char_count": 1210,
+      "topics": {
+        "产品与架构": 17,
+        "竞品与壁垒": 10,
+        "客户与场景": 4,
+        "案例与证据": 4,
+        "智能体能力": 2
+      },
+      "file": "sections/063_11.7_为什么五层模型能帮助销售和投资人理解艾氪.md"
+    },
+    {
+      "title": "12.1 这一类公司强在哪里",
+      "level": 3,
+      "start_locator": "P01502",
+      "end_locator": "P01527",
+      "block_count": 23,
+      "char_count": 1073,
+      "topics": {
+        "竞品与壁垒": 6,
+        "产品与架构": 5,
+        "案例与证据": 4,
+        "智能体能力": 3,
+        "历史内容": 2,
+        "企业战略": 1
+      },
+      "file": "sections/064_12.1_这一类公司强在哪里.md"
+    },
+    {
+      "title": "12.3 Anthropic MCP：强在工具和数据连接，但连接不等于理解产业交易",
+      "level": 3,
+      "start_locator": "P01528",
+      "end_locator": "P01548",
+      "block_count": 21,
+      "char_count": 1214,
+      "topics": {
+        "竞品与壁垒": 10,
+        "客户与场景": 7,
+        "案例与证据": 7,
+        "产品与架构": 4,
+        "合规与保密": 2,
+        "企业战略": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/065_12.3_Anthropic_MCP：强在工具和数据连接，但连接不等于理解产业交易.md"
+    },
+    {
+      "title": "12.5 中国大模型和 Agent 平台：云、模型、生态很强，但产业交易颗粒度仍需沉淀",
+      "level": 3,
+      "start_locator": "P01549",
+      "end_locator": "P01570",
+      "block_count": 22,
+      "char_count": 1197,
+      "topics": {
+        "产品与架构": 8,
+        "智能体能力": 7,
+        "客户与场景": 6,
+        "合规与保密": 1,
+        "案例与证据": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/066_12.5_中国大模型和_Agent_平台：云、模型、生态很强，但产业交易颗粒度仍需沉淀.md"
+    },
+    {
+      "title": "12.7 本章结论",
+      "level": 3,
+      "start_locator": "P01571",
+      "end_locator": "P01597",
+      "block_count": 27,
+      "char_count": 1138,
+      "topics": {
+        "历史内容": 5,
+        "案例与证据": 5,
+        "产品与架构": 4,
+        "客户与场景": 3,
+        "企业战略": 2,
+        "合规与保密": 2,
+        "智能体能力": 2,
+        "品牌定位": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/067_12.7_本章结论.md"
+    },
+    {
+      "title": "13.2 Coze、Dify、LangChain / LangGraph、n8n：强在 AI 应用搭建和 Workflow 编排",
+      "level": 3,
+      "start_locator": "P01599",
+      "end_locator": "P01619",
+      "block_count": 21,
+      "char_count": 1034,
+      "topics": {
+        "产品与架构": 10,
+        "竞品与壁垒": 6,
+        "智能体能力": 3,
+        "客户与场景": 2,
+        "案例与证据": 2,
+        "历史内容": 1,
+        "合规与保密": 1
+      },
+      "file": "sections/068_13.2_Coze、Dify、LangChain_LangGraph、n8n：强在_AI_应用搭建和_Workflow_编排.md"
+    },
+    {
+      "title": "13.4 Manus、Genspark：强在中心化任务调度和 Super Agent 执行",
+      "level": 3,
+      "start_locator": "P01620",
+      "end_locator": "P01653",
+      "block_count": 34,
+      "char_count": 1503,
+      "topics": {
+        "产品与架构": 9,
+        "客户与场景": 9,
+        "智能体能力": 4,
+        "合规与保密": 3,
+        "企业战略": 1,
+        "案例与证据": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/069_13.4_Manus、Genspark：强在中心化任务调度和_Super_Agent_执行.md"
+    },
+    {
+      "title": "13.6 这一类公司为什么难以自然长成 JovaAI",
+      "level": 3,
+      "start_locator": "P01654",
+      "end_locator": "P01676",
+      "block_count": 23,
+      "char_count": 1277,
+      "topics": {
+        "产品与架构": 24,
+        "客户与场景": 8,
+        "智能体能力": 6,
+        "案例与证据": 3,
+        "企业战略": 2,
+        "历史内容": 2,
+        "合规与保密": 1
+      },
+      "file": "sections/070_13.6_这一类公司为什么难以自然长成_JovaAI.md"
+    },
+    {
+      "title": "14.1 为什么企业软件公司是最容易被客户拿来比较的对象",
+      "level": 3,
+      "start_locator": "P01677",
+      "end_locator": "P01700",
+      "block_count": 23,
+      "char_count": 983,
+      "topics": {
+        "客户与场景": 6,
+        "竞品与壁垒": 6,
+        "产品与架构": 4,
+        "智能体能力": 4,
+        "案例与证据": 3,
+        "企业战略": 2,
+        "合规与保密": 2,
+        "历史内容": 1
+      },
+      "file": "sections/071_14.1_为什么企业软件公司是最容易被客户拿来比较的对象.md"
+    },
+    {
+      "title": "14.3 Salesforce、HubSpot：强在客户关系管理，但 ToB 交易不是客户跟进这么简单",
+      "level": 3,
+      "start_locator": "P01701",
+      "end_locator": "P01724",
+      "block_count": 24,
+      "char_count": 1038,
+      "topics": {
+        "客户与场景": 23,
+        "竞品与壁垒": 18,
+        "合规与保密": 8,
+        "案例与证据": 3,
+        "智能体能力": 2
+      },
+      "file": "sections/072_14.3_Salesforce、HubSpot：强在客户关系管理，但_ToB_交易不是客户跟进这么简单.md"
+    },
+    {
+      "title": "14.6 传统企业软件的第一大边界：补录系统与账号隔离",
+      "level": 3,
+      "start_locator": "P01725",
+      "end_locator": "P01755",
+      "block_count": 31,
+      "char_count": 1453,
+      "topics": {
+        "客户与场景": 18,
+        "合规与保密": 11,
+        "案例与证据": 8,
+        "智能体能力": 5,
+        "产品与架构": 2
+      },
+      "file": "sections/073_14.6_传统企业软件的第一大边界：补录系统与账号隔离.md"
+    },
+    {
+      "title": "14.8 传统企业软件的第三大边界：企业方言与私有标准",
+      "level": 3,
+      "start_locator": "P01756",
+      "end_locator": "P01776",
+      "block_count": 21,
+      "char_count": 990,
+      "topics": {
+        "产品与架构": 12,
+        "客户与场景": 9,
+        "合规与保密": 4,
+        "案例与证据": 4,
+        "智能体能力": 2
+      },
+      "file": "sections/074_14.8_传统企业软件的第三大边界：企业方言与私有标准.md"
+    },
+    {
+      "title": "14.10 本章结论",
+      "level": 3,
+      "start_locator": "P01777",
+      "end_locator": "P01806",
+      "block_count": 30,
+      "char_count": 1301,
+      "topics": {
+        "客户与场景": 13,
+        "案例与证据": 7,
+        "产品与架构": 6,
+        "合规与保密": 5,
+        "企业战略": 3,
+        "智能体能力": 3,
+        "竞品与壁垒": 2,
+        "历史内容": 1
+      },
+      "file": "sections/075_14.10_本章结论.md"
+    },
+    {
+      "title": "15.2 Palantir 强在哪里：企业内部 data、logic、action、security 的四重集成",
+      "level": 3,
+      "start_locator": "P01809",
+      "end_locator": "P01831",
+      "block_count": 23,
+      "char_count": 1409,
+      "topics": {
+        "案例与证据": 14,
+        "合规与保密": 8,
+        "客户与场景": 4,
+        "竞品与壁垒": 4,
+        "产品与架构": 2,
+        "智能体能力": 1
+      },
+      "file": "sections/076_15.2_Palantir_强在哪里：企业内部_data、logic、action、security_的四重集成.md"
+    },
+    {
+      "title": "15.4 企业级 Ontology 的边界：企业内部越清楚，不等于企业之间越互联",
+      "level": 3,
+      "start_locator": "P01832",
+      "end_locator": "P01854",
+      "block_count": 23,
+      "char_count": 1108,
+      "topics": {
+        "合规与保密": 14,
+        "案例与证据": 9,
+        "客户与场景": 5,
+        "企业战略": 4,
+        "智能体能力": 3
+      },
+      "file": "sections/077_15.4_企业级_Ontology_的边界：企业内部越清楚，不等于企业之间越互联.md"
+    },
+    {
+      "title": "15.6 Palantir 更像企业作战地图，JovaAI 要做产业交易地图",
+      "level": 3,
+      "start_locator": "P01855",
+      "end_locator": "P01880",
+      "block_count": 26,
+      "char_count": 1084,
+      "topics": {
+        "合规与保密": 8,
+        "产品与架构": 6,
+        "客户与场景": 3,
+        "智能体能力": 2,
+        "品牌定位": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/078_15.6_Palantir_更像企业作战地图，JovaAI_要做产业交易地图.md"
+    },
+    {
+      "title": "15.8 为什么 Palantir 很难短期自然补齐 JovaAI 的产业级互联能力",
+      "level": 3,
+      "start_locator": "P01881",
+      "end_locator": "P01901",
+      "block_count": 21,
+      "char_count": 1112,
+      "topics": {
+        "合规与保密": 10,
+        "智能体能力": 7,
+        "产品与架构": 5,
+        "客户与场景": 3,
+        "企业战略": 2,
+        "案例与证据": 2
+      },
+      "file": "sections/079_15.8_为什么_Palantir_很难短期自然补齐_JovaAI_的产业级互联能力.md"
+    },
+    {
+      "title": "第 16 章：企业数据平台与 Enterprise AI 公司对比——它们让企业数据可被 AI 使用，JovaAI 让产业交易可被智能体执行",
+      "level": 2,
+      "start_locator": "P01902",
+      "end_locator": "P01921",
+      "block_count": 19,
+      "char_count": 877,
+      "topics": {
+        "产品与架构": 9,
+        "合规与保密": 7,
+        "案例与证据": 4,
+        "竞品与壁垒": 2,
+        "历史内容": 1,
+        "客户与场景": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/080_第_16_章：企业数据平台与_Enterprise_AI_公司对比——它们让企业数据可被_AI_使用，JovaAI_让产业交易可被智能体执行.md"
+    },
+    {
+      "title": "16.2 Snowflake：强在企业数据云和 Agent 治理，但交易语法不是天然主场",
+      "level": 3,
+      "start_locator": "P01922",
+      "end_locator": "P01944",
+      "block_count": 23,
+      "char_count": 1269,
+      "topics": {
+        "案例与证据": 35,
+        "客户与场景": 8,
+        "产品与架构": 5,
+        "企业战略": 2,
+        "智能体能力": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/081_16.2_Snowflake：强在企业数据云和_Agent_治理，但交易语法不是天然主场.md"
+    },
+    {
+      "title": "16.4 C3 AI：强在 Enterprise AI 应用和行业 AI，但仍偏企业应用平台",
+      "level": 3,
+      "start_locator": "P01945",
+      "end_locator": "P01966",
+      "block_count": 22,
+      "char_count": 1303,
+      "topics": {
+        "产品与架构": 6,
+        "客户与场景": 6,
+        "智能体能力": 3,
+        "案例与证据": 2,
+        "合规与保密": 1,
+        "品牌定位": 1
+      },
+      "file": "sections/082_16.4_C3_AI：强在_Enterprise_AI_应用和行业_AI，但仍偏企业应用平台.md"
+    },
+    {
+      "title": "16.6 为什么企业 Agent 规模化不能只靠数据平台",
+      "level": 3,
+      "start_locator": "P01967",
+      "end_locator": "P01984",
+      "block_count": 18,
+      "char_count": 935,
+      "topics": {
+        "案例与证据": 17,
+        "产品与架构": 8,
+        "客户与场景": 7,
+        "智能体能力": 1
+      },
+      "file": "sections/083_16.6_为什么企业_Agent_规模化不能只靠数据平台.md"
+    },
+    {
+      "title": "16.8 本章结论",
+      "level": 3,
+      "start_locator": "P01985",
+      "end_locator": "P02004",
+      "block_count": 20,
+      "char_count": 936,
+      "topics": {
+        "产品与架构": 12,
+        "案例与证据": 10,
+        "客户与场景": 4,
+        "合规与保密": 2,
+        "智能体能力": 2,
+        "历史内容": 1
+      },
+      "file": "sections/084_16.8_本章结论.md"
+    },
+    {
+      "title": "17.2 UiPath：强在机器人、流程自动化和 Agentic Orchestration",
+      "level": 3,
+      "start_locator": "P02006",
+      "end_locator": "P02031",
+      "block_count": 26,
+      "char_count": 1453,
+      "topics": {
+        "合规与保密": 3,
+        "客户与场景": 3,
+        "竞品与壁垒": 3,
+        "智能体能力": 2,
+        "案例与证据": 1
+      },
+      "file": "sections/085_17.2_UiPath：强在机器人、流程自动化和_Agentic_Orchestration.md"
+    },
+    {
+      "title": "17.4 RPA / APA 的根本边界：它知道怎么做动作，但未必知道为什么这么做",
+      "level": 3,
+      "start_locator": "P02032",
+      "end_locator": "P02053",
+      "block_count": 22,
+      "char_count": 1119,
+      "topics": {
+        "客户与场景": 6,
+        "合规与保密": 2,
+        "智能体能力": 2,
+        "案例与证据": 2,
+        "产品与架构": 1,
+        "官网与视觉": 1
+      },
+      "file": "sections/086_17.4_RPA_APA_的根本边界：它知道怎么做动作，但未必知道为什么这么做.md"
+    },
+    {
+      "title": "17.6 RPA / APA 可以成为 JovaAI 的执行工具，但不是 JovaAI 的上层大脑",
+      "level": 3,
+      "start_locator": "P02054",
+      "end_locator": "P02073",
+      "block_count": 20,
+      "char_count": 919,
+      "topics": {
+        "客户与场景": 8,
+        "产品与架构": 4,
+        "智能体能力": 4,
+        "合规与保密": 3,
+        "案例与证据": 2,
+        "企业战略": 1
+      },
+      "file": "sections/087_17.6_RPA_APA_可以成为_JovaAI_的执行工具，但不是_JovaAI_的上层大脑.md"
+    },
+    {
+      "title": "17.8 本章结论",
+      "level": 3,
+      "start_locator": "P02074",
+      "end_locator": "P02093",
+      "block_count": 20,
+      "char_count": 856,
+      "topics": {
+        "智能体能力": 7,
+        "案例与证据": 3,
+        "产品与架构": 2,
+        "企业战略": 1,
+        "历史内容": 1
+      },
+      "file": "sections/088_17.8_本章结论.md"
+    },
+    {
+      "title": "18.2 1688 与阿里国际站 / Accio：平台商家经营与跨境 B2B AI 很强，但仍是平台生态逻辑",
+      "level": 3,
+      "start_locator": "P02097",
+      "end_locator": "P02121",
+      "block_count": 25,
+      "char_count": 1275,
+      "topics": {
+        "产品与架构": 32,
+        "客户与场景": 8,
+        "案例与证据": 4,
+        "竞品与壁垒": 4,
+        "企业战略": 1,
+        "合规与保密": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/089_18.2_1688_与阿里国际站_Accio：平台商家经营与跨境_B2B_AI_很强，但仍是平台生态逻辑.md"
+    },
+    {
+      "title": "18.4 震坤行：MRO 采购服务很深，但仍是垂直品类与采购服务平台",
+      "level": 3,
+      "start_locator": "P02122",
+      "end_locator": "P02149",
+      "block_count": 28,
+      "char_count": 1263,
+      "topics": {
+        "客户与场景": 39,
+        "产品与架构": 18,
+        "企业战略": 2,
+        "智能体能力": 2,
+        "品牌定位": 1
+      },
+      "file": "sections/090_18.4_震坤行：MRO_采购服务很深，但仍是垂直品类与采购服务平台.md"
+    },
+    {
+      "title": "18.6 B2B 平台共同强项：交易真实、履约真实、供应链真实",
+      "level": 3,
+      "start_locator": "P02150",
+      "end_locator": "P02173",
+      "block_count": 24,
+      "char_count": 1193,
+      "topics": {
+        "产品与架构": 35,
+        "客户与场景": 13,
+        "智能体能力": 3,
+        "合规与保密": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/091_18.6_B2B_平台共同强项：交易真实、履约真实、供应链真实.md"
+    },
+    {
+      "title": "18.8 B2B 平台的第二个边界：连接供需，不等于重构商业模式",
+      "level": 3,
+      "start_locator": "P02174",
+      "end_locator": "P02198",
+      "block_count": 25,
+      "char_count": 975,
+      "topics": {
+        "产品与架构": 28,
+        "客户与场景": 9,
+        "案例与证据": 3,
+        "企业战略": 2,
+        "合规与保密": 1,
+        "智能体能力": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/092_18.8_B2B_平台的第二个边界：连接供需，不等于重构商业模式.md"
+    },
+    {
+      "title": "18.11 本章结论",
+      "level": 3,
+      "start_locator": "P02199",
+      "end_locator": "P02223",
+      "block_count": 25,
+      "char_count": 1266,
+      "topics": {
+        "产品与架构": 40,
+        "案例与证据": 8,
+        "客户与场景": 6,
+        "智能体能力": 2,
+        "企业战略": 1,
+        "历史内容": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/093_18.11_本章结论.md"
+    },
+    {
+      "title": "19.2 海尔卡奥斯 COSMOPlat：大规模定制和工业互联网生态很强，但主场是制造与工业协同",
+      "level": 3,
+      "start_locator": "P02225",
+      "end_locator": "P02244",
+      "block_count": 20,
+      "char_count": 882,
+      "topics": {
+        "产品与架构": 14,
+        "客户与场景": 7,
+        "智能体能力": 6,
+        "企业战略": 3,
+        "竞品与壁垒": 3,
+        "案例与证据": 1
+      },
+      "file": "sections/094_19.2_海尔卡奥斯_COSMOPlat：大规模定制和工业互联网生态很强，但主场是制造与工业协同.md"
+    },
+    {
+      "title": "19.4 浪潮云洲：工业数字基础设施很强，但仍偏制造业数字化基础设施",
+      "level": 3,
+      "start_locator": "P02245",
+      "end_locator": "P02266",
+      "block_count": 22,
+      "char_count": 1063,
+      "topics": {
+        "案例与证据": 11,
+        "产品与架构": 9,
+        "客户与场景": 5,
+        "企业战略": 4,
+        "智能体能力": 4,
+        "合规与保密": 1,
+        "品牌定位": 1
+      },
+      "file": "sections/095_19.4_浪潮云洲：工业数字基础设施很强，但仍偏制造业数字化基础设施.md"
+    },
+    {
+      "title": "19.6 工业互联网平台的共同强项：机器、设备、生产、工业数据",
+      "level": 3,
+      "start_locator": "P02267",
+      "end_locator": "P02285",
+      "block_count": 19,
+      "char_count": 877,
+      "topics": {
+        "案例与证据": 8,
+        "产品与架构": 6,
+        "客户与场景": 3,
+        "智能体能力": 2,
+        "企业战略": 1
+      },
+      "file": "sections/096_19.6_工业互联网平台的共同强项：机器、设备、生产、工业数据.md"
+    },
+    {
+      "title": "19.8 工业互联网平台的第二个边界：生产优化不等于商业模式重构",
+      "level": 3,
+      "start_locator": "P02286",
+      "end_locator": "P02306",
+      "block_count": 21,
+      "char_count": 980,
+      "topics": {
+        "产品与架构": 15,
+        "客户与场景": 8,
+        "企业战略": 6,
+        "案例与证据": 6,
+        "合规与保密": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/097_19.8_工业互联网平台的第二个边界：生产优化不等于商业模式重构.md"
+    },
+    {
+      "title": "19.11 本章结论",
+      "level": 3,
+      "start_locator": "P02307",
+      "end_locator": "P02336",
+      "block_count": 30,
+      "char_count": 1177,
+      "topics": {
+        "案例与证据": 16,
+        "客户与场景": 12,
+        "产品与架构": 8,
+        "企业战略": 6,
+        "智能体能力": 4,
+        "历史内容": 1,
+        "合规与保密": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/098_19.11_本章结论.md"
+    },
+    {
+      "title": "20.2 雅迪关务背后的产业背景：出海制造企业的普遍痛点",
+      "level": 3,
+      "start_locator": "P02339",
+      "end_locator": "P02363",
+      "block_count": 25,
+      "char_count": 1176,
+      "topics": {
+        "客户与场景": 26,
+        "案例与证据": 9,
+        "合规与保密": 4,
+        "竞品与壁垒": 3,
+        "智能体能力": 2
+      },
+      "file": "sections/099_20.2_雅迪关务背后的产业背景：出海制造企业的普遍痛点.md"
+    },
+    {
+      "title": "20.3 项目关键时间线：从调研到 POC 跑通，再到性能优化",
+      "level": 3,
+      "start_locator": "P02364",
+      "end_locator": "P02392",
+      "block_count": 29,
+      "char_count": 1406,
+      "topics": {
+        "客户与场景": 15,
+        "案例与证据": 6,
+        "合规与保密": 4,
+        "竞品与壁垒": 2,
+        "产品与架构": 1,
+        "历史内容": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/100_20.3_项目关键时间线：从调研到_POC_跑通，再到性能优化.md"
+    },
+    {
+      "title": "20.5 为什么雅迪案例能变成通用出海关务场景包",
+      "level": 3,
+      "start_locator": "P02393",
+      "end_locator": "P02420",
+      "block_count": 28,
+      "char_count": 1093,
+      "topics": {
+        "客户与场景": 18,
+        "案例与证据": 11,
+        "合规与保密": 6,
+        "智能体能力": 4,
+        "竞品与壁垒": 4,
+        "产品与架构": 1
+      },
+      "file": "sections/101_20.5_为什么雅迪案例能变成通用出海关务场景包.md"
+    },
+    {
+      "title": "20.7 本章结论",
+      "level": 3,
+      "start_locator": "P02421",
+      "end_locator": "P02438",
+      "block_count": 18,
+      "char_count": 906,
+      "topics": {
+        "客户与场景": 17,
+        "案例与证据": 5,
+        "竞品与壁垒": 2,
+        "产品与架构": 1,
+        "历史内容": 1,
+        "合规与保密": 1
+      },
+      "file": "sections/102_20.7_本章结论.md"
+    },
+    {
+      "title": "21.2 会展行业的真实痛点：不是没有流量，而是交易不能持续",
+      "level": 3,
+      "start_locator": "P02440",
+      "end_locator": "P02463",
+      "block_count": 24,
+      "char_count": 959,
+      "topics": {
+        "案例与证据": 9,
+        "产品与架构": 5,
+        "历史内容": 3,
+        "企业战略": 1,
+        "客户与场景": 1
+      },
+      "file": "sections/103_21.2_会展行业的真实痛点：不是没有流量，而是交易不能持续.md"
+    },
+    {
+      "title": "21.4 JovaAI 年代的升级：从交易激活到智能体持续运营",
+      "level": 3,
+      "start_locator": "P02464",
+      "end_locator": "P02492",
+      "block_count": 29,
+      "char_count": 1124,
+      "topics": {
+        "产品与架构": 15,
+        "客户与场景": 6,
+        "历史内容": 3,
+        "案例与证据": 2,
+        "智能体能力": 1
+      },
+      "file": "sections/104_21.4_JovaAI_年代的升级：从交易激活到智能体持续运营.md"
+    },
+    {
+      "title": "21.7 本章结论",
+      "level": 3,
+      "start_locator": "P02493",
+      "end_locator": "P02518",
+      "block_count": 26,
+      "char_count": 968,
+      "topics": {
+        "案例与证据": 10,
+        "产品与架构": 8,
+        "竞品与壁垒": 6,
+        "企业战略": 2,
+        "客户与场景": 2,
+        "历史内容": 1,
+        "合规与保密": 1
+      },
+      "file": "sections/105_21.7_本章结论.md"
+    },
+    {
+      "title": "22.2 已上线功能证明：系统已经从展会执行进入出海业务操作系统门口",
+      "level": 3,
+      "start_locator": "P02520",
+      "end_locator": "P02543",
+      "block_count": 24,
+      "char_count": 998,
+      "topics": {
+        "案例与证据": 10,
+        "产品与架构": 5,
+        "官网与视觉": 1,
+        "客户与场景": 1
+      },
+      "file": "sections/106_22.2_已上线功能证明：系统已经从展会执行进入出海业务操作系统门口.md"
+    },
+    {
+      "title": "22.4 侨交会的升级方向：展前、展中、展后全链路出海闭环",
+      "level": 3,
+      "start_locator": "P02544",
+      "end_locator": "P02572",
+      "block_count": 29,
+      "char_count": 1132,
+      "topics": {
+        "客户与场景": 7,
+        "案例与证据": 5,
+        "产品与架构": 4,
+        "历史内容": 3,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/107_22.4_侨交会的升级方向：展前、展中、展后全链路出海闭环.md"
+    },
+    {
+      "title": "22.7 本章结论",
+      "level": 3,
+      "start_locator": "P02573",
+      "end_locator": "P02602",
+      "block_count": 30,
+      "char_count": 1042,
+      "topics": {
+        "案例与证据": 10,
+        "产品与架构": 8,
+        "客户与场景": 3,
+        "历史内容": 1,
+        "合规与保密": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/108_22.7_本章结论.md"
+    },
+    {
+      "title": "23.3 联合采购与优盟：一群企业用 AI 联合买货，就是商业模式",
+      "level": 3,
+      "start_locator": "P02604",
+      "end_locator": "P02635",
+      "block_count": 32,
+      "char_count": 1204,
+      "topics": {
+        "客户与场景": 33,
+        "产品与架构": 3,
+        "企业战略": 3,
+        "智能体能力": 3,
+        "合规与保密": 2,
+        "案例与证据": 2,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/109_23.3_联合采购与优盟：一群企业用_AI_联合买货，就是商业模式.md"
+    },
+    {
+      "title": "23.6 采购案例标准对外话术",
+      "level": 3,
+      "start_locator": "P02636",
+      "end_locator": "P02661",
+      "block_count": 26,
+      "char_count": 1130,
+      "topics": {
+        "客户与场景": 36,
+        "产品与架构": 7,
+        "合规与保密": 6,
+        "智能体能力": 6,
+        "案例与证据": 6,
+        "竞品与壁垒": 6,
+        "企业战略": 2
+      },
+      "file": "sections/110_23.6_采购案例标准对外话术.md"
+    },
+    {
+      "title": "24.2 普通报价 Agent 的误区：把报价理解成生成报价单",
+      "level": 3,
+      "start_locator": "P02662",
+      "end_locator": "P02688",
+      "block_count": 26,
+      "char_count": 1185,
+      "topics": {
+        "客户与场景": 24,
+        "智能体能力": 4,
+        "产品与架构": 2,
+        "合规与保密": 2,
+        "企业战略": 1,
+        "历史内容": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/111_24.2_普通报价_Agent_的误区：把报价理解成生成报价单.md"
+    },
+    {
+      "title": "24.5 报价场景如何连接其他场景",
+      "level": 3,
+      "start_locator": "P02689",
+      "end_locator": "P02728",
+      "block_count": 40,
+      "char_count": 1194,
+      "topics": {
+        "客户与场景": 15,
+        "产品与架构": 6,
+        "合规与保密": 4,
+        "智能体能力": 2,
+        "竞品与壁垒": 2
+      },
+      "file": "sections/112_24.5_报价场景如何连接其他场景.md"
+    },
+    {
+      "title": "24.8 本章结论",
+      "level": 3,
+      "start_locator": "P02729",
+      "end_locator": "P02755",
+      "block_count": 27,
+      "char_count": 952,
+      "topics": {
+        "客户与场景": 13,
+        "产品与架构": 6,
+        "竞品与壁垒": 6,
+        "智能体能力": 4,
+        "案例与证据": 4,
+        "合规与保密": 2,
+        "历史内容": 1
+      },
+      "file": "sections/113_24.8_本章结论.md"
+    },
+    {
+      "title": "25.2 问题一：你们说产业 Know-how 深，难道比我更懂我的行业吗？",
+      "level": 3,
+      "start_locator": "P02758",
+      "end_locator": "P02780",
+      "block_count": 22,
+      "char_count": 955,
+      "topics": {
+        "客户与场景": 16,
+        "产品与架构": 6,
+        "智能体能力": 2,
+        "历史内容": 1,
+        "合规与保密": 1,
+        "案例与证据": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/114_25.2_问题一：你们说产业_Know-how_深，难道比我更懂我的行业吗？.md"
+    },
+    {
+      "title": "25.4 问题三：你们是不是做定制？会不会又变成传统软件项目？",
+      "level": 3,
+      "start_locator": "P02782",
+      "end_locator": "P02809",
+      "block_count": 27,
+      "char_count": 1138,
+      "topics": {
+        "产品与架构": 9,
+        "客户与场景": 9,
+        "智能体能力": 2,
+        "历史内容": 1
+      },
+      "file": "sections/115_25.4_问题三：你们是不是做定制？会不会又变成传统软件项目？.md"
+    },
+    {
+      "title": "25.6 问题五：我们已经有钉钉、飞书、企微、办公 AI，为什么还需要 JovaAI？",
+      "level": 3,
+      "start_locator": "P02811",
+      "end_locator": "P02830",
+      "block_count": 19,
+      "char_count": 883,
+      "topics": {
+        "客户与场景": 15,
+        "合规与保密": 6,
+        "智能体能力": 4,
+        "竞品与壁垒": 4,
+        "历史内容": 2
+      },
+      "file": "sections/116_25.6_问题五：我们已经有钉钉、飞书、企微、办公_AI，为什么还需要_JovaAI？.md"
+    },
+    {
+      "title": "25.8 问题七：Manus、Genspark 这种 Super Agent 也能自动完成复杂任务，你们有什么不同？",
+      "level": 3,
+      "start_locator": "P02832",
+      "end_locator": "P02849",
+      "block_count": 17,
+      "char_count": 976,
+      "topics": {
+        "客户与场景": 9,
+        "智能体能力": 5,
+        "产品与架构": 4,
+        "历史内容": 4,
+        "竞品与壁垒": 2,
+        "合规与保密": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/117_25.8_问题七：Manus、Genspark_这种_Super_Agent_也能自动完成复杂任务，你们有什么不同？.md"
+    },
+    {
+      "title": "25.10 问题九：单个智能体不就够了吗？为什么要智能体团队？",
+      "level": 3,
+      "start_locator": "P02851",
+      "end_locator": "P02872",
+      "block_count": 21,
+      "char_count": 843,
+      "topics": {
+        "智能体能力": 7,
+        "合规与保密": 6,
+        "产品与架构": 4,
+        "客户与场景": 4,
+        "历史内容": 2,
+        "案例与证据": 2,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/118_25.10_问题九：单个智能体不就够了吗？为什么要智能体团队？.md"
+    },
+    {
+      "title": "26.2 传统软件定制为什么越做越重",
+      "level": 3,
+      "start_locator": "P02874",
+      "end_locator": "P02898",
+      "block_count": 24,
+      "char_count": 1035,
+      "topics": {
+        "客户与场景": 13,
+        "产品与架构": 7,
+        "智能体能力": 3,
+        "企业战略": 2,
+        "历史内容": 1,
+        "案例与证据": 1
+      },
+      "file": "sections/119_26.2_传统软件定制为什么越做越重.md"
+    },
+    {
+      "title": "26.4 什么需求可以接，什么需求不能接",
+      "level": 3,
+      "start_locator": "P02899",
+      "end_locator": "P02929",
+      "block_count": 31,
+      "char_count": 1380,
+      "topics": {
+        "客户与场景": 22,
+        "产品与架构": 8,
+        "合规与保密": 4,
+        "案例与证据": 2,
+        "历史内容": 1,
+        "官网与视觉": 1,
+        "智能体能力": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/120_26.4_什么需求可以接，什么需求不能接.md"
+    },
+    {
+      "title": "26.7 JovaAI 如何彻底摆脱传统定制泥潭",
+      "level": 3,
+      "start_locator": "P02930",
+      "end_locator": "P02968",
+      "block_count": 39,
+      "char_count": 1049,
+      "topics": {
+        "客户与场景": 11,
+        "产品与架构": 8,
+        "案例与证据": 8
+      },
+      "file": "sections/121_26.7_JovaAI_如何彻底摆脱传统定制泥潭.md"
+    },
+    {
+      "title": "27.1 为什么要准备三个版本",
+      "level": 3,
+      "start_locator": "P02969",
+      "end_locator": "P02994",
+      "block_count": 25,
+      "char_count": 977,
+      "topics": {
+        "客户与场景": 13,
+        "产品与架构": 7,
+        "企业战略": 1,
+        "历史内容": 1,
+        "案例与证据": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/122_27.1_为什么要准备三个版本.md"
+    },
+    {
+      "title": "27.3 3 分钟版本",
+      "level": 3,
+      "start_locator": "P02996",
+      "end_locator": "P03004",
+      "block_count": 8,
+      "char_count": 1127,
+      "topics": {
+        "客户与场景": 16,
+        "产品与架构": 10,
+        "智能体能力": 4
+      },
+      "file": "sections/123_27.3_3_分钟版本.md"
+    },
+    {
+      "title": "27.4 10 分钟版本",
+      "level": 3,
+      "start_locator": "P03006",
+      "end_locator": "P03017",
+      "block_count": 12,
+      "char_count": 1932,
+      "topics": {
+        "客户与场景": 25,
+        "产品与架构": 14,
+        "竞品与壁垒": 9,
+        "案例与证据": 7,
+        "智能体能力": 5,
+        "合规与保密": 3,
+        "企业战略": 1
+      },
+      "file": "sections/124_27.4_10_分钟版本.md"
+    },
+    {
+      "title": "28.4 面向 Palantir 对比的金句",
+      "level": 3,
+      "start_locator": "P03019",
+      "end_locator": "P03056",
+      "block_count": 35,
+      "char_count": 1014,
+      "topics": {
+        "竞品与壁垒": 10,
+        "客户与场景": 8,
+        "产品与架构": 6,
+        "历史内容": 5,
+        "智能体能力": 3,
+        "企业战略": 2,
+        "合规与保密": 2,
+        "案例与证据": 1
+      },
+      "file": "sections/125_28.4_面向_Palantir_对比的金句.md"
+    },
+    {
+      "title": "29.1 为什么 JovaAI 必须以场景包方式销售",
+      "level": 3,
+      "start_locator": "P03058",
+      "end_locator": "P03101",
+      "block_count": 40,
+      "char_count": 1209,
+      "topics": {
+        "客户与场景": 17,
+        "产品与架构": 16,
+        "企业战略": 4,
+        "案例与证据": 4,
+        "历史内容": 3,
+        "合规与保密": 3,
+        "智能体能力": 1
+      },
+      "file": "sections/126_29.1_为什么_JovaAI_必须以场景包方式销售.md"
+    },
+    {
+      "title": "29.3 场景包必须满足五个条件",
+      "level": 3,
+      "start_locator": "P03102",
+      "end_locator": "P03122",
+      "block_count": 21,
+      "char_count": 1062,
+      "topics": {
+        "客户与场景": 17,
+        "产品与架构": 6,
+        "案例与证据": 4,
+        "智能体能力": 2
+      },
+      "file": "sections/127_29.3_场景包必须满足五个条件.md"
+    },
+    {
+      "title": "29.4 第一批重点场景包",
+      "level": 3,
+      "start_locator": "P03123",
+      "end_locator": "P03141",
+      "block_count": 19,
+      "char_count": 904,
+      "topics": {
+        "客户与场景": 17,
+        "智能体能力": 4,
+        "案例与证据": 4,
+        "产品与架构": 3,
+        "合规与保密": 3,
+        "竞品与壁垒": 3
+      },
+      "file": "sections/128_29.4_第一批重点场景包.md"
+    },
+    {
+      "title": "29.6 场景包不是一锤子买卖，而是网络节点孵化器",
+      "level": 3,
+      "start_locator": "P03142",
+      "end_locator": "P03180",
+      "block_count": 39,
+      "char_count": 1016,
+      "topics": {
+        "客户与场景": 20,
+        "案例与证据": 4,
+        "产品与架构": 2,
+        "合规与保密": 2,
+        "历史内容": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/129_29.6_场景包不是一锤子买卖，而是网络节点孵化器.md"
+    },
+    {
+      "title": "30.2 POC 筛选的六个标准",
+      "level": 3,
+      "start_locator": "P03181",
+      "end_locator": "P03216",
+      "block_count": 35,
+      "char_count": 1183,
+      "topics": {
+        "客户与场景": 19,
+        "产品与架构": 9,
+        "案例与证据": 8,
+        "智能体能力": 2,
+        "历史内容": 1
+      },
+      "file": "sections/130_30.2_POC_筛选的六个标准.md"
+    },
+    {
+      "title": "30.4 POC 必须有一条“黄金演示链路”",
+      "level": 3,
+      "start_locator": "P03217",
+      "end_locator": "P03238",
+      "block_count": 22,
+      "char_count": 842,
+      "topics": {
+        "客户与场景": 18,
+        "合规与保密": 5,
+        "产品与架构": 1,
+        "官网与视觉": 1,
+        "智能体能力": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/131_30.4_POC_必须有一条“黄金演示链路”.md"
+    },
+    {
+      "title": "30.7 POC 结束后必须形成五类沉淀",
+      "level": 3,
+      "start_locator": "P03239",
+      "end_locator": "P03277",
+      "block_count": 39,
+      "char_count": 1129,
+      "topics": {
+        "客户与场景": 16,
+        "案例与证据": 5,
+        "产品与架构": 2
+      },
+      "file": "sections/132_30.7_POC_结束后必须形成五类沉淀.md"
+    },
+    {
+      "title": "31.1 为什么客户成功在 JovaAI 体系里特别重要",
+      "level": 3,
+      "start_locator": "P03278",
+      "end_locator": "P03315",
+      "block_count": 37,
+      "char_count": 1073,
+      "topics": {
+        "客户与场景": 23,
+        "案例与证据": 6,
+        "产品与架构": 4,
+        "合规与保密": 3,
+        "智能体能力": 2,
+        "企业战略": 1,
+        "历史内容": 1,
+        "品牌定位": 1
+      },
+      "file": "sections/133_31.1_为什么客户成功在_JovaAI_体系里特别重要.md"
+    },
+    {
+      "title": "31.3 客户成功的第二目标：让客户内部形成新制度和新协同",
+      "level": 3,
+      "start_locator": "P03316",
+      "end_locator": "P03340",
+      "block_count": 25,
+      "char_count": 1005,
+      "topics": {
+        "客户与场景": 26,
+        "智能体能力": 11,
+        "合规与保密": 3,
+        "案例与证据": 3,
+        "历史内容": 2,
+        "产品与架构": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/134_31.3_客户成功的第二目标：让客户内部形成新制度和新协同.md"
+    },
+    {
+      "title": "31.5 客户成功的第四目标：从单客户交付走向上下游裂变",
+      "level": 3,
+      "start_locator": "P03341",
+      "end_locator": "P03364",
+      "block_count": 24,
+      "char_count": 864,
+      "topics": {
+        "客户与场景": 27,
+        "案例与证据": 10,
+        "历史内容": 2,
+        "合规与保密": 1,
+        "智能体能力": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/135_31.5_客户成功的第四目标：从单客户交付走向上下游裂变.md"
+    },
+    {
+      "title": "31.8 本章结论",
+      "level": 3,
+      "start_locator": "P03365",
+      "end_locator": "P03405",
+      "block_count": 41,
+      "char_count": 1131,
+      "topics": {
+        "客户与场景": 25,
+        "案例与证据": 13,
+        "产品与架构": 9,
+        "智能体能力": 7,
+        "历史内容": 2,
+        "合规与保密": 1
+      },
+      "file": "sections/136_31.8_本章结论.md"
+    },
+    {
+      "title": "32.3 研究院：不是写咨询报告，而是业务诊断和场景药方",
+      "level": 3,
+      "start_locator": "P03407",
+      "end_locator": "P03429",
+      "block_count": 23,
+      "char_count": 1107,
+      "topics": {
+        "客户与场景": 19,
+        "产品与架构": 7,
+        "案例与证据": 6,
+        "合规与保密": 5,
+        "品牌定位": 3,
+        "智能体能力": 3,
+        "企业战略": 2,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/137_32.3_研究院：不是写咨询报告，而是业务诊断和场景药方.md"
+    },
+    {
+      "title": "32.6 客户成功：把项目交付成网络节点",
+      "level": 3,
+      "start_locator": "P03430",
+      "end_locator": "P03456",
+      "block_count": 27,
+      "char_count": 1114,
+      "topics": {
+        "产品与架构": 20,
+        "客户与场景": 14,
+        "案例与证据": 6,
+        "智能体能力": 4,
+        "合规与保密": 3,
+        "品牌定位": 1
+      },
+      "file": "sections/138_32.6_客户成功：把项目交付成网络节点.md"
+    },
+    {
+      "title": "32.9 标准内部闭环",
+      "level": 3,
+      "start_locator": "P03457",
+      "end_locator": "P03481",
+      "block_count": 25,
+      "char_count": 956,
+      "topics": {
+        "客户与场景": 13,
+        "案例与证据": 7,
+        "产品与架构": 6,
+        "合规与保密": 5,
+        "企业战略": 4,
+        "历史内容": 2,
+        "品牌定位": 2,
+        "智能体能力": 2
+      },
+      "file": "sections/139_32.9_标准内部闭环.md"
+    },
+    {
+      "title": "33.1 最终必须回答的问题",
+      "level": 3,
+      "start_locator": "P03482",
+      "end_locator": "P03507",
+      "block_count": 24,
+      "char_count": 1053,
+      "topics": {
+        "产品与架构": 12,
+        "客户与场景": 4,
+        "竞品与壁垒": 4,
+        "案例与证据": 3,
+        "合规与保密": 2,
+        "智能体能力": 2,
+        "企业战略": 1,
+        "历史内容": 1
+      },
+      "file": "sections/140_33.1_最终必须回答的问题.md"
+    },
+    {
+      "title": "33.3 JovaAI 的代际差不在单点技术，而在复合结构",
+      "level": 3,
+      "start_locator": "P03508",
+      "end_locator": "P03538",
+      "block_count": 31,
+      "char_count": 1279,
+      "topics": {
+        "客户与场景": 11,
+        "智能体能力": 10,
+        "案例与证据": 7,
+        "产品与架构": 5,
+        "竞品与壁垒": 4,
+        "企业战略": 3,
+        "历史内容": 2,
+        "合规与保密": 2
+      },
+      "file": "sections/141_33.3_JovaAI_的代际差不在单点技术，而在复合结构.md"
+    },
+    {
+      "title": "33.5 为什么大厂短期难以追上",
+      "level": 3,
+      "start_locator": "P03539",
+      "end_locator": "P03560",
+      "block_count": 22,
+      "char_count": 864,
+      "topics": {
+        "客户与场景": 9,
+        "案例与证据": 9,
+        "竞品与壁垒": 8,
+        "产品与架构": 6,
+        "企业战略": 1,
+        "品牌定位": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/142_33.5_为什么大厂短期难以追上.md"
+    },
+    {
+      "title": "34.1 未来三年的总目标",
+      "level": 3,
+      "start_locator": "P03561",
+      "end_locator": "P03585",
+      "block_count": 24,
+      "char_count": 862,
+      "topics": {
+        "产品与架构": 8,
+        "案例与证据": 5,
+        "客户与场景": 3,
+        "竞品与壁垒": 3,
+        "智能体能力": 2,
+        "企业战略": 1,
+        "历史内容": 1,
+        "合规与保密": 1
+      },
+      "file": "sections/143_34.1_未来三年的总目标.md"
+    },
+    {
+      "title": "34.3 第二阶段：12–24 个月，形成场景包矩阵",
+      "level": 3,
+      "start_locator": "P03586",
+      "end_locator": "P03620",
+      "block_count": 35,
+      "char_count": 1139,
+      "topics": {
+        "客户与场景": 25,
+        "案例与证据": 9,
+        "产品与架构": 7,
+        "历史内容": 2,
+        "竞品与壁垒": 2,
+        "合规与保密": 1
+      },
+      "file": "sections/144_34.3_第二阶段：12–24_个月，形成场景包矩阵.md"
+    },
+    {
+      "title": "34.6 三年路线中的产品能力要求",
+      "level": 3,
+      "start_locator": "P03621",
+      "end_locator": "P03654",
+      "block_count": 34,
+      "char_count": 1226,
+      "topics": {
+        "客户与场景": 24,
+        "产品与架构": 8,
+        "案例与证据": 4,
+        "合规与保密": 2,
+        "企业战略": 1,
+        "历史内容": 1,
+        "智能体能力": 1
+      },
+      "file": "sections/145_34.6_三年路线中的产品能力要求.md"
+    },
+    {
+      "title": "35.3 30 秒口播版",
+      "level": 3,
+      "start_locator": "P03655",
+      "end_locator": "P03678",
+      "block_count": 23,
+      "char_count": 899,
+      "topics": {
+        "客户与场景": 11,
+        "产品与架构": 10,
+        "智能体能力": 4,
+        "案例与证据": 2,
+        "历史内容": 1,
+        "竞品与壁垒": 1
+      },
+      "file": "sections/146_35.3_30_秒口播版.md"
+    },
+    {
+      "title": "35.7 回答“你们比我懂行业吗”版",
+      "level": 3,
+      "start_locator": "P03679",
+      "end_locator": "P03691",
+      "block_count": 13,
+      "char_count": 869,
+      "topics": {
+        "客户与场景": 16,
+        "产品与架构": 6,
+        "智能体能力": 3,
+        "合规与保密": 1
+      },
+      "file": "sections/147_35.7_回答“你们比我懂行业吗”版.md"
+    },
+    {
+      "title": "36.1 艾氪智能的壁垒不是一句话，而是一组复合壁垒",
+      "level": 3,
+      "start_locator": "P03692",
+      "end_locator": "P03722",
+      "block_count": 30,
+      "char_count": 1253,
+      "topics": {
+        "竞品与壁垒": 17,
+        "产品与架构": 9,
+        "客户与场景": 8,
+        "案例与证据": 7,
+        "智能体能力": 5,
+        "合规与保密": 4,
+        "企业战略": 2
+      },
+      "file": "sections/148_36.1_艾氪智能的壁垒不是一句话，而是一组复合壁垒.md"
+    },
+    {
+      "title": "36.5 全篇最终收束",
+      "level": 3,
+      "start_locator": "P03723",
+      "end_locator": "P03760",
+      "block_count": 38,
+      "char_count": 1610,
+      "topics": {
+        "产品与架构": 16,
+        "智能体能力": 10,
+        "合规与保密": 7,
+        "客户与场景": 7,
+        "竞品与壁垒": 3,
+        "案例与证据": 2,
+        "企业战略": 1,
+        "历史内容": 1
+      },
+      "file": "sections/149_36.5_全篇最终收束.md"
+    }
+  ]
+}

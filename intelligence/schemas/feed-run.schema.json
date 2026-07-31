@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agt-rsn-004/feed-run.schema.json",
+  "title": "FeedRun",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "feedId",
+    "runId",
+    "windowStart",
+    "windowEnd",
+    "collectedAt",
+    "status",
+    "errors",
+    "items",
+    "inputHash"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "feedId": {
+      "enum": [
+        "aihot",
+        "agentreach",
+        "follow-builders"
+      ]
+    },
+    "runId": {
+      "type": "string",
+      "minLength": 8
+    },
+    "windowStart": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "windowEnd": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "collectedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "enum": [
+        "SUCCESS",
+        "DEGRADED",
+        "EMPTY",
+        "FAILED"
+      ]
+    },
+    "errors": {
+      "type": "array"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "signal-item.schema.json"
+      }
+    },
+    "inputHash": {
+      "type": "string",
+      "pattern": "^[A-F0-9]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

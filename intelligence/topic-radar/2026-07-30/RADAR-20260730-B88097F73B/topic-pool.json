@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "radarId": "RADAR-20260730-B88097F73B",
+  "date": "2026-07-30",
+  "generatedAt": "2026-07-30T01:45:00+00:00",
+  "windowHours": 24,
+  "inputHash": "B88097F73BAE8A4F7343CC7F7B738AE78A8CF3B25CCA5A576083DD8FA0E9A21F",
+  "sourceHealth": [
+    {
+      "feedId": "aihot",
+      "status": "SUCCESS",
+      "runId": "aihot-20260729T095208-36fb9dc2",
+      "collectedAt": "2026-07-29T01:52:08+00:00",
+      "itemCount": 20,
+      "errors": []
+    },
+    {
+      "feedId": "agentreach",
+      "status": "MISSING",
+      "runId": null,
+      "collectedAt": null,
+      "itemCount": 0,
+      "errors": [
+        "No READY run found in the last 7 days"
+      ]
+    },
+    {
+      "feedId": "follow-builders",
+      "status": "SUCCESS",
+      "runId": "follow-builders-20260730T170000-b7573ad9",
+      "collectedAt": "2026-07-30T09:00:00+00:00",
+      "itemCount": 68,
+      "errors": []
+    }
+  ],
+  "policy": {
+    "dailyCandidateMinimum": 5,
+    "dailyCandidateMaximum": 8,
+    "noTemplateBackfill": true,
+    "heatMeaning": "signal_heat_only"
+  },
+  "topics": [],
+  "observationLeads": [],
+  "status": "NO_CREDIBLE_TOPICS"
+}

@@ -1,0 +1,1592 @@
+{
+  "schemaVersion": "3.0",
+  "scoringVersion": "3.0",
+  "scoringEngineVersion": "track-v3.3",
+  "radarId": "RADAR-20260731-EE0EF38776",
+  "date": "2026-07-31",
+  "generatedAt": "2026-07-31T08:51:49+00:00",
+  "windowHours": 72,
+  "inputHash": "EE0EF387768908B3C76F6B8379913881C8D339EDFF17A4E7552F7C419431BE62",
+  "sourceHealth": [
+    {
+      "feedId": "aihot",
+      "status": "SUCCESS",
+      "runId": "aihot-20260731T091108-a5b42a27",
+      "collectedAt": "2026-07-31T01:11:08+00:00",
+      "itemCount": 54,
+      "errors": []
+    },
+    {
+      "feedId": "agentreach",
+      "status": "DEGRADED",
+      "runId": "agentreach-20260731T091631-eefd60d1",
+      "collectedAt": "2026-07-31T01:16:31+00:00",
+      "itemCount": 13,
+      "errors": [
+        "agent-reach doctor timed out after 34 seconds",
+        "Exa MCP returned HTTP 429 free rate limit on all explicit mcporter searches",
+        "Google Developers AI RSS returned 404",
+        "Microsoft AI Blog RSS returned 410",
+        "Anthropic News RSS returned 404"
+      ]
+    },
+    {
+      "feedId": "follow-builders",
+      "status": "SUCCESS",
+      "runId": "follow-builders-20260731T091805-d028f8a4",
+      "collectedAt": "2026-07-31T01:18:05+00:00",
+      "itemCount": 203,
+      "errors": []
+    }
+  ],
+  "policy": {
+    "dailyCandidateMinimum": 5,
+    "dailyCandidateMaximum": 8,
+    "noTemplateBackfill": true,
+    "heatMeaning": "signal_heat_only",
+    "trackAware": true,
+    "evidenceSeparatedFromTopicValue": true
+  },
+  "topics": [
+    {
+      "topicId": "T-20260731-44BB508A",
+      "radarId": "RADAR-20260731-EE0EF38776",
+      "title": "Aaron Levie：The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise",
+      "sourceTitle": "Aaron Levie：The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise",
+      "titleNeedsEditorialReview": false,
+      "angle": "拆解一手公开表达中的核心判断、现实启示和适用边界",
+      "whyNow": "07月30日捕获到一手或可追溯人物表达，完整观点具备内容加工价值；热度不足不会自动否决长期思想价值。",
+      "targetAudience": "企业管理者、AI从业者、Builder与知识工作者",
+      "jovaaiConnection": "可连接企业AI、人的工作方式、组织变化及产业级Agentic OS。",
+      "recommendedFormats": [
+        "微信观点文章",
+        "X观点短帖",
+        "短视频口播"
+      ],
+      "theme": "Agent与开发者",
+      "primaryTrack": "PUBLIC_VOICE",
+      "trackLabel": "人物观点",
+      "score": 87.2,
+      "topicValueScore": 87.2,
+      "scoreBreakdown": {
+        "scoringVersion": "3.0",
+        "scoringEngineVersion": "track-v3.3",
+        "primaryTrack": "PUBLIC_VOICE",
+        "trackScores": {
+          "HOT_EVENT": 47.4,
+          "PUBLIC_VOICE": 87.2,
+          "ENTERPRISE_AI": 57.5
+        },
+        "primaryTrackDimensions": {
+          "speakerInfluence": {
+            "raw": 88,
+            "weight": 20,
+            "weighted": 17.6
+          },
+          "sourceDirectness": {
+            "raw": 92,
+            "weight": 15,
+            "weighted": 13.8
+          },
+          "viewpointCompleteness": {
+            "raw": 100,
+            "weight": 20,
+            "weighted": 20.0
+          },
+          "viewpointNovelty": {
+            "raw": 95,
+            "weight": 15,
+            "weighted": 14.2
+          },
+          "audienceResonance": {
+            "raw": 81,
+            "weight": 15,
+            "weighted": 12.2
+          },
+          "strategicBridge": {
+            "raw": 56,
+            "weight": 10,
+            "weighted": 5.6
+          },
+          "timeliness": {
+            "raw": 75,
+            "weight": 5,
+            "weighted": 3.8
+          }
+        },
+        "intersectionBonus": 0.0,
+        "preferenceAdjustment": 0.0,
+        "penalties": [],
+        "observedAttention": true
+      },
+      "scoreConfidence": "MEDIUM",
+      "dataCoverage": 1.0,
+      "sourceDiversity": 1,
+      "freshnessWindow": "72h",
+      "collectionChannels": [
+        "follow-builders"
+      ],
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-AE410A1C4815"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-FOLLOWBUILDERS-AE410A1C4815",
+          "title": "Aaron Levie：The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise",
+          "url": "https://x.com/levie/status/2082514776392175844",
+          "sourceName": "Aaron Levie",
+          "publishedAt": "2026-07-29T17:13:08+00:00",
+          "sourceRole": "opinion",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only",
+          "sourceFeed": "follow-builders",
+          "collectionChannels": [
+            "follow-builders"
+          ]
+        }
+      ],
+      "evidenceStatus": "PARTIAL",
+      "researchReadiness": "NEEDS_CROSS_CHECK",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。"
+      ],
+      "formalEligible": true,
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "FAF978BFEBEC7A0568DD1B6718249C99BD05418275F9B9912DB03CA63C0BF9DB"
+    },
+    {
+      "topicId": "T-20260731-07A89784",
+      "radarId": "RADAR-20260731-EE0EF38776",
+      "title": "Andrew Ng 创办 LearnVector，用 AI 实现一对一学习",
+      "sourceTitle": "Andrew Ng 创办 LearnVector，用 AI 实现一对一学习",
+      "titleNeedsEditorialReview": false,
+      "angle": "拆解一手公开表达中的核心判断、现实启示和适用边界",
+      "whyNow": "07月29日捕获到一手或可追溯人物表达，完整观点具备内容加工价值；热度不足不会自动否决长期思想价值。",
+      "targetAudience": "企业管理者、AI从业者、Builder与知识工作者",
+      "jovaaiConnection": "可连接企业AI、人的工作方式、组织变化及产业级Agentic OS。",
+      "recommendedFormats": [
+        "微信观点文章",
+        "X观点短帖",
+        "短视频口播"
+      ],
+      "theme": "AI产业趋势",
+      "primaryTrack": "PUBLIC_VOICE",
+      "trackLabel": "人物观点",
+      "score": 86.3,
+      "topicValueScore": 86.3,
+      "scoreBreakdown": {
+        "scoringVersion": "3.0",
+        "scoringEngineVersion": "track-v3.3",
+        "primaryTrack": "PUBLIC_VOICE",
+        "trackScores": {
+          "HOT_EVENT": 57.2,
+          "PUBLIC_VOICE": 86.3,
+          "ENTERPRISE_AI": 28.5
+        },
+        "primaryTrackDimensions": {
+          "speakerInfluence": {
+            "raw": 100,
+            "weight": 20,
+            "weighted": 20.0
+          },
+          "sourceDirectness": {
+            "raw": 92,
+            "weight": 15,
+            "weighted": 13.8
+          },
+          "viewpointCompleteness": {
+            "raw": 68,
+            "weight": 20,
+            "weighted": 13.6
+          },
+          "viewpointNovelty": {
+            "raw": 100,
+            "weight": 15,
+            "weighted": 15.0
+          },
+          "audienceResonance": {
+            "raw": 82,
+            "weight": 15,
+            "weighted": 12.3
+          },
+          "strategicBridge": {
+            "raw": 78,
+            "weight": 10,
+            "weighted": 7.8
+          },
+          "timeliness": {
+            "raw": 75,
+            "weight": 5,
+            "weighted": 3.8
+          }
+        },
+        "intersectionBonus": 0.0,
+        "preferenceAdjustment": 0.0,
+        "penalties": [],
+        "observedAttention": true
+      },
+      "scoreConfidence": "MEDIUM",
+      "dataCoverage": 0.83,
+      "sourceDiversity": 1,
+      "freshnessWindow": "72h",
+      "collectionChannels": [
+        "aihot"
+      ],
+      "supportSourceIds": [
+        "SIG-AIHOT-B04EBCD9813F"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-AIHOT-B04EBCD9813F",
+          "title": "Andrew Ng 创办 LearnVector，用 AI 实现一对一学习",
+          "url": "https://x.com/AndrewYNg/status/2082199333920027009",
+          "sourceName": "X：Andrew Ng（DeepLearning.AI 创始人） (@AndrewYNg)",
+          "publishedAt": "2026-07-28T20:19:41+00:00",
+          "sourceRole": "secondary",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only",
+          "sourceFeed": "aihot",
+          "collectionChannels": [
+            "aihot"
+          ]
+        }
+      ],
+      "evidenceStatus": "PARTIAL",
+      "researchReadiness": "NEEDS_CROSS_CHECK",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。"
+      ],
+      "formalEligible": true,
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "18EE56F8C92FBC4ADD9EB652C5F45D3FFFBCAAB2E1294BA380FA0A6714C52E92"
+    },
+    {
+      "topicId": "T-20260731-5E9449B5",
+      "radarId": "RADAR-20260731-EE0EF38776",
+      "title": "Peter Yang：AI has been great for my productivity, but I’m starting to recognize three dark patterns:",
+      "sourceTitle": "Peter Yang：AI has been great for my productivity, but I’m starting to recognize three dark patterns:",
+      "titleNeedsEditorialReview": false,
+      "angle": "拆解一手公开表达中的核心判断、现实启示和适用边界",
+      "whyNow": "07月30日捕获到一手或可追溯人物表达，完整观点具备内容加工价值；热度不足不会自动否决长期思想价值。",
+      "targetAudience": "企业管理者、AI从业者、Builder与知识工作者",
+      "jovaaiConnection": "可连接企业AI、人的工作方式、组织变化及产业级Agentic OS。",
+      "recommendedFormats": [
+        "微信观点文章",
+        "X观点短帖",
+        "短视频口播"
+      ],
+      "theme": "AI产业趋势",
+      "primaryTrack": "PUBLIC_VOICE",
+      "trackLabel": "人物观点",
+      "score": 83.1,
+      "topicValueScore": 83.1,
+      "scoreBreakdown": {
+        "scoringVersion": "3.0",
+        "scoringEngineVersion": "track-v3.3",
+        "primaryTrack": "PUBLIC_VOICE",
+        "trackScores": {
+          "HOT_EVENT": 44.1,
+          "PUBLIC_VOICE": 83.1,
+          "ENTERPRISE_AI": 19.9
+        },
+        "primaryTrackDimensions": {
+          "speakerInfluence": {
+            "raw": 88,
+            "weight": 20,
+            "weighted": 17.6
+          },
+          "sourceDirectness": {
+            "raw": 92,
+            "weight": 15,
+            "weighted": 13.8
+          },
+          "viewpointCompleteness": {
+            "raw": 93,
+            "weight": 20,
+            "weighted": 18.6
+          },
+          "viewpointNovelty": {
+            "raw": 82,
+            "weight": 15,
+            "weighted": 12.3
+          },
+          "audienceResonance": {
+            "raw": 85,
+            "weight": 15,
+            "weighted": 12.8
+          },
+          "strategicBridge": {
+            "raw": 42,
+            "weight": 10,
+            "weighted": 4.2
+          },
+          "timeliness": {
+            "raw": 75,
+            "weight": 5,
+            "weighted": 3.8
+          }
+        },
+        "intersectionBonus": 0.0,
+        "preferenceAdjustment": 0.0,
+        "penalties": [],
+        "observedAttention": true
+      },
+      "scoreConfidence": "MEDIUM",
+      "dataCoverage": 1.0,
+      "sourceDiversity": 1,
+      "freshnessWindow": "72h",
+      "collectionChannels": [
+        "follow-builders"
+      ],
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-B4B3370BBFC9"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-FOLLOWBUILDERS-B4B3370BBFC9",
+          "title": "Peter Yang：AI has been great for my productivity, but I’m starting to recognize three dark patterns:",
+          "url": "https://x.com/petergyang/status/2082642205811106158",
+          "sourceName": "Peter Yang",
+          "publishedAt": "2026-07-30T01:39:30+00:00",
+          "sourceRole": "opinion",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only",
+          "sourceFeed": "follow-builders",
+          "collectionChannels": [
+            "follow-builders"
+          ]
+        }
+      ],
+      "evidenceStatus": "PARTIAL",
+      "researchReadiness": "NEEDS_CROSS_CHECK",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。"
+      ],
+      "formalEligible": true,
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "1F3B0511748CFA92DF75BE5BE605A7CD0A5C9D3587C074B6C1DC56B9623EA49C"
+    },
+    {
+      "topicId": "T-20260731-3168BC4A",
+      "radarId": "RADAR-20260731-EE0EF38776",
+      "title": "Best of the Pod: Wired's Kevin Kelly on Why AI Is a 50-year Overnight Success",
+      "sourceTitle": "Best of the Pod: Wired's Kevin Kelly on Why AI Is a 50-year Overnight Success",
+      "titleNeedsEditorialReview": false,
+      "angle": "拆解一手公开表达中的核心判断、现实启示和适用边界",
+      "whyNow": "07月29日捕获到一手或可追溯人物表达，完整观点具备内容加工价值；热度不足不会自动否决长期思想价值。",
+      "targetAudience": "企业管理者、AI从业者、Builder与知识工作者",
+      "jovaaiConnection": "可连接企业AI、人的工作方式、组织变化及产业级Agentic OS。",
+      "recommendedFormats": [
+        "微信观点文章",
+        "X观点短帖",
+        "短视频口播"
+      ],
+      "theme": "AI产业趋势",
+      "primaryTrack": "PUBLIC_VOICE",
+      "trackLabel": "人物观点",
+      "score": 73.9,
+      "topicValueScore": 73.9,
+      "scoreBreakdown": {
+        "scoringVersion": "3.0",
+        "scoringEngineVersion": "track-v3.3",
+        "primaryTrack": "PUBLIC_VOICE",
+        "trackScores": {
+          "HOT_EVENT": 37.8,
+          "PUBLIC_VOICE": 73.9,
+          "ENTERPRISE_AI": 9.1
+        },
+        "primaryTrackDimensions": {
+          "speakerInfluence": {
+            "raw": 90,
+            "weight": 20,
+            "weighted": 18.0
+          },
+          "sourceDirectness": {
+            "raw": 82,
+            "weight": 15,
+            "weighted": 12.3
+          },
+          "viewpointCompleteness": {
+            "raw": 99,
+            "weight": 20,
+            "weighted": 19.8
+          },
+          "viewpointNovelty": {
+            "raw": 88,
+            "weight": 15,
+            "weighted": 13.2
+          },
+          "audienceResonance": {
+            "raw": 40,
+            "weight": 15,
+            "weighted": 6.0
+          },
+          "strategicBridge": {
+            "raw": 8,
+            "weight": 10,
+            "weighted": 0.8
+          },
+          "timeliness": {
+            "raw": 75,
+            "weight": 5,
+            "weighted": 3.8
+          }
+        },
+        "intersectionBonus": 0.0,
+        "preferenceAdjustment": 0.0,
+        "penalties": [],
+        "observedAttention": false
+      },
+      "scoreConfidence": "LOW",
+      "dataCoverage": 0.83,
+      "sourceDiversity": 1,
+      "freshnessWindow": "72h",
+      "collectionChannels": [
+        "follow-builders"
+      ],
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-3BD89D7CDF71"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-FOLLOWBUILDERS-3BD89D7CDF71",
+          "title": "Best of the Pod: Wired's Kevin Kelly on Why AI Is a 50-year Overnight Success",
+          "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+          "sourceName": "podcast",
+          "publishedAt": "2026-07-29T15:00:00+00:00",
+          "sourceRole": "opinion",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only",
+          "sourceFeed": "follow-builders",
+          "collectionChannels": [
+            "follow-builders"
+          ]
+        }
+      ],
+      "evidenceStatus": "LEAD_ONLY",
+      "researchReadiness": "NEEDS_SOURCE_RECOVERY",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。",
+        "尚未确认原始官方来源，当前资料只能支撑选题判断。"
+      ],
+      "formalEligible": true,
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "CAFE49453CA32E1390F80A0CC7CFF1A67C032BC00767A927C2F11707BE157877"
+    },
+    {
+      "topicId": "T-20260731-C2209A5F",
+      "radarId": "RADAR-20260731-EE0EF38776",
+      "title": "Hugging Face 公开自主智能体网络攻击详情",
+      "sourceTitle": "Hugging Face 公开自主智能体网络攻击详情",
+      "titleNeedsEditorialReview": false,
+      "angle": "拆解一手公开表达中的核心判断、现实启示和适用边界",
+      "whyNow": "07月29日捕获到一手或可追溯人物表达，完整观点具备内容加工价值；热度不足不会自动否决长期思想价值。",
+      "targetAudience": "企业管理者、AI从业者、Builder与知识工作者",
+      "jovaaiConnection": "可连接企业AI、人的工作方式、组织变化及产业级Agentic OS。",
+      "recommendedFormats": [
+        "微信观点文章",
+        "X观点短帖",
+        "短视频口播"
+      ],
+      "theme": "Agent与开发者",
+      "primaryTrack": "PUBLIC_VOICE",
+      "trackLabel": "人物观点",
+      "score": 72.4,
+      "topicValueScore": 72.4,
+      "scoreBreakdown": {
+        "scoringVersion": "3.0",
+        "scoringEngineVersion": "track-v3.3",
+        "primaryTrack": "PUBLIC_VOICE",
+        "trackScores": {
+          "HOT_EVENT": 55.7,
+          "PUBLIC_VOICE": 72.4,
+          "ENTERPRISE_AI": 32.7
+        },
+        "primaryTrackDimensions": {
+          "speakerInfluence": {
+            "raw": 72,
+            "weight": 20,
+            "weighted": 14.4
+          },
+          "sourceDirectness": {
+            "raw": 92,
+            "weight": 15,
+            "weighted": 13.8
+          },
+          "viewpointCompleteness": {
+            "raw": 71,
+            "weight": 20,
+            "weighted": 14.2
+          },
+          "viewpointNovelty": {
+            "raw": 93,
+            "weight": 15,
+            "weighted": 14.0
+          },
+          "audienceResonance": {
+            "raw": 40,
+            "weight": 15,
+            "weighted": 6.0
+          },
+          "strategicBridge": {
+            "raw": 62,
+            "weight": 10,
+            "weighted": 6.2
+          },
+          "timeliness": {
+            "raw": 75,
+            "weight": 5,
+            "weighted": 3.8
+          }
+        },
+        "intersectionBonus": 0.0,
+        "preferenceAdjustment": 0.0,
+        "penalties": [],
+        "observedAttention": true
+      },
+      "scoreConfidence": "MEDIUM",
+      "dataCoverage": 0.83,
+      "sourceDiversity": 1,
+      "freshnessWindow": "72h",
+      "collectionChannels": [
+        "aihot"
+      ],
+      "supportSourceIds": [
+        "SIG-AIHOT-80907D9511E2"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-AIHOT-80907D9511E2",
+          "title": "Hugging Face 公开自主智能体网络攻击详情",
+          "url": "https://x.com/ClementDelangue/status/2082201245813514613",
+          "sourceName": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
+          "publishedAt": "2026-07-28T20:27:17+00:00",
+          "sourceRole": "secondary",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only",
+          "sourceFeed": "aihot",
+          "collectionChannels": [
+            "aihot"
+          ]
+        }
+      ],
+      "evidenceStatus": "PARTIAL",
+      "researchReadiness": "NEEDS_CROSS_CHECK",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。"
+      ],
+      "formalEligible": true,
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "60C0A77B925D1C435F5AD48780240DB2994CC67DC7317068E203A62D9046F6BD"
+    },
+    {
+      "topicId": "T-20260731-13B3633F",
+      "radarId": "RADAR-20260731-EE0EF38776",
+      "title": "OpenAI 失控模型二次入侵 Modal 客户",
+      "sourceTitle": "OpenAI 失控模型二次入侵 Modal 客户",
+      "titleNeedsEditorialReview": false,
+      "angle": "从正在升温的事件中提炼对企业AI和产业变化的实际影响",
+      "whyNow": "07月29日出现1条可追溯事件信号；当前热度仅表示本地资讯源中的时效、重复出现与已有公开热度字段。",
+      "targetAudience": "企业决策者、AI负责人、产业观察者",
+      "jovaaiConnection": "优先判断事件是否改变企业AI落地条件、产业协同或智能体治理边界。",
+      "recommendedFormats": [
+        "微信热点解读",
+        "X快评",
+        "视频解读"
+      ],
+      "theme": "产品与模型",
+      "primaryTrack": "HOT_EVENT",
+      "trackLabel": "热点事件",
+      "score": 57.8,
+      "topicValueScore": 57.8,
+      "scoreBreakdown": {
+        "scoringVersion": "3.0",
+        "scoringEngineVersion": "track-v3.3",
+        "primaryTrack": "HOT_EVENT",
+        "trackScores": {
+          "HOT_EVENT": 57.8,
+          "PUBLIC_VOICE": 62.1,
+          "ENTERPRISE_AI": 46.3
+        },
+        "primaryTrackDimensions": {
+          "attentionMomentum": {
+            "raw": 76.0,
+            "weight": 25,
+            "weighted": 19.0
+          },
+          "sourceVelocity": {
+            "raw": 40,
+            "weight": 20,
+            "weighted": 8.0
+          },
+          "freshness": {
+            "raw": 75,
+            "weight": 15,
+            "weighted": 11.2
+          },
+          "sustainedAttention": {
+            "raw": 20,
+            "weight": 10,
+            "weighted": 2.0
+          },
+          "eventImpact": {
+            "raw": 69,
+            "weight": 15,
+            "weighted": 10.3
+          },
+          "editorialPotential": {
+            "raw": 44.9,
+            "weight": 10,
+            "weighted": 4.5
+          },
+          "enterpriseBridge": {
+            "raw": 56,
+            "weight": 5,
+            "weighted": 2.8
+          }
+        },
+        "intersectionBonus": 0.0,
+        "preferenceAdjustment": 0.0,
+        "penalties": [],
+        "observedAttention": true
+      },
+      "scoreConfidence": "LOW",
+      "dataCoverage": 0.83,
+      "sourceDiversity": 1,
+      "freshnessWindow": "72h",
+      "collectionChannels": [
+        "aihot"
+      ],
+      "supportSourceIds": [
+        "SIG-AIHOT-46152C15C795"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-AIHOT-46152C15C795",
+          "title": "OpenAI 失控模型二次入侵 Modal 客户",
+          "url": "https://x.com/AISafetyMemes/status/2082223372214448303",
+          "sourceName": "X：AI Safety Memes (@AISafetyMemes)",
+          "publishedAt": "2026-07-28T21:55:12+00:00",
+          "sourceRole": "secondary",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only",
+          "sourceFeed": "aihot",
+          "collectionChannels": [
+            "aihot"
+          ]
+        }
+      ],
+      "evidenceStatus": "LEAD_ONLY",
+      "researchReadiness": "NEEDS_SOURCE_RECOVERY",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。",
+        "尚未确认原始官方来源，当前资料只能支撑选题判断。"
+      ],
+      "formalEligible": true,
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "7BDE0FBBAD3B0D03F026FAF4F43A67244DB5D583942A7FD5CE9C0F99F9F3C95F"
+    },
+    {
+      "topicId": "T-20260731-37419496",
+      "radarId": "RADAR-20260731-EE0EF38776",
+      "title": "OpenAI 发布 Codex 安全 CLI 与 SDK",
+      "sourceTitle": "OpenAI 发布 Codex 安全 CLI 与 SDK",
+      "titleNeedsEditorialReview": false,
+      "angle": "从正在升温的事件中提炼对企业AI和产业变化的实际影响",
+      "whyNow": "07月29日出现1条可追溯事件信号；当前热度仅表示本地资讯源中的时效、重复出现与已有公开热度字段。",
+      "targetAudience": "企业决策者、AI负责人、产业观察者",
+      "jovaaiConnection": "优先判断事件是否改变企业AI落地条件、产业协同或智能体治理边界。",
+      "recommendedFormats": [
+        "微信热点解读",
+        "X快评",
+        "视频解读"
+      ],
+      "theme": "政策与治理",
+      "primaryTrack": "HOT_EVENT",
+      "trackLabel": "热点事件",
+      "score": 56.4,
+      "topicValueScore": 56.4,
+      "scoreBreakdown": {
+        "scoringVersion": "3.0",
+        "scoringEngineVersion": "track-v3.3",
+        "primaryTrack": "HOT_EVENT",
+        "trackScores": {
+          "HOT_EVENT": 56.4,
+          "PUBLIC_VOICE": 56.7,
+          "ENTERPRISE_AI": 13.3
+        },
+        "primaryTrackDimensions": {
+          "attentionMomentum": {
+            "raw": 77.0,
+            "weight": 25,
+            "weighted": 19.2
+          },
+          "sourceVelocity": {
+            "raw": 40,
+            "weight": 20,
+            "weighted": 8.0
+          },
+          "freshness": {
+            "raw": 75,
+            "weight": 15,
+            "weighted": 11.2
+          },
+          "sustainedAttention": {
+            "raw": 20,
+            "weight": 10,
+            "weighted": 2.0
+          },
+          "eventImpact": {
+            "raw": 81,
+            "weight": 15,
+            "weighted": 12.2
+          },
+          "editorialPotential": {
+            "raw": 37.7,
+            "weight": 10,
+            "weighted": 3.8
+          },
+          "enterpriseBridge": {
+            "raw": 0,
+            "weight": 5,
+            "weighted": 0.0
+          }
+        },
+        "intersectionBonus": 0.0,
+        "preferenceAdjustment": 0.0,
+        "penalties": [],
+        "observedAttention": true
+      },
+      "scoreConfidence": "LOW",
+      "dataCoverage": 0.83,
+      "sourceDiversity": 1,
+      "freshnessWindow": "72h",
+      "collectionChannels": [
+        "aihot"
+      ],
+      "supportSourceIds": [
+        "SIG-AIHOT-2CE9922B1044"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-AIHOT-2CE9922B1044",
+          "title": "OpenAI 发布 Codex 安全 CLI 与 SDK",
+          "url": "https://x.com/thsottiaux/status/2082241164850364555",
+          "sourceName": "X：Tibo (@thsottiaux)",
+          "publishedAt": "2026-07-28T23:05:54+00:00",
+          "sourceRole": "secondary",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only",
+          "sourceFeed": "aihot",
+          "collectionChannels": [
+            "aihot"
+          ]
+        }
+      ],
+      "evidenceStatus": "LEAD_ONLY",
+      "researchReadiness": "NEEDS_SOURCE_RECOVERY",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。",
+        "尚未确认原始官方来源，当前资料只能支撑选题判断。"
+      ],
+      "formalEligible": true,
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "96ED566E5CDB66449853C65291D806401B8D9A3AEBC597F1A3FA569688DA87FC"
+    },
+    {
+      "topicId": "T-20260731-7E073BDD",
+      "radarId": "RADAR-20260731-EE0EF38776",
+      "title": "OpenAI 呼吁为前沿AI发展设定节奏",
+      "sourceTitle": "OpenAI 呼吁为前沿AI发展设定节奏",
+      "titleNeedsEditorialReview": false,
+      "angle": "从正在升温的事件中提炼对企业AI和产业变化的实际影响",
+      "whyNow": "07月29日出现1条可追溯事件信号；当前热度仅表示本地资讯源中的时效、重复出现与已有公开热度字段。",
+      "targetAudience": "企业决策者、AI负责人、产业观察者",
+      "jovaaiConnection": "优先判断事件是否改变企业AI落地条件、产业协同或智能体治理边界。",
+      "recommendedFormats": [
+        "微信热点解读",
+        "X快评",
+        "视频解读"
+      ],
+      "theme": "AI产业趋势",
+      "primaryTrack": "HOT_EVENT",
+      "trackLabel": "热点事件",
+      "score": 55.8,
+      "topicValueScore": 55.8,
+      "scoreBreakdown": {
+        "scoringVersion": "3.0",
+        "scoringEngineVersion": "track-v3.3",
+        "primaryTrack": "HOT_EVENT",
+        "trackScores": {
+          "HOT_EVENT": 53.3,
+          "PUBLIC_VOICE": 67.8,
+          "ENTERPRISE_AI": 15.3
+        },
+        "primaryTrackDimensions": {
+          "attentionMomentum": {
+            "raw": 73.0,
+            "weight": 25,
+            "weighted": 18.2
+          },
+          "sourceVelocity": {
+            "raw": 40,
+            "weight": 20,
+            "weighted": 8.0
+          },
+          "freshness": {
+            "raw": 75,
+            "weight": 15,
+            "weighted": 11.2
+          },
+          "sustainedAttention": {
+            "raw": 20,
+            "weight": 10,
+            "weighted": 2.0
+          },
+          "eventImpact": {
+            "raw": 57,
+            "weight": 15,
+            "weighted": 8.5
+          },
+          "editorialPotential": {
+            "raw": 45.0,
+            "weight": 10,
+            "weighted": 4.5
+          },
+          "enterpriseBridge": {
+            "raw": 18,
+            "weight": 5,
+            "weighted": 0.9
+          }
+        },
+        "intersectionBonus": 2.5,
+        "preferenceAdjustment": 0.0,
+        "penalties": [],
+        "observedAttention": true
+      },
+      "scoreConfidence": "MEDIUM",
+      "dataCoverage": 0.83,
+      "sourceDiversity": 1,
+      "freshnessWindow": "72h",
+      "collectionChannels": [
+        "aihot"
+      ],
+      "supportSourceIds": [
+        "SIG-AIHOT-2F8039FEE2FC"
+      ],
+      "supportSources": [
+        {
+          "sourceId": "SIG-AIHOT-2F8039FEE2FC",
+          "title": "OpenAI 呼吁为前沿AI发展设定节奏",
+          "url": "https://x.com/OpenAI/status/2082208694142730340",
+          "sourceName": "X：OpenAI (@OpenAI)",
+          "publishedAt": "2026-07-28T20:56:52+00:00",
+          "sourceRole": "secondary",
+          "authorityTier": "B",
+          "verificationStatus": "metadata_only",
+          "sourceFeed": "aihot",
+          "collectionChannels": [
+            "aihot"
+          ]
+        }
+      ],
+      "evidenceStatus": "PARTIAL",
+      "researchReadiness": "NEEDS_CROSS_CHECK",
+      "riskWarnings": [
+        "当前只有一个独立来源，创作前必须补充交叉验证。"
+      ],
+      "formalEligible": true,
+      "approvalStatus": "PENDING_APPROVAL",
+      "snapshotHash": "EF2853D39CD468BF3D4C18EF4077DC2DA96ECA964A643917C52376B849B4E2C8"
+    }
+  ],
+  "observationLeads": [
+    {
+      "title": "Zara Zhang：If you both have deep domain expertise &amp; experience AND you’re AI-native and constantly reinventing yourself to a…",
+      "score": 65.1,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-265B1E2BDAED"
+      ]
+    },
+    {
+      "title": "Zara Zhang：Being good at marketing is not just good for your marketing; it’s good for your product",
+      "score": 63.1,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-078486DDC629"
+      ]
+    },
+    {
+      "title": "Aaron Levie：But I don’t think it plays out in the way that’s laid out just simply due to market forces competing for inference demand as a way of continuing to drive down prices until capacity can catch up.",
+      "score": 67.0,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-1ED38EEDEC89"
+      ]
+    },
+    {
+      "title": "Sam Altman：very close to models that will significantly accelerate scientific discovery; the best way to do this is for us to empower scientists, not to try to figure out everything ourselves.",
+      "score": 71.1,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-4298DDD208BE"
+      ]
+    },
+    {
+      "title": "Swyx：today i tried to sign up for @docusign and was presented a captcha that i could not solve",
+      "score": 63.7,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-B685BFB4C685"
+      ]
+    },
+    {
+      "title": "Dan Shipper：Almost every single person @every is freaking out about how good voice mode in ChatGPT for Work is",
+      "score": 63.6,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-45F78AD13F9F"
+      ]
+    },
+    {
+      "title": "Dan Shipper：Will obviously require any company dealing with sensitive customer data to have automated agentic defense systems, massive opportunity and seems effective",
+      "score": 71.1,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-7742E41C33B2"
+      ]
+    },
+    {
+      "title": "Peter Yang：One of my favorite features in Claude Design is a simple one:",
+      "score": 64.1,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-08E18F563C35"
+      ]
+    },
+    {
+      "title": "Aditya Agarwal：Imagine if you were LeBron at 19 years old but believed you only had 2 years to maximize earnings before basketball w…",
+      "score": 63.0,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-B79CE2738235"
+      ]
+    },
+    {
+      "title": "Ryo Lu：your agents, anywhere",
+      "score": 56.8,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-C328312ADB9E"
+      ]
+    },
+    {
+      "title": "Aditya Agarwal：Some observations from our Demo Faire yesterday:",
+      "score": 69.0,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-0E4BD64FDF48"
+      ]
+    },
+    {
+      "title": "Garry Tan：The AI Datacenter Degrowthers are winning and it is actually a psy-op happening under our noses, and it's winning in…",
+      "score": 58.4,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-0CE63486D849"
+      ]
+    },
+    {
+      "title": "Peter Yang：We’ve gone from AI defaulting to designs that look like purple slop to those that have that recognizable Claude look",
+      "score": 63.2,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-4769041AE744"
+      ]
+    },
+    {
+      "title": "Amjad Masad：This is hands down the best AI design tool, both in taste and how fun and easy it is to use",
+      "score": 61.1,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-FD4F70311224"
+      ]
+    },
+    {
+      "title": "Garry Tan：Seasoned founders in the age of intelligence are aging like fine wine https://t",
+      "score": 55.8,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-C1AE3EC8FA94"
+      ]
+    },
+    {
+      "title": "1100多名AI员工联名呼吁美国政府控制AI发展速度，OpenAI CEO奥尔特曼表态支持",
+      "score": 55.0,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-AIHOT-697BA6FB3198"
+      ]
+    },
+    {
+      "title": "Kimi Linear：一种表现力强且高效的注意力架构",
+      "score": 55.3,
+      "reason": "未进入每日候选上限或多样性约束",
+      "supportSourceIds": [
+        "SIG-AIHOT-84813FFCA229"
+      ]
+    },
+    {
+      "title": "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework",
+      "score": 38.3,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-E78CD91D328F"
+      ]
+    },
+    {
+      "title": "Anthropic says its own AI models breached three companies during security tests",
+      "score": 42.3,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-4D0900BC1D70"
+      ]
+    },
+    {
+      "title": "Replit Design 推出数百设计模板",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-585F21B92FB7"
+      ]
+    },
+    {
+      "title": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares",
+      "score": 41.3,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-3D4E9D441D7B"
+      ]
+    },
+    {
+      "title": "Reddit reports a solid quarter but shows signs of AI's impact",
+      "score": 41.0,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-F9C16052D2E0"
+      ]
+    },
+    {
+      "title": "Anthropic 披露 Claude 在安全评估中入侵真实系统",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-5E040A54D95E"
+      ]
+    },
+    {
+      "title": "Investors love AI, as long as you're a cloud host",
+      "score": 41.4,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-AD38A88BC260"
+      ]
+    },
+    {
+      "title": "法官称特朗普政府仍缺乏证据将Anthropic列为供应链风险",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-33483F3FBE6A"
+      ]
+    },
+    {
+      "title": "Judge says Trump admin still lacks evidence for Anthropic supply-chain risk label",
+      "score": 39.6,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-F3451983C17A"
+      ]
+    },
+    {
+      "title": "Gemini Spark 集成 Chrome 自动浏览功能",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-07C4E1E81934"
+      ]
+    },
+    {
+      "title": "Friend, the lonely AI wearable, returns with a new voice and a much bigger price tag",
+      "score": 36.6,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-40273370D209"
+      ]
+    },
+    {
+      "title": "Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI",
+      "score": 39.3,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-050A804D4ABD"
+      ]
+    },
+    {
+      "title": "Google Earth 集成 Nano Banana 2 图像生成",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-6775DD2CED32"
+      ]
+    },
+    {
+      "title": "LinkedIn adds a button to report AI-generated slop",
+      "score": 39.3,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-4CC46C8286B6"
+      ]
+    },
+    {
+      "title": "OpenRouter 下调 GPT-5.6 Terra/Luna 价格",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-1B2A8EAA7D1B"
+      ]
+    },
+    {
+      "title": "GitHub Copilot 应用新增堆叠会话与拉取请求功能",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-BD772E6D16DB"
+      ]
+    },
+    {
+      "title": "Perplexity Computer 推出 Projects 功能",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-7EC854EB006E"
+      ]
+    },
+    {
+      "title": "RadixArk 与 Google Cloud 合作，将完整 SGLang 功能引入 TPU",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-0CFA9B7F974B"
+      ]
+    },
+    {
+      "title": "llm-chat-completions-server 0.1a0 发布",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-755BF85DE79B"
+      ]
+    },
+    {
+      "title": "Google DeepMind 发布 Gemini Robotics 2 物理 AI",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-E21F03D029EE"
+      ]
+    },
+    {
+      "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-9AE4ED88CA05"
+      ]
+    },
+    {
+      "title": "FCC 禁止进口中国新型机器人与联网逆变器",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-7F94443B756E"
+      ]
+    },
+    {
+      "title": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
+      "score": 43.5,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-1A6219C4367B"
+      ]
+    },
+    {
+      "title": "GPT-5.6 如何推进性价比前沿",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-2B049FE723E2"
+      ]
+    },
+    {
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "score": 44.6,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-C98C9DD11948"
+      ]
+    },
+    {
+      "title": "Token Saver：用本地混合 RAG 将 Claude PDF token 消耗削减 92%-99% 的开源 MCP 扩展",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-7DFDE061C4D5"
+      ]
+    },
+    {
+      "title": "Do Models Fake Alignment Without Clear Consequences?",
+      "score": 36.5,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-F18696DE44B4"
+      ]
+    },
+    {
+      "title": "Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels",
+      "score": 24.7,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-F1BA8C60A493"
+      ]
+    },
+    {
+      "title": "LLM Scheming Inversely Scales with Pretraining Language Coverage",
+      "score": 35.3,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AGENTREACH-985BFF118BC3"
+      ]
+    },
+    {
+      "title": "OpenAI 总裁布罗克曼承认新版 ChatGPT 桌面应用\"有点乱\"，目标年底实现\"零标签\"",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-9DB3F07EC105"
+      ]
+    },
+    {
+      "title": "腾讯混元Hyra破解50年数学难题",
+      "score": null,
+      "primaryTrack": null,
+      "evidenceStatus": "UNTRACEABLE",
+      "reason": "没有可追溯URL，不能进入正式候选。",
+      "supportSourceIds": [
+        "SIG-AIHOT-FE78C2251AB6"
+      ]
+    },
+    {
+      "title": "Thibault Sottiaux：This week is all about intelligence too cheap to meter",
+      "score": 47.4,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-02775AB2EA72"
+      ]
+    },
+    {
+      "title": "Thibault Sottiaux：Terrific work by @ilanbigio and @sandersted on the investigation and post",
+      "score": 45.6,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-948066F2D4F2"
+      ]
+    },
+    {
+      "title": "Madhu Guru：7 months on, this continues to be true",
+      "score": 30.7,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-45AA1F57EAD8"
+      ]
+    },
+    {
+      "title": "Sam Altman：goblin-level blog post https://t",
+      "score": 46.3,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-BF448D2CA75F"
+      ]
+    },
+    {
+      "title": "Peter Steinberger：lol did nobody at Anthropic stop for a second and wonder why the numbers looked this absurd before posting the “victo…",
+      "score": 47.7,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-71C49CA3F554"
+      ]
+    },
+    {
+      "title": "Thibault Sottiaux：You just have to allow it to reason and work over multiple context windows with the help of our canonical compaction implementation.",
+      "score": 49.4,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-DD7E92B2B4D0"
+      ]
+    },
+    {
+      "title": "Dan Shipper：usually the most honest answer ime https://t",
+      "score": 37.9,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-8A7939C448E7"
+      ]
+    },
+    {
+      "title": "Nan Yu：That is why we must pace https://t",
+      "score": 35.8,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-62BC29166A49"
+      ]
+    },
+    {
+      "title": "Garry Tan：Manhattan Institute is the truth https://t",
+      "score": 38.3,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-1FFF9154C454"
+      ]
+    },
+    {
+      "title": "Amjad Masad：Some models are great at CSS, others are fantastic at SVG, while yet others are really good at animations",
+      "score": 50.2,
+      "primaryTrack": "PUBLIC_VOICE",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-4EE59B569073"
+      ]
+    },
+    {
+      "title": "Nikunj Kothari：Evergreen post - wrote this as I held my son who’s now 20 months old",
+      "score": 31.3,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-94FAB5203BFA"
+      ]
+    },
+    {
+      "title": "Amjad Masad：Post-prompt era https://t",
+      "score": 39.9,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-A8B9554AC73F"
+      ]
+    },
+    {
+      "title": "Google Labs：@GoogleDeepMind just released Lyria 3.5, and we鈥檝e plugged it directly into @GoogleFlowMusic to power your next session.",
+      "score": 45.7,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-AB17F5426E97"
+      ]
+    },
+    {
+      "title": "Nan Yu：When I think about it, a couple of mundane examples come to mind.",
+      "score": 39.3,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-D4B8CA7CDB7E"
+      ]
+    },
+    {
+      "title": "Nikunj Kothari：First kid teaches you unconditional love",
+      "score": 39.0,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-FOLLOWBUILDERS-AADF14EC72B8"
+      ]
+    },
+    {
+      "title": "OpenRouter 推出专用 LangChain 集成包，支持 400+ 模型与自动故障切换",
+      "score": 48.8,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AIHOT-B215711A6473"
+      ]
+    },
+    {
+      "title": "Anthropic 支持 AI 发展节奏请愿",
+      "score": 47.5,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AIHOT-55F873CE74C9"
+      ]
+    },
+    {
+      "title": "OpenAI 推出两款新转录模型 API",
+      "score": 49.2,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AIHOT-BB65DFD24A68"
+      ]
+    },
+    {
+      "title": "Sam Altman 态度转变：AI 发展或需\"减速\"以让社会做好准备",
+      "score": 54.0,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AIHOT-D56073EABC89"
+      ]
+    },
+    {
+      "title": "Anthropic 的 Claude Mythos Preview 模型发现 AES 和 HAWK 加密算法漏洞",
+      "score": 44.0,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AIHOT-F72A7B931351"
+      ]
+    },
+    {
+      "title": "Claude 发现加密算法弱点研究发布",
+      "score": 49.7,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AIHOT-122E144503A9"
+      ]
+    },
+    {
+      "title": "Gemini API Managed Agents 默认升级为 3.6 Flash，新增环境钩子与免费套餐",
+      "score": 52.4,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AIHOT-FAD02957A1D0"
+      ]
+    },
+    {
+      "title": "Perplexity 推出 Windows 版个人电脑智能体",
+      "score": 48.4,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "PARTIAL",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AIHOT-481A69FEFFED"
+      ]
+    },
+    {
+      "title": "Google Search 的 AI Mode 推出 5 项新功能，帮你规划线下生活",
+      "score": 48.3,
+      "primaryTrack": "HOT_EVENT",
+      "evidenceStatus": "LEAD_ONLY",
+      "reason": "选题价值分未达到正式候选门槛，保留为观察线索。",
+      "supportSourceIds": [
+        "SIG-AIHOT-C05E1222071B"
+      ]
+    }
+  ],
+  "status": "READY"
+}

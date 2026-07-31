@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0",
+  "allowedSchemes": [
+    "http",
+    "https"
+  ],
+  "blockedHosts": [
+    "localhost",
+    "localhost.localdomain"
+  ],
+  "trackingParameters": [
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_term",
+    "utm_content",
+    "gclid",
+    "fbclid",
+    "ref",
+    "source"
+  ],
+  "officialPublishers": [
+    {
+      "name": "OpenAI",
+      "domains": [
+        "openai.com"
+      ]
+    },
+    {
+      "name": "Anthropic",
+      "domains": [
+        "anthropic.com"
+      ]
+    },
+    {
+      "name": "Google",
+      "domains": [
+        "google.com",
+        "deepmind.google"
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "domains": [
+        "microsoft.com"
+      ]
+    },
+    {
+      "name": "Meta",
+      "domains": [
+        "meta.com"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "domains": [
+        "github.com",
+        "github.blog"
+      ]
+    },
+    {
+      "name": "arXiv",
+      "domains": [
+        "arxiv.org"
+      ]
+    },
+    {
+      "name": "中国政府网",
+      "domains": [
+        "gov.cn"
+      ]
+    }
+  ],
+  "sourceRoles": [
+    "primary",
+    "secondary",
+    "opinion",
+    "lead_only"
+  ],
+  "authorityTiers": [
+    "S",
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "rejectedSourceTypes": [
+    "unverifiable",
+    "anonymous_screenshot",
+    "ai_spam",
+    "executable_download"
+  ],
+  "copyrightPolicy": {
+    "storeFullPaywalledArticle": false,
+    "storeFullTranscript": false,
+    "storeMetadata": true,
+    "storeSummary": true,
+    "storeShortRelevantExcerpts": true
+  }
+}
