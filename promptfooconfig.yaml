@@ -1,0 +1,38 @@
+description: AGT-RSN-004 host-model content regression
+
+prompts:
+  - |
+    {
+      "source": "{{source}}",
+      "channel": "{{channel}}",
+      "locale": "{{locale}}",
+      "requiredClaimId": "{{requiredClaimId}}"
+    }
+
+providers:
+  - id: file://scripts/promptfoo-host-provider.mjs
+
+defaultTest:
+  assert:
+    - type: is-json
+    - type: javascript
+      value: |
+        const value = JSON.parse(output);
+        const forbidden = ["accountId", "accessToken", "scheduledAt", "publishStatus", "metrics"];
+        return value.body && value.claimIdsUsed?.includes(vars.requiredClaimId) &&
+          !forbidden.some((key) => Object.hasOwn(value, key));
+
+tests:
+  - description: WeChat evidence-grounded channel variant
+    vars:
+      source: "瑞森内容智能体只负责内容生产与交付，不负责平台发布。"
+      channel: wechat
+      locale: zh-CN
+      requiredClaimId: claim_boundary_001
+  - description: X format must remain content-only
+    vars:
+      source: "Every factual claim must be bound to verified evidence."
+      channel: x
+      locale: en-US
+      requiredClaimId: claim_evidence_001
+

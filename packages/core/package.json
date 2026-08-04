@@ -1,0 +1,24 @@
+{
+  "name": "@risen/content-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@risen/content-contracts": "workspace:*",
+    "sanitize-html": "2.17.6",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/sanitize-html": "2.16.1",
+    "@vitest/coverage-v8": "^3.2.4",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

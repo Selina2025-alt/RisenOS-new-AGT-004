@@ -1,0 +1,50 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+overrides:
+  brace-expansion: 5.0.8
+  postcss: 8.5.18
+  sharp: 0.35.0
+
+onlyBuiltDependencies:
+  - esbuild
+  - msgpackr-extract
+  - protobufjs
+  - sharp
+allowBuilds:
+  '@playwright/browser-chromium': false
+  '@swc/core': false
+  esbuild: true
+  msgpackr-extract: true
+  protobufjs: true
+  sharp: true
+minimumReleaseAgeExclude:
+  - '@tiptap/core@3.29.2'
+  - '@tiptap/extension-blockquote@3.29.2'
+  - '@tiptap/extension-bold@3.29.2'
+  - '@tiptap/extension-bubble-menu@3.29.2'
+  - '@tiptap/extension-bullet-list@3.29.2'
+  - '@tiptap/extension-code-block@3.29.2'
+  - '@tiptap/extension-code@3.29.2'
+  - '@tiptap/extension-document@3.29.2'
+  - '@tiptap/extension-dropcursor@3.29.2'
+  - '@tiptap/extension-floating-menu@3.29.2'
+  - '@tiptap/extension-gapcursor@3.29.2'
+  - '@tiptap/extension-hard-break@3.29.2'
+  - '@tiptap/extension-heading@3.29.2'
+  - '@tiptap/extension-horizontal-rule@3.29.2'
+  - '@tiptap/extension-italic@3.29.2'
+  - '@tiptap/extension-link@3.29.2'
+  - '@tiptap/extension-list-item@3.29.2'
+  - '@tiptap/extension-list-keymap@3.29.2'
+  - '@tiptap/extension-list@3.29.2'
+  - '@tiptap/extension-ordered-list@3.29.2'
+  - '@tiptap/extension-paragraph@3.29.2'
+  - '@tiptap/extension-strike@3.29.2'
+  - '@tiptap/extension-text@3.29.2'
+  - '@tiptap/extension-underline@3.29.2'
+  - '@tiptap/extensions@3.29.2'
+  - '@tiptap/pm@3.29.2'
+  - '@tiptap/react@3.29.2'
+  - '@tiptap/starter-kit@3.29.2'

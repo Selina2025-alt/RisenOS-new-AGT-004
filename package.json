@@ -1,0 +1,25 @@
+{
+  "name": "agt-rsn-004",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.15.1",
+  "scripts": {
+    "dev": "concurrently -n api,web,worker -c cyan,magenta,yellow \"pnpm --filter @risen/content-api dev\" \"pnpm --filter @risen/content-web dev\" \"pnpm --filter @risen/content-worker dev\"",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck && tsc -p tsconfig.scripts.json --noEmit",
+    "test": "pnpm -r test && vitest run scripts/migrate-ai-content-factory.test.ts",
+    "test:coverage": "pnpm --filter @risen/content-core test:coverage",
+    "eval:content": "pnpm dlx promptfoo@0.121.19 eval -c promptfooconfig.yaml",
+    "lint:boundaries": "node scripts/check-platform-boundaries.mjs",
+    "migrate:legacy": "tsx scripts/migrate-ai-content-factory.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "concurrently": "^9.2.0",
+    "postgres": "^3.4.7",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
