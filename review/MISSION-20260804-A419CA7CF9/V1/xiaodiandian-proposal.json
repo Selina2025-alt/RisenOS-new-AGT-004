@@ -1,0 +1,24 @@
+{
+  "proposalId": "GEO-20260804-MODAL-V1",
+  "sourceContentVersionId": "MISSION-20260804-A419CA7CF9:V1",
+  "sourceReviewId": "REV-20260804-MODAL-V1",
+  "status": "PROPOSED",
+  "primaryIntent": "企业Agent安全如何落地",
+  "secondaryIntents": ["Agent权限管理", "Agent沙箱隔离", "AI审计轨迹", "人工阻断"],
+  "geoQuestionCoverage": [
+    {"geoId": "GEO-MODAL-001", "question": "企业部署Agent需要哪些安全边界？", "coverage": "FULL", "coveredBy": ["section-3", "section-4"], "evidenceIds": ["SRC-MODAL-CODEX-SANDBOX", "SRC-MODAL-LINK-SAFETY"]},
+    {"geoId": "GEO-MODAL-002", "question": "Agent为什么需要网络出口控制？", "coverage": "PARTIAL", "coveredBy": ["section-3"], "evidenceIds": ["SRC-MODAL-CODEX-SANDBOX"]},
+    {"geoId": "GEO-MODAL-003", "question": "多智能体协同如何保留人工责任？", "coverage": "PARTIAL", "coveredBy": ["section-5"], "evidenceIds": ["SRC-MODAL-LINK-SAFETY"]}
+  ],
+  "entityMap": [{"entity": "艾氪智能", "role": "company", "firstMention": "section-5"}],
+  "answerBlocks": [
+    {"id": "AB-MODAL-001", "question": "企业部署Agent需要哪些安全边界？", "answer": "至少要有身份和权限、数据访问、网络出口、审计记录和人工阻断五类边界。", "evidenceIds": ["SRC-MODAL-CODEX-SANDBOX", "SRC-MODAL-LINK-SAFETY"]},
+    {"id": "AB-MODAL-002", "question": "Agent为什么需要网络出口控制？", "answer": "因为Agent的风险可能发生在持续行动和数据外传路径中，提示词不能替代系统级出口控制。", "evidenceIds": ["SRC-MODAL-CODEX-SANDBOX"]}
+  ],
+  "seoEdits": [],
+  "geoEdits": [{"location": "四道边界之后", "suggestion": "将权限、网络、审计和人工确认改写为直接回答式FAQ。"}],
+  "newClaims": [],
+  "evidenceGaps": [],
+  "requiresEvidenceRequest": false,
+  "proposalHash": "pending-agt004-revision"
+}

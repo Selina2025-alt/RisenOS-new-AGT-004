@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "5.3",
+  "missionId": "MISSION-20260804-A419CA7CF9",
+  "researchPackId": "RP-20260804-A419CA7CF9-22C16612D6",
+  "objective": "从OpenAI模型评估期间的安全事件和Modal客户资产线索，解释企业部署Agent时必须建立的隔离、权限、网络出口、审计和人工阻断边界。",
+  "audience": ["企业决策者", "AI负责人", "信息安全负责人"],
+  "coreMessage": "Agent能力越强，企业越不能只讨论模型聪不聪明，而要先把运行边界、权限、网络、审计和紧急阻断设计成系统的一部分。",
+  "tone": ["专业", "克制", "风险清晰", "面向行动"],
+  "deliverables": ["wechat_article", "short_video_script", "xiaohongshu_carousel", "x_thread", "linkedin_company_post"],
+  "channels": ["wechat", "short_video", "xiaohongshu", "x", "linkedin"],
+  "locales": ["zh-CN", "en-US"],
+  "mustIncludeClaimIds": ["C-MODAL-001", "C-MODAL-002", "C-MODAL-003"],
+  "enterpriseFusion": {"type": "scenario_mapping", "company": "艾氪智能", "productReference": "产业级Agentic OS与多智能体协同的治理边界", "forceProductName": false},
+  "constraints": ["把OpenAI/Hugging Face官方事实与媒体报道分开", "把Modal客户资产表述为公开报道线索并保留来源", "工程建议不能冒充事故官方结论", "不提供攻击复现、漏洞利用或敏感操作细节"],
+  "callToAction": "邀请企业安全与业务负责人共同检查Agent的权限、网络出口、审计和人工阻断设计。",
+  "status": "READY_FOR_WRITING",
+  "reviewRoute": ["lilith", "xiaodiandian_if_geo_or_seo_gap", "agt-004_revision", "lilith_re_review"]
+}

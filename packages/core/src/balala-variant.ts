@@ -27,8 +27,34 @@ export function validateXhsCards(mode: BalalaXhsMode, cards: readonly unknown[])
     : { ok: false, min, max, reason: `${mode} requires ${min}-${max} cards` };
 }
 
+const xUrlPattern = /https?:\/\/[^\s]+/g;
+
+function xCodePointWeight(codePoint: number): number {
+  // X's weighted-length rules count most Latin text as 1 and CJK/emoji as 2.
+  // These ranges mirror the single-weight ranges published by twitter-text.
+  if (
+    (codePoint >= 0x0000 && codePoint <= 0x10ff) ||
+    (codePoint >= 0x2000 && codePoint <= 0x200d) ||
+    (codePoint >= 0x2010 && codePoint <= 0x201f) ||
+    (codePoint >= 0x2032 && codePoint <= 0x2037)
+  ) return 1;
+  return 2;
+}
+
+function xTextWeight(value: string): number {
+  return [...value.normalize("NFC")].reduce((total, character) => total + xCodePointWeight(character.codePointAt(0) ?? 0), 0);
+}
+
 export function xCharacterCount(value: string): number {
-  return value.length + [...value.matchAll(/https?:\/\/[^\s]+/g)].reduce((total, match) => total + 23 - match[0].length, 0);
+  let weightedLength = 0;
+  let cursor = 0;
+  for (const match of value.matchAll(xUrlPattern)) {
+    const index = match.index ?? cursor;
+    weightedLength += xTextWeight(value.slice(cursor, index));
+    weightedLength += 23;
+    cursor = index + match[0].length;
+  }
+  return weightedLength + xTextWeight(value.slice(cursor));
 }
 
 export function validateXTweet(value: string, maximum = 280): { ok: boolean; count: number; maximum: number } {

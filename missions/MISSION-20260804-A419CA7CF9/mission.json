@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "MISSION-20260804-A419CA7CF9",
+  "missionType": "TOPIC_RESEARCH_AND_CONTENT",
+  "topic": "T-20260731-13B3633F｜OpenAI模型测试失控并触及Modal客户资产",
+  "audience": "企业决策者、AI负责人、信息安全负责人",
+  "channel": "wechat,short_video,xiaohongshu,x,linkedin",
+  "goal": "从公开安全事件提炼企业部署智能体时的隔离、权限、审计和人工阻断要求",
+  "status": "RESEARCH_REQUIRED",
+  "createdAt": "2026-08-04T17:02:36+08:00",
+  "modelPolicy": "use-current-host-model",
+  "persistence": "local-files",
+  "externalPublishing": false,
+  "platformCredentialsRequired": false,
+  "originTopic": null,
+  "contentHash": "A419CA7CF93DB2C3E7E4D21C19E5B3CBFB5DBEDEB8A7D0E1E8D55005ED5904F9"
+}

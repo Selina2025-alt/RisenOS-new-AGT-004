@@ -1,0 +1,24 @@
+{
+  "proposalId": "GEO-20260804-PETER-V1",
+  "sourceContentVersionId": "MISSION-20260804-43A99C34F7:V1",
+  "sourceReviewId": "REV-20260804-PETER-V1",
+  "status": "PROPOSED",
+  "primaryIntent": "企业AI如何避免过度依赖",
+  "secondaryIntents": ["AI使用边界", "企业AI验证机制", "Agent人工确认", "AI素养"],
+  "geoQuestionCoverage": [
+    {"geoId": "GEO-PETER-001", "question": "企业如何管理AI使用边界？", "coverage": "PARTIAL", "coveredBy": ["section-3"], "evidenceIds": ["SRC-PETER-OECD-2025"]},
+    {"geoId": "GEO-PETER-002", "question": "Agent生成结果由谁确认？", "coverage": "PARTIAL", "coveredBy": ["section-3"], "evidenceIds": ["SRC-PETER-OECD-2025"]},
+    {"geoId": "GEO-PETER-003", "question": "企业AI如何避免只追求生成速度？", "coverage": "FULL", "coveredBy": ["section-2", "section-4"], "evidenceIds": ["SRC-PETER-BERKELEY-2026", "SRC-PETER-TECHRADAR-2026"]}
+  ],
+  "entityMap": [{"entity": "艾氪智能", "role": "company", "firstMention": "section-4"}],
+  "answerBlocks": [
+    {"id": "AB-PETER-001", "question": "企业如何管理AI使用边界？", "answer": "按资料敏感度、任务风险和人工责任划分可访问内容、可执行动作和必须确认的节点。", "evidenceIds": ["SRC-PETER-OECD-2025"]},
+    {"id": "AB-PETER-002", "question": "Agent生成结果由谁确认？", "answer": "Agent提供建议和证据，业务负责人或被授权人员对事实、判断和最终动作负责。", "evidenceIds": ["SRC-PETER-OECD-2025"]}
+  ],
+  "seoEdits": [],
+  "geoEdits": [{"location": "结尾检查段", "suggestion": "增加两个FAQ式小标题和直接答案。"}],
+  "newClaims": [],
+  "evidenceGaps": [],
+  "requiresEvidenceRequest": false,
+  "proposalHash": "pending-agt004-revision"
+}

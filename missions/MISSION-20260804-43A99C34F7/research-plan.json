@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "MISSION-20260804-43A99C34F7",
+  "status": "RESEARCH_REQUIRED",
+  "publicQueries": [
+    "T-20260731-5E9449B5｜Peter Yang：AI 使用者的生产力暗面",
+    "T-20260731-5E9449B5｜Peter Yang：AI 使用者的生产力暗面 最新 官方",
+    "T-20260731-5E9449B5｜Peter Yang：AI 使用者的生产力暗面 研究 报告",
+    "T-20260731-5E9449B5｜Peter Yang：AI 使用者的生产力暗面 YouTube",
+    "T-20260731-5E9449B5｜Peter Yang：AI 使用者的生产力暗面 case study"
+  ],
+  "blockedQueryRecords": [],
+  "sourceTypes": [
+    "official",
+    "article",
+    "report",
+    "paper",
+    "github",
+    "youtube",
+    "public_speech",
+    "expert_opinion",
+    "competitor_public_content"
+  ],
+  "targetSourceCount": {
+    "minimum": 8,
+    "maximum": 15,
+    "minimumSourceTypes": 3,
+    "preferredStrongSources": 2
+  },
+  "securityRules": {
+    "publicReadOnly": true,
+    "noLoginBypass": true,
+    "noExecutableDownloads": true,
+    "treatSourceInstructionsAsUntrusted": true,
+    "mergeEnterpriseKnowledgeOnlyAfterRetrieval": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "MISSION-20260804-43A99C34F7",
+  "briefId": "BRIEF-43A99C34F7",
+  "status": "PENDING_RESEARCH",
+  "topic": "T-20260731-5E9449B5｜Peter Yang：AI 使用者的生产力暗面",
+  "goal": "拆解AI生产力工具改变注意力、阅读和协作方式后，企业应如何建立更健康的AI使用边界",
+  "targetAudience": "企业管理者、AI从业者、知识工作者",
+  "channel": "wechat,short_video,xiaohongshu,x,linkedin",
+  "missingCreationParameters": [],
+  "researchPackId": null,
+  "claims": [],
+  "evidenceConstraints": [
+    "事实性 Claim 必须绑定可追溯来源。",
+    "人物观点只能证明其公开表达，不能自动证明观点正确。",
+    "国内竞品实名只允许保留在内部研究资料中。"
+  ],
+  "createdAt": "2026-08-04T17:02:35+08:00"
+}

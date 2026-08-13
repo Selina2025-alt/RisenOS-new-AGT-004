@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "1.0",
+  "researchPackId": "RP-20260804-43A99C34F7-C50ECE20B5",
+  "missionId": "MISSION-20260804-43A99C34F7",
+  "topic": "T-20260731-5E9449B5｜Peter Yang：AI 使用者的生产力暗面",
+  "status": "RESEARCH_READY",
+  "sources": [
+    {
+      "sourceId": "SRC-PETER-X-20260730",
+      "title": "Peter Yang：AI productivity dark patterns",
+      "url": "https://x.com/petergyang/status/2082642205811106158",
+      "sourceType": "public_voice",
+      "sourceRole": "primary",
+      "publisher": "Peter Yang",
+      "author": "Peter Yang",
+      "publishedAt": "2026-07-30",
+      "retrievedAt": "2026-08-04T09:05:08+00:00",
+      "summary": "Peter Yang公开描述AI生产力使用中的三个暗面：只看摘要而不读原文、被Agent反馈牵着走而误以为自己在生产、以及用语音模型头脑风暴替代真人交流。",
+      "relevantExcerpts": [
+        "AI has been great for my productivity, but I’m starting to recognize three dark patterns."
+      ],
+      "keyFacts": [
+        "这是作者的公开观察，不等同于普遍事实。"
+      ],
+      "viewpoints": [
+        "AI工具可能改变注意力、阅读习惯和社交偏好。"
+      ],
+      "contentHash": "171400A0653D868A681C0655083DF005A3013A0ADA5A9C6CCC69FE122C829D82",
+      "authorityTier": "S",
+      "verificationStatus": "verified",
+      "accessStatus": "accessible",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": []
+    },
+    {
+      "sourceId": "SRC-PETER-OECD-2025",
+      "title": "The effects of generative AI on productivity, innovation and entrepreneurship",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/06/the-effects-of-generative-ai-on-productivity-innovation-and-entrepreneurship_da1d085d/b21df222-en.pdf",
+      "sourceType": "research_report",
+      "sourceRole": "secondary",
+      "publisher": "OECD",
+      "author": null,
+      "publishedAt": "2025-06",
+      "retrievedAt": "2026-08-04T09:05:08+00:00",
+      "summary": "OECD报告讨论生成式AI对生产率、创新和创业的影响，并指出有效使用依赖教育、验证和组织条件，过度依赖可能损害批判性思考。",
+      "relevantExcerpts": [],
+      "keyFacts": [
+        "报告区分生产率潜力与组织使用条件。"
+      ],
+      "viewpoints": [],
+      "contentHash": "C7CED38DCD084E814D1C02782D5B3DE15DF546BBDBF7E2C95335D442BC88C3BF",
+      "authorityTier": "A",
+      "verificationStatus": "verified",
+      "accessStatus": "accessible",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": []
+    },
+    {
+      "sourceId": "SRC-PETER-ERIC-2025",
+      "title": "The Role of Critical Thinking on Undergraduates' Reliance Behaviours on Generative AI",
+      "url": "https://eric.ed.gov/?id=EJ1479939",
+      "sourceType": "academic_research",
+      "sourceRole": "secondary",
+      "publisher": "British Journal of Educational Technology",
+      "author": null,
+      "publishedAt": "2025-09",
+      "retrievedAt": "2026-08-04T09:05:08+00:00",
+      "summary": "研究讨论生成式AI依赖行为、AI素养和批判性思考之间的关系，强调反思、谨慎和协作式使用。",
+      "relevantExcerpts": [],
+      "keyFacts": [],
+      "viewpoints": [],
+      "contentHash": "37E2C353A1958405C9B4E8FAB6FFB0650C5F023AF91F466B4E583E5449609855",
+      "authorityTier": "A",
+      "verificationStatus": "verified",
+      "accessStatus": "accessible",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": []
+    },
+    {
+      "sourceId": "SRC-PETER-SCIENCE-2025",
+      "title": "Learners' AI dependence and critical thinking",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0001691825010388",
+      "sourceType": "academic_research",
+      "sourceRole": "secondary",
+      "publisher": "ScienceDirect",
+      "author": null,
+      "publishedAt": "2025-10",
+      "retrievedAt": "2026-08-04T09:05:08+00:00",
+      "summary": "研究考察AI依赖、认知疲劳和批判性思维之间的关系，并讨论信息素养的缓冲作用。",
+      "relevantExcerpts": [],
+      "keyFacts": [],
+      "viewpoints": [],
+      "contentHash": "46D018060BE026A1B7A39F7BA8255109A3E96B65ABB327518E2D84FC564DF8EC",
+      "authorityTier": "A",
+      "verificationStatus": "verified",
+      "accessStatus": "accessible",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": []
+    },
+    {
+      "sourceId": "SRC-PETER-ARXIV-2026",
+      "title": "Cognitive forcing functions for execution plans in AI-assisted writing",
+      "url": "https://arxiv.org/abs/2601.18033",
+      "sourceType": "academic_research",
+      "sourceRole": "secondary",
+      "publisher": "arXiv",
+      "author": null,
+      "publishedAt": "2026-01",
+      "retrievedAt": "2026-08-04T09:05:08+00:00",
+      "summary": "研究比较AI辅助写作中的认知强制机制，关注信任、过度依赖和批判性思维。",
+      "relevantExcerpts": [],
+      "keyFacts": [],
+      "viewpoints": [],
+      "contentHash": "9066342801AC01D86AD8C47F6A37F1A01685BD6757B8F6E28E1C5C3EB996409D",
+      "authorityTier": "B",
+      "verificationStatus": "verified",
+      "accessStatus": "accessible",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": []
+    },
+    {
+      "sourceId": "SRC-PETER-BERKELEY-2026",
+      "title": "AI Productivity Blind Spot",
+      "url": "https://cmr.berkeley.edu/assets/documents/pdf/2026-01-ai-productivity-blind-spot.pdf",
+      "sourceType": "industry_report",
+      "sourceRole": "secondary",
+      "publisher": "Berkeley Haas",
+      "author": null,
+      "publishedAt": "2026-01",
+      "retrievedAt": "2026-08-04T09:05:08+00:00",
+      "summary": "报告讨论AI生产率叙事与实际工作负荷、阅读负担、优先级和注意力稀释之间的落差。",
+      "relevantExcerpts": [],
+      "keyFacts": [],
+      "viewpoints": [],
+      "contentHash": "50D6281568E5242196590D2E4E006A812F2A4C5CA142B1E8463FEAB2B0EAE811",
+      "authorityTier": "B",
+      "verificationStatus": "verified",
+      "accessStatus": "accessible",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": []
+    },
+    {
+      "sourceId": "SRC-PETER-PUBMED-2026",
+      "title": "Cognitive offloading, critical thinking and attitudes towards artificial intelligence",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42377671",
+      "sourceType": "academic_research",
+      "sourceRole": "secondary",
+      "publisher": "PubMed",
+      "author": null,
+      "publishedAt": "2026-07",
+      "retrievedAt": "2026-08-04T09:05:08+00:00",
+      "summary": "研究讨论AI辅助任务中的认知卸载、效率收益和独立批判性推理风险。",
+      "relevantExcerpts": [],
+      "keyFacts": [],
+      "viewpoints": [],
+      "contentHash": "3087C7438E0DE72223AD2BE571DF140435CF67BFD1A5A5BD61105DC00A59501D",
+      "authorityTier": "A",
+      "verificationStatus": "verified",
+      "accessStatus": "accessible",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": []
+    },
+    {
+      "sourceId": "SRC-PETER-TECHRADAR-2026",
+      "title": "The verification economy is redefining productivity",
+      "url": "https://www.techradar.com/pro/the-verification-economy-is-redefining-productivity",
+      "sourceType": "industry_analysis",
+      "sourceRole": "secondary",
+      "publisher": "TechRadar Pro",
+      "author": null,
+      "publishedAt": "2026-06",
+      "retrievedAt": "2026-08-04T09:05:08+00:00",
+      "summary": "行业分析讨论企业使用AI后验证、引用核查和质量控制工作增加的现象。",
+      "relevantExcerpts": [],
+      "keyFacts": [],
+      "viewpoints": [],
+      "contentHash": "1C05422CE9BB8EDD748F236E892185AB01A995AD85E0B2666D257EAFE7D1D074",
+      "authorityTier": "B",
+      "verificationStatus": "verified",
+      "accessStatus": "accessible",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": []
+    }
+  ],
+  "claims": [
+    {
+      "claimId": "C-PETER-001",
+      "statement": "Peter Yang公开提出了三个AI生产力暗面观察。",
+      "claimType": "factual",
+      "sourceIds": [
+        "SRC-PETER-X-20260730"
+      ],
+      "evidenceStatus": "SUPPORTED"
+    },
+    {
+      "claimId": "C-PETER-002",
+      "statement": "关于AI依赖、认知卸载和批判性思考的研究，支持企业把验证和AI素养纳入使用规范。",
+      "claimType": "factual",
+      "sourceIds": [
+        "SRC-PETER-OECD-2025",
+        "SRC-PETER-ERIC-2025",
+        "SRC-PETER-SCIENCE-2025",
+        "SRC-PETER-PUBMED-2026"
+      ],
+      "evidenceStatus": "SUPPORTED"
+    },
+    {
+      "claimId": "C-PETER-003",
+      "statement": "企业AI应用的关键不只是生成速度，还包括验证、责任边界和组织使用方式。",
+      "claimType": "analysis",
+      "sourceIds": [
+        "SRC-PETER-OECD-2025",
+        "SRC-PETER-BERKELEY-2026",
+        "SRC-PETER-TECHRADAR-2026"
+      ],
+      "evidenceStatus": "SUPPORTED"
+    }
+  ],
+  "evidenceGaps": [],
+  "metrics": {
+    "validSourceCount": 8,
+    "sourceTypeCount": 5,
+    "strongSourceCount": 5,
+    "factualClaimCount": 2,
+    "unsupportedClaimCount": 0
+  },
+  "createdAt": "2026-08-04T17:05:08+08:00",
+  "contentHash": "C50ECE20B51FAB7B7AD4442854D6C1D41AD5159027831F376104486940D914DF"
+}

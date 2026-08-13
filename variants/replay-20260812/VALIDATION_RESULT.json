@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "5.3-replay-validation-1",
+  "generatedAt": "2026-08-13T10:05:07.806Z",
+  "passed": true,
+  "missions": [
+    {
+      "missionId": "MISSION-20260804-43A99C34F7",
+      "traceId": "TRACE-20260812-PETER-VARIANTS",
+      "contentHash": "48E03C33BA50AA3ACC33D6B8AF42179424748C070C0B1B9503DD39A899447BCC",
+      "passed": true,
+      "checks": [
+        {
+          "name": "approved source gate",
+          "ok": true,
+          "detail": "APPROVED_FOR_VARIANTS"
+        },
+        {
+          "name": "five channel contract",
+          "ok": true,
+          "detail": "wechat, short_video, xiaohongshu, x, linkedin"
+        },
+        {
+          "name": "human review gate",
+          "ok": true,
+          "detail": "HUMAN_REVIEW"
+        },
+        {
+          "name": "wechat subheads",
+          "ok": true,
+          "detail": "4 subheads; 快了：判断却慢了(8) | 三个接口：管住依赖(9) | 企业AI：重建责任(9) | 三个问题：现在就问(9)"
+        },
+        {
+          "name": "lilith AI-style gate",
+          "ok": true,
+          "detail": "PASS; parallelism"
+        },
+        {
+          "name": "lilith logic gate",
+          "ok": true,
+          "detail": "PASS; no issue"
+        },
+        {
+          "name": "video production fields",
+          "ok": true,
+          "detail": "hook / voice / shots / subtitles / cover"
+        },
+        {
+          "name": "xiaohongshu deep-card count",
+          "ok": true,
+          "detail": "7 cards"
+        },
+        {
+          "name": "x weighted length",
+          "ok": true,
+          "detail": "1:279, 2:167, 3:200, 4:193, 5:163, 6:173, 7:188, 8:138"
+        },
+        {
+          "name": "x first-post judgment",
+          "ok": true,
+          "detail": "AI can make output faster while making work feel more fragmented. Peter Yang des"
+        },
+        {
+          "name": "linkedin fact equivalence",
+          "ok": true,
+          "detail": "equivalent claim ids: C-PETER-001, C-PETER-002, C-PETER-003"
+        },
+        {
+          "name": "linkedin alt text",
+          "ok": true,
+          "detail": "Alt Text present"
+        },
+        {
+          "name": "claim inheritance",
+          "ok": true,
+          "detail": "C-PETER-001, C-PETER-002, C-PETER-003"
+        },
+        {
+          "name": "per-channel claim inheritance",
+          "ok": true,
+          "detail": "wechat:complete | video:complete | xiaohongshu:complete | x:complete | linkedin:complete"
+        },
+        {
+          "name": "no publishing fields",
+          "ok": true,
+          "detail": "manifest contains no publishing/account/credential fields"
+        },
+        {
+          "name": "lilith lightweight review",
+          "ok": true,
+          "detail": "review section and human gate present"
+        }
+      ]
+    },
+    {
+      "missionId": "MISSION-20260804-A419CA7CF9",
+      "traceId": "TRACE-20260812-MODAL-VARIANTS",
+      "contentHash": "349A0220B8EFAC077635EF8A8F155A38024FC52EE01108D1F95B00DBB786B9E0",
+      "passed": true,
+      "checks": [
+        {
+          "name": "approved source gate",
+          "ok": true,
+          "detail": "APPROVED_FOR_VARIANTS"
+        },
+        {
+          "name": "five channel contract",
+          "ok": true,
+          "detail": "wechat, short_video, xiaohongshu, x, linkedin"
+        },
+        {
+          "name": "human review gate",
+          "ok": true,
+          "detail": "HUMAN_REVIEW"
+        },
+        {
+          "name": "wechat subheads",
+          "ok": true,
+          "detail": "4 subheads; 风险：藏在行动链(8) | 四道边界：逐项检查(9) | 企业AI：先有刹车(9) | 落地：先问三件事(8)"
+        },
+        {
+          "name": "lilith AI-style gate",
+          "ok": true,
+          "detail": "WARN; contrast_template, parallelism"
+        },
+        {
+          "name": "lilith logic gate",
+          "ok": true,
+          "detail": "PASS; no issue"
+        },
+        {
+          "name": "video production fields",
+          "ok": true,
+          "detail": "hook / voice / shots / subtitles / cover"
+        },
+        {
+          "name": "xiaohongshu deep-card count",
+          "ok": true,
+          "detail": "7 cards"
+        },
+        {
+          "name": "x weighted length",
+          "ok": true,
+          "detail": "1:190, 2:234, 3:165, 4:131, 5:189, 6:152, 7:175, 8:139"
+        },
+        {
+          "name": "x first-post judgment",
+          "ok": true,
+          "detail": "A model evaluation became an enterprise AI security lesson. OpenAI said models t"
+        },
+        {
+          "name": "linkedin fact equivalence",
+          "ok": true,
+          "detail": "equivalent claim ids: C-MODAL-001, C-MODAL-002, C-MODAL-003"
+        },
+        {
+          "name": "linkedin alt text",
+          "ok": true,
+          "detail": "Alt Text present"
+        },
+        {
+          "name": "claim inheritance",
+          "ok": true,
+          "detail": "C-MODAL-001, C-MODAL-002, C-MODAL-003"
+        },
+        {
+          "name": "per-channel claim inheritance",
+          "ok": true,
+          "detail": "wechat:complete | video:complete | xiaohongshu:complete | x:complete | linkedin:complete"
+        },
+        {
+          "name": "no publishing fields",
+          "ok": true,
+          "detail": "manifest contains no publishing/account/credential fields"
+        },
+        {
+          "name": "lilith lightweight review",
+          "ok": true,
+          "detail": "review section and human gate present"
+        }
+      ]
+    }
+  ],
+  "blockedBranch": {
+    "missionId": "MISSION-20260804-7F93944F59",
+    "status": "EVIDENCE_INSUFFICIENT",
+    "variantsAbsent": true,
+    "blockedRecordPresent": true
+  }
+}

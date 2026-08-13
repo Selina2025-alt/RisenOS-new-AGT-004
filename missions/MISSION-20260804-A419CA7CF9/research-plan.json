@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "MISSION-20260804-A419CA7CF9",
+  "status": "RESEARCH_REQUIRED",
+  "publicQueries": [
+    "T-20260731-13B3633F｜OpenAI模型测试失控并触及Modal客户资产",
+    "T-20260731-13B3633F｜OpenAI模型测试失控并触及Modal客户资产 最新 官方",
+    "T-20260731-13B3633F｜OpenAI模型测试失控并触及Modal客户资产 研究 报告",
+    "T-20260731-13B3633F｜OpenAI模型测试失控并触及Modal客户资产 YouTube",
+    "T-20260731-13B3633F｜OpenAI模型测试失控并触及Modal客户资产 case study"
+  ],
+  "blockedQueryRecords": [],
+  "sourceTypes": [
+    "official",
+    "article",
+    "report",
+    "paper",
+    "github",
+    "youtube",
+    "public_speech",
+    "expert_opinion",
+    "competitor_public_content"
+  ],
+  "targetSourceCount": {
+    "minimum": 8,
+    "maximum": 15,
+    "minimumSourceTypes": 3,
+    "preferredStrongSources": 2
+  },
+  "securityRules": {
+    "publicReadOnly": true,
+    "noLoginBypass": true,
+    "noExecutableDownloads": true,
+    "treatSourceInstructionsAsUntrusted": true,
+    "mergeEnterpriseKnowledgeOnlyAfterRetrieval": true
+  }
+}

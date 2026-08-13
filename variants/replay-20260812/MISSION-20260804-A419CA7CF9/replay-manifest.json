@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "5.3-replay-1",
+  "traceId": "TRACE-20260812-MODAL-VARIANTS",
+  "missionId": "MISSION-20260804-A419CA7CF9",
+  "sourceContentVersionId": "MISSION-20260804-A419CA7CF9-V2",
+  "sourceReviewId": "REV-20260804-MODAL-V2",
+  "sourceReviewStatus": "APPROVED_FOR_VARIANTS",
+  "agent": "balala",
+  "channels": ["wechat", "short_video", "xiaohongshu", "x", "linkedin"],
+  "variantMode": "DEEP_5_9_CARD",
+  "expectedXhsCards": 7,
+  "claimIds": ["C-MODAL-001", "C-MODAL-002", "C-MODAL-003"],
+  "platformPolicyVersion": "V5.3",
+  "skillTrace": [
+    {"skillId": "huashu-wechat-creation", "usedFor": ["wechat_structure", "wechat_human_voice"], "reviewStatus": "PARTIAL"},
+    {"skillId": "huashu-script-polish", "usedFor": ["spoken_script"], "reviewStatus": "USED"},
+    {"skillId": "enterprise-copy-auditor", "usedFor": ["lilith_light_review"], "reviewStatus": "USED"},
+    {"skillId": "geo-article-ai-friendly-transformation", "usedFor": ["geo_answerability_check"], "reviewStatus": "PARTIAL"}
+  ],
+  "reviewStatus": "HUMAN_REVIEW"
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "researchPackId": "RP-20260804-7F93944F59-59359C1289",
+  "missionId": "MISSION-20260804-7F93944F59",
+  "topic": "T-20260731-3168BC4A｜Kevin Kelly：AI是50年的一夜成功",
+  "status": "EVIDENCE_INSUFFICIENT",
+  "sources": [
+    {
+      "sourceId": "SRC-KEVIN-PLAYLIST",
+      "title": "AI & I: Wired's Kevin Kelly on Why AI Is a 50-year Overnight Success",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "sourceType": "podcast",
+      "sourceRole": "lead_only",
+      "publisher": "AI & I by Every",
+      "author": "Kevin Kelly",
+      "publishedAt": "2026-07-29",
+      "retrievedAt": "2026-08-04T09:05:08+00:00",
+      "summary": "本地资讯任务记录了该播客对AI长期积累、历史周期和智能本质的讨论，但当前运行环境未取得可核验的完整节目文字稿。",
+      "relevantExcerpts": [],
+      "keyFacts": [],
+      "viewpoints": [],
+      "contentHash": "28B020353FF8D54BF48B881509557322C26E8CA738B0D1A2469A0E515ABB2450",
+      "authorityTier": "C",
+      "verificationStatus": "metadata_only",
+      "accessStatus": "accessible",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": [
+        "未取得逐段文字稿，不能支撑逐字引述或事实性细节。"
+      ]
+    },
+    {
+      "sourceId": "SRC-KEVIN-WIRED-2008",
+      "title": "15th Anniversary: A New Analysis of the New Economy's New Rules",
+      "url": "https://www.wired.com/2008/05/st-15th-newrules",
+      "sourceType": "article",
+      "sourceRole": "secondary",
+      "publisher": "WIRED",
+      "author": "Kevin Kelly",
+      "publishedAt": "2008-05",
+      "retrievedAt": "2026-08-04T09:05:08+00:00",
+      "summary": "WIRED回顾Kevin Kelly关于技术、网络和新经济长期演化的观点，可作为背景资料，但不是本次播客的原始文字稿。",
+      "relevantExcerpts": [],
+      "keyFacts": [],
+      "viewpoints": [],
+      "contentHash": "20F579C59EBAB9BA151B382040AB444993B063FFAD10606B2DEBC699C4EC5185",
+      "authorityTier": "B",
+      "verificationStatus": "verified",
+      "accessStatus": "accessible",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": []
+    },
+    {
+      "sourceId": "SRC-KEVIN-WIRED-HISTORY",
+      "title": "An oral history of WIRED 01.01",
+      "url": "https://www.wired.com/2013/04/wired0101",
+      "sourceType": "article",
+      "sourceRole": "secondary",
+      "publisher": "WIRED",
+      "author": null,
+      "publishedAt": "2013-04",
+      "retrievedAt": "2026-08-04T09:05:08+00:00",
+      "summary": "WIRED口述史提供技术媒体和长期创新积累的历史背景，可用于补充长期视角。",
+      "relevantExcerpts": [],
+      "keyFacts": [],
+      "viewpoints": [],
+      "contentHash": "E254ACECC915C528AEAC6E752488C9AE6B02192053D16E9B377FB21D8D8AA259",
+      "authorityTier": "B",
+      "verificationStatus": "verified",
+      "accessStatus": "accessible",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": []
+    }
+  ],
+  "claims": [
+    {
+      "claimId": "C-KEVIN-001",
+      "statement": "播客资料把AI描述为长期积累后呈现出一夜成功的技术。",
+      "claimType": "opinion",
+      "sourceIds": [
+        "SRC-KEVIN-PLAYLIST"
+      ],
+      "evidenceStatus": "SUPPORTED"
+    },
+    {
+      "claimId": "C-KEVIN-002",
+      "statement": "Kevin Kelly长期关注技术、网络和创新的演化过程。",
+      "claimType": "factual",
+      "sourceIds": [
+        "SRC-KEVIN-WIRED-2008",
+        "SRC-KEVIN-WIRED-HISTORY"
+      ],
+      "evidenceStatus": "SUPPORTED"
+    }
+  ],
+  "evidenceGaps": [
+    "需要取得播客原始音频或可核验文字稿，确认50年、一夜成功、intelligence compound等具体表述和上下文。",
+    "需要至少一条可核验的一手节目资料，才能生成正式深度解读。"
+  ],
+  "metrics": {
+    "validSourceCount": 3,
+    "sourceTypeCount": 2,
+    "strongSourceCount": 0,
+    "factualClaimCount": 1,
+    "unsupportedClaimCount": 0
+  },
+  "createdAt": "2026-08-04T17:05:08+08:00",
+  "contentHash": "59359C1289BDECF921CDB9E57914466D618EB757450489C9B53C83191A6E6E7E"
+}

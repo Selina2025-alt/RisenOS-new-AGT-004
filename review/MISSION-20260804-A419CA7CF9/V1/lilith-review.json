@@ -1,0 +1,24 @@
+{
+  "reviewId": "REV-20260804-MODAL-V1",
+  "missionId": "MISSION-20260804-A419CA7CF9",
+  "sourceVersion": "V1",
+  "reviewStatus": "REVISION_REQUIRED",
+  "overallConclusion": "事实、报道和工程推论已经分层，企业安全落点清楚；需要补充可引用FAQ、明确媒体报道的不确定性，并降低清单段落的机械感。",
+  "contentAdequacy": {"status": "PASS_WITH_REVISION", "reason": "完成事件解释、机制分析、企业边界和行动清单。"},
+  "enterpriseFusion": {"status": "NATURAL", "companyMention": "艾氪智能", "productMention": "未绑定具体产品能力，避免无证据承诺", "suggestion": "保留产业级Agentic OS方法论关联。"},
+  "aiStyleCheck": {"status": "WARN", "signals": ["四道边界的平行句式", "结尾总结较规整"], "suggestion": "保留结构但在第二、三道边界加入不同长度句子和一个具体业务动作。"},
+  "logicCheck": {"status": "PASS", "chain": ["官方事实", "媒体补充", "能力变化", "工程判断", "企业检查清单"]},
+  "evidenceCheck": {"status": "PASS_WITH_BOUNDARY", "claimCount": 3, "unboundClaims": [], "warnings": ["Modal客户资产信息来自公开报道，不应扩写损失或客户身份。"]},
+  "seoCoverage": {"status": "PARTIAL", "primaryIntent": "企业Agent安全如何落地", "secondaryKeywords": ["Agent权限管理", "Agent沙箱隔离", "AI审计轨迹", "人工阻断"], "missing": ["企业Agent安全检查清单FAQ"]},
+  "geoCoverage": {"status": "PARTIAL", "questions": ["企业部署Agent需要哪些安全边界？", "Agent为什么需要网络出口控制？", "多智能体协同如何保留人工责任？"]},
+  "mustFixIssues": [
+    {"issueId": "LILITH-MODAL-001", "severity": "P1", "module": "geo", "routeTo": "xiaodiandian", "location": "四道边界之后", "problem": "缺少直接回答式FAQ，AI检索时难以抽取完整答案。", "suggestion": "增加3个AnswerBlock，分别回答权限、网络和人工确认。", "blocksVariantGeneration": true},
+    {"issueId": "LILITH-MODAL-002", "severity": "P1", "module": "evidence", "routeTo": "agt-004", "location": "Modal客户资产段", "problem": "需要在正文中继续标注“公开报道显示”，避免读者误读为官方完整事故结论。", "suggestion": "保留来源限定语并在证据说明中单列。", "blocksVariantGeneration": true}
+  ],
+  "stronglyRecommendedIssues": [
+    {"issueId": "LILITH-MODAL-003", "severity": "P2", "module": "ai_style", "routeTo": "agt-004", "location": "四道边界清单", "problem": "平行排比较整齐，可能产生AI模板感。", "suggestion": "保留四项结构，改变部分句式并加入一个业务动作示例。", "blocksVariantGeneration": false}
+  ],
+  "skillCrossCheck": {"generationSkills": ["enterprise-copy-orchestrator", "enterprise-soft-insertion"], "status": "PASS_WITH_REVISION"},
+  "humanConfirmationItems": ["是否采用‘安全课’作为标题隐喻"],
+  "ruleCandidates": []
+}

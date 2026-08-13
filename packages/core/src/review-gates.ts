@@ -26,6 +26,8 @@ export interface LogicReview {
 
 const connectorPattern = /\b(因此|所以|同时|此外|进一步|换句话说|总的来说|显然|这意味着|in addition|therefore|more importantly)\b/gi;
 const abstractPattern = /(赋能|重塑|引领|全面升级|构建新范式|实现闭环|生态协同|strategic transformation)/gi;
+const boundaryPattern = /(边界|条件|风险|责任|确认|取决于|不能|不应|需要|建议|先问|如果|何时|撤销|阻断|复盘|还原)/;
+const enterpriseBridgePattern = /(企业|组织|业务|管理者|治理|运行|落地|这也是|这对|因此|所以|意味着|对应|场景)/;
 
 function paragraphs(text: string): string[] {
   return text.split(/\n{2,}/).map((part) => part.trim()).filter(Boolean);
@@ -40,12 +42,18 @@ export function reviewAiStyle(text: string, contentType?: string): AiStyleReview
   if (contentType && excluded.includes(contentType)) {
     return { status: "INFO", signalFamilies: [], issues: [], excludedTypes: [contentType], humanizationGoal: "specificity_readability_and_human_voice" };
   }
-  const parts = paragraphs(text);
-  const connectors = (text.match(connectorPattern) ?? []).length;
-  const dashes = (text.match(/[—–-]/g) ?? []).length;
-  const contrast = (text.match(/不是[^。！？]{0,30}而是/g) ?? []).length;
-  const tricolons = parts.filter((part) => (part.match(/[，、,]/g) ?? []).length >= 4 && /(、|，).+(、|，).+[。！？]/.test(part)).length;
-  const abstractCount = (text.match(abstractPattern) ?? []).length;
+  const prose = text
+    .replace(/https?:\/\/\S+/g, "")
+    .replace(/\[C-[A-Z0-9-]+\]/g, "")
+    .replace(/^#{1,6}\s+.*$/gm, "")
+    .replace(/^\s*[-*]\s+/gm, "");
+  const parts = paragraphs(prose);
+  const narrativeParts = parts.filter((part) => !part.includes("\n") && !/^[\p{L}\p{N} ]{1,16}[：:]/u.test(part));
+  const connectors = (prose.match(connectorPattern) ?? []).length;
+  const dashes = (prose.match(/[—–]/g) ?? []).length;
+  const contrast = (prose.match(/不是[^。！？]{0,30}而是/g) ?? []).length;
+  const tricolons = narrativeParts.filter((part) => part.length >= 60 && (part.match(/[，、,]/g) ?? []).length >= 4 && /(、|，).+(、|，).+[。！？]/.test(part)).length;
+  const abstractCount = (prose.match(abstractPattern) ?? []).length;
   const lengths = parts.map((part) => part.length);
   const mean = lengths.length ? lengths.reduce((a, b) => a + b, 0) / lengths.length : 0;
   const variance = lengths.length ? lengths.reduce((sum, value) => sum + (value - mean) ** 2, 0) / lengths.length : 0;
@@ -75,12 +83,13 @@ export function reviewLogic(text: string, enterpriseTerms: string[] = []): Logic
   const hasEnterprise = enterpriseTerms.some((term) => text.includes(term));
   const firstEnterpriseParagraph = parts.findIndex((part) => enterpriseTerms.some((term) => part.includes(term)));
   if (hasEnterprise && firstEnterpriseParagraph >= 0 && firstEnterpriseParagraph > 0) {
-    const previous = parts[firstEnterpriseParagraph - 1] ?? "";
-    if (previous.length < 40 || !/[因所以由于意味着对应场景]/.test(previous)) {
+    const previousContext = parts.slice(Math.max(0, firstEnterpriseParagraph - 2), firstEnterpriseParagraph).join("\n");
+    if (previousContext.length < 40 || !enterpriseBridgePattern.test(previousContext)) {
       issues.push(issue("FORCED_ENTERPRISE_INSERTION", "enterprise_fusion", "企业或产品信息出现前缺少问题承接。", "先说明外部事件对企业的具体影响，再引出对应能力或产品。", `paragraph-${firstEnterpriseParagraph + 1}`));
     }
   }
-  if (parts.length >= 3 && !/[因此所以意味着所以]/.test(parts.at(-1) ?? "")) {
+  const closingContext = parts.slice(-3).join("\n");
+  if (parts.length >= 3 && !boundaryPattern.test(closingContext)) {
     issues.push(issue("LOGIC_BOUNDARY_MISSING", "logic", "结尾没有明确适用边界或行动判断。", "补充适用条件、风险边界或读者下一步判断。", "结尾"));
   }
   return {

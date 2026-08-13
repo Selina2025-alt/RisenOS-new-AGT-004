@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "5.3",
+  "missionId": "MISSION-20260804-43A99C34F7",
+  "researchPackId": "RP-20260804-43A99C34F7-C50ECE20B5",
+  "objective": "把Peter Yang的三个AI生产力暗面观察，转化为企业管理者可执行的AI使用边界和组织判断。",
+  "audience": ["企业管理者", "AI负责人", "知识工作者"],
+  "coreMessage": "企业AI的价值不应只用生成速度衡量，还要看验证机制、注意力质量、责任边界和组织是否真正形成新的工作方式。",
+  "tone": ["专业", "克制", "真诚分享", "有具体判断"],
+  "deliverables": ["wechat_article", "short_video_script", "xiaohongshu_carousel", "x_thread", "linkedin_company_post"],
+  "channels": ["wechat", "short_video", "xiaohongshu", "x", "linkedin"],
+  "locales": ["zh-CN", "en-US"],
+  "mustIncludeClaimIds": ["C-PETER-001", "C-PETER-002", "C-PETER-003"],
+  "enterpriseFusion": {"type": "methodology", "company": "艾氪智能", "productReference": "企业AI与产业级Agentic OS定位", "forceProductName": false},
+  "constraints": ["区分Peter的个人观察与研究结论", "不把研究关联写成因果定论", "不把AI使用风险写成反AI立场", "不使用数字化、工作流或workflow作为企业定位"],
+  "callToAction": "邀请企业管理者分享自己在AI使用中遇到的验证、注意力和责任边界问题。",
+  "status": "READY_FOR_WRITING",
+  "reviewRoute": ["lilith", "xiaodiandian_if_geo_or_seo_gap", "agt-004_revision", "lilith_re_review"]
+}

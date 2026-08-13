@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "sourceId": "SRC-KEVIN-PLAYLIST",
+      "title": "AI & I: Wired's Kevin Kelly on Why AI Is a 50-year Overnight Success",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "sourceType": "podcast",
+      "sourceRole": "lead_only",
+      "publisher": "AI & I by Every",
+      "author": "Kevin Kelly",
+      "publishedAt": "2026-07-29",
+      "summary": "本地资讯任务记录了该播客对AI长期积累、历史周期和智能本质的讨论，但当前运行环境未取得可核验的完整节目文字稿。",
+      "authorityTier": "C",
+      "verificationStatus": "metadata_only",
+      "rightsStatus": "reference_only",
+      "qualityWarnings": ["未取得逐段文字稿，不能支撑逐字引述或事实性细节。"]
+    },
+    {
+      "sourceId": "SRC-KEVIN-WIRED-2008",
+      "title": "15th Anniversary: A New Analysis of the New Economy's New Rules",
+      "url": "https://www.wired.com/2008/05/st-15th-newrules/",
+      "sourceType": "article",
+      "sourceRole": "secondary",
+      "publisher": "WIRED",
+      "author": "Kevin Kelly",
+      "publishedAt": "2008-05",
+      "summary": "WIRED回顾Kevin Kelly关于技术、网络和新经济长期演化的观点，可作为背景资料，但不是本次播客的原始文字稿。",
+      "authorityTier": "B",
+      "verificationStatus": "verified",
+      "rightsStatus": "reference_only"
+    },
+    {
+      "sourceId": "SRC-KEVIN-WIRED-HISTORY",
+      "title": "An oral history of WIRED 01.01",
+      "url": "https://www.wired.com/2013/04/wired0101/",
+      "sourceType": "article",
+      "sourceRole": "secondary",
+      "publisher": "WIRED",
+      "publishedAt": "2013-04",
+      "summary": "WIRED口述史提供技术媒体和长期创新积累的历史背景，可用于补充长期视角。",
+      "authorityTier": "B",
+      "verificationStatus": "verified",
+      "rightsStatus": "reference_only"
+    }
+  ],
+  "claims": [
+    {"claimId": "C-KEVIN-001", "statement": "播客资料把AI描述为长期积累后呈现出一夜成功的技术。", "claimType": "opinion", "sourceIds": ["SRC-KEVIN-PLAYLIST"]},
+    {"claimId": "C-KEVIN-002", "statement": "Kevin Kelly长期关注技术、网络和创新的演化过程。", "claimType": "factual", "sourceIds": ["SRC-KEVIN-WIRED-2008", "SRC-KEVIN-WIRED-HISTORY"]}
+  ],
+  "evidenceGaps": [
+    "需要取得播客原始音频或可核验文字稿，确认50年、一夜成功、intelligence compound等具体表述和上下文。",
+    "需要至少一条可核验的一手节目资料，才能生成正式深度解读。"
+  ]
+}

@@ -12,6 +12,9 @@ describe("Balala channel contracts", () => {
   it("checks X using the host-independent 280-character fallback", () => {
     expect(validateXTweet("short").ok).toBe(true);
     expect(validateXTweet("x".repeat(281)).ok).toBe(false);
+    expect(validateXTweet("中".repeat(140)).ok).toBe(true);
+    expect(validateXTweet("中".repeat(141)).ok).toBe(false);
+    expect(validateXTweet(`read ${"https://example.com/" + "a".repeat(300)}`).count).toBe(28);
   });
 });
 

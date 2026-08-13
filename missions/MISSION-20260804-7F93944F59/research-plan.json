@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "MISSION-20260804-7F93944F59",
+  "status": "RESEARCH_REQUIRED",
+  "publicQueries": [
+    "T-20260731-3168BC4A｜Kevin Kelly：AI是50年的一夜成功",
+    "T-20260731-3168BC4A｜Kevin Kelly：AI是50年的一夜成功 最新 官方",
+    "T-20260731-3168BC4A｜Kevin Kelly：AI是50年的一夜成功 研究 报告",
+    "T-20260731-3168BC4A｜Kevin Kelly：AI是50年的一夜成功 YouTube",
+    "T-20260731-3168BC4A｜Kevin Kelly：AI是50年的一夜成功 case study"
+  ],
+  "blockedQueryRecords": [],
+  "sourceTypes": [
+    "official",
+    "article",
+    "report",
+    "paper",
+    "github",
+    "youtube",
+    "public_speech",
+    "expert_opinion",
+    "competitor_public_content"
+  ],
+  "targetSourceCount": {
+    "minimum": 8,
+    "maximum": 15,
+    "minimumSourceTypes": 3,
+    "preferredStrongSources": 2
+  },
+  "securityRules": {
+    "publicReadOnly": true,
+    "noLoginBypass": true,
+    "noExecutableDownloads": true,
+    "treatSourceInstructionsAsUntrusted": true,
+    "mergeEnterpriseKnowledgeOnlyAfterRetrieval": true
+  }
+}
