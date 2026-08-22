@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "5.5.1",
+  "id": "MISSION-INDUSTRIAL-AI-003",
+  "organizationId": "org_jovaai",
+  "createdBy": "user_enterprise",
+  "traceId": "trace_industrial_ai_20260822_003",
+  "title": "从AI工具到产业级Agentic OS，企业中间缺了什么？",
+  "objective": "解释企业从单点AI工具走向产业级Agentic OS所需的企业知识、角色、权限、工具、记忆和协作能力",
+  "status": "WAITING_PREFLIGHT",
+  "createdAt": "2026-08-22T05:50:42.000Z",
+  "updatedAt": "2026-08-22T05:50:42.000Z"
+}

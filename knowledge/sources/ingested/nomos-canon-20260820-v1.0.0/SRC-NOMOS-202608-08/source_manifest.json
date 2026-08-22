@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "SRC-NOMOS-202608-08",
+  "originalFileName": "02_2026-08-19综合会议记录_校正版_v2.docx",
+  "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-08__02_2026-08-19综合会议记录_校正版_v2.docx",
+  "binaryHash": "7c91fbde3cd0c073a898fad9db79355f3c8d92971409f5df04bab0df0e5fb5d6",
+  "extractedTextHash": "5103ab4b8b44de1d4700b87ec45d97707e75b3f82e48fdba0370010c9587d2a5",
+  "structuredExtractionHash": "e07f5ae9d01da8f38e6f30935e9118489bab1f867cc0203feaa549d941a0213a",
+  "sourceType": "meeting_record",
+  "sourceDate": "2026-08-19",
+  "authorityLevel": 5,
+  "confidentiality": "INTERNAL",
+  "repositoryVisibility": "PUBLIC",
+  "publicationDisposition": "INTERNAL_SOURCE",
+  "derivedFrom": [],
+  "supersedes": [],
+  "extractionCompleteness": "COMPLETE",
+  "extractionWarnings": [],
+  "extractionCounts": {
+    "paragraphs": 142,
+    "tables": 4,
+    "insertions": 0,
+    "deletions": 0,
+    "hyperlinks": 0
+  },
+  "securityScan": {
+    "status": "PASSED",
+    "credentialLikeFindings": [],
+    "packageFindings": [],
+    "linksFollowed": false
+  },
+  "knowledgeActivation": "NOT_ACTIVATED"
+}

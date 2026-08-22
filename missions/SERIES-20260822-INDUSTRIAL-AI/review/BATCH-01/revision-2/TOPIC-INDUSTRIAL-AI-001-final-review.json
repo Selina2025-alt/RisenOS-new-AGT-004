@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "LILITH-BATCH01-TOPIC001-R2-FINAL",
+  "reviewAgent": "lilith",
+  "topicId": "TOPIC-INDUSTRIAL-AI-001",
+  "sourceRevision": 2,
+  "sourceDraftHash": "31921114a83088d55602768f13b26d5e557aeb0285b576bd5f5a53a2d2948658",
+  "humanReviewCopyHash": "b72d52816ebfaef1f6f43ce105091081c1dfd69af72a3e21c86d58ade8391230",
+  "supersededInputHashes": {
+    "sourceDraftHash": "7fa8d6f70d53d794bc3e95251d00acf0515d0546f56ddee4ec5609b069230584",
+    "humanReviewCopyHash": "6541f4f360a9399e4ddccfbe15800668e5c08da36466238f3096d8b96a31d77f",
+    "reason": "proposalHash correction changed complete file hashes and all dependent artifacts were synchronized"
+  },
+  "knowledgeSnapshotHash": "8d59f8f0234dc3eedf6a2d24af3f73e77f35ad45c44cad236542504aabfad540",
+  "reviewStatus": "PASS",
+  "nextRoute": "READY_FOR_HUMAN_SOURCE_REVIEW",
+  "formalApprovalGranted": false,
+  "contentVersionCreated": false,
+  "variantGenerationAllowed": false,
+  "severityCount": {"P0": 0, "P1": 0, "P2": 1, "P3": 0},
+  "closedPriorIssues": ["LIL-001-P1-01", "LIL-001-P1-02", "LIL-001-P1-03"],
+  "moduleResults": {
+    "content_adequacy": "PASS",
+    "perspective_consistency": "PASS",
+    "logic": "PASS",
+    "ai_style": "PASS_WITH_P2",
+    "enterprise_fusion": "PASS",
+    "knowledge_snapshot": "PASS",
+    "nomos_canon": "PASS",
+    "product_architecture": "PASS",
+    "claim_status": "PASS",
+    "evidence": "PASS",
+    "customer_anonymization": "PASS_NOT_APPLICABLE",
+    "metric_evidence": "PASS",
+    "seo_geo": "PASS",
+    "compliance": "PASS",
+    "confidentiality": "PASS",
+    "skill_trace": "PASS",
+    "artifact_integrity": "PASS"
+  },
+  "equivalenceCheck": {
+    "method": "remove frontmatter, internal claim tags, internal status footer, and human review note; then exact compare",
+    "exactEquivalent": true,
+    "humanBodyInternalClaimIds": 0,
+    "humanBodyAgentNames": 0,
+    "humanBodyRuntimeStatusFields": 0
+  },
+  "artifactChecks": {
+    "draftBindingTraceHashesMatch": true,
+    "humanTraceHashesMatch": true,
+    "proposalBodyHashMatchesDeclaredScope": true,
+    "skillHashesMatch": true,
+    "inputArtifactHashesMatch": true,
+    "promptHashMatches": true,
+    "parentTraceHashesMatch": true,
+    "reviewInputHashesMatch": true
+  },
+  "remainingIssues": [
+    {
+      "issueId": "LIL-001-R2-P2-01",
+      "severity": "P2",
+      "module": "ai_style",
+      "problem": "ICB and value-boundary sections retain dense negative boundary language.",
+      "routeTo": "human_feedback_optional",
+      "blocksHumanReview": false,
+      "blocksVariantGeneration": false
+    }
+  ],
+  "geoSeoResult": {
+    "validationErrors": 0,
+    "requiresContentRevision": false,
+    "requiresEvidenceRequest": false,
+    "newClaims": 0,
+    "globalRuleActivated": false
+  },
+  "humanGateRecommendation": {
+    "gate": "SOURCE_DRAFT_APPROVED",
+    "artifact": "human-review-copy.md",
+    "artifactHash": "b72d52816ebfaef1f6f43ce105091081c1dfd69af72a3e21c86d58ade8391230",
+    "sourceDraftHash": "31921114a83088d55602768f13b26d5e557aeb0285b576bd5f5a53a2d2948658",
+    "decisionMustBeCreatedByHuman": true
+  },
+  "approved": false
+}

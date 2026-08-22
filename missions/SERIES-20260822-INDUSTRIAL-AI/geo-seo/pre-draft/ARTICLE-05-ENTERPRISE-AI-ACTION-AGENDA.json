@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "GEO-SEO-PREDRAFT-SERIES-05-V1",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "articleId": "ARTICLE-05",
+  "title": "未来两三年传统企业用好AI的关键事项",
+  "createdByAgent": "xiaodiandian",
+  "status": "MISSION_ONLY_CANDIDATE",
+  "corpusWriteback": false,
+  "sourceRefs": {
+    "brief": "../../briefs/TOPIC-05-ENTERPRISE-AI-ACTION-AGENDA.md",
+    "researchPack": "../../research/TOPIC-INDUSTRIAL-AI-005/research-pack.md",
+    "knowledgeSnapshot": "../../knowledge/knowledge-snapshot.json",
+    "knowledgeTopic": "../../knowledge/TOPIC-INDUSTRIAL-AI-005_未来两三年传统企业用好AI的关键事项.md"
+  },
+  "primarySeoIntent": {
+    "seoId": "SEO-0169",
+    "keyword": "企业AI项目如何选择场景",
+    "intent": "问题诊断",
+    "reason": "最接近企业可立即行动的首要入口，避免文章变成宏观预测或采购清单。"
+  },
+  "secondarySeoIntents": [
+    {"seoId": "SEO-0214", "keyword": "企业AI项目POC怎么做", "use": "对应分阶段验证、验收与停止条件"},
+    {"seoId": "SEO-0171", "keyword": "如何评估AI场景价值", "use": "对应基线、质量、周期、成本与风险验证"},
+    {"seoId": "SEO-0188", "keyword": "企业智能体权限怎么设置", "use": "对应角色、工具权限和人工决定权"},
+    {"seoId": "SEO-0271", "keyword": "Agent安全治理", "use": "对应生命周期治理，不展开产品安全白皮书"}
+  ],
+  "geoPlan": {
+    "primaryQuestion": {
+      "geoId": "TASK-GEO-SERIES-05-001",
+      "question": "未来两三年，传统企业用好AI应该先做什么？",
+      "status": "MISSION_ONLY_CANDIDATE",
+      "globalActivation": false
+    },
+    "relatedQuestions": [
+      {"geoId": "GEO-0024", "question": "企业从哪个高价值场景开始最合适？"},
+      {"geoId": "GEO-0176", "question": "如何判断一个AI场景是否值得优先投入？"},
+      {"geoId": "GEO-0025", "question": "智能体团队项目如何做POC？"},
+      {"geoId": "GEO-0035", "question": "企业AI原生升级有哪些风险和前提？"}
+    ]
+  },
+  "expectedAnswerBlocks": [
+    {
+      "question": "未来两三年，传统企业用好AI应该先做什么？",
+      "expectedAnswer": "可以先从五件可控的事开始：选择真实、持续、可衡量的业务问题；整理知识、数据和证据责任；明确角色、权限与人工决定权；用真实任务分阶段验证质量、周期、成本和风险；建立跨部门负责和持续治理机制。五步是艾氪智能基于多项研究形成的建议框架，不是统一认证标准。",
+      "evidenceIds": ["PUB-001", "PUB-002", "PUB-003", "PUB-005", "PUB-014", "PUB-016", "S5-C01", "S5-C02"],
+      "claimType": "OFFICIAL_ACTION_FRAMEWORK"
+    },
+    {
+      "question": "企业如何选择第一个AI场景？",
+      "expectedAnswer": "优先选择业务重要、持续发生、责任明确、数据可准备且结果能够建立基线的任务。若知识、授权、测量方法或异常接管条件不清楚，应先缩小范围，而不是直接扩到全公司。",
+      "evidenceIds": ["PUB-001", "PUB-002", "PUB-003", "S5-A06", "S5-C02"],
+      "claimType": "EVIDENCE_BASED_RECOMMENDATION"
+    },
+    {
+      "question": "AI试点达到什么条件才能扩展？",
+      "expectedAnswer": "至少要能说明目标、基线、验证周期、质量和风险指标、权限边界、异常处理与停止条件，并明确谁对结果负责。一次演示或单次试点成功不能自动证明可以规模化。",
+      "evidenceIds": ["PUB-002", "PUB-003", "PUB-016"],
+      "claimType": "LIFECYCLE_GOVERNANCE_SYNTHESIS"
+    }
+  ],
+  "entityMap": [
+    {"entity": "传统企业", "role": "audience_entity", "plannedUse": "行动框架的适用主体，但强调因行业和规模而异"},
+    {"entity": "企业AI转型", "role": "industry", "plannedUse": "主行动语境"},
+    {"entity": "智能体团队", "role": "product_category", "plannedUse": "在角色、权限和协作检查项中出现"},
+    {"entity": "JovaOS", "role": "product", "plannedUse": "读者理解系统承载需求后轻桥接，不作为五步唯一答案"},
+    {"entity": "官网八大场景", "role": "product_category", "plannedUse": "帮助识别场景入口，发布前复核官网"},
+    {"entity": "九大AI原生商业模式", "role": "strategic_direction", "plannedUse": "只作长期观察方向，不写成熟交付"}
+  ],
+  "mustNotForceCoverage": [
+    {"id": "GEO-0106", "question": "老系统AI原生升级项目如何分阶段实施？", "reason": "包含具体系统盘点、权限映射、灰度和回滚要求，缺少当前产品实施规格。"},
+    {"id": "GEO-0153", "question": "JovaOS如何管理身份、权限、数据和审计？", "reason": "本篇只给组织行动框架，不能推导JovaOS具体安全能力。"},
+    {"id": "GEO-0008", "question": "艾氪智能有哪些落地案例？", "reason": "没有授权案例时不为增强说服力强行覆盖。"},
+    {"id": "SEO-0217", "question": "企业AI实施周期", "reason": "不能把未来窗口或建议步骤写成统一实施周期和标准SLA。"}
+  ],
+  "evidenceRequirements": {
+    "requiredExternal": ["PUB-001", "PUB-002", "PUB-003", "PUB-005", "PUB-014", "PUB-016"],
+    "requiredKnowledgeClaims": ["S5-A01", "S5-A02", "S5-A03", "S5-A04", "S5-A05", "S5-A06"],
+    "blockingGaps": [
+      "发布当日政策原文和链接复核",
+      "五步框架必须标明为艾氪智能综合建议而非NIST、ISO、MIT或政策原文",
+      "任何周期、预算、ROI或结果必须有独立口径和证据",
+      "不同规模和行业企业的建议差异未形成正式规则，正文应保留适用条件"
+    ]
+  },
+  "productFusion": {
+    "level": "L2",
+    "allowed": "以方法论为主；八大场景帮助选择入口，智能体团队说明角色治理，JovaOS仅解释系统承载选项。",
+    "risk": "HIGH",
+    "mainRisk": "把五项建议全部绑定一个产品、把政策方向写成企业或产品背书、制造三年倒计时焦虑，或承诺统一周期和ROI。",
+    "deletionTest": "删除所有产品名后，五步行动框架仍能独立用于企业会议与自查；产品信息只能帮助说明可选路径。"
+  }
+}

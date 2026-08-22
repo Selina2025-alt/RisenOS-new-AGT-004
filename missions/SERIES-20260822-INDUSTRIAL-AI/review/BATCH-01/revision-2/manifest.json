@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifactType": "LILITH_FINAL_REVIEW_SET",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "batchId": "BATCH-01",
+  "sourceRevision": 2,
+  "reviewAgent": "lilith",
+  "mode": "READ_ONLY",
+  "status": "COMPLETED",
+  "results": [
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-001",
+      "reviewStatus": "PASS",
+      "nextRoute": "READY_FOR_HUMAN_SOURCE_REVIEW",
+      "p0": 0,
+      "p1": 0,
+      "p2": 1,
+      "sourceDraftHash": "31921114a83088d55602768f13b26d5e557aeb0285b576bd5f5a53a2d2948658",
+      "humanReviewCopyHash": "b72d52816ebfaef1f6f43ce105091081c1dfd69af72a3e21c86d58ade8391230",
+      "report": "TOPIC-INDUSTRIAL-AI-001-final-review.json"
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-002",
+      "reviewStatus": "PASS",
+      "nextRoute": "READY_FOR_HUMAN_SOURCE_REVIEW",
+      "p0": 0,
+      "p1": 0,
+      "p2": 1,
+      "sourceDraftHash": "966def7f89ea9a5fa5263949fa249540b2b28a5468902318481cb590caaa28a2",
+      "humanReviewCopyHash": "be5c60f3b5445aab5676800fd725da537ff603cab3eb0fb3bc014aa259ac0c61",
+      "report": "TOPIC-INDUSTRIAL-AI-002-final-review.json"
+    }
+  ],
+  "contentModified": false,
+  "contentVersionCreated": false,
+  "approved": false
+}

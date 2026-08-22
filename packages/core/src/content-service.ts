@@ -69,6 +69,7 @@ import type {
   HostModelPort,
   PolicyPort,
   ReviewPort,
+  GovernanceGatePort,
 } from "./ports.js";
 import { assertContentTransition, canTransition } from "./state-machine.js";
 import { clone, newId, nowIso, sha256 } from "./utils.js";
@@ -83,6 +84,7 @@ export interface ContentServiceDependencies {
   handoff: HandoffPort;
   hostImage?: HostImagePort;
   attachments?: AttachmentPort;
+  governanceGate: GovernanceGatePort;
 }
 
 const stepNames: AgentRunStep["name"][] = [
@@ -604,6 +606,8 @@ export class ContentService {
         `Run ${observedRun.id} is ${observedRun.status}`,
       );
     }
+    const mission = await this.getMission(observedRun.missionId, identity);
+    await this.dependencies.governanceGate.assertMissionReady(mission);
     const run = await this.dependencies.repository.claimRun(
       runId,
       identity.organizationId,
@@ -614,7 +618,6 @@ export class ContentService {
         `Run ${runId} is already executing`,
       );
     }
-    const mission = await this.getMission(run.missionId, identity);
 
     const recoveringStalledRun = observedRun.status === "RUNNING";
     run.updatedAt = nowIso();
@@ -709,17 +712,26 @@ export class ContentService {
             traceId: mission.traceId,
             requestId: `${run.id}:writing`,
             idempotencyKey: `${run.id}:content_bundle:v1`,
-            promptVersion: "content-bundle-v1",
+            promptVersion: "content-bundle-v5.5",
             maxOutputTokens: 16_000,
             timeoutMs: 120_000,
           });
-          bundle = GeneratedContentBundleSchema.parse(generated.output);
+          const proposedBundle = GeneratedContentBundleSchema.parse(generated.output);
+          // V5.5 defers all channel/localization work until an enterprise
+          // human has approved the immutable source version.
+          bundle = {
+            ...proposedBundle,
+            variants: [],
+            localizations: [],
+          };
           generationMetadata = generated.metadata;
           this.assertBundleClaims(bundle, mission);
           return {
             primaryChannel: bundle.primary.channel,
-            variantCount: bundle.variants.length,
-            localizationCount: bundle.localizations.length,
+            variantCount: 0,
+            localizationCount: 0,
+            deferredLegacyVariantCount:
+              proposedBundle.variants.length + proposedBundle.localizations.length,
           };
         });
       }
@@ -750,11 +762,18 @@ export class ContentService {
       mission.updatedAt = nowIso();
       await this.dependencies.repository.saveMission(mission);
 
-      await this.runStep(run, "post_write", async () => ({
-        assetId: created.asset.id,
-        versionId: created.version.id,
-        contentHash: created.version.contentHash,
-      }));
+      await this.runStep(run, "post_write", async () => {
+        await this.dependencies.governanceGate.assertGeneratedContent(
+          mission,
+          created.version.body,
+        );
+        return {
+          governanceGate: "PASSED",
+          assetId: created.asset.id,
+          versionId: created.version.id,
+          contentHash: created.version.contentHash,
+        };
+      });
 
       await this.runStep(run, "quality", async () => {
         const validation = await this.validateAssetInternal(
@@ -912,6 +931,22 @@ export class ContentService {
         "Variants can only be generated from the current content version",
       );
     }
+    if (asset.status !== "APPROVED" || !asset.activeReviewId) {
+      throw new ConflictError(
+        "SOURCE_DRAFT_APPROVAL_REQUIRED",
+        "Variants require an enterprise-human-approved current source version",
+      );
+    }
+    const sourceReview = await this.dependencies.repository.getReview(
+      asset.activeReviewId,
+      identity.organizationId,
+    );
+    if (!sourceReview || sourceReview.status !== "APPROVED" || sourceReview.reviewerType !== "HUMAN") {
+      throw new ConflictError(
+        "SOURCE_DRAFT_APPROVAL_REQUIRED",
+        "Balala cannot generate variants from an agent-only or pending review",
+      );
+    }
     const generated = await this.generateProtected({
       schemaName: "channel_variant",
       systemPrompt:
@@ -952,6 +987,22 @@ export class ContentService {
       throw new ConflictError(
         "STALE_VERSION",
         "Localizations can only be generated from the current content version",
+      );
+    }
+    if (asset.status !== "APPROVED" || !asset.activeReviewId) {
+      throw new ConflictError(
+        "SOURCE_DRAFT_APPROVAL_REQUIRED",
+        "Localizations require an enterprise-human-approved current source version",
+      );
+    }
+    const sourceReview = await this.dependencies.repository.getReview(
+      asset.activeReviewId,
+      identity.organizationId,
+    );
+    if (!sourceReview || sourceReview.status !== "APPROVED" || sourceReview.reviewerType !== "HUMAN") {
+      throw new ConflictError(
+        "SOURCE_DRAFT_APPROVAL_REQUIRED",
+        "Localizations cannot derive from an agent-only or pending review",
       );
     }
     const generated = await this.generateProtected({
@@ -2253,7 +2304,7 @@ export class ContentService {
       "Return exactly one JSON object matching the provided content_bundle schema.",
       "Never invent claims, evidence, endorsements, sources, statistics or quotes.",
       "Use only claim IDs and evidence supplied in the mission.",
-      "Generate content-format variants, not platform API payloads.",
+      "Generate the source draft only. Set variants and localizations to empty arrays; they are generated after enterprise human approval.",
       "Never include account, credential, publishing, scheduling, monitoring or performance fields.",
       "Preserve evidence meaning in every variant and localization.",
     ].join("\n");

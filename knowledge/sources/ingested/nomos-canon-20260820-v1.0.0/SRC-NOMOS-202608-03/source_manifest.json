@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "SRC-NOMOS-202608-03",
+  "originalFileName": "00_2026-08-20多智能体协同架构Nomos的研发理念与功能介绍-2026年08月20日-来自【得到大脑】.docx",
+  "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-03__00_2026-08-20多智能体协同架构Nomos的研发理念与功能介绍-2026年08月20日-来自【得到大脑】.docx",
+  "binaryHash": "75bf2143970c7ce95bb820996a8f305f8bc0e46dd47593192454f5f0dad96bb8",
+  "extractedTextHash": "af3695166439c3c92bd47cb9568a7e5b20c01003693d7c48e8e096979daae520",
+  "structuredExtractionHash": "4afcf60e5d310e475d1847c2ab8012eff68e7f188798bfe66b74689c4a2886fa",
+  "sourceType": "ai_summary",
+  "sourceDate": "2026-08-20",
+  "authorityLevel": 4,
+  "confidentiality": "INTERNAL",
+  "repositoryVisibility": "PUBLIC",
+  "publicationDisposition": "INTERNAL_SOURCE",
+  "derivedFrom": [],
+  "supersedes": [],
+  "extractionCompleteness": "COMPLETE",
+  "extractionWarnings": [],
+  "extractionCounts": {
+    "paragraphs": 208,
+    "tables": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "hyperlinks": 16
+  },
+  "securityScan": {
+    "status": "PASSED",
+    "credentialLikeFindings": [],
+    "packageFindings": [
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink1",
+        "target": "https://getnotes.seek:57",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink2",
+        "target": "https://getnotes.seek:205",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink3",
+        "target": "https://getnotes.seek:408",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink4",
+        "target": "https://getnotes.seek:684",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink5",
+        "target": "https://getnotes.seek:895",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink6",
+        "target": "https://getnotes.seek:1031",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink7",
+        "target": "https://getnotes.seek:1096",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink8",
+        "target": "https://getnotes.seek:1485",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink9",
+        "target": "https://getnotes.seek:1884",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink10",
+        "target": "https://getnotes.seek:2047",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink11",
+        "target": "https://getnotes.seek:2239",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink12",
+        "target": "https://getnotes.seek:2347",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink13",
+        "target": "https://getnotes.seek:2466",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink14",
+        "target": "https://getnotes.seek:2563",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink15",
+        "target": "https://getnotes.seek:2714",
+        "followed": false
+      },
+      {
+        "type": "external_relationship",
+        "relationshipId": "rLink16",
+        "target": "https://getnotes.seek:3099",
+        "followed": false
+      }
+    ],
+    "linksFollowed": false
+  },
+  "knowledgeActivation": "NOT_ACTIVATED"
+}

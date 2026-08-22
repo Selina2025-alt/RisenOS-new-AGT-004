@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "SRC-NOMOS-202608-04",
+  "originalFileName": "03_2026-08-20_研发提供的资料.docx",
+  "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-04__03_2026-08-20_研发提供的资料.docx",
+  "binaryHash": "b60d4bdf7d8e25b25cb17c059e944e15f0b701d08e7e8442911248d4ba881bb1",
+  "extractedTextHash": "587627d16122ea699fd40d1674a2d7e2a770cd553999cf979a88575bb10199d5",
+  "structuredExtractionHash": "f49d7c26619b19b1e09853f462bef6ffaa3d68d968ab7987bc7e3feca57b8b33",
+  "sourceType": "rd_document",
+  "sourceDate": "2026-08-20",
+  "authorityLevel": 6,
+  "confidentiality": "INTERNAL",
+  "repositoryVisibility": "PUBLIC",
+  "publicationDisposition": "INTERNAL_SOURCE",
+  "derivedFrom": [],
+  "supersedes": [],
+  "extractionCompleteness": "COMPLETE",
+  "extractionWarnings": [],
+  "extractionCounts": {
+    "paragraphs": 11,
+    "tables": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "hyperlinks": 0
+  },
+  "securityScan": {
+    "status": "PASSED",
+    "credentialLikeFindings": [],
+    "packageFindings": [],
+    "linksFollowed": false
+  },
+  "knowledgeActivation": "NOT_ACTIVATED"
+}

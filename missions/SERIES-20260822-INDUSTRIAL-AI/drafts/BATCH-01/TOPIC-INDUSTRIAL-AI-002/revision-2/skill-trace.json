@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "2.0",
+  "skillTraceId": "skilltrace_industrial_ai_002_batch01_revision2",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "createdByAgent": "content-orchestrator",
+  "agentVersion": "registry.v5.5/content-orchestrator",
+  "agentManifestHash": "e2d56aff1309b7f3dbaf05b3483750c3d676cc3e80c6bfb806cb3affc656859d",
+  "promptVersion": "sha256:f0824b37e96b3bdc85f1ef20360ce779b475f1affe64ae86c48db88d83a2e866",
+  "promptArtifact": "prompt-snapshot.md",
+  "runtimeMode": "CODEX_HOST_CONVERSATION_SHADOW",
+  "parentTraces": [
+    {
+      "artifact": "../revision-1/skill-trace.json",
+      "sha256": "548381b64283f2786769e19151514617d3e7cfe08a7c00c186ccc2ed3adf49cf"
+    },
+    {
+      "artifact": "../revision-1/skill-trace-increment.json",
+      "sha256": "c1aefe9b9f75b58332f308136e524d99730ad60bdd638425ce6da7913a701fd9"
+    }
+  ],
+  "reviewInputs": [
+    {
+      "artifact": "../../../../review/BATCH-01/TOPIC-INDUSTRIAL-AI-002-review-report.json",
+      "sha256": "25e9cb1718c0cdca10d75bbdc6787cd480e76a114eac37b11702f6180f1e38c0"
+    },
+    {
+      "artifact": "../revision-1/post-draft-recheck.json",
+      "sha256": "a1230d0996a6a9eb496333e2ce0fbd72f8704f5028c774b76bb890992c803977"
+    }
+  ],
+  "skills": [
+    {
+      "skillId": "enterprise-copy-orchestrator",
+      "versionOrHash": "sha256:662aa2f7d0447af36633404bbaf420df22adf727106f370a5911c8f8bf6b18a0",
+      "reviewStatus": "USED"
+    },
+    {
+      "skillId": "enterprise-soft-insertion",
+      "versionOrHash": "sha256:2e2d621e35c9ba70f287289f7ec372bdfafdab55cce75dd268efd4e8c69e9ef0",
+      "reviewStatus": "USED"
+    },
+    {
+      "skillId": "huashu-proofreading",
+      "versionOrHash": "sha256:9664cb383f8f749ce70d3749f198ffa39f81ad5f0226524cb072d6fc8fe13547",
+      "reviewStatus": "PARTIAL_REFERENCE_ONLY"
+    }
+  ],
+  "inputArtifactHashes": {
+    "research/TOPIC-INDUSTRIAL-AI-002/research-pack.md": "ac24fa10b39cdef99eebe2fcbba63eccc0c0e00fc3a06db2d7f0f860bf9ad4c0",
+    "knowledge/TOPIC-INDUSTRIAL-AI-002_AI演示好但落地难.md": "5bf4368eebe6acbf1945ac93aa623ad7fcbb668608aa7b7066f4884d7f871c2c",
+    "briefs/TOPIC-01-AI-DEMO-TO-REAL-BUSINESS.md": "eb54eaf11d1b3f2917e5dee56870e3e10cbd7aad0b8117984994a6c41f51781b",
+    "briefs/NARRATIVE-DEDUPE-MATRIX.md": "5d61a6dc3d7041c589985dfd0637530af761be3bc47793474f081d00e7d97323",
+    "perspective-input.json": "65cd43ebce09dda97b8d69efb7dbe624546179920851b852a4d5396bcb4f5b6b",
+    "knowledge/compliance/艾氪智能禁用表达与内容合规规范_V1.0.md": "c5fe8ee076eb59492885d0d6093f1ce81ffe3c5ed6bed1765d5e382b914a6765",
+    "knowledge/security/内容分级与保密规则.md": "a063a27edcbbd80fadce10b21c93ed5c9e030bae0cd42a1d3ad2ad7455d77570"
+  },
+  "outputArtifact": "draft-proposal.md",
+  "outputArtifactHash": "966def7f89ea9a5fa5263949fa249540b2b28a5468902318481cb590caaa28a2",
+  "humanReviewArtifact": "human-review-copy.md",
+  "humanReviewArtifactHash": "be5c60f3b5445aab5676800fd725da537ff603cab3eb0fb3bc014aa259ac0c61",
+  "formalContentVersionCreated": false,
+  "selfApproved": false,
+  "status": "READY_FOR_REVIEW"
+}

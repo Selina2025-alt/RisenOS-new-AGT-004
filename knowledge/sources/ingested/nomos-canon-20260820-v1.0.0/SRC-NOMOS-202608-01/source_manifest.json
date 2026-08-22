@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "SRC-NOMOS-202608-01",
+  "originalFileName": "01_2026-08-20_Nomos研发理念与功能介绍_逐字记录_原话整理校正版_v2.docx",
+  "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-01__01_2026-08-20_Nomos研发理念与功能介绍_逐字记录_原话整理校正版_v2.docx",
+  "binaryHash": "41665f0c18782c7a961ba1cc729b3aeebe89d392447d6bdedec84cc9d3cefd30",
+  "extractedTextHash": "0a9421ca366ff609b5abaa0b8163129c13f8feecbf649a3240bfaa551e785eac",
+  "structuredExtractionHash": "3777eddc6dfb3d969882a3a2a4d8928770a39144f7135c37eddd6615e78813bd",
+  "sourceType": "corrected_transcript",
+  "sourceDate": "2026-08-20",
+  "authorityLevel": 2,
+  "confidentiality": "INTERNAL",
+  "repositoryVisibility": "PUBLIC",
+  "publicationDisposition": "INTERNAL_SOURCE",
+  "derivedFrom": [],
+  "supersedes": [],
+  "extractionCompleteness": "COMPLETE",
+  "extractionWarnings": [],
+  "extractionCounts": {
+    "paragraphs": 261,
+    "tables": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "hyperlinks": 0
+  },
+  "securityScan": {
+    "status": "PASSED",
+    "credentialLikeFindings": [],
+    "packageFindings": [],
+    "linksFollowed": false
+  },
+  "knowledgeActivation": "NOT_ACTIVATED"
+}

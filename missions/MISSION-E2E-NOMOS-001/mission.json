@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "5.5.1",
+  "id": "MISSION-E2E-NOMOS-001",
+  "organizationId": "org_jovaai",
+  "createdBy": "user_enterprise",
+  "traceId": "trace_e2e_nomos_20260821_001",
+  "title": "为什么企业多智能体协同需要制度智能体",
+  "objective": "解释Nomos的研发起点、作用与边界，并完成五渠道内容生产闭环测试",
+  "requestedChannels": [
+    "wechat",
+    "short_video",
+    "xiaohongshu",
+    "x",
+    "linkedin"
+  ],
+  "modelPolicy": "use-current-host-model",
+  "persistence": "local-files",
+  "status": "WAITING_PREFLIGHT",
+  "createdAt": "2026-08-21T09:35:00.000+08:00",
+  "updatedAt": "2026-08-21T09:35:00.000+08:00"
+}

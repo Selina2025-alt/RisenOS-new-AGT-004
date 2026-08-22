@@ -1,0 +1,1361 @@
+{
+  "comments": [],
+  "counts": {
+    "deletions": 0,
+    "hyperlinks": 0,
+    "insertions": 0,
+    "paragraphs": 269,
+    "tables": 0
+  },
+  "document": [
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "0820多智能体协同架构Nomos的研发理念与功能介绍"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:00:57"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就是当时其实我们。最开始定义的时候，它有个词就是哦我们是对比，就是人类社会和就是这种社会的这种运营体系。所以nomos其实它承担的主要的点呢，就是就如果是在人类社会里面有法律，在社会上有法律，在企业里面有制度，然后呢在。整个的社会里面也有市场规则，通过这些呃基础呢来去推动这些企业呃和这种人在这个环境里面去呃工作也好，竞争也好，去协同也好。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:01:36"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "那其实我们想要呃把原来人类社会里面这种运转的体系，一些社会环境，把它在智能体世界里面重做一遍。那其实这个就是当时nomos，其实对他的一个这个，但是最开始呃可能没想这么多，最开始想的点就是我们就是为了解决多智能体协同的这个问题，所以协同这个我们一直在做，但是我们原来用的。呃逻辑呢是让他们发挥他们更多的主观自主性，他们自己去协同。但是后来发现在呃我们再去服务一些中大型客客户的时候，他们其实对于这种呃这种体这种协同的要求啊准确率啊，包括这种复杂的场景复杂度，其实要求是非常高的。所以我们就所以我们就在开始去研究那呃原来呃。在没有整体的时候，他们人是怎么去呃嗯内部协同完成这些事情的。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:02:32"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "其实研究来研究去发现，其实呃每个企业都一样，就是就像一个人入职一样，每个公司都会有这个规章制度，每个每公司有整体的一些制度，然后呢每个部门有每个部门的制度，每个人其实进去都其实都在学习制度，这制度里面就规定了啊整个公司的这个工作流程是怎么样，有多少角色，每个角色之间互相怎么配合，怎么去协作。嗯。那我们就在想。嗯，就是有没有可能，嗯，把呃企业里。那我们在服务每个企业的时候，就把他的现现有制度就拉出来，可能是Word，可能PPT，可能Excel什么都都可以。拉出来之后呢，让智能体去学习，学习完之后呢，按照让智能体整个协同就按照制度去做。就是这个是最开始的一个构想。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:03:15"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "那有了这个构想之后呢，其实就是在我们就开始去做一些呃研究嘛，那去考虑它怎么实现。那在。做实践的时候，其实就回到刚才我们再去研究一个企业，包括社会他们的一个到底是依靠什么在运转，其实就发现环境很重要。就是像你我们进入了一个企业，这个企业本身它要提供这种制度，呃提供这种呃流程等等相关的这些呃工具和能力，能让我们去用。就是如果一个企业呃。只有制度文档，没有一相关的一些这种配套的基础设施。其实那就很难过去，就可能有点抽象，那就有点像，比如我们来这家公司，我们要开个会。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:04:06"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就是那如果开会的时候，我们如果有个会议室，它的效率是不是更能快速的把别人聚集起来，进行一个讨论。如果这个会议室里面，比如就像有这种哦，my have这种嗯白板，大家可以在上面去写写画画，能更容易让大家达成一个共识。那。人需要有这样的一些环境和呃工具来让他更容易达成他们这种目的。那其实对于智能体也一样，那其实Nomos核心就是在提供大量这种环境。嗯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:04:38"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就是举个例子，就是我啊我给一个智能体团队下发一个任务，然后呢那他这个但他这套环就是呃这个智能体，他们这些这群智能体他们就能感知到哦，我现在是要处理某一个任务的。然后呢我我能够知道我们公司有多少制度，我现在应该选择哪一个制度去做这个事情。然后呢我基于这个制度，我应该协同我公司里面哪些人来帮我一起做，然后每个人职责分工是怎么样的，他们前后的工作顺序是怎么样的，就是有了这一层之后，智能每个智能体都有一个这样的共识，他们可以去做这个事情。然后从有这种共识之共识之后，大家就可以基于我们有一个共识的一个就智能体之间那种共识协议吧，然后他们之间就可以开始。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:05:24"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "呃一个是我每个人每个人工作其实都是透明的，就好像我们都在一个方式工作，然后呢大家的意识共共享一样，我能够知道每个人其他人的工作进度现在做到哪了，然后呢呃他是否遇到了问题，然后就我可以使每个证据都互相观察到，当如果有一个人真的遇到问题，或者他自己感觉哎这个事情我自己搞不定了，然后可能需要拉上大家一起讨论，拉上其他几个东西去讨论一下，他就会去呃发起一个这种。协商沟通的一个机制，然后呢，去选定他们之间去争执，让他们去之间去互相去讨论。协商，然后最后就像我们人人突然遇到开会遇到问题，大家都发表意见，发表完意见之后呢，大家就互相讨论，最后达成共识，OK，那我们再继续往下下去。所以就这个是就大概的，其实那某是在做的事情就是呃刚才说的这些点，就是他其实就是呃让就是给他搭建了，首先是模拟原来。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:06:25"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "没有智能体的时候，人类社会我们遇到一些问题，我们工作的时候，我们的沟通机制和协同机制是怎么样的？然后呢，nomos其实后来就发现，呃，其实除了每个人要聪明之外，如果我们能够在一套呃很好的环境下，然后呢，就能够方便我们协同的环境下，我们就能够很好把它做做好。那其实这套环境就是智能体。所以后边我们的它的定义就是啊，那么其他就是多智能体的一个社会加制度加市场规则的一个基座。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:06:56"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "呃，首先法律的话，其实呃。其实呃呃就是比如说每个智能体它必须要呃这种善良，要那个呃要比如说对这个公司要有这个呃这种归属感意识。嗯。对，就是这个人类社会啊什么的，就是我们给他内内置的一些呃就是一些他该有遵守的一些基础规则吧。嗯嗯。啊那这个就所有的在我们平台智能体其实都要遵守的，只要你进入到这个之外的这个。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:07:29"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "到这种你协同这个社会，那第二个就是制度，但这个制度呢其实它是跟着环境走的，就是你可以比如说针对某个项目有一个制度，也可以针对公司有这个整体的制度，那这个制度里面其实就规定了，比如说我报价的时候我做什么流程，我怎么做，我询价的时候我怎么做，我的这个呃生产的时候我应该协同解决怎么做，那这个就每个企业自己其实自己定义自己的，就是。通过norms来去定义，那这个是呃制度，还有一个市场规则。那市场规则这里呢，它可能会更加抽象一下，它它其实模拟的是人类社会的一种，就是这种市场经济机制。嗯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:08:12"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就是嗯每个智能体它都会有这种自我的这种嗯归属感，目标和一些呃我们给它释放做一些比如像压力啊这种这种点，就是当你都大家都在一个社会或者一个公司里面工作，然后当我这个智能体跟另外一个智能体协同的时候，我会记录我每次跟它协同的过程，我同时我会给他评价。嗯，就是然后呢，我给他评价之后呢，其他智能体跟他协同的时候，其他智能体能看到历史别人给他的评价，通过这些来判断他历史跟别人协同的时候，他的工作能力怎么样，他做的这个效率怎么样，就是通过这种方式呢，来慢慢的就是每个人都会有一套自己的一个社会的一个啊这种社会级的一个叫哦这种。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:09:00"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "信用机制吧，就像我们人的征信一样，就是我呃就是就是他会有这个这种信用机制，那有了这个有了这套信用机制之后呢，就是他自己能看到自己的信用机制，就是这个过程中他自己会产生一些，比如说可能一些这种压迫感呀，或者这种这种就是呃信用机制低的话，他要自己想办法去看怎么去呃解决，比如说服务好他的协同团队，然后呢或者去主动找别人去呃沟通啊什么这些都有可能是他的触发机制。那其实就我们里面内置了这样的一套模拟的机制，它就是模拟人类在这种。哦，社会的这种竞争下面，你必须要自己去想办法，自己去提升自己，或者提高你跟别人协同质量，来去呃让你本身的这种呃呃信用机制更高，因为他目标就是要把自己变得更好，那我们给他内定的信用机制其实是里面。很重要的一个点。嗯。所以这一点模拟也是一个公司，为什么公大家公司之间要互相去竞争，去沟通内卷，反正就是包括一个公司内部，大家之间互相的去呃一起去呃为了一个项目或者什么的，就是你去做这些事情，其实都是模拟的这个逻辑。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:10:18"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "那其实这个刚才讲的这些呢，就是呃其实它它没没有涉及到任何关于智能体本身的能力。嗯。它都是呃一些这种站在一些宏观上的一种控制它调控它或者。去编造它的一些机制，那这些机制其实就是呃nomos所做的事情，就我们把它我们呃把它分成两层，就是每个智能体首先它自己都有自己的主观意识，这是智能体这层的，就是一个人他可以进入到各种的环境，然后呢那nomos它其实核心的点，它不去控制你每个人自己的能力。就是，但是呢，他就是从站在这种宏观。按照这种逻辑上去呃不经意间的这种影响你。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:11:05"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯。就是每就是因为有这套环境，每次能给他进入到不同环境，进入到不同公司的时候，他就能够感知到周边的这种公司的制度流程，这种体系的变化来去动态的去。调整他自己的做事的一些方法啊。嗯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:11:23"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对。哦，所以我几个问题，就是刚刚提到，比如说那个会议，这个是人类的共识，会拉一个会议，所以，norms它的机制里面也也会给大家植入这个会。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:11:36"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对它。它它里面也会有一个点，其实呃我们把它拆解一下，就是我们做一个事情，遇到一个问题，人其实就是呃，比如说原来我们要开一个会，我们要讨论个议题，其实一般都有，就它都有个工作流程，第一步先讲背景，讲完背景之后大家讨论，讨论完之后最后达成达成共识，结结束，就是它。是这样一个，其实是一个线性的一个流程。嗯，但是在这个线性流程发生过程中呢，呃，比如说我们第一步他讲完背景之后，那有的人突然说，我有疑问，我背景不理解，那这其实就是发生的突发情况。嗯，那这个情况下肯定他是有一个某一个人提出了不同的意见。嗯，就是他在看听完前面人讲之后，他提出不同意见，那他就要提出自己说，你能不能再讲一下，那这个前面这种角色讲一下。好，那讲明白好，进入到讨论环节，进入到讨论环节之后呢，那有有些这种有些人呢可能就发出，哎，我可能提出一个意见，然后呢大家可以针对我的意见讨论一下，或者提出每个人都提出自己的意见去讨论，那总会有一个人去呃发起，其实是。是由某一个人发起了引发了这个讨论。嗯，就是他能通过抛砖的方式或者提出自己意见的方式，不自然就引发了这个讨论。那我们就给智能体植入了这个能力，就是智能体在你的这个工作过程中包。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:13:00"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "你在协同过程中，当你发现嗯这个点你不理解，或者你觉得需要拉更多人进来一起讨论的时候，你就可以去呃给你一个我们反正实现上叫一个工具，就给你一个机制，你可以呃要让这些智能体之间开始展开一些讨论，然后呢讨论里面你们可以去有这种哦。啊就像那种嗯抖音连麦一样，就那种呃连续型，对，有这种第一个主持人模式，连续让每个人发言，发言完之后呢，由主持人来进行汇总，然后这种模式，还有一种就是互就是这种依次呃就是第一个人讲完之后，然后呢所有人对他评价，然后呢再每个人反正每个人都讲，最后再把大家的都呃结合起来，然后对，还有一些就是这种呃他他就是那种嗯没有固定的流程了，就第一个人讲完之后，其他的智能体。自己决定要不要去接这个茬，要不要去讲这个话。就是就是我们内置了大概呃就是4~5种这种的一个沟通机制。那这智能体在遇到这些场景下的时候，他就可以去触发这种机制来去展开沟通交流。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:14:15"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯，就是那刚刚提到的就是可能会有一个智能体主导，那谁知道谁是主导呢？是normos会告诉他吗？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:14:23"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "呃，normos不会告诉他，就是呃。会有每个智能体靠它自己的自主的意识去做这些事情。比如说正常我们这个呃这个安排的制度流程安排好，我们都要按公司制度流程去走，但某中间某个人他提出意见了，那其实他就作为了这个主理人或者主持人来去做做这个事情。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:14:47"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "哦，所以诺姆斯它是存在于所有智能体的上面的。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:14:54"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:14:54"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就是他。制度只有我们当这个定义就是制度管理层或者制度的治理层。它属于架构的一部分吗？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:15:01"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，它属于架构的一部分。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:15:03"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "属于架构的一部分。对。哦，那我们之前不是有那个五级架构吗？它和它们又是什么区别呢？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:15:10"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "呃，那我就是你可以理解我原来我们的那个五级架构，它是属于我们整个周啊产品体系的五级架构。嗯。那这个norms呢，它是属于我们呃底层技术呃技术上。就我们那个周二的最周二AI那个最下面那层里面的那个架构了。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:15:31"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "哦，所以它相当于是那5层。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:15:34"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "然后再。某某一层里面的，我们把某一层单独抽开，我们来讲这层的架构的时候，NOMOS在那在那里面。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:15:41"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "啊，这样子。对。它它是存在于5层的每一层吗？还是其中的一层呢？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:15:46"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "它是存在呃5层里面，就下面那个就是偏技术那一层。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:15:52"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "技术那一层对啊，拼技术是等一下，我的架构我也没背下来。嗯，因为我们得清楚这个架构是哪一级。那我们之前就老讲5级架构，然后这边如果加了NOMOS的话，可能会有一点变动。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:16:13"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯，其实对那5级架构，你可以这样理解，那5级架构，比如说我们我们拿一个更简单的例子讲，比如说我讲我架构底层是有那个呃之外的那个Aios，然后呢上面有什么ICB世界树等等的呃这些东西，然后呢他其实讲的是呃很。大的，嗯，就很概念性的一个逻辑，就你整体的框架架构，嗯，那我们进入到其中某一层之后，它里面肯定还是有很多东西在里面的，嗯，那我其实我们跟现在讲的就是这款Aios那这一层，嗯，它的那个。底层再往下拆，它的normal是属于中央A I O S里面的其中的某一个点。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:17:02"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯，那那我理解了。然后等一下。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:17:11"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "我现在在跟我的市场部的同事在聊这个事情，我们现在想要去宣发这东西，嗯能不能给我提供一些素材和建议，宣发的一些呃这种呃方案或者啥的，因为我们面向的都是一些企业客户群体，然后我想听听你的意见，看看我们怎么讲这个事情。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:17:32"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯好，然后我看看刚刚讲的是是社会加制度加市场规则对吧？对。嗯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:17:42"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "啊那个法律加制度。法律加制度。法律加制度加市场规则。嗯。我现在正在跟我的市场部同事在沟通这个事情，然后我们想把这个呃作为一次市场宣发，然后我们面向的客户群体主要是企业客户。我们应该用什么视角，什么样的文案去讲这些事情，我也希望你能给我一些建议。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:18:07"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "好，然后nomos刚刚我们讲的它是属于在宏观调控层，那其实它是不是也会有一个智能体主页可以去跟它对话。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:18:16"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，那智能体主页的动机呢主要是用来说让每个企业能上传自己的制度。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:18:22"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "哦。对。它是收集信息的。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:18:25"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，它它是把企业的制制企业通过把自己的制度丢给它，它来帮企业去生成一些。来去生成这个制度，但是它整套运行其实是在我们底层的。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:18:37"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "运行是在底层，然后那个主要是收集，呃就是投放投喂给他信息，然后那有一些存在于人类经验，或者说他手底下员工的一些经验的这些东西，呃就是由这个员工去跟norms去对话吗？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:18:53"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "呃。对对，是的是的，就是每呃他每一个应该。说是呃每一个部门去呃撰写制度流程的那拨人，他们是用户的，那么所用户，比如说呃贺老师他要去呃管理我们整个产研的这个制度流程，那他就是这个诺莫斯这个智能体的一个用户。哦。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:19:21"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "price."
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:19:30"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯理解那呃那怎么保证就是能够挖出用户真实经验呢？他有可能。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:19:39"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就呃其实其实这个点嗯从目前的点大部分公司其实是肯定是有制度的。嗯。就是呃没有制度的这种呃就是不管他有没有呃按照制度流那你随便拉一个公司你去呃说看人工制度他们都会有各种的文。文档呀，其实都有的，其实这个东西大部分情况是不需要去现整理的，然后呃他把他历史的这个呃资料其实就汇进去就可以了。嗯。对，所以我觉得说呃呃大家跟numbers去呃对话，然后呢去让他去呃现帮你整理制度，这个事情其实正常情况下不会出现，因为制度是每个公司基本上基本。嗯。都应该有的东西。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:20:28"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，就从大大到公司的制度法律，然后小到每个部门，每个业务的制度，再到每个人的经验的制度。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:20:39"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "其实它不会到每个人经验去做，你看首先是社会层就法律，嗯。这个东西就是你只要每个人在中国，你都要遵循这个法律，嗯。这个是呃就是不管你进展如何怎么样，然。然后其实是进公司，进公司之后就会有公司的整体的呃制度流程。比如说这种还有同时呢呃比如说这种。公司的这种考勤打卡的这种这种属于公司级的，那还有每个部门级的，比如我在产业里面，我们要求每那个每天提交代码次数不能低于200次，类似这样，那就是我们公司制度了，那提交代码的时候，好，这是一个制度，那还有一些是，这个是制度，还有一些流程，那比如我们提交代码的时候，我们工作流程应该是怎么，第一步做什么，第二步做什么，第三步做什么，然后由哪个角色来做，其实这个都在制度里面已经约定好了，那这些就是norms，当norms有了这个之后，norms就可以帮帮他分析，好，你们公司有呃产研这个部门，有人事这个部门，有品品宣这个部门，然后呢，那每个部门，产研这个部门好了，他有他有这么一套制度，就每天的这个代码提交次数不能。低于200次有这么个制度，那这个制度的工作流程是怎么样呢？就是看完他之后之后说是啊第一步要由这个开发这个呃人员去呃把代码怎么用什么方式提交的呢？这是他的工作流程那。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:21:58"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "normal在这里面就会第一个提取他的。工作制度和流程。第二个，提取这里面角色，把这个角色换成智能体。然后整个的这个运转，就由原来的人按照公司制度流程去做这个事情，变成智能体按照你的这个制度流程去做这个事情。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:22:13"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "哦，我的感觉是现在刚刚讲的比较大的东西嘛。我我提到人类经验是因为昨天逍遥他提到那个1000台电脑那个事。哦。你真实采购的时候会遇到一些真实的问题。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:22:24"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "可能这样是有。对对。就是呃是的，它它里面就会，你看，所以我们刚才讲的，那么其实它全是公司制度上的，就公司制度上不会去呃写，呃，比如说你拿我刚才那个提交代码来写，它不会写你这个时候电脑提交代码的时候，电脑突然死机了，怎么做？对，那这个就遇到这种问题，肯定就是靠我自己的主观，呃，人的主观能动性去做这个事情了。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:22:50"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "所以所以分两层，就是呃你刚才说的经验那一层呢，其实就是。到了我们那做SAB那层哦，就我们做。CB那层它的核心的点呢就是我把历史呃一个呃在企业服务过程中，他们可能会出现的一些问题，场景经验，包括询比价的时候，他的一些这种沟通的技巧，然后呢他的一些比价的一些逻辑规则和方法，那些都属于经验，我们把这些经验全部都喂在了专业智能体上，就是我们现在说那20多个专业智能体，什么密封呀，天书智能订单呀，然后那个抖音财务啊。他们我们再去调教这些专业智能体的时候，其实会给他灌输这些经验的。嗯，他们就是所以专业智能体在我们normal normal这套环境下，就大家就能够按照呃公司的这个制度流程去干活。同时呢每个人又能够有自己的这个呃。做事的这种经验哦。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:23:53"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "那我理解了，我理解了。嗯，然后你们这个文档是不是会。有一些关于，比如说这种normals的一个定义，我们自己去弄出来的话，可能跟你们那个会有一些差别。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:24:07"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "呃，我那我看一下啊，你可以看一下。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:24:16"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "如果让你用一段话来对nomos做一次定义，你会怎么想？你看一下我们现在的文档。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:24:31"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "然后昨天提到呃之前是有Lomos这一个概念可能有提，然后是在光物智能体的那个场景里面，然后才决定去加深做这个智能体的。对。研发的。然后那当时是遇到什么具体的问题，然后决定去做这个事情呢？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:24:49"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "其实就几个问题吧，第一个就是就是我们发现其实对于这种新亚力这种公亚力这种公司，他们对于这种整体的协同的要求速度啊准确率其实都是很高的。那。我们原来的智能体呢，做智能协同呢，它它的那个点呢就是呃它的主观能动性很强，但是呢呃对于比如说我要求呃一定按某种制度流程去做事情的这种逻辑下就是嗯。就他们他的他没有说能达到100%这种约束性。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:25:21"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，这这里你讲到这里还要再往前讲一些，就是就只能咱们经历很多的事，最开始workflow就是工作流，工作流你能保证他工作完全不会出偏差，一定按你做，但是他的问题呢就是当企业的流程发生变化，或者这个大模型在更更新迭代的时候，你就要不断去调那个工作流来去适配这个外部增长，所以他需要有呃。有很强的动手能力，而且维护起来很麻烦。所以呢后边就出现了这个呃智能体调度工具这种逻辑嘛，智能体调度工具这种逻辑呢就是他没有工作流了，我给你一个目标，给你一个呃提示词，你就按这个去。不断的执行工具去做，直到你达成我的目标，达成我的目的。对，所以这个是后边，但是呢嗯他们都有各自的好处，有各自的劣势，工作流稳定不会出错，然后呢呃智能体调度它更加聪明，能做更多的事情，但是它没有呃没有达到企业里面心目中的那种稳定程度。那么后来发现那有没有可能在两者之间打一个平衡，因为。达到一个平衡，所以呢我们就回来去思考，其实模拟人在这家公司怎么，其实后来发现人在你没有给他任何的制度要求的时候，他会他就是会按只要达成我目的就行了，我不各种的做各种的去做。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:26:41"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "但是呢当他一旦有了公司制度的加持之后，他会有忌惮，就是就是他就是天然的就按照公司的制度流程去做，同时呢又没有丧失他的主观能动性，就每个人自己的就个人的能力其实没有丧失，但是他又按照公司的制度流程去做，那我们就想那人类社会有正常体系。那智能体能不能也用同样的体系去做？那有了这套体系，它能够带来几个好处。第一个就是呃我们去梳理公司，每个公司的这个呃它的这个自主流程会很方便，因为每个公司其实都已经有自主流程了。嗯。那其实有了这套之后，他们之间它会它能够在工作流和自主协同之间产生一个平衡，它既没有原来工作流那种很死板这种逻辑。然后呢他又在自主协同的基础上，呃自主自主调度的基础上，嗯去加了一层围栏，让他能够按照企业的制度去做。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:27:37"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，就是当时我们做雅迪的时候就发现，就是呃这是刚才说的是一个呃按他要按照你的流程规章制度来走，还有一个就是其实就是速度效率上面，就是在在那个人的时候，他可能比如说可以大家多个人一起做一个事情，然后去。做提高效率，那。我们我们就为了能够让大家在智能体在做事情的时候，比如说一个事情它可以去同时多个智能体并行去做。嗯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:28:10"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就是就是这里面当时也有些参考点，还有第三个点呢就是就是其实发现它天然就是对于客户来说，你跟他讲我给你提供一堆智能体，然后呢去帮你框把东西存了，他可能听不懂，但是呢那你跟他讲说好，你先把你制度拉出来，好，你这制度里面把他三个人做的。三个角色要做的事情，那是很很很简单。现在这三个人现在换成智能体，我把这个原来我把这个站位从三个人换成三个智能体，老板瞬间就听懂了。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:28:44"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，是是是。哦，所以，所以当时是嗯，我们在深入到具体你们当时面临的一个问题，因为会呈现一些故事性嘛。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:28:53"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，就是，就是当时不管是从其实技术上面，我们也认为，因为呃，就是从。从今年呃小龙虾火了之后，呃小龙虾开启了一个全新的这种嗯嗯这种整体的一种生态体系吧。那我们其实也面临了一个就是我们的技术要再往上升级一层这种点，那又结合了我们当时在去在看到了雅迪，看到一些这种公司，他们真实的一些协同的场景逻辑的时候，我们就。想，啊我们要去呃换一种逻辑去思考，就是呃原来的协同就是嗯只是说让大家知道这个事情去把它协同起来，就是知道让每个东西知道其他东西做什么事情，然后呢大家能够互相沟通，把它协同起来。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:29:43"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "但是呢我们这次就想，那既然要做的事情，而且我们认为呃。单个整体将来会越来越强，就是呃code x code openclaw这些整体都会越来越强。那我们有没有可能未来呃一个企。他不一定说只用我们一个智能体，那那我们认为更有价值的点就是不是说把单个整体做强，但是这个也很重要。另外一个很重要点是怎么样能够让这个智能体。很多很强的智能体又能够在一起很好的把工作协同起来。嗯。就这个可能是我们认为我们的一个壁垒，就我们从单个整体上突破的话，大模型公司可能做的会比我们更好。嗯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:30:27"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "那我们就聚焦在多整体情况，那聚焦在多整体这块，那仔细思考回来就会发现，你如果只是说做一些简单的多智能协同，它不够，所以就回到了我们要去研究呃社会和人类这种运行的逻辑，它有法律有规则，有市场有市场逻辑。这些综合因素呃影响下去，才会让这个智能体既能够按照你的规章制度去做事情，又能够在过程中产生紧迫感，能够产生自驱力，嗯，让他去自我进化。就我们认为这个。环境很重要，就是说当提供当我们把这个环境做得越来越好，做得越来越扎实，然后呢之后那智能体各种平台整体只要进入到我这个环境下，它理论上都能够在我这个环境下去进行协同。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:31:14"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯了解，然后所以当时或者说一直以来面临的问题，一个是我们当时是觉得不可控以及不好给老板去进行解释。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:31:23"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对对。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:31:24"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就是不可控的是多智能体还是单单多多智能体，多智能体协同的不可控。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:31:29"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，就那个时候我们其实调，其实我们之前用宇宙岛那个时候调智能体的话，那个时候有个问题就是呃呃比如说我们去做一个场景。其实可能做一个demo大概要几好几周的时间，就两三周的时间才能给客户去出一个demo。就那个时候我们的呃那种技术路线呀什么的，它本身其实也没有说呃达到一个很完美的状态。那我们呃今年3月份重构了周二之后，我们对单个智能体能力做了一次重构升级。那我们单个智能体能够能力重构升级之后呢，我们就在。那按照我们新的智能学底层底层架构，我们应该也是时间，也就是再结合我们过去一两年踩坑的这些经历啊经验啊，我们也是是时间要去重新的把我们这个呃多智能协同的一个架构重新的思考升级一下。这里面呃从当时遇到的呃它的准确度啊稳定性啊，包括这个呃。处理业务的这种复杂程度啊什么的，其实在做雅迪的时候我们都遇到了这些问题啊，那我们就就那就想那如果我们当时只是去解决雅迪那个问题呢，那我们可能在原来那个版本上面再去继续多花个几周的时间去调一下也就出来了。但是呢就是呃就如果。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:32:48"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "每家公司会有不同的情况。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:32:49"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对对，每如果是那样的话，那以后我们服务每个公司的话可能都要好几周，就是说或者公司。而而且我们希望的是未来不用我们去服务公司了，我们跟公司跟。企业教会之后他自己去做，那在当时呢我们看来那套模式下几乎不太可能实现，那我们就必须得去重新的去调整我们的架构，按照呃更简单的方式，最好是我们想理想中就是企业你把你的制度丢给丢进来，丢进来之后，nom开始学习帮你去生成制度统一管理，只要你制度生成之后好了，你智能体协同就。我们全帮你做好了。嗯。那个就是他们之间怎么去协同，怎么去沟通机讨论机制，我们就直接内内置到我们底层。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:33:31"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯嗯嗯嗯，了解哦，那他有出结果了吗？嗯，一句话定位。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:33:57"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "我把这个发给你吧。嗯，然后刚刚我们其实也提到雅迪场景，然后讲了我们就是相当于是你们已经总结提炼出来的一个问题。那具体到当时面临的一个小的问题的话，比如说雅迪，他是你们是遇到哪个制度的问题，或者就是一个小一个小问题。其实真实的。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:34:17"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就最开始是做那个呃做那个两个问题，一个压力其实就得了，就是还有一个是询报价，就是呃正常比如我们做一个询报价这个事情，它其实不是一个，它虽然这个事情很小，但是它其实不是一个人一个人做的，就是我要去做一次询价，里面我要去查商品，我要找商品相关的管理员，我要去查历史报价，我要去查历史订单，其实这都不同的人的。所以我们最开始做的时候，我们就就是把我们想想过几个方案，第一个把所有的这些呃工作全部放在一个人身上，让一个人去做，后来发现太慢了，就是他也也他也能做完，但是呢。一他一个人做完之后，那个呃可能做完之后要花个七八分钟甚至更久。嗯。那我们就是把它拆成拆到多个，就是对，拆到多个整体上，那拆到多个整体之上，我们要怎么能够让他就是用呃在我不需要给他太多的这种调试啊，不需要给他太多的这种条件的时候，他也能去。呃，很好的行动起来，就这一点，其实是当时我们呃遇到了一个最核心的问题。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:35:32"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯，了解。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:35:37"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "因为现在市面上大家的智能体，它是很多的，如果只是让它去呃去写那个互相的去做这种网络的爬爬虫啊，包括那种呃呃最基础的办公类的话，它其实智能体本身它就能做到的，但是我们去跟客服，就是他要的他的公司的业务流程，业务。流程，你说那个文章呢，文章他写了，他哪怕他写的不好，他只是写的不好，但是那个公司也有流程，他一旦错了一点点，嗯，就是那就是他们公司不可接受的一个东西。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:36:11"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯嗯嗯，我们现在是录这种提示已经呃在对外可以去给用户使用了的嘛。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:36:19"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对哦。就是接入就是我们因为我们是要接入他真实的业务流程，就是他真实的业务数据。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:36:29"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发时间大概是多久啊？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:36:31"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "我们现在嗯就比如拿雅迪那个和创维这个其实都呃雅迪是我们跟他呃就是这里面时间会分两段，就是了解他需求，管需求是时间最久的，这个大概要到两两周左右，然后真正智能体给他做出来，其实就是一周以内，创维也是。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:36:50"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯，真正智能体做出来是说，比如说雅迪，它是光雾的智能体那一套。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:36:55"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，就我们了解完它需求之后，在我们平台把它整体给它调教出来，就一种。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:37:00"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "都一类。对。然后嗯你刚提到那个两周是我们去跟他沟通。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:37:05"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "了解这种细节。就从项目开始调研需求，了解他的内部的这个逻辑，他们公司的这种管理的呃逻辑。嗯。以及他们现在的一些内部no号啊什么的。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:37:17"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "哦了解。好，然后比如说你们这个雅迪这个客户啊，嗯我们可以讲他的名字吗？还是说暂时不能讲，像我们之前明星电脑啊那些。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:37:29"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "这个呃你可以问一下贺老师，我理解现在呢，因为我们现在属于商务阶段，就跟他们在没有正式的签约。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:37:36"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "哦，了解了解是。嗯那比如说我说某两轮车企可以吗？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:37:43"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "呃你可以问一下贺老师，问一下贺老师，让他去找那东风去确认一下。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:37:47"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "行，我看看。嗯。我我看一下有没有什么遗漏的，因为讲的还是蛮多的。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:38:03"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "哦对，当时逍遥是提了一个场的概念，你刚刚也是讲有讲到这个方面，所以我们可以理解为它是一个场域的问题吗？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:38:13"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，就是他那个那那个你可以找那个谁找贺老师，就是我刚才讲的，它里面有那个什么有那个呃什么呃法律啊市场规则呀和那个呃制度啊等等这些，这是我从一个维度上还有一个维度就是场场内维度的话就是嗯它更平怎么说它更抽象一点。就是贺老师那边整理文档，你可以把整理文档拿过来，你先看一下，就你可以先看一下那个，然后那个有问题的话可以我们再去，那那个我你得先看一下理解一下那个，其实你那个我也我也有点难讲，那个很抽象，它里面很多就偏那种算法和那种抽象层那些东西。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:38:59"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "然后他就是说没有nomos的多智能体，你如果和有nomos的多智能体的差别，你会怎么讲？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:39:07"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:39:13"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "你去放一下啊。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:39:17"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "我问一下他。如果让你用一句一句话解释有nomos的多智能体和没有no nomos的多智能体的差别，你会怎么说？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:39:39"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "然后还有就是我们这边关于nomos的素材的话，就是可视化的只有一个nomos它的一个界面啊，也不算界面，嗯，甚至不是ui图，就是一张图，你们有更多素材吗？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:39:52"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "nomos你们那个呃有啊有。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:39:55"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯，有录制的一些什么视频之类的吗？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:39:58"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "那种。之前有一。我但是那个是给客户的，我感觉看一下，我是不是就我一个做这个，我来做。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:40:05"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对你们能对外的可以发我们一下嗯好。嗯，啊，还有个问题，就是当你们在研发这个Lomos的过程中嘛，呃，有没有遇到一些什么问题，然后是怎么解决的？嗯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:40:38"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "我们先把那个发给你，他说那就没，首先没有nomos的时候，多智能体是几个AI临时凑在一起干活，听谁的，按什么规矩，有没有留痕，然后你都说不清楚。然后有了nomos的时候，他们是在一群在制度下协作的AI团队，制度定规则，然后AI去做决策、分工、协商、问责、留痕，这些全程的都可以去治理和追溯的。嗯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:41:00"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯，好的好的。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:41:06"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "然后这个Nomos现在有给客户有用到，或者说你们去跟他介绍之后，他会有提供一些什么反馈给你们吗？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:41:13"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "其实Nomos这个我们我们不我们不侧重讲它。不侧重讲。对，就我们不会直接去跟客户讲Nomos，我们跟客户讲只是说这个Nomos它只是说帮你能树立你公司的制度，但是我们不会像刚才一样去跟客户讲这个东西，因为就是嗯我们只会给他演示。我们有多任务协同的能力，我们有一套架构，然后很好的架构，但是我们怎么做，我们完全不会讲，不会跟他讲那个什么市场经济那些的啊，那那套的。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:41:46"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "哦，那就是给他演示一下，诺姆斯是怎么去。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:41:51"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "这这给他演示的时候。给他演示的时候就不是演示诺姆斯，是演示场景，就是你的场景，比如说我现在有三个角色。我怎么去呃帮你去完成报价，比如像这种就是我们去给演示的时候，这是一个报价场景嘛，就是我就会直接跟你说好，我现在有个报价的场景，我发起这个报价需求之后，这智能体它会自己去组队，然后呢开始这些智能体就开始干，按照这个他们的规章制度流程开始去干活了，然后呢那这套逻辑是我们底层有个normal的制度智能体运行的这种架构在那撑着，我们就这样就这样就这样讲。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:42:27"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就这样简单的讲一下，对，然后如果他不理解的时候。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:42:31"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，如果他技术他要想去了解更深的话，那我们去大概跟他提一下。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:42:35"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "哦。对。这样子。嗯。那研刚刚的问题研发过程中有没有遇到什么问题呢？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:42:43"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "呃其实这里面嗯你你我想问一下你你对这个问题你想的方向大概是哪一类。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:42:52"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯，我可能想说有没有一些有趣的故事。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:42:56"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "啊。我想想啊。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:43:08"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发过程中，嗯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:43:19"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "有趣的故事啊，这个。好像没有哎。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:43:25"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "没事你可以讲讲你们的问题，我我看。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:43:29"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "其实这个过程中的问题点呢，就是嗯我不知道怎么讲，就在这个过程中，我们在前面至少在前一个月做的时候，其实遇到了很多的这种嗯挫折吧。嗯。就是呃因为嗯AI的AI这种智能体的这种开发跟传统软件开发不一样，传统软件开发是它有非常标准的呃表单流程数据库。嗯。我只要你能给我讲清楚你的流程是怎么样，你的需求是什么，你有。几个字段，我一定能百分百实现出来，而且它的落地路径是非常清晰的。但智能体不一样，智能体的话它其实很多的时候，你光你有了理论的这套底层架构框架在撑着之后，你需要去呃不断的去实践去尝试，拿一些场景，客户的场景去在上面去跑去试。就是在这个过程中你就会发现可能原来的那个架构看起来很完美，但是其实实际上落地的这个效果不好，这就是大家讲的哈尼这种工程，这种逻辑它其实是需要大量去试的，那我们在这过程中其实呃只能说是。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:44:34"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯，有一个月的时间，其实呃处于不断的在去调试和重构这个Hennis这个工程的这样一个阶段。哦，就是它属于呃。怎么说呢？就是就是我再往下讲，可能就是它属于写代码那一层了，就是整个过程，反正我的过程就是嗯把它做出来，按照我们架构。都做出来，然后测试效果不好，调对返工，然后重新再调，直到说它达到了我们想要的那个效果。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:45:06"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯，那在这个过程中，比如说和老板或者同事之间有没有发生一些什么？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:45:12"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯。我想想，嗯，其实啊中间有一个点，其实中间发生过冲突对视的，就是我们对于一个中心化和去中心化的一个呃判理解。嗯。就是我们中间有一有有有一前面选了一个架构，就是我举个例子，比如说呃我现在呃现在嗯逍遥，比如说给了我们一项任务，就像逍现在就拿昨天逍遥给了我们一个任务，他就要我们去做这个事情。那这个事情就是变成了你来协同我做这个事情，就其实就刚才这个协同的过程。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:45:48"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯，然后那你来找我这个动作是由你的主观能动性去发起的，还是？由公司。呃，说对，有一个总在上面总控的一个看不见的一个人给你发号施令，说让你去来找我的哦。就是那个点，就我们就当时有做过一个很大的就是。就是我们想要做一个是去中心化的一个逻辑，就是一个公司有100个制度，当一个任务来了之后，并不是说有一个中心化的一个调度智能体在那说，哦这个事情应该卡中了这个制度，然后呢呃应该由呃谁来做，然后再把这种下发给某个人，嗯，而是说。我这个任务下来了，他给到了你。嗯。你首先知道哦，我之前是做这个事情的，然后呢，你主动来找了我，说你想了解事情，我们俩才开始协同起来了。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:46:54"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯。对，就是这里其实是一个呃在我们开发过程中很不一样点，而且。这个点其实也是其实是现在市面上大家做的一个呃怎么说呢？就现在现在市面上90%呃5，不说100%，95%以上的多智能系统逻辑全是刚才说的第一种。嗯。就是当我当我来一个任务之后呢，他会先去看一下现在所有的智能体，每个人智能体去做什能做什么。嗯。然后呢，他再会决定把这个任务分配给哪个智能体，让哪这个智能体来去。做这个事情。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:47:28"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "那和这种中心化，我们现在是去中心化吗？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:47:32"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就是他这里呢他这里其实呃对我们去中心化，这里其实讲到了我们一个我们设计智能体一个呃思考逻辑，就是嗯因为现在从现在看来，所有的AI公司他们去做大模型什么的，都在慢慢的让它更加越来越去。拟人化就是用人类的方式和我思去思考这件事情。嗯，那呃我们在去。去做智能体上层应用的时候，我们的思考逻辑也是嗯每一个思考决策点。先看人类社会是怎么做的。嗯。就是嗯不要违背人类社会的这种运行的逻辑体系，那就像刚才这个举例子啊，在在你接到这个事情之前是没有没有一个人去告诉你说。嗯。主动告诉你说这个事情应该找谁的，他是靠你自己的主观能动性去发现这个事情和自己决策出来的。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:48:35"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:48:36"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "因为如果是有那么一个角色存在的话，他就会。怎么说呢？就是他的呃就相当于变成了调度的准确性的上限，就在那一个人身上。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:48:53"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "我理解，那我有一个小问题，就是比如说我们比如说就说我们刚刚那个协同，然后。可能在人类社会也会存在，呃最开始你是指定了谁去做这个东西，就是有一个主导的角色，那或者说他没有主导角色，那所有人都会觉得呃可能那你们怎么去判断这个智能体，他自己能判断我是这个东西的协同，或者谁是协同谁是主导呢？他自己怎么判断呢？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:49:26"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "就是所以它里面变变成这样，就是当你在接到一个任务的时候，首先你是知道公司的这个。组织架构和。这个整个的制度流程呢，就是跟你相关的制度流程，就是可能会跟你有关联的制度流程里面这些逻辑。其实你呃就我们模拟，比如说嗯就是呃一个公司里面的人接到一个任务，然后老板给他下达一个任务，他其实要首先要看的事情就是这个事情呃。第一个我自己能不能全部干完了，我自己能如果能全部干完，那我自己去干就好了。然后这个时候就不需要协同了，就是我直接去做就好了。那我自己一个人干不了，那我自己一个人干不了的话，我就得去思考，嗯，我这个应该找谁干，那我应该找谁干这个事情，其实他的呃点啊，就在他们公司的制度规章规章制度里面。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:50:22"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "哦，那我理解，其实就是每个智能体都围绕自己的工作为核心，然后对解决问题为目标导向。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:50:30"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对解对以解决呃这个任务喽。来去作为目标导向，来确定要不要协同其他人。当你他想拉一个另外一个人进来的时候，另外一个人觉得他也做不了的时候，那他就会重重复前人的工作。对，这样的话就是呃我们就认为我们后边不断推出这种，当这你看这个逻辑出来之后，单个智能体因为单个智能体一定会越来越聪明，所以大模型能力的升级，它一定会越来越聪明，那它只要一旦越来越聪明。那我。我们整体的架构是水涨船高的，我们环境其实就像呃这种社会体系一样，它不会因为AI来了之后环境体系变化了，但是呢AI环境仍然大家都在这套环境下面，只不过呃这套环境的这种迭代速度变得更快了。那我们认为我们现在这套架构，其实在经历过呃一段时间的打磨，它其实能实现。我单个整体越来越聪明，其实Noit它只是提供了一套环境，然后呢嗯那单个整体在这套环境里面，它就可以你能更加高效的协同其他的人。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:51:39"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯嗯，然后我再一个问题就是嗯刚刚想到就是那和这个中心化的这个一套，我们对比它的一个优势，就是说我们我们上线会更。更高或者没有上限，因为他的上限会更低。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:51:56"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对，就是因为我们一直想做说跟着大模型做时尚潮流。大模型能力只要去升级，就我们就得升级，就我们我们有就是讲就是大模型，就是我们因为我们本身我们自己不做大模型嘛，那我们的策略点呢方向点就是呃我们要尽可能利用好大模型的能力，就是大模型一一升级，它一优化，我们要立马我们无感的立马就整体就自动就优化升级，我们要的是这种状态，那所以我们的架构设计的话，我们都会去遵循这种架构设计来去做。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:52:32"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯。好的了解。那我今天咱们聊了这么多，我觉得我大致清楚，然后我之后回去再整理一下，如果再遇到什么问题的话再约你。可以啊可以啊。好，谢谢谢谢谢谢今天很感谢OK那你边有问题再找我好，谢谢谢谢谢谢。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:52:57"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯行啊，对你你有没有那个什么文。这版的资料啊或者那些可视化的素材啊可以发我。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:53:04"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "那个录屏那个文档，然后那个文档的话呃因为我们存在代码仓里面，我我得看一下哪些能给你。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人2 00:53:13"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "我可以整理一下。可以好嘞好嘞，谢谢。我看啊周四周六之前能给我吗？"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "说话人1 00:53:22"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "嗯可以可以，谢谢。"
+    }
+  ],
+  "externalLinksFollowed": false,
+  "footers": [],
+  "headers": [],
+  "instructionDisposition": "SOURCE_CONTENT_ONLY"
+}

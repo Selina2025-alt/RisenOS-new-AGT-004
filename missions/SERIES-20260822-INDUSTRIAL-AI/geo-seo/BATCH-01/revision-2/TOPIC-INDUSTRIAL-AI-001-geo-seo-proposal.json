@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0.0",
+  "proposalId": "GEOSEO-BATCH01-R2-TOPIC001",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "batchId": "BATCH-01",
+  "topicId": "TOPIC-INDUSTRIAL-AI-001",
+  "sourceContentVersionId": "DRAFT-PROPOSAL-BATCH01-TOPIC001-R2",
+  "sourceDraftHash": "31921114a83088d55602768f13b26d5e557aeb0285b576bd5f5a53a2d2948658",
+  "sourceDraftHashScope": "FULL_FILE",
+  "sourceBodyHash": "1f9f6a35c25a53f3f8d8ece843ca2096e8d633a5f379ab9e36e1b22d0a2b5737",
+  "sourceBodyHashScope": "MARKDOWN_BODY_AFTER_FRONTMATTER",
+  "sourceReviewIssueIds": ["LIL-001-P2-02"],
+  "createdByAgent": "xiaodiandian",
+  "operationMode": "READ_ONLY_REVIEW",
+  "status": "PROPOSED_NO_BODY_CHANGE",
+  "corpusWriteback": false,
+  "primaryIntent": {
+    "previous": {"seoId": "SEO-0222", "query": "产业AI解决方案", "intentType": "COMPARISON_PROCUREMENT"},
+    "proposed": {
+      "intentId": "TASK-SEO-SERIES-001-R2-001",
+      "query": "为什么聚焦产业AI，产业AI价值如何验证",
+      "intentType": "STRATEGIC_EXPLANATION_AND_VALUE_EVALUATION",
+      "status": "MISSION_ONLY_CANDIDATE",
+      "globalActivation": false
+    },
+    "decision": "REPLACE_FOR_THIS_REVISION",
+    "reason": "新稿标题、主体和结论均围绕战略选择与价值验证展开，采购型词会扭曲文章任务。"
+  },
+  "textEdits": [],
+  "answerBlockProposals": [
+    {
+      "question": "艾氪智能为什么聚焦实体产业？",
+      "action": "REUSE_EXISTING_SECTIONS",
+      "sections": ["聚焦产业：选择真实问题", "六年积累：把产业变成语言"],
+      "newClaimRequired": false
+    },
+    {
+      "question": "产业AI的看得见价值如何验证？",
+      "action": "REUSE_EXISTING_SECTION",
+      "sections": ["可见价值：先定义再验证"],
+      "newClaimRequired": false
+    }
+  ],
+  "coverageMapRef": "TOPIC-INDUSTRIAL-AI-001-content-coverage-map.json",
+  "newClaims": [],
+  "evidenceGaps": [],
+  "riskWarnings": [
+    "不得把任务级意图自动激活为正式SEO词。",
+    "不得为了搜索意图加入采购、报价或选型承诺。",
+    "不得把三层价值框架写成已经实现的客户ROI。",
+    "不得植入Nomos。"
+  ],
+  "requiresContentRevision": false,
+  "requiresEvidenceRequest": false,
+  "requiresLilithReReview": false,
+  "proposalFingerprintBasis": "31921114a83088d55602768f13b26d5e557aeb0285b576bd5f5a53a2d2948658|LIL-001-P2-02|TASK-SEO-SERIES-001-R2-001|CCM-BATCH01-R2-TOPIC001",
+  "proposalHash": "d0b013453de0d844bd19884fa494d8c1dfe641d3af7549111766796ea03b983a"
+}

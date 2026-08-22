@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "LILITH-PRE-DRAFT-SERIES-20260822-001",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "reviewAgent": "lilith",
+  "reviewType": "PRE_DRAFT_SERIES_REVIEW",
+  "reviewedAt": "2026-08-22T00:00:00+08:00",
+  "reviewStatus": "REVISION_REQUIRED",
+  "formalDraftAllowed": false,
+  "formalApprovalGranted": false,
+  "summary": {
+    "p0": 0,
+    "p1": 8,
+    "p2": 3,
+    "p3": 0,
+    "conclusion": "系列方向与核心边界基本成立，但任务绑定、知识快照、Claim-Evidence计划和关键人工决定未完成，正式写作继续阻断。"
+  },
+  "passedChecks": [
+    "official_perspective_consistent",
+    "five_topic_narratives_distinguishable",
+    "visible_value_not_claimed_as_realized_roi",
+    "ai_employee_not_legal_employee_or_independent_liability_subject",
+    "nomos_not_sixth_layer_and_not_mandatory_insertion",
+    "external_sources_not_used_as_product_proof",
+    "knowledge_and_research_hashes_verified"
+  ],
+  "issues": [
+    {
+      "issueId": "P1-001",
+      "severity": "P1",
+      "module": "task_binding",
+      "location": "topics/, briefs/, knowledge/proposals/",
+      "problem": "Topic/Mission 001、002 与 Brief/Knowledge 01、02 编号和主题反向错位，publicationOrder不能替代不可变Artifact绑定。",
+      "suggestion": "增加逐Topic artifactBindings，或统一按不可变Topic ID重命名所有提案Artifact。",
+      "routeTo": "agt-004",
+      "autoFixable": false,
+      "blocksDraft": true
+    },
+    {
+      "issueId": "P1-002",
+      "severity": "P1",
+      "module": "perspective_consistency",
+      "location": "perspective-input.json and gates/",
+      "problem": "Perspective确认缺少绑定Artifact Hash的不可变HumanGateDecision。",
+      "suggestion": "创建包含decisionId、artifactHash和idempotencyKey的PERSPECTIVE_CONFIRMED决定。",
+      "routeTo": "agt-004+human",
+      "autoFixable": false,
+      "blocksDraft": true
+    },
+    {
+      "issueId": "P1-003",
+      "severity": "P1",
+      "module": "knowledge_snapshot",
+      "location": "knowledge/knowledge-snapshot.json, knowledge/source-manifest.json, gates/",
+      "problem": "系列级知识快照仍为NOT_ACTIVATED，各Gate仍为WAITING_KNOWLEDGE。",
+      "suggestion": "完成冲突处理和人工激活，为每个Topic挂载不可变KnowledgeSnapshot。",
+      "routeTo": "makabaka+agt-004+human",
+      "autoFixable": false,
+      "blocksDraft": true
+    },
+    {
+      "issueId": "P1-004",
+      "severity": "P1",
+      "module": "claim_status_evidence",
+      "location": "research/ and knowledge/proposals/",
+      "problem": "外部EXT Claim和内部S-A Claim尚未合并为逐题ClaimEvidencePlan，SourceMaterial结构化元数据也不完整。",
+      "suggestion": "建立逐题Claim-Evidence表并补齐retrievedAt、contentHash、accessStatus、rightsStatus、authorityTier、verificationStatus和qualityWarnings。",
+      "routeTo": "public-researcher+makabaka+agt-004",
+      "autoFixable": false,
+      "blocksDraft": true
+    },
+    {
+      "issueId": "P1-005",
+      "severity": "P1",
+      "module": "product_architecture_nomos_canon",
+      "location": "Topic 3 Perspective, Brief and Knowledge Proposal",
+      "problem": "brandNaming为NOT_APPLICABLE，但文章计划涉及JovaAI、JovaOS、JovaAI OS、ICB和Nomos，公开命名关系未冻结。",
+      "suggestion": "仅使用已确认安全称谓，或先完成KNOWLEDGE_CONFLICT_DECIDED和架构状态矩阵。",
+      "routeTo": "makabaka+human",
+      "autoFixable": false,
+      "blocksDraft": true
+    },
+    {
+      "issueId": "P1-006",
+      "severity": "P1",
+      "module": "compliance_claim_status",
+      "location": "Topic 4 Brief and Knowledge Proposal",
+      "problem": "AI员工与硅基人才的主术语、公开定义和责任边界未完成确认。",
+      "suggestion": "人工确认主术语及免责声明，明确不是法律身份、人员替代或独立责任主体。",
+      "routeTo": "makabaka+human",
+      "autoFixable": false,
+      "blocksDraft": true
+    },
+    {
+      "issueId": "P1-007",
+      "severity": "P1",
+      "module": "enterprise_fusion_nomos_canon",
+      "location": "Topic 1, 3 and 4 Brief/Knowledge Proposal",
+      "problem": "三篇均保留Nomos可选融合，但系列规则最多两篇，尚无归属决定。",
+      "suggestion": "建议Topic 3主融合、Topic 4条件性次融合、Topic 1默认排除，并由人工确认。",
+      "routeTo": "makabaka+human",
+      "autoFixable": false,
+      "blocksDraft": true
+    },
+    {
+      "issueId": "P1-008",
+      "severity": "P1",
+      "module": "content_adequacy_evidence",
+      "location": "five research-pack.md files",
+      "problem": "各题来源数4、4、6、5、6，低于默认8至15条长文资料目标，且没有coverageException。",
+      "suggestion": "针对明确缺口定向补证，或由人工批准RESEARCH_COVERAGE_ACCEPTED，禁止模板补数。",
+      "routeTo": "public-researcher+human",
+      "autoFixable": false,
+      "blocksDraft": true
+    },
+    {
+      "issueId": "P2-001",
+      "severity": "P2",
+      "module": "logic",
+      "location": "Topic 5 Brief and Knowledge Proposal",
+      "problem": "未来三年与未来两三年并存。",
+      "suggestion": "统一规划窗口，并保持为行动框架而非确定性预测。",
+      "routeTo": "content-orchestrator",
+      "autoFixable": true,
+      "blocksDraft": false
+    },
+    {
+      "issueId": "P2-002",
+      "severity": "P2",
+      "module": "content_deduplication",
+      "location": "research-manifest.json and per-topic Research Packs",
+      "problem": "PUB-004被四篇复用，PUB-002被三篇复用，可能导致系列重复段落。",
+      "suggestion": "为共享来源指定逐篇不同的证据用途和禁止重复的表达范围。",
+      "routeTo": "public-researcher+content-orchestrator",
+      "autoFixable": false,
+      "blocksDraft": false
+    },
+    {
+      "issueId": "P2-003",
+      "severity": "P2",
+      "module": "case_policy",
+      "location": "Topic 1 Preflight",
+      "problem": "requiresCasePolicy为true，但案例并非必需，可能造成过度阻断。",
+      "suggestion": "仅在使用L4融合、真实案例或量化结果时激活案例闸门。",
+      "routeTo": "agt-004",
+      "autoFixable": true,
+      "blocksDraft": false
+    }
+  ],
+  "topicDecisions": [
+    {"topicId": "001", "decision": "REVISION_REQUIRED", "reason": "Artifact错位、知识快照和Claim计划缺失"},
+    {"topicId": "002", "decision": "REVISION_REQUIRED", "reason": "Artifact错位、知识快照和Claim计划缺失"},
+    {"topicId": "003", "decision": "BLOCKED", "reason": "品牌、产品和五层架构称谓未冻结"},
+    {"topicId": "004", "decision": "BLOCKED", "reason": "AI员工/硅基人才公开定义和责任边界未确认"},
+    {"topicId": "005", "decision": "REVISION_REQUIRED", "reason": "时间窗口、知识快照和Claim计划待修订"}
+  ],
+  "requiredHumanGates": [
+    "PERSPECTIVE_CONFIRMED",
+    "KNOWLEDGE_CONFLICT_DECIDED",
+    "ENTERPRISE_FUSION_CONFIRMED",
+    "RESEARCH_COVERAGE_ACCEPTED",
+    "SOURCE_DRAFT_APPROVED",
+    "FINAL_VARIANTS_APPROVED"
+  ],
+  "nextAction": "先修复Topic与Artifact绑定，再激活逐题KnowledgeSnapshot、完成关键口径决定、建立ClaimEvidencePlan并处理研究覆盖，随后由莉莉丝复核写作Gate。"
+}

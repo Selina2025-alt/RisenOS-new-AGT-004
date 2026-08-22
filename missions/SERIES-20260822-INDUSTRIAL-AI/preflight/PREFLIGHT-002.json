@@ -1,0 +1,11 @@
+{
+  "missionClass": "ENTERPRISE_AI",
+  "enterpriseRelevance": "DIRECT",
+  "topicEntities": ["产业AI", "企业AI落地", "智能体", "权限", "审计"],
+  "publicationScope": "EXTERNAL_DRAFT",
+  "riskLevel": "HIGH",
+  "requiresPublicResearch": true,
+  "requiresEnterpriseKnowledge": true,
+  "requiresNomosPolicy": false,
+  "requiresCasePolicy": false
+}

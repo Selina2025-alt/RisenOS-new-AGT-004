@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0",
+  "skillTraceId": "skilltrace_industrial_ai_002_batch01_revision1",
+  "parentSkillTrace": "../skill-trace.json",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "createdByAgent": "content-orchestrator",
+  "trigger": "makabaka_post_draft_check",
+  "reviewArtifact": "../post-draft-check.json",
+  "changes": [
+    {
+      "issueId": "MK-002-P1-01",
+      "skillId": "enterprise-copy-orchestrator",
+      "usedFor": "responsibility_subject_correction",
+      "outputInfluence": "将系统负责改为过程可追溯，保留人的最终决定权。"
+    },
+    {
+      "issueId": "MK-002-P1-02",
+      "skillId": "enterprise-copy-orchestrator",
+      "usedFor": "claim_binding_precision",
+      "outputInfluence": "将企业定位、Agentic OS和多智能体协同拆句，直接绑定ENT-001、ENT-002、ENT-003。"
+    }
+  ],
+  "scopeExpanded": false,
+  "formalContentVersionCreated": false,
+  "selfApproved": false,
+  "status": "USED"
+}

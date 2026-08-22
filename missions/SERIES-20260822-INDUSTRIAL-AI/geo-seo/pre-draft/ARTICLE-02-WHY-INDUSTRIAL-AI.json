@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "GEO-SEO-PREDRAFT-SERIES-02-V1",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "articleId": "ARTICLE-02",
+  "title": "为什么聚焦实体产业与看得见的价值",
+  "createdByAgent": "xiaodiandian",
+  "status": "MISSION_ONLY_CANDIDATE",
+  "corpusWriteback": false,
+  "sourceRefs": {
+    "brief": "../../briefs/TOPIC-02-WHY-INDUSTRIAL-AI.md",
+    "researchPack": "../../research/TOPIC-INDUSTRIAL-AI-001/research-pack.md",
+    "knowledgeSnapshot": "../../knowledge/knowledge-snapshot.json",
+    "knowledgeTopic": "../../knowledge/TOPIC-INDUSTRIAL-AI-001_为什么聚焦实体产业与看得见的价值.md"
+  },
+  "primarySeoIntent": {
+    "seoId": "SEO-0222",
+    "keyword": "产业AI解决方案",
+    "intent": "比较/采购",
+    "reason": "作为产业AI品类入口，但正文应以战略选择和价值验证为主，不写成方案报价页。"
+  },
+  "secondarySeoIntents": [
+    {"seoId": "SEO-0010", "keyword": "JovaAI ICB", "use": "在解释产业交易对象和语义基础后自然出现"},
+    {"seoId": "SEO-0173", "keyword": "AI如何处理复杂交易规则", "use": "解释产业对象、规则和多方责任"},
+    {"seoId": "SEO-0171", "keyword": "如何评估AI场景价值", "use": "支撑看得见价值的验证框架"},
+    {"seoId": "SEO-0172", "keyword": "企业AI如何连接上下游", "use": "只作产业协同方向，不宣称已全面连接"}
+  ],
+  "geoPlan": {
+    "primaryQuestion": {
+      "geoId": "TASK-GEO-SERIES-02-001",
+      "question": "艾氪智能为什么聚焦实体产业？",
+      "status": "MISSION_ONLY_CANDIDATE",
+      "globalActivation": false
+    },
+    "relatedQuestions": [
+      {"geoId": "GEO-0166", "question": "为什么真实ToB业务需要产业交易语义？"},
+      {"geoId": "GEO-0170", "question": "企业内部AI和跨企业产业AI有什么区别？"},
+      {"geoId": "GEO-0176", "question": "如何判断一个AI场景是否值得优先投入？"},
+      {"geoId": "TASK-GEO-SERIES-02-002", "question": "产业AI的“看得见的价值”应该如何定义和验证？", "status": "MISSION_ONLY_CANDIDATE", "globalActivation": false}
+    ]
+  },
+  "expectedAnswerBlocks": [
+    {
+      "question": "艾氪智能为什么聚焦实体产业？",
+      "expectedAnswer": "因为实体产业的AI价值必须回到真实业务对象、交易规则、上下游协作和经营责任中验证。艾氪智能选择以长期产业积累和产业交易语义为基础，服务企业AI与产业AI；这是一项战略与能力选择，不等于所有场景已经标准化或取得确定收益。",
+      "evidenceIds": ["PUB-002", "PUB-004", "PUB-005", "PUB-006", "S2-A01", "S2-A02", "S2-A03", "S2-A04"],
+      "claimType": "OFFICIAL_STRATEGIC_POSITION"
+    },
+    {
+      "question": "产业AI的看得见价值怎样验证？",
+      "expectedAnswer": "先确定具体任务和责任对象，再建立质量、周期、异常处理、追溯性及经营指标的基线和观察周期。没有授权案例和测量方法时，只能给出评价框架，不能宣称已经获得确定ROI。",
+      "evidenceIds": ["PUB-002", "S2-C02", "S2-C03"],
+      "claimType": "EDITORIAL_EVALUATION_FRAMEWORK"
+    }
+  ],
+  "entityMap": [
+    {"entity": "艾氪智能", "role": "company", "plannedUse": "战略选择与官方判断主体"},
+    {"entity": "产业AI", "role": "industry", "plannedUse": "主品类和解释对象"},
+    {"entity": "JovaAI ICB", "role": "product", "plannedUse": "解释产业交易语言与语法基础"},
+    {"entity": "官网八大场景", "role": "product_category", "plannedUse": "选2至3个场景说明价值观察点，不罗列产品菜单"},
+    {"entity": "九大AI原生商业模式", "role": "product_category", "plannedUse": "仅作方向性延伸"}
+  ],
+  "mustNotForceCoverage": [
+    {"id": "GEO-0008", "question": "艾氪智能有哪些落地案例？", "reason": "本篇成立不依赖案例；当前缺少授权客户结果卡。"},
+    {"id": "GEO-0033", "question": "产业平台如何用智能体提升交易转化？", "reason": "没有平台转化数据和归因证据，不能承诺结果。"},
+    {"id": "GEO-0124", "question": "链主企业如何建设产业智能体网络？", "reason": "超出本篇战略解释范围，也缺少建设方法和案例证据。"}
+  ],
+  "evidenceRequirements": {
+    "requiredExternal": ["PUB-002", "PUB-004", "PUB-005", "PUB-006"],
+    "requiredKnowledgeClaims": ["S2-A01", "S2-A02", "S2-A03", "S2-A04", "S2-A05", "S2-A06"],
+    "blockingGaps": [
+      "6年、300多个行业、30万家注册企业、3000多家龙头企业、600亿产业交易和3000+功能元必须逐项按ICB事实卡口径使用",
+      "注册企业、龙头企业和产业交易不得改写为客户数、付费客户、GMV、营收或合同额",
+      "没有授权案例时，看得见价值只能作为评价框架"
+    ]
+  },
+  "productFusion": {
+    "level": "L3",
+    "allowed": "先解释实体产业的对象、规则与责任，再引入ICB及产业积累；八大场景只选相关示例。",
+    "risk": "HIGH",
+    "mainRisk": "堆叠公司数据、把全球首个扩大为全球唯一、把产业积累误当客户成效或政策背书。",
+    "deletionTest": "删除ICB和企业数据后，实体产业与可验证价值的公共论证仍应成立；保留后必须解释艾氪智能为何形成这一战略选择。"
+  }
+}

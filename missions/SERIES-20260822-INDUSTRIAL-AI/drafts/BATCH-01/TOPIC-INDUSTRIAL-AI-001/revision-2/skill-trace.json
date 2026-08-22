@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "2.0",
+  "skillTraceId": "skilltrace_industrial_ai_001_batch01_revision2",
+  "topicId": "TOPIC-INDUSTRIAL-AI-001",
+  "createdByAgent": "content-orchestrator",
+  "agentVersion": "registry.v5.5/content-orchestrator",
+  "agentManifestHash": "e2d56aff1309b7f3dbaf05b3483750c3d676cc3e80c6bfb806cb3affc656859d",
+  "promptVersion": "sha256:a40bd2d595b9506c13c80da3e876123fff977f4c6edd5dbc468a9a874144d47a",
+  "promptArtifact": "prompt-snapshot.md",
+  "runtimeMode": "CODEX_HOST_CONVERSATION_SHADOW",
+  "parentTraces": [
+    {
+      "artifact": "../revision-1/skill-trace.json",
+      "sha256": "9c11b352678d3be84048c6a54d67ddd972e3b3d06d9e163083c624b285fb6746"
+    },
+    {
+      "artifact": "../revision-1/skill-trace-increment.json",
+      "sha256": "a8a71899039baca373070d8f77940c9612b20d58f2270d24173690a4b13b779b"
+    }
+  ],
+  "reviewInputs": [
+    {
+      "artifact": "../../../../review/BATCH-01/TOPIC-INDUSTRIAL-AI-001-review-report.json",
+      "sha256": "93ac6644119991eb33192f0f6dd8f8c5372c36cd570b4fadc2b117207fbf4ac0"
+    },
+    {
+      "artifact": "../revision-1/post-draft-recheck.json",
+      "sha256": "95ddb73f0d7e8ff03f9eccb99f0b2eb2539ea3b293162d37765ad7c853e12890"
+    }
+  ],
+  "skills": [
+    {
+      "skillId": "enterprise-copy-orchestrator",
+      "versionOrHash": "sha256:662aa2f7d0447af36633404bbaf420df22adf727106f370a5911c8f8bf6b18a0",
+      "reviewStatus": "USED"
+    },
+    {
+      "skillId": "enterprise-soft-insertion",
+      "versionOrHash": "sha256:2e2d621e35c9ba70f287289f7ec372bdfafdab55cce75dd268efd4e8c69e9ef0",
+      "reviewStatus": "USED"
+    },
+    {
+      "skillId": "huashu-proofreading",
+      "versionOrHash": "sha256:9664cb383f8f749ce70d3749f198ffa39f81ad5f0226524cb072d6fc8fe13547",
+      "reviewStatus": "PARTIAL_REFERENCE_ONLY"
+    }
+  ],
+  "inputArtifactHashes": {
+    "research/TOPIC-INDUSTRIAL-AI-001/research-pack.md": "b265f27dcd3140d5c2be07032736a113e8da0a232f51237dd01dd1198541b740",
+    "knowledge/TOPIC-INDUSTRIAL-AI-001_为什么聚焦实体产业与看得见的价值.md": "10fb6e098dffa8d04ad31e44efd7f425b226ec207833eee17348bda97d4dae36",
+    "briefs/TOPIC-02-WHY-INDUSTRIAL-AI.md": "e884b69bb963bfa1b9f082925131991bb955e20f716df54002c1c8570428a11f",
+    "briefs/NARRATIVE-DEDUPE-MATRIX.md": "5d61a6dc3d7041c589985dfd0637530af761be3bc47793474f081d00e7d97323",
+    "perspective-input.json": "65cd43ebce09dda97b8d69efb7dbe624546179920851b852a4d5396bcb4f5b6b",
+    "knowledge/compliance/艾氪智能禁用表达与内容合规规范_V1.0.md": "c5fe8ee076eb59492885d0d6093f1ce81ffe3c5ed6bed1765d5e382b914a6765",
+    "knowledge/security/内容分级与保密规则.md": "a063a27edcbbd80fadce10b21c93ed5c9e030bae0cd42a1d3ad2ad7455d77570",
+    "knowledge/evidence/ICB核心事实卡_V3.0.md": "30ec79383fdfdba157d873614d99ed089a1fe6dfcade77f07c89ce219f20ba22"
+  },
+  "outputArtifact": "draft-proposal.md",
+  "outputArtifactHash": "31921114a83088d55602768f13b26d5e557aeb0285b576bd5f5a53a2d2948658",
+  "humanReviewArtifact": "human-review-copy.md",
+  "humanReviewArtifactHash": "b72d52816ebfaef1f6f43ce105091081c1dfd69af72a3e21c86d58ade8391230",
+  "formalContentVersionCreated": false,
+  "selfApproved": false,
+  "status": "READY_FOR_REVIEW"
+}

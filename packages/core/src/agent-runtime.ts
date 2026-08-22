@@ -2,6 +2,7 @@ import { randomUUID } from "node:crypto";
 
 import {
   AgentDefinitionSchema,
+  AgentTaskResultSchema,
   AgentTaskSchema,
   type AgentDefinition,
   type AgentTask,
@@ -10,7 +11,7 @@ import {
 } from "@risen/content-contracts";
 
 import { ConflictError } from "./errors.js";
-import type { LocalAgentStore } from "./local-agent-store.js";
+import type { AgentTaskStore } from "./local-agent-store.js";
 import { newId, nowIso } from "./utils.js";
 
 export interface TaskResult {
@@ -18,6 +19,23 @@ export interface TaskResult {
   status: Extract<AgentTaskStatus, "SUCCEEDED" | "FAILED" | "BLOCKED" | "CANCELLED" | "EXPIRED">;
   outputArtifactRefs: ArtifactRef[];
   error?: string;
+}
+
+export interface InternalAgentRuntime {
+  dispatch(task: AgentTask): TaskHandle;
+  await(taskId: string): Promise<TaskResult>;
+  pause(taskId: string): Promise<void>;
+  resume(taskId: string): Promise<void>;
+  cancel(taskId: string): Promise<void>;
+  retry(taskId: string, reason: string): Promise<void>;
+  getTask(taskId: string): AgentTask;
+  listTasks(): AgentTask[];
+  activate(taskIds: string[]): void;
+  recoverExpiredLeases(): void;
+  isLocallyExecuting(taskId: string): boolean;
+  restore(): Promise<void>;
+  flushPersistence(): Promise<void>;
+  close(): Promise<void>;
 }
 
 export interface TaskHandle {
@@ -72,6 +90,18 @@ export class AgentRegistry {
     return definition;
   }
 
+  assertRunnable(agentId: string): AgentDefinition {
+    const definition = this.assertActive(agentId);
+    if (definition.rolloutMode === "OFF") {
+      throw new ConflictError("AGENT_ROLLOUT_OFF", `Agent ${agentId} rollout mode is OFF`);
+    }
+    return definition;
+  }
+
+  isEnforcing(agentId: string): boolean {
+    return this.get(agentId).status === "ACTIVE" && this.get(agentId).rolloutMode === "ENFORCING";
+  }
+
   assertCanWriteContentVersion(agentId: string): void {
     if (!this.get(agentId).canWriteContentVersion) {
       throw new ConflictError(
@@ -90,9 +120,11 @@ export class AgentRegistry {
 
 export interface LocalAgentRuntimeOptions {
   maxConcurrency?: number;
+  maxConcurrencyPerOrganization?: number;
   leaseMs?: number;
   clock?: () => number;
-  store?: LocalAgentStore;
+  store?: AgentTaskStore;
+  autoExecute?: boolean;
 }
 
 /**
@@ -100,41 +132,60 @@ export interface LocalAgentRuntimeOptions {
  * Production workers can implement the same interface on top of BullMQ or
  * Temporal without changing task contracts.
  */
-export class LocalAgentRuntime {
+export class LocalAgentRuntime implements InternalAgentRuntime {
   private readonly tasks = new Map<string, AgentTask>();
   private readonly results = new Map<string, TaskResult>();
   private readonly handlers = new Map<string, AgentTaskHandler>();
   private readonly waiters = new Map<string, Array<(result: TaskResult) => void>>();
   private readonly abortControllers = new Map<string, AbortController>();
+  private readonly pausedAbortIds = new Set<string>();
   private readonly idempotency = new Map<string, string>();
   private running = 0;
   private draining = false;
   private readonly maxConcurrency: number;
+  private readonly maxConcurrencyPerOrganization: number;
+  private readonly runningByOrganization = new Map<string, number>();
   private readonly leaseMs: number;
   private readonly clock: () => number;
-  private readonly store: LocalAgentStore | undefined;
+  private readonly store: AgentTaskStore | undefined;
   private storageError?: Error;
   private persistenceQueue: Promise<void>[] = [];
+  private acceptingTasks = true;
+  private readonly autoExecute: boolean;
+  private readonly activatedTaskIds = new Set<string>();
 
   public constructor(private readonly registry: AgentRegistry, options: LocalAgentRuntimeOptions = {}) {
     this.maxConcurrency = options.maxConcurrency ?? 1;
+    this.maxConcurrencyPerOrganization = options.maxConcurrencyPerOrganization ?? 8;
     this.leaseMs = options.leaseMs ?? 120_000;
     this.clock = options.clock ?? (() => Date.now());
     this.store = options.store;
+    this.autoExecute = options.autoExecute ?? true;
   }
 
   registerHandler(agentId: string, handler: AgentTaskHandler): void {
-    this.registry.assertActive(agentId);
+    this.registry.assertRunnable(agentId);
     if (this.handlers.has(agentId)) throw new ConflictError("HANDLER_ALREADY_REGISTERED", agentId);
     this.handlers.set(agentId, handler);
   }
 
+  registeredHandlerIds(): string[] {
+    return [...this.handlers.keys()].sort();
+  }
+
+  hasHandler(agentId: string): boolean {
+    return this.handlers.has(agentId);
+  }
+
   dispatch(input: AgentTask): TaskHandle {
+    if (!this.acceptingTasks) {
+      throw new ConflictError("AGENT_RUNTIME_CLOSED", "Agent runtime is not accepting new tasks");
+    }
     if (this.storageError) {
       throw new ConflictError("AGENT_STORAGE_NOT_READY", this.storageError.message);
     }
     const task = AgentTaskSchema.parse(input);
-    this.registry.assertActive(task.recipientAgentId);
+    this.registry.assertRunnable(task.recipientAgentId);
     this.registry.assertCannotApprove(task.recipientAgentId);
     const existingTaskId = this.idempotency.get(task.idempotencyKey);
     if (existingTaskId) return this.handle(existingTaskId);
@@ -149,7 +200,7 @@ export class LocalAgentRuntime {
     this.tasks.set(task.taskId, stored);
     this.persist(stored, "TASK_QUEUED");
     this.idempotency.set(task.idempotencyKey, task.taskId);
-    void this.drain();
+    if (this.autoExecute) void this.drain();
     return this.handle(task.taskId);
   }
 
@@ -167,8 +218,15 @@ export class LocalAgentRuntime {
   async pause(taskId: string): Promise<void> {
     const task = this.getTask(taskId);
     if (this.isTerminal(task.status)) return;
+    if (task.status === "RUNNING") this.pausedAbortIds.add(taskId);
     this.abortControllers.get(taskId)?.abort();
-    this.tasks.set(taskId, { ...task, status: "WAITING_HUMAN", updatedAt: nowIso() });
+    this.tasks.set(taskId, {
+      ...task,
+      status: "WAITING_HUMAN",
+      attempt: task.status === "RUNNING" ? Math.max(0, task.attempt - 1) : task.attempt,
+      lease: undefined,
+      updatedAt: nowIso(),
+    });
     this.persist(this.tasks.get(taskId)!, "TASK_PAUSED");
   }
 
@@ -178,7 +236,7 @@ export class LocalAgentRuntime {
     const ready = task.dependencyTaskIds.every((id) => this.results.get(id)?.status === "SUCCEEDED");
     this.tasks.set(taskId, { ...task, status: ready ? "READY" : "WAITING_INPUT", updatedAt: nowIso() });
     this.persist(this.tasks.get(taskId)!, "TASK_RESUMED");
-    void this.drain();
+    if (this.autoExecute) void this.drain();
   }
 
   async cancel(taskId: string): Promise<void> {
@@ -203,7 +261,7 @@ export class LocalAgentRuntime {
       updatedAt: nowIso(),
     });
     this.persist(this.tasks.get(taskId)!, "TASK_RETRYING");
-    void this.drain();
+    if (this.autoExecute) void this.drain();
   }
 
   getTask(taskId: string): AgentTask {
@@ -214,6 +272,32 @@ export class LocalAgentRuntime {
 
   listTasks(): AgentTask[] {
     return [...this.tasks.values()];
+  }
+
+  activate(taskIds: string[]): void {
+    for (const taskId of taskIds) {
+      if (!this.tasks.has(taskId)) throw new ConflictError("TASK_NOT_FOUND", taskId);
+      this.activatedTaskIds.add(taskId);
+    }
+    void this.drain();
+  }
+
+  isLocallyExecuting(taskId: string): boolean {
+    return this.abortControllers.has(taskId);
+  }
+
+  recoverExpiredLeases(): void {
+    const now = this.clock();
+    for (const [taskId, task] of this.tasks) {
+      if (task.status !== "RUNNING" || this.abortControllers.has(taskId)) continue;
+      if (task.lease && Date.parse(task.lease.expiresAt) > now) continue;
+      const recovered: AgentTask = task.attempt < task.maxAttempts
+        ? { ...task, status: "READY", lease: undefined, error: "RECOVERED_EXPIRED_LEASE", updatedAt: nowIso() }
+        : { ...task, status: "BLOCKED", lease: undefined, error: "LEASE_RETRY_LIMIT_REACHED", updatedAt: nowIso() };
+      this.tasks.set(taskId, recovered);
+      this.persist(recovered, recovered.status === "READY" ? "TASK_LEASE_RECOVERED" : "TASK_LEASE_EXHAUSTED");
+    }
+    void this.drain();
   }
 
   storageHealth(): { ok: boolean; error?: string } {
@@ -227,6 +311,65 @@ export class LocalAgentRuntime {
     if (this.storageError) throw new ConflictError("AGENT_STORAGE_NOT_READY", this.storageError.message);
   }
 
+  async restore(): Promise<void> {
+    if (!this.store) return;
+    const [storedTasks, storedResults] = await Promise.all([
+      this.store.listTasks(),
+      this.store.listTaskResults(),
+    ]);
+    for (const value of storedResults) {
+      const result = AgentTaskResultSchema.parse(value);
+      for (const artifact of result.outputArtifactRefs) {
+        await this.store.getArtifact(artifact.artifactId);
+      }
+      this.results.set(result.taskId, {
+        taskId: result.taskId,
+        status: result.status,
+        outputArtifactRefs: result.outputArtifactRefs,
+        ...(result.error ? { error: result.error } : {}),
+      });
+    }
+    const now = this.clock();
+    for (const value of storedTasks) {
+      let task = AgentTaskSchema.parse(value);
+      const current = this.tasks.get(task.taskId);
+      if (current) continue;
+      this.idempotency.set(task.idempotencyKey, task.taskId);
+      if (this.results.has(task.taskId)) {
+        task = { ...task, status: this.results.get(task.taskId)!.status, lease: undefined };
+      } else if (task.status === "RUNNING") {
+        const expired = !task.lease || Date.parse(task.lease.expiresAt) <= now;
+        task = expired
+          ? task.attempt < task.maxAttempts
+            ? { ...task, status: "READY", lease: undefined, error: "RECOVERED_EXPIRED_LEASE", updatedAt: nowIso() }
+            : { ...task, status: "BLOCKED", lease: undefined, error: "LEASE_RETRY_LIMIT_REACHED", updatedAt: nowIso() }
+          : task;
+      } else if (task.status === "QUEUED") {
+        task = { ...task, status: "READY", updatedAt: nowIso() };
+      }
+      this.tasks.set(task.taskId, task);
+    }
+    for (const [taskId, task] of this.tasks) {
+      if (task.status !== "WAITING_INPUT") continue;
+      const dependencies = task.dependencyTaskIds.map((id) => this.results.get(id));
+      if (dependencies.every((result) => result?.status === "SUCCEEDED")) {
+        this.tasks.set(taskId, { ...task, status: "READY", updatedAt: nowIso() });
+      } else if (dependencies.some((result) => result && result.status !== "SUCCEEDED")) {
+        this.tasks.set(taskId, { ...task, status: "BLOCKED", error: "DEPENDENCY_FAILED", updatedAt: nowIso() });
+      }
+    }
+    if (this.autoExecute) void this.drain();
+  }
+
+  async close(): Promise<void> {
+    this.acceptingTasks = false;
+    const runningTaskIds = [...this.tasks.values()]
+      .filter((task) => task.status === "RUNNING")
+      .map((task) => task.taskId);
+    await Promise.allSettled(runningTaskIds.map((taskId) => this.await(taskId)));
+    await this.flushPersistence();
+  }
+
   private handle(taskId: string): TaskHandle {
     return { taskId, completion: this.await(taskId) };
   }
@@ -236,11 +379,19 @@ export class LocalAgentRuntime {
     this.draining = true;
     try {
       while (this.running < this.maxConcurrency) {
-        const next = [...this.tasks.values()].find((task) => task.status === "READY");
+        const next = [...this.tasks.values()].find((task) =>
+          task.status === "READY" &&
+          (this.autoExecute || this.activatedTaskIds.has(task.taskId)) &&
+          (this.runningByOrganization.get(task.organizationId) ?? 0) < this.maxConcurrencyPerOrganization
+        );
         if (!next) break;
         this.running += 1;
+        this.runningByOrganization.set(next.organizationId, (this.runningByOrganization.get(next.organizationId) ?? 0) + 1);
         void this.execute(next).finally(() => {
           this.running -= 1;
+          const remaining = Math.max(0, (this.runningByOrganization.get(next.organizationId) ?? 1) - 1);
+          if (remaining) this.runningByOrganization.set(next.organizationId, remaining);
+          else this.runningByOrganization.delete(next.organizationId);
           void this.drain();
         });
       }
@@ -273,23 +424,62 @@ export class LocalAgentRuntime {
     };
     this.tasks.set(task.taskId, running);
     this.persist(running, "TASK_RUNNING");
+    const heartbeat = setInterval(() => {
+      const current = this.tasks.get(task.taskId);
+      if (!current || current.status !== "RUNNING" || this.abortControllers.get(task.taskId) !== controller) return;
+      const heartbeatAt = new Date(this.clock()).toISOString();
+      const renewed: AgentTask = {
+        ...current,
+        updatedAt: nowIso(),
+        lease: {
+          ...current.lease!,
+          heartbeatAt,
+          expiresAt: new Date(this.clock() + this.leaseMs).toISOString(),
+        },
+      };
+      this.tasks.set(task.taskId, renewed);
+      this.persist(renewed, "TASK_HEARTBEAT");
+    }, Math.max(1_000, Math.min(30_000, Math.floor(this.leaseMs / 3))));
+    heartbeat.unref();
     try {
       const output = await handler(running, {
         signal: controller.signal,
         task: running,
         assertCanWriteContentVersion: () => this.registry.assertCanWriteContentVersion(running.recipientAgentId),
       });
+      if (this.results.has(task.taskId)) return;
       if (controller.signal.aborted) {
-        this.finish(running, { taskId: task.taskId, status: "CANCELLED", outputArtifactRefs: [] });
-      } else if (this.clock() > Date.parse(leaseExpiresAt)) {
+        if (this.pausedAbortIds.delete(task.taskId)) {
+          return;
+        }
+        if (this.tasks.get(task.taskId)?.status !== "WAITING_HUMAN") {
+          this.finish(running, { taskId: task.taskId, status: "CANCELLED", outputArtifactRefs: [] });
+        }
+      } else if (this.clock() > Date.parse(this.tasks.get(task.taskId)?.lease?.expiresAt ?? leaseExpiresAt)) {
         this.finish(running, { taskId: task.taskId, status: "EXPIRED", outputArtifactRefs: [], error: "LEASE_EXPIRED" });
       } else {
         this.finish(running, { taskId: task.taskId, status: "SUCCEEDED", outputArtifactRefs: output });
       }
     } catch (error) {
+      if (this.results.has(task.taskId) || (controller.signal.aborted && this.pausedAbortIds.delete(task.taskId))) {
+        return;
+      }
       const message = error instanceof Error ? error.message : String(error);
-      this.finish(running, { taskId: task.taskId, status: "FAILED", outputArtifactRefs: [], error: message });
+      if (running.attempt < running.maxAttempts && this.isRetryableFailure(error, message)) {
+        const retrying: AgentTask = {
+          ...running,
+          status: "READY",
+          lease: undefined,
+          error: `RETRYABLE:${message}`,
+          updatedAt: nowIso(),
+        };
+        this.tasks.set(task.taskId, retrying);
+        this.persist(retrying, "TASK_RETRY_SCHEDULED");
+      } else {
+        this.finish(running, { taskId: task.taskId, status: "FAILED", outputArtifactRefs: [], error: message });
+      }
     } finally {
+      clearInterval(heartbeat);
       this.abortControllers.delete(task.taskId);
     }
   }
@@ -304,11 +494,33 @@ export class LocalAgentRuntime {
       lease: undefined,
     });
     this.persist(this.tasks.get(task.taskId)!, `TASK_${result.status}`);
+    if (this.store) {
+      const operation = this.store.saveTaskResult(AgentTaskResultSchema.parse({
+        ...result,
+        completedAt: nowIso(),
+      })).catch((error: unknown) => {
+        this.storageError = error instanceof Error ? error : new Error(String(error));
+      });
+      this.persistenceQueue.push(operation.then(() => undefined));
+    }
     for (const [id, dependent] of this.tasks.entries()) {
       if (dependent.status !== "WAITING_INPUT") continue;
       if (!dependent.dependencyTaskIds.includes(task.taskId)) continue;
       if (dependent.dependencyTaskIds.every((dependencyId) => this.results.get(dependencyId)?.status === "SUCCEEDED")) {
-        this.tasks.set(id, { ...dependent, status: "READY", updatedAt: nowIso() });
+        const inherited = dependent.dependencyTaskIds.flatMap(
+          (dependencyId) => this.results.get(dependencyId)?.outputArtifactRefs ?? [],
+        );
+        const byId = new Map(
+          [...dependent.inputArtifactRefs, ...inherited].map((artifact) => [artifact.artifactId, artifact]),
+        );
+        const readyTask = {
+          ...dependent,
+          inputArtifactRefs: [...byId.values()],
+          status: "READY" as const,
+          updatedAt: nowIso(),
+        };
+        this.tasks.set(id, readyTask);
+        this.persist(readyTask, "TASK_DEPENDENCIES_READY");
       } else if (dependent.dependencyTaskIds.some((dependencyId) => {
         const dependency = this.results.get(dependencyId);
         return dependency && dependency.status !== "SUCCEEDED";
@@ -323,6 +535,20 @@ export class LocalAgentRuntime {
 
   private isTerminal(status: AgentTaskStatus): boolean {
     return ["SUCCEEDED", "FAILED", "BLOCKED", "CANCELLED", "EXPIRED"].includes(status);
+  }
+
+  private isRetryableFailure(error: unknown, message: string): boolean {
+    if (error instanceof Error && error.name === "ZodError") return true;
+    return [
+      "SCHEMA_VALIDATION_FAILED",
+      "HOST_RUNTIME_UNAVAILABLE",
+      "timed out",
+      "timeout",
+      "ECONNRESET",
+      "ETIMEDOUT",
+      "EAI_AGAIN",
+      "temporarily unavailable",
+    ].some((signal) => message.toLowerCase().includes(signal.toLowerCase()));
   }
 
   private persist(task: AgentTask, event: string): void {
@@ -344,7 +570,9 @@ export class LocalAgentRuntime {
   }
 }
 
-export function createDefaultAgentRegistry(): AgentRegistry {
+export function createDefaultAgentRegistry(input: {
+  rolloutModes?: Partial<Record<AgentDefinition["agentId"], AgentDefinition["rolloutMode"]>>;
+} = {}): AgentRegistry {
   const registry = new AgentRegistry();
   const base = {
     inputSchemas: ["artifact_ref"],
@@ -360,48 +588,97 @@ export function createDefaultAgentRegistry(): AgentRegistry {
     supportsPauseResume: true,
     requiresHumanGate: true,
     status: "ACTIVE" as const,
+    rolloutMode: "SHADOW" as const,
   };
   registry.register({
     ...base,
     agentId: "agt-004",
-    version: "5.3.0",
+    version: "5.5.0",
     role: "supervisor",
     description: "Content domain supervisor and immutable version writer",
     outputSchemas: ["content_version", "content_package"],
     allowedTools: ["host_model", "host_image", "public_read_research", "local_knowledge"],
     canWriteContentVersion: true,
     requiresHumanGate: true,
-    manifestHash: "agt-004-v5.3",
+    rolloutMode: input.rolloutModes?.["agt-004"] ?? "ENFORCING",
+    manifestHash: "agt-004-v5.5",
+  });
+  registry.register({
+    ...base,
+    agentId: "topic-radar",
+    version: "5.5.0",
+    role: "topic_radar",
+    description: "Local feed topic clustering, scoring and immutable topic snapshot proposal agent",
+    outputSchemas: ["topic_candidate", "topic_snapshot"],
+    allowedTools: ["local_feed_runs", "local_knowledge"],
+    manifestHash: "topic-radar-v5.5",
+    rolloutMode: input.rolloutModes?.["topic-radar"] ?? base.rolloutMode,
+  });
+  registry.register({
+    ...base,
+    agentId: "public-researcher",
+    version: "5.5.0",
+    role: "public_researcher",
+    description: "Public read-only research and Claim-Evidence proposal agent",
+    outputSchemas: ["research_pack", "evidence"],
+    allowedTools: ["public_read_research"],
+    manifestHash: "public-researcher-v5.5",
+    rolloutMode: input.rolloutModes?.["public-researcher"] ?? base.rolloutMode,
+  });
+  registry.register({
+    ...base,
+    agentId: "makabaka",
+    version: "5.5.0",
+    role: "enterprise_knowledge_matcher",
+    description: "Pre-draft knowledge snapshot, fusion plan and post-draft knowledge checker",
+    outputSchemas: ["knowledge_snapshot", "fusion_plan", "post_draft_check"],
+    allowedTools: ["local_knowledge"],
+    manifestHash: "makabaka-v5.5",
+    rolloutMode: input.rolloutModes?.makabaka ?? base.rolloutMode,
+  });
+  registry.register({
+    ...base,
+    agentId: "content-orchestrator",
+    version: "5.5.0",
+    role: "content_orchestrator",
+    description: "Perspective-bound content brief, outline and draft proposal agent",
+    outputSchemas: ["content_brief", "outline", "draft_proposal"],
+    allowedTools: ["host_model", "research_pack", "local_knowledge"],
+    manifestHash: "content-orchestrator-v5.5",
+    rolloutMode: input.rolloutModes?.["content-orchestrator"] ?? base.rolloutMode,
   });
   registry.register({
     ...base,
     agentId: "lilith",
-    version: "5.3.0",
+    version: "5.5.0",
     role: "reviewer",
     description: "Content, logic, AI-style, compliance and GEO/SEO issue reviewer",
     outputSchemas: ["review_report", "review_issue"],
     allowedTools: ["local_knowledge", "research_pack"],
-    manifestHash: "lilith-v5.3",
+    manifestHash: "lilith-v5.5",
+    rolloutMode: input.rolloutModes?.lilith ?? base.rolloutMode,
   });
   registry.register({
     ...base,
     agentId: "xiaodiandian",
-    version: "5.3.0",
+    version: "5.5.0",
     role: "geo_seo_optimizer",
     description: "Content-only SEO/GEO optimization proposal agent",
     outputSchemas: ["geo_seo_proposal", "technical_geo_recommendation"],
     allowedTools: ["local_knowledge", "public_read_research"],
-    manifestHash: "xiaodiandian-v5.3",
+    manifestHash: "xiaodiandian-v5.5",
+    rolloutMode: input.rolloutModes?.xiaodiandian ?? base.rolloutMode,
   });
   registry.register({
     ...base,
     agentId: "balala",
-    version: "5.3.0",
+    version: "5.5.0",
     role: "variant_agent",
     description: "Channel variant and asset brief agent",
     outputSchemas: ["channel_variant", "asset_brief"],
     allowedTools: ["host_model", "public_read_research"],
-    manifestHash: "balala-v5.3",
+    manifestHash: "balala-v5.5",
+    rolloutMode: input.rolloutModes?.balala ?? base.rolloutMode,
   });
   return registry;
 }

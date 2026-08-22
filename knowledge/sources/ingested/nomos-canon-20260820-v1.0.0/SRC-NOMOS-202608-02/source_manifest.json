@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "SRC-NOMOS-202608-02",
+  "originalFileName": "00_2026-08-20多智能体协同架构Nomos的研发理念与功能介绍-2026年08月20日-逐字录音.docx",
+  "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-02__00_2026-08-20多智能体协同架构Nomos的研发理念与功能介绍-2026年08月20日-逐字录音.docx",
+  "binaryHash": "20aa0a97364f0292db65ef86706d648e850f062fd3dd56263c8540985fda8c0a",
+  "extractedTextHash": "7f3a5dcfd5866a1c2e7429aa62c355e6c74717c96e6facab5ad0695e23968dbb",
+  "structuredExtractionHash": "3ca369282c8483c2c5cd6c533033a6afb325105d22505187c76f7e367d0cee7f",
+  "sourceType": "raw_transcript",
+  "sourceDate": "2026-08-20",
+  "authorityLevel": 5,
+  "confidentiality": "INTERNAL",
+  "repositoryVisibility": "PUBLIC",
+  "publicationDisposition": "INTERNAL_SOURCE",
+  "derivedFrom": [],
+  "supersedes": [],
+  "extractionCompleteness": "COMPLETE",
+  "extractionWarnings": [],
+  "extractionCounts": {
+    "paragraphs": 269,
+    "tables": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "hyperlinks": 0
+  },
+  "securityScan": {
+    "status": "PASSED",
+    "credentialLikeFindings": [],
+    "packageFindings": [],
+    "linksFollowed": false
+  },
+  "knowledgeActivation": "NOT_ACTIVATED"
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "canonVersion": "nomos-canon-20260820-v1.0.0",
+  "policy": "non-destructive",
+  "supersededKnowledge": [
+    {
+      "path": "knowledge/products/核心产品口径_两条产品线四大矩阵_V3.0.md",
+      "scope": "仅其中与Nomos新定位冲突或缺失的部分",
+      "status": "SUPERSEDED_FOR_NOMOS_ONLY"
+    },
+    {
+      "path": "knowledge/brand/企业品牌与官网叙事_202607.md",
+      "scope": "Nomos相关品牌叙事",
+      "status": "SUPERSEDED_FOR_NOMOS_ONLY"
+    }
+  ],
+  "replacement": "knowledge/products/Nomos制度智能体_正式内容口径_V2.0.md",
+  "originalFilesModified": false
+}

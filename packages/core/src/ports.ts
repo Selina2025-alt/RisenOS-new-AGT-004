@@ -37,7 +37,10 @@ export interface GenerateObjectRequest {
     | "revision_proposal"
     | "variant_package"
     | "content_coverage"
-    | "geo_seo_proposal";
+    | "geo_seo_proposal"
+    | "research_pack"
+    | "knowledge_match"
+    | "draft_proposal";
   systemPrompt: string;
   input: Record<string, unknown>;
   jsonSchema: Record<string, unknown>;
@@ -65,6 +68,11 @@ export interface HostModelPort {
 
 export interface ContextPort {
   resolveMissionContext(mission: ContentMission): Promise<Record<string, unknown>>;
+}
+
+export interface GovernanceGatePort {
+  assertMissionReady(mission: ContentMission): Promise<void>;
+  assertGeneratedContent(mission: ContentMission, content: string): Promise<void>;
 }
 
 export interface PolicyCheckResult {

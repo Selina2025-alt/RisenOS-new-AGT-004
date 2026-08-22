@@ -1,0 +1,54 @@
+{
+  "status": "WAITING_KNOWLEDGE",
+  "preflight": {
+    "id": "preflight_d41f7d67b9d740178c2b4c7018e548be",
+    "organizationId": "org_jovaai",
+    "createdBy": "user_enterprise",
+    "traceId": "trace_industrial_ai_20260822_005",
+    "createdAt": "2026-08-22T05:53:19.238Z",
+    "updatedAt": "2026-08-22T05:53:19.238Z",
+    "status": "READY",
+    "missionId": "MISSION-INDUSTRIAL-AI-005",
+    "missionClass": "ENTERPRISE_AI",
+    "enterpriseRelevance": "DIRECT",
+    "topicEntities": [
+      "传统企业",
+      "企业AI",
+      "产业AI",
+      "智能体治理",
+      "AI采用路径"
+    ],
+    "publicationScope": "EXTERNAL_DRAFT",
+    "riskLevel": "MEDIUM",
+    "requiresPublicResearch": true,
+    "requiresEnterpriseKnowledge": true,
+    "requiresNomosPolicy": false,
+    "requiresCasePolicy": false
+  },
+  "perspective": {
+    "id": "perspective_b26ee496e6ed47c4ba5f9b11997a957a",
+    "organizationId": "org_jovaai",
+    "createdBy": "user_enterprise",
+    "traceId": "trace_industrial_ai_20260822_005",
+    "createdAt": "2026-08-22T05:53:19.244Z",
+    "updatedAt": "2026-08-22T05:53:19.244Z",
+    "status": "CONFIRMED",
+    "missionId": "MISSION-INDUSTRIAL-AI-005",
+    "speaker": "艾氪智能官方",
+    "audience": [
+      "传统企业董事长",
+      "企业总经理",
+      "业务负责人",
+      "产业合作伙伴"
+    ],
+    "channel": "官方长文源稿，审核通过后生成微信公众号、短视频、小红书、X和LinkedIn变体",
+    "voicePositioning": "以艾氪智能第一方官方立场，真诚、专业、克制地解释产业AI进入真实业务的难点、价值、系统条件、组织变化和企业行动，不使用创始人个人经历，不夸大产品成熟度或客户结果",
+    "publicationScope": "EXTERNAL_DRAFT",
+    "narrativeLevel": "BUSINESS",
+    "brandNaming": "NOT_APPLICABLE",
+    "confirmationMode": "EXPLICIT_HUMAN",
+    "confirmedBy": "user_enterprise",
+    "confirmedAt": "2026-08-22T05:50:42.000Z",
+    "contentHash": "929604dfd091b6910f098d7a3da542e181bf8be207762c2b74b3617260719c1a"
+  }
+}

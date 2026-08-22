@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleId": "nomos-canon-20260820-v1.0.0",
+  "status": "ACTIVE",
+  "approvedBy": "user_enterprise",
+  "approvedAt": "2026-08-21T01:16:30.272609Z",
+  "sourceManifestHash": "a9fcb539a743b9813a3cb4779715f0034fe4b793f9da9d8ad1d140b9214bb1ac",
+  "claimCardsHash": "a7feb656f5050bba8e2459414b80c3b355b946932894efc2ba1dbbe91c8be954",
+  "activeClaimIds": [
+    "kc_nomos_inside_os_20260820",
+    "kc_nomos_product_axis_20260820",
+    "kc_nomos_origin_problem_20260820",
+    "kc_nomos_evolution_20260820",
+    "kc_nomos_human_api_20260820"
+  ],
+  "excludedClaimIds": [
+    "kc_nomos_greek_origin_20260820",
+    "kc_nomos_260t_20260820"
+  ],
+  "automaticActivation": false
+}

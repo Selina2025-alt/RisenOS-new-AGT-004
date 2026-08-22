@@ -2,7 +2,17 @@ import { z } from "zod";
 
 import { CommonFieldsSchema, IdSchema, IsoDateSchema } from "./schemas.js";
 
-export const AgentIdSchema = z.enum(["agt-004", "lilith", "xiaodiandian", "balala"]);
+export const AgentIdSchema = z.enum([
+  "agt-004",
+  "topic-radar",
+  "public-researcher",
+  "makabaka",
+  "content-orchestrator",
+  "lilith",
+  "xiaodiandian",
+  "balala",
+]);
+export const AgentRolloutModeSchema = z.enum(["OFF", "SHADOW", "ENFORCING"]);
 export const AgentTaskStatusSchema = z.enum([
   "QUEUED",
   "READY",
@@ -41,6 +51,7 @@ export const AgentDefinitionSchema = z.object({
   requiresHumanGate: z.boolean(),
   manifestHash: z.string().min(1),
   status: z.enum(["ACTIVE", "PAUSED", "RETIRED"]),
+  rolloutMode: AgentRolloutModeSchema.default("OFF"),
 });
 
 export const ArtifactRefSchema = z.object({
@@ -100,6 +111,14 @@ export const AgentTaskSchema = CommonFieldsSchema.extend({
   error: z.string().optional(),
 });
 
+export const AgentTaskResultSchema = z.object({
+  taskId: IdSchema,
+  status: z.enum(["SUCCEEDED", "FAILED", "BLOCKED", "CANCELLED", "EXPIRED"]),
+  outputArtifactRefs: z.array(ArtifactRefSchema),
+  error: z.string().optional(),
+  completedAt: IsoDateSchema,
+});
+
 export const InternalTaskEnvelopeSchema = z.object({
   protocolVersion: z.literal("1.0"),
   messageId: IdSchema,
@@ -133,12 +152,32 @@ export const ReviewIssueV53Schema = z.object({
     "logic",
     "compliance",
     "evidence",
+    "content_adequacy",
+    "perspective_consistency",
+    "enterprise_fusion",
+    "knowledge_snapshot",
+    "nomos_canon",
+    "product_architecture",
+    "claim_status",
+    "customer_anonymization",
+    "metric_evidence",
+    "confidentiality",
+    "skill_trace",
+    "channel_structure",
     "seo",
     "geo",
     "geo_insertion",
     "technical_geo",
   ]),
-  routeTo: z.enum(["agt-004", "xiaodiandian", "human"]),
+  routeTo: z.enum([
+    "agt-004",
+    "public-researcher",
+    "makabaka",
+    "content-orchestrator",
+    "xiaodiandian",
+    "balala",
+    "human",
+  ]),
   location: z.string().min(1),
   originalText: z.string(),
   problem: z.string().min(1),
@@ -263,12 +302,14 @@ export const PreferenceRuleSchema = CommonFieldsSchema.extend({
 });
 
 export type AgentId = z.infer<typeof AgentIdSchema>;
+export type AgentRolloutMode = z.infer<typeof AgentRolloutModeSchema>;
 export type AgentDefinition = z.infer<typeof AgentDefinitionSchema>;
 export type AgentTaskStatus = z.infer<typeof AgentTaskStatusSchema>;
 export type ArtifactRef = z.infer<typeof ArtifactRefSchema>;
 export type AgentLease = z.infer<typeof AgentLeaseSchema>;
 export type AgentCheckpoint = z.infer<typeof AgentCheckpointSchema>;
 export type AgentTask = z.infer<typeof AgentTaskSchema>;
+export type AgentTaskResult = z.infer<typeof AgentTaskResultSchema>;
 export type InternalTaskEnvelope = z.infer<typeof InternalTaskEnvelopeSchema>;
 export type GeoQuestionCoverage = z.infer<typeof GeoQuestionCoverageSchema>;
 export type ReviewIssueV53 = z.infer<typeof ReviewIssueV53Schema>;

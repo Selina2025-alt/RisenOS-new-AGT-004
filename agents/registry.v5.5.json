@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0.0",
+  "release": "5.5.1",
+  "agents": [
+    {
+      "agentId": "agt-004",
+      "displayName": "AGT-RSN-004",
+      "role": "supervisor",
+      "rolloutMode": "ENFORCING",
+      "canWriteContentVersion": true,
+      "canApprove": false,
+      "outputSchemas": ["content_version", "channel_variant", "content_package"]
+    },
+    {
+      "agentId": "topic-radar",
+      "displayName": "噜噜猫",
+      "role": "topic_radar",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["topic_candidate", "topic_snapshot"]
+    },
+    {
+      "agentId": "public-researcher",
+      "displayName": "依古比古",
+      "role": "public_researcher",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["research_pack", "evidence"]
+    },
+    {
+      "agentId": "makabaka",
+      "displayName": "玛卡巴卡",
+      "role": "enterprise_knowledge_matcher",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["knowledge_snapshot", "fusion_plan", "post_draft_check"]
+    },
+    {
+      "agentId": "content-orchestrator",
+      "displayName": "唔西迪西",
+      "role": "content_orchestrator",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["content_brief", "outline", "draft_proposal"]
+    },
+    {
+      "agentId": "lilith",
+      "displayName": "莉莉丝",
+      "role": "reviewer",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["review_report", "review_issue"]
+    },
+    {
+      "agentId": "xiaodiandian",
+      "displayName": "小点点",
+      "role": "geo_seo_optimizer",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["geo_seo_proposal", "technical_geo_recommendation"]
+    },
+    {
+      "agentId": "balala",
+      "displayName": "巴啦啦",
+      "role": "variant_agent",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["variant_proposal", "asset_brief"]
+    }
+  ],
+  "forbiddenForAll": [
+    "self_approval",
+    "platform_publish",
+    "platform_credentials",
+    "platform_monitoring",
+    "learning_proposal",
+    "automatic_knowledge_activation"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "agt-rsn-004",
-  "version": "0.1.0",
+  "version": "5.5.1",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@10.15.1",
@@ -12,7 +12,16 @@
     "test:coverage": "pnpm --filter @risen/content-core test:coverage",
     "eval:content": "pnpm dlx promptfoo@0.121.19 eval -c promptfooconfig.yaml",
     "lint:boundaries": "node scripts/check-platform-boundaries.mjs",
-    "migrate:legacy": "tsx scripts/migrate-ai-content-factory.ts"
+    "migrate:legacy": "tsx scripts/migrate-ai-content-factory.ts",
+    "replay:v55": "tsx scripts/replay-v55-missions.ts",
+    "team:run": "tsx scripts/team-runtime-cli.ts run",
+    "team:show": "tsx scripts/team-runtime-cli.ts show",
+    "team:pause": "tsx scripts/team-runtime-cli.ts pause",
+    "team:resume": "tsx scripts/team-runtime-cli.ts resume",
+    "team:cancel": "tsx scripts/team-runtime-cli.ts cancel",
+    "team:decide": "tsx scripts/team-runtime-cli.ts decide",
+    "team:health": "tsx scripts/team-runtime-cli.ts health",
+    "team:validate": "python tools/validate_agent_rollout.py && tsx scripts/team-runtime-cli.ts validate"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "conflict_nomos_naming_20260820",
+    "conflictId": "conflict_nomos_naming_20260820",
+    "organizationId": "org_jovaai",
+    "createdBy": "user_enterprise",
+    "traceId": "trace_nomos_20260820",
+    "createdAt": "2026-08-20T00:00:00.000Z",
+    "updatedAt": "2026-08-20T00:00:00.000Z",
+    "status": "ACCEPTED_EXCEPTION",
+    "claimCardIds": ["kc_nomos_product_axis_20260820", "kc_nomos_inside_os_20260820"],
+    "description": "Nomos与JovaAI Nomos的品牌组合用法尚未冻结为唯一官方全称。",
+    "resolution": "通用稿优先Nomos制度智能体；品牌或专业语境可用JovaAI Nomos，不得宣称唯一官方全称。",
+    "resolvedBy": "user_enterprise",
+    "resolvedAt": "2026-08-20T00:00:00.000Z"
+  }
+]

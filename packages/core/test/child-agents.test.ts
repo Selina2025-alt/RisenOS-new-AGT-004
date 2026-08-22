@@ -4,6 +4,9 @@ import {
   HostBackedBalalaVariantAgent,
   HostBackedLilithReviewAgent,
   HostBackedXiaodiandianAgent,
+  HostBackedMakabakaAgent,
+  HostBackedPublicResearchAgent,
+  HostBackedContentOrchestratorAgent,
 } from "../src/index.js";
 import type { GeoSeoRequest, ReviewRequest, ContentVersion } from "@risen/content-contracts";
 
@@ -78,6 +81,13 @@ const geoRequest: GeoSeoRequest = {
 };
 
 describe("host-backed child agents", () => {
+  it("routes research, knowledge matching and drafting through proposal-only schemas", async () => {
+    const schemaNames: string[] = [];
+    await new HostBackedPublicResearchAgent(host({}, schemaNames)).research({ query: { topic: "AI" }, traceId: "trace_test001", idempotencyKey: "research_key_001" });
+    await new HostBackedMakabakaAgent(host({}, schemaNames)).match({ context: { missionId: "mission_test001" }, traceId: "trace_test001", idempotencyKey: "knowledge_key_001" });
+    await new HostBackedContentOrchestratorAgent(host({}, schemaNames)).draft({ context: { perspectiveContractId: "perspective_001" }, traceId: "trace_test001", idempotencyKey: "draft_key_001" });
+    expect(schemaNames).toEqual(["research_pack", "knowledge_match", "draft_proposal"]);
+  });
   it("routes Lilith and Xiaodiandian through host-owned schemas", async () => {
     const schemaNames: string[] = [];
     const lilithOutput = {

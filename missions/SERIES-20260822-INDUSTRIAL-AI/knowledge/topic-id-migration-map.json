@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "reason": "Replace publication-order aliases with the immutable approved Topic IDs to prevent Claim/Evidence misbinding.",
+  "migratedAt": "2026-08-22T06:12:00.000Z",
+  "mapping": [
+    {
+      "oldTopicId": "SERIES-01",
+      "oldArtifact": "knowledge/01_AI演示好但落地难.md",
+      "topicId": "TOPIC-INDUSTRIAL-AI-002",
+      "artifact": "knowledge/TOPIC-INDUSTRIAL-AI-002_AI演示好但落地难.md"
+    },
+    {
+      "oldTopicId": "SERIES-02",
+      "oldArtifact": "knowledge/02_为什么聚焦实体产业与看得见的价值.md",
+      "topicId": "TOPIC-INDUSTRIAL-AI-001",
+      "artifact": "knowledge/TOPIC-INDUSTRIAL-AI-001_为什么聚焦实体产业与看得见的价值.md"
+    },
+    {
+      "oldTopicId": "SERIES-03",
+      "oldArtifact": "knowledge/03_从AI工具到产业级AgenticOS企业缺什么.md",
+      "topicId": "TOPIC-INDUSTRIAL-AI-003",
+      "artifact": "knowledge/TOPIC-INDUSTRIAL-AI-003_从AI工具到产业级AgenticOS企业缺什么.md"
+    },
+    {
+      "oldTopicId": "SERIES-04",
+      "oldArtifact": "knowledge/04_AI员工与硅基人才如何改变产业链.md",
+      "topicId": "TOPIC-INDUSTRIAL-AI-004",
+      "artifact": "knowledge/TOPIC-INDUSTRIAL-AI-004_AI员工与硅基人才如何改变产业链.md"
+    },
+    {
+      "oldTopicId": "SERIES-05",
+      "oldArtifact": "knowledge/05_未来两三年传统企业用好AI的关键事项.md",
+      "topicId": "TOPIC-INDUSTRIAL-AI-005",
+      "artifact": "knowledge/TOPIC-INDUSTRIAL-AI-005_未来两三年传统企业用好AI的关键事项.md"
+    }
+  ]
+}

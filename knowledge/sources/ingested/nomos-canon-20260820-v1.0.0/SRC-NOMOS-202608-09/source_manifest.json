@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "SRC-NOMOS-202608-09",
+  "originalFileName": "01_2026-08-19会议纯文字记录_原话整理校正版_v2.docx",
+  "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-09__01_2026-08-19会议纯文字记录_原话整理校正版_v2.docx",
+  "binaryHash": "4892fc9db5c8c9c7eac61073254cd6725bb86416a4a822a47330faf2ff0f7843",
+  "extractedTextHash": "c922513dcf47898f8f992bc0284069b7995e28316e2e554358ddf0b5e14dcffa",
+  "structuredExtractionHash": "d1cdc0dd1a82409d4bfd31f5725b85fd14a84a5c625e6be9de08c08f6ac0469c",
+  "sourceType": "corrected_transcript",
+  "sourceDate": "2026-08-19",
+  "authorityLevel": 5,
+  "confidentiality": "INTERNAL",
+  "repositoryVisibility": "PUBLIC",
+  "publicationDisposition": "INTERNAL_SOURCE",
+  "derivedFrom": [],
+  "supersedes": [],
+  "extractionCompleteness": "COMPLETE",
+  "extractionWarnings": [],
+  "extractionCounts": {
+    "paragraphs": 221,
+    "tables": 1,
+    "insertions": 0,
+    "deletions": 0,
+    "hyperlinks": 0
+  },
+  "securityScan": {
+    "status": "PASSED",
+    "credentialLikeFindings": [],
+    "packageFindings": [],
+    "linksFollowed": false
+  },
+  "knowledgeActivation": "NOT_ACTIVATED"
+}

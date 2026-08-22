@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "GEO-SEO-PREDRAFT-SERIES-01-V1",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "articleId": "ARTICLE-01",
+  "title": "AI演示好但落地难",
+  "createdByAgent": "xiaodiandian",
+  "status": "MISSION_ONLY_CANDIDATE",
+  "corpusWriteback": false,
+  "sourceRefs": {
+    "brief": "../../briefs/TOPIC-01-AI-DEMO-TO-REAL-BUSINESS.md",
+    "researchPack": "../../research/TOPIC-INDUSTRIAL-AI-002/research-pack.md",
+    "knowledgeSnapshot": "../../knowledge/knowledge-snapshot.json",
+    "knowledgeTopic": "../../knowledge/TOPIC-INDUSTRIAL-AI-002_AI演示好但落地难.md"
+  },
+  "primarySeoIntent": {
+    "seoId": "SEO-0165",
+    "keyword": "企业AI落地难点",
+    "intent": "问题诊断",
+    "reason": "与文章首要任务一致，可覆盖演示、试点到持续业务运行的结构性断层。"
+  },
+  "secondarySeoIntents": [
+    {
+      "seoId": "SEO-0164",
+      "keyword": "企业AI为什么进不了核心业务",
+      "use": "解释真实数据、上下文、权限、系统与责任条件"
+    },
+    {
+      "seoId": "SEO-0169",
+      "keyword": "企业AI项目如何选择场景",
+      "use": "用于结尾的诊断问题，不展开完整行动清单"
+    },
+    {
+      "seoId": "SEO-0170",
+      "keyword": "AI试点很多但没有ROI",
+      "use": "只解释价值验证缺口，不预设ROI或失败比例"
+    },
+    {
+      "seoId": "SEO-0214",
+      "keyword": "企业AI项目POC怎么做",
+      "use": "只承接POC与持续运行的区别，不写实施教程"
+    }
+  ],
+  "geoPlan": {
+    "primaryQuestion": {
+      "geoId": "GEO-0175",
+      "question": "企业怎样避免AI项目变成炫酷Demo？",
+      "status": "FORMAL_CORPUS_REFERENCE"
+    },
+    "relatedQuestions": [
+      {
+        "geoId": "GEO-0168",
+        "question": "通用Agent为什么难以直接进入企业核心业务？"
+      },
+      {
+        "geoId": "GEO-0027",
+        "question": "智能体团队失败的常见原因有哪些？"
+      },
+      {
+        "geoId": "GEO-0024",
+        "question": "企业从哪个高价值场景开始最合适？"
+      }
+    ]
+  },
+  "expectedAnswerBlocks": [
+    {
+      "question": "为什么AI在演示中表现很好，进入真实业务后却容易失效？",
+      "expectedAnswer": "演示通常验证有限输入下的一段能力，真实业务还要同时处理业务问题定义、可信数据和企业知识、既有系统、权限、异常、协作、审计和人工责任。模型表现是必要条件，但不能单独证明业务可以持续运行。",
+      "evidenceIds": ["PUB-001", "PUB-002", "PUB-003", "PUB-004"],
+      "claimType": "CROSS_SOURCE_SYNTHESIS"
+    },
+    {
+      "question": "企业怎样判断AI已经从演示走向业务可用？",
+      "expectedAnswer": "应检查任务能否在真实边界中持续完成，数据与知识是否可追溯，权限和人工确认是否明确，异常能否停止或接管，以及质量、周期、成本和风险是否有可复核的验证方法。",
+      "evidenceIds": ["PUB-002", "PUB-003", "PUB-004", "S1-A02"],
+      "claimType": "OFFICIAL_EVALUATION_FRAMEWORK"
+    }
+  ],
+  "entityMap": [
+    {"entity": "企业AI", "role": "industry", "plannedUse": "主问题和判断对象"},
+    {"entity": "智能体团队", "role": "product_category", "plannedUse": "系统条件的企业知识解释"},
+    {"entity": "艾氪智能", "role": "company", "plannedUse": "公共问题论证完成后的官方判断主体"},
+    {"entity": "JovaOS", "role": "product", "plannedUse": "只作承载关系轻桥接，不展开架构"}
+  ],
+  "mustNotForceCoverage": [
+    {"id": "GEO-0008", "question": "艾氪智能有哪些落地案例？", "reason": "没有授权CaseEvidenceCard，不能为证明落地能力强行写案例。"},
+    {"id": "GEO-0038", "question": "JovaOS能解决哪些问题？", "reason": "本篇解释行业断层，不承担JovaOS能力清单。"},
+    {"id": "GEO-0026", "question": "如何评估智能体团队的ROI？", "reason": "可讨论验证方法，但没有授权结果与归因材料，不能完整回答ROI。"}
+  ],
+  "evidenceRequirements": {
+    "requiredExternal": ["PUB-001", "PUB-002", "PUB-003", "PUB-004"],
+    "requiredKnowledgeClaims": ["S1-A01", "S1-A02", "S1-A03"],
+    "conditionalClaims": [],
+    "excludedClaims": [
+      {
+        "claimId": "S1-A04",
+        "reason": "Supervisor 对 TOPIC-INDUSTRIAL-AI-002 的 Nomos 分配为 DO_NOT_INSERT。"
+      },
+      {
+        "claimId": "S1-A05",
+        "reason": "Supervisor 对 TOPIC-INDUSTRIAL-AI-002 的 Nomos 分配为 DO_NOT_INSERT。"
+      }
+    ],
+    "blockingGaps": [
+      "任何客户结果需要CaseEvidenceCard和公开授权",
+      "任何JovaOS生产能力需要产品状态证据；本篇不得植入Nomos",
+      "不得使用未经追溯的AI项目失败率"
+    ]
+  },
+  "productFusion": {
+    "level": "L3_LIGHT",
+    "allowed": "智能体团队正式定义、艾氪智能对系统性落地条件的判断，以及JovaOS承载定位。",
+    "risk": "HIGH",
+    "mainRisk": "过早植入产品会把问题诊断改写成销售稿，外部通用原则也可能被误写成艾氪独有能力；Supervisor已明确本篇不得植入Nomos。",
+    "deletionTest": "删除企业段后行业论证仍须成立；保留企业段时只能增加对系统路径与证据边界的解释。"
+  }
+}

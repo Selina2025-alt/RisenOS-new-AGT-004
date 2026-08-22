@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "GEO-SEO-PREDRAFT-SERIES-03-V1",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "articleId": "ARTICLE-03",
+  "title": "从AI工具到产业级Agentic OS企业缺什么",
+  "createdByAgent": "xiaodiandian",
+  "status": "MISSION_ONLY_CANDIDATE",
+  "corpusWriteback": false,
+  "sourceRefs": {
+    "brief": "../../briefs/TOPIC-03-FROM-TOOLS-TO-AGENTIC-OS.md",
+    "researchPack": "../../research/TOPIC-INDUSTRIAL-AI-003/research-pack.md",
+    "knowledgeSnapshot": "../../knowledge/knowledge-snapshot.json",
+    "knowledgeTopic": "../../knowledge/TOPIC-INDUSTRIAL-AI-003_从AI工具到产业级AgenticOS企业缺什么.md"
+  },
+  "primarySeoIntent": {
+    "seoId": "SEO-0025",
+    "keyword": "产业级 Agentic OS",
+    "intent": "了解/比较/采购",
+    "reason": "本篇承担系列的类别定义和系统解释任务，主意图与文章首要问题一致。"
+  },
+  "secondarySeoIntents": [
+    {"seoId": "SEO-0026", "keyword": "企业 Agentic OS", "use": "覆盖企业应用语境，不与产业级表达混作同一正式命名"},
+    {"seoId": "SEO-0029", "keyword": "智能体操作系统", "use": "作为通俗品类解释，不替代正式产品名"},
+    {"seoId": "SEO-0031", "keyword": "多智能体协同平台", "use": "解释协作系统条件，不写成单纯平台清单"},
+    {"seoId": "SEO-0203", "keyword": "Agentic OS和Agent Builder区别", "use": "用于澄清系统与单点构建工具的边界"},
+    {"seoId": "SEO-0204", "keyword": "企业AI中台和Agentic OS区别", "use": "只做概念边界，避免贬低既有系统"}
+  ],
+  "geoPlan": {
+    "primaryQuestion": {
+      "geoId": "GEO-0172",
+      "question": "产业级Agentic OS需要具备哪些能力？",
+      "status": "FORMAL_CORPUS_REFERENCE"
+    },
+    "relatedQuestions": [
+      {"geoId": "GEO-0036", "question": "什么是企业AIOS？"},
+      {"geoId": "GEO-0037", "question": "企业为什么需要自己的AIOS平台？"},
+      {"geoId": "GEO-0020", "question": "多智能体系统和智能体团队有什么区别？"},
+      {"geoId": "GEO-0164", "question": "Agentic OS会成为企业软件的新入口吗？"}
+    ]
+  },
+  "expectedAnswerBlocks": [
+    {
+      "question": "什么是产业级Agentic OS？",
+      "expectedAnswer": "在本文语境中，产业级Agentic OS是把模型、企业上下文与知识、工具、任务状态、智能体协作、身份权限、安全围栏、审计和人工确认组织为可持续运行系统的类别表达。它不是已经形成唯一国际标准定义的术语，也不是把现有企业软件简单换名。",
+      "evidenceIds": ["PUB-004", "PUB-007", "PUB-008", "PUB-009", "PUB-010", "PUB-011", "S3-A01"],
+      "claimType": "CATEGORY_DEFINITION_WITH_BOUNDARY"
+    },
+    {
+      "question": "企业从AI工具走向Agentic OS，中间缺什么？",
+      "expectedAnswer": "缺少的是让智能体在真实任务中长期协作的系统条件，包括任务和角色、知识与上下文、工具执行、权限、协作与互操作、状态与追溯、风险控制和人工最终决定。具体清单是跨来源工程归纳，不应冒充统一标准。",
+      "evidenceIds": ["PUB-004", "PUB-007", "PUB-009", "PUB-010", "PUB-011", "S3-A03"],
+      "claimType": "CROSS_SOURCE_SYNTHESIS"
+    },
+    {
+      "question": "JovaAI如何回应这些系统条件？",
+      "expectedAnswer": "可按当前知识快照解释两条产品线、四大矩阵、五级架构、ICB产业语义和Nomos制度智能体的关系，但每项能力必须标明生产、演示、测试、POC或规划状态；架构设计不能等同于全部模块已经上线。",
+      "evidenceIds": ["S3-A02", "S3-A03", "S3-A04", "S3-A05", "S3-A06"],
+      "claimType": "PRODUCT_ARCHITECTURE_BOUNDARY"
+    }
+  ],
+  "entityMap": [
+    {"entity": "产业级Agentic OS", "role": "industry_category", "plannedUse": "主定义；明确为艾氪智能类别表达而非统一标准"},
+    {"entity": "JovaOS", "role": "product", "plannedUse": "五级架构承载对象，须绑定版本和状态"},
+    {"entity": "JovaAI ICB", "role": "product", "plannedUse": "放在产业交易语义位置"},
+    {"entity": "智能体团队", "role": "product_category", "plannedUse": "从系统角色角度解释"},
+    {"entity": "Nomos", "role": "agent", "plannedUse": "放在制度与责任处，保持产品轴与技术轴分离"},
+    {"entity": "A2A", "role": "protocol", "plannedUse": "只证明互操作方向，不等同完整OS"}
+  ],
+  "mustNotForceCoverage": [
+    {"id": "GEO-0043", "question": "JovaOS如何管理智能体权限和审计？", "reason": "缺少当前产品权限与审计公开技术说明，不能由架构或外部标准反推已实现能力。"},
+    {"id": "GEO-0046", "question": "JovaOS如何连接旧系统和外部工具？", "reason": "缺少接口、连接方式和实际产品状态证据。"},
+    {"id": "GEO-0047", "question": "JovaOS的部署、运维和扩展方式是什么？", "reason": "缺少部署与运维规格，不得猜测私有化、SLA或扩展能力。"},
+    {"id": "GEO-0038", "question": "JovaOS能解决哪些问题？", "reason": "只可回答架构意图，不能扩写为未经证实的能力全集。"}
+  ],
+  "evidenceRequirements": {
+    "requiredExternal": ["PUB-004", "PUB-007", "PUB-008", "PUB-009", "PUB-010", "PUB-011"],
+    "requiredKnowledgeClaims": ["S3-A01", "S3-A02", "S3-A03", "S3-A04", "S3-A05", "S3-A06"],
+    "blockingGaps": [
+      "五级架构各模块的生产、演示、测试、POC与规划状态矩阵",
+      "JovaAI、JovaOS、JovaAI OS与HyperSpace OS正式品牌和技术命名表",
+      "权限、身份、记忆、审计、协议和人工确认的公开产品说明",
+      "不得使用全球唯一、行业统一标准或全面上线表述"
+    ]
+  },
+  "productFusion": {
+    "level": "L3_STRONG",
+    "allowed": "本篇可集中解释JovaOS架构、ICB、智能体团队和Nomos，但必须逐项绑定知识状态。",
+    "risk": "CRITICAL",
+    "mainRisk": "把类别定义写成国际标准，把外部协议或政策清单反推为产品能力，把Nomos写成第六层，或混淆JovaAI/JovaOS品牌层级。",
+    "deletionTest": "删除产品段后，企业为什么需要系统级能力仍应成立；产品段必须回答JovaAI如何对应这些问题，而不是堆架构名词。"
+  }
+}

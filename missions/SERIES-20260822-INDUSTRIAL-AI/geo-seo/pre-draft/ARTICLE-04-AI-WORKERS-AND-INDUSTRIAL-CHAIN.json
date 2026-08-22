@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "GEO-SEO-PREDRAFT-SERIES-04-V1",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "articleId": "ARTICLE-04",
+  "title": "AI员工与硅基人才如何改变产业链",
+  "createdByAgent": "xiaodiandian",
+  "status": "MISSION_ONLY_CANDIDATE",
+  "corpusWriteback": false,
+  "sourceRefs": {
+    "brief": "../../briefs/TOPIC-04-AI-WORKERS-AND-INDUSTRIAL-CHAIN.md",
+    "researchPack": "../../research/TOPIC-INDUSTRIAL-AI-004/research-pack.md",
+    "knowledgeSnapshot": "../../knowledge/knowledge-snapshot.json",
+    "knowledgeTopic": "../../knowledge/TOPIC-INDUSTRIAL-AI-004_AI员工与硅基人才如何改变产业链.md"
+  },
+  "primarySeoIntent": {
+    "seoId": "SEO-0036",
+    "keyword": "企业AI员工",
+    "intent": "了解/比较/采购",
+    "reason": "覆盖文章主要流行概念，同时允许在正文中主动解释其角色比喻和法律边界。"
+  },
+  "secondarySeoIntents": [
+    {"seoId": "SEO-0034", "keyword": "AI数字员工", "use": "作为同义搜索语义，不与正式产品名混用"},
+    {"seoId": "SEO-0032", "keyword": "企业智能体团队", "use": "从单一数字角色过渡到团队协作"},
+    {"seoId": "SEO-0168", "keyword": "企业如何组建智能体团队", "use": "只解释角色、任务、权限和人工边界，不写完整实施方案"},
+    {"seoId": "SEO-0266", "keyword": "人机协同审批", "use": "支撑高风险动作的人类确认边界"}
+  ],
+  "geoPlan": {
+    "primaryQuestion": {
+      "geoId": "TASK-GEO-SERIES-04-001",
+      "question": "什么是企业AI员工？",
+      "status": "MISSION_ONLY_CANDIDATE",
+      "globalActivation": false
+    },
+    "relatedQuestions": [
+      {"geoId": "GEO-0011", "question": "什么是专业型单智能体员工？"},
+      {"geoId": "GEO-0014", "question": "AI员工需要设置哪些岗位职责和KPI？"},
+      {"geoId": "GEO-0016", "question": "专业智能体如何与人类员工协同？"},
+      {"geoId": "TASK-GEO-SERIES-04-002", "question": "“硅基人才”在企业内容中应该如何理解？", "status": "MISSION_ONLY_CANDIDATE", "globalActivation": false}
+    ]
+  },
+  "expectedAnswerBlocks": [
+    {
+      "question": "什么是企业AI员工？",
+      "expectedAnswer": "企业AI员工是企业服务语境中的角色表达：智能体在明确任务、知识、工具和有限权限下执行工作，人负责目标、授权、监督、异常处理和最终决定。它不是法律意义上的员工、劳动者或独立责任主体。",
+      "evidenceIds": ["PUB-004", "PUB-012", "S4-A01", "S4-A02", "S4-A03", "S4-C01"],
+      "claimType": "ROLE_METAPHOR_WITH_LEGAL_BOUNDARY"
+    },
+    {
+      "question": "AI员工会直接替代人吗？",
+      "expectedAnswer": "现有研究更支持任务和职业结构发生转型，而不是所有岗位被整体替代。企业更需要重新划分任务、授权、判断和责任，并说明不同研究的样本、语境与预测属性。",
+      "evidenceIds": ["PUB-012", "PUB-013", "PUB-014", "PUB-015"],
+      "claimType": "EVIDENCE_BOUND_TREND"
+    },
+    {
+      "question": "硅基人才会怎样影响产业链协作？",
+      "expectedAnswer": "可能的变化是，多个受控数字角色围绕任务交换上下文并协同行动，人类更多承担目标、授权、例外处理和最终责任。但这是前瞻判断，不是已经普遍发生的产业事实，也不能推导智能体具有独立法律责任。",
+      "evidenceIds": ["PUB-004", "S4-A03", "S4-A05", "S4-C03", "S4-C05"],
+      "claimType": "FORWARD_LOOKING_VIEW"
+    }
+  ],
+  "entityMap": [
+    {"entity": "AI员工", "role": "product_expression", "plannedUse": "主概念；首次出现即说明不是法律身份"},
+    {"entity": "硅基人才", "role": "candidate_concept", "plannedUse": "仅用‘本文暂且称为’的解释性比喻"},
+    {"entity": "专业智能体", "role": "product_category", "plannedUse": "只用获确认岗位白名单举例"},
+    {"entity": "智能体团队", "role": "product_category", "plannedUse": "解释多个角色的任务、权限与协作"},
+    {"entity": "Nomos", "role": "agent", "plannedUse": "只有制度与协作问题需要时才出现，不作默认植入"},
+    {"entity": "Wtree", "role": "product", "plannedUse": "如出现仅按官网公开描述，不定义为成熟硅基人才市场"}
+  ],
+  "mustNotForceCoverage": [
+    {"id": "GEO-0094", "question": "采购智能体能否替代采购员决策？", "reason": "过于具体且易引出未经核验的采购能力与法律责任结论。"},
+    {"id": "GEO-0013", "question": "企业应该先部署哪一种AI员工？", "reason": "本篇是概念和组织变化解释，不是选型建议。"},
+    {"id": "GEO-0018", "question": "企业部署单智能体后如何扩展成智能体团队？", "reason": "完整实施路径属于第5篇或产品方案，不在本篇展开。"},
+    {"id": "TASK-GEO-EMPLOYMENT-LAW", "question": "AI员工在劳动法上承担什么责任？", "reason": "缺少中国劳动、数据和责任主体法律审阅，不得自行回答。"}
+  ],
+  "evidenceRequirements": {
+    "requiredExternal": ["PUB-004", "PUB-012", "PUB-013", "PUB-014", "PUB-015"],
+    "requiredKnowledgeClaims": ["S4-A01", "S4-A02", "S4-A03", "S4-A04", "S4-A05", "S4-A06"],
+    "blockingGaps": [
+      "AI员工和硅基人才正式定义、外宣层级与法律免责声明",
+      "具体智能体的产品状态和能力证据",
+      "实体产业跨企业协同案例与授权",
+      "就业和产业链判断必须保留研究样本、语境和不确定性"
+    ]
+  },
+  "productFusion": {
+    "level": "L2_TO_L3",
+    "allowed": "使用智能体岗位白名单、智能体团队定义和制度协同解释角色关系；产品仅在直接回答制度问题时出现。",
+    "risk": "CRITICAL",
+    "mainRisk": "把传播比喻写成法律身份、把未来预测写成普遍事实、把官网名单写成全部能力上线，或把Wtree描述为成熟全球市场。",
+    "deletionTest": "删除产品名后，人机角色和产业协作的论证仍须成立；保留产品名时只能增加角色、权限或制度边界信息。"
+  }
+}

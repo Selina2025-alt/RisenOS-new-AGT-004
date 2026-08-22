@@ -1,0 +1,85 @@
+{
+  "status": "READY",
+  "preflight": {
+    "id": "preflight_11404bca6b6f494fac6b0b123ff74466",
+    "organizationId": "org_jovaai",
+    "createdBy": "user_enterprise",
+    "traceId": "trace_e2e_nomos_20260821_001",
+    "createdAt": "2026-08-21T09:44:52.792Z",
+    "updatedAt": "2026-08-21T09:44:52.792Z",
+    "status": "READY",
+    "missionId": "MISSION-E2E-NOMOS-001",
+    "missionClass": "NOMOS_CONTENT",
+    "enterpriseRelevance": "DIRECT",
+    "topicEntities": [
+      "艾氪智能",
+      "JovaAI OS",
+      "Nomos制度智能体",
+      "企业多智能体协同"
+    ],
+    "publicationScope": "EXTERNAL_DRAFT",
+    "riskLevel": "HIGH",
+    "requiresPublicResearch": true,
+    "requiresEnterpriseKnowledge": true,
+    "requiresNomosPolicy": true,
+    "requiresCasePolicy": false
+  },
+  "perspective": {
+    "id": "perspective_62e13aed13424604b63d1cbd2fe6c89b",
+    "organizationId": "org_jovaai",
+    "createdBy": "user_enterprise",
+    "traceId": "trace_e2e_nomos_20260821_001",
+    "createdAt": "2026-08-21T09:44:52.799Z",
+    "updatedAt": "2026-08-21T09:44:52.799Z",
+    "status": "CONFIRMED",
+    "missionId": "MISSION-E2E-NOMOS-001",
+    "speaker": "艾氪智能官方",
+    "audience": [
+      "企业董事长",
+      "企业总经理",
+      "CIO",
+      "企业AI转型负责人"
+    ],
+    "channel": "微信公众号首发，审核后生成短视频、小红书、X和LinkedIn变体",
+    "voicePositioning": "以艾氪智能第一方官方立场真诚、专业地解释企业多智能体协同为什么需要制度、角色、权限、边界和追溯，不夸大产品成熟度",
+    "publicationScope": "EXTERNAL_DRAFT",
+    "narrativeLevel": "BUSINESS",
+    "brandNaming": "NOMOS",
+    "confirmationMode": "EXPLICIT_HUMAN",
+    "confirmedBy": "user_enterprise",
+    "confirmedAt": "2026-08-21T01:35:00.000Z",
+    "contentHash": "12a69cccc82b540a009bf308a1a88b5d0ef19827d986ce7c05069b6f4fa5bf07"
+  },
+  "knowledgeSnapshot": {
+    "id": "knowledge-snapshot_63dd054695e341f8ada98739b625083e",
+    "organizationId": "org_jovaai",
+    "createdBy": "user_enterprise",
+    "traceId": "trace_e2e_nomos_20260821_001",
+    "createdAt": "2026-08-21T09:44:52.814Z",
+    "updatedAt": "2026-08-21T09:44:52.814Z",
+    "status": "ACTIVE",
+    "snapshotId": "ks_83c37c30cb1542dd81dbca1b9909b71a",
+    "missionId": "MISSION-E2E-NOMOS-001",
+    "canonVersion": "nomos-canon-20260820-v1.0.0",
+    "sourceHashes": [
+      "20aa0a97364f0292db65ef86706d648e850f062fd3dd56263c8540985fda8c0a",
+      "41665f0c18782c7a961ba1cc729b3aeebe89d392447d6bdedec84cc9d3cefd30",
+      "a0714497f0ea43ad13b155d82b1e8b3b7c31b3b0d9220507456dbe6f095c8bc2",
+      "b60d4bdf7d8e25b25cb17c059e944e15f0b701d08e7e8442911248d4ba881bb1",
+      "eb3984f9cc312f58325937620dcfcb1cc9b8e6ee072f5076b62ea1e3766dc674"
+    ],
+    "claimCardIds": [
+      "kc_nomos_inside_os_20260820",
+      "kc_nomos_product_axis_20260820",
+      "kc_nomos_origin_problem_20260820",
+      "kc_nomos_evolution_20260820"
+    ],
+    "conflictIds": [
+      "conflict_nomos_naming_20260820"
+    ],
+    "audienceLayer": "BUSINESS",
+    "publicationScope": "EXTERNAL_DRAFT",
+    "knowledgePolicyVersion": "knowledge-policy-v5.5.0",
+    "contentHash": "92f41b316524df224f438ba42e5535cac9ef7c1516a4fb431f726448fa93c794"
+  }
+}

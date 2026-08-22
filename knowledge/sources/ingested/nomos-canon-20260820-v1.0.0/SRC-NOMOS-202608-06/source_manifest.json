@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "SRC-NOMOS-202608-06",
+  "originalFileName": "02_2026-08-20_JovaAI_Nomos_信息（简单版）.docx",
+  "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-06__02_2026-08-20_JovaAI_Nomos_信息（简单版）.docx",
+  "binaryHash": "eb3984f9cc312f58325937620dcfcb1cc9b8e6ee072f5076b62ea1e3766dc674",
+  "extractedTextHash": "b3272c36227fe6a5139a1e091aee7d675141860d09f77008e9cd5702b6262004",
+  "structuredExtractionHash": "a21884ff5ed314d088a2060df9bd5e65591ac5450a8ab3ff257b96dedf95d6a7",
+  "sourceType": "summary",
+  "sourceDate": "2026-08-20",
+  "authorityLevel": 4,
+  "confidentiality": "INTERNAL",
+  "repositoryVisibility": "PUBLIC",
+  "publicationDisposition": "INTERNAL_SOURCE",
+  "derivedFrom": [],
+  "supersedes": [],
+  "extractionCompleteness": "COMPLETE",
+  "extractionWarnings": [],
+  "extractionCounts": {
+    "paragraphs": 154,
+    "tables": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "hyperlinks": 0
+  },
+  "securityScan": {
+    "status": "PASSED",
+    "credentialLikeFindings": [],
+    "packageFindings": [],
+    "linksFollowed": false
+  },
+  "knowledgeActivation": "NOT_ACTIVATED"
+}

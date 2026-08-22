@@ -8,10 +8,17 @@ import {
   OpaHttpPolicyPort,
   loadHostRuntime,
 } from "@risen/content-adapters";
-import { ContentService, RuleBasedPolicyPort } from "@risen/content-core";
-import { PostgresContentRepository } from "@risen/content-database";
+import {
+  ContentService,
+  createV55TeamRuntime,
+  RuleBasedPolicyPort,
+  V55StoreGovernanceGate,
+} from "@risen/content-core";
+import { PostgresAgentTaskStore, PostgresContentRepository, PostgresV55GovernanceStore } from "@risen/content-database";
 import { metrics } from "@opentelemetry/api";
 import { Queue, Worker } from "bullmq";
+import { readFile } from "node:fs/promises";
+import { join, resolve } from "node:path";
 
 export async function startWorker(
   telemetry: { shutdown(): Promise<void> } | undefined,
@@ -66,6 +73,22 @@ export async function startWorker(
   if (production && !process.env.OPA_POLICY_URL) {
     throw new Error("Production worker requires OPA_POLICY_URL");
   }
+  if (production && !process.env.AGT004_REPOSITORY_ROOT) {
+    throw new Error("Production worker requires AGT004_REPOSITORY_ROOT for the versioned knowledge canon");
+  }
+  const governance = new PostgresV55GovernanceStore(databaseUrl);
+  await governance.load();
+  const repositoryRoot = resolve(process.env.AGT004_REPOSITORY_ROOT ?? process.cwd());
+  const canonRoot = join(repositoryRoot, "knowledge", "canon", "nomos-canon-20260820-v1.0.0");
+  const [claimCardsText, conflictsText, sourceManifestText] = await Promise.all([
+    readFile(join(canonRoot, "claim-cards.json"), "utf8"),
+    readFile(join(canonRoot, "conflicts.json"), "utf8"),
+    readFile(join(repositoryRoot, "knowledge", "sources", "ingested", "nomos-canon-20260820-v1.0.0", "source_manifest.json"), "utf8"),
+  ]);
+  await governance.seedKnowledge(JSON.parse(claimCardsText), JSON.parse(conflictsText));
+  const activeNomosSourceHashes = (
+    JSON.parse(sourceManifestText).sources as Array<{ binaryHash: string }>
+  ).map((source) => source.binaryHash);
   const policy = process.env.OPA_POLICY_URL
     ? new OpaHttpPolicyPort({ url: process.env.OPA_POLICY_URL })
     : new RuleBasedPolicyPort();
@@ -76,6 +99,16 @@ export async function startWorker(
     policy,
     review: new LocalReviewPort(),
     handoff,
+    governanceGate: new V55StoreGovernanceGate(governance, activeNomosSourceHashes),
+  });
+  const teamRuntime = await createV55TeamRuntime({
+    workspaceRoot: repositoryRoot,
+    hostModel,
+    store: new PostgresAgentTaskStore(databaseUrl),
+    maxConcurrency: Number.parseInt(process.env.TEAM_AGENT_CONCURRENCY ?? "2", 10),
+    maxConcurrencyPerOrganization: Number.parseInt(process.env.TEAM_AGENT_ORG_CONCURRENCY ?? "8", 10),
+    autoExecute: false,
+    ...(process.env.PYTHON_EXECUTABLE ? { pythonExecutable: process.env.PYTHON_EXECUTABLE } : {}),
   });
   const connection = redisConnection(redisUrl);
   const worker = new Worker<{
@@ -93,12 +126,58 @@ export async function startWorker(
       concurrency: Number.parseInt(process.env.WORKER_CONCURRENCY ?? "4", 10),
     },
   );
+  const teamWorker = new Worker<{ runId: string; organizationId: string }>(
+    "agt-rsn-004-team-runs",
+    async (job) => {
+      const storedRun = await teamRuntime.store.getTeamRun(job.data.runId);
+      if (!storedRun || storedRun.organizationId !== job.data.organizationId) throw new Error("TEAM_RUN_NOT_FOUND");
+      const missionLock = await teamRuntime.store.acquireMissionLock(storedRun.missionId, storedRun.organizationId);
+      let lockFailure: Error | undefined;
+      const heartbeat = setInterval(() => {
+        void missionLock.renew().catch((error: unknown) => {
+          lockFailure = error instanceof Error ? error : new Error(String(error));
+        });
+      }, 60_000);
+      try {
+        await teamRuntime.localRuntime.restore();
+        let run = await teamRuntime.coordinator.get(job.data.runId, job.data.organizationId);
+        for (let round = 0; round < 8; round += 1) {
+          if (lockFailure) throw lockFailure;
+          await missionLock.renew();
+          teamRuntime.localRuntime.recoverExpiredLeases();
+          const pending = run.taskIds
+            .map((taskId) => teamRuntime.localRuntime.getTask(taskId))
+            .filter((task) => !["SUCCEEDED", "FAILED", "BLOCKED", "CANCELLED", "EXPIRED", "WAITING_HUMAN"].includes(task.status));
+          if (!pending.length) break;
+          const activeForeignLease = pending.find((task) =>
+            task.status === "RUNNING" && !teamRuntime.localRuntime.isLocallyExecuting(task.taskId)
+          );
+          if (activeForeignLease) throw new Error(`TEAM_TASK_LEASE_ACTIVE:${activeForeignLease.taskId}`);
+          teamRuntime.localRuntime.activate(pending.map((task) => task.taskId));
+          await Promise.all(pending.map((task) => teamRuntime.localRuntime.await(task.taskId)));
+          if (lockFailure) throw lockFailure;
+          run = await teamRuntime.coordinator.get(job.data.runId, job.data.organizationId);
+        }
+        return run;
+      } finally {
+        clearInterval(heartbeat);
+        await missionLock.release();
+      }
+    },
+    {
+      connection,
+      concurrency: Number.parseInt(process.env.TEAM_RUN_CONCURRENCY ?? "2", 10),
+    },
+  );
 
   worker.on("completed", (job) => {
     console.log(`Content run completed: ${job.id}`);
   });
   worker.on("failed", (job, error) => {
     console.error(`Content run failed: ${job?.id ?? "unknown"}`, error);
+  });
+  teamWorker.on("failed", (job, error) => {
+    console.error(`Team run failed: ${job?.id ?? "unknown"}`, error);
   });
 
   const queueMonitor = new Queue("agt-rsn-004-content-runs", { connection });
@@ -174,7 +253,10 @@ export async function startWorker(
     if (dispatchTimer) clearInterval(dispatchTimer);
     clearInterval(queueMetricsTimer);
     await worker.close();
+    await teamWorker.close();
     await queueMonitor.close();
+    await governance.close();
+    await teamRuntime.close();
     await repository.close();
     await telemetry?.shutdown();
   };

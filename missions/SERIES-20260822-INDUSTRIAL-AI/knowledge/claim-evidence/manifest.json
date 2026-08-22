@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifactType": "JOINT_CLAIM_EVIDENCE_PLAN_SET",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "createdByAgent": "makabaka",
+  "createdAt": "2026-08-22",
+  "status": "PROPOSED_NOT_ACTIVATED",
+  "formalKnowledgeModified": false,
+  "snapshotReview": {
+    "snapshotPath": "../knowledge-snapshot.json",
+    "expectedSha256": "8d59f8f0234dc3eedf6a2d24af3f73e77f35ad45c44cad236542504aabfad540",
+    "actualSha256": "8d59f8f0234dc3eedf6a2d24af3f73e77f35ad45c44cad236542504aabfad540",
+    "hashMatch": true,
+    "migrationMapPath": "../topic-id-migration-map.json",
+    "migrationMapSha256": "99626d5b32f5cbe01f992eef5bee42bdd9ce18a28c9d57d5209687f4f5cdd617",
+    "topicMappingStatus": "PASS",
+    "semanticOverlayRequired": true,
+    "semanticOverlayReason": "The immutable snapshot retains a historical optional Nomos fusion hint for TOPIC-INDUSTRIAL-AI-002; this plan forbids that insertion under the newly confirmed series boundary."
+  },
+  "researchManifest": {
+    "path": "../../research/research-manifest.json",
+    "sha256": "fd8dee2d8a7a14732ea2303896d5e8a2bd84ae22518c4a602abd280309449d5a",
+    "allTopicPackHashesVerified": true
+  },
+  "nomosRouting": {
+    "TOPIC-INDUSTRIAL-AI-001": "FORBIDDEN_INSERTION",
+    "TOPIC-INDUSTRIAL-AI-002": "FORBIDDEN_INSERTION",
+    "TOPIC-INDUSTRIAL-AI-003": "PRIMARY_TOPIC_ONLY",
+    "TOPIC-INDUSTRIAL-AI-004": "OPTIONAL_SINGLE_SENTENCE",
+    "TOPIC-INDUSTRIAL-AI-005": "FORBIDDEN_INSERTION"
+  },
+  "taskScopedDefinitions": {
+    "topicId": "TOPIC-INDUSTRIAL-AI-004",
+    "terms": ["AI员工", "硅基人才"],
+    "status": "TASK_SCOPED_EDITORIAL_DEFINITION",
+    "promoteToFormalKnowledge": false
+  },
+  "plans": [
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-001",
+      "path": "TOPIC-INDUSTRIAL-AI-001.md",
+      "nomosPolicy": "FORBIDDEN_INSERTION"
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-002",
+      "path": "TOPIC-INDUSTRIAL-AI-002.md",
+      "nomosPolicy": "FORBIDDEN_INSERTION"
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-003",
+      "path": "TOPIC-INDUSTRIAL-AI-003.md",
+      "nomosPolicy": "PRIMARY_TOPIC_ONLY"
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-004",
+      "path": "TOPIC-INDUSTRIAL-AI-004.md",
+      "nomosPolicy": "OPTIONAL_SINGLE_SENTENCE"
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-005",
+      "path": "TOPIC-INDUSTRIAL-AI-005.md",
+      "nomosPolicy": "FORBIDDEN_INSERTION"
+    }
+  ],
+  "externalEvidenceBoundary": "External EXT claims support public context only and never prove JovaAI product capability, customer outcome, deployment status, endorsement or market leadership.",
+  "nextGate": "DRAFT_PROPOSAL_WITH_CLAIM_BINDINGS"
+}

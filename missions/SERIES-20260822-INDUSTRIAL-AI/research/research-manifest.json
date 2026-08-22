@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "traceId": "trace_industrial_ai_series_20260822",
+  "createdByAgent": "public-researcher",
+  "agentName": "依古比古",
+  "retrievedAt": "2026-08-22T14:02:31+08:00",
+  "createdAt": "2026-08-22T14:02:31+08:00",
+  "validatedAt": "2026-08-22T14:08:52+08:00",
+  "researchMode": "PUBLIC_READ_ONLY",
+  "querySafety": "PUBLIC_TERMS_ONLY",
+  "topicPacks": [
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-001",
+      "path": "TOPIC-INDUSTRIAL-AI-001/research-pack.md",
+      "contentHash": "b265f27dcd3140d5c2be07032736a113e8da0a232f51237dd01dd1198541b740",
+      "sourceIds": ["PUB-005", "PUB-006", "PUB-004", "PUB-002"],
+      "status": "READY_FOR_KNOWLEDGE_MATCHING"
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-002",
+      "path": "TOPIC-INDUSTRIAL-AI-002/research-pack.md",
+      "contentHash": "ac24fa10b39cdef99eebe2fcbba63eccc0c0e00fc3a06db2d7f0f860bf9ad4c0",
+      "sourceIds": ["PUB-001", "PUB-002", "PUB-003", "PUB-004"],
+      "status": "READY_FOR_KNOWLEDGE_MATCHING"
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-003",
+      "path": "TOPIC-INDUSTRIAL-AI-003/research-pack.md",
+      "contentHash": "32b720fd76eb4a0b29832fc9c80f97777ab964ae0c5802c75db096723f43a6ed",
+      "sourceIds": ["PUB-007", "PUB-008", "PUB-009", "PUB-010", "PUB-011", "PUB-004"],
+      "status": "READY_FOR_KNOWLEDGE_MATCHING"
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-004",
+      "path": "TOPIC-INDUSTRIAL-AI-004/research-pack.md",
+      "contentHash": "577ce572d923fc800aa34660fe28af90d2e5379751c71f75abec3685b047967d",
+      "sourceIds": ["PUB-012", "PUB-013", "PUB-014", "PUB-015", "PUB-004"],
+      "status": "READY_FOR_KNOWLEDGE_MATCHING"
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-005",
+      "path": "TOPIC-INDUSTRIAL-AI-005/research-pack.md",
+      "contentHash": "97bad763fbe41d79cef4dae4d318e8e337ba68f340b613734846c320b580063e",
+      "sourceIds": ["PUB-001", "PUB-002", "PUB-003", "PUB-016", "PUB-014", "PUB-005"],
+      "status": "READY_FOR_KNOWLEDGE_MATCHING"
+    }
+  ],
+  "uniqueSourceCount": 16,
+  "researchStatus": "READY",
+  "productEvidenceBoundary": "Public research supports industry context and general methods only. It does not prove JovaAI product capabilities or customer outcomes.",
+  "humanReviewRequired": true
+}

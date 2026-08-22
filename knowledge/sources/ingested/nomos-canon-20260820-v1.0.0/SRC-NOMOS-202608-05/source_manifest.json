@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "SRC-NOMOS-202608-05",
+  "originalFileName": "【总】JovaAI_Nomos_信息母稿_研发起源_架构_机制_场景与对外口径_V2.0_整合0819与0820.docx",
+  "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-05__【总】JovaAI_Nomos_信息母稿_研发起源_架构_机制_场景与对外口径_V2.0_整合0819与0820.docx",
+  "binaryHash": "a0714497f0ea43ad13b155d82b1e8b3b7c31b3b0d9220507456dbe6f095c8bc2",
+  "extractedTextHash": "36e0671a01164a1f8b5fbbe30c672b4e45d19cc40fe1809d6d479527f8c1cabf",
+  "structuredExtractionHash": "485188c0501b578c983f0fa7e9618cc75f5816a7d6ddd1a9aabbd2e0a02a5b60",
+  "sourceType": "curated_master",
+  "sourceDate": "2026-08-20",
+  "authorityLevel": 3,
+  "confidentiality": "INTERNAL",
+  "repositoryVisibility": "PUBLIC",
+  "publicationDisposition": "INTERNAL_SOURCE",
+  "derivedFrom": [],
+  "supersedes": [],
+  "extractionCompleteness": "COMPLETE",
+  "extractionWarnings": [],
+  "extractionCounts": {
+    "paragraphs": 509,
+    "tables": 18,
+    "insertions": 0,
+    "deletions": 0,
+    "hyperlinks": 0
+  },
+  "securityScan": {
+    "status": "PASSED",
+    "credentialLikeFindings": [],
+    "packageFindings": [],
+    "linksFollowed": false
+  },
+  "knowledgeActivation": "NOT_ACTIVATED"
+}

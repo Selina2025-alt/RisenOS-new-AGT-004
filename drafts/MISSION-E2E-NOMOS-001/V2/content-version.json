@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "5.5.1",
+  "id": "content-version-mission-e2e-nomos-001-v2",
+  "assetId": "content-asset-mission-e2e-nomos-001",
+  "missionId": "MISSION-E2E-NOMOS-001",
+  "organizationId": "org_jovaai",
+  "createdBy": "agt-004",
+  "traceId": "trace_e2e_nomos_20260821_001",
+  "versionNumber": 2,
+  "parentVersionId": "content-version-mission-e2e-nomos-001-v1",
+  "title": "多智能体越自主，企业越需要制度",
+  "bodyFormat": "markdown",
+  "bodyRef": "drafts/MISSION-E2E-NOMOS-001/V2/wechat-draft.md",
+  "contentHash": "6aad3fc28fe008b78f2bd53d1ad9e5cf4ec66c5bbed85d1b15f5fb38c15eed9e",
+  "changeReason": "Rebuilt after gate creation; narrows product-state wording and adds explicit Claim-Evidence bindings after Makabaka post-draft review",
+  "changedBy": "agt-004",
+  "generationContextSnapshot": {
+    "perspectiveHash": "12a69cccc82b540a009bf308a1a88b5d0ef19827d986ce7c05069b6f4fa5bf07",
+    "knowledgeSnapshotHash": "92f41b316524df224f438ba42e5535cac9ef7c1516a4fb431f726448fa93c794",
+    "researchPackRef": "missions/MISSION-E2E-NOMOS-001/research-pack.md"
+  },
+  "claimBindingSnapshot": {
+    "enterprise": {
+      "ENT-001": ["knowledge/compliance/艾氪智能禁用表达与内容合规规范_V1.0.md"],
+      "ENT-002": ["knowledge/products/核心产品口径_两条产品线四大矩阵_V3.0.md"],
+      "ENT-003": ["knowledge/products/核心产品口径_两条产品线四大矩阵_V3.0.md"]
+    },
+    "nomos": {
+      "kc_nomos_inside_os_20260820": ["SRC-NOMOS-202608-01", "SRC-NOMOS-202608-04", "SRC-NOMOS-202608-05"],
+      "kc_nomos_product_axis_20260820": ["SRC-NOMOS-202608-05", "SRC-NOMOS-202608-06"],
+      "kc_nomos_origin_problem_20260820": ["SRC-NOMOS-202608-01", "SRC-NOMOS-202608-02", "SRC-NOMOS-202608-04"],
+      "kc_nomos_evolution_20260820": ["SRC-NOMOS-202608-01", "SRC-NOMOS-202608-04"]
+    },
+    "external": {
+      "EXT-001": ["RP-001", "RP-002"],
+      "EXT-002": ["RP-004"],
+      "EXT-003": ["RP-005", "RP-007"],
+      "EXT-004": ["RP-006", "RP-007", "RP-010"],
+      "EXT-005": ["RP-009"],
+      "EXT-006": ["RP-003", "RP-011"]
+    }
+  },
+  "status": "REVIEW_REQUIRED",
+  "createdAt": "2026-08-21T09:56:48.809Z",
+  "updatedAt": "2026-08-21T09:56:48.809Z"
+}

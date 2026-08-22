@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "5.5.1",
+  "id": "MISSION-INDUSTRIAL-AI-002",
+  "organizationId": "org_jovaai",
+  "createdBy": "user_enterprise",
+  "traceId": "trace_industrial_ai_20260822_002",
+  "title": "AI为什么总在演示里很好用，一进业务就失灵？",
+  "objective": "解释产业AI从演示走向真实业务时面临的知识、权限、责任、异常和持续运行问题",
+  "status": "WAITING_PREFLIGHT",
+  "createdAt": "2026-08-22T05:50:42.000Z",
+  "updatedAt": "2026-08-22T05:50:42.000Z"
+}

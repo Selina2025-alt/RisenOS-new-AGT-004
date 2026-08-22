@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0.0",
+  "topicId": "TOPIC-INDUSTRIAL-AI-003",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "sourceQuestionNumber": 3,
+  "title": "从AI工具到产业级Agentic OS，企业中间缺了什么？",
+  "angle": "解释企业从单点AI工具走向企业知识、角色、权限、工具、记忆和多智能体协同系统的必要条件。",
+  "speaker": "艾氪智能官方",
+  "approvalStatus": "APPROVED_FOR_RESEARCH",
+  "snapshotHash": "1f7232e0f731a57814b56af4c8eed9c3abe94bd4828b5c3cbf0b707281c30546",
+  "approvedBy": "user_enterprise",
+  "approvedAt": "2026-08-22T05:50:42.000Z"
+}

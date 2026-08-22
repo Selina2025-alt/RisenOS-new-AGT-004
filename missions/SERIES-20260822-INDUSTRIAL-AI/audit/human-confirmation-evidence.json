@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "evidenceType": "HUMAN_CONFIRMATION_EVIDENCE",
+  "speakerDecision": "艾氪智能官方",
+  "decision": "APPROVED_FOR_SHADOW_RESEARCH_AND_DRAFT_PROPOSAL",
+  "decidedBy": "user_enterprise",
+  "recordedBy": "agt-004",
+  "decidedAt": "2026-08-22T05:50:42.000Z",
+  "artifactId": "perspective-input-series-20260822-industrial-ai",
+  "artifactHash": "65cd43ebce09dda97b8d69efb7dbe624546179920851b852a4d5396bcb4f5b6b",
+  "formalHumanGateDecisionCreated": false,
+  "formalBindingStatus": "PENDING_HOST_RUNTIME_MODULE",
+  "notes": "The user explicitly selected the official JovaAI company perspective and then approved starting the onboarding test. This evidence permits SHADOW research and DraftProposal generation only; it does not satisfy SOURCE_DRAFT_APPROVED or FINAL_VARIANTS_APPROVED."
+}

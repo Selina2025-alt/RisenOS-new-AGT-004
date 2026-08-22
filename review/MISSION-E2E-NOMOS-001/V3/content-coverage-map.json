@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "5.5.1",
+  "coverageMapId": "coverage-map-mission-e2e-nomos-001-v3",
+  "missionId": "MISSION-E2E-NOMOS-001",
+  "sourceContentVersionId": "content-version-mission-e2e-nomos-001-v3",
+  "sourceReviewIssueId": "LIL-V3-003",
+  "organizationId": "org_jovaai",
+  "createdBy": "xiaodiandian",
+  "traceId": "trace_e2e_nomos_20260821_001",
+  "createdAt": "2026-08-21T12:30:00.000Z",
+  "seoItems": [
+    {
+      "seoId": "SEO-0188",
+      "keyword": "企业智能体权限怎么设置",
+      "role": "PRIMARY",
+      "searchIntent": "问题诊断",
+      "funnelStage": "认知-考虑",
+      "targetRole": "对应业务负责人；董事长/总经理",
+      "contentForm": "深度文章/FAQ/短视频",
+      "coverage": "PARTIAL",
+      "coveredBy": [
+        "导语",
+        "行动判断：先回答四个问题"
+      ],
+      "optimization": "在行动判断首段自然出现一次完整问题，随后沿用角色、权限、异常停止和追溯四项回答，不重复堆词。"
+    },
+    {
+      "seoId": "SEO-0189",
+      "keyword": "AI自动执行出错谁负责",
+      "role": "SECONDARY",
+      "searchIntent": "问题诊断",
+      "funnelStage": "认知-考虑",
+      "coverage": "FULL",
+      "coveredBy": [
+        "导语",
+        "研发演进：从编排走向制度",
+        "行动判断：先回答四个问题"
+      ],
+      "optimization": "保留现有责任、人工确认和追溯表达，不建议重复插入完整关键词。"
+    },
+    {
+      "seoId": "SEO-0190",
+      "keyword": "Agent如何做权限隔离",
+      "role": "SECONDARY",
+      "searchIntent": "问题诊断",
+      "funnelStage": "认知-考虑",
+      "coverage": "FULL",
+      "coveredBy": [
+        "能力扩张：治理压力随之上升",
+        "协同难题：单体约束不够用",
+        "行动判断：先回答四个问题"
+      ],
+      "optimization": "正文已经以资源、数据、工具和动作边界解释权限隔离，不增加同义重复。"
+    },
+    {
+      "seoId": "SEO-0191",
+      "keyword": "企业AI如何审计和回滚",
+      "role": "SECONDARY",
+      "searchIntent": "问题诊断",
+      "funnelStage": "认知-考虑",
+      "coverage": "PARTIAL",
+      "coveredBy": [
+        "能力扩张：治理压力随之上升",
+        "行动判断：先回答四个问题"
+      ],
+      "optimization": "仅继承审计、暂停和人工接管语义；当前证据不足以把回滚写成产品能力。"
+    },
+    {
+      "seoId": "SEO-0031",
+      "keyword": "多智能体协同平台",
+      "role": "SECONDARY",
+      "searchIntent": "了解/比较/采购",
+      "funnelStage": "考虑-决策",
+      "coverage": "PARTIAL",
+      "coveredBy": [
+        "产品落位：Nomos在何处"
+      ],
+      "optimization": "只保留多智能体协同的品类语义，不机械插入“平台”，不把Nomos文章改写为JovaOS产品页。"
+    }
+  ],
+  "geoQuestions": [
+    {
+      "geoId": "GEO-0023",
+      "question": "智能体团队如何在权限边界内分工？",
+      "coveredBy": [
+        "导语",
+        "协同难题：单体约束不够用",
+        "研发演进：从编排走向制度",
+        "行动判断：先回答四个问题"
+      ],
+      "coverage": "FULL",
+      "evidenceIds": [
+        "RP-002",
+        "RP-005",
+        "RP-006",
+        "RP-007",
+        "SRC-NOMOS-202608-01",
+        "SRC-NOMOS-202608-04"
+      ]
+    },
+    {
+      "geoId": "GEO-0027",
+      "question": "智能体团队失败的常见原因有哪些？",
+      "coveredBy": [
+        "协同难题：单体约束不够用",
+        "研发演进：从编排走向制度",
+        "行动判断：先回答四个问题"
+      ],
+      "coverage": "FULL",
+      "evidenceIds": [
+        "RP-004",
+        "RP-009",
+        "RP-010",
+        "SRC-NOMOS-202608-01",
+        "SRC-NOMOS-202608-02",
+        "SRC-NOMOS-202608-04"
+      ]
+    },
+    {
+      "geoId": "GEO-0021",
+      "question": "企业为什么不能只部署一个通用Agent？",
+      "coveredBy": [
+        "能力扩张：治理压力随之上升",
+        "协同难题：单体约束不够用"
+      ],
+      "coverage": "PARTIAL",
+      "evidenceIds": [
+        "RP-004",
+        "RP-006",
+        "RP-010"
+      ]
+    }
+  ],
+  "taskLevelCandidates": [
+    {
+      "candidateId": "TASK-GEO-NOMOS-001",
+      "question": "企业多智能体协同为什么需要制度智能体？",
+      "activationScope": "MISSION_ONLY",
+      "globalActivation": false,
+      "coverage": "FULL",
+      "coveredBy": [
+        "全文主线"
+      ]
+    },
+    {
+      "candidateId": "TASK-GEO-NOMOS-002",
+      "question": "什么是Nomos制度智能体？",
+      "activationScope": "MISSION_ONLY",
+      "globalActivation": false,
+      "coverage": "PARTIAL",
+      "coveredBy": [
+        "产品落位：Nomos在何处"
+      ],
+      "proposedAction": "采用提案中的直接定义后可变为FULL；仍不得写入全局词库。"
+    }
+  ],
+  "entityMentions": [
+    {
+      "entity": "企业多智能体协同",
+      "firstMention": "导语",
+      "role": "industry"
+    },
+    {
+      "entity": "Nomos",
+      "firstMention": "研发演进：从编排走向制度",
+      "role": "agent"
+    },
+    {
+      "entity": "JovaAI OS",
+      "firstMention": "产品落位：Nomos在何处",
+      "role": "product"
+    },
+    {
+      "entity": "艾氪智能",
+      "firstMention": "产品落位：Nomos在何处",
+      "role": "company"
+    }
+  ],
+  "excludedMappings": [
+    {
+      "geoId": "GEO-0043",
+      "question": "JovaOS如何管理智能体权限和审计？",
+      "reason": "品牌和产品关系不足：正文只确认Nomos制度协同机制位于JovaAI OS内部，不能由此推导JovaOS已经具备词库所列全部权限与审计能力。"
+    }
+  ],
+  "coverageConclusion": "当前正文已完整覆盖GEO-0023与GEO-0027，部分覆盖GEO-0021；主SEO意图SEO-0188需要一次自然显性化。两条Nomos问题仅作为本任务候选，不激活全局规则。"
+}

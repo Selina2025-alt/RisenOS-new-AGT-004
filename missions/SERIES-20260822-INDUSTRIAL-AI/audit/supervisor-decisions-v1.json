@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0.0",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "createdBy": "agt-004",
+  "createdAt": "2026-08-22T06:15:00.000Z",
+  "rolloutMode": "SHADOW",
+  "canonicalTopicMapping": {
+    "TOPIC-INDUSTRIAL-AI-001": "AI工具遍地，艾氪智能为什么聚焦实体产业？",
+    "TOPIC-INDUSTRIAL-AI-002": "AI为什么总在演示里很好用，一进业务就失灵？",
+    "TOPIC-INDUSTRIAL-AI-003": "从AI工具到产业级Agentic OS，企业中间缺了什么？",
+    "TOPIC-INDUSTRIAL-AI-004": "AI员工不是多一个账号：硅基人才将怎样改变产业链协作？",
+    "TOPIC-INDUSTRIAL-AI-005": "未来三年，传统企业用好AI，先做好哪几件事？"
+  },
+  "publicationOrder": [
+    "TOPIC-INDUSTRIAL-AI-002",
+    "TOPIC-INDUSTRIAL-AI-001",
+    "TOPIC-INDUSTRIAL-AI-003",
+    "TOPIC-INDUSTRIAL-AI-004",
+    "TOPIC-INDUSTRIAL-AI-005"
+  ],
+  "termPolicies": {
+    "entityIndustry": {
+      "status": "MISSION_ONLY_EDITORIAL_DEFINITION",
+      "wording": "本文所说的实体产业，主要指围绕商品、服务、交易、交付、供应链与产业协同展开真实经营的企业和产业组织；不只等同于制造业。",
+      "globalKnowledgeActivation": false
+    },
+    "aiEmployeeAndSiliconTalent": {
+      "status": "MISSION_ONLY_EDITORIAL_DEFINITION",
+      "wording": "AI员工、硅基人才在本系列中是企业服务语境中的角色比喻，指承担明确任务的智能体；不表示其具备劳动法律意义上的员工身份或独立责任主体资格，企业和获授权的人仍保留最终决定与责任。",
+      "globalKnowledgeActivation": false
+    },
+    "agenticOsNaming": {
+      "status": "TASK_NARRATIVE_POLICY",
+      "preferred": ["产业级Agentic OS", "JovaOS平台"],
+      "avoid": ["JovaAI、JovaOS、JovaAI OS、HyperSpace OS完全同义", "国际统一标准定义"],
+      "globalKnowledgeActivation": false
+    }
+  },
+  "nomosAllocation": {
+    "TOPIC-INDUSTRIAL-AI-003": "PRIMARY_OPTIONAL_AFTER_SYSTEM_NEED",
+    "TOPIC-INDUSTRIAL-AI-004": "ONE_PARAGRAPH_MAX_IF_ROLE_AND_GOVERNANCE_NEED_IT",
+    "TOPIC-INDUSTRIAL-AI-001": "DO_NOT_INSERT",
+    "TOPIC-INDUSTRIAL-AI-002": "DO_NOT_INSERT",
+    "TOPIC-INDUSTRIAL-AI-005": "DO_NOT_INSERT"
+  },
+  "researchCoverage": {
+    "defaultPolicy": "8-15 valid sources for a full standalone deep research pack",
+    "shadowException": "ALLOW_4_TO_6_HIGH_AUTHORITY_SOURCES_PER_TOPIC_FOR_FIRST_DRAFT_PROPOSAL_ONLY",
+    "reason": "The five articles share a 16-source evidence base and currently make no customer-result claim. Each draft must stay within mapped claims. Before PUBLIC approval, any unresolved factual gap or new claim requires supplemental research.",
+    "publicApprovalCovered": false
+  },
+  "formalGateStatus": "BLOCKED_PENDING_HOST_RUNTIME_BINDING",
+  "draftProposalAllowed": true,
+  "contentVersionAllowed": false,
+  "variantGenerationAllowed": false
+}

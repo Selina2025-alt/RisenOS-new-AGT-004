@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0",
+  "skillTraceId": "skilltrace_industrial_ai_002_batch01",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "title": "AI为什么总在演示里很好用，一进业务就失灵？",
+  "createdByAgent": "content-orchestrator",
+  "status": "USED",
+  "inputArtifacts": [
+    "research/TOPIC-INDUSTRIAL-AI-002/research-pack.md",
+    "knowledge/TOPIC-INDUSTRIAL-AI-002_AI演示好但落地难.md",
+    "briefs/TOPIC-01-AI-DEMO-TO-REAL-BUSINESS.md",
+    "briefs/NARRATIVE-DEDUPE-MATRIX.md",
+    "perspective-input.json",
+    "knowledge/compliance/艾氪智能禁用表达与内容合规规范_V1.0.md",
+    "knowledge/security/内容分级与保密规则.md"
+  ],
+  "passes": [
+    {
+      "pass": 1,
+      "skillId": "enterprise-copy-orchestrator",
+      "source": "global",
+      "usedFor": ["argument_development", "drafting", "series_boundary"],
+      "outputInfluence": "建立能力片段、业务变量、五项落地条件、系统责任和企业诊断的论证链；删除无原始依据的失败率数字。",
+      "reviewStatus": "USED"
+    },
+    {
+      "pass": 2,
+      "skillId": "enterprise-soft-insertion",
+      "source": "global",
+      "usedFor": ["enterprise_fusion", "deletion_test", "claim_boundary"],
+      "outputInfluence": "采用L3产品桥接；公共问题解释完成后才引入智能体团队与JovaOS；Nomos留给后续篇目；删除测试通过。",
+      "reviewStatus": "USED"
+    },
+    {
+      "pass": 3,
+      "skillId": "huashu-proofreading",
+      "source": "global_reference_adapted",
+      "usedFor": ["natural_language", "ai_style_reduction", "rhythm"],
+      "outputInfluence": "删除模板连接词，减少整齐排比和重复句式，加入真实业务对象；拒绝花叔个人口吻、个人经历和虚构案例，仅采用通用自然语言检查项。",
+      "reviewStatus": "PARTIAL"
+    }
+  ],
+  "processArtifact": "writing-process.md",
+  "outputArtifact": "draft-proposal.md",
+  "knowledgeSnapshotId": "KS-SERIES-20260822-INDUSTRIAL-AI-V1",
+  "knowledgeSnapshotHash": "8d59f8f0234dc3eedf6a2d24af3f73e77f35ad45c44cad236542504aabfad540",
+  "formalContentVersionCreated": false,
+  "selfApproved": false,
+  "nextReview": ["makabaka_post_draft_check", "lilith_full_review"]
+}

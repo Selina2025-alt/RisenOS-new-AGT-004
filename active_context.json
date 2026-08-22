@@ -1,8 +1,8 @@
 {
-  "workspaceVersion": "4.0",
+  "workspaceVersion": "5.5.1",
   "intelligenceVersion": "3.4",
   "mode": "standalone-chat",
-  "updatedAt": "2026-07-31",
+  "updatedAt": "2026-08-21",
   "modelPolicy": "use-current-host-model",
   "persistence": "local-files",
   "activeKnowledgeIndex": "knowledge/00_知识库索引.md",
@@ -11,6 +11,11 @@
   "activeConflictRegister": "knowledge/sources/版本冲突与公开风险清单_202607.md",
   "activeEvidenceGate": "knowledge/evidence/新增Claim与案例证据闸门_202607.md",
   "activeProductCanon": "knowledge/products/核心产品口径_两条产品线四大矩阵_V3.0.md",
+  "activeNomosCanon": "knowledge/products/Nomos制度智能体_正式内容口径_V2.0.md",
+  "activeNomosBundle": "knowledge/canon/nomos-canon-20260820-v1.0.0/ACTIVE_MANIFEST.json",
+  "agentRegistry": "agents/registry.v5.5.json",
+  "knowledgeMatchingRequiredBeforeDraft": true,
+  "knowledgeMatchingRequiredAfterDraft": true,
   "activeScenarioCanon": "knowledge/clients/官网八大核心场景与九大商业模式_线上正式口径_V4.0.md",
   "activeICBFactCard": "knowledge/evidence/ICB核心事实卡_V3.0.md",
   "activePolicyGuide": "knowledge/policy/智能体政策背书与引用规范_2025-2026.md",
@@ -23,6 +28,9 @@
     "knowledge/03_品牌语气与内容表达.md",
     "knowledge/products/两条产品线与五级架构_V2.0.md",
     "knowledge/products/核心产品口径_两条产品线四大矩阵_V3.0.md",
+    "knowledge/products/Nomos制度智能体_正式内容口径_V2.0.md",
+    "knowledge/canon/nomos-canon-20260820-v1.0.0/claim-cards.json",
+    "knowledge/canon/nomos-canon-20260820-v1.0.0/conflicts.json",
     "knowledge/clients/目标客户_八大场景与商业模式_V2.0.md",
     "knowledge/clients/官网六大场景与九大商业模式_正式口径_V3.0.md",
     "knowledge/clients/官网八大核心场景与九大商业模式_线上正式口径_V4.0.md",
@@ -102,5 +110,22 @@
   "learningProposalGeneration": false,
   "databaseRequired": false,
   "frontendRequired": false,
-  "otherAgentsRequired": false
+  "otherAgentsRequired": false,
+  "internalSubagents": [
+    "topic-radar",
+    "public-researcher",
+    "makabaka",
+    "content-orchestrator",
+    "lilith",
+    "xiaodiandian",
+    "balala"
+  ],
+  "teamRuntime": {
+    "bootstrap": "createV55TeamRuntime",
+    "registeredHandlerCount": 7,
+    "initialRolloutMode": "SHADOW",
+    "formalGateRequiresEnforcingArtifacts": true,
+    "hostRuntimeRequiredForModelTasks": true,
+    "fallbackModelAllowed": false
+  }
 }

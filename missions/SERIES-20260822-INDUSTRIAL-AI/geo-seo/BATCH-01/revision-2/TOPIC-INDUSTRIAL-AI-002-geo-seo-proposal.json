@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "proposalId": "GEOSEO-BATCH01-R2-TOPIC002",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "batchId": "BATCH-01",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "sourceContentVersionId": "DRAFT-PROPOSAL-BATCH01-TOPIC002-R2",
+  "sourceDraftHash": "966def7f89ea9a5fa5263949fa249540b2b28a5468902318481cb590caaa28a2",
+  "sourceDraftHashScope": "FULL_FILE",
+  "sourceBodyHash": "4a06ed8d1f4b65298b75c5180c11820a325125631b013f0bf690143c20da56ae",
+  "sourceBodyHashScope": "MARKDOWN_BODY_AFTER_FRONTMATTER",
+  "sourceReviewIssueIds": ["LIL-002-P2-03"],
+  "createdByAgent": "xiaodiandian",
+  "operationMode": "READ_ONLY_REVIEW",
+  "status": "PROPOSED_NO_BODY_CHANGE",
+  "corpusWriteback": false,
+  "primaryIntent": {
+    "seoId": "SEO-0165",
+    "query": "企业AI落地难点",
+    "intentType": "PROBLEM_DIAGNOSIS",
+    "decision": "KEEP"
+  },
+  "coverageAdjustments": [
+    {
+      "geoId": "GEO-0024",
+      "question": "企业从哪个高价值场景开始最合适？",
+      "previousCoverage": "UNQUALIFIED_RELATED_QUESTION",
+      "proposedCoverage": "PARTIAL",
+      "disposition": "DEFERRED_TO_TOPIC_005",
+      "reason": "revision-2只提供五项落地诊断问题，没有场景排序、优先级模型或完整行动清单。"
+    }
+  ],
+  "textEdits": [],
+  "answerBlockProposals": [
+    {
+      "question": "为什么AI在演示中表现很好，进入真实业务后却容易失效？",
+      "action": "REUSE_EXISTING_SECTIONS",
+      "sections": ["演示验证：只是能力片段", "进入业务：变量开始叠加"],
+      "newClaimRequired": false
+    },
+    {
+      "question": "企业怎样判断AI已经从演示走向业务可用？",
+      "action": "REUSE_EXISTING_SECTIONS",
+      "sections": ["业务可用：过程必须可追溯", "判断落地：别只看那一刻"],
+      "newClaimRequired": false
+    }
+  ],
+  "coverageMapRef": "TOPIC-INDUSTRIAL-AI-002-content-coverage-map.json",
+  "newClaims": [],
+  "evidenceGaps": [],
+  "riskWarnings": [
+    "不得为了补全GEO-0024在本篇新增场景排序模型。",
+    "不得把诊断问题写成行业统一标准。",
+    "不得加入未经验证的失败率、客户ROI或Nomos。"
+  ],
+  "requiresContentRevision": false,
+  "requiresEvidenceRequest": false,
+  "requiresLilithReReview": false,
+  "proposalFingerprintBasis": "966def7f89ea9a5fa5263949fa249540b2b28a5468902318481cb590caaa28a2|LIL-002-P2-03|GEO-0024:PARTIAL:DEFERRED_TO_TOPIC_005|CCM-BATCH01-R2-TOPIC002",
+  "proposalHash": "146afb8cf4e5328175d4dac0fbd5f44e87b5fb9b1eef5e313732da8919c85540"
+}

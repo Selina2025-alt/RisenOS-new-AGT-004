@@ -1,0 +1,10 @@
+{
+  "canonVersion": "nomos-canon-20260820-v1.0.0",
+  "audienceLayer": "BUSINESS",
+  "claimCardIds": [
+    "kc_nomos_inside_os_20260820",
+    "kc_nomos_product_axis_20260820",
+    "kc_nomos_origin_problem_20260820",
+    "kc_nomos_evolution_20260820"
+  ]
+}

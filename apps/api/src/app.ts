@@ -10,15 +10,26 @@ import {
   CreateVersionInputSchema,
   EvidenceFulfillmentInputSchema,
   GenerateAssetBriefInputSchema,
+  MissionPreflightRequestSchema,
+  ClaimDecisionInputSchema,
+  CreateTeamRunInputSchema,
+  HumanGateDecisionInputSchema,
   ReviewDecisionInputSchema,
   ReviewRequestInputSchema,
   SkillImportInputSchema,
   SkillRegressionInputSchema,
   type AgentMessageEnvelope,
+  type KnowledgeSnapshot,
   type RequestIdentity,
 } from "@risen/content-contracts";
 import { verifyAgentEnvelope } from "@risen/content-adapters";
-import { DomainError } from "@risen/content-core";
+import {
+  DomainError,
+  assertDraftGate,
+  createKnowledgeSnapshot,
+  createMissionPreflight,
+  createPerspectiveContract,
+} from "@risen/content-core";
 import cors from "@fastify/cors";
 import helmet from "@fastify/helmet";
 import rateLimit from "@fastify/rate-limit";
@@ -52,6 +63,10 @@ const EvidenceFulfillmentPayloadSchema = z.object({
 
 const ReviewDecisionPayloadSchema = z.object({
   decision: ReviewDecisionInputSchema,
+});
+
+const RegisterSourceVersionSchema = z.object({
+  versionId: z.string().min(8).max(128),
 });
 
 function identityFrom(request: FastifyRequest): RequestIdentity {
@@ -290,6 +305,210 @@ export async function buildApp(container: DependencyContainer) {
 
   app.get("/v1/content-assets", async (request) =>
     container.service.listAssets(identityFrom(request)),
+  );
+
+  app.post<{ Params: { id: string } }>(
+    "/v1/missions/:id/preflight",
+    async (request, reply) => {
+      const identity = identityFrom(request);
+      const mission = await container.repository.getMission(
+        request.params.id,
+        identity.organizationId,
+      );
+      if (!mission) throw new DomainError("NOT_FOUND", `ContentMission ${request.params.id} does not exist`, 404);
+      const input = MissionPreflightRequestSchema.parse(request.body);
+      const preflight = createMissionPreflight({
+        missionId: mission.id,
+        organizationId: identity.organizationId,
+        createdBy: identity.userId,
+        traceId: mission.traceId,
+        value: input.preflight,
+      });
+      const perspective = createPerspectiveContract({
+        missionId: mission.id,
+        organizationId: identity.organizationId,
+        createdBy: identity.userId,
+        traceId: mission.traceId,
+        value: input.perspective,
+      });
+      let knowledgeSnapshot: KnowledgeSnapshot | undefined;
+      if (input.knowledge) {
+        const claimCards = await container.governance.getClaimCards(
+          input.knowledge.claimCardIds,
+          identity.organizationId,
+        );
+        const sourceIds = [...new Set(claimCards.flatMap((card) => card.evidenceRefs))].sort();
+        const expectedSourceHashes = sourceIds.map((sourceId) => {
+          const hash = container.canonSourceHashesById[sourceId];
+          if (!hash) throw new DomainError("KNOWLEDGE_SOURCE_NOT_ACTIVE", `Source ${sourceId} is not in the active canon`, 409);
+          return hash;
+        }).sort();
+        const suppliedSourceHashes = [...input.knowledge.sourceHashes].sort();
+        if (JSON.stringify(expectedSourceHashes) !== JSON.stringify(suppliedSourceHashes)) {
+          throw new DomainError("SOURCE_SNAPSHOT_STALE", "Knowledge source hashes do not match the selected active Claim cards", 409);
+        }
+        knowledgeSnapshot = createKnowledgeSnapshot({
+          missionId: mission.id,
+          organizationId: identity.organizationId,
+          createdBy: identity.userId,
+          traceId: mission.traceId,
+          sourceHashes: suppliedSourceHashes,
+          claimCards,
+          conflicts: await container.governance.listConflicts(identity.organizationId),
+          audienceLayer: input.knowledge.audienceLayer,
+          publicationScope: input.preflight.publicationScope,
+          canonVersion: input.knowledge.canonVersion,
+        });
+      }
+      assertDraftGate({
+        preflight,
+        perspective,
+        ...(knowledgeSnapshot ? { knowledgeSnapshot } : {}),
+      });
+      if (knowledgeSnapshot) {
+        await container.governance.saveMissionGate(preflight, perspective, knowledgeSnapshot);
+      } else {
+        await container.governance.saveMissionGate(preflight, perspective);
+      }
+      return reply.status(201).send({ preflight, perspective, knowledgeSnapshot });
+    },
+  );
+
+  app.get<{ Params: { id: string } }>(
+    "/v1/missions/:id/knowledge-snapshot",
+    async (request) => {
+      const identity = identityFrom(request);
+      const snapshot = await container.governance.getSnapshot(request.params.id, identity.organizationId);
+      if (!snapshot) throw new DomainError("NOT_FOUND", `KnowledgeSnapshot for mission ${request.params.id} does not exist`, 404);
+      return snapshot;
+    },
+  );
+
+  app.post("/v1/knowledge/claim-decisions", async (request) => {
+    const identity = identityFrom(request);
+    if (identity.role !== "ADMIN" && identity.role !== "REVIEWER") {
+      throw new DomainError("FORBIDDEN", "Only enterprise reviewers may decide knowledge claims", 403);
+    }
+    const input = ClaimDecisionInputSchema.parse(request.body);
+    return container.governance.decideClaim(input, identity.organizationId);
+  });
+
+  app.get("/v1/knowledge/conflicts", async (request) => {
+    const identity = identityFrom(request);
+    return { items: await container.governance.listConflicts(identity.organizationId) };
+  });
+
+  app.get("/v1/agents/runtime-health", async () =>
+    container.teamRuntime.health(),
+  );
+
+  app.post<{ Params: { id: string } }>(
+    "/v1/missions/:id/team-runs",
+    async (request, reply) => {
+      const identity = identityFrom(request);
+      const input = CreateTeamRunInputSchema.parse(request.body);
+      const mission = await container.repository.getMission(request.params.id, identity.organizationId);
+      if (!mission) throw new DomainError("NOT_FOUND", `ContentMission ${request.params.id} does not exist`, 404);
+      const [preflight, perspective, snapshot] = await Promise.all([
+        container.governance.getPreflight(mission.id, identity.organizationId),
+        container.governance.getPerspective(mission.id, identity.organizationId),
+        container.governance.getSnapshot(mission.id, identity.organizationId),
+      ]);
+      if (!preflight || !perspective) {
+        throw new DomainError("MISSION_PREFLIGHT_REQUIRED", "Mission preflight and PerspectiveContract are required", 409);
+      }
+      const perspectiveArtifact = await container.teamRuntime.coordinator.persistSupervisorArtifact({
+        artifactType: "perspective_contract",
+        organizationId: identity.organizationId,
+        payload: perspective,
+      });
+      const generatedSourceIds = [perspectiveArtifact.artifactId];
+      if (snapshot) {
+        const snapshotArtifact = await container.teamRuntime.coordinator.persistSupervisorArtifact({
+          artifactType: "knowledge_snapshot",
+          organizationId: identity.organizationId,
+          payload: snapshot,
+          sourceRefs: [perspectiveArtifact.artifactId],
+        });
+        generatedSourceIds.push(snapshotArtifact.artifactId);
+      }
+      const run = await container.teamRuntime.coordinator.start({
+        missionId: mission.id,
+        organizationId: identity.organizationId,
+        traceId: mission.traceId,
+        createdBy: identity.userId,
+        sourceArtifactIds: [...new Set([...input.sourceArtifactIds, ...generatedSourceIds])],
+        requestedChannels: input.requestedChannels,
+        requiresPublicResearch: preflight.requiresPublicResearch,
+        requiresEnterpriseKnowledge: preflight.requiresEnterpriseKnowledge,
+      });
+      await container.enqueueTeamRun?.(run.runId, identity.organizationId, run.taskIds.length);
+      return reply.status(202).send(run);
+    },
+  );
+
+  app.get<{ Params: { runId: string } }>("/v1/team-runs/:runId", async (request) => {
+    const identity = identityFrom(request);
+    return container.teamRuntime.coordinator.get(request.params.runId, identity.organizationId);
+  });
+
+  app.post<{ Params: { runId: string } }>("/v1/team-runs/:runId/pause", async (request) => {
+    const identity = identityFrom(request);
+    return container.teamRuntime.coordinator.pause(request.params.runId, identity.organizationId);
+  });
+
+  app.post<{ Params: { runId: string } }>("/v1/team-runs/:runId/resume", async (request) => {
+    const identity = identityFrom(request);
+    return container.teamRuntime.coordinator.resume(request.params.runId, identity.organizationId);
+  });
+
+  app.post<{ Params: { runId: string } }>("/v1/team-runs/:runId/cancel", async (request) => {
+    const identity = identityFrom(request);
+    return container.teamRuntime.coordinator.cancel(request.params.runId, identity.organizationId);
+  });
+
+  app.get<{ Params: { runId: string } }>("/v1/team-runs/:runId/artifacts", async (request) => {
+    const identity = identityFrom(request);
+    return {
+      items: await container.teamRuntime.coordinator.artifacts(request.params.runId, identity.organizationId),
+    };
+  });
+
+  app.post<{ Params: { runId: string } }>(
+    "/v1/team-runs/:runId/source-version",
+    async (request, reply) => {
+      const identity = identityFrom(request);
+      const input = RegisterSourceVersionSchema.parse(request.body);
+      const run = await container.teamRuntime.coordinator.get(request.params.runId, identity.organizationId);
+      const version = await container.repository.getVersion(input.versionId, identity.organizationId);
+      if (!version) throw new DomainError("NOT_FOUND", `ContentVersion ${input.versionId} does not exist`, 404);
+      const submitted = await container.teamRuntime.coordinator.submitFormalVersion(
+        run.runId,
+        identity.organizationId,
+        version,
+      );
+      await container.enqueueTeamRun?.(submitted.run.runId, identity.organizationId, submitted.run.taskIds.length);
+      return reply.status(201).send(submitted);
+    },
+  );
+
+  app.post<{ Params: { runId: string } }>(
+    "/v1/team-runs/:runId/human-decisions",
+    async (request, reply) => {
+      const identity = identityFrom(request);
+      if (identity.role !== "ADMIN" && identity.role !== "REVIEWER") {
+        throw new DomainError("FORBIDDEN", "Only enterprise reviewers may decide human gates", 403);
+      }
+      const input = HumanGateDecisionInputSchema.parse({
+        ...(request.body as Record<string, unknown>),
+        runId: request.params.runId,
+      });
+      const result = await container.teamRuntime.coordinator.decide(input, identity);
+      if (result.run.status === "RUNNING") {
+        await container.enqueueTeamRun?.(result.run.runId, identity.organizationId, result.run.taskIds.length);
+      }
+      return reply.status(201).send(result);
+    },
   );
 
   app.get("/v1/source-attachments", async (request) =>

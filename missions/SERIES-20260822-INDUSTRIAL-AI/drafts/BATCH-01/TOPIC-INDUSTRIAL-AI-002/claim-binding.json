@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "bindingId": "claimbinding_industrial_ai_002_batch01",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "title": "AI为什么总在演示里很好用，一进业务就失灵？",
+  "missionId": "MISSION-INDUSTRIAL-AI-002",
+  "draftArtifact": "draft-proposal.md",
+  "draftHash": "0b4cd95c0a65958185eb794ad3af493fe63fb9840da9f8203c6c137c6a99830b",
+  "knowledgeSnapshotId": "KS-SERIES-20260822-INDUSTRIAL-AI-V1",
+  "knowledgeSnapshotHash": "8d59f8f0234dc3eedf6a2d24af3f73e77f35ad45c44cad236542504aabfad540",
+  "rolloutMode": "SHADOW",
+  "claims": [
+    {
+      "claimId": "EXT-002-01",
+      "claimType": "PUBLIC_FACT_SYNTHESIS",
+      "location": ["演示验证：只是能力片段"],
+      "statement": "AI项目失败原因不只涉及模型，也涉及业务问题与指标、数据、基础设施、组织协同及技术适用边界。",
+      "evidenceIds": ["PUB-001", "PUB-002"],
+      "evidenceRefs": [
+        "research/TOPIC-INDUSTRIAL-AI-002/research-pack.md#PUB-001",
+        "research/TOPIC-INDUSTRIAL-AI-002/research-pack.md#PUB-002"
+      ],
+      "allowedUse": "跨来源归纳；分别说明RAND研究方法和MIT CISR研究结论。",
+      "restrictions": ["不使用80%失败率", "不把MIT案例结果移植给艾氪智能"]
+    },
+    {
+      "claimId": "EXT-002-02",
+      "claimType": "PUBLIC_FACT_SYNTHESIS",
+      "location": ["演示验证：只是能力片段", "业务可用：系统要能负责"],
+      "statement": "从概念验证走向持续业务运行，需要生命周期治理、测量、异常处理、责任边界及智能体基础能力。",
+      "evidenceIds": ["PUB-002", "PUB-003", "PUB-004"],
+      "evidenceRefs": [
+        "research/TOPIC-INDUSTRIAL-AI-002/research-pack.md#PUB-002",
+        "research/TOPIC-INDUSTRIAL-AI-002/research-pack.md#PUB-003",
+        "research/TOPIC-INDUSTRIAL-AI-002/research-pack.md#PUB-004"
+      ],
+      "allowedUse": "跨框架归纳，不冒充单一来源原文。",
+      "restrictions": ["NIST框架不作为产品认证", "政策不作为产品效果背书"]
+    },
+    {
+      "claimId": "EXT-002-03",
+      "claimType": "OFFICIAL_VIEWPOINT",
+      "location": ["演示验证：只是能力片段"],
+      "statement": "演示验证能力片段，业务可用验证可持续运行的系统。",
+      "evidenceIds": ["PUB-001", "PUB-002", "PUB-003", "PUB-004"],
+      "evidenceRefs": ["research/TOPIC-INDUSTRIAL-AI-002/research-pack.md#Claim—Evidence-Map"],
+      "allowedUse": "明确为艾氪智能官方解释框架。",
+      "restrictions": ["不写成学界统一定义"]
+    },
+    {
+      "claimId": "S1-C02",
+      "claimType": "MISSION_EDITORIAL_FRAMEWORK",
+      "location": ["进入业务：变量开始叠加"],
+      "statement": "从业务问题、知识、工具权限、异常和持续追溯五方面检查企业AI项目。",
+      "evidenceIds": ["EXT-002-01", "EXT-002-02", "S1-A02"],
+      "evidenceRefs": ["knowledge/TOPIC-INDUSTRIAL-AI-002_AI演示好但落地难.md#3-候选事实与编辑判断"],
+      "allowedUse": "使用我们建议、解释框架等措辞。",
+      "restrictions": ["不冒充官方标准或研究原文"]
+    },
+    {
+      "claimId": "S1-A01",
+      "claimType": "ACTIVE_ENTERPRISE_FACT",
+      "location": ["艾氪路径：从工具到协同单元"],
+      "statement": "艾氪智能聚焦企业AI与产业AI，构建产业级Agentic OS和产业级多智能体协同操作系统。",
+      "evidenceIds": ["ENT-001", "ENT-002", "ENT-003", "ENT-004"],
+      "evidenceRefs": ["knowledge/evidence/产品能力_案例与公开证据台账.md#2-企业级事实"],
+      "allowedUse": "帮助、构建、面向。",
+      "restrictions": ["不承诺必然结果", "不称已覆盖全部产业场景"]
+    },
+    {
+      "claimId": "S1-A02",
+      "claimType": "ACTIVE_PRODUCT_FACT",
+      "location": ["艾氪路径：从工具到协同单元"],
+      "statement": "智能体团队围绕任务、企业制度、数据权限、工具能力和人工决策边界形成协同单元。",
+      "evidenceIds": ["PROD-TEAM"],
+      "evidenceRefs": ["knowledge/products/核心产品口径_两条产品线四大矩阵_V3.0.md#22-智能体团队"],
+      "allowedUse": "按正式定义解释。",
+      "restrictions": ["不扩写未经确认的团队能力"]
+    },
+    {
+      "claimId": "S1-A03",
+      "claimType": "ACTIVE_PRODUCT_FACT",
+      "location": ["艾氪路径：从工具到协同单元"],
+      "statement": "JovaOS平台用于承载和治理企业智能体及其协同关系。",
+      "evidenceIds": ["PROD-2L4M"],
+      "evidenceRefs": ["knowledge/products/核心产品口径_两条产品线四大矩阵_V3.0.md#24-jovaos-平台"],
+      "allowedUse": "平台定位说明。",
+      "restrictions": ["不声称所有模块全面上线", "不自行等同JovaAI OS或HyperSpace OS"]
+    }
+  ],
+  "illustrativeScenarios": [
+    {
+      "location": "开头询报价示例",
+      "status": "HYPOTHETICAL_NOT_CUSTOMER_CASE",
+      "restrictions": ["不得添加客户名称", "不得添加ROI或生产结果"]
+    }
+  ],
+  "newClaimsIntroduced": false,
+  "customerRoiClaimed": false,
+  "nomosInserted": false,
+  "unboundFactualClaims": [],
+  "status": "BOUND_FOR_SHADOW_REVIEW"
+}

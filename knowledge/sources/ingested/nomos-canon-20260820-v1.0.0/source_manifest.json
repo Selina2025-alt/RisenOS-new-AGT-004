@@ -1,0 +1,405 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleId": "nomos-canon-20260820-v1.0.0",
+  "createdAt": "2026-08-20T12:17:20.392831Z",
+  "sourceCount": 9,
+  "sources": [
+    {
+      "schemaVersion": "1.0.0",
+      "sourceId": "SRC-NOMOS-202608-01",
+      "originalFileName": "01_2026-08-20_Nomos研发理念与功能介绍_逐字记录_原话整理校正版_v2.docx",
+      "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-01__01_2026-08-20_Nomos研发理念与功能介绍_逐字记录_原话整理校正版_v2.docx",
+      "binaryHash": "41665f0c18782c7a961ba1cc729b3aeebe89d392447d6bdedec84cc9d3cefd30",
+      "extractedTextHash": "0a9421ca366ff609b5abaa0b8163129c13f8feecbf649a3240bfaa551e785eac",
+      "structuredExtractionHash": "3777eddc6dfb3d969882a3a2a4d8928770a39144f7135c37eddd6615e78813bd",
+      "sourceType": "corrected_transcript",
+      "sourceDate": "2026-08-20",
+      "authorityLevel": 2,
+      "confidentiality": "INTERNAL",
+      "repositoryVisibility": "PUBLIC",
+      "publicationDisposition": "INTERNAL_SOURCE",
+      "derivedFrom": [],
+      "supersedes": [],
+      "extractionCompleteness": "COMPLETE",
+      "extractionWarnings": [],
+      "extractionCounts": {
+        "paragraphs": 261,
+        "tables": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "hyperlinks": 0
+      },
+      "securityScan": {
+        "status": "PASSED",
+        "credentialLikeFindings": [],
+        "packageFindings": [],
+        "linksFollowed": false
+      },
+      "knowledgeActivation": "NOT_ACTIVATED"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "sourceId": "SRC-NOMOS-202608-02",
+      "originalFileName": "00_2026-08-20多智能体协同架构Nomos的研发理念与功能介绍-2026年08月20日-逐字录音.docx",
+      "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-02__00_2026-08-20多智能体协同架构Nomos的研发理念与功能介绍-2026年08月20日-逐字录音.docx",
+      "binaryHash": "20aa0a97364f0292db65ef86706d648e850f062fd3dd56263c8540985fda8c0a",
+      "extractedTextHash": "7f3a5dcfd5866a1c2e7429aa62c355e6c74717c96e6facab5ad0695e23968dbb",
+      "structuredExtractionHash": "3ca369282c8483c2c5cd6c533033a6afb325105d22505187c76f7e367d0cee7f",
+      "sourceType": "raw_transcript",
+      "sourceDate": "2026-08-20",
+      "authorityLevel": 5,
+      "confidentiality": "INTERNAL",
+      "repositoryVisibility": "PUBLIC",
+      "publicationDisposition": "INTERNAL_SOURCE",
+      "derivedFrom": [],
+      "supersedes": [],
+      "extractionCompleteness": "COMPLETE",
+      "extractionWarnings": [],
+      "extractionCounts": {
+        "paragraphs": 269,
+        "tables": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "hyperlinks": 0
+      },
+      "securityScan": {
+        "status": "PASSED",
+        "credentialLikeFindings": [],
+        "packageFindings": [],
+        "linksFollowed": false
+      },
+      "knowledgeActivation": "NOT_ACTIVATED"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "sourceId": "SRC-NOMOS-202608-03",
+      "originalFileName": "00_2026-08-20多智能体协同架构Nomos的研发理念与功能介绍-2026年08月20日-来自【得到大脑】.docx",
+      "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-03__00_2026-08-20多智能体协同架构Nomos的研发理念与功能介绍-2026年08月20日-来自【得到大脑】.docx",
+      "binaryHash": "75bf2143970c7ce95bb820996a8f305f8bc0e46dd47593192454f5f0dad96bb8",
+      "extractedTextHash": "af3695166439c3c92bd47cb9568a7e5b20c01003693d7c48e8e096979daae520",
+      "structuredExtractionHash": "4afcf60e5d310e475d1847c2ab8012eff68e7f188798bfe66b74689c4a2886fa",
+      "sourceType": "ai_summary",
+      "sourceDate": "2026-08-20",
+      "authorityLevel": 4,
+      "confidentiality": "INTERNAL",
+      "repositoryVisibility": "PUBLIC",
+      "publicationDisposition": "INTERNAL_SOURCE",
+      "derivedFrom": [],
+      "supersedes": [],
+      "extractionCompleteness": "COMPLETE",
+      "extractionWarnings": [],
+      "extractionCounts": {
+        "paragraphs": 208,
+        "tables": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "hyperlinks": 16
+      },
+      "securityScan": {
+        "status": "PASSED",
+        "credentialLikeFindings": [],
+        "packageFindings": [
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink1",
+            "target": "https://getnotes.seek:57",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink2",
+            "target": "https://getnotes.seek:205",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink3",
+            "target": "https://getnotes.seek:408",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink4",
+            "target": "https://getnotes.seek:684",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink5",
+            "target": "https://getnotes.seek:895",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink6",
+            "target": "https://getnotes.seek:1031",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink7",
+            "target": "https://getnotes.seek:1096",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink8",
+            "target": "https://getnotes.seek:1485",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink9",
+            "target": "https://getnotes.seek:1884",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink10",
+            "target": "https://getnotes.seek:2047",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink11",
+            "target": "https://getnotes.seek:2239",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink12",
+            "target": "https://getnotes.seek:2347",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink13",
+            "target": "https://getnotes.seek:2466",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink14",
+            "target": "https://getnotes.seek:2563",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink15",
+            "target": "https://getnotes.seek:2714",
+            "followed": false
+          },
+          {
+            "type": "external_relationship",
+            "relationshipId": "rLink16",
+            "target": "https://getnotes.seek:3099",
+            "followed": false
+          }
+        ],
+        "linksFollowed": false
+      },
+      "knowledgeActivation": "NOT_ACTIVATED"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "sourceId": "SRC-NOMOS-202608-04",
+      "originalFileName": "03_2026-08-20_研发提供的资料.docx",
+      "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-04__03_2026-08-20_研发提供的资料.docx",
+      "binaryHash": "b60d4bdf7d8e25b25cb17c059e944e15f0b701d08e7e8442911248d4ba881bb1",
+      "extractedTextHash": "587627d16122ea699fd40d1674a2d7e2a770cd553999cf979a88575bb10199d5",
+      "structuredExtractionHash": "f49d7c26619b19b1e09853f462bef6ffaa3d68d968ab7987bc7e3feca57b8b33",
+      "sourceType": "rd_document",
+      "sourceDate": "2026-08-20",
+      "authorityLevel": 6,
+      "confidentiality": "INTERNAL",
+      "repositoryVisibility": "PUBLIC",
+      "publicationDisposition": "INTERNAL_SOURCE",
+      "derivedFrom": [],
+      "supersedes": [],
+      "extractionCompleteness": "COMPLETE",
+      "extractionWarnings": [],
+      "extractionCounts": {
+        "paragraphs": 11,
+        "tables": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "hyperlinks": 0
+      },
+      "securityScan": {
+        "status": "PASSED",
+        "credentialLikeFindings": [],
+        "packageFindings": [],
+        "linksFollowed": false
+      },
+      "knowledgeActivation": "NOT_ACTIVATED"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "sourceId": "SRC-NOMOS-202608-05",
+      "originalFileName": "【总】JovaAI_Nomos_信息母稿_研发起源_架构_机制_场景与对外口径_V2.0_整合0819与0820.docx",
+      "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-05__【总】JovaAI_Nomos_信息母稿_研发起源_架构_机制_场景与对外口径_V2.0_整合0819与0820.docx",
+      "binaryHash": "a0714497f0ea43ad13b155d82b1e8b3b7c31b3b0d9220507456dbe6f095c8bc2",
+      "extractedTextHash": "36e0671a01164a1f8b5fbbe30c672b4e45d19cc40fe1809d6d479527f8c1cabf",
+      "structuredExtractionHash": "485188c0501b578c983f0fa7e9618cc75f5816a7d6ddd1a9aabbd2e0a02a5b60",
+      "sourceType": "curated_master",
+      "sourceDate": "2026-08-20",
+      "authorityLevel": 3,
+      "confidentiality": "INTERNAL",
+      "repositoryVisibility": "PUBLIC",
+      "publicationDisposition": "INTERNAL_SOURCE",
+      "derivedFrom": [],
+      "supersedes": [],
+      "extractionCompleteness": "COMPLETE",
+      "extractionWarnings": [],
+      "extractionCounts": {
+        "paragraphs": 509,
+        "tables": 18,
+        "insertions": 0,
+        "deletions": 0,
+        "hyperlinks": 0
+      },
+      "securityScan": {
+        "status": "PASSED",
+        "credentialLikeFindings": [],
+        "packageFindings": [],
+        "linksFollowed": false
+      },
+      "knowledgeActivation": "NOT_ACTIVATED"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "sourceId": "SRC-NOMOS-202608-06",
+      "originalFileName": "02_2026-08-20_JovaAI_Nomos_信息（简单版）.docx",
+      "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-06__02_2026-08-20_JovaAI_Nomos_信息（简单版）.docx",
+      "binaryHash": "eb3984f9cc312f58325937620dcfcb1cc9b8e6ee072f5076b62ea1e3766dc674",
+      "extractedTextHash": "b3272c36227fe6a5139a1e091aee7d675141860d09f77008e9cd5702b6262004",
+      "structuredExtractionHash": "a21884ff5ed314d088a2060df9bd5e65591ac5450a8ab3ff257b96dedf95d6a7",
+      "sourceType": "summary",
+      "sourceDate": "2026-08-20",
+      "authorityLevel": 4,
+      "confidentiality": "INTERNAL",
+      "repositoryVisibility": "PUBLIC",
+      "publicationDisposition": "INTERNAL_SOURCE",
+      "derivedFrom": [],
+      "supersedes": [],
+      "extractionCompleteness": "COMPLETE",
+      "extractionWarnings": [],
+      "extractionCounts": {
+        "paragraphs": 154,
+        "tables": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "hyperlinks": 0
+      },
+      "securityScan": {
+        "status": "PASSED",
+        "credentialLikeFindings": [],
+        "packageFindings": [],
+        "linksFollowed": false
+      },
+      "knowledgeActivation": "NOT_ACTIVATED"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "sourceId": "SRC-NOMOS-202608-07",
+      "originalFileName": "02_2026-08-20_JovaAI_Nomos_信息母稿_研发起源_架构_机制_场景与对外口径.docx",
+      "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-07__02_2026-08-20_JovaAI_Nomos_信息母稿_研发起源_架构_机制_场景与对外口径.docx",
+      "binaryHash": "57f0a3e31618d4295661517c412ef9be9b426db3c2325d95688febe6bdceb408",
+      "extractedTextHash": "91e08c4ce4c7445aa05f83913950549c4f237199ee3e19a37f21620e22ee5179",
+      "structuredExtractionHash": "563effa182d273274ece24385c7e676bf89ed9aad6c55dd21bb89676150c89b4",
+      "sourceType": "historical_master",
+      "sourceDate": "2026-08-20",
+      "authorityLevel": 3,
+      "confidentiality": "INTERNAL",
+      "repositoryVisibility": "PUBLIC",
+      "publicationDisposition": "INTERNAL_SOURCE",
+      "derivedFrom": [],
+      "supersedes": [],
+      "extractionCompleteness": "COMPLETE",
+      "extractionWarnings": [],
+      "extractionCounts": {
+        "paragraphs": 336,
+        "tables": 16,
+        "insertions": 0,
+        "deletions": 0,
+        "hyperlinks": 0
+      },
+      "securityScan": {
+        "status": "PASSED",
+        "credentialLikeFindings": [],
+        "packageFindings": [],
+        "linksFollowed": false
+      },
+      "knowledgeActivation": "NOT_ACTIVATED"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "sourceId": "SRC-NOMOS-202608-08",
+      "originalFileName": "02_2026-08-19综合会议记录_校正版_v2.docx",
+      "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-08__02_2026-08-19综合会议记录_校正版_v2.docx",
+      "binaryHash": "7c91fbde3cd0c073a898fad9db79355f3c8d92971409f5df04bab0df0e5fb5d6",
+      "extractedTextHash": "5103ab4b8b44de1d4700b87ec45d97707e75b3f82e48fdba0370010c9587d2a5",
+      "structuredExtractionHash": "e07f5ae9d01da8f38e6f30935e9118489bab1f867cc0203feaa549d941a0213a",
+      "sourceType": "meeting_record",
+      "sourceDate": "2026-08-19",
+      "authorityLevel": 5,
+      "confidentiality": "INTERNAL",
+      "repositoryVisibility": "PUBLIC",
+      "publicationDisposition": "INTERNAL_SOURCE",
+      "derivedFrom": [],
+      "supersedes": [],
+      "extractionCompleteness": "COMPLETE",
+      "extractionWarnings": [],
+      "extractionCounts": {
+        "paragraphs": 142,
+        "tables": 4,
+        "insertions": 0,
+        "deletions": 0,
+        "hyperlinks": 0
+      },
+      "securityScan": {
+        "status": "PASSED",
+        "credentialLikeFindings": [],
+        "packageFindings": [],
+        "linksFollowed": false
+      },
+      "knowledgeActivation": "NOT_ACTIVATED"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "sourceId": "SRC-NOMOS-202608-09",
+      "originalFileName": "01_2026-08-19会议纯文字记录_原话整理校正版_v2.docx",
+      "repositoryPath": "knowledge/sources/raw/nomos/2026-08-19_20/SRC-NOMOS-202608-09__01_2026-08-19会议纯文字记录_原话整理校正版_v2.docx",
+      "binaryHash": "4892fc9db5c8c9c7eac61073254cd6725bb86416a4a822a47330faf2ff0f7843",
+      "extractedTextHash": "c922513dcf47898f8f992bc0284069b7995e28316e2e554358ddf0b5e14dcffa",
+      "structuredExtractionHash": "d1cdc0dd1a82409d4bfd31f5725b85fd14a84a5c625e6be9de08c08f6ac0469c",
+      "sourceType": "corrected_transcript",
+      "sourceDate": "2026-08-19",
+      "authorityLevel": 5,
+      "confidentiality": "INTERNAL",
+      "repositoryVisibility": "PUBLIC",
+      "publicationDisposition": "INTERNAL_SOURCE",
+      "derivedFrom": [],
+      "supersedes": [],
+      "extractionCompleteness": "COMPLETE",
+      "extractionWarnings": [],
+      "extractionCounts": {
+        "paragraphs": 221,
+        "tables": 1,
+        "insertions": 0,
+        "deletions": 0,
+        "hyperlinks": 0
+      },
+      "securityScan": {
+        "status": "PASSED",
+        "credentialLikeFindings": [],
+        "packageFindings": [],
+        "linksFollowed": false
+      },
+      "knowledgeActivation": "NOT_ACTIVATED"
+    }
+  ],
+  "activationStatus": "CANDIDATE_ONLY",
+  "instructionsExecuted": false,
+  "externalLinksFollowed": false
+}

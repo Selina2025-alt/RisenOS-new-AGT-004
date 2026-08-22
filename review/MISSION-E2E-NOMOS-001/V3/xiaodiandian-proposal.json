@@ -1,0 +1,224 @@
+{
+  "id": "geo-proposal-mission-e2e-nomos-001-v3",
+  "organizationId": "org_jovaai",
+  "createdBy": "xiaodiandian",
+  "traceId": "trace_e2e_nomos_20260821_001",
+  "createdAt": "2026-08-21T12:30:00.000Z",
+  "updatedAt": "2026-08-21T12:30:00.000Z",
+  "proposalId": "proposal-mission-e2e-nomos-001-v3-geo-001",
+  "status": "PROPOSED",
+  "sourceContentVersionId": "content-version-mission-e2e-nomos-001-v3",
+  "issueIds": [
+    "LIL-V3-003"
+  ],
+  "primaryIntent": "企业智能体权限怎么设置",
+  "secondaryIntents": [
+    "AI自动执行出错谁负责",
+    "Agent如何做权限隔离",
+    "企业AI如何审计和回滚",
+    "多智能体协同平台"
+  ],
+  "geoQuestionCoverage": [
+    {
+      "geoId": "GEO-0023",
+      "question": "智能体团队如何在权限边界内分工？",
+      "coveredBy": [
+        "导语",
+        "协同难题：单体约束不够用",
+        "研发演进：从编排走向制度",
+        "行动判断：先回答四个问题"
+      ],
+      "coverage": "FULL",
+      "evidenceIds": [
+        "research-pack-v2:RP-002",
+        "research-pack-v2:RP-005",
+        "research-pack-v2:RP-006",
+        "research-pack-v2:RP-007",
+        "SRC-NOMOS-202608-01",
+        "SRC-NOMOS-202608-04"
+      ]
+    },
+    {
+      "geoId": "GEO-0027",
+      "question": "智能体团队失败的常见原因有哪些？",
+      "coveredBy": [
+        "协同难题：单体约束不够用",
+        "研发演进：从编排走向制度",
+        "行动判断：先回答四个问题"
+      ],
+      "coverage": "FULL",
+      "evidenceIds": [
+        "research-pack-v2:RP-004",
+        "research-pack-v2:RP-009",
+        "research-pack-v2:RP-010",
+        "SRC-NOMOS-202608-01",
+        "SRC-NOMOS-202608-02",
+        "SRC-NOMOS-202608-04"
+      ]
+    },
+    {
+      "geoId": "GEO-0021",
+      "question": "企业为什么不能只部署一个通用Agent？",
+      "coveredBy": [
+        "能力扩张：治理压力随之上升",
+        "协同难题：单体约束不够用"
+      ],
+      "coverage": "PARTIAL",
+      "evidenceIds": [
+        "research-pack-v2:RP-004",
+        "research-pack-v2:RP-006",
+        "research-pack-v2:RP-010"
+      ]
+    },
+    {
+      "geoId": "TASK-GEO-NOMOS-001",
+      "question": "企业多智能体协同为什么需要制度智能体？",
+      "coveredBy": [
+        "导语",
+        "能力扩张：治理压力随之上升",
+        "协同难题：单体约束不够用",
+        "研发演进：从编排走向制度",
+        "产品落位：Nomos在何处",
+        "行动判断：先回答四个问题"
+      ],
+      "coverage": "FULL",
+      "evidenceIds": [
+        "research-pack-v2:RP-001",
+        "research-pack-v2:RP-002",
+        "research-pack-v2:RP-004",
+        "research-pack-v2:RP-005",
+        "research-pack-v2:RP-006",
+        "research-pack-v2:RP-007",
+        "research-pack-v2:RP-009",
+        "research-pack-v2:RP-010",
+        "SRC-NOMOS-202608-01",
+        "SRC-NOMOS-202608-02",
+        "SRC-NOMOS-202608-04"
+      ]
+    },
+    {
+      "geoId": "TASK-GEO-NOMOS-002",
+      "question": "什么是Nomos制度智能体？",
+      "coveredBy": [
+        "产品落位：Nomos在何处"
+      ],
+      "coverage": "PARTIAL",
+      "evidenceIds": [
+        "SRC-NOMOS-202608-01",
+        "SRC-NOMOS-202608-05",
+        "SRC-NOMOS-202608-06"
+      ]
+    }
+  ],
+  "entityMap": [
+    {
+      "entity": "企业多智能体协同",
+      "firstMention": "导语",
+      "role": "industry"
+    },
+    {
+      "entity": "Nomos",
+      "firstMention": "研发演进：从编排走向制度",
+      "role": "agent"
+    },
+    {
+      "entity": "JovaAI OS",
+      "firstMention": "产品落位：Nomos在何处",
+      "role": "product"
+    },
+    {
+      "entity": "艾氪智能",
+      "firstMention": "产品落位：Nomos在何处",
+      "role": "company"
+    }
+  ],
+  "answerBlocks": [
+    {
+      "question": "企业多智能体协同为什么需要制度智能体？",
+      "answer": "多个智能体开始互相委派、共享信息并调用企业工具后，风险会从单点输出扩展到身份授权、任务交接、级联错误和责任追溯。制度智能体要做的，是把角色、权限、人工确认、异常停止和追溯要求变成可执行的协同边界，同时保留企业的最终决定权。",
+      "evidenceIds": [
+        "research-pack-v2:RP-002",
+        "research-pack-v2:RP-004",
+        "research-pack-v2:RP-005",
+        "research-pack-v2:RP-006",
+        "research-pack-v2:RP-007",
+        "research-pack-v2:RP-009",
+        "research-pack-v2:RP-010",
+        "SRC-NOMOS-202608-01",
+        "SRC-NOMOS-202608-04"
+      ]
+    },
+    {
+      "question": "什么是Nomos制度智能体？",
+      "answer": "Nomos是艾氪智能智能体团队产品线中的制度智能体，关注智能体团队里的角色、权限、交接、人工确认和追溯边界。它的底层制度协同机制位于JovaAI OS内部，但Nomos不是五级架构之外新增的第六层。",
+      "evidenceIds": [
+        "SRC-NOMOS-202608-01",
+        "SRC-NOMOS-202608-05",
+        "SRC-NOMOS-202608-06"
+      ]
+    },
+    {
+      "question": "企业智能体权限怎么设置？",
+      "answer": "先按角色定义职责，再把权限落到具体数据、工具和动作。涉及合同、资金、客户数据等高风险操作时保留人工确认；遇到判断冲突、证据不足或越权时能够暂停，并保留来源、版本、审核决定和操作记录。",
+      "evidenceIds": [
+        "research-pack-v2:RP-002",
+        "research-pack-v2:RP-003",
+        "research-pack-v2:RP-005",
+        "research-pack-v2:RP-006",
+        "research-pack-v2:RP-007"
+      ]
+    }
+  ],
+  "seoEdits": [
+    {
+      "location": "行动判断：先回答四个问题／首段",
+      "originalText": "企业准备引入多智能体时，可以先回答四个问题。",
+      "revisedText": "企业智能体权限怎么设置？企业准备引入多智能体时，可以先从四个问题入手：角色是否明确、权限是否具体、异常能否停止、过程是否可追溯。",
+      "reason": "让主搜索意图在核心行动段自然出现，并直接概括下文；不改变原文判断，也不增加产品能力。",
+      "preservesClaims": true
+    }
+  ],
+  "geoEdits": [
+    {
+      "location": "产品落位：Nomos在何处／前两段",
+      "originalText": "在艾氪智能的产品组合中，Nomos被定位为智能体团队产品线中的制度智能体。\n\n这个定位回答的是“Nomos承担什么角色”。",
+      "revisedText": "Nomos是艾氪智能智能体团队产品线中的制度智能体，关注智能体团队里的角色、权限、交接、人工确认和追溯边界。这个定位回答的是“Nomos承担什么角色”。",
+      "reason": "把任务级问题“什么是Nomos制度智能体”由隐含定义改成可直接引用的定义；所有信息均来自当前正文和已激活Nomos Claim。",
+      "preservesClaims": true
+    },
+    {
+      "location": "正文结尾与资料尾注之间",
+      "originalText": "",
+      "revisedText": "## 两个问题：直接回答\n\n**企业多智能体协同为什么需要制度智能体？**\n\n因为多个智能体互相委派、共享信息并调用企业工具后，风险会从单点输出扩展到身份授权、任务交接、级联错误和责任追溯。制度智能体要做的，是把角色、权限、人工确认、异常停止和追溯要求变成可执行的协同边界，同时保留企业的最终决定权。\n\n**什么是Nomos制度智能体？**\n\nNomos是艾氪智能智能体团队产品线中的制度智能体，关注智能体团队里的角色、权限、交接、人工确认和追溯边界。它的底层制度协同机制位于JovaAI OS内部，但Nomos不是五级架构之外新增的第六层。",
+      "reason": "提供两个可独立理解和引用的任务级AnswerBlock；不添加摘要、目录或关键词清单，避免破坏公众号的人味和叙事节奏。",
+      "preservesClaims": true
+    }
+  ],
+  "evidenceGaps": [],
+  "technicalRecommendations": [
+    {
+      "type": "SCHEMA",
+      "recommendation": "如文章进入官网内容中心，可由网站团队为实际页面配置Article或BlogPosting JSON-LD，并仅引用页面中真实出现的标题、作者、发布日期、发布者和正文实体；本建议不代表网站已经实施。",
+      "implementationOwner": "WEB_TEAM",
+      "executedByAgt004": false
+    },
+    {
+      "type": "ENTITY_LINKING",
+      "recommendation": "如艾氪智能、Nomos或JovaAI OS已有经过批准的权威介绍页，可由内容团队添加自然的内部链接；没有正式页面时不创建虚假URL，也不为链接强行增加产品描述。",
+      "implementationOwner": "CONTENT_TEAM",
+      "executedByAgt004": false
+    }
+  ],
+  "newClaims": [],
+  "riskWarnings": [
+    "GEO-0043“JovaOS如何管理智能体权限和审计”不得映射：当前文章只确认Nomos制度协同机制位于JovaAI OS内部，不能据此推导JovaOS已经具备词库中列出的全部权限和审计能力。",
+    "SEO-0191包含“回滚”，当前证据只支持审计、暂停、有限重试和人工接管；本轮不把“回滚”写成Nomos或JovaAI OS的已验证能力。",
+    "SEO-0031仅作为次级品类语义，不建议在正文机械插入“多智能体协同平台”，以免把文章的制度智能体主题误写成平台产品页。",
+    "TASK-GEO-NOMOS-001和TASK-GEO-NOMOS-002仅为MISSION-E2E-NOMOS-001任务级候选，不写入或激活全局GEO词库。",
+    "新增AnswerBlock与正文存在一定信息重复，004应用后应由莉莉丝复核信息密度、逻辑节奏和AI味儿。",
+    "本提案不承诺搜索排名、AI引用或任何平台可见性结果，也不使用平台监测数据。"
+    ,"为满足当前GeoSeoOptimizationProposal Schema的ID长度要求，提案中的公开证据使用可逆限定引用research-pack-v2:RP-xxx；其原始Evidence ID仍是Research Pack V2中的RP-xxx，004应用前必须解析并校验，不能把限定引用登记成新的证据。"
+  ],
+  "requiresEvidenceRequest": false,
+  "proposalHash": "bc7d6dc43e310ec81b43e7f98fb5afa0468f6d3829a0cf58304e697d36442dd6"
+}

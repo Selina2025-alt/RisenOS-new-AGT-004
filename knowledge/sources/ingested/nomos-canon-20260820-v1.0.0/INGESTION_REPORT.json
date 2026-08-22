@@ -1,0 +1,120 @@
+{
+  "bundleId": "nomos-canon-20260820-v1.0.0",
+  "allSourcesComplete": true,
+  "allSecurityScansPassed": true,
+  "knowledgeActivationAllowed": false,
+  "findings": [
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink1",
+      "target": "https://getnotes.seek:57",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink2",
+      "target": "https://getnotes.seek:205",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink3",
+      "target": "https://getnotes.seek:408",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink4",
+      "target": "https://getnotes.seek:684",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink5",
+      "target": "https://getnotes.seek:895",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink6",
+      "target": "https://getnotes.seek:1031",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink7",
+      "target": "https://getnotes.seek:1096",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink8",
+      "target": "https://getnotes.seek:1485",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink9",
+      "target": "https://getnotes.seek:1884",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink10",
+      "target": "https://getnotes.seek:2047",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink11",
+      "target": "https://getnotes.seek:2239",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink12",
+      "target": "https://getnotes.seek:2347",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink13",
+      "target": "https://getnotes.seek:2466",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink14",
+      "target": "https://getnotes.seek:2563",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink15",
+      "target": "https://getnotes.seek:2714",
+      "followed": false
+    },
+    {
+      "sourceId": "SRC-NOMOS-202608-03",
+      "type": "external_relationship",
+      "relationshipId": "rLink16",
+      "target": "https://getnotes.seek:3099",
+      "followed": false
+    }
+  ]
+}

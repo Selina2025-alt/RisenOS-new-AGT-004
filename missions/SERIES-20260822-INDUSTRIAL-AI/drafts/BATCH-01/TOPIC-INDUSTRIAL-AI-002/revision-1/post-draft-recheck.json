@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifactType": "POST_DRAFT_RECHECK",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "revision": 1,
+  "checkedByAgent": "makabaka",
+  "checkedAt": "2026-08-22",
+  "mode": "READ_ONLY",
+  "draftFileSha256": "af1f85977609f6975e1a6ea2658a9196d3f58d2f6b0982b2e3ca259c09164011",
+  "parentDraftSha256": "0b4cd95c0a65958185eb794ad3af493fe63fb9840da9f8203c6c137c6a99830b",
+  "knowledgeSnapshotSha256": "8d59f8f0234dc3eedf6a2d24af3f73e77f35ad45c44cad236542504aabfad540",
+  "verdict": "PASS_FOR_LILITH_REVIEW",
+  "originalIssueClosure": {
+    "MK-002-P1-01": "CLOSED",
+    "MK-002-P1-02": "CLOSED"
+  },
+  "remainingP0": 0,
+  "remainingP1": 0,
+  "remainingP2": 0,
+  "newIssues": 0,
+  "claimValidation": {
+    "tagCount": 9,
+    "bindingCount": 9,
+    "unboundTags": [],
+    "unusedBindings": [],
+    "unboundFactualClaims": [],
+    "newClaimsIntroduced": false,
+    "bindingHashMatchesDraft": true
+  },
+  "knowledgeChecks": {
+    "enterpriseClaims": "PASS",
+    "externalEvidenceBoundary": "PASS",
+    "icbDataSemantics": "NOT_APPLICABLE",
+    "jovaosNaming": "PASS",
+    "customerAndRoiBoundary": "PASS",
+    "productStatusBoundary": "PASS",
+    "nomosBoundary": "PASS",
+    "fusionNaturalness": "PASS"
+  },
+  "bodyModified": false,
+  "approved": false,
+  "nextRoute": "lilith"
+}

@@ -1384,6 +1384,9 @@ def build_radar(now: datetime | None = None) -> Path:
                 "windowHours": chosen_hours,
             },
         )
+    # READY is created only after all radar artifacts are complete. Runtime
+    # consumers must ignore directories without this marker.
+    atomic_write_text(radar_dir / "READY", f"{input_hash}\n")
     atomic_write_json(
         INTELLIGENCE / "topic-radar" / "latest.json",
         {

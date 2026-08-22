@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "5.5.1",
+  "id": "content-version-mission-e2e-nomos-001-v3",
+  "assetId": "content-asset-mission-e2e-nomos-001",
+  "missionId": "MISSION-E2E-NOMOS-001",
+  "organizationId": "org_jovaai",
+  "createdBy": "agt-004",
+  "traceId": "trace_e2e_nomos_20260821_001",
+  "versionNumber": 3,
+  "parentVersionId": "content-version-mission-e2e-nomos-001-v2",
+  "title": "多智能体越自主，企业越需要制度",
+  "bodyFormat": "markdown",
+  "bodyRef": "drafts/MISSION-E2E-NOMOS-001/V3/wechat-draft.md",
+  "contentHash": "9720c6d1af0c0710feb338348665d53eccb952b55b92f02079dee854c256eae5",
+  "changeReason": "Registers resolvable ResearchPack Evidence IDs, corrects ENT-003 evidence authority, and removes internal knowledge activation terminology",
+  "changedBy": "agt-004",
+  "generationContextSnapshot": {
+    "perspectiveHash": "12a69cccc82b540a009bf308a1a88b5d0ef19827d986ce7c05069b6f4fa5bf07",
+    "knowledgeSnapshotHash": "92f41b316524df224f438ba42e5535cac9ef7c1516a4fb431f726448fa93c794",
+    "researchPackRef": "missions/MISSION-E2E-NOMOS-001/research-pack-v2.md",
+    "researchPackHash": "70e267723e7d1c4ff8482fcd1d8ff16f0f840b46c0bc84b59cb52d32c671768a"
+  },
+  "claimBindingSnapshot": {
+    "enterprise": {
+      "ENT-001": ["knowledge/evidence/产品能力_案例与公开证据台账.md"],
+      "ENT-002": ["knowledge/evidence/产品能力_案例与公开证据台账.md", "knowledge/products/核心产品口径_两条产品线四大矩阵_V3.0.md"],
+      "ENT-003": ["knowledge/evidence/产品能力_案例与公开证据台账.md"]
+    },
+    "nomos": {
+      "kc_nomos_inside_os_20260820": ["SRC-NOMOS-202608-01", "SRC-NOMOS-202608-04", "SRC-NOMOS-202608-05"],
+      "kc_nomos_product_axis_20260820": ["SRC-NOMOS-202608-05", "SRC-NOMOS-202608-06"],
+      "kc_nomos_origin_problem_20260820": ["SRC-NOMOS-202608-01", "SRC-NOMOS-202608-02", "SRC-NOMOS-202608-04"],
+      "kc_nomos_evolution_20260820": ["SRC-NOMOS-202608-01", "SRC-NOMOS-202608-04"]
+    },
+    "external": {
+      "EXT-001": ["RP-001", "RP-002"],
+      "EXT-002": ["RP-004", "RP-009"],
+      "EXT-003": ["RP-002", "RP-005", "RP-008", "RP-011"],
+      "EXT-004": ["RP-006", "RP-007", "RP-010"],
+      "EXT-005": ["RP-004", "RP-007", "RP-009"],
+      "EXT-006": ["RP-002", "RP-003", "RP-005"]
+    }
+  },
+  "status": "REVIEW_REQUIRED",
+  "createdAt": "2026-08-21T10:06:20.780Z",
+  "updatedAt": "2026-08-21T10:06:20.780Z"
+}

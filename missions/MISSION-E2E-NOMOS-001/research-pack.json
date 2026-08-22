@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "missionId": "MISSION-E2E-NOMOS-001",
+  "traceId": "trace_e2e_nomos_20260821_001",
+  "createdByAgent": "public-researcher",
+  "retrievedAt": "2026-08-21T02:10:00.000Z",
+  "sourceCount": 11,
+  "primarySourceCount": 11,
+  "sourceTypeCount": 5,
+  "researchStatus": "READY",
+  "claimIds": [
+    "EXT-001",
+    "EXT-002",
+    "EXT-003",
+    "EXT-004",
+    "EXT-005",
+    "EXT-006"
+  ],
+  "productEvidenceBoundary": "External sources support the industry problem only and do not prove Nomos capabilities.",
+  "humanReviewRequired": true
+}

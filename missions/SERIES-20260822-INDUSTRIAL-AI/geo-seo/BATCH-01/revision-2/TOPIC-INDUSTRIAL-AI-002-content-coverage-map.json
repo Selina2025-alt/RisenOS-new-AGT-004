@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0.0",
+  "coverageMapId": "CCM-BATCH01-R2-TOPIC002",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "batchId": "BATCH-01",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "sourceRevision": 2,
+  "sourceDraftRef": "../../../drafts/BATCH-01/TOPIC-INDUSTRIAL-AI-002/revision-2/draft-proposal.md",
+  "sourceDraftHash": "966def7f89ea9a5fa5263949fa249540b2b28a5468902318481cb590caaa28a2",
+  "sourceDraftHashScope": "FULL_FILE",
+  "sourceBodyHash": "4a06ed8d1f4b65298b75c5180c11820a325125631b013f0bf690143c20da56ae",
+  "sourceBodyHashScope": "MARKDOWN_BODY_AFTER_FRONTMATTER",
+  "knowledgeSnapshotId": "KS-SERIES-20260822-INDUSTRIAL-AI-V1",
+  "reviewedByAgent": "xiaodiandian",
+  "reviewMode": "READ_ONLY",
+  "status": "MISSION_ONLY_CANDIDATE",
+  "corpusWriteback": false,
+  "primarySeoIntent": {
+    "seoId": "SEO-0165",
+    "query": "企业AI落地难点",
+    "intentType": "PROBLEM_DIAGNOSIS",
+    "coverage": "FULL",
+    "coveredBy": [
+      "演示验证：只是能力片段",
+      "进入业务：变量开始叠加",
+      "业务可用：过程必须可追溯",
+      "判断落地：别只看那一刻"
+    ]
+  },
+  "secondarySeoIntents": [
+    {"seoId": "SEO-0164", "query": "企业AI为什么进不了核心业务", "coverage": "FULL", "coveredBy": ["进入业务：变量开始叠加", "业务可用：过程必须可追溯"]},
+    {"seoId": "SEO-0170", "query": "AI试点很多但没有ROI", "coverage": "PARTIAL", "coveredBy": ["演示验证：只是能力片段", "判断落地：别只看那一刻"]},
+    {"seoId": "SEO-0214", "query": "企业AI项目POC怎么做", "coverage": "PARTIAL", "coveredBy": ["演示验证：只是能力片段", "进入业务：变量开始叠加"]},
+    {"seoId": "SEO-0169", "query": "企业AI项目如何选择场景", "coverage": "PARTIAL", "coveredBy": ["判断落地：别只看那一刻"], "disposition": "DEFERRED_TO_TOPIC_005"}
+  ],
+  "geoQuestions": [
+    {
+      "geoId": "GEO-0175",
+      "question": "企业怎样避免AI项目变成炫酷Demo？",
+      "role": "PRIMARY",
+      "coverage": "FULL",
+      "coveredBy": ["演示验证：只是能力片段", "进入业务：变量开始叠加", "判断落地：别只看那一刻"],
+      "evidenceIds": ["PUB-001", "PUB-002", "PUB-003", "PUB-004", "EXT-002-01", "EXT-002-02", "S1-C02"]
+    },
+    {
+      "geoId": "GEO-0168",
+      "question": "通用Agent为什么难以直接进入企业核心业务？",
+      "role": "RELATED",
+      "coverage": "FULL",
+      "coveredBy": ["进入业务：变量开始叠加", "业务可用：过程必须可追溯"],
+      "evidenceIds": ["EXT-002-01", "EXT-002-02", "S1-C02"]
+    },
+    {
+      "geoId": "GEO-0027",
+      "question": "智能体团队失败的常见原因有哪些？",
+      "role": "RELATED",
+      "coverage": "PARTIAL",
+      "coveredBy": ["艾氪路径：从工具到协同单元"],
+      "evidenceIds": ["S1-A02", "S1-A03"],
+      "gap": "正文解释协同单元的必要条件，但不承担智能体团队失败模式的完整清单。"
+    },
+    {
+      "geoId": "GEO-0024",
+      "question": "企业从哪个高价值场景开始最合适？",
+      "role": "RELATED",
+      "coverage": "PARTIAL",
+      "coveredBy": ["判断落地：别只看那一刻"],
+      "evidenceIds": ["S1-C02"],
+      "disposition": "DEFERRED_TO_TOPIC_005",
+      "gap": "本篇只提供问题、知识、权限、异常与追溯五项诊断，不提供跨场景排序或行动清单。"
+    }
+  ],
+  "answerBlocks": [
+    {
+      "answerBlockId": "AB-TOPIC002-R2-001",
+      "question": "为什么AI在演示中表现很好，进入真实业务后却容易失效？",
+      "sourceSections": ["演示验证：只是能力片段", "进入业务：变量开始叠加"],
+      "claimIds": ["EXT-002-01", "EXT-002-02", "EXT-002-03", "S1-C02"],
+      "readiness": "READY_FROM_EXISTING_TEXT",
+      "newClaimRequired": false
+    },
+    {
+      "answerBlockId": "AB-TOPIC002-R2-002",
+      "question": "企业怎样判断AI已经从演示走向业务可用？",
+      "sourceSections": ["业务可用：过程必须可追溯", "判断落地：别只看那一刻"],
+      "claimIds": ["EXT-002-02", "S1-C02"],
+      "readiness": "READY_FROM_EXISTING_TEXT",
+      "newClaimRequired": false
+    }
+  ],
+  "entityMentions": [
+    {"entity": "企业AI", "role": "category", "coverage": "FULL", "firstMentionSection": "opening"},
+    {"entity": "艾氪智能", "role": "company", "coverage": "FULL", "firstMentionSection": "进入业务：变量开始叠加"},
+    {"entity": "智能体团队", "role": "product_category", "coverage": "FULL", "firstMentionSection": "艾氪路径：从工具到协同单元"},
+    {"entity": "JovaOS", "role": "product", "coverage": "PARTIAL", "firstMentionSection": "艾氪路径：从工具到协同单元"}
+  ],
+  "mustNotForceCoverage": [
+    {"id": "GEO-0024", "item": "企业从哪个高价值场景开始最合适？", "reason": "只标记PARTIAL，完整场景选择和行动清单归入TOPIC-INDUSTRIAL-AI-005。", "disposition": "DEFERRED_TO_TOPIC_005"},
+    {"id": "GEO-0008", "item": "艾氪智能有哪些落地案例？", "reason": "没有授权CaseEvidenceCard。"},
+    {"id": "GEO-0026", "item": "如何评估智能体团队的ROI？", "reason": "没有客户结果和归因证据。"},
+    {"id": "NOMOS", "item": "Nomos产品植入", "reason": "Supervisor对TOPIC-INDUSTRIAL-AI-002明确DO_NOT_INSERT。"}
+  ],
+  "evidenceAssessment": {
+    "claimBindingRef": "../../../drafts/BATCH-01/TOPIC-INDUSTRIAL-AI-002/revision-2/claim-binding.json",
+    "unboundFactualClaims": [],
+    "newClaimsIntroducedByReview": false,
+    "blockingEvidenceGap": false,
+    "notes": [
+      "高价值场景问题只保留诊断入口，不扩写为TOPIC-005的行动方法。",
+      "AI项目失败原因必须继续按RAND、MIT CISR、NIST和政策来源边界表达。"
+    ]
+  },
+  "reviewDecision": "PASS_WITH_DEFERRED_COVERAGE"
+}

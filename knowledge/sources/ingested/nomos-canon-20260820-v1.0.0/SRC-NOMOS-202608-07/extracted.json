@@ -1,0 +1,1985 @@
+{
+  "comments": [],
+  "counts": {
+    "deletions": 0,
+    "hyperlinks": 0,
+    "insertions": 0,
+    "paragraphs": 336,
+    "tables": 16
+  },
+  "document": [
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "JovaAI Nomos 信息母稿"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发起源、架构、机制、场景与对外口径"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "基于 2026 年 8 月 20 日 Nomos 研发访谈逐字记录整理"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "版本：V1.0  |  定位：内部“真源”资料，不等同于对外技术白皮书"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "使用说明｜这份母稿解决什么问题"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "这份文件的目的，不是把 8 月 20 日会议换一种方式再总结一遍，而是把研发人员在访谈中给出的 JovaAI Nomos 信息重新整理为可长期复用的“信息母稿”。后续公众号文章、演讲稿、PPT、官网、产品介绍、采访和研究报告，都可以从这里取材。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "整理原则是“去口语重复，不去研发信息”。重复表达、语气词和来回确认被合并；但凡涉及研发起因、技术取舍、架构关系、协同机制、真实业务问题、工程方法、产品使用方式和对外边界的信息，均尽量保留。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "信息状态标签"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "标签"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "含义"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "使用原则"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "元元在 8 月 20 日访谈中明确说明的产品、架构、机制或研发判断。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "可作为内部母稿的直接依据；对外仍需结合品牌与保密审核。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "理想状态"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发希望达到、理论上可以扩展到的方向，尚不能自动等同于“已全面上线”。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对外不得改写成既成事实，应使用“目标、希望、理想状态、理论上”等边界词。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "需二次确认"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "本次访谈没有讲透，或元元明确建议找贺老师/产品资料继续核实。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "进入正式文章前补证，不自行推导。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对外谨慎"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "涉及客户名称、底层算法、代码仓、市场机制细节或容易引发误解的内容。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "内部保留，公开传播前单独审核。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "一页总览｜目前可以确认的 10 个核心结论"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 最初不是从宏大“智能体社会”概念出发，而是从中大型企业的多智能体协同准确率、稳定性和复杂业务处理问题出发。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发经历了从 Workflow 到 Agent 自主调度，再到“制度约束下的自主协同”的路线演进；Nomos 试图在稳定性与自主性之间找到平衡。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 在研发侧被逐渐定义为多智能体社会中承载“法律、制度、市场规则”的一套基座，其重点是环境、规则和协同秩序，而不是单个智能体本身会什么。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 属于 JovaAI 五级架构中的 JovaAI OS 层继续往底层拆后的组成部分，不是新增“第六层”。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "企业制度、流程和角色关系由 Nomos 承载；岗位经验、场景 Know-how、询比价技巧等更偏向 ICB 与专业智能体。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 不把所有异常情况写死。制度负责确定边界，智能体在边界内保留主观能动性和自主判断。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 内置多种协商、讨论和共识机制，智能体可在发现问题、信息不足或需要多人参与时主动触发，不由 Nomos 固定指定谁必须主持。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发在“中心化总控”与“去中心化协同”之间做过明确取舍，最终更倾向让具体智能体自己判断是否需要协同、应该找谁协同。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "雅迪的关务与询报价等真实企业场景推动了这套架构继续演进，核心压力来自速度、准确率、稳定性、复杂业务处理和规模化交付。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对客户不建议先讲完整 Nomos 理论，而应先演示业务场景：任务进入后，智能体自己组队并按企业制度协同；技术客户确有兴趣时再适度展开底层概念。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第一章｜Nomos 到底是什么"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:00:57—00:11:05；00:40:38—00:41:51"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发口径的核心不是“做一个更强的 Agent”，而是为多智能体提供一个可承载制度、协同、评价与运行边界的环境。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "1.1 从人类社会运行体系到智能体协同环境"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 最初的思考方式，是拿人类社会的运行体系做对照。人类社会有法律，企业内部有制度，社会运行中还有市场规则。人和企业并不是只靠个体能力工作，而是在这些规则、关系和环境中竞争、协作并完成任务。研发希望把其中一部分逻辑映射到智能体世界。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "随着研发推进，Nomos 的定义逐渐从“解决多智能体协同的一个机制”扩展为：在多智能体社会中，承载法律、制度和市场规则的一套基座。它关注的是多个智能体如何在同一个环境里形成共识、按规则协作、遇到问题时沟通，以及怎样留下可治理和可追溯的过程。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "1.2 Nomos 不直接负责“让单个智能体更聪明”"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "元元反复强调，Nomos 讨论的不是单个智能体会什么技能。单个智能体可以有自己的能力、知识和自主意识；Nomos 位于更宏观的层面，通过环境、制度、规则、协同机制和评价机制影响这些智能体如何一起工作。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "因此，Nomos 更接近“运行环境与制度秩序”，而不是把每一个智能体的内部能力都纳入统一控制。智能体进入不同公司或组织后，需要感知不同的制度、流程和组织关系，再动态调整自己的做事方式。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "1.3 最容易理解的一句话"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "没有 Nomos，多智能体更像几个 AI 临时凑在一起干活：听谁的、按什么规矩、有没有留痕，都不清楚；有了 Nomos，它们更像一支在制度下协作的 AI 团队。制度定规则，AI 在规则内决策、分工、协商、问责和留痕，过程可以被治理和追溯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第二章｜研发起源：Nomos 为什么会出现"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:01:36—00:04:38；00:24:31—00:32:49"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "2.1 起点不是“智能体社会”，而是中大型企业的协同问题"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 最开始并没有被设定成一个宏大的“智能体社会制度”概念。最初的问题非常具体：团队一直在做多智能体协同，早期路线是尽量发挥智能体自主性，让它们自己判断、自己协同。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "但在服务中大型企业时，客户对多智能体协同的要求迅速变高。仅仅“能把事情做完”并不够，企业还要求准确率、稳定性、复杂场景处理能力，以及严格遵守既定制度流程。尤其在真实业务里，流程只要错一点点，就可能不是“结果差一点”，而是业务不可接受。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "2.2 研发反过来研究：没有 Agent 的时候，人类怎么协同"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "团队开始反向研究企业自身。一个人进入公司，不是只靠个人聪明完成工作。公司有整体制度，部门有部门制度，制度里规定工作流程、角色、职责和相互配合方式。人加入组织以后，会学习这些制度，再在制度边界内发挥自己的判断。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "由此产生了 Nomos 最早的产品构想：企业已有的 Word、PPT、Excel 等制度材料是否可以直接交给系统学习，让智能体团队按照企业原有制度去协同，而不是每到一家企业就重新人工编排一套多智能体流程。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "2.3 从“制度文档”继续走向“环境”"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "进一步实践后，研发意识到只有制度文档还不够。人类开会不仅需要“会议规则”，还需要会议室、白板、发言机制等协作条件。制度如果没有配套环境和工具，执行效果仍然有限。于是 Nomos 的思路继续从“制度读取”扩展到“协同环境”：让智能体知道任务、适用制度、参与角色、职责分工、工作顺序，以及遇到问题时如何发起讨论。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第三章｜技术路线演进：Workflow → 自主调度 → 制度约束下的自主协同"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:25:21—00:30:27"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "3.1 第一阶段：Workflow，稳定但越来越“死”"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Workflow 的优势很明确：流程一旦设计好，系统基本可以严格沿既定路径执行，稳定性强、结果可预期。问题在于，企业流程会变化，大模型也会迭代，复杂 Workflow 需要持续维护。流程越多、分支越多，长期适配成本越高。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "3.2 第二阶段：Agent 自主调度，灵活但稳定性不足"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "后来研发尝试更自主的 Agent 调度逻辑：不把每一步写死，而是给智能体目标和提示，让它自己不断调用工具、判断下一步并推进任务。这种方式更聪明、适应性更强，也能覆盖更多未知情况。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "但对于企业核心流程，尤其是需要“必须按某套制度流程执行”的场景，这种自主性又带来新的稳定性问题。智能体可以做出合理决策，并不等于它一定符合企业内部制度。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "3.3 第三阶段：把人的组织逻辑引入 Agent"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "团队最终把人类企业作为参照：员工既受制度约束，又没有失去主观能动性。公司制度规定边界、角色和流程，但不会把所有异常情况都预先写进流程。人仍然需要在制度内判断、沟通、协商。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 试图形成的平衡是：既不像传统 Workflow 那么死，也不是让 Agent 完全自由发挥，而是在自主调度之上增加一层制度围栏。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "3.4 这条路线带来的三个直接价值"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "企业流程梳理更自然：企业本来就有制度与流程，不需要为多智能体重新创造一套完全陌生的表达。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "稳定性与自主性同时保留：制度把确定的边界固定下来，异常情况仍由智能体自主判断。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "客户理解成本更低：把“原来的三个人、三个角色”替换为“对应的三个智能体”，企业老板更容易理解多智能体团队如何进入真实工作。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第四章｜架构位置：Nomos 与 JovaAI 五级架构是什么关系"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:14:47—00:16:13"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 不是 JovaAI 新增的“第六层”，而是 JovaAI OS 这一层继续往底层拆后的组成部分。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "4.1 正确的层级关系"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "JovaAI 五级架构描述的是整体产品与技术体系的宏观框架。进入某一层继续拆解时，内部仍然存在多个子模块。Nomos 属于偏底层、偏技术的 JovaAI OS 层。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "宏观层：JovaAI 五级架构。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "其中的底层技术层：JovaAI OS。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "继续往 JovaAI OS 内部拆：Nomos 是其中一个组成部分。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "4.2 对外表达上的风险"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "如果传播时把 Nomos 直接并列在五级架构之外，很容易让外部误解为 JovaAI 架构从“五层”变成了“六层”。因此，任何涉及架构的位置说明，都应明确“Nomos 位于 JovaAI OS 内部”这一关系。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第五章｜能力边界：Nomos、ICB 与专业智能体分别负责什么"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:20:39—00:23:53"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "5.1 Nomos 负责制度、流程、组织角色与协同环境"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 主要处理的是组织层面的规则与秩序：公司制度、部门制度、工作流程、角色关系、任务协同和多智能体运行环境。它回答的是“在这家公司、这个部门、这个任务里，应当按什么制度，哪些角色参与，怎么协同”。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "5.2 ICB 与专业智能体负责更具体的业务经验"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "个人或岗位长期积累的专业经验，不会全部被塞进 Nomos。研发将询比价时的沟通技巧、比价逻辑、规则方法，以及过去企业服务过程中积累的场景经验，更多沉淀到 ICB 和专业智能体。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "例如蜜蜂询报价智能体、斗金财务智能体等，在调教过程中会拥有自己的专业经验和做事能力。进入 Nomos 环境后，一方面按公司制度流程协作，另一方面继续发挥专业智能体自身的 Know-how。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "5.3 一句话区分"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 更像告诉智能体“在这个组织里怎么按制度一起工作”；ICB 与专业智能体更像告诉它“这项专业工作本身应该怎么做好”。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第六章｜Nomos 的三类核心秩序：法律、制度、市场规则"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:06:56—00:10:18"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "6.1 法律：所有进入协同社会的基础边界"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "“法律”对应的是所有智能体都要遵守的基础规则和行为边界。研发举到的例子包括基础行为边界、对组织的归属意识等。只要智能体进入这套协同社会，就应遵守这类底层规则。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "6.2 制度：随企业、项目和部门变化的运行规则"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "“制度”不是全局唯一，而是跟着具体环境走。一个公司可以有整体制度，一个部门可以有部门制度，一个项目也可以有项目制度。报价怎么走、询价怎么做、生产环节怎么协同，都可以由企业自己定义，再由 Nomos 承载和执行。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "6.3 市场规则：评价、信用、压力与自我改善"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "“市场规则”更抽象，研发尝试模拟人类社会中的竞争、评价与信用机制。智能体每次协同的过程可以被记录和评价，未来其他智能体与它协同时，可以参考历史协同表现来判断其能力、效率和协同质量。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "随着协同积累，每个智能体可能形成一套类似“社会级信用”的状态。智能体自己也能看到信用状态；当表现较差时，可以通过提升协同质量、主动沟通等方式改善。研发希望借此模拟一种“个体在社会环境中主动提升自己”的机制。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对外谨慎"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "“市场规则、信用、压力、自我进化”属于较深的研发逻辑。8 月 20 日访谈明确存在这一思路，但对普通企业客户并不建议完整展开，更不能把抽象机制写成已经全面成熟的自治经济系统。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第七章｜企业制度如何进入 Nomos：从文档到智能体角色映射"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:18:07—00:22:50"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "7.1 产品入口：企业上传制度，运行机制在底层"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 会有一个可交互的智能体入口/主页，主要用于让企业上传自己的制度资料，帮助企业生成、整理和管理制度。但这个页面只是信息输入和管理入口，真正支撑多智能体运行的机制在底层。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "7.2 主要用户不是所有员工，而是制度制定与维护者"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发认为，Nomos 的主要用户更可能是每个部门负责制定、维护制度流程的人。例如产研负责人管理产研制度流程，就可能是 Nomos 的直接用户。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "7.3 企业不必从零重新写制度"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "大多数企业本身就有公司制度、员工制度、部门制度和流程文档。即使实际执行并不完全严格，这些资料通常已经存在。正常情况下，企业可以把历史 Word、PPT、Excel 等材料汇入系统，而不是让所有员工从零和 Nomos 对话重新创造制度。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "7.4 Nomos 在制度导入后主要做两件事"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "提取企业的工作制度和流程。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "提取制度流程中的角色，并把这些角色映射为智能体。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "这样，原来由人根据公司制度和岗位关系完成的工作，可以逐步映射为由智能体按同一制度和角色关系完成。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "理想状态"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发希望最终做到：企业把自己的制度交进来，Nomos 学习并统一管理制度；多智能体如何协同、沟通、讨论等基础机制由底层预置，从而降低每家企业都重新人工调试数周的成本。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第八章｜制度与自主性的边界：Nomos 不是另一种“写死流程”"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:22:13—00:22:50；00:25:21—00:26:41"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "8.1 制度只规定应该确定的部分"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "企业制度不可能穷举所有异常。研发举例：制度可以规定代码提交要求和流程，却不会细到“提交代码时电脑突然死机怎么办”。遇到制度没有覆盖的异常情况，仍然需要执行者依靠自身判断处理。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "8.2 Nomos 与 Workflow 的根本区别"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 不是把企业制度翻译成一个更大的 Workflow。Workflow 强调预先定义完整路径；Nomos 的思路是把制度、角色、流程和边界提供给智能体，让智能体在这个环境中自主判断如何完成任务。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "制度负责边界，智能体负责在边界内决策。这个“制度 + 自主性”的组合，是 Nomos 最核心的设计逻辑之一。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第九章｜多智能体协同机制：讨论、共识、主理人与动态组队"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:04:38—00:05:24；00:11:23—00:14:23；00:49:26—00:50:30"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "9.1 任务进入后，智能体先形成共同上下文"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "一个智能体团队接到任务后，需要感知任务是什么、公司有哪些制度、当前任务应该使用哪套制度、要协同哪些角色、各自职责是什么、前后顺序是什么。研发把这一层看作形成共同认知和协同基础。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "9.2 工作状态对其他智能体透明"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "协同过程中，智能体可以观察其他智能体的工作状态，例如做到哪里、是否遇到问题。发现自己无法独立解决，或者需要更多角色参与时，可以主动触发协商与讨论。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "9.3 内置约 4～5 种沟通机制"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "主持人模式：智能体依次发言，最后由主持人汇总。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "观点—评价模式：一个智能体先提出观点，其他智能体分别评价，再轮换发言。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "自由讨论模式：一个智能体发言后，其他智能体自行判断是否继续接话。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "问题触发模式：某个智能体发现不理解、无法处理或需要更多协作时，主动拉其他智能体进入讨论。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "本次访谈只举出了其中几类，没有完整列出全部 4～5 种机制的正式名称，因此正式产品材料如需列全，应回到研发文档核实。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "9.4 Nomos 不固定指定“主持人”"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发明确表示，Nomos 不会预先指定谁必须成为讨论主导者。正常情况下大家按制度流程走；如果某个智能体率先提出问题、意见或发起协商，它可能自然成为当前讨论的主理人或主持人。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "9.5 动态组队的基本判断逻辑"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "任务来到具体智能体后，它首先判断自己能否独立完成。如果能，就自己做；如果不能，就根据组织架构、职责和制度关系判断应该找谁。被拉进来的智能体同样重复这一判断：能不能解决，如果不能，是否需要继续拉入其他角色。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第十章｜关键架构选择：为什么研发更倾向去中心化"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:45:12—00:51:56"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "10.1 研发过程中真正出现过的分歧"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 研发中出现过一个明确的技术分歧：多智能体协同到底采用“中心化总控”还是“去中心化自主协同”。团队实际上尝试过不同架构，而不是一开始就确定答案。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "10.2 中心化方式是什么"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "中心化架构可以理解为：任务先进入一个总控智能体，由它读取当前有哪些 Agent、分别能做什么，再决定任务属于哪套制度、应该交给谁、谁再去协同谁。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "10.3 Nomos 更倾向的方式"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发最终更倾向去中心化：任务先来到具体智能体，由该智能体基于自身职责、组织架构和制度判断“这是我该做的吗”“我能不能独立完成”“如果不能，我应该主动找谁”。协同不是上面有一个看不见的角色统一发号施令，而是由具体角色在任务中自行发起。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "10.4 为什么做这个选择"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "更接近真实组织运行：很多现实协作并没有一个人预先告诉每个角色下一步必须找谁，而是执行者根据职责和任务自己判断。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "避免系统能力上限锁在一个总控 Agent：如果总控判断错，整个调度都会受影响。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "更容易享受大模型升级红利：单个智能体能力变强后，整个协同网络可以随之提升，而无需每次重做总控逻辑。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发的长期策略是尽可能利用基础大模型的能力提升。因为 JovaAI 不做基础大模型，理想状态是大模型一升级，系统尽量“无感”获得能力增益，而不是每次都大规模重构。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "10.5 一个非常重要的研发比喻"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "元元把 Nomos 比作“社会环境”：环境本身不需要随着每一次模型升级推倒重做，但进入环境的智能体越来越聪明以后，在这套环境里的协同效率可以水涨船高。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第十一章｜真实场景怎样推动 Nomos 演进"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:24:49—00:37:43"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "11.1 雅迪场景暴露的核心压力"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "元元明确提到，像雅迪这样的企业对多智能体协同的速度、准确率、稳定性和复杂业务处理能力要求很高。过去偏自主协同的逻辑，在“必须严格按制度流程执行”这一类要求下还做不到完全约束。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对外谨慎"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "访谈中提到雅迪目前仍在商务阶段、尚未正式签约。对外是否可直接使用客户名称，需要另行确认；若未经确认，建议只保留匿名行业描述。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "11.2 两个具体问题：关务与询报价"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "雅迪当时主要有两个问题：一个是关务，另一个是询报价。询报价看起来是一个很小的动作，实际上涉及查商品、找商品管理员、查历史报价、查历史订单等多个角色，本质上是多角色协同任务。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "11.3 单智能体能做完，但速度太慢"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "最初的一种方案是把所有工作放给一个智能体完成。它可以完成，但可能需要七八分钟甚至更久。为了提高效率，团队把任务拆给多个智能体并行处理。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "11.4 拆成多智能体后，新的问题出现"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "并行解决了部分速度问题，却带来了新的协同难题：怎样在不大量人工调试、不写很多额外条件的情况下，让多个智能体稳定行动、正确协同。这个问题直接指向 Nomos 所要解决的“协同秩序”。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "11.5 规模化交付压力"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "过去团队用“宇宙岛”调一个场景 Demo，可能需要两三周。即使旧架构多调几周也能把单个客户做出来，但如果以后每家公司都要用同样的人力调几周，项目很难规模化，更不可能让客户学会以后自己搭建。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "11.6 研发与交付周期的另一条信息"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "访谈中还提到雅迪与创维的项目节奏：需求理解阶段通常更长，大约两周；需求理解清楚后，在平台上调教对应智能体，真正把智能体做出来通常可以在一周以内。这里的重点不是把周期当成统一承诺，而是说明企业 AI 项目最重的部分往往是业务调研、管理逻辑和内部 Know-how 理解。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对外谨慎"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "“两周调研 + 一周以内做出智能体”来自个别项目经验，不能直接写成所有客户的标准交付周期或 SLA。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第十二章｜Harness Engineering：Nomos 是怎么被试出来的"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:43:29—00:45:12"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "12.1 AI Agent 研发和传统软件工程不同"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发认为，传统软件在需求、流程、字段足够明确后，工程路径往往更确定；智能体系统则不一样。即便底层架构在纸面上逻辑完整，也必须不断放进真实场景里跑，才能判断实际效果。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "12.2 纸面架构“正确”不等于真实场景有效"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发过程中出现过多次这种情况：按架构做出来，真实测试效果不好，于是调整、返工、再测试。元元把这类过程归到 Harness Engineering：通过大量实验、调试和验证，持续寻找更可靠的智能体行为和协同架构。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "12.3 一个重要的时间信息"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "访谈提到，大约有一个月时间，团队一直处在反复调试和重构 Harness 工程的阶段。中心化与去中心化的架构选择，也是在这一阶段的真实开发与争论中逐渐确定。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "12.4 2026 年 3 月底层架构重构后的再思考"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "元元还提到，2026 年 3 月底层架构重构后，团队对单智能体能力做过一轮升级；结合过去一两年多智能体协同踩过的坑，研发认为到了重新思考多智能体架构的时候。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对外谨慎"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Harness Engineering 可以用于讲研发方法和“反复真实验证”的过程，但再往下涉及代码、具体算法、参数和实现细节时，已经进入不适合公开展开的范围。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第十三章｜产品形态与当前可见能力"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:18:07—00:18:53；00:36:11—00:36:19；00:39:39—00:40:05"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "13.1 Nomos 有面向企业的交互入口"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发确认 Nomos 会有智能体主页/交互入口，主要用于企业上传制度、整理和管理制度。这个入口不是 Nomos 全部能力，真正的多智能体运行逻辑位于底层。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "13.2 真实业务数据与业务流程是最终接入目标"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "元元确认，这套能力最终面向客户真实业务流程和真实业务数据，而不是只停留在 Demo 或离线演示。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "13.3 可视化素材存在，但公开版本需筛选"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发侧已有录屏和文档，部分内容主要用于客户沟通，另有文档存放在代码仓。能否直接对外，需要先由研发筛选可公开部分；必要时可以重新制作一版面向品宣的素材。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "需二次确认"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "本次访谈没有给出“哪些具体功能已上线 / 测试 / POC / 客户生产使用”的完整状态清单。正式产品稿必须再向产品/研发补一份能力状态表。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第十四章｜对外口径：客户应该怎么理解 Nomos"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "来源片段：00:28:10—00:28:44；00:41:06—00:42:31"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "14.1 不建议面对普通企业客户先讲完整 Nomos 理论"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发明确表示，客户沟通时不会把 Nomos 当成重点概念完整展开。市场规则、底层机制等内容，不会像内部讨论一样全部讲给客户。客户最先需要理解的是：这套架构怎样让多个智能体进入真实业务并按企业制度协同。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "14.2 最自然的客户表达：先演示场景"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "推荐顺序是先讲一个真实业务场景。例如报价场景原来有三个角色：发起报价需求以后，多个智能体自己组队，按照企业规章制度和流程开始工作。客户先看到“事情是怎么被完成的”，再告诉他底层有一套制度智能体架构支撑。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "14.3 技术客户再适度深入"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "如果客户是技术人员，确实希望理解更深的架构与机制，再适当展开 Nomos。也就是说，对外沟通应该分层，而不是所有人都从“法律、制度、市场规则”开始。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "14.4 对外建议的三级表达"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对象"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "建议先讲什么"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "暂不主动展开"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "企业老板/业务负责人"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "按企业制度自动组织多智能体协同；智能体能自己组队、分工、协商并完成流程。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "市场经济模拟、信用压力、Harness 细节、算法层。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "CIO/技术负责人"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 位于 JovaAI OS 内部；制度与自主性的平衡；去中心化协同；流程可治理、可追溯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "底层算法、参数、代码实现。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "专业研究/大会受众"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "可讨论多智能体社会的法律、制度、市场规则，以及“环境”对智能体组织能力的影响。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "未完成验证的“场域算法”细节、未确认的产品化状态。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第十五章｜研发明确、研发设想、待补信息：必须分开"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "15.1 研发已明确的信息"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 的起点是多智能体协同，不是为了宣传临时创造的概念。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "核心思路是把人类社会/企业的法律、制度、市场规则和协同环境部分映射到智能体世界。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 位于 JovaAI OS 层内部，不改变五级架构。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "企业制度、流程和角色映射属于 Nomos；专业经验更多属于 ICB 与专业智能体。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "制度与自主性并存，Nomos 不是把所有步骤写死。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "内置多种讨论、协商与共识机制；具体主理人可以动态产生。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发更倾向去中心化多智能体协同，而不是完全依赖一个中心总控 Agent。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "真实企业场景已经成为研发验证的重要依据，Harness Engineering 是实际研发方式。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "15.2 研发明确表达的理想状态"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "企业把制度资料交给 Nomos 后，可由系统学习、生成和统一管理制度。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "多智能体协同、沟通、讨论的基础机制由底层预置，减少每个客户重新人工调试。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "未来企业学会后可以更自主地建设，而不长期依赖厂商驻场。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "理论上，只要协同环境足够扎实，其他平台上能力很强的智能体也可以进入这套环境协同。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "基础大模型升级后，进入 Nomos 环境的智能体能力增强，系统整体协同能力也随之提升。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "15.3 本次访谈不足以独立支撑的信息"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "“场域”更底层、更抽象的算法含义：元元明确建议继续看贺老师资料，本次访谈没有讲透。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "法律层、市场规则层具体已经产品化到什么程度：本次没有完整状态清单。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "约 4～5 种沟通机制的正式名称和完整清单：本次只举出部分例子。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 正式产品文档中的标准一句话定义：元元提到研发已有定义文档，但本次没有完整引用。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "客户名单、客户授权、当前商务状态和哪些案例可对外：需要逐一确认。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "可公开 UI、录屏、架构图、制度模板、日志、追溯画面：研发有素材，但需要筛选和脱敏。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第十六章｜对外红线与事实核验清单"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "16.1 不要把“研发思路”写成“已经全面产品化”"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "例如“社会级信用机制”“压力机制”“理论上各种平台智能体都可以进入环境”等内容，研发确实在讨论，但对外必须保留状态边界。没有产品状态表之前，不宜写成已经在所有客户生产环境大规模运行。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "16.2 不要披露底层算法与代码实现"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "元元已经把“场域”部分明确归为更抽象、涉及算法的层级，并建议另看贺老师资料。Harness Engineering 也只适合讲方法和试错过程，不适合进一步公开代码、参数和核心实现。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "16.3 客户名称必须经过授权"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "雅迪在访谈中的状态是“仍在商务阶段、尚未正式签约”的研发人员理解，能否直接公开需再次确认。创维同样不应仅凭访谈自动视为可公开案例。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "16.4 交付时间不得包装成标准承诺"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "“需求调研约两周、做出智能体一周以内”是具体项目经验，不代表所有场景的固定交付周期。公开使用时应说明是案例经验，或干脆不写时间。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "16.5 对外最稳妥的事实链"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "企业本来就有制度和流程。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "多个智能体进入企业以后，需要知道按什么制度、哪些角色参与、怎么协同。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 试图把这些制度与协同关系转化为智能体可运行的环境。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "智能体在制度边界内仍然保留自主判断，不是把所有业务写成 Workflow。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "真实业务场景中，任务可由多个智能体按角色并行执行，并在遇到问题时讨论、协商、形成共识。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "第十七章｜后续写作可直接复用的叙事骨架"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "17.1 研发故事型文章"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "多智能体一开始强调自主性 → 中大型企业要求更高准确率与稳定性 → Workflow 太死、自主调度又不够稳 → 研发回头研究“人为什么能在企业里协同” → 发现制度、角色、环境的重要性 → 雅迪等真实场景继续暴露速度与多角色协同问题 → Harness Engineering 反复验证 → 从中心化/去中心化争论中形成当前路线 → Nomos 逐渐从协同机制演变成智能体社会的制度与环境基座。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "17.2 企业客户型文章"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "企业真正的问题不是“有没有 Agent”，而是多个 Agent 进入报价、采购、关务等真实流程以后，能不能知道自己应该做什么、该找谁、必须遵守哪些制度、遇到异常时怎样自主处理，以及整个过程能不能被追溯。Nomos 应从这个问题切入，而不是先讲市场机制。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "17.3 技术思想型文章"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "从 Workflow 与自主 Agent 的两难出发，讨论“怎样既不把智能体锁死，又不让它在企业里完全自由发挥”；再进一步进入去中心化多智能体协同、社会环境、制度与大模型升级之间的关系。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "附录 A｜关键事实与证据索引"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "信息点"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "会议时间"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "状态"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "备注"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 起点：多智能体协同"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:01:36—00:02:32"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "最初没有宏大化。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "企业制度文档可作为输入"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:02:32；00:19:39—00:21:58"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Word/PPT/Excel 等。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "法律、制度、市场规则"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:06:25—00:10:18"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "核心三类秩序。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "4～5 种沟通机制"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:13:00"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确但清单不全"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "正式名称需补文档。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "JovaAI OS 内部组成部分"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:15:10—00:16:13"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "不是第六层。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 与 ICB 边界"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:20:39—00:23:53"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "制度 vs 专业经验。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Workflow → 自主调度 → 制度+自主"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:25:21—00:26:41"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "核心技术演进。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "雅迪：关务 + 询报价"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:24:49；00:34:17"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "对外谨慎"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "客户名需确认。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "过去 Demo 调试两三周"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:31:29—00:32:49"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "背景数据，不宜扩大。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "需求调研约两周；做智能体一周内"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:36:31—00:37:05"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "个案经验"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "非标准 SLA。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Harness Engineering 反复调试约一个月"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:43:29—00:44:34"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "可讲过程，不讲代码。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "中心化/去中心化分歧"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:45:12—00:51:56"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发已明确"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "最终更倾向去中心化。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "场域更抽象，需看贺老师资料"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "00:38:03—00:38:13"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "需二次确认"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "本访谈不足以展开。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "附录 B｜下一轮需要向研发/产品补齐的材料"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "研发内部现有的 Nomos 正式定义文档。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 当前能力状态表：研究 / 原型 / 测试 / POC / 已上线 / 客户生产使用。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "完整的 4～5 种沟通机制清单及正式名称。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "制度导入、角色映射、协同执行、讨论、问责、留痕等可公开产品截图或录屏。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "中心化与去中心化架构演进中可以公开的示意图。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "雅迪、创维等客户名称及案例细节的公开授权状态。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "贺老师关于“场域”及更底层抽象层的可公开说明，明确哪些能讲价值、哪些绝对不能讲原理。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "代码仓内文档可对品宣开放的版本，以及是否需要专门整理“品牌可用版”。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "结语｜这份母稿应该怎样使用"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "Nomos 目前最有价值的传播资产，不是一句“智能体治理”或一个新名词，而是它背后已经形成的一条清晰研发逻辑：企业需要的不只是更聪明的 Agent，而是让多个 Agent 在真实组织里有制度、有角色、有协同、有自主性，同时还能被治理和追溯。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "因此，后续内容应尽量从真实业务矛盾出发：Workflow 太死，自主 Agent 又不够稳；单 Agent 能做但慢，多 Agent 并行又需要秩序；企业本来有制度，但这些制度过去主要写给人看。Nomos 的价值，就在于尝试把这些组织运行逻辑转成智能体可以感知和执行的环境。"
+    },
+    {
+      "kind": "paragraph",
+      "sourceContentOnly": true,
+      "text": "同时必须保留边界：8 月 20 日访谈已经给出大量研发事实，但“场域算法”、具体产品化状态、客户公开授权等仍有缺口。在这些信息补齐之前，母稿可以作为内部真源，但对外稿件必须再经过产品、研发和品牌审核。"
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "标签",
+          "含义",
+          "使用原则"
+        ],
+        [
+          "研发已明确",
+          "元元在 8 月 20 日访谈中明确说明的产品、架构、机制或研发判断。",
+          "可作为内部母稿的直接依据；对外仍需结合品牌与保密审核。"
+        ],
+        [
+          "理想状态",
+          "研发希望达到、理论上可以扩展到的方向，尚不能自动等同于“已全面上线”。",
+          "对外不得改写成既成事实，应使用“目标、希望、理想状态、理论上”等边界词。"
+        ],
+        [
+          "需二次确认",
+          "本次访谈没有讲透，或元元明确建议找贺老师/产品资料继续核实。",
+          "进入正式文章前补证，不自行推导。"
+        ],
+        [
+          "对外谨慎",
+          "涉及客户名称、底层算法、代码仓、市场机制细节或容易引发误解的内容。",
+          "内部保留，公开传播前单独审核。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "研发已明确",
+          "研发口径的核心不是“做一个更强的 Agent”，而是为多智能体提供一个可承载制度、协同、评价与运行边界的环境。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "研发已明确",
+          "没有 Nomos，多智能体更像几个 AI 临时凑在一起干活：听谁的、按什么规矩、有没有留痕，都不清楚；有了 Nomos，它们更像一支在制度下协作的 AI 团队。制度定规则，AI 在规则内决策、分工、协商、问责和留痕，过程可以被治理和追溯。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "研发已明确",
+          "Nomos 试图形成的平衡是：既不像传统 Workflow 那么死，也不是让 Agent 完全自由发挥，而是在自主调度之上增加一层制度围栏。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "研发已明确",
+          "Nomos 不是 JovaAI 新增的“第六层”，而是 JovaAI OS 这一层继续往底层拆后的组成部分。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "研发已明确",
+          "Nomos 更像告诉智能体“在这个组织里怎么按制度一起工作”；ICB 与专业智能体更像告诉它“这项专业工作本身应该怎么做好”。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "对外谨慎",
+          "“市场规则、信用、压力、自我进化”属于较深的研发逻辑。8 月 20 日访谈明确存在这一思路，但对普通企业客户并不建议完整展开，更不能把抽象机制写成已经全面成熟的自治经济系统。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "理想状态",
+          "研发希望最终做到：企业把自己的制度交进来，Nomos 学习并统一管理制度；多智能体如何协同、沟通、讨论等基础机制由底层预置，从而降低每家企业都重新人工调试数周的成本。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "研发已明确",
+          "制度负责边界，智能体负责在边界内决策。这个“制度 + 自主性”的组合，是 Nomos 最核心的设计逻辑之一。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "研发已明确",
+          "研发的长期策略是尽可能利用基础大模型的能力提升。因为 JovaAI 不做基础大模型，理想状态是大模型一升级，系统尽量“无感”获得能力增益，而不是每次都大规模重构。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "对外谨慎",
+          "访谈中提到雅迪目前仍在商务阶段、尚未正式签约。对外是否可直接使用客户名称，需要另行确认；若未经确认，建议只保留匿名行业描述。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "对外谨慎",
+          "“两周调研 + 一周以内做出智能体”来自个别项目经验，不能直接写成所有客户的标准交付周期或 SLA。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "对外谨慎",
+          "Harness Engineering 可以用于讲研发方法和“反复真实验证”的过程，但再往下涉及代码、具体算法、参数和实现细节时，已经进入不适合公开展开的范围。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "需二次确认",
+          "本次访谈没有给出“哪些具体功能已上线 / 测试 / POC / 客户生产使用”的完整状态清单。正式产品稿必须再向产品/研发补一份能力状态表。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "对象",
+          "建议先讲什么",
+          "暂不主动展开"
+        ],
+        [
+          "企业老板/业务负责人",
+          "按企业制度自动组织多智能体协同；智能体能自己组队、分工、协商并完成流程。",
+          "市场经济模拟、信用压力、Harness 细节、算法层。"
+        ],
+        [
+          "CIO/技术负责人",
+          "Nomos 位于 JovaAI OS 内部；制度与自主性的平衡；去中心化协同；流程可治理、可追溯。",
+          "底层算法、参数、代码实现。"
+        ],
+        [
+          "专业研究/大会受众",
+          "可讨论多智能体社会的法律、制度、市场规则，以及“环境”对智能体组织能力的影响。",
+          "未完成验证的“场域算法”细节、未确认的产品化状态。"
+        ]
+      ],
+      "sourceContentOnly": true
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "信息点",
+          "会议时间",
+          "状态",
+          "备注"
+        ],
+        [
+          "Nomos 起点：多智能体协同",
+          "00:01:36—00:02:32",
+          "研发已明确",
+          "最初没有宏大化。"
+        ],
+        [
+          "企业制度文档可作为输入",
+          "00:02:32；00:19:39—00:21:58",
+          "研发已明确",
+          "Word/PPT/Excel 等。"
+        ],
+        [
+          "法律、制度、市场规则",
+          "00:06:25—00:10:18",
+          "研发已明确",
+          "核心三类秩序。"
+        ],
+        [
+          "4～5 种沟通机制",
+          "00:13:00",
+          "研发已明确但清单不全",
+          "正式名称需补文档。"
+        ],
+        [
+          "JovaAI OS 内部组成部分",
+          "00:15:10—00:16:13",
+          "研发已明确",
+          "不是第六层。"
+        ],
+        [
+          "Nomos 与 ICB 边界",
+          "00:20:39—00:23:53",
+          "研发已明确",
+          "制度 vs 专业经验。"
+        ],
+        [
+          "Workflow → 自主调度 → 制度+自主",
+          "00:25:21—00:26:41",
+          "研发已明确",
+          "核心技术演进。"
+        ],
+        [
+          "雅迪：关务 + 询报价",
+          "00:24:49；00:34:17",
+          "对外谨慎",
+          "客户名需确认。"
+        ],
+        [
+          "过去 Demo 调试两三周",
+          "00:31:29—00:32:49",
+          "研发已明确",
+          "背景数据，不宜扩大。"
+        ],
+        [
+          "需求调研约两周；做智能体一周内",
+          "00:36:31—00:37:05",
+          "个案经验",
+          "非标准 SLA。"
+        ],
+        [
+          "Harness Engineering 反复调试约一个月",
+          "00:43:29—00:44:34",
+          "研发已明确",
+          "可讲过程，不讲代码。"
+        ],
+        [
+          "中心化/去中心化分歧",
+          "00:45:12—00:51:56",
+          "研发已明确",
+          "最终更倾向去中心化。"
+        ],
+        [
+          "场域更抽象，需看贺老师资料",
+          "00:38:03—00:38:13",
+          "需二次确认",
+          "本访谈不足以展开。"
+        ]
+      ],
+      "sourceContentOnly": true
+    }
+  ],
+  "externalLinksFollowed": false,
+  "footers": [
+    {
+      "part": "word/footer1.xml",
+      "records": [
+        {
+          "kind": "paragraph",
+          "sourceContentOnly": true,
+          "text": "第 PAGE 页"
+        }
+      ]
+    }
+  ],
+  "headers": [
+    {
+      "part": "word/header1.xml",
+      "records": [
+        {
+          "kind": "paragraph",
+          "sourceContentOnly": true,
+          "text": "内部工作材料  |  JovaAI Nomos 信息母稿  |  2026-08-20"
+        }
+      ]
+    }
+  ],
+  "instructionDisposition": "SOURCE_CONTENT_ONLY"
+}

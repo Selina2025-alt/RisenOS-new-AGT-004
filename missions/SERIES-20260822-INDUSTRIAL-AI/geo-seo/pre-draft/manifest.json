@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "artifactType": "GEO_SEO_PRE_DRAFT_PLAN_SET",
+  "createdByAgent": "xiaodiandian",
+  "createdAt": "2026-08-22T14:23:46.9647817+08:00",
+  "validatedAt": "2026-08-22T14:25:25.5449057+08:00",
+  "status": "MISSION_ONLY_CANDIDATE",
+  "formalCorpusModified": false,
+  "formalContentModified": false,
+  "sourceSnapshots": {
+    "seoCorpus": {
+      "name": "艾氪智能_SEO搜索词库_202607.xlsx",
+      "sha256": "6ffc514e60a83548755451bbc5b564fb65ccc390eb928315075043551e4e27ed",
+      "mode": "READ_ONLY"
+    },
+    "geoCorpus": {
+      "name": "艾氪智能_GEO问题库_202607.xlsx",
+      "sha256": "e3f02f91f27d6068e21357dd91cdf0b5bff0dc4d1ce15eff31a492043f60d873",
+      "mode": "READ_ONLY"
+    },
+    "knowledgeSnapshot": "../../knowledge/knowledge-snapshot.json",
+    "researchManifest": "../../research/research-manifest.json",
+    "briefManifest": "../../briefs/manifest.json"
+  },
+  "publicationToResearchMapping": [
+    {
+      "articleId": "ARTICLE-01",
+      "researchTopicId": "TOPIC-INDUSTRIAL-AI-002",
+      "reason": "publicationOrder=[2,1,3,4,5]; semantic topic is AI demo to real business"
+    },
+    {
+      "articleId": "ARTICLE-02",
+      "researchTopicId": "TOPIC-INDUSTRIAL-AI-001",
+      "reason": "publicationOrder=[2,1,3,4,5]; semantic topic is why industrial AI"
+    },
+    {
+      "articleId": "ARTICLE-03",
+      "researchTopicId": "TOPIC-INDUSTRIAL-AI-003"
+    },
+    {
+      "articleId": "ARTICLE-04",
+      "researchTopicId": "TOPIC-INDUSTRIAL-AI-004"
+    },
+    {
+      "articleId": "ARTICLE-05",
+      "researchTopicId": "TOPIC-INDUSTRIAL-AI-005"
+    }
+  ],
+  "plans": [
+    "ARTICLE-01-AI-DEMO-TO-REAL-BUSINESS.json",
+    "ARTICLE-02-WHY-INDUSTRIAL-AI.json",
+    "ARTICLE-03-FROM-TOOLS-TO-AGENTIC-OS.json",
+    "ARTICLE-04-AI-WORKERS-AND-INDUSTRIAL-CHAIN.json",
+    "ARTICLE-05-ENTERPRISE-AI-ACTION-AGENDA.json"
+  ],
+  "planHashes": {
+    "ARTICLE-01-AI-DEMO-TO-REAL-BUSINESS.json": "2c19a5984568c97880cc9894809b3be3bebfe7a780a385989e4a7f74dbb1d041",
+    "ARTICLE-02-WHY-INDUSTRIAL-AI.json": "c8099930ba669f8184e6b8de13adbfea4565d882a5c9de734e5260505f3e42e5",
+    "ARTICLE-03-FROM-TOOLS-TO-AGENTIC-OS.json": "20e822b8727826024e14a51efa88b3e0d9dc0d12254b988015419634f92f584e",
+    "ARTICLE-04-AI-WORKERS-AND-INDUSTRIAL-CHAIN.json": "64b0676bc611628bdb03c0c318af483bd847e6e154d7a1fb58fb085acb90b936",
+    "ARTICLE-05-ENTERPRISE-AI-ACTION-AGENDA.json": "1f7025e6686801c16bb3ce11ccc8582a81d15629d6e4b5225732c4b456d605e0"
+  },
+  "corpusGaps": [
+    {
+      "candidateId": "TASK-GEO-SERIES-02-001",
+      "question": "艾氪智能为什么聚焦实体产业？",
+      "scope": "ARTICLE-02_ONLY",
+      "activation": "NOT_ACTIVATED"
+    },
+    {
+      "candidateId": "TASK-GEO-SERIES-02-002",
+      "question": "产业AI的“看得见的价值”应该如何定义和验证？",
+      "scope": "ARTICLE-02_ONLY",
+      "activation": "NOT_ACTIVATED"
+    },
+    {
+      "candidateId": "TASK-GEO-SERIES-04-001",
+      "question": "什么是企业AI员工？",
+      "scope": "ARTICLE-04_ONLY",
+      "activation": "NOT_ACTIVATED"
+    },
+    {
+      "candidateId": "TASK-GEO-SERIES-04-002",
+      "question": "“硅基人才”在企业内容中应该如何理解？",
+      "scope": "ARTICLE-04_ONLY",
+      "activation": "NOT_ACTIVATED"
+    },
+    {
+      "candidateId": "TASK-GEO-SERIES-05-001",
+      "question": "未来两三年，传统企业用好AI应该先做什么？",
+      "scope": "ARTICLE-05_ONLY",
+      "activation": "NOT_ACTIVATED"
+    }
+  ],
+  "globalRules": [
+    "One primary SEO intent per article; secondary intents are semantic support, not keyword quotas.",
+    "AnswerBlocks must be supported by the mapped Research Pack and KnowledgeSnapshot.",
+    "Task-level candidates must not be written back to the formal SEO/GEO corpora.",
+    "No content monitoring, ranking promise, AI citation promise, or platform effect data.",
+    "No product capability may be inferred from a policy, external framework, protocol, or category keyword."
+  ]
+}

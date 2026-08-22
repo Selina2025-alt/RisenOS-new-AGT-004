@@ -17,11 +17,18 @@ import type {
 } from "@risen/content-core";
 import {
   ContentService,
+  createV55TeamRuntime,
   InMemoryContentRepository,
   RuleBasedPolicyPort,
+  V55GovernanceStore,
+  type V55GovernanceRepository,
+  V55StoreGovernanceGate,
+  type TeamRuntimeBundle,
 } from "@risen/content-core";
-import { PostgresContentRepository } from "@risen/content-database";
+import { PostgresAgentTaskStore, PostgresContentRepository, PostgresV55GovernanceStore } from "@risen/content-database";
 import { Queue } from "bullmq";
+import { readFile } from "node:fs/promises";
+import { join, resolve } from "node:path";
 
 class UnavailableHostModelPort implements HostModelPort {
   async generateObject(): Promise<HostGenerationResult> {
@@ -38,6 +45,9 @@ export interface DependencyOptions {
 export interface DependencyContainer {
   service: ContentService;
   repository: ContentRepository;
+  governance: V55GovernanceRepository;
+  canonSourceHashesById: Record<string, string>;
+  teamRuntime: TeamRuntimeBundle;
   enqueueRun?: (
     runId: string,
     identity: {
@@ -47,7 +57,8 @@ export interface DependencyContainer {
     },
   ) => Promise<void>;
   cancelRunJobs?: (runIds: string[]) => Promise<void>;
-  ready(): Promise<{ database: "ok"; queue: "ok" | "disabled" }>;
+  enqueueTeamRun?: (runId: string, organizationId: string, taskCount: number) => Promise<void>;
+  ready(): Promise<{ database: "ok"; queue: "ok" | "disabled"; teamRuntime: "READY" | "DEGRADED" }>;
   close(): Promise<void>;
 }
 
@@ -78,6 +89,36 @@ export async function createDependencies(
     usePostgres && databaseUrl
       ? new PostgresContentRepository(databaseUrl)
       : new InMemoryContentRepository();
+  const repositoryRoot = resolve(process.env.AGT004_REPOSITORY_ROOT ?? process.cwd());
+  const governance: V55GovernanceRepository = usePostgres && databaseUrl
+    ? new PostgresV55GovernanceStore(databaseUrl)
+    : new V55GovernanceStore(
+        process.env.V55_STORE_ROOT ?? join(repositoryRoot, ".runtime", "v5.5"),
+      );
+  await governance.load();
+  let canonSourceHashesById: Record<string, string> = {};
+  const canonRoot = join(
+    repositoryRoot,
+    "knowledge",
+    "canon",
+    "nomos-canon-20260820-v1.0.0",
+  );
+  try {
+    const [claims, conflicts, sources] = await Promise.all([
+      readFile(join(canonRoot, "claim-cards.json"), "utf8"),
+      readFile(join(canonRoot, "conflicts.json"), "utf8"),
+      readFile(join(repositoryRoot, "knowledge", "sources", "ingested", "nomos-canon-20260820-v1.0.0", "source_manifest.json"), "utf8"),
+    ]);
+    await governance.seedKnowledge(JSON.parse(claims), JSON.parse(conflicts));
+    canonSourceHashesById = Object.fromEntries(
+      (JSON.parse(sources).sources as Array<{ sourceId: string; binaryHash: string }>).map((source) => [source.sourceId, source.binaryHash]),
+    );
+  } catch (error) {
+    if (production) throw error;
+  }
+  if (production && !process.env.AGT004_REPOSITORY_ROOT) {
+    throw new Error("Production mode requires AGT004_REPOSITORY_ROOT for the versioned knowledge canon");
+  }
 
   const allowedHosts = csv(process.env.ALLOWED_OUTBOUND_HOSTS);
   const hostRuntime =
@@ -165,8 +206,20 @@ export async function createDependencies(
     policy,
     review,
     handoff,
+    governanceGate: new V55StoreGovernanceGate(governance, Object.values(canonSourceHashesById)),
     ...(image ? { hostImage: image } : {}),
     ...(attachments ? { attachments } : {}),
+  });
+  const teamTaskStore = usePostgres && databaseUrl
+    ? new PostgresAgentTaskStore(databaseUrl)
+    : undefined;
+  const teamRuntime = await createV55TeamRuntime({
+    workspaceRoot: repositoryRoot,
+    storeRoot: process.env.AGENT_TASK_STORE_ROOT ?? join(repositoryRoot, ".runtime", "v5.5", "team"),
+    ...(teamTaskStore ? { store: teamTaskStore, autoExecute: false } : {}),
+    ...(hostRuntime ? { hostModel } : {}),
+    ...(process.env.PYTHON_EXECUTABLE ? { pythonExecutable: process.env.PYTHON_EXECUTABLE } : {}),
+    maxConcurrency: Number.parseInt(process.env.LOCAL_AGENT_CONCURRENCY ?? "1", 10),
   });
 
   const redisUrl = process.env.REDIS_URL;
@@ -183,11 +236,32 @@ export async function createDependencies(
           removeOnFail: 1_000,
         },
       })
+      : undefined;
+  const teamQueue = redisUrl
+    ? new Queue("agt-rsn-004-team-runs", {
+        connection: redisConnection(redisUrl),
+        defaultJobOptions: {
+          attempts: 8,
+          backoff: { type: "exponential", delay: 2_000 },
+          removeOnComplete: 500,
+          removeOnFail: 1_000,
+        },
+      })
     : undefined;
 
   return {
     service,
     repository,
+    governance,
+    canonSourceHashesById,
+    teamRuntime,
+    ...(teamQueue
+      ? {
+          enqueueTeamRun: async (runId: string, organizationId: string, taskCount: number) => {
+            await teamQueue.add("execute-team-run", { runId, organizationId }, { jobId: `${runId}-${taskCount}` });
+          },
+        }
+      : {}),
     ...(queue
       ? {
           enqueueRun: async (
@@ -218,16 +292,22 @@ export async function createDependencies(
       await repository.healthCheck();
       if (queue) await queue.waitUntilReady();
       await hostRuntime?.healthCheck?.();
+      const team = await teamRuntime.health();
+      if (team.status === "NOT_READY") throw new Error("Team runtime is not ready");
       return {
         database: "ok",
         queue: queue ? "ok" : "disabled",
+        teamRuntime: team.status,
       };
     },
     async close() {
       await queue?.close();
+      await teamQueue?.close();
+      await teamRuntime.close();
       if (repository instanceof PostgresContentRepository) {
         await repository.close();
       }
+      await governance.close?.();
     },
   };
 }

@@ -1,0 +1,11 @@
+{
+  "missionClass": "PUBLIC_TOPIC",
+  "enterpriseRelevance": "NONE",
+  "topicEntities": ["公开AI话题"],
+  "publicationScope": "EXTERNAL_DRAFT",
+  "riskLevel": "LOW",
+  "requiresPublicResearch": true,
+  "requiresEnterpriseKnowledge": false,
+  "requiresNomosPolicy": false,
+  "requiresCasePolicy": false
+}

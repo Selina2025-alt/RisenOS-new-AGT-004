@@ -1,0 +1,16 @@
+# Keep persisted text artifacts byte-stable across Windows, macOS and Linux.
+* text=auto eol=lf
+
+# Office documents and generated media are binary and must never be normalized.
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.mp3 binary
+*.mp4 binary
+*.zip binary

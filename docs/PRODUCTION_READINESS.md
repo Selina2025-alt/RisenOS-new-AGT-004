@@ -2,6 +2,29 @@
 
 以下事项不扩张 AGT-RSN-004 的纯内容边界，但决定它能否真实投入使用。
 
+## V5.5 新增投产闸门
+
+- [x] 运行 `009_v55_governance.sql`，持久化 Preflight、Perspective、Snapshot、Claim 卡与冲突表；
+- [x] 生产 API 与 Worker 使用 PostgreSQL 治理存储，本地文件治理不进入生产；
+- [x] `AGT004_REPOSITORY_ROOT` 指向随部署发布的版本化知识根目录；
+- [x] 企业任务无 KnowledgeSnapshot 不得执行，Nomos Snapshot 的来源哈希必须仍在当前知识包；
+- [x] 当前源版本未获 HUMAN 审核批准时，巴啦啦变体和 Localization 均被阻断；
+- [x] 发布前执行 `validate_nomos_canon.py` 与 `validate_agent_rollout.py`。
+
+## V5.5.1 统一团队运行时
+
+- [x] API、Worker、CLI 使用同一 `createV55TeamRuntime()` Bootstrap；
+- [x] 7/7 子智能体 Handler 已注册，Registry 与 Manifest 启动时校验；
+- [x] 噜噜猫通过固定路径、最小环境变量、READY/Schema/哈希检查接入；
+- [x] Task、Result、Artifact、Checkpoint、HumanGateDecision、Event 和 TeamRun 已支持本地持久化；
+- [x] `010_agent_team_runtime.sql` 与 PostgreSQL Store 已实现；
+- [x] TeamRun API、BullMQ Worker、暂停/恢复/取消和人工决定接口已接线；
+- [x] SHADOW Artifact 不能满足正式源稿或变体闸门；
+- [ ] 当前部署宿主提供真实 `HOST_RUNTIME_MODULE` 并通过健康检查；
+- [ ] 7 个子智能体按顺序完成 SHADOW 回放和企业方验收后逐个切换 ENFORCING；
+- [ ] 在真实 PostgreSQL/Redis 上完成租约恢复、重复消息和故障演练；
+- [ ] 完成一个真实选题从研究到五渠道 VariantApprovalManifest 和 ContentPackage 的端到端验收。
+
 ## 已在代码中闭环
 
 - [x] AGT-RSN-003/006 的签名 Envelope、事务 Outbox、指数重试、死信、幂等 Inbox；
@@ -48,7 +71,7 @@
 
 ## 当前验证边界
 
-本地已完成静态检查、31 个自动化测试、平台边界检查、依赖安全审计和生产构建。当前机器没有
+本地已完成类型检查、72 个自动化测试（其中核心运行时 53 项）、平台边界检查和生产构建。当前机器没有
 Docker，因此尚未在本机运行真实 PostgreSQL、Redis、S3、OPA 或多智能体端到端测试；
 这些属于上面的部署验收项，不能用内存测试结果替代。
 

@@ -1,0 +1,47 @@
+[
+  {
+    "missionId": "MISSION-001",
+    "purpose": "视角混乱回放",
+    "content": "对Jova用户而言，我们作为第三方观察者来解释Jova怎么看这个问题。",
+    "expectedGate": "PERSPECTIVE_REQUIRED",
+    "golden": false
+  },
+  {
+    "missionId": "MISSION-002",
+    "purpose": "架构、产品名和案例实名回放",
+    "content": "Nomos是JovaAI第六层，位于Wtree Ultra之上，并已在某实名客户全面上线。",
+    "expectedNomosCodes": ["NOMOS_SIXTH_LAYER", "NONEXISTENT_PRODUCT"],
+    "golden": false
+  },
+  {
+    "missionId": "MISSION-003",
+    "purpose": "产业协同与Nomos融合诊断",
+    "content": "我们认为，智能体越自主，企业越需要明确角色、授权和可追溯边界。Nomos制度智能体用于讨论这类制度协同问题。",
+    "expectedNomosCodes": [],
+    "golden": false,
+    "humanApprovalRequired": true
+  },
+  {
+    "missionId": "MISSION-004",
+    "purpose": "Nomos研发起源诊断",
+    "content": "Nomos的古希腊语原意为秩序，并由此得名。",
+    "expectedNomosCodes": ["GREEK_ORIGIN_REQUIRES_EXTERNAL_EVIDENCE"],
+    "golden": false,
+    "humanApprovalRequired": true
+  },
+  {
+    "missionId": "MISSION-CASE-ANON",
+    "purpose": "匿名量化案例",
+    "content": "某马来西亚五金企业的任务处理时间下降20%。",
+    "expectedCaseCodes": ["CASE_NOT_APPROVED", "CASE_REIDENTIFICATION_RISK"],
+    "golden": false
+  },
+  {
+    "missionId": "MISSION-NON-NOMOS",
+    "purpose": "不适合植入Nomos",
+    "content": "这是一篇关于短视频开头表达的轻内容。",
+    "requiresNomosPolicy": false,
+    "expectedNomosCodes": [],
+    "golden": false
+  }
+]

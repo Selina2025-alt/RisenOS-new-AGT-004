@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifactType": "GEO_SEO_REVISION_REVIEW_SET",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "batchId": "BATCH-01",
+  "sourceRevision": 2,
+  "createdByAgent": "xiaodiandian",
+  "createdAt": "2026-08-22T15:10:03.6271037+08:00",
+  "validatedAt": "2026-08-22T15:19:55.0821154+08:00",
+  "reviewMode": "READ_ONLY",
+  "status": "COMPLETED",
+  "formalCorpusModified": false,
+  "formalContentModified": false,
+  "sourceDrafts": {
+    "TOPIC-INDUSTRIAL-AI-001": {
+      "ref": "../../../drafts/BATCH-01/TOPIC-INDUSTRIAL-AI-001/revision-2/draft-proposal.md",
+      "sha256": "31921114a83088d55602768f13b26d5e557aeb0285b576bd5f5a53a2d2948658",
+      "hashScope": "FULL_FILE",
+      "bodySha256": "1f9f6a35c25a53f3f8d8ece843ca2096e8d633a5f379ab9e36e1b22d0a2b5737",
+      "bodyHashScope": "MARKDOWN_BODY_AFTER_FRONTMATTER"
+    },
+    "TOPIC-INDUSTRIAL-AI-002": {
+      "ref": "../../../drafts/BATCH-01/TOPIC-INDUSTRIAL-AI-002/revision-2/draft-proposal.md",
+      "sha256": "966def7f89ea9a5fa5263949fa249540b2b28a5468902318481cb590caaa28a2",
+      "hashScope": "FULL_FILE",
+      "bodySha256": "4a06ed8d1f4b65298b75c5180c11820a325125631b013f0bf690143c20da56ae",
+      "bodyHashScope": "MARKDOWN_BODY_AFTER_FRONTMATTER"
+    }
+  },
+  "sourceCorpusSnapshots": {
+    "seoCorpusSha256": "6ffc514e60a83548755451bbc5b564fb65ccc390eb928315075043551e4e27ed",
+    "geoCorpusSha256": "e3f02f91f27d6068e21357dd91cdf0b5bff0dc4d1ce15eff31a492043f60d873",
+    "mode": "READ_ONLY"
+  },
+  "artifacts": {
+    "TOPIC-INDUSTRIAL-AI-001-content-coverage-map.json": "a4a71c6a89f51062bfeec44423a3c4e003d53ba67ced9b0b6514ef62d8a19139",
+    "TOPIC-INDUSTRIAL-AI-001-geo-seo-proposal.json": "6fab468d1effe7568df77032eb153b93bd50e6a7cef19413f24221b0dc4518fa",
+    "TOPIC-INDUSTRIAL-AI-002-content-coverage-map.json": "3eb17ba52f44696eaf6ccef684b71f4fa2be201a15199a72a25d8f28e10ef751",
+    "TOPIC-INDUSTRIAL-AI-002-geo-seo-proposal.json": "fc1e1d3c02413722d480cd8b8a8e36117b3f07bed56552c2840922f056b9f672"
+  },
+  "decisions": [
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-001",
+      "decision": "REPLACE_PROCUREMENT_PRIMARY_INTENT_WITH_MISSION_ONLY_STRATEGIC_VALUE_INTENT",
+      "bodyChangeRequired": false,
+      "globalRuleActivated": false
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-002",
+      "decision": "MARK_GEO_0024_PARTIAL_AND_DEFER_TO_TOPIC_005",
+      "bodyChangeRequired": false,
+      "globalRuleActivated": false
+    }
+  ]
+}

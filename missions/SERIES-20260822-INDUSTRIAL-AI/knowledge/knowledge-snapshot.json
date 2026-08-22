@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0",
+  "snapshotId": "KS-SERIES-20260822-INDUSTRIAL-AI-V1",
+  "missionId": "SERIES-20260822-INDUSTRIAL-AI",
+  "createdByAgent": "makabaka",
+  "createdAt": "2026-08-22",
+  "publicationScope": "PUBLIC_DRAFT_PENDING_ENTERPRISE_REVIEW",
+  "perspective": {
+    "speaker": "艾氪智能",
+    "voicePositioning": "第一方官方视角",
+    "defaultAudience": [
+      "企业董事长",
+      "总经理",
+      "业务负责人",
+      "CIO或AI负责人"
+    ]
+  },
+  "knowledgePolicyVersion": "workspace-5.5.1-rc",
+  "formalKnowledgeModified": false,
+  "topics": [
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-002",
+      "title": "AI演示好但落地难",
+      "artifact": "knowledge/TOPIC-INDUSTRIAL-AI-002_AI演示好但落地难.md",
+      "activeClaims": ["S1-A01", "S1-A02", "S1-A03", "S1-A04", "S1-A05", "S1-A06"],
+      "candidateClaims": ["S1-C01", "S1-C02", "S1-C03", "S1-C04"],
+      "primaryFusion": ["智能体团队", "JovaOS平台"],
+      "optionalFusion": ["Nomos已演示的制度协同机制"],
+      "riskLevel": "HIGH",
+      "researchRequired": true
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-001",
+      "title": "为什么聚焦实体产业与看得见的价值",
+      "artifact": "knowledge/TOPIC-INDUSTRIAL-AI-001_为什么聚焦实体产业与看得见的价值.md",
+      "activeClaims": ["S2-A01", "S2-A02", "S2-A03", "S2-A04", "S2-A05", "S2-A06"],
+      "candidateClaims": ["S2-C01", "S2-C02", "S2-C03", "S2-C04"],
+      "primaryFusion": ["JovaAI ICB", "官网八大场景"],
+      "optionalFusion": ["九大AI原生商业模式"],
+      "riskLevel": "HIGH",
+      "researchRequired": true
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-003",
+      "title": "从AI工具到产业级Agentic OS企业缺什么",
+      "artifact": "knowledge/TOPIC-INDUSTRIAL-AI-003_从AI工具到产业级AgenticOS企业缺什么.md",
+      "activeClaims": ["S3-A01", "S3-A02", "S3-A03", "S3-A04", "S3-A05", "S3-A06"],
+      "candidateClaims": ["S3-C01", "S3-C02", "S3-C03", "S3-C04"],
+      "primaryFusion": ["JovaOS平台", "JovaAI ICB", "智能体团队"],
+      "optionalFusion": ["Nomos双轴定位"],
+      "riskLevel": "CRITICAL",
+      "researchRequired": true
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-004",
+      "title": "AI员工与硅基人才如何改变产业链",
+      "artifact": "knowledge/TOPIC-INDUSTRIAL-AI-004_AI员工与硅基人才如何改变产业链.md",
+      "activeClaims": ["S4-A01", "S4-A02", "S4-A03", "S4-A04", "S4-A05", "S4-A06"],
+      "candidateClaims": ["S4-C01", "S4-C02", "S4-C03", "S4-C04", "S4-C05"],
+      "primaryFusion": ["专业智能体", "智能体团队"],
+      "optionalFusion": ["Wtree官网公开描述", "九大AI原生商业模式"],
+      "riskLevel": "CRITICAL",
+      "researchRequired": true
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-005",
+      "title": "未来两三年传统企业用好AI的关键事项",
+      "artifact": "knowledge/TOPIC-INDUSTRIAL-AI-005_未来两三年传统企业用好AI的关键事项.md",
+      "activeClaims": ["S5-A01", "S5-A02", "S5-A03", "S5-A04", "S5-A05", "S5-A06"],
+      "candidateClaims": ["S5-C01", "S5-C02", "S5-C03", "S5-C04"],
+      "primaryFusion": ["企业AI转型方法论", "智能体团队", "JovaOS平台"],
+      "optionalFusion": ["官网八大场景", "九大AI原生商业模式"],
+      "riskLevel": "HIGH",
+      "researchRequired": true
+    }
+  ],
+  "hardControls": [
+    "No unverified customer name or metric",
+    "No demonstration-to-production status inflation",
+    "No policy endorsement implication",
+    "No platform-wide deployment assertion without release evidence",
+    "No JovaAI/JovaOS/HyperSpace naming equivalence inference",
+    "No domestic competitor naming in public copy",
+    "No guaranteed outcome",
+    "No formal knowledge activation by subagent"
+  ],
+  "nextRequiredArtifacts": [
+    "ResearchPack per topic",
+    "PerspectiveContract per article",
+    "ClaimEvidenceBinding per draft",
+    "PostDraftCheck",
+    "Lilith ReviewReport",
+    "Enterprise human approval"
+  ],
+  "status": "READY_FOR_RESEARCH_AND_DRAFT_PROPOSAL"
+}

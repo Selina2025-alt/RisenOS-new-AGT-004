@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "5.5.1",
+  "id": "content-version-mission-e2e-nomos-001-v1",
+  "assetId": "content-asset-mission-e2e-nomos-001",
+  "missionId": "MISSION-E2E-NOMOS-001",
+  "organizationId": "org_jovaai",
+  "createdBy": "agt-004",
+  "traceId": "trace_e2e_nomos_20260821_001",
+  "versionNumber": 1,
+  "parentVersionId": null,
+  "title": "多智能体越自主，企业越需要制度",
+  "bodyFormat": "markdown",
+  "bodyRef": "drafts/MISSION-E2E-NOMOS-001/V1/wechat-draft.md",
+  "contentHash": "a5494ecedb0cede9b25fd9eee4e44c196b7bb6c3ec40d7eaabb80dadb71dae76",
+  "changeReason": "Initial source draft accepted from content-orchestrator proposal after perspective and knowledge gates",
+  "changedBy": "agt-004",
+  "generationContextSnapshot": {
+    "perspectiveHash": "12a69cccc82b540a009bf308a1a88b5d0ef19827d986ce7c05069b6f4fa5bf07",
+    "knowledgeSnapshotHash": "92f41b316524df224f438ba42e5535cac9ef7c1516a4fb431f726448fa93c794",
+    "researchPackRef": "missions/MISSION-E2E-NOMOS-001/research-pack.md"
+  },
+  "claimBindingSnapshot": {
+    "enterpriseClaimIds": ["ENT-001", "ENT-002", "ENT-003"],
+    "nomosClaimIds": [
+      "kc_nomos_inside_os_20260820",
+      "kc_nomos_product_axis_20260820",
+      "kc_nomos_origin_problem_20260820",
+      "kc_nomos_evolution_20260820"
+    ],
+    "externalClaimIds": ["EXT-001", "EXT-002", "EXT-003", "EXT-004", "EXT-005", "EXT-006"]
+  },
+  "status": "REVIEW_REQUIRED",
+  "createdAt": "2026-08-21T02:30:00.000Z",
+  "updatedAt": "2026-08-21T02:30:00.000Z"
+}

@@ -1,0 +1,16 @@
+{
+  "missionClass": "NOMOS_CONTENT",
+  "enterpriseRelevance": "DIRECT",
+  "topicEntities": [
+    "艾氪智能",
+    "JovaAI OS",
+    "Nomos制度智能体",
+    "企业多智能体协同"
+  ],
+  "publicationScope": "EXTERNAL_DRAFT",
+  "riskLevel": "HIGH",
+  "requiresPublicResearch": true,
+  "requiresEnterpriseKnowledge": true,
+  "requiresNomosPolicy": true,
+  "requiresCasePolicy": false
+}

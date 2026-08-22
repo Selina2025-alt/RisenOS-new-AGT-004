@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "organizationId": "org_jovaai",
+  "createdBy": "user_enterprise",
+  "traceId": "trace_industrial_ai_series_20260822",
+  "title": "产业AI进入真实业务之后",
+  "speaker": "艾氪智能官方",
+  "audience": [
+    "传统企业董事长",
+    "企业总经理",
+    "业务负责人",
+    "产业合作伙伴"
+  ],
+  "sourceChannel": "官方长文源稿",
+  "requestedChannelsAfterApproval": [
+    "wechat",
+    "short_video",
+    "xiaohongshu",
+    "x",
+    "linkedin"
+  ],
+  "topicIds": [
+    "TOPIC-INDUSTRIAL-AI-001",
+    "TOPIC-INDUSTRIAL-AI-002",
+    "TOPIC-INDUSTRIAL-AI-003",
+    "TOPIC-INDUSTRIAL-AI-004",
+    "TOPIC-INDUSTRIAL-AI-005"
+  ],
+  "publicationOrder": [2, 1, 3, 4, 5],
+  "status": "RESEARCHING",
+  "rolloutMode": "SHADOW",
+  "humanGates": [
+    "PERSPECTIVE_CONFIRMED",
+    "SOURCE_DRAFT_APPROVED",
+    "FINAL_VARIANTS_APPROVED"
+  ],
+  "createdAt": "2026-08-22T05:50:42.000Z",
+  "updatedAt": "2026-08-22T05:50:42.000Z"
+}

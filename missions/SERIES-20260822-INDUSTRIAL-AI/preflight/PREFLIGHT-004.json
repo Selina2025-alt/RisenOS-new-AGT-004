@@ -1,0 +1,11 @@
+{
+  "missionClass": "BRAND_THOUGHT_LEADERSHIP",
+  "enterpriseRelevance": "DIRECT",
+  "topicEntities": ["AI员工", "硅基人才", "智能体团队", "产业链协作", "人机协同"],
+  "publicationScope": "EXTERNAL_DRAFT",
+  "riskLevel": "HIGH",
+  "requiresPublicResearch": true,
+  "requiresEnterpriseKnowledge": true,
+  "requiresNomosPolicy": true,
+  "requiresCasePolicy": false
+}

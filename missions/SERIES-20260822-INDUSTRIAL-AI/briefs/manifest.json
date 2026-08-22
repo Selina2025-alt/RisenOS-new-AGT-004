@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "artifactType": "CONTENT_ARCHITECTURE_PROPOSAL",
+  "createdByAgent": "content-orchestrator",
+  "agentName": "wuxidixi",
+  "createdAt": "2026-08-22T00:00:00+08:00",
+  "status": "PROPOSED",
+  "perspective": {
+    "speaker": "艾氪智能官方",
+    "audience": [
+      "传统企业董事长与总经理",
+      "业务负责人",
+      "CIO与企业AI负责人",
+      "产业合作伙伴"
+    ],
+    "channel": "official_longform_source",
+    "voicePositioning": "企业官方观点与产业方法论",
+    "publicationScope": "PUBLIC_REVIEW_REQUIRED"
+  },
+  "files": [
+    "README.md",
+    "SERIES-CONTENT-BRIEF.md",
+    "TOPIC-01-AI-DEMO-TO-REAL-BUSINESS.md",
+    "TOPIC-02-WHY-INDUSTRIAL-AI.md",
+    "TOPIC-03-FROM-TOOLS-TO-AGENTIC-OS.md",
+    "TOPIC-04-AI-WORKERS-AND-INDUSTRIAL-CHAIN.md",
+    "TOPIC-05-ENTERPRISE-AI-ACTION-AGENDA.md",
+    "NARRATIVE-DEDUPE-MATRIX.md"
+  ],
+  "formalContentVersionCreated": false,
+  "requiredBeforeDraft": [
+    "ResearchPack per topic",
+    "KnowledgeSnapshot per topic",
+    "Claim-Evidence plan per topic",
+    "Supervisor confirmation of enterprise fusion level"
+  ],
+  "blockedActions": [
+    "formal drafting",
+    "channel variants",
+    "publication packaging"
+  ]
+}

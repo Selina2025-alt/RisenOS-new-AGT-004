@@ -218,6 +218,10 @@ function makeService(
       policy: new RuleBasedPolicyPort(),
       review,
       handoff,
+      governanceGate: {
+        async assertMissionReady() {},
+        async assertGeneratedContent() {},
+      },
       ...(attachments ? { attachments } : {}),
     }),
   };
@@ -536,6 +540,46 @@ describe("ContentService", () => {
     );
   });
 
+  it("blocks channel variants until the current source version has enterprise human approval", async () => {
+    const model: HostModelPort = {
+      generateObject: vi.fn(async (request) => generated(
+        request.schemaName === "claim_audit"
+          ? { assertions: [] }
+          : request.schemaName === "channel_variant"
+            ? { ...bundle().primary, channel: "linkedin" }
+            : bundle(),
+        request,
+      )),
+    };
+    const { service } = makeService(model);
+    const created = await service.createMission(missionInput(), identity);
+    await service.executeRun(created.run.id, identity);
+    const asset = (await service.listAssets(identity)).items[0]!;
+    await expect(service.createVariant(asset.id, {
+      versionId: asset.currentVersionId,
+      channel: "linkedin",
+      locale: "en-US",
+    }, identity)).rejects.toMatchObject({ code: "SOURCE_DRAFT_APPROVAL_REQUIRED" });
+    const review = await service.submitReview({
+      assetId: asset.id,
+      versionId: asset.currentVersionId,
+      reviewerType: "HUMAN",
+      reviewerId: "reviewer_001",
+    }, identity);
+    await service.decideReview({
+      reviewId: review.id,
+      decision: "APPROVED",
+      reviewerId: "reviewer_001",
+      summary: "源稿通过",
+      comments: [],
+    }, reviewerIdentity);
+    await expect(service.createVariant(asset.id, {
+      versionId: asset.currentVersionId,
+      channel: "linkedin",
+      locale: "en-US",
+    }, identity)).resolves.toMatchObject({ channel: "linkedin" });
+  });
+
   it("invalidates approval when an approved version is edited", async () => {
     const model: HostModelPort = {
       generateObject: vi.fn(async (request) =>
@@ -584,7 +628,7 @@ describe("ContentService", () => {
     const updatedAsset = (await service.listAssets(identity)).items[0]!;
     expect(nextVersion.versionNumber).toBe(2);
     expect(updatedAsset.status).toBe("REVISION_REQUIRED");
-    expect(initialAsset.bundle.variants).toHaveLength(3);
+    expect(initialAsset.bundle.variants).toHaveLength(0);
     expect(initialAsset.bundle.assetBriefs).toHaveLength(1);
     expect(updatedAsset.bundle.variants).toHaveLength(0);
     expect(updatedAsset.bundle.localizations).toHaveLength(0);

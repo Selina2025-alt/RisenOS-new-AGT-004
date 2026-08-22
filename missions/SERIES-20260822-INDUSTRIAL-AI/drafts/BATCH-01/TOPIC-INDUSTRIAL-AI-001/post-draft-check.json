@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifactType": "POST_DRAFT_CHECK",
+  "topicId": "TOPIC-INDUSTRIAL-AI-001",
+  "checkedByAgent": "makabaka",
+  "checkedAt": "2026-08-22",
+  "mode": "READ_ONLY",
+  "draftFileSha256": "f795e02028eff9710e8ca860d0a94a81dd967117eefedade6e23000115bdd6dd",
+  "knowledgeSnapshotSha256": "8d59f8f0234dc3eedf6a2d24af3f73e77f35ad45c44cad236542504aabfad540",
+  "verdict": "REVISION_REQUIRED",
+  "p1Count": 4,
+  "p2Count": 1,
+  "passed": [
+    "topic_and_research_mapping",
+    "external_evidence_boundary",
+    "icb_numeric_semantics",
+    "nomos_forbidden_insertion",
+    "customer_and_roi_boundary",
+    "jovaos_naming_boundary",
+    "enterprise_fusion_naturalness",
+    "no_formal_version_or_approval"
+  ],
+  "issues": [
+    {"issueId":"MK-001-P1-01","severity":"P1","module":"knowledge_snapshot","problem":"The draft states a long-term strategic choice and rationale without an activated strategy timeline claim.","blocksProgression":true},
+    {"issueId":"MK-001-P1-02","severity":"P1","module":"responsibility_boundary","problem":"The phrase that AI must be responsible for task results may imply independent accountability.","blocksProgression":true},
+    {"issueId":"MK-001-P1-03","severity":"P1","module":"claim_binding","problem":"claim-binding.json collapses ENT-001 through ENT-004 into legacy stable ID S2-A01, mutating the ID's original KnowledgeSnapshot semantics and creating lineage ambiguity.","blocksProgression":true},
+    {"issueId":"MK-001-P1-04","severity":"P1","module":"claim_binding","problem":"Procurement is included under the official eight-scenario citation without a separate evidence binding.","blocksProgression":true},
+    {"issueId":"MK-001-P2-01","severity":"P2","module":"outcome_claim","problem":"The closing phrase may be read as an unqualified continuous business-value result promise.","blocksProgression":false}
+  ],
+  "bodyModified": false,
+  "approved": false,
+  "nextRoute": "content-orchestrator"
+}

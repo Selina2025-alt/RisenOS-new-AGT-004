@@ -1,0 +1,11 @@
+{
+  "missionClass": "BRAND_THOUGHT_LEADERSHIP",
+  "enterpriseRelevance": "DIRECT",
+  "topicEntities": ["艾氪智能", "实体产业", "产业AI", "企业AI", "ICB"],
+  "publicationScope": "EXTERNAL_DRAFT",
+  "riskLevel": "HIGH",
+  "requiresPublicResearch": true,
+  "requiresEnterpriseKnowledge": true,
+  "requiresNomosPolicy": false,
+  "requiresCasePolicy": true
+}

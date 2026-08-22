@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0.0",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "sourceQuestionNumber": 2,
+  "title": "AI为什么总在演示里很好用，一进业务就失灵？",
+  "angle": "从企业真实业务的知识、权限、责任、异常与持续运行条件解释产业AI落地难。",
+  "speaker": "艾氪智能官方",
+  "approvalStatus": "APPROVED_FOR_RESEARCH",
+  "snapshotHash": "6e40ba8641a522b2cb5a954f054a2fe515f170c463bfcb36ee225f017c3652b0",
+  "approvedBy": "user_enterprise",
+  "approvedAt": "2026-08-22T05:50:42.000Z"
+}

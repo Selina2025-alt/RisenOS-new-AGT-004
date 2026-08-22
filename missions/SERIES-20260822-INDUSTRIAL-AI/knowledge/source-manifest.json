@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "SERIES-20260822-INDUSTRIAL-AI",
+  "artifactType": "KNOWLEDGE_MATCH_PROPOSAL",
+  "createdByAgent": "makabaka",
+  "createdAt": "2026-08-22",
+  "mode": "READ_ONLY",
+  "formalKnowledgeModified": false,
+  "classification": {
+    "ACTIVE_FACT": "Current active knowledge usable within its stated evidence and publication boundary",
+    "CANDIDATE_FACT": "Candidate, strategic view, editorial inference or version-sensitive item requiring explicit qualification or confirmation",
+    "UNAVAILABLE_FACT": "Prohibited, conflicting, unsupported, restricted or pending item that must not enter public copy"
+  },
+  "sources": [
+    {
+      "path": "active_context.json",
+      "sha256": "9d7a694edfd74ecb5f1c9e66680e3142047ee5c581cf367c4f43a32873773e8d"
+    },
+    {
+      "path": "knowledge/evidence/产品能力_案例与公开证据台账.md",
+      "sha256": "ae3eccdb6163c6f093aa9992a1515c738be12f9cb97a585d93f7fa147b404c6c"
+    },
+    {
+      "path": "knowledge/evidence/新增Claim与案例证据闸门_202607.md",
+      "sha256": "0576cb7201f90ea4a171c689cc33d2ac71f42ff6a80dc0739f0be6b84afd42c0"
+    },
+    {
+      "path": "knowledge/evidence/ICB核心事实卡_V3.0.md",
+      "sha256": "30ec79383fdfdba157d873614d99ed089a1fe6dfcade77f07c89ce219f20ba22"
+    },
+    {
+      "path": "knowledge/products/核心产品口径_两条产品线四大矩阵_V3.0.md",
+      "sha256": "75411be60289b3bf5812197c318316e07562cf32f54974083ee49b5d19c75d5f"
+    },
+    {
+      "path": "knowledge/clients/官网八大核心场景与九大商业模式_线上正式口径_V4.0.md",
+      "sha256": "836e40e12d40bc67aa777867b6ed9fb931cfd7653d6e7ee9b15a535753ab5503"
+    },
+    {
+      "path": "knowledge/sources/官网在线核验快照_20260730.md",
+      "sha256": "3ebf90947382df21bfd40f2cd16d6f5de4c5672bf283b3cd945df37441c4df3d"
+    },
+    {
+      "path": "knowledge/sources/版本冲突与公开风险清单_202607.md",
+      "sha256": "2dee80002c35474e13f475e247a54ae7885a0b8344ceb9a6788e5ddcf793340c"
+    },
+    {
+      "path": "knowledge/01_企业品牌与产品总览.md",
+      "sha256": "d992dd0748c8baaa67834217db2eba3ae69ea455f1889b70dc15192b2e1150a4"
+    },
+    {
+      "path": "knowledge/02_目标客户与使用场景.md",
+      "sha256": "a193a97446d05720e1495c8bfd25f0cada9e37bb94533a8d66fe3e1fea064fe8"
+    },
+    {
+      "path": "knowledge/03_品牌语气与内容表达.md",
+      "sha256": "c1e7f81424bfb311b122f0be89d3d3ed9b97f141e54a34a25540a9dc65acb865"
+    },
+    {
+      "path": "knowledge/policy/智能体政策背书与引用规范_2025-2026.md",
+      "sha256": "d8d115b6c3f4132a250c8e60a704848d4f602aec64358530ff3d38a7231549e7"
+    },
+    {
+      "path": "knowledge/agents/官网公开智能体名单_20260730.md",
+      "sha256": "64d9af18faaec8c1da4d60c823e93fad9431bc1a6eccfca84eec17427ea56868"
+    },
+    {
+      "path": "knowledge/compliance/艾氪智能禁用表达与内容合规规范_V1.0.md",
+      "sha256": "c5fe8ee076eb59492885d0d6093f1ce81ffe3c5ed6bed1765d5e382b914a6765"
+    },
+    {
+      "path": "knowledge/security/内容分级与保密规则.md",
+      "sha256": "a063a27edcbbd80fadce10b21c93ed5c9e030bae0cd42a1d3ad2ad7455d77570"
+    },
+    {
+      "path": "knowledge/canon/nomos-canon-20260820-v1.0.0/ACTIVE_MANIFEST.json",
+      "sha256": "0c9ce442db2f70bca2035500ae6375c0d0046d14667a6885d53e58b1f66cc152"
+    },
+    {
+      "path": "knowledge/canon/nomos-canon-20260820-v1.0.0/claim-cards.json",
+      "sha256": "a7feb656f5050bba8e2459414b80c3b355b946932894efc2ba1dbbe91c8be954"
+    }
+  ],
+  "outputs": [
+    "knowledge/knowledge-snapshot.json",
+    "knowledge/00_系列知识匹配总表.md",
+    "knowledge/TOPIC-INDUSTRIAL-AI-001_为什么聚焦实体产业与看得见的价值.md",
+    "knowledge/TOPIC-INDUSTRIAL-AI-002_AI演示好但落地难.md",
+    "knowledge/TOPIC-INDUSTRIAL-AI-003_从AI工具到产业级AgenticOS企业缺什么.md",
+    "knowledge/TOPIC-INDUSTRIAL-AI-004_AI员工与硅基人才如何改变产业链.md",
+    "knowledge/TOPIC-INDUSTRIAL-AI-005_未来两三年传统企业用好AI的关键事项.md"
+  ],
+  "activationStatus": "NOT_ACTIVATED",
+  "publicationStatus": "REVIEW_REQUIRED"
+}

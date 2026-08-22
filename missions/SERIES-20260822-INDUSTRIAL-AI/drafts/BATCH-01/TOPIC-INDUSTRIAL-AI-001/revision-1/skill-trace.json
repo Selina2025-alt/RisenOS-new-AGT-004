@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0",
+  "skillTraceId": "skilltrace_industrial_ai_001_batch01",
+  "topicId": "TOPIC-INDUSTRIAL-AI-001",
+  "title": "AI工具遍地，艾氪智能为什么聚焦实体产业？",
+  "createdByAgent": "content-orchestrator",
+  "status": "USED",
+  "inputArtifacts": [
+    "research/TOPIC-INDUSTRIAL-AI-001/research-pack.md",
+    "knowledge/TOPIC-INDUSTRIAL-AI-001_为什么聚焦实体产业与看得见的价值.md",
+    "briefs/TOPIC-02-WHY-INDUSTRIAL-AI.md",
+    "briefs/NARRATIVE-DEDUPE-MATRIX.md",
+    "perspective-input.json",
+    "knowledge/compliance/艾氪智能禁用表达与内容合规规范_V1.0.md",
+    "knowledge/security/内容分级与保密规则.md",
+    "knowledge/evidence/ICB核心事实卡_V3.0.md"
+  ],
+  "passes": [
+    {
+      "pass": 1,
+      "skillId": "enterprise-copy-orchestrator",
+      "source": "global",
+      "usedFor": ["argument_development", "drafting", "series_boundary"],
+      "outputInfluence": "建立工具繁荣、产业任务差异、战略选择、ICB积累、价值框架和场景验证的论证链；政策仅用于行业方向。",
+      "reviewStatus": "USED"
+    },
+    {
+      "pass": 2,
+      "skillId": "enterprise-soft-insertion",
+      "source": "global",
+      "usedFor": ["enterprise_fusion", "deletion_test", "evidence_boundary"],
+      "outputInfluence": "采用L3产品桥接；先解释产业对象再引入艾氪智能与ICB；保留规模数据对象含义；未使用客户ROI、九大模式或全架构堆叠。",
+      "reviewStatus": "USED"
+    },
+    {
+      "pass": 3,
+      "skillId": "huashu-proofreading",
+      "source": "global_reference_adapted",
+      "usedFor": ["natural_language", "ai_style_reduction", "rhythm"],
+      "outputInfluence": "将产业复杂性落到报价、库存、履约和结算等对象，删除模板套话，打散整齐句式；拒绝花叔个人口吻、个人经历和虚构案例。",
+      "reviewStatus": "PARTIAL"
+    }
+  ],
+  "processArtifact": "writing-process.md",
+  "outputArtifact": "draft-proposal.md",
+  "knowledgeSnapshotId": "KS-SERIES-20260822-INDUSTRIAL-AI-V1",
+  "knowledgeSnapshotHash": "8d59f8f0234dc3eedf6a2d24af3f73e77f35ad45c44cad236542504aabfad540",
+  "formalContentVersionCreated": false,
+  "selfApproved": false,
+  "nextReview": ["makabaka_post_draft_check", "lilith_full_review"]
+}

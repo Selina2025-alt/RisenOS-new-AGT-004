@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0",
+  "bindingId": "claimbinding_industrial_ai_001_batch01_revision2",
+  "topicId": "TOPIC-INDUSTRIAL-AI-001",
+  "title": "AI工具遍地，艾氪智能为什么聚焦实体产业？",
+  "missionId": "MISSION-INDUSTRIAL-AI-001",
+  "draftArtifact": "draft-proposal.md",
+  "draftHash": "31921114a83088d55602768f13b26d5e557aeb0285b576bd5f5a53a2d2948658",
+  "revision": 2,
+  "parentDraftHash": "ec509a8945b4c9a6350288337de48dec324a5fca3b9425679bd1edd9d1a295d0",
+  "knowledgeSnapshotId": "KS-SERIES-20260822-INDUSTRIAL-AI-V1",
+  "knowledgeSnapshotHash": "8d59f8f0234dc3eedf6a2d24af3f73e77f35ad45c44cad236542504aabfad540",
+  "rolloutMode": "SHADOW",
+  "claims": [
+    {
+      "claimId": "EXT-001-01",
+      "claimType": "PUBLIC_FACT",
+      "location": ["工具很多：产业仍在追问"],
+      "statement": "国家政策推动AI与产业深度融合，并要求或支持企业把AI融入战略、组织、业务环节及产业链协同。",
+      "evidenceIds": ["PUB-005", "PUB-006"],
+      "evidenceRefs": [
+        "research/TOPIC-INDUSTRIAL-AI-001/research-pack.md#PUB-005",
+        "research/TOPIC-INDUSTRIAL-AI-001/research-pack.md#PUB-006"
+      ],
+      "allowedUse": "写政策提出、要求、支持。",
+      "restrictions": ["不表述为艾氪智能产品背书", "不推断企业均已实现"]
+    },
+    {
+      "claimId": "EXT-001-02",
+      "claimType": "PUBLIC_FACT_SYNTHESIS",
+      "location": ["工具很多：产业仍在追问"],
+      "statement": "实体产业AI落地需要场景、数据、系统、组织和治理共同成熟。",
+      "evidenceIds": ["PUB-002", "PUB-004", "PUB-006"],
+      "evidenceRefs": ["research/TOPIC-INDUSTRIAL-AI-001/research-pack.md#Claim—Evidence-Map"],
+      "allowedUse": "跨来源归纳，明确研究范围。",
+      "restrictions": ["不外推到中国所有实体企业"]
+    },
+    {
+      "claimId": "S2-C01",
+      "claimType": "MISSION_ONLY_EDITORIAL_DEFINITION",
+      "location": ["工具很多：产业仍在追问"],
+      "statement": "本文所说的实体产业，主要指围绕商品、服务、交易、交付、供应链与产业协同展开真实经营的企业和产业组织；不只等同于制造业。",
+      "evidenceIds": ["SUPERVISOR-DECISION-TERM-ENTITY-INDUSTRY"],
+      "evidenceRefs": ["audit/supervisor-decisions-v1.json#termPolicies.entityIndustry"],
+      "allowedUse": "仅限当前Mission和本篇操作性定义。",
+      "restrictions": ["不得激活为全局品牌定义"]
+    },
+    {
+      "claimId": "ENT-001",
+      "claimType": "ACTIVE_ENTERPRISE_FACT",
+      "location": ["聚焦产业：选择真实问题"],
+      "statement": "艾氪智能聚焦企业AI与产业AI。",
+      "evidenceIds": ["ENT-001"],
+      "evidenceRefs": ["knowledge/evidence/产品能力_案例与公开证据台账.md#2-企业级事实"],
+      "allowedUse": "按正式企业定位使用。",
+      "restrictions": ["不扩展为未经确认的行业覆盖"]
+    },
+    {
+      "claimId": "ENT-002",
+      "claimType": "ACTIVE_ENTERPRISE_FACT",
+      "location": ["聚焦产业：选择真实问题"],
+      "statement": "艾氪智能正在构建产业级Agentic OS。",
+      "evidenceIds": ["ENT-002"],
+      "evidenceRefs": ["knowledge/evidence/产品能力_案例与公开证据台账.md#2-企业级事实"],
+      "allowedUse": "使用正在构建。",
+      "restrictions": ["不写成已完成全部产业部署"]
+    },
+    {
+      "claimId": "ENT-003",
+      "claimType": "ACTIVE_ENTERPRISE_FACT",
+      "location": ["聚焦产业：选择真实问题"],
+      "statement": "艾氪智能正在构建产业级多智能体协同操作系统。",
+      "evidenceIds": ["ENT-003"],
+      "evidenceRefs": ["knowledge/evidence/产品能力_案例与公开证据台账.md#2-企业级事实"],
+      "allowedUse": "使用正在构建。",
+      "restrictions": ["不自行增加产品层级"]
+    },
+    {
+      "claimId": "ENT-004",
+      "claimType": "ACTIVE_ENTERPRISE_FACT",
+      "location": ["聚焦产业：选择真实问题"],
+      "statement": "相关能力用于帮助企业推进AI转型、AI商业模式升级和业务AI化。",
+      "evidenceIds": ["ENT-004"],
+      "evidenceRefs": ["knowledge/evidence/产品能力_案例与公开证据台账.md#2-企业级事实"],
+      "allowedUse": "使用帮助、推进。",
+      "restrictions": ["不保证转型、增收或降本", "不构成结果承诺"]
+    },
+    {
+      "claimId": "S2-A05",
+      "claimType": "ACTIVE_ENTERPRISE_FACT",
+      "location": ["聚焦产业：选择真实问题", "场景落地：从高价值处开始"],
+      "statement": "官网现行场景覆盖询报价、库存、供应商、价格、海外增长、财务与业务决策等方向。",
+      "evidenceIds": ["OFFICIAL-SCENARIO-V4"],
+      "evidenceRefs": ["knowledge/clients/官网八大核心场景与九大商业模式_线上正式口径_V4.0.md"],
+      "allowedUse": "选择2至3类场景解释。",
+      "restrictions": ["不写成全部标准化上线产品", "发布前复核官网"]
+    },
+    {
+      "claimId": "S2-A02",
+      "claimType": "ACTIVE_ENTERPRISE_FACT",
+      "location": ["六年积累：把产业变成语言"],
+      "statement": "艾氪智能历时6年，基于300多个行业、30万家注册企业、3000多家龙头企业和600亿产业交易积累，并形成3000+功能元。",
+      "evidenceIds": ["ICB-DATA"],
+      "evidenceRefs": ["knowledge/evidence/ICB核心事实卡_V3.0.md#2-五项可反复使用的数据"],
+      "allowedUse": "保留全部数据对象含义。",
+      "restrictions": ["注册企业不是客户", "龙头企业不是公开客户", "产业交易不是营收", "功能元不是智能体数量"]
+    },
+    {
+      "claimId": "S2-A03",
+      "claimType": "ACTIVE_ENTERPRISE_FACT",
+      "location": ["六年积累：把产业变成语言"],
+      "statement": "JovaAI ICB是全球首个跨产业实时交易算法，可解释为产业交易语言或语法。",
+      "evidenceIds": ["ICB-CORE"],
+      "evidenceRefs": ["knowledge/evidence/ICB核心事实卡_V3.0.md#1-核心定义"],
+      "allowedUse": "按企业方确认的事实卡原句使用。",
+      "restrictions": ["不扩为全球唯一", "不扩为全面第一"]
+    },
+    {
+      "claimId": "S2-A04",
+      "claimType": "ACTIVE_ENTERPRISE_FACT",
+      "location": ["六年积累：把产业变成语言"],
+      "statement": "ICB把商品、价格、客户、供应商、订单、合同、信用、履约、交付、结算等交易对象及关系转化为可理解、组合和调用的产业级能力。",
+      "evidenceIds": ["ICB-CORE"],
+      "evidenceRefs": ["knowledge/evidence/ICB核心事实卡_V3.0.md#1-核心定义"],
+      "allowedUse": "用于解释产业建模基础。",
+      "restrictions": ["不直接证明客户ROI", "不替代企业自身数据与制度"]
+    },
+    {
+      "claimId": "EXT-001-03",
+      "claimType": "EDITORIAL_FRAMEWORK",
+      "location": ["可见价值：先定义再验证"],
+      "statement": "看得见的价值可从任务、运行和经营三个层次建立指标并验证。",
+      "evidenceIds": ["PUB-002", "S2-C02"],
+      "evidenceRefs": [
+        "research/TOPIC-INDUSTRIAL-AI-001/research-pack.md#EXT-001-03",
+        "knowledge/TOPIC-INDUSTRIAL-AI-001_为什么聚焦实体产业与看得见的价值.md#3-候选事实与编辑判断"
+      ],
+      "allowedUse": "明确为艾氪智能建议的评估框架。",
+      "restrictions": ["不冒充MIT原文或国际统一标准", "不写成既成客户成果"]
+    }
+  ],
+  "illustrativeScenarios": [
+    {
+      "location": "场景落地中的询报价、库存、供应商任务",
+      "status": "HYPOTHETICAL_NOT_CUSTOMER_CASE",
+      "restrictions": ["不得添加客户名称", "不得添加未经验证的实施结果"]
+    }
+  ],
+  "newClaimsIntroduced": false,
+  "customerRoiClaimed": false,
+  "nomosInserted": false,
+  "unboundFactualClaims": [],
+  "status": "BOUND_FOR_SHADOW_REVIEW"
+}

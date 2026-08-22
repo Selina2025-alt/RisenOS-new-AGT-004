@@ -34,6 +34,8 @@ export const ContentChannelSchema = z.enum([
   "xiaohongshu",
   "x",
   "video",
+  "short_video",
+  "linkedin",
 ]);
 
 export const ContentOutputKindSchema = z.enum([

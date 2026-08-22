@@ -1,0 +1,11 @@
+{
+  "missionClass": "ENTERPRISE_AI",
+  "enterpriseRelevance": "DIRECT",
+  "topicEntities": ["传统企业", "企业AI", "产业AI", "智能体治理", "AI采用路径"],
+  "publicationScope": "EXTERNAL_DRAFT",
+  "riskLevel": "MEDIUM",
+  "requiresPublicResearch": true,
+  "requiresEnterpriseKnowledge": true,
+  "requiresNomosPolicy": false,
+  "requiresCasePolicy": false
+}

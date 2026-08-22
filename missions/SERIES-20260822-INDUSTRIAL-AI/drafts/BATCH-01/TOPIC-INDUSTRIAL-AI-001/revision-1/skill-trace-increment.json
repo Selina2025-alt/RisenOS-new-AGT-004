@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "skillTraceId": "skilltrace_industrial_ai_001_batch01_revision1",
+  "parentSkillTrace": "../skill-trace.json",
+  "topicId": "TOPIC-INDUSTRIAL-AI-001",
+  "createdByAgent": "content-orchestrator",
+  "trigger": "makabaka_post_draft_check",
+  "reviewArtifact": "../post-draft-check.json",
+  "changes": [
+    {
+      "issueId": "MK-001-P1-01",
+      "skillId": "enterprise-copy-orchestrator",
+      "usedFor": "historical_claim_boundary",
+      "outputInfluence": "将长期选择及原因改为当前官方聚焦和关注。"
+    },
+    {
+      "issueId": "MK-001-P1-02",
+      "skillId": "enterprise-copy-orchestrator",
+      "usedFor": "responsibility_subject_correction",
+      "outputInfluence": "将AI负责改为人的责任可归属、过程可追溯和最终决定。"
+    },
+    {
+      "issueId": "MK-001-P1-03",
+      "skillId": "enterprise-copy-orchestrator",
+      "usedFor": "claim_binding_precision",
+      "outputInfluence": "拆分ENT-001、ENT-002、ENT-003、ENT-004直接绑定。"
+    },
+    {
+      "issueId": "MK-001-P1-04",
+      "skillId": "enterprise-copy-orchestrator",
+      "usedFor": "evidence_scope_alignment",
+      "outputInfluence": "从八大场景引用句删除采购。"
+    },
+    {
+      "issueId": "MK-001-P2-01",
+      "skillId": "enterprise-soft-insertion",
+      "usedFor": "outcome_claim_reduction",
+      "outputInfluence": "将持续创造业务价值改为参与真实业务并接受价值验证。"
+    }
+  ],
+  "scopeExpanded": false,
+  "formalContentVersionCreated": false,
+  "selfApproved": false,
+  "status": "USED"
+}

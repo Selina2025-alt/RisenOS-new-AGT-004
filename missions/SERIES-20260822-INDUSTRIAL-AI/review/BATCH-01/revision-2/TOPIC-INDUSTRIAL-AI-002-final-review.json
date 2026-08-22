@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "LILITH-BATCH01-TOPIC002-R2-FINAL",
+  "reviewAgent": "lilith",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "sourceRevision": 2,
+  "sourceDraftHash": "966def7f89ea9a5fa5263949fa249540b2b28a5468902318481cb590caaa28a2",
+  "humanReviewCopyHash": "be5c60f3b5445aab5676800fd725da537ff603cab3eb0fb3bc014aa259ac0c61",
+  "supersededInputHashes": {
+    "sourceDraftHash": "f8453b9349dfaa2010fdb4b5e81bf60053605d03e35779f2310bb02013bf55a5",
+    "humanReviewCopyHash": "416aab0b60d262b744f897da8d37461a5331f1edbc84b5d5b2b47c22424d9d9e",
+    "reason": "proposalHash correction changed complete file hashes and all dependent artifacts were synchronized"
+  },
+  "knowledgeSnapshotHash": "8d59f8f0234dc3eedf6a2d24af3f73e77f35ad45c44cad236542504aabfad540",
+  "reviewStatus": "PASS",
+  "nextRoute": "READY_FOR_HUMAN_SOURCE_REVIEW",
+  "formalApprovalGranted": false,
+  "contentVersionCreated": false,
+  "variantGenerationAllowed": false,
+  "severityCount": {"P0": 0, "P1": 0, "P2": 1, "P3": 0},
+  "closedPriorIssues": ["LIL-002-P1-01", "LIL-002-P1-02", "LIL-002-P1-03"],
+  "moduleResults": {
+    "content_adequacy": "PASS",
+    "perspective_consistency": "PASS",
+    "logic": "PASS",
+    "ai_style": "PASS_WITH_P2",
+    "enterprise_fusion": "PASS",
+    "knowledge_snapshot": "PASS",
+    "nomos_canon": "PASS",
+    "product_architecture": "PASS",
+    "claim_status": "PASS",
+    "evidence": "PASS",
+    "customer_anonymization": "PASS_NOT_APPLICABLE",
+    "metric_evidence": "PASS",
+    "seo_geo": "PASS",
+    "compliance": "PASS",
+    "confidentiality": "PASS",
+    "skill_trace": "PASS",
+    "artifact_integrity": "PASS"
+  },
+  "equivalenceCheck": {
+    "method": "remove frontmatter, internal claim tags, internal status footer, and human review note; then exact compare",
+    "exactEquivalent": true,
+    "humanBodyInternalClaimIds": 0,
+    "humanBodyAgentNames": 0,
+    "humanBodyRuntimeStatusFields": 0
+  },
+  "artifactChecks": {
+    "draftBindingTraceHashesMatch": true,
+    "humanTraceHashesMatch": true,
+    "proposalBodyHashMatchesDeclaredScope": true,
+    "skillHashesMatch": true,
+    "inputArtifactHashesMatch": true,
+    "promptHashMatches": true,
+    "parentTraceHashesMatch": true,
+    "reviewInputHashesMatch": true
+  },
+  "remainingIssues": [
+    {
+      "issueId": "LIL-002-R2-P2-01",
+      "severity": "P2",
+      "module": "ai_style",
+      "problem": "The five diagnostic items and five closing questions retain a mildly regular template rhythm.",
+      "routeTo": "human_feedback_optional",
+      "blocksHumanReview": false,
+      "blocksVariantGeneration": false
+    }
+  ],
+  "geoSeoResult": {
+    "validationErrors": 0,
+    "requiresContentRevision": false,
+    "requiresEvidenceRequest": false,
+    "newClaims": 0,
+    "globalRuleActivated": false
+  },
+  "humanGateRecommendation": {
+    "gate": "SOURCE_DRAFT_APPROVED",
+    "artifact": "human-review-copy.md",
+    "artifactHash": "be5c60f3b5445aab5676800fd725da537ff603cab3eb0fb3bc014aa259ac0c61",
+    "sourceDraftHash": "966def7f89ea9a5fa5263949fa249540b2b28a5468902318481cb590caaa28a2",
+    "decisionMustBeCreatedByHuman": true
+  },
+  "approved": false
+}

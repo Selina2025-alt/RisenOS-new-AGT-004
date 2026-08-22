@@ -1,7 +1,9 @@
 import {
   ContentService,
+  createV55TeamRuntime,
   InMemoryContentRepository,
   RuleBasedPolicyPort,
+  V55GovernanceStore,
   type ContextPort,
   type HandoffPort,
   type HostModelPort,
@@ -41,12 +43,26 @@ const service = new ContentService({
   policy: new RuleBasedPolicyPort(),
   review,
   handoff,
+  governanceGate: {
+    async assertMissionReady() {},
+    async assertGeneratedContent() {},
+  },
+});
+const governance = new V55GovernanceStore(".codex-tmp/api-v55-test");
+const teamRuntime = await createV55TeamRuntime({
+  workspaceRoot: process.cwd(),
+  storeRoot: ".codex-tmp/api-team-runtime-test",
+  hostModel,
+  registryManifestPath: false,
 });
 const app = await buildApp({
   repository,
   service,
+  governance,
+  canonSourceHashesById: {},
+  teamRuntime,
   async ready() {
-    return { database: "ok", queue: "disabled" };
+    return { database: "ok", queue: "disabled", teamRuntime: "READY" };
   },
   async close() {},
 });
@@ -74,6 +90,7 @@ describe("content API", () => {
       status: "ready",
       database: "ok",
       queue: "disabled",
+      teamRuntime: "READY",
     });
   });
 
@@ -109,6 +126,81 @@ describe("content API", () => {
     expect(JSON.stringify(body)).not.toMatch(
       /accessToken|scheduledAt|publishStatus|platformContentId/,
     );
+  });
+
+  it("reports the seven registered handlers and honest shadow rollout state", async () => {
+    const response = await app.inject({ method: "GET", url: "/v1/agents/runtime-health" });
+    expect(response.statusCode).toBe(200);
+    expect(response.json()).toMatchObject({
+      status: "READY",
+      registeredHandlers: expect.arrayContaining([
+        "topic-radar", "public-researcher", "makabaka", "content-orchestrator",
+        "lilith", "xiaodiandian", "balala",
+      ]),
+      shadowAgents: expect.arrayContaining(["lilith", "xiaodiandian", "balala"]),
+      missingHandlers: [],
+      hostModelAvailable: true,
+    });
+  });
+
+  it("persists a confirmed perspective before a public-topic mission can draft", async () => {
+    const identityHeaders = {
+      "x-organization-id": "org_api_v55",
+      "x-user-id": "user_api_v55",
+      "x-role": "CREATOR",
+    };
+    const created = await app.inject({
+      method: "POST",
+      url: "/v1/missions",
+      headers: identityHeaders,
+      payload: {
+        title: "V5.5 预检",
+        objective: "验证视角契约",
+        strategy: "公开研究",
+        audience: ["企业管理者"],
+        message: "解释公开AI话题",
+        contentPlan: "公众号文章",
+        requestedOutputs: ["content"],
+        channels: ["wechat"],
+        locales: ["zh-CN"],
+      },
+    });
+    const missionId = created.json().mission.id as string;
+    const response = await app.inject({
+      method: "POST",
+      url: `/v1/missions/${missionId}/preflight`,
+      headers: identityHeaders,
+      payload: {
+        preflight: {
+          missionClass: "PUBLIC_TOPIC",
+          enterpriseRelevance: "NONE",
+          topicEntities: ["AI"],
+          publicationScope: "EXTERNAL_DRAFT",
+          riskLevel: "LOW",
+          requiresPublicResearch: true,
+          requiresEnterpriseKnowledge: false,
+          requiresNomosPolicy: false,
+          requiresCasePolicy: false,
+        },
+        perspective: {
+          speaker: "艾氪智能",
+          audience: ["企业管理者"],
+          channel: "wechat",
+          voicePositioning: "第一方真诚分享",
+          publicationScope: "EXTERNAL_DRAFT",
+          narrativeLevel: "BUSINESS",
+          brandNaming: "NOT_APPLICABLE",
+          confirmationMode: "EXPLICIT_HUMAN",
+          confirmedBy: "user_api_v55",
+          confirmedAt: new Date().toISOString(),
+        },
+      },
+    });
+    expect(response.statusCode).toBe(201);
+    expect(response.json()).toMatchObject({
+      preflight: { status: "READY", missionId },
+      perspective: { status: "CONFIRMED", missionId },
+    });
   });
 
   it("accepts a signed AGT-003 fulfillment exactly once", async () => {

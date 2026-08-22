@@ -1,0 +1,53 @@
+{
+  "status": "WAITING_KNOWLEDGE",
+  "preflight": {
+    "id": "preflight_d5b7e7b2dafd42d08d3c87ab7620bf3b",
+    "organizationId": "org_jovaai",
+    "createdBy": "user_enterprise",
+    "traceId": "trace_e2e_nomos_20260821_001",
+    "createdAt": "2026-08-21T09:44:29.112Z",
+    "updatedAt": "2026-08-21T09:44:29.112Z",
+    "status": "READY",
+    "missionId": "MISSION-E2E-NOMOS-001",
+    "missionClass": "NOMOS_CONTENT",
+    "enterpriseRelevance": "DIRECT",
+    "topicEntities": [
+      "艾氪智能",
+      "JovaAI OS",
+      "Nomos制度智能体",
+      "企业多智能体协同"
+    ],
+    "publicationScope": "EXTERNAL_DRAFT",
+    "riskLevel": "HIGH",
+    "requiresPublicResearch": true,
+    "requiresEnterpriseKnowledge": true,
+    "requiresNomosPolicy": true,
+    "requiresCasePolicy": false
+  },
+  "perspective": {
+    "id": "perspective_87eea981f1b246cc983fb54a71be2af6",
+    "organizationId": "org_jovaai",
+    "createdBy": "user_enterprise",
+    "traceId": "trace_e2e_nomos_20260821_001",
+    "createdAt": "2026-08-21T09:44:29.130Z",
+    "updatedAt": "2026-08-21T09:44:29.130Z",
+    "status": "CONFIRMED",
+    "missionId": "MISSION-E2E-NOMOS-001",
+    "speaker": "艾氪智能官方",
+    "audience": [
+      "企业董事长",
+      "企业总经理",
+      "CIO",
+      "企业AI转型负责人"
+    ],
+    "channel": "微信公众号首发，审核后生成短视频、小红书、X和LinkedIn变体",
+    "voicePositioning": "以艾氪智能第一方官方立场真诚、专业地解释企业多智能体协同为什么需要制度、角色、权限、边界和追溯，不夸大产品成熟度",
+    "publicationScope": "EXTERNAL_DRAFT",
+    "narrativeLevel": "BUSINESS",
+    "brandNaming": "NOMOS",
+    "confirmationMode": "EXPLICIT_HUMAN",
+    "confirmedBy": "user_enterprise",
+    "confirmedAt": "2026-08-21T01:35:00.000Z",
+    "contentHash": "12a69cccc82b540a009bf308a1a88b5d0ef19827d986ce7c05069b6f4fa5bf07"
+  }
+}

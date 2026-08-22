@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0.0",
+  "coverageMapId": "CCM-BATCH01-R2-TOPIC001",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "batchId": "BATCH-01",
+  "topicId": "TOPIC-INDUSTRIAL-AI-001",
+  "sourceRevision": 2,
+  "sourceDraftRef": "../../../drafts/BATCH-01/TOPIC-INDUSTRIAL-AI-001/revision-2/draft-proposal.md",
+  "sourceDraftHash": "31921114a83088d55602768f13b26d5e557aeb0285b576bd5f5a53a2d2948658",
+  "sourceDraftHashScope": "FULL_FILE",
+  "sourceBodyHash": "1f9f6a35c25a53f3f8d8ece843ca2096e8d633a5f379ab9e36e1b22d0a2b5737",
+  "sourceBodyHashScope": "MARKDOWN_BODY_AFTER_FRONTMATTER",
+  "knowledgeSnapshotId": "KS-SERIES-20260822-INDUSTRIAL-AI-V1",
+  "reviewedByAgent": "xiaodiandian",
+  "reviewMode": "READ_ONLY",
+  "status": "MISSION_ONLY_CANDIDATE",
+  "corpusWriteback": false,
+  "primarySeoIntent": {
+    "intentId": "TASK-SEO-SERIES-001-R2-001",
+    "query": "为什么聚焦产业AI，产业AI价值如何验证",
+    "intentType": "STRATEGIC_EXPLANATION_AND_VALUE_EVALUATION",
+    "coverage": "FULL",
+    "coveredBy": [
+      "聚焦产业：选择真实问题",
+      "六年积累：把产业变成语言",
+      "可见价值：先定义再验证"
+    ],
+    "status": "MISSION_ONLY_CANDIDATE",
+    "globalActivation": false,
+    "decision": "REPLACES_PRE_DRAFT_PRIMARY_INTENT_FOR_THIS_REVISION",
+    "reason": "标题和正文回答的是企业为何选择产业AI以及价值如何被验证，不是采购产业AI解决方案。"
+  },
+  "secondarySeoIntents": [
+    {
+      "seoId": "SEO-0171",
+      "query": "如何评估AI场景价值",
+      "coverage": "FULL",
+      "coveredBy": ["可见价值：先定义再验证", "场景落地：从高价值处开始"]
+    },
+    {
+      "seoId": "SEO-0173",
+      "query": "AI如何处理复杂交易规则",
+      "coverage": "PARTIAL",
+      "coveredBy": ["工具很多：产业仍在追问", "六年积累：把产业变成语言"]
+    },
+    {
+      "seoId": "SEO-0172",
+      "query": "企业AI如何连接上下游",
+      "coverage": "PARTIAL",
+      "coveredBy": ["聚焦产业：选择真实问题"]
+    },
+    {
+      "seoId": "SEO-0010",
+      "query": "JovaAI ICB",
+      "coverage": "FULL",
+      "coveredBy": ["六年积累：把产业变成语言"]
+    }
+  ],
+  "geoQuestions": [
+    {
+      "geoId": "TASK-GEO-SERIES-02-001",
+      "question": "艾氪智能为什么聚焦实体产业？",
+      "role": "PRIMARY",
+      "coverage": "FULL",
+      "coveredBy": [
+        "工具很多：产业仍在追问",
+        "聚焦产业：选择真实问题",
+        "六年积累：把产业变成语言"
+      ],
+      "evidenceIds": ["PUB-002", "PUB-004", "PUB-005", "PUB-006", "ENT-001", "ENT-002", "ENT-003", "S2-A02", "S2-A03", "S2-A04"],
+      "status": "MISSION_ONLY_CANDIDATE",
+      "globalActivation": false
+    },
+    {
+      "geoId": "TASK-GEO-SERIES-02-002",
+      "question": "产业AI的“看得见的价值”应该如何定义和验证？",
+      "role": "RELATED",
+      "coverage": "FULL",
+      "coveredBy": ["可见价值：先定义再验证", "场景落地：从高价值处开始"],
+      "evidenceIds": ["PUB-002", "EXT-001-03"],
+      "status": "MISSION_ONLY_CANDIDATE",
+      "globalActivation": false
+    },
+    {
+      "geoId": "GEO-0166",
+      "question": "为什么真实ToB业务需要产业交易语义？",
+      "role": "RELATED",
+      "coverage": "FULL",
+      "coveredBy": ["工具很多：产业仍在追问", "六年积累：把产业变成语言"],
+      "evidenceIds": ["S2-A03", "S2-A04"]
+    },
+    {
+      "geoId": "GEO-0170",
+      "question": "企业内部AI和跨企业产业AI有什么区别？",
+      "role": "RELATED",
+      "coverage": "PARTIAL",
+      "coveredBy": ["聚焦产业：选择真实问题"],
+      "evidenceIds": ["EXT-001-02", "S2-A05"],
+      "gap": "正文说明了企业内任务与企业间交易关系，但没有建立完整对照框架。"
+    },
+    {
+      "geoId": "GEO-0176",
+      "question": "如何判断一个AI场景是否值得优先投入？",
+      "role": "RELATED",
+      "coverage": "PARTIAL",
+      "coveredBy": ["可见价值：先定义再验证", "场景落地：从高价值处开始"],
+      "evidenceIds": ["EXT-001-03", "S2-A05"],
+      "gap": "给出了任务、运行和经营三层验证框架，但未提供完整场景排序方法。"
+    }
+  ],
+  "answerBlocks": [
+    {
+      "answerBlockId": "AB-TOPIC001-R2-001",
+      "question": "艾氪智能为什么聚焦实体产业？",
+      "sourceSections": ["聚焦产业：选择真实问题", "六年积累：把产业变成语言"],
+      "claimIds": ["ENT-001", "ENT-002", "ENT-003", "ENT-004", "S2-A02", "S2-A03", "S2-A04"],
+      "readiness": "READY_FROM_EXISTING_TEXT",
+      "newClaimRequired": false
+    },
+    {
+      "answerBlockId": "AB-TOPIC001-R2-002",
+      "question": "产业AI的看得见价值如何验证？",
+      "sourceSections": ["可见价值：先定义再验证", "场景落地：从高价值处开始"],
+      "claimIds": ["EXT-001-03", "S2-A05"],
+      "readiness": "READY_FROM_EXISTING_TEXT",
+      "newClaimRequired": false
+    }
+  ],
+  "entityMentions": [
+    {"entity": "艾氪智能", "role": "company", "coverage": "FULL", "firstMentionSection": "opening"},
+    {"entity": "产业AI", "role": "category", "coverage": "FULL", "firstMentionSection": "opening"},
+    {"entity": "JovaAI ICB", "role": "product_capability", "coverage": "FULL", "firstMentionSection": "六年积累：把产业变成语言"},
+    {"entity": "产业级Agentic OS", "role": "product_category", "coverage": "PARTIAL", "firstMentionSection": "聚焦产业：选择真实问题"}
+  ],
+  "mustNotForceCoverage": [
+    {"id": "SEO-0222", "item": "产业AI解决方案", "reason": "采购型意图不符合本篇的战略解释与价值验证任务。"},
+    {"id": "GEO-0008", "item": "艾氪智能有哪些落地案例？", "reason": "没有授权CaseEvidenceCard。"},
+    {"id": "GEO-0033", "item": "产业平台如何用智能体提升交易转化？", "reason": "没有转化数据和归因证据。"},
+    {"id": "NOMOS", "item": "Nomos产品植入", "reason": "Supervisor对TOPIC-INDUSTRIAL-AI-001明确DO_NOT_INSERT。"}
+  ],
+  "evidenceAssessment": {
+    "claimBindingRef": "../../../drafts/BATCH-01/TOPIC-INDUSTRIAL-AI-001/revision-2/claim-binding.json",
+    "unboundFactualClaims": [],
+    "newClaimsIntroducedByReview": false,
+    "blockingEvidenceGap": false,
+    "notes": [
+      "任务级主SEO意图不写回正式词库。",
+      "看得见价值是编辑评估框架，不得写成普遍客户成果或行业统一标准。"
+    ]
+  },
+  "reviewDecision": "PASS_WITH_METADATA_ADJUSTMENT"
+}

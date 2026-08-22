@@ -1,0 +1,11 @@
+{
+  "missionClass": "PRODUCT_CONTENT",
+  "enterpriseRelevance": "DIRECT",
+  "topicEntities": ["产业级Agentic OS", "JovaAI", "JovaAI OS", "多智能体协同", "Nomos"],
+  "publicationScope": "EXTERNAL_DRAFT",
+  "riskLevel": "HIGH",
+  "requiresPublicResearch": true,
+  "requiresEnterpriseKnowledge": true,
+  "requiresNomosPolicy": true,
+  "requiresCasePolicy": false
+}
