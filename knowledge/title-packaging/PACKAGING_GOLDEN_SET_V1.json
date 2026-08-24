@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "goldenSetId": "packaging-golden-set-v1",
+  "status": "SHADOW_EVALUATION",
+  "examples": [
+    {
+      "id": "E052-1",
+      "intent": "Nomos历史起源与智能体治理秩序",
+      "xiaohongshuTitle": "从古希腊Nomos到AI Governance：智能体时代的秩序重建",
+      "shortVideoTitle": "JovaAI Nomos：像组织员工一样，去组织你的AI Agent天团",
+      "videoTopLines": ["从古希腊Nomos到AI Governance", "智能体时代的秩序重建"],
+      "cover": ["JovaAI Nomos起源", "智能体治理：智能体时代的秩序重建"],
+      "requiredHowtoTags": ["#AI反常识howto"]
+    },
+    {
+      "id": "E053-4",
+      "intent": "制度定义边界，自主决定路径",
+      "shortVideoTitle": "JovaAI Nomos：自主决定路径，制度定义边界",
+      "videoTopLines": ["JovaAI Nomos：让智能体像成熟员工一样工作", "制度定义边界，自主决定路径"],
+      "cover": ["JovaAI Nomos", "AI不只是要聪明，还要被治理"],
+      "requiredTags": ["#JovaAI"]
+    },
+    {
+      "id": "E054-3",
+      "intent": "从自主决策到制度治理的商业演进",
+      "title": "从“自主决策”到“制度治理”：解读JovaAI Nomos的商业演进与企业重构逻辑",
+      "videoTopLines": ["从自主决策到制度治理", "AI自主决策时代，企业智能体治理体系如何重构？"],
+      "cover": ["自主决策→制度治理", "企业AI智能体治理体系如何重构？"]
+    },
+    {
+      "id": "E055-8",
+      "intent": "AI员工网络中的人类责任",
+      "xiaohongshuTitle": "AI越来越强之后，人类到底还负责什么？",
+      "shortVideoTitle": "Human API：人是智能体网络里的第N+1个节点",
+      "videoTopLines": ["如果一家企业拥有100个AI员工", "组织应该如何重新设计？"],
+      "cover": ["Human API", "如果一家企业拥有100个AI员工？"],
+      "hypothesisRequired": true
+    },
+    {
+      "id": "E056-10",
+      "intent": "企业AI从Demo到业务的落地难题",
+      "title": "演示很惊艳，上线就失灵：企业AI落地到底卡在哪？",
+      "videoTopLines": ["AI演示很好，业务却用不了", "企业AI落地到底卡在哪？"],
+      "cover": ["从Demo到业务", "企业AI落地到底卡在哪？"]
+    }
+  ],
+  "evaluationPolicy": "Intent overlap and safety are required; verbatim copying is not required."
+}

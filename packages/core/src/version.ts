@@ -1,4 +1,4 @@
-export const AGT004_PROJECT_VERSION = "5.5.2" as const;
+export const AGT004_PROJECT_VERSION = "5.6.0" as const;
 export const AGT004_RELEASE_TAG = `v${AGT004_PROJECT_VERSION}` as const;
 
 export function versionedPrompt(agentId: string, purpose?: string): string {

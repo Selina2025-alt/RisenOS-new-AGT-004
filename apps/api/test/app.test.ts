@@ -1,6 +1,6 @@
 import {
   ContentService,
-  createV55TeamRuntime,
+  createV56TeamRuntime,
   InMemoryContentRepository,
   RuleBasedPolicyPort,
   V55GovernanceStore,
@@ -10,8 +10,12 @@ import {
   type ReviewPort,
 } from "@risen/content-core";
 import { signAgentEnvelope } from "@risen/content-adapters";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { afterEach, describe, expect, it } from "vitest";
 import { buildApp } from "../src/app.js";
+
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "../../..");
 
 const repository = new InMemoryContentRepository();
 const hostModel: HostModelPort = {
@@ -49,8 +53,8 @@ const service = new ContentService({
   },
 });
 const governance = new V55GovernanceStore(".codex-tmp/api-v55-test");
-const teamRuntime = await createV55TeamRuntime({
-  workspaceRoot: process.cwd(),
+const teamRuntime = await createV56TeamRuntime({
+  workspaceRoot: repositoryRoot,
   storeRoot: ".codex-tmp/api-team-runtime-test",
   hostModel,
   registryManifestPath: false,
@@ -128,14 +132,14 @@ describe("content API", () => {
     );
   });
 
-  it("reports the seven registered handlers and honest shadow rollout state", async () => {
+  it("reports the eight registered handlers and honest shadow rollout state", async () => {
     const response = await app.inject({ method: "GET", url: "/v1/agents/runtime-health" });
     expect(response.statusCode).toBe(200);
     expect(response.json()).toMatchObject({
       status: "READY",
       registeredHandlers: expect.arrayContaining([
         "topic-radar", "public-researcher", "makabaka", "content-orchestrator",
-        "lilith", "xiaodiandian", "balala",
+        "lilith", "xiaodiandian", "balala", "packaging-copy-agent",
       ]),
       shadowAgents: expect.arrayContaining(["lilith", "xiaodiandian", "balala"]),
       missingHandlers: [],

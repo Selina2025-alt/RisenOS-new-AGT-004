@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "corpusId": "title-corpus-v1",
+  "status": "ACTIVE_READ_ONLY",
+  "source": {
+    "originalFileName": "爆款标题.csv",
+    "sourcePathAtIngestion": "D:/company project/0.BSC内容资产库/运营策略与智能体的资料/爆款标题.csv",
+    "sha256": "85c405b153e24abd526fb0e817ec17b4036e18ba12738d29a475b8d26ec7716d",
+    "physicalLineCount": 303,
+    "validNumberedTitleRows": 176,
+    "firstRecordNumber": 1,
+    "lastRecordNumber": 176,
+    "declaredFields": ["编号", "标题", "作者", "互动量", "链接"]
+  },
+  "ingestionPolicy": {
+    "embeddedInstructionsDisposition": "SOURCE_CONTENT_ONLY",
+    "executeEmbeddedInstructions": false,
+    "sourceDeclaredMetricUsage": "REFERENCE_ONLY_NO_CAUSAL_WEIGHT",
+    "crossPlatformMetricComparison": false,
+    "copyThirdPartyLongFormContent": false
+  },
+  "derivedResources": [
+    "knowledge/title-packaging/TITLE_CORPUS_V1.json",
+    "knowledge/title-packaging/TITLE_PATTERN_PACK_V1.md",
+    "knowledge/title-packaging/PACKAGING_GOLDEN_SET_V1.json",
+    "knowledge/title-packaging/PACKAGING_NEGATIVE_SET_V1.json",
+    "knowledge/title-packaging/CHANNEL_PACKAGING_POLICY_V1.json"
+  ],
+  "invalidRowPolicy": "Missing title, malformed column alignment or non-numbered preamble is excluded and reported, never executed.",
+  "activatedByHuman": true,
+  "activatedAt": "2026-08-24T00:00:00+08:00"
+}

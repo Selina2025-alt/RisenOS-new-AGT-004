@@ -39,8 +39,12 @@ export interface GenerateObjectRequest {
     | "content_coverage"
     | "geo_seo_proposal"
     | "research_pack"
+    | "title_pattern_research_pack"
     | "knowledge_match"
-    | "draft_proposal";
+    | "draft_proposal"
+    | "title_candidate_pool"
+    | "auto_packaging_selection"
+    | "packaging_review_report";
   systemPrompt: string;
   input: Record<string, unknown>;
   jsonSchema: Record<string, unknown>;

@@ -14,6 +14,9 @@ import {
   ClaimDecisionInputSchema,
   CreateTeamRunInputSchema,
   HumanGateDecisionInputSchema,
+  PackagingFeedbackInputSchema,
+  PackagingOverrideInputSchema,
+  PackagingRegenerateInputSchema,
   ReviewDecisionInputSchema,
   ReviewRequestInputSchema,
   SkillImportInputSchema,
@@ -472,6 +475,36 @@ export async function buildApp(container: DependencyContainer) {
     return {
       items: await container.teamRuntime.coordinator.artifacts(request.params.runId, identity.organizationId),
     };
+  });
+
+  app.get<{ Params: { runId: string } }>("/v1/team-runs/:runId/packaging", async (request) => {
+    const identity = identityFrom(request);
+    return container.teamRuntime.coordinator.packaging(request.params.runId, identity.organizationId);
+  });
+
+  app.post<{ Params: { runId: string } }>("/v1/team-runs/:runId/packaging-feedback", async (request, reply) => {
+    const identity = identityFrom(request);
+    if (identity.role === "VIEWER") throw new DomainError("FORBIDDEN", "Viewers cannot submit packaging feedback", 403);
+    const input = PackagingFeedbackInputSchema.parse({ ...(request.body as Record<string, unknown>), runId: request.params.runId });
+    return reply.status(201).send(await container.teamRuntime.coordinator.submitPackagingFeedback(input, identity));
+  });
+
+  app.post<{ Params: { runId: string } }>("/v1/team-runs/:runId/packaging-override", async (request, reply) => {
+    const identity = identityFrom(request);
+    if (identity.role === "VIEWER") throw new DomainError("FORBIDDEN", "Viewers cannot override packaging", 403);
+    const input = PackagingOverrideInputSchema.parse({ ...(request.body as Record<string, unknown>), runId: request.params.runId });
+    const result = await container.teamRuntime.coordinator.submitPackagingOverride(input, identity);
+    await container.enqueueTeamRun?.(result.run.runId, identity.organizationId, result.run.taskIds.length);
+    return reply.status(201).send(result);
+  });
+
+  app.post<{ Params: { runId: string } }>("/v1/team-runs/:runId/packaging-regenerate", async (request, reply) => {
+    const identity = identityFrom(request);
+    if (identity.role === "VIEWER") throw new DomainError("FORBIDDEN", "Viewers cannot regenerate packaging", 403);
+    const input = PackagingRegenerateInputSchema.parse(request.body ?? {});
+    const run = await container.teamRuntime.coordinator.regeneratePackaging(request.params.runId, identity.organizationId, input.researchMode);
+    await container.enqueueTeamRun?.(run.runId, identity.organizationId, run.taskIds.length);
+    return reply.status(202).send(run);
   });
 
   app.post<{ Params: { runId: string } }>(

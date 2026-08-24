@@ -1,14 +1,14 @@
 # AGT-RSN-004：艾氪智能内容生产团队
 
-> 当前版本：`v5.5.2` · 开发快照 · 纯内容域 · 7 个内部子智能体 · 本地文件可独立持久化
+> 当前版本：`v5.6.0-rc.1` · RC开发快照 · 纯内容域 · 8 个内部子智能体 · 本地文件可独立持久化
 
 AGT-RSN-004 是 RISEN 家族的内容资产生产与管理智能体。它把选题、公开研究、企业知识、品牌规则和证据转化为经过审核、可追溯、可复用的内容资产。
 
 如果你第一次打开这个仓库，只需要先记住三件事：
 
 1. **004 负责内容从选题到交付，不负责发布和效果监测。**
-2. **004 是 Supervisor，噜噜猫、依古比古、玛卡巴卡、唔西迪西、莉莉丝、小点点和巴啦啦是内部子智能体。**
-3. **当前 `v5.5.2` 已完成统一运行接线，并为莉莉丝增加重复与叙事质量闸门；7 个子智能体仍处于 `SHADOW`，尚未完成脱离宿主对话的生产验收。**
+2. **004 是 Supervisor，噜噜猫、依古比古、玛卡巴卡、唔西迪西、莉莉丝、小点点、巴啦啦和闪闪是内部子智能体。**
+3. **当前 `v5.6.0` 已接入标题与内容包装智能体闪闪；8 个子智能体仍处于 `SHADOW`，尚未取得正式闸门执行资格。**
 
 ## 一分钟看懂项目
 
@@ -23,9 +23,11 @@ flowchart LR
     L -->|"GEO/SEO问题"| X["小点点：优化提案"]
     X --> L
     L --> H1["企业方批准源稿"]
-    H1 --> B["巴啦啦：五渠道变体"]
+    H1 --> B["巴啦啦：七渠道变体"]
     B --> L2["莉莉丝：变体复核"]
-    L2 --> H2["企业方最终批准"]
+    L2 --> SS["闪闪：60个候选与七渠道自动包装"]
+    SS --> L3["莉莉丝：包装审核"]
+    L3 --> H2["企业方最终批准"]
     H2 --> P["ContentPackage"]
 ```
 
@@ -37,7 +39,8 @@ flowchart LR
 - 每日资讯本地副本的去重、聚类和候选选题；
 - ContentBrief、Outline、ResearchPack；
 - 企业 AI、产业 AI、Agentic OS 和产品内容写作；
-- 微信公众号、短视频、小红书、X/Twitter、LinkedIn 变体；
+- 微信公众号、短视频/视频号、小红书、X/Twitter、LinkedIn、YouTube、播客变体与包装；
+- 默认60个标题候选、渠道独立选择、封面文字、视频上方文字、Hook和标签；
 - Claim—Evidence 绑定；
 - 企业知识、品牌、合规、保密和案例口径检查；
 - AI 味儿、逻辑、车轱辘话、叙事质量、内容完整度和企业融合审核；
@@ -71,15 +74,16 @@ flowchart LR
 | 莉莉丝 | `lilith` | 事实、逻辑、AI 味、车轱辘话、叙事质量、品牌、保密和合规审核 | 不可自批 |
 | 小点点 | `xiaodiandian` | GEO/SEO 问题优化 Proposal | 不可直接改正式稿 |
 | 巴啦啦 | `balala` | 微信、短视频、小红书、X、LinkedIn 变体 | 不可绕过源稿批准 |
+| 闪闪 | `packaging-copy-agent` | 七渠道标题、Hook、封面/视频文字、标签和自动选择 | 不可改正文、不可自审或批准 |
 
-运行时权威登记在 [`agents/registry.v5.5.json`](agents/registry.v5.5.json)。代码、文档和 Registry 不一致时，启动校验会失败。
+运行时权威登记在 [`agents/registry.v5.6.json`](agents/registry.v5.6.json)。代码、文档和 Registry 不一致时，启动校验会失败。
 
 ## 当前真实状态
 
 | 项目 | 状态 |
 |---|---|
-| 当前代码版本 | `v5.5.2`（DEVELOPMENT） |
-| 7 个 Handler | 已注册，7/7 |
+| 当前代码版本 | `v5.6.0`（RC DEVELOPMENT） |
+| 8 个 Handler | 已注册，8/8 |
 | 子智能体 rolloutMode | 全部 `SHADOW` |
 | 本地任务、Artifact、Checkpoint | 已持久化 |
 | 人工批准闸门 | 已实现 |
@@ -89,7 +93,7 @@ flowchart LR
 | PostgreSQL/Redis 真实故障演练 | 尚未完成 |
 | 无人值守生产状态 | 尚未达到 |
 
-因此，本地执行 `pnpm team:health` 时，如果没有宿主桥接，看到 `DEGRADED` 是预期结果。它表示历史数据和非模型校验可用，但模型任务不能脱离宿主自行执行；不表示 7 个 Handler 丢失。
+因此，本地执行 `pnpm team:health` 时，如果没有宿主桥接，看到 `DEGRADED` 是预期结果。它表示历史数据和非模型校验可用，但模型任务不能脱离宿主自行执行；不表示 8 个 Handler 丢失。
 
 完整投产差距见 [`docs/PRODUCTION_READINESS.md`](docs/PRODUCTION_READINESS.md)。
 
@@ -125,9 +129,9 @@ pnpm team:health
 没有配置宿主桥接时，预期结果是：
 
 ```text
-registeredHandlers: 7
+registeredHandlers: 8
 missingHandlers: 0
-shadowAgents: 7
+shadowAgents: 8
 hostModelAvailable: false
 status: DEGRADED
 ```
@@ -140,7 +144,7 @@ status: DEGRADED
 README.md
 active_context.json
 knowledge/00_知识库索引.md
-agents/registry.v5.5.json
+agents/registry.v5.6.json
 ```
 
 然后可以直接提出内容任务，例如：
@@ -181,8 +185,10 @@ pnpm team:health
 → 必要时小点点 GEO/SEO Proposal
 → 莉莉丝复审
 → 企业方批准源稿
-→ 巴啦啦五渠道变体
+→ 巴啦啦七渠道变体
 → 莉莉丝变体复核
+→ 闪闪生成60个候选并自动选择七渠道包装
+→ 莉莉丝包装审核
 → 企业方最终批准
 → ContentPackage
 ```
@@ -195,6 +201,8 @@ pnpm team:health
 - 出现知识冲突时的 `KNOWLEDGE_CONFLICT_DECIDED`。
 
 人工批准绑定具体 Artifact Hash。内容发生变化后，旧批准自动失效。
+
+标题、封面文字和视频上方文字不再设置独立人工闸门。人工仍可通过包装反馈或不可变 Override 覆盖自动选择；Override 不删除闪闪原始方案，并且不能绕过包装硬门槛和最终变体总批准。
 
 ## 仓库地图
 
@@ -271,11 +279,18 @@ python tools/build_daily_radar.py
 
 # V5.5 历史任务回放
 pnpm replay:v55
+
+# 查看闪闪包装结果（完整候选池、七渠道选择和莉莉丝结论）
+pnpm packaging:show -- <runId> <organizationId>
+
+# 仅在人工明确要求更新公开标题趋势时使用；先经依古比古受限研究
+pnpm packaging:generate -- <runId> <organizationId> PUBLIC_PATTERN_PACK
 ```
 
 ## 版本与回滚
 
-- 当前工作区版本：`v5.5.2`（尚未提交和推送，发布说明见 [`docs/RELEASE_NOTES_V5.5.2.md`](docs/RELEASE_NOTES_V5.5.2.md)）；
+- 当前工作区版本：`v5.6.0-rc.1`（实施分支，发布说明见 [`docs/RELEASE_NOTES_V5.6.0.md`](docs/RELEASE_NOTES_V5.6.0.md)）；
+- 当前回滚基线：[`v5.5.2`](https://github.com/Selina2025-alt/RisenOS-new-AGT-004/tree/v5.5.2)；
 - 上一Git快照：[`v5.5.1`](https://github.com/Selina2025-alt/RisenOS-new-AGT-004/tree/v5.5.1)；
 - 前一稳定快照：[`v5.3.1`](https://github.com/Selina2025-alt/RisenOS-new-AGT-004/tree/v5.3.1)；
 - V5.5.1 上线前归档：[`archive-main-v5.3.1-before-v5.5.1-20260822`](https://github.com/Selina2025-alt/RisenOS-new-AGT-004/tree/archive-main-v5.3.1-before-v5.5.1-20260822)。
@@ -287,15 +302,16 @@ pnpm replay:v55
 阅读顺序建议：
 
 1. 本 README；
-2. [`docs/RELEASE_NOTES_V5.5.2.md`](docs/RELEASE_NOTES_V5.5.2.md)；
+2. [`docs/RELEASE_NOTES_V5.6.0.md`](docs/RELEASE_NOTES_V5.6.0.md)；
 3. [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md)；
 4. [`docs/GETTING_STARTED_V5.5.1.md`](docs/GETTING_STARTED_V5.5.1.md)；
 5. [`docs/REPOSITORY_MAP_V5.5.1.md`](docs/REPOSITORY_MAP_V5.5.1.md)；
 6. [`docs/IMPLEMENTATION_PLAN_V5.5.md`](docs/IMPLEMENTATION_PLAN_V5.5.md)；
 7. [`docs/IMPLEMENTATION_PLAN_V5.5.1.md`](docs/IMPLEMENTATION_PLAN_V5.5.1.md)；
-8. [`docs/PRODUCTION_READINESS.md`](docs/PRODUCTION_READINESS.md)。
+8. [`docs/IMPLEMENTATION_PLAN_V5.6.0.md`](docs/IMPLEMENTATION_PLAN_V5.6.0.md)；
+9. [`docs/PRODUCTION_READINESS.md`](docs/PRODUCTION_READINESS.md)。
 
-V5.3 文档保留为底层持久化历史设计。V5.5定义内容和知识治理，V5.5.1定义统一团队运行接线，V5.5.2定义莉莉丝重复/叙事闸门与强制版本制度；发生冲突时，以最新版本的Release Notes和权威实施文档为准。
+V5.3 文档保留为底层持久化历史设计。V5.5定义内容和知识治理，V5.5.1定义统一团队运行接线，V5.5.2定义莉莉丝重复/叙事闸门与强制版本制度，V5.6.0定义闪闪及标题包装闭环；发生冲突时，以最新版本的Release Notes和权威实施文档为准。
 
 ## 资料与许可说明
 

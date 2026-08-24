@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "release": "5.6.0",
+  "agents": [
+    {
+      "agentId": "agt-004",
+      "version": "5.6.0",
+      "manifestHash": "agt-004-v5.6.0",
+      "displayName": "AGT-RSN-004",
+      "role": "supervisor",
+      "rolloutMode": "ENFORCING",
+      "canWriteContentVersion": true,
+      "canApprove": false,
+      "outputSchemas": ["content_version", "channel_variant", "content_package", "variant_approval_manifest"]
+    },
+    {
+      "agentId": "topic-radar",
+      "version": "5.6.0",
+      "manifestHash": "topic-radar-v5.6.0",
+      "displayName": "噜噜猫",
+      "role": "topic_radar",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["topic_candidate", "topic_snapshot"]
+    },
+    {
+      "agentId": "public-researcher",
+      "version": "5.6.0",
+      "manifestHash": "public-researcher-v5.6.0",
+      "displayName": "依古比古",
+      "role": "public_researcher",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["research_pack", "evidence", "title_pattern_research_pack"]
+    },
+    {
+      "agentId": "makabaka",
+      "version": "5.6.0",
+      "manifestHash": "makabaka-v5.6.0",
+      "displayName": "玛卡巴卡",
+      "role": "enterprise_knowledge_matcher",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["knowledge_snapshot", "fusion_plan", "post_draft_check"]
+    },
+    {
+      "agentId": "content-orchestrator",
+      "version": "5.6.0",
+      "manifestHash": "content-orchestrator-v5.6.0",
+      "displayName": "唔西迪西",
+      "role": "content_orchestrator",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["content_brief", "outline", "draft_proposal"]
+    },
+    {
+      "agentId": "lilith",
+      "version": "5.6.0",
+      "manifestHash": "lilith-v5.6.0",
+      "displayName": "莉莉丝",
+      "role": "reviewer",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["review_report", "review_issue", "packaging_review_report"]
+    },
+    {
+      "agentId": "xiaodiandian",
+      "version": "5.6.0",
+      "manifestHash": "xiaodiandian-v5.6.0",
+      "displayName": "小点点",
+      "role": "geo_seo_optimizer",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["geo_seo_proposal", "technical_geo_recommendation"]
+    },
+    {
+      "agentId": "balala",
+      "version": "5.6.0",
+      "manifestHash": "balala-v5.6.0",
+      "displayName": "巴啦啦",
+      "role": "variant_agent",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "outputSchemas": ["variant_proposal", "asset_brief"]
+    },
+    {
+      "agentId": "packaging-copy-agent",
+      "version": "5.6.0",
+      "manifestHash": "packaging-copy-agent-v5.6.0",
+      "displayName": "闪闪",
+      "role": "content_packaging_copy",
+      "rolloutMode": "SHADOW",
+      "canWriteContentVersion": false,
+      "canApprove": false,
+      "requiresHumanGate": false,
+      "skills": ["title-tag-cover-generator", "huashu-video-check"],
+      "allowedTools": ["host_model", "local_title_corpus"],
+      "forbiddenTools": ["publish", "platform_monitoring", "learning_proposal", "platform_publish", "platform_analytics", "platform_credentials", "direct_knowledge_write", "unrestricted_external_search"],
+      "outputSchemas": ["title_candidate_pool", "auto_packaging_selection"]
+    }
+  ],
+  "forbiddenForAll": [
+    "self_approval",
+    "platform_publish",
+    "platform_credentials",
+    "platform_monitoring",
+    "learning_proposal",
+    "automatic_knowledge_activation"
+  ]
+}

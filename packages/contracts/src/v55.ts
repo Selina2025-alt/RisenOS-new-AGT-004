@@ -295,7 +295,7 @@ export const TeamRunSchema = z.object({
   taskIds: z.array(IdSchema),
   currentGate: HumanGateSchema.optional(),
   sourceArtifactIds: z.array(IdSchema),
-  requestedChannels: z.array(z.enum(["wechat", "short_video", "xiaohongshu", "x", "linkedin"])),
+  requestedChannels: z.array(z.enum(["wechat", "short_video", "xiaohongshu", "x", "linkedin", "youtube", "podcast"])),
   createdAt: IsoDateSchema,
   updatedAt: IsoDateSchema,
   error: z.string().optional(),
@@ -303,9 +303,9 @@ export const TeamRunSchema = z.object({
 
 export const CreateTeamRunInputSchema = z.object({
   sourceArtifactIds: z.array(IdSchema).default([]),
-  requestedChannels: z.array(z.enum(["wechat", "short_video", "xiaohongshu", "x", "linkedin"]))
+  requestedChannels: z.array(z.enum(["wechat", "short_video", "xiaohongshu", "x", "linkedin", "youtube", "podcast"]))
     .min(1)
-    .default(["wechat", "short_video", "xiaohongshu", "x", "linkedin"]),
+    .default(["wechat", "short_video", "xiaohongshu", "x", "linkedin", "youtube", "podcast"]),
 });
 
 export type MissionClass = z.infer<typeof MissionClassSchema>;

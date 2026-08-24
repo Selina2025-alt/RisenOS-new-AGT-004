@@ -55,7 +55,7 @@ describe("V5.5 local agent runtime", () => {
   it("keeps only the supervisor enforcing until each subagent passes shadow rollout", () => {
     const registry = createDefaultAgentRegistry();
     expect(registry.list().map((item) => item.agentId).sort()).toEqual([
-      "agt-004", "balala", "content-orchestrator", "lilith", "makabaka",
+      "agt-004", "balala", "content-orchestrator", "lilith", "makabaka", "packaging-copy-agent",
       "public-researcher", "topic-radar", "xiaodiandian",
     ]);
     expect(registry.get("agt-004").rolloutMode).toBe("ENFORCING");

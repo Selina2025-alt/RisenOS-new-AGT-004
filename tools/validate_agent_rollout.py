@@ -18,15 +18,17 @@ EXPECTED = {
     "lilith",
     "xiaodiandian",
     "balala",
+    "packaging-copy-agent",
 }
 
 
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
-    manifest = json.loads((root / "agents" / "registry.v5.5.json").read_text(encoding="utf-8"))
+    manifest = json.loads((root / "agents" / "registry.v5.6.json").read_text(encoding="utf-8"))
     project_version = (root / "VERSION").read_text(encoding="utf-8").strip()
     package_version = json.loads((root / "package.json").read_text(encoding="utf-8"))["version"]
-    context_version = json.loads((root / "active_context.json").read_text(encoding="utf-8"))["workspaceVersion"]
+    context = json.loads((root / "active_context.json").read_text(encoding="utf-8"))
+    context_version = context["workspaceVersion"]
     manifest_ids = {agent["agentId"] for agent in manifest["agents"]}
     runtime = (root / "packages" / "core" / "src" / "agent-runtime.ts").read_text(encoding="utf-8")
     contract = (root / "packages" / "contracts" / "src" / "collaboration.ts").read_text(encoding="utf-8")
@@ -35,6 +37,7 @@ def main() -> int:
     contract_match = re.search(r"AgentIdSchema\s*=\s*z\.enum\(\[(.*?)\]\)", contract, re.S)
     contract_ids = set(re.findall(r'"([a-z0-9-]+)"', contract_match.group(1) if contract_match else ""))
     handler_ids = set(re.findall(r'registerHandler\("([a-z0-9-]+)"', bootstrap))
+    workflow = (root / "packages" / "core" / "src" / "v55-workflow.ts").read_text(encoding="utf-8")
     errors = []
     if len({project_version, package_version, context_version, manifest.get("release")}) != 1:
         errors.append(
@@ -48,6 +51,16 @@ def main() -> int:
     expected_handlers = EXPECTED - {"agt-004"}
     if handler_ids != expected_handlers:
         errors.append(f"handler mismatch: missing={sorted(expected_handlers-handler_ids)} extra={sorted(handler_ids-expected_handlers)}")
+    if context.get("agentRegistry") != "agents/registry.v5.6.json":
+        errors.append(f"active_context agentRegistry is {context.get('agentRegistry')}")
+    if set(context.get("internalSubagents", [])) != expected_handlers:
+        errors.append("active_context internalSubagents differ from the runtime team")
+    if context.get("teamRuntime", {}).get("registeredHandlerCount") != len(expected_handlers):
+        errors.append("active_context registeredHandlerCount differs from actual handlers")
+    if context.get("teamRuntime", {}).get("bootstrap") != "createV56TeamRuntime":
+        errors.append("active_context bootstrap must be createV56TeamRuntime")
+    if re.search(r'agentVersion:\s*"5\.', workflow):
+        errors.append("AgentTask.agentVersion is hard-coded instead of using the project version constant")
     for agent in manifest["agents"]:
         if agent.get("version") != project_version:
             errors.append(f"{agent['agentId']} version {agent.get('version')} != project {project_version}")

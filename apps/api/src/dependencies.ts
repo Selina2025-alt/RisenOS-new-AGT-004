@@ -17,7 +17,7 @@ import type {
 } from "@risen/content-core";
 import {
   ContentService,
-  createV55TeamRuntime,
+  createV56TeamRuntime,
   InMemoryContentRepository,
   RuleBasedPolicyPort,
   V55GovernanceStore,
@@ -213,9 +213,9 @@ export async function createDependencies(
   const teamTaskStore = usePostgres && databaseUrl
     ? new PostgresAgentTaskStore(databaseUrl)
     : undefined;
-  const teamRuntime = await createV55TeamRuntime({
+  const teamRuntime = await createV56TeamRuntime({
     workspaceRoot: repositoryRoot,
-    storeRoot: process.env.AGENT_TASK_STORE_ROOT ?? join(repositoryRoot, ".runtime", "v5.5", "team"),
+    storeRoot: process.env.AGENT_TASK_STORE_ROOT ?? join(repositoryRoot, ".runtime", "v5.6", "team"),
     ...(teamTaskStore ? { store: teamTaskStore, autoExecute: false } : {}),
     ...(hostRuntime ? { hostModel } : {}),
     ...(process.env.PYTHON_EXECUTABLE ? { pythonExecutable: process.env.PYTHON_EXECUTABLE } : {}),

@@ -10,7 +10,7 @@ import {
 } from "@risen/content-adapters";
 import {
   ContentService,
-  createV55TeamRuntime,
+  createV56TeamRuntime,
   RuleBasedPolicyPort,
   V55StoreGovernanceGate,
 } from "@risen/content-core";
@@ -101,7 +101,7 @@ export async function startWorker(
     handoff,
     governanceGate: new V55StoreGovernanceGate(governance, activeNomosSourceHashes),
   });
-  const teamRuntime = await createV55TeamRuntime({
+  const teamRuntime = await createV56TeamRuntime({
     workspaceRoot: repositoryRoot,
     hostModel,
     store: new PostgresAgentTaskStore(databaseUrl),

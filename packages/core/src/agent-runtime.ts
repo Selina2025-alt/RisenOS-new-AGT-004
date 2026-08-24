@@ -13,6 +13,7 @@ import {
 import { ConflictError } from "./errors.js";
 import type { AgentTaskStore } from "./local-agent-store.js";
 import { newId, nowIso } from "./utils.js";
+import { AGT004_PROJECT_VERSION } from "./version.js";
 
 export interface TaskResult {
   taskId: string;
@@ -541,6 +542,10 @@ export class LocalAgentRuntime implements InternalAgentRuntime {
     if (error instanceof Error && error.name === "ZodError") return true;
     return [
       "SCHEMA_VALIDATION_FAILED",
+      "PACKAGING_CANDIDATE_VALIDATION_FAILED",
+      "PACKAGING_SELECTION_VALIDATION_FAILED",
+      "VARIANT_CHANNEL_MISMATCH",
+      "VARIANT_CHANNEL_STRUCTURE_INCOMPLETE",
       "HOST_RUNTIME_UNAVAILABLE",
       "timed out",
       "timeout",
@@ -593,7 +598,7 @@ export function createDefaultAgentRegistry(input: {
   registry.register({
     ...base,
     agentId: "agt-004",
-    version: "5.5.2",
+    version: AGT004_PROJECT_VERSION,
     role: "supervisor",
     description: "Content domain supervisor and immutable version writer",
     outputSchemas: ["content_version", "content_package"],
@@ -601,84 +606,106 @@ export function createDefaultAgentRegistry(input: {
     canWriteContentVersion: true,
     requiresHumanGate: true,
     rolloutMode: input.rolloutModes?.["agt-004"] ?? "ENFORCING",
-    manifestHash: "agt-004-v5.5.2",
+    manifestHash: `agt-004-v${AGT004_PROJECT_VERSION}`,
   });
   registry.register({
     ...base,
     agentId: "topic-radar",
-    version: "5.5.2",
+    version: AGT004_PROJECT_VERSION,
     role: "topic_radar",
     description: "Local feed topic clustering, scoring and immutable topic snapshot proposal agent",
     outputSchemas: ["topic_candidate", "topic_snapshot"],
     allowedTools: ["local_feed_runs", "local_knowledge"],
-    manifestHash: "topic-radar-v5.5.2",
+    manifestHash: `topic-radar-v${AGT004_PROJECT_VERSION}`,
     rolloutMode: input.rolloutModes?.["topic-radar"] ?? base.rolloutMode,
   });
   registry.register({
     ...base,
     agentId: "public-researcher",
-    version: "5.5.2",
+    version: AGT004_PROJECT_VERSION,
     role: "public_researcher",
     description: "Public read-only research and Claim-Evidence proposal agent",
     outputSchemas: ["research_pack", "evidence"],
-    allowedTools: ["public_read_research"],
-    manifestHash: "public-researcher-v5.5.2",
+    allowedTools: ["host_model", "public_read_research"],
+    manifestHash: `public-researcher-v${AGT004_PROJECT_VERSION}`,
     rolloutMode: input.rolloutModes?.["public-researcher"] ?? base.rolloutMode,
   });
   registry.register({
     ...base,
     agentId: "makabaka",
-    version: "5.5.2",
+    version: AGT004_PROJECT_VERSION,
     role: "enterprise_knowledge_matcher",
     description: "Pre-draft knowledge snapshot, fusion plan and post-draft knowledge checker",
     outputSchemas: ["knowledge_snapshot", "fusion_plan", "post_draft_check"],
-    allowedTools: ["local_knowledge"],
-    manifestHash: "makabaka-v5.5.2",
+    allowedTools: ["host_model", "local_knowledge"],
+    manifestHash: `makabaka-v${AGT004_PROJECT_VERSION}`,
     rolloutMode: input.rolloutModes?.makabaka ?? base.rolloutMode,
   });
   registry.register({
     ...base,
     agentId: "content-orchestrator",
-    version: "5.5.2",
+    version: AGT004_PROJECT_VERSION,
     role: "content_orchestrator",
     description: "Perspective-bound content brief, outline and draft proposal agent",
     outputSchemas: ["content_brief", "outline", "draft_proposal"],
     allowedTools: ["host_model", "research_pack", "local_knowledge"],
-    manifestHash: "content-orchestrator-v5.5.2",
+    manifestHash: `content-orchestrator-v${AGT004_PROJECT_VERSION}`,
     rolloutMode: input.rolloutModes?.["content-orchestrator"] ?? base.rolloutMode,
   });
   registry.register({
     ...base,
     agentId: "lilith",
-    version: "5.5.2",
+    version: AGT004_PROJECT_VERSION,
     role: "reviewer",
     description: "Content, logic, repetition, narrative quality, AI-style, compliance and GEO/SEO issue reviewer",
     outputSchemas: ["review_report", "review_issue"],
-    allowedTools: ["local_knowledge", "research_pack"],
-    manifestHash: "lilith-v5.5.2",
+    allowedTools: ["host_model", "local_knowledge", "research_pack"],
+    manifestHash: `lilith-v${AGT004_PROJECT_VERSION}`,
     rolloutMode: input.rolloutModes?.lilith ?? base.rolloutMode,
   });
   registry.register({
     ...base,
     agentId: "xiaodiandian",
-    version: "5.5.2",
+    version: AGT004_PROJECT_VERSION,
     role: "geo_seo_optimizer",
     description: "Content-only SEO/GEO optimization proposal agent",
     outputSchemas: ["geo_seo_proposal", "technical_geo_recommendation"],
-    allowedTools: ["local_knowledge", "public_read_research"],
-    manifestHash: "xiaodiandian-v5.5.2",
+    allowedTools: ["host_model", "local_knowledge", "public_read_research"],
+    manifestHash: `xiaodiandian-v${AGT004_PROJECT_VERSION}`,
     rolloutMode: input.rolloutModes?.xiaodiandian ?? base.rolloutMode,
   });
   registry.register({
     ...base,
     agentId: "balala",
-    version: "5.5.2",
+    version: AGT004_PROJECT_VERSION,
     role: "variant_agent",
     description: "Channel variant and asset brief agent",
     outputSchemas: ["channel_variant", "asset_brief"],
     allowedTools: ["host_model", "public_read_research"],
-    manifestHash: "balala-v5.5.2",
+    manifestHash: `balala-v${AGT004_PROJECT_VERSION}`,
     rolloutMode: input.rolloutModes?.balala ?? base.rolloutMode,
+  });
+  registry.register({
+    ...base,
+    agentId: "packaging-copy-agent",
+    version: AGT004_PROJECT_VERSION,
+    role: "content_packaging_copy",
+    description: "Shanshan title, hook, cover-copy, overlay-copy, tag and automatic packaging selection proposal agent",
+    inputSchemas: ["packaging_brief", "content_version", "variant_proposal", "title_corpus_snapshot"],
+    outputSchemas: ["title_candidate_pool", "auto_packaging_selection"],
+    skills: ["title-tag-cover-generator", "huashu-video-check"],
+    allowedTools: ["host_model", "local_title_corpus"],
+    forbiddenTools: [
+      ...base.forbiddenTools,
+      "platform_publish",
+      "platform_analytics",
+      "platform_credentials",
+      "direct_knowledge_write",
+      "unrestricted_external_search",
+    ],
+    requiresHumanGate: false,
+    manifestHash: `packaging-copy-agent-v${AGT004_PROJECT_VERSION}`,
+    rolloutMode: input.rolloutModes?.["packaging-copy-agent"] ?? base.rolloutMode,
   });
   return registry;
 }

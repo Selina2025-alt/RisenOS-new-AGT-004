@@ -1,6 +1,6 @@
 {
   "name": "agt-rsn-004",
-  "version": "5.5.2",
+  "version": "5.6.0",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@10.15.1",
@@ -21,7 +21,12 @@
     "team:cancel": "tsx scripts/team-runtime-cli.ts cancel",
     "team:decide": "tsx scripts/team-runtime-cli.ts decide",
     "team:health": "tsx scripts/team-runtime-cli.ts health",
-    "team:validate": "python tools/validate_agent_rollout.py && tsx scripts/team-runtime-cli.ts validate"
+    "team:validate": "python tools/validate_agent_rollout.py && tsx scripts/team-runtime-cli.ts validate",
+    "packaging:generate": "tsx scripts/team-runtime-cli.ts generate-packaging",
+    "packaging:show": "tsx scripts/team-runtime-cli.ts show-packaging-book",
+    "packaging:feedback": "tsx scripts/team-runtime-cli.ts packaging-feedback",
+    "packaging:override": "tsx scripts/team-runtime-cli.ts packaging-override",
+    "packaging:validate": "vitest run packages/core/test/packaging-shanshan.test.ts"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",

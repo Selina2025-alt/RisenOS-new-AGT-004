@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "release": "5.6.0",
+  "status": "RC_TAGGED_AWAITING_REAL_TRIAL",
+  "branch": "implementation/v5.6.0",
+  "baselineTag": "v5.5.2",
+  "baselineCommit": "4c74698",
+  "changeClass": "MINOR",
+  "addedAgent": {
+    "agentId": "packaging-copy-agent",
+    "displayName": "闪闪",
+    "rolloutMode": "SHADOW"
+  },
+  "humanGatesAdded": [],
+  "humanGatesPreserved": ["SOURCE_DRAFT_APPROVED", "FINAL_VARIANTS_APPROVED"],
+  "platformPublishing": false,
+  "platformAnalytics": false,
+  "extraModelApi": false,
+  "validation": {
+    "typecheck": "PASS",
+    "build": "PASS",
+    "platformBoundary": "PASS",
+    "runtimeRegistry": "8/8 PASS",
+    "coreTests": "69/69 PASS",
+    "totalAutomatedTests": "88/88 PASS",
+    "packagingPolicyTests": "6/6 PASS",
+    "titleCorpusRecords": 176,
+    "secretScan": "PASS_TEST_FIXTURE_ONLY",
+    "gitDiffCheck": "PASS"
+  },
+  "targetRcTag": "v5.6.0-rc.1",
+  "rcTagCreated": true,
+  "createdAt": "2026-08-24T00:00:00+08:00",
+  "formalTagCreated": false,
+  "mainUpdated": false
+}

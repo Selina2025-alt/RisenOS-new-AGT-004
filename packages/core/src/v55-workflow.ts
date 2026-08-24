@@ -3,6 +3,7 @@ import type { AgentId, AgentTask, ArtifactRef } from "@risen/content-contracts";
 import { ConflictError } from "./errors.js";
 import { createAgentTask, newTaskId } from "./agent-runtime.js";
 import { sha256 } from "./utils.js";
+import { AGT004_PROJECT_VERSION } from "./version.js";
 
 export interface V55WorkflowContext {
   rootRunId: string;
@@ -54,7 +55,7 @@ function makeTask(input: {
     senderAgentId: "agt-004",
     recipientAgentId: input.recipient,
     taskType: input.taskType,
-    agentVersion: "5.5.0",
+    agentVersion: AGT004_PROJECT_VERSION,
     skillSnapshot: [],
     inputArtifactRefs: input.inputArtifacts,
     outputSchema: input.outputSchema,
@@ -149,7 +150,7 @@ export function planV55VariantTasks(input: {
   context: V55WorkflowContext;
   approvedSourceVersion: ArtifactRef;
   humanApproved: boolean;
-  channels: Array<"wechat" | "short_video" | "xiaohongshu" | "x" | "linkedin">;
+  channels: Array<"wechat" | "short_video" | "xiaohongshu" | "x" | "linkedin" | "youtube" | "podcast">;
 }): AgentTask[] {
   if (!input.humanApproved) {
     throw new ConflictError("SOURCE_DRAFT_APPROVAL_REQUIRED", "Balala cannot run before enterprise approval of the source version");
@@ -173,6 +174,83 @@ export function planV55VariantTasks(input: {
       approvalRequirement: "HUMAN",
     });
     return [variant, review];
+  });
+}
+
+export function planV56PackagingTasks(input: {
+  context: V55WorkflowContext;
+  packagingBriefArtifact: ArtifactRef;
+  approvedSourceVersion: ArtifactRef;
+  variantArtifacts: ArtifactRef[];
+  variantReviewArtifacts: ArtifactRef[];
+  researchMode?: "LOCAL_CORPUS" | "PUBLIC_PATTERN_PACK";
+}): AgentTask[] {
+  const sharedInputs = [
+    input.packagingBriefArtifact,
+    input.approvedSourceVersion,
+    ...input.variantArtifacts,
+    ...input.variantReviewArtifacts,
+  ];
+  const patternResearch = input.researchMode === "PUBLIC_PATTERN_PACK"
+    ? makeTask({
+      context: input.context,
+      recipient: "public-researcher",
+      taskType: "PUBLIC_TITLE_PATTERN_RESEARCH",
+      outputSchema: "title_pattern_research_pack",
+      dependencies: [],
+      inputArtifacts: sharedInputs,
+    })
+    : undefined;
+  const candidates = makeTask({
+    context: input.context,
+    recipient: "packaging-copy-agent",
+    taskType: "PACKAGING_CANDIDATE_GENERATION",
+    outputSchema: "title_candidate_pool",
+    dependencies: patternResearch ? [patternResearch.taskId] : [],
+    inputArtifacts: sharedInputs,
+  });
+  const selection = makeTask({
+    context: input.context,
+    recipient: "packaging-copy-agent",
+    taskType: "PACKAGING_AUTO_SELECTION",
+    outputSchema: "auto_packaging_selection",
+    dependencies: [candidates.taskId],
+    inputArtifacts: sharedInputs,
+  });
+  const review = makeTask({
+    context: input.context,
+    recipient: "lilith",
+    taskType: "PACKAGING_REVIEW",
+    outputSchema: "packaging_review_report",
+    dependencies: [candidates.taskId, selection.taskId],
+    inputArtifacts: sharedInputs,
+  });
+  return [...(patternResearch ? [patternResearch] : []), candidates, selection, review];
+}
+
+export function planV56PackagingOverrideReview(input: {
+  context: V55WorkflowContext;
+  packagingBriefArtifact: ArtifactRef;
+  candidatePoolArtifact: ArtifactRef;
+  effectiveSelectionArtifact: ArtifactRef;
+  overrideArtifact: ArtifactRef;
+  approvedSourceVersion: ArtifactRef;
+  variantArtifacts: ArtifactRef[];
+}): AgentTask {
+  return makeTask({
+    context: input.context,
+    recipient: "lilith",
+    taskType: "PACKAGING_OVERRIDE_REVIEW",
+    outputSchema: "packaging_review_report",
+    dependencies: [],
+    inputArtifacts: [
+      input.packagingBriefArtifact,
+      input.candidatePoolArtifact,
+      input.effectiveSelectionArtifact,
+      input.overrideArtifact,
+      input.approvedSourceVersion,
+      ...input.variantArtifacts,
+    ],
   });
 }
 

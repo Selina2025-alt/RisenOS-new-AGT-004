@@ -11,6 +11,7 @@ export const AgentIdSchema = z.enum([
   "lilith",
   "xiaodiandian",
   "balala",
+  "packaging-copy-agent",
 ]);
 export const AgentRolloutModeSchema = z.enum(["OFF", "SHADOW", "ENFORCING"]);
 export const AgentTaskStatusSchema = z.enum([
@@ -170,6 +171,16 @@ export const ReviewIssueV53Schema = z.object({
     "geo",
     "geo_insertion",
     "technical_geo",
+    "title_fidelity",
+    "clickbait_risk",
+    "unsupported_number",
+    "brand_spelling",
+    "title_cover_alignment",
+    "video_overlay_alignment",
+    "tag_policy",
+    "platform_packaging",
+    "opening_payoff",
+    "candidate_diversity",
   ]),
   routeTo: z.enum([
     "agt-004",
@@ -178,6 +189,7 @@ export const ReviewIssueV53Schema = z.object({
     "content-orchestrator",
     "xiaodiandian",
     "balala",
+    "packaging-copy-agent",
     "human",
   ]),
   location: z.string().min(1),

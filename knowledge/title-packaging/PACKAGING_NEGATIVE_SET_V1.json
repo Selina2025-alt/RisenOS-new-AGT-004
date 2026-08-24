@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0.0",
+  "negativeSetId": "packaging-negative-set-v1",
+  "status": "ACTIVE",
+  "examples": [
+    { "text": "JovaIAI Nomos让企业AI成功率提升300%", "reasons": ["BRAND_SPELLING_INVALID", "UNSUPPORTED_NUMBER_OR_PROMISE"] },
+    { "text": "全网第一制度智能体，保证解决所有企业AI问题", "reasons": ["ABSOLUTE_RANKING", "ABSOLUTE_OUTCOME_PROMISE"] },
+    { "text": "某真实客户用了Nomos后利润翻倍", "reasons": ["UNAUTHORIZED_CUSTOMER", "UNSUPPORTED_CASE_RESULT"] },
+    { "text": "260万亿产业数据背后的JovaAI", "reasons": ["FORBIDDEN_UNVERIFIED_NUMBER"] },
+    { "text": "普通行业文章也必须写JovaAI Nomos", "reasons": ["FORCED_PRODUCT_INSERTION"] },
+    { "text": "标题讨论治理，正文只介绍模型参数", "reasons": ["TITLE_OPENING_PAYOFF_MISMATCH"] }
+  ]
+}

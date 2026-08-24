@@ -17,21 +17,35 @@
 - [x] Windows CRLF正文分段测试；
 - [x] `VERSION`、根包、Registry和Agent版本一致性校验；
 - [x] 项目、内容、知识包和Prompt/Skill版本分离；
-- [ ] 创建并推送 `v5.5.2` Git Tag；当前仍为DEVELOPMENT。
+- [x] 创建并推送 `v5.5.2` Git Tag，提交为`4c74698`；
+- [ ] V5.6.0完成RC真实内容试跑、企业方验收、main覆盖和正式Tag。
+
+## V5.6.0 闪闪内容包装
+
+- [x] `packaging-copy-agent`进入契约、Registry、Runtime与健康检查；
+- [x] 候选生成与自动选择使用两个隔离任务，莉莉丝执行第三个独立包装审核任务；
+- [x] 微信、短视频、小红书、X、LinkedIn、YouTube、播客七渠道包装契约；
+- [x] 176条标题短文本完成白名单字段清洗，CSV指令列不进入运行语料；
+- [x] 人工反馈只生成未激活PreferenceCandidate，人工Override必须再经莉莉丝审核；
+- [x] 本地CLI可原子落盘`PACKAGING-REVIEW-BOOK.md`；
+- [x] 包装变化使旧联合批准清单失效，源版本变化产生`SUPERSEDED`标记；
+- [x] 标题环节不增加独立人工闸门，保留源稿与最终变体总闸门；
+- [ ] 用真实宿主模型完成E052—E056和当前10号文章SHADOW试跑；
+- [ ] 企业方确认闪闪自动选择质量后，另行版本化决定是否提升ENFORCING。
 
 ## V5.5.1 统一团队运行时
 
 - [x] API、Worker、CLI 使用同一 `createV55TeamRuntime()` Bootstrap；
-- [x] 7/7 子智能体 Handler 已注册，Registry 与 Manifest 启动时校验；
+- [x] 8/8 子智能体 Handler 已注册，Registry 与 Manifest 启动时校验；
 - [x] 噜噜猫通过固定路径、最小环境变量、READY/Schema/哈希检查接入；
 - [x] Task、Result、Artifact、Checkpoint、HumanGateDecision、Event 和 TeamRun 已支持本地持久化；
 - [x] `010_agent_team_runtime.sql` 与 PostgreSQL Store 已实现；
 - [x] TeamRun API、BullMQ Worker、暂停/恢复/取消和人工决定接口已接线；
 - [x] SHADOW Artifact 不能满足正式源稿或变体闸门；
 - [ ] 当前部署宿主提供真实 `HOST_RUNTIME_MODULE` 并通过健康检查；
-- [ ] 7 个子智能体按顺序完成 SHADOW 回放和企业方验收后逐个切换 ENFORCING；
+- [ ] 8 个子智能体按顺序完成 SHADOW 回放和企业方验收后逐个切换 ENFORCING；
 - [ ] 在真实 PostgreSQL/Redis 上完成租约恢复、重复消息和故障演练；
-- [ ] 完成一个真实选题从研究到五渠道 VariantApprovalManifest 和 ContentPackage 的端到端验收。
+- [ ] 完成一个真实选题从研究到七渠道包装、VariantApprovalManifest 和 ContentPackage 的端到端验收。
 
 ## 已在代码中闭环
 
@@ -79,7 +93,7 @@
 
 ## 当前验证边界
 
-本地已完成类型检查、72 个自动化测试（其中核心运行时 53 项）、平台边界检查和生产构建。当前机器没有
+本地已完成类型检查、88 个自动化测试（其中核心运行时 69 项）、平台边界检查和生产构建。当前机器没有
 Docker，因此尚未在本机运行真实 PostgreSQL、Redis、S3、OPA 或多智能体端到端测试；
 这些属于上面的部署验收项，不能用内存测试结果替代。
 
