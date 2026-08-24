@@ -1,0 +1,13 @@
+{
+  "decisionId": "HGD-SOURCE-TOPIC-INDUSTRIAL-AI-002-R2",
+  "organizationId": "org_jovaai",
+  "runId": "RUN-SERIES-20260822-INDUSTRIAL-AI-002",
+  "gate": "SOURCE_DRAFT_APPROVED",
+  "artifactId": "HUMAN-COPY-TOPIC-INDUSTRIAL-AI-002-R2",
+  "artifactHash": "be5c60f3b5445aab5676800fd725da537ff603cab3eb0fb3bc014aa259ac0c61",
+  "decision": "APPROVED",
+  "decidedBy": "user_enterprise",
+  "decidedAt": "2026-08-22T09:23:46.273Z",
+  "notes": "企业方于当前对话明确确认：002通过。",
+  "idempotencyKey": "SERIES-20260822-INDUSTRIAL-AI:TOPIC-INDUSTRIAL-AI-002:SOURCE_DRAFT_APPROVED:be5c60f3b5445aab5676800fd725da537ff603cab3eb0fb3bc014aa259ac0c61"
+}

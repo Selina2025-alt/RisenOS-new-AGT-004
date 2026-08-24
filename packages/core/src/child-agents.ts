@@ -11,6 +11,7 @@ import {
 
 import type { GeoSeoPort, HostModelPort } from "./ports.js";
 import { newId, nowIso } from "./utils.js";
+import { versionedPrompt } from "./version.js";
 
 const objectSchema = (name: string): Record<string, unknown> => ({
   type: "object",
@@ -39,7 +40,7 @@ abstract class HostBackedProposalAgent {
       traceId: input.traceId,
       requestId: newId(this.agentId),
       idempotencyKey: input.idempotencyKey,
-      promptVersion: `${this.agentId}-v5.5`,
+      promptVersion: versionedPrompt(this.agentId),
       maxOutputTokens: 16_000,
       timeoutMs: 120_000,
     });
@@ -106,7 +107,7 @@ export class HostBackedLilithReviewAgent {
     const requestId = newId("lilith-review");
     const result = await this.hostModel.generateObject({
       schemaName: "review_report",
-      systemPrompt: "You are Lilith, the AGT-RSN-004 content reviewer. Check adequacy, perspective consistency, logic, AI style, enterprise fusion, knowledge snapshot, Nomos canon, product architecture, claim status, evidence, anonymization, metric evidence, SEO/GEO, compliance, confidentiality and SkillTrace. Route issues to the designated agent; do not approve yourself, write ContentVersion, perform GEO/SEO rewriting, publish, monitor platforms, or invent evidence.",
+      systemPrompt: "You are Lilith, the AGT-RSN-004 content reviewer. Check adequacy, perspective consistency, logic, AI style, repetition, narrative quality, human voice, enterprise fusion, knowledge snapshot, Nomos canon, product architecture, claim status, evidence, anonymization, metric evidence, SEO/GEO, compliance, confidentiality and SkillTrace. For repetition, distinguish necessary concept reinforcement from wheel-spinning paraphrase: identify the first paragraph that earns the point, then propose deletion or merger of later paragraphs that add no new fact, mechanism, scene, decision or boundary. For narrative quality, verify that a long article advances through a concrete scene, tension, explanation and payoff like a real person sharing an experience; do not fabricate first-person experience. Route issues to the designated agent; do not approve yourself, write ContentVersion, perform GEO/SEO rewriting, publish, monitor platforms, or invent evidence.",
       input: {
         reviewRequest: input.reviewRequest,
         content: input.content,
@@ -116,7 +117,7 @@ export class HostBackedLilithReviewAgent {
       traceId: input.traceId,
       requestId,
       idempotencyKey: `${input.reviewRequest.id}:${input.content.contentHash}`,
-      promptVersion: "lilith-review-v5.5",
+      promptVersion: versionedPrompt("lilith", "review"),
       maxOutputTokens: 12_000,
       timeoutMs: 120_000,
     });
@@ -132,7 +133,7 @@ export class HostBackedLilithReviewAgent {
   }): Promise<LilithReviewReport> {
     const result = await this.hostModel.generateObject({
       schemaName: "review_report",
-      systemPrompt: "You are Lilith performing a lightweight channel-variant review. Verify channel structure, information density, claim/evidence inheritance, enterprise and product consistency, AI style, logic, confidentiality and CTA compliance. A format-only variant must not introduce or alter facts. Return issues and routing only; never approve on behalf of a human or write ContentVersion.",
+      systemPrompt: "You are Lilith performing a lightweight channel-variant review. Verify channel structure, information density, claim/evidence inheritance, enterprise and product consistency, AI style, repetition, narrative continuity, confidentiality and CTA compliance. Delete paraphrased repetition only when the later passage adds no new fact, scene, mechanism, decision or boundary. A format-only variant must not introduce or alter facts. Return issues and routing only; never approve on behalf of a human or write ContentVersion.",
       input: {
         sourceContent: input.sourceContent,
         variant: input.variant,
@@ -142,7 +143,7 @@ export class HostBackedLilithReviewAgent {
       traceId: input.traceId,
       requestId: newId("lilith-variant-review"),
       idempotencyKey: input.idempotencyKey,
-      promptVersion: "lilith-variant-review-v5.5.1",
+      promptVersion: versionedPrompt("lilith", "variant-review"),
       maxOutputTokens: 10_000,
       timeoutMs: 120_000,
     });
@@ -163,7 +164,7 @@ export class HostBackedXiaodiandianAgent implements GeoSeoPort {
       traceId: request.traceId,
       requestId: newId("xiaodiandian").toString(),
       idempotencyKey: `${request.requestId}:${request.sourceContentVersionId}`,
-      promptVersion: "xiaodiandian-geo-seo-v5.5",
+      promptVersion: versionedPrompt("xiaodiandian", "geo-seo"),
       maxOutputTokens: 10_000,
       timeoutMs: 120_000,
     });
@@ -189,7 +190,7 @@ export class HostBackedBalalaVariantAgent {
       traceId: input.traceId,
       requestId: newId("balala-variant"),
       idempotencyKey: `${input.traceId}:balala:${JSON.stringify(input.variantBrief).length}`,
-      promptVersion: "balala-variant-v5.5",
+      promptVersion: versionedPrompt("balala", "variant"),
       maxOutputTokens: 12_000,
       timeoutMs: 120_000,
     });

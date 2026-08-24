@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "2.0",
+  "agent": "balala",
+  "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-002-V1",
+  "sourceContentHash": "12f20f7c7a4f04a834573c718b6d22f35ed436075b8eadbeb15de5d4a9d8f2c5",
+  "sourceReviewId": "LILITH-BATCH01-TOPIC002-R2-FINAL",
+  "sourceReviewCopyHash": "be5c60f3b5445aab5676800fd725da537ff603cab3eb0fb3bc014aa259ac0c61",
+  "sourceApprovalDecisionId": "HGD-SOURCE-TOPIC-INDUSTRIAL-AI-002-R2",
+  "missionId": "MISSION-INDUSTRIAL-AI-002",
+  "researchPackId": "RESEARCH-PACK-TOPIC-INDUSTRIAL-AI-002",
+  "contentBriefId": "CONTENT-BRIEF-TOPIC-INDUSTRIAL-AI-002",
+  "targetChannels": [
+    "wechat",
+    "short_video",
+    "xiaohongshu",
+    "x",
+    "linkedin"
+  ],
+  "targetAudience": "正在推进AI试点、POC或智能体项目的企业管理者、业务负责人和技术负责人",
+  "targetLanguage": "zh-CN",
+  "linkedinLanguagePolicy": "en-primary-zh-backup",
+  "ctaPolicy": "soft",
+  "assetDelivery": "copy-plus-asset-brief",
+  "contentCoverageMap": {
+    "sourceRef": "geo-seo/BATCH-01/revision-2/TOPIC-INDUSTRIAL-AI-002-content-coverage-map.json",
+    "sourceHash": "3eb17ba52f44696eaf6ccef684b71f4fa2be201a15199a72a25d8f28e10ef751",
+    "primarySeoIntent": {
+      "seoId": "SEO-0165",
+      "query": "企业AI落地难点",
+      "intentType": "PROBLEM_DIAGNOSIS",
+      "coverage": "FULL",
+      "coveredBy": [
+        "演示验证：只是能力片段",
+        "进入业务：变量开始叠加",
+        "业务可用：过程必须可追溯",
+        "判断落地：别只看那一刻"
+      ]
+    },
+    "geoQuestionIds": [
+      "GEO-0175",
+      "GEO-0168",
+      "GEO-0027",
+      "GEO-0024"
+    ],
+    "answerBlockIds": [
+      "AB-TOPIC002-R2-001",
+      "AB-TOPIC002-R2-002"
+    ],
+    "mustNotForceCoverage": [
+      {
+        "id": "GEO-0024",
+        "item": "企业从哪个高价值场景开始最合适？",
+        "reason": "只标记PARTIAL，完整场景选择和行动清单归入TOPIC-INDUSTRIAL-AI-005。",
+        "disposition": "DEFERRED_TO_TOPIC_005"
+      },
+      {
+        "id": "GEO-0008",
+        "item": "艾氪智能有哪些落地案例？",
+        "reason": "没有授权CaseEvidenceCard。"
+      },
+      {
+        "id": "GEO-0026",
+        "item": "如何评估智能体团队的ROI？",
+        "reason": "没有客户结果和归因证据。"
+      },
+      {
+        "id": "NOMOS",
+        "item": "Nomos产品植入",
+        "reason": "Supervisor对TOPIC-INDUSTRIAL-AI-002明确DO_NOT_INSERT。"
+      }
+    ]
+  },
+  "claimBindingSnapshot": [
+    {
+      "claimId": "EXT-002-01",
+      "evidenceIds": [
+        "evidence:PUB-001",
+        "evidence:PUB-002"
+      ],
+      "statementHash": "923e4b5819252c2f95a776d0d0956cc118b9986d4851a74e9302908c14036fb5"
+    },
+    {
+      "claimId": "EXT-002-02",
+      "evidenceIds": [
+        "evidence:PUB-002",
+        "evidence:PUB-003",
+        "evidence:PUB-004"
+      ],
+      "statementHash": "d72c1ef0adb5a3c125389f90bb7ab64e26b2de083549b5df7eda0dcdd13acbe1"
+    },
+    {
+      "claimId": "EXT-002-03",
+      "evidenceIds": [
+        "evidence:PUB-001",
+        "evidence:PUB-002",
+        "evidence:PUB-003",
+        "evidence:PUB-004"
+      ],
+      "statementHash": "77f247affc58fd5405577324502c7e10b3127c29168799f8e2a23ee7d0abb105"
+    },
+    {
+      "claimId": "claim:S1-C02",
+      "evidenceIds": [
+        "EXT-002-01",
+        "EXT-002-02",
+        "evidence:S1-A02"
+      ],
+      "statementHash": "03ab3614c1ab9399c6ed8520d4de83663d83da7a61252a28ac3bb554a858874f"
+    },
+    {
+      "claimId": "claim:ENT-001",
+      "evidenceIds": [
+        "evidence:ENT-001"
+      ],
+      "statementHash": "2c49150d593e827715d8b953343af0d9ccba26fd6d48a63732a18bb5783d23a2"
+    },
+    {
+      "claimId": "claim:ENT-002",
+      "evidenceIds": [
+        "evidence:ENT-002"
+      ],
+      "statementHash": "6c7e82211349f96c1641886c4fc5fb133a8bfb071b2e00a211f8edc1b7384122"
+    },
+    {
+      "claimId": "claim:ENT-003",
+      "evidenceIds": [
+        "evidence:ENT-003"
+      ],
+      "statementHash": "3d5c605f2609ed07bf2c283bd6883802b46603e8cd708ce7eb8777b7e0571224"
+    },
+    {
+      "claimId": "claim:S1-A02",
+      "evidenceIds": [
+        "PROD-TEAM"
+      ],
+      "statementHash": "137b85c39ecaf295b409f4d7fa93385fe7ca9226705ff1d2cd2b91a007c5683a"
+    },
+    {
+      "claimId": "claim:S1-A03",
+      "evidenceIds": [
+        "PROD-2L4M"
+      ],
+      "statementHash": "662ca531cfec0585e5bcfbd606dc4758937e792e0fa03d3f64b5d5dd34426082"
+    }
+  ],
+  "generationSkillTrace": [
+    {
+      "skillId": "balala-channel-adaptation",
+      "source": "local-agent",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "channel_structure",
+        "tone",
+        "asset_brief"
+      ],
+      "outputInfluence": "Adapted an approved immutable source without changing its factual boundary.",
+      "reviewStatus": "USED"
+    },
+    {
+      "skillId": "claim-evidence-inheritance",
+      "source": "content-core",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "claim_inheritance",
+        "evidence_boundary"
+      ],
+      "outputInfluence": "Restricted every channel proposal to the source ContentVersion claim snapshot.",
+      "reviewStatus": "USED"
+    }
+  ],
+  "applicablePreferenceSet": [
+    {
+      "rule": "wechat_at_least_three_colon_subheads_max_13_chars",
+      "scope": "wechat"
+    },
+    {
+      "rule": "deep_xhs_5_to_9_cards_by_information",
+      "scope": "xiaohongshu"
+    },
+    {
+      "rule": "x_official_weighted_count_max_280",
+      "scope": "x"
+    },
+    {
+      "rule": "linkedin_en_primary_zh_equivalent",
+      "scope": "linkedin"
+    }
+  ],
+  "platformPolicyVersion": "CHANNEL-POLICY-V5.5.1",
+  "requestedVariantPurpose": "企业方批准源稿后的五渠道内容适配上岗测试",
+  "variantMode": "DEEP",
+  "humanFeedbackMemorySnapshot": {
+    "scope": "channel-specific",
+    "exclusions": [
+      "不得将单次反馈机械套用到无关主题",
+      "不得强制Nomos植入"
+    ],
+    "sourceApprovalRequired": true
+  },
+  "traceId": "trace_industrial_ai_20260822_002"
+}

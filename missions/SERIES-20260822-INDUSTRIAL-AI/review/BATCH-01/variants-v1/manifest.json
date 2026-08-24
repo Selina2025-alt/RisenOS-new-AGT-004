@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifactType": "LILITH_VARIANT_LIGHT_REVIEW_SET",
+  "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+  "batchId": "BATCH-01",
+  "sourceVariantBatch": "variants/BATCH-01",
+  "sourceVariantManifestDeclaredHash": "aa163b6d17dff595683e8cb6f11a25e24c58568081faa2c5d1e2f71beb8db306",
+  "sourceVariantManifestFileHash": "e6ddf53d17476a91dbe8f260b3e5cc7f172c9c3fe0772cc4fdb5635e0fca3f4c",
+  "sourceMechanicalValidationFileHash": "9c8b231ab5e9326e010d3e5ad734983e2c1af95dc21592759ad608df6dd44e4a",
+  "sourceMechanicalValidatedAt": "2026-08-22T09:32:59.647Z",
+  "reviewAgent": "lilith",
+  "reviewType": "LILITH_VARIANT_LIGHT_REVIEW",
+  "mode": "READ_ONLY",
+  "status": "COMPLETED",
+  "overallDecision": "PASS",
+  "nextRoute": "READY_FOR_HUMAN_FINAL_VARIANTS_REVIEW",
+  "topicCount": 2,
+  "variantCount": 10,
+  "variantPassCount": 10,
+  "variantRevisionRequiredCount": 0,
+  "severityCounts": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 4,
+    "P3": 0
+  },
+  "results": [
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-001",
+      "reviewStatus": "PASS",
+      "nextRoute": "READY_FOR_HUMAN_FINAL_VARIANTS_REVIEW",
+      "variantPassCount": 5,
+      "p0": 0,
+      "p1": 0,
+      "p2": 2,
+      "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-001-V1",
+      "sourceContentHash": "1d2869a9670f3e8224056678bcdbce083e6f3546a4b96c5be634cc61be650500",
+      "jsonReport": {
+        "path": "TOPIC-INDUSTRIAL-AI-001-variant-light-review.json",
+        "sha256": "6222e60498837ed5f666dd637cc54420ec55111363914bc5518540924304bd03"
+      },
+      "markdownReport": {
+        "path": "TOPIC-INDUSTRIAL-AI-001-variant-light-review.md",
+        "sha256": "cf04f4fee549c9cb920a1df5978177d7c27c865c9cd04648eb55082575c812a5"
+      }
+    },
+    {
+      "topicId": "TOPIC-INDUSTRIAL-AI-002",
+      "reviewStatus": "PASS",
+      "nextRoute": "READY_FOR_HUMAN_FINAL_VARIANTS_REVIEW",
+      "variantPassCount": 5,
+      "p0": 0,
+      "p1": 0,
+      "p2": 2,
+      "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-002-V1",
+      "sourceContentHash": "12f20f7c7a4f04a834573c718b6d22f35ed436075b8eadbeb15de5d4a9d8f2c5",
+      "jsonReport": {
+        "path": "TOPIC-INDUSTRIAL-AI-002-variant-light-review.json",
+        "sha256": "447003ac748c8dd94d355dada33a7e8fe2a71988a2377b11ae2e10e8ba08f115"
+      },
+      "markdownReport": {
+        "path": "TOPIC-INDUSTRIAL-AI-002-variant-light-review.md",
+        "sha256": "87cadb90d71dd4148ee17cebe3ccaa9da63ce2c9882f6cb1b50079b7a5468d34"
+      }
+    }
+  ],
+  "checks": {
+    "sourceVersionAndHash": "PASS_10_OF_10",
+    "contentHashScope": "PASS_10_OF_10",
+    "manifestHashMatch": "PASS_10_OF_10",
+    "claimEvidenceInheritance": "PASS_10_OF_10",
+    "channelStructure": "PASS_10_OF_10",
+    "wechatSubheads": "PASS_2_OF_2",
+    "xiaohongshuInformationDensity": "PASS_2_OF_2",
+    "xWeightedCharacters": "PASS_16_OF_16",
+    "linkedinBilingualFactEquivalence": "PASS_2_OF_2",
+    "publicCopyInternalFieldLeakage": 0,
+    "newClaims": 0,
+    "newCustomerCases": 0,
+    "nomosInsertions": 0
+  },
+  "contentModified": false,
+  "contentVersionCreated": false,
+  "channelVariantCreated": false,
+  "humanGateDecisionCreated": false,
+  "finalVariantsApproved": false,
+  "reviewedAt": "2026-08-22T09:47:17.2433561Z"
+}

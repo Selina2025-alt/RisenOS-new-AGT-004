@@ -1,0 +1,255 @@
+{
+  "agent": "balala",
+  "variantId": "VAR-TOPIC-INDUSTRIAL-AI-001-X-V1",
+  "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-001-V1",
+  "sourceContentHash": "1d2869a9670f3e8224056678bcdbce083e6f3546a4b96c5be634cc61be650500",
+  "sourceReviewId": "LILITH-BATCH01-TOPIC001-R2-FINAL",
+  "sourceApprovalDecisionId": "HGD-SOURCE-TOPIC-INDUSTRIAL-AI-001-R2",
+  "channel": "x",
+  "language": "en",
+  "variantType": "x_thread",
+  "variantMode": "THREAD_EN_PRIMARY_ZH_REVIEW",
+  "copy": {
+    "tweets": [
+      "1/8 Enterprises do not lack AI tools. The harder question is whether AI can move a real task—such as a quote, inventory decision, or supplier exception—to a verifiable result.",
+      "2/8 In real operations, a quote is connected to inventory and delivery. Procurement depends on supplier capacity and price conditions. Finance depends on orders, receivables, payables, and fulfillment status.",
+      "3/8 This is why JovaAI focuses on enterprise AI and industrial AI: AI must understand business objects, permissions, responsibilities, and handoffs—not only generate fluent text.",
+      "4/8 JovaAI has accumulated six years of industrial experience across 300+ industries, 300,000 registered enterprises, 3,000+ leading enterprises, and RMB 60B in industrial transactions.",
+      "5/8 Those figures have precise boundaries: registered enterprises are not paid customers; industrial transaction volume is not revenue; 3,000+ functional units are not 3,000 agents.",
+      "6/8 JovaAI ICB models the relationships among products, prices, customers, suppliers, orders, contracts, credit, fulfillment, delivery, and settlement as composable industrial capabilities.",
+      "7/8 We evaluate value at three levels: task completion, operational control and traceability, then business outcomes measured against a defined baseline and attribution boundary.",
+      "8/8 Start with one bounded, observable task. Define the data, roles, permissions, exceptions, and success measures. Validate in a small scope before expanding. What task would you test first?"
+    ],
+    "chineseReview": [
+      "企业并不缺AI工具，难的是AI能否把报价、库存或供应商异常等真实任务推进到可验证结果。",
+      "真实运营中的业务对象彼此相连。",
+      "艾氪智能因此聚焦企业AI与产业AI。",
+      "陈述6年与五项产业积累数据。",
+      "明确数据口径边界。",
+      "解释JovaAI ICB的交易对象建模作用。",
+      "以任务、运行、经营三层验证价值。",
+      "建议从一个边界清楚的任务小范围验证。"
+    ],
+    "claimIds": [
+      "EXT-001-02",
+      "claim:ENT-001",
+      "claim:ENT-002",
+      "claim:ENT-003",
+      "claim:S2-A02",
+      "claim:S2-A03",
+      "claim:S2-A04",
+      "EXT-001-03",
+      "claim:S2-A05"
+    ],
+    "characterCounts": [
+      175,
+      208,
+      178,
+      185,
+      181,
+      189,
+      178,
+      191
+    ],
+    "allWithin280": true
+  },
+  "assetBrief": {
+    "assetType": "illustration",
+    "aspectRatio": "16:9",
+    "purpose": "X Thread可选首图",
+    "visualDirection": "英文信息图，展示核心框架；不堆砌数据，不使用未经授权品牌元素。",
+    "textOverlay": "From AI Tools to Industrial Capability",
+    "deliverables": [
+      "1张可选首图"
+    ],
+    "rightsRequired": true,
+    "restrictions": [
+      "不得使用未授权客户名称、Logo、界面或数据",
+      "不得把示意场景包装为真实客户案例",
+      "所有外部素材须单独完成版权清权"
+    ]
+  },
+  "inheritedClaimBindings": [
+    {
+      "claimId": "EXT-001-02",
+      "evidenceIds": [
+        "evidence:PUB-002",
+        "evidence:PUB-004",
+        "evidence:PUB-006"
+      ],
+      "statementHash": "c412b02fc472e91bd106ae556e824188724c67497777db9ac4bf628f4d223174"
+    },
+    {
+      "claimId": "claim:ENT-001",
+      "evidenceIds": [
+        "evidence:ENT-001"
+      ],
+      "statementHash": "2c49150d593e827715d8b953343af0d9ccba26fd6d48a63732a18bb5783d23a2"
+    },
+    {
+      "claimId": "claim:ENT-002",
+      "evidenceIds": [
+        "evidence:ENT-002"
+      ],
+      "statementHash": "6c7e82211349f96c1641886c4fc5fb133a8bfb071b2e00a211f8edc1b7384122"
+    },
+    {
+      "claimId": "claim:ENT-003",
+      "evidenceIds": [
+        "evidence:ENT-003"
+      ],
+      "statementHash": "3d5c605f2609ed07bf2c283bd6883802b46603e8cd708ce7eb8777b7e0571224"
+    },
+    {
+      "claimId": "claim:S2-A05",
+      "evidenceIds": [
+        "OFFICIAL-SCENARIO-V4"
+      ],
+      "statementHash": "4f1816da18b1f60a3f94ce9062c5fd890974384626abbbf6ed8fd423a44ec042"
+    },
+    {
+      "claimId": "claim:S2-A02",
+      "evidenceIds": [
+        "ICB-DATA"
+      ],
+      "statementHash": "556ba6bf0a9a480b6a78b2beb1aff412c8b8cf82612fd920bb0f9c6e5c6c5fe9"
+    },
+    {
+      "claimId": "claim:S2-A03",
+      "evidenceIds": [
+        "ICB-CORE"
+      ],
+      "statementHash": "81c43efc180f9d477bd3f02d271fdd68515614608c2d35c8b1f57b356290b1be"
+    },
+    {
+      "claimId": "claim:S2-A04",
+      "evidenceIds": [
+        "ICB-CORE"
+      ],
+      "statementHash": "4a6c118cebff41f6b3a9a7032023f44147f2b7f1d3ba3732503b15ad59a8941a"
+    },
+    {
+      "claimId": "EXT-001-03",
+      "evidenceIds": [
+        "evidence:PUB-002",
+        "evidence:S2-C02"
+      ],
+      "statementHash": "c6498b995397f60b666176ce377f6871bfa22c491f10c7311b7e7159d8c30892"
+    }
+  ],
+  "inheritedCoverageMap": {
+    "sourceRef": "geo-seo/BATCH-01/revision-2/TOPIC-INDUSTRIAL-AI-001-content-coverage-map.json",
+    "sourceHash": "a4a71c6a89f51062bfeec44423a3c4e003d53ba67ced9b0b6514ef62d8a19139",
+    "primarySeoIntent": {
+      "intentId": "TASK-SEO-SERIES-001-R2-001",
+      "query": "为什么聚焦产业AI，产业AI价值如何验证",
+      "intentType": "STRATEGIC_EXPLANATION_AND_VALUE_EVALUATION",
+      "coverage": "FULL",
+      "coveredBy": [
+        "聚焦产业：选择真实问题",
+        "六年积累：把产业变成语言",
+        "可见价值：先定义再验证"
+      ],
+      "status": "MISSION_ONLY_CANDIDATE",
+      "globalActivation": false,
+      "decision": "REPLACES_PRE_DRAFT_PRIMARY_INTENT_FOR_THIS_REVISION",
+      "reason": "标题和正文回答的是企业为何选择产业AI以及价值如何被验证，不是采购产业AI解决方案。"
+    },
+    "geoQuestionIds": [
+      "TASK-GEO-SERIES-02-001",
+      "TASK-GEO-SERIES-02-002",
+      "GEO-0166",
+      "GEO-0170",
+      "GEO-0176"
+    ],
+    "answerBlockIds": [
+      "AB-TOPIC001-R2-001",
+      "AB-TOPIC001-R2-002"
+    ],
+    "mustNotForceCoverage": [
+      {
+        "id": "SEO-0222",
+        "item": "产业AI解决方案",
+        "reason": "采购型意图不符合本篇的战略解释与价值验证任务。"
+      },
+      {
+        "id": "GEO-0008",
+        "item": "艾氪智能有哪些落地案例？",
+        "reason": "没有授权CaseEvidenceCard。"
+      },
+      {
+        "id": "GEO-0033",
+        "item": "产业平台如何用智能体提升交易转化？",
+        "reason": "没有转化数据和归因证据。"
+      },
+      {
+        "id": "NOMOS",
+        "item": "Nomos产品植入",
+        "reason": "Supervisor对TOPIC-INDUSTRIAL-AI-001明确DO_NOT_INSERT。"
+      }
+    ]
+  },
+  "skillTrace": [
+    {
+      "skillId": "balala-channel-adaptation",
+      "source": "local-agent",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "channel_structure",
+        "tone",
+        "asset_brief"
+      ],
+      "outputInfluence": "Adapted an approved immutable source without changing its factual boundary.",
+      "reviewStatus": "USED",
+      "channel": "x"
+    },
+    {
+      "skillId": "claim-evidence-inheritance",
+      "source": "content-core",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "claim_inheritance",
+        "evidence_boundary"
+      ],
+      "outputInfluence": "Restricted every channel proposal to the source ContentVersion claim snapshot.",
+      "reviewStatus": "USED",
+      "channel": "x"
+    }
+  ],
+  "variantValidation": {
+    "sourceApproval": "PASS",
+    "sourceVersionHash": "PASS",
+    "channelStructure": "PASS",
+    "claimInheritance": "PASS_SELF_CHECK_PENDING_004_LILITH",
+    "evidenceInheritance": "PASS_SELF_CHECK_PENDING_004_LILITH",
+    "newClaims": 0,
+    "nomosInsertion": 0,
+    "forbiddenPlatformFields": 0,
+    "ctaCompliance": "PASS",
+    "xWeightedCounts": [
+      175,
+      208,
+      178,
+      185,
+      181,
+      189,
+      178,
+      191
+    ],
+    "xAllWithin280": true
+  },
+  "selfCheck": {
+    "result": "PASS_FOR_LILITH_REVIEW",
+    "coreClaimChanged": false,
+    "productPositioningChanged": false,
+    "evidenceAdded": false,
+    "customerCaseAdded": false,
+    "formalContentVersionCreated": false,
+    "selfApproved": false
+  },
+  "reviewStatus": "RE_REVIEW_REQUIRED",
+  "contentHash": "bc6bc70d1798e7d50dc7dd9084165fd08aacf2c867f129cb5e5cb3c63142f230",
+  "contentHashScope": "copy+assetBrief",
+  "createdAt": "2026-08-22T09:31:14.481Z",
+  "traceId": "trace_industrial_ai_20260822_001"
+}

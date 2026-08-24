@@ -267,6 +267,7 @@ export class TeamWorkflowCoordinator {
         reviewAgent: "Lilith",
         requestedChecks: [
           "content_adequacy", "perspective_consistency", "logic", "ai_style",
+          "repetition", "narrative_quality", "human_voice",
           "enterprise_fusion", "knowledge_snapshot", "nomos_canon",
           "product_architecture", "claim_status", "evidence", "compliance",
           "confidentiality", "skill_trace", "seo", "geo",

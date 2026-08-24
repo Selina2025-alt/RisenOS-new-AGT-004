@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "preferenceId": "PR-20260824-SCOPED-DISCLAIMER-COMPRESSION-V1",
+  "sourceFeedbackIds": [
+    "HF-20260824-TOPIC002-DISCLAIMER-COMPRESSION"
+  ],
+  "scope": "enterprise_thought_leadership_framework_paragraphs",
+  "appliesWhen": [
+    "文章以艾氪智能官方视角解释企业AI或产业AI方法框架",
+    "前文已经给出研究、政策或事实依据",
+    "段落主要承担总结和过渡作用"
+  ],
+  "doesNotApplyWhen": [
+    "法律、合规、版权或高风险事实必须明确披露边界",
+    "产品能力、客户案例或量化成效需要标注证据和适用条件",
+    "某项观点必须区分企业观点、研究结论和客观事实"
+  ],
+  "channel": "longform",
+  "contentType": "enterprise_ai_thought_leadership",
+  "audience": "enterprise_decision_makers",
+  "topicType": "framework_explanation",
+  "strength": "MEDIUM",
+  "rule": "在普通方法框架段落中，不为建立品牌存在感而额外插入公司名，也不连续堆叠‘不是研究原文、不是标准答案、并非普遍适用’等防御性元话语。保留一条与决策直接相关的适用边界即可。",
+  "examples": [
+    {
+      "avoid": "这是艾氪智能的解释框架，不是研究原文，也不是放之四海而皆准的标准答案。",
+      "prefer": "这五项是企业AI落地条件的基本框架，不同企业还需要结合自己的业务责任和风险等级重新排序。"
+    }
+  ],
+  "confidence": 0.92,
+  "approvedByHuman": true,
+  "approvedBy": "user_enterprise",
+  "approvedAt": "2026-08-24T03:00:44.1167479Z",
+  "version": "1.0.0",
+  "status": "ACTIVE_SCOPED",
+  "rollbackAvailable": true
+}

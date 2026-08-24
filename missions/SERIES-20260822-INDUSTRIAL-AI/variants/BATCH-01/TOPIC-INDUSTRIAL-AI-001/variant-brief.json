@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "2.0",
+  "agent": "balala",
+  "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-001-V1",
+  "sourceContentHash": "1d2869a9670f3e8224056678bcdbce083e6f3546a4b96c5be634cc61be650500",
+  "sourceReviewId": "LILITH-BATCH01-TOPIC001-R2-FINAL",
+  "sourceReviewCopyHash": "b72d52816ebfaef1f6f43ce105091081c1dfd69af72a3e21c86d58ade8391230",
+  "sourceApprovalDecisionId": "HGD-SOURCE-TOPIC-INDUSTRIAL-AI-001-R2",
+  "missionId": "MISSION-INDUSTRIAL-AI-001",
+  "researchPackId": "RESEARCH-PACK-TOPIC-INDUSTRIAL-AI-001",
+  "contentBriefId": "CONTENT-BRIEF-TOPIC-INDUSTRIAL-AI-001",
+  "targetChannels": [
+    "wechat",
+    "short_video",
+    "xiaohongshu",
+    "x",
+    "linkedin"
+  ],
+  "targetAudience": "企业董事长、总经理、业务负责人及企业AI转型负责人",
+  "targetLanguage": "zh-CN",
+  "linkedinLanguagePolicy": "en-primary-zh-backup",
+  "ctaPolicy": "soft",
+  "assetDelivery": "copy-plus-asset-brief",
+  "contentCoverageMap": {
+    "sourceRef": "geo-seo/BATCH-01/revision-2/TOPIC-INDUSTRIAL-AI-001-content-coverage-map.json",
+    "sourceHash": "a4a71c6a89f51062bfeec44423a3c4e003d53ba67ced9b0b6514ef62d8a19139",
+    "primarySeoIntent": {
+      "intentId": "TASK-SEO-SERIES-001-R2-001",
+      "query": "为什么聚焦产业AI，产业AI价值如何验证",
+      "intentType": "STRATEGIC_EXPLANATION_AND_VALUE_EVALUATION",
+      "coverage": "FULL",
+      "coveredBy": [
+        "聚焦产业：选择真实问题",
+        "六年积累：把产业变成语言",
+        "可见价值：先定义再验证"
+      ],
+      "status": "MISSION_ONLY_CANDIDATE",
+      "globalActivation": false,
+      "decision": "REPLACES_PRE_DRAFT_PRIMARY_INTENT_FOR_THIS_REVISION",
+      "reason": "标题和正文回答的是企业为何选择产业AI以及价值如何被验证，不是采购产业AI解决方案。"
+    },
+    "geoQuestionIds": [
+      "TASK-GEO-SERIES-02-001",
+      "TASK-GEO-SERIES-02-002",
+      "GEO-0166",
+      "GEO-0170",
+      "GEO-0176"
+    ],
+    "answerBlockIds": [
+      "AB-TOPIC001-R2-001",
+      "AB-TOPIC001-R2-002"
+    ],
+    "mustNotForceCoverage": [
+      {
+        "id": "SEO-0222",
+        "item": "产业AI解决方案",
+        "reason": "采购型意图不符合本篇的战略解释与价值验证任务。"
+      },
+      {
+        "id": "GEO-0008",
+        "item": "艾氪智能有哪些落地案例？",
+        "reason": "没有授权CaseEvidenceCard。"
+      },
+      {
+        "id": "GEO-0033",
+        "item": "产业平台如何用智能体提升交易转化？",
+        "reason": "没有转化数据和归因证据。"
+      },
+      {
+        "id": "NOMOS",
+        "item": "Nomos产品植入",
+        "reason": "Supervisor对TOPIC-INDUSTRIAL-AI-001明确DO_NOT_INSERT。"
+      }
+    ]
+  },
+  "claimBindingSnapshot": [
+    {
+      "claimId": "EXT-001-01",
+      "evidenceIds": [
+        "evidence:PUB-005",
+        "evidence:PUB-006"
+      ],
+      "statementHash": "02e60f25bf7e2b88ee6d91a2f4792ed3031ca115091ed89a88870c93db27e266"
+    },
+    {
+      "claimId": "EXT-001-02",
+      "evidenceIds": [
+        "evidence:PUB-002",
+        "evidence:PUB-004",
+        "evidence:PUB-006"
+      ],
+      "statementHash": "c412b02fc472e91bd106ae556e824188724c67497777db9ac4bf628f4d223174"
+    },
+    {
+      "claimId": "claim:S2-C01",
+      "evidenceIds": [
+        "SUPERVISOR-DECISION-TERM-ENTITY-INDUSTRY"
+      ],
+      "statementHash": "17c01db371f63fc038613d188b686747aadc702cf7daaf429fbb046c6759ebb0"
+    },
+    {
+      "claimId": "claim:ENT-001",
+      "evidenceIds": [
+        "evidence:ENT-001"
+      ],
+      "statementHash": "2c49150d593e827715d8b953343af0d9ccba26fd6d48a63732a18bb5783d23a2"
+    },
+    {
+      "claimId": "claim:ENT-002",
+      "evidenceIds": [
+        "evidence:ENT-002"
+      ],
+      "statementHash": "6c7e82211349f96c1641886c4fc5fb133a8bfb071b2e00a211f8edc1b7384122"
+    },
+    {
+      "claimId": "claim:ENT-003",
+      "evidenceIds": [
+        "evidence:ENT-003"
+      ],
+      "statementHash": "3d5c605f2609ed07bf2c283bd6883802b46603e8cd708ce7eb8777b7e0571224"
+    },
+    {
+      "claimId": "claim:ENT-004",
+      "evidenceIds": [
+        "evidence:ENT-004"
+      ],
+      "statementHash": "708e8178af4183385ae10ff16cec7efee5f5a8d76dae9257bdffdd31ca23ece5"
+    },
+    {
+      "claimId": "claim:S2-A05",
+      "evidenceIds": [
+        "OFFICIAL-SCENARIO-V4"
+      ],
+      "statementHash": "4f1816da18b1f60a3f94ce9062c5fd890974384626abbbf6ed8fd423a44ec042"
+    },
+    {
+      "claimId": "claim:S2-A02",
+      "evidenceIds": [
+        "ICB-DATA"
+      ],
+      "statementHash": "556ba6bf0a9a480b6a78b2beb1aff412c8b8cf82612fd920bb0f9c6e5c6c5fe9"
+    },
+    {
+      "claimId": "claim:S2-A03",
+      "evidenceIds": [
+        "ICB-CORE"
+      ],
+      "statementHash": "81c43efc180f9d477bd3f02d271fdd68515614608c2d35c8b1f57b356290b1be"
+    },
+    {
+      "claimId": "claim:S2-A04",
+      "evidenceIds": [
+        "ICB-CORE"
+      ],
+      "statementHash": "4a6c118cebff41f6b3a9a7032023f44147f2b7f1d3ba3732503b15ad59a8941a"
+    },
+    {
+      "claimId": "EXT-001-03",
+      "evidenceIds": [
+        "evidence:PUB-002",
+        "evidence:S2-C02"
+      ],
+      "statementHash": "c6498b995397f60b666176ce377f6871bfa22c491f10c7311b7e7159d8c30892"
+    }
+  ],
+  "generationSkillTrace": [
+    {
+      "skillId": "balala-channel-adaptation",
+      "source": "local-agent",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "channel_structure",
+        "tone",
+        "asset_brief"
+      ],
+      "outputInfluence": "Adapted an approved immutable source without changing its factual boundary.",
+      "reviewStatus": "USED"
+    },
+    {
+      "skillId": "claim-evidence-inheritance",
+      "source": "content-core",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "claim_inheritance",
+        "evidence_boundary"
+      ],
+      "outputInfluence": "Restricted every channel proposal to the source ContentVersion claim snapshot.",
+      "reviewStatus": "USED"
+    }
+  ],
+  "applicablePreferenceSet": [
+    {
+      "rule": "wechat_at_least_three_colon_subheads_max_13_chars",
+      "scope": "wechat"
+    },
+    {
+      "rule": "deep_xhs_5_to_9_cards_by_information",
+      "scope": "xiaohongshu"
+    },
+    {
+      "rule": "x_official_weighted_count_max_280",
+      "scope": "x"
+    },
+    {
+      "rule": "linkedin_en_primary_zh_equivalent",
+      "scope": "linkedin"
+    }
+  ],
+  "platformPolicyVersion": "CHANNEL-POLICY-V5.5.1",
+  "requestedVariantPurpose": "企业方批准源稿后的五渠道内容适配上岗测试",
+  "variantMode": "DEEP",
+  "humanFeedbackMemorySnapshot": {
+    "scope": "channel-specific",
+    "exclusions": [
+      "不得将单次反馈机械套用到无关主题",
+      "不得强制Nomos植入"
+    ],
+    "sourceApprovalRequired": true
+  },
+  "traceId": "trace_industrial_ai_20260822_001"
+}

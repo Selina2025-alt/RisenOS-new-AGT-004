@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "preflightId": "PREFLIGHT-TOPIC-INDUSTRIAL-AI-002-HUMAN-V2",
+  "missionId": "TOPIC-INDUSTRIAL-AI-002",
+  "missionClass": "NOMOS_CONTENT",
+  "enterpriseRelevance": "HIGH",
+  "topicEntities": ["艾氪智能", "JovaAI OS", "JovaOS", "Nomos", "企业AI", "产业AI"],
+  "publicationScope": "PUBLIC_WECHAT",
+  "riskLevel": "MEDIUM",
+  "requiresPublicResearch": true,
+  "requiresEnterpriseKnowledge": true,
+  "requiresNomosPolicy": true,
+  "requiresCasePolicy": false,
+  "nomosInsertionPolicy": "FOCUS_ALLOWED_FOR_THIS_MISSION",
+  "supersedesTaskRule": "knowledge/claim-evidence/TOPIC-INDUSTRIAL-AI-002.md#Nomos-FORBIDDEN_INSERTION",
+  "supersessionReason": "企业方在2026-08-24明确要求本篇将JovaAI Nomos制度智能体作为重点话题。",
+  "approvedByHuman": true,
+  "approvedBy": "user_enterprise",
+  "approvedAt": "2026-08-24T03:29:24.0549766Z",
+  "status": "ACTIVE_TASK_SCOPE"
+}

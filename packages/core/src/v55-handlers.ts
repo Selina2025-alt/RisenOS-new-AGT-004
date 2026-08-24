@@ -13,6 +13,7 @@ import {
 import type { AgentTaskStore } from "./local-agent-store.js";
 import type { TopicRadarPort } from "./topic-radar.js";
 import { newId, sha256 } from "./utils.js";
+import { versionedPrompt } from "./version.js";
 
 export interface V55HandlerAgents {
   topicRadar: TopicRadarPort;
@@ -54,7 +55,7 @@ async function persistOutput(store: AgentTaskStore, task: {
   const wrapped = {
     schemaVersion: "1.0.0",
     agentVersion: task.agentVersion,
-    promptVersion: `${task.recipientAgentId}-v5.5.1`,
+    promptVersion: versionedPrompt(task.recipientAgentId),
     skillSnapshot: task.skillSnapshot,
     rolloutMode,
     inputHash: sha256(JSON.stringify(task.inputArtifactRefs.map((ref) => ref.contentHash))),

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "feedbackId": "HF-20260824-TOPIC002-DISCLAIMER-COMPRESSION",
+  "organizationId": "org_jovaai",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-002-V1",
+  "receivedAt": "2026-08-24T03:00:44.1167479Z",
+  "receivedFrom": "user_enterprise",
+  "sourceArtifact": {
+    "fileName": "10、AI为什么在演示里很好用，一进业务却容易失灵？【codex】.docx",
+    "sha256": "931918726730da87ed8aff4ccda989a3744e0f030fb171f519696b341c7b4f3d"
+  },
+  "humanEdit": {
+    "before": "这五项是艾氪智能对企业AI落地条件的解释框架，不是某份研究报告的原文，也不是放之四海而皆准的标准答案。不同企业还需要结合自己的业务责任和风险等级重新排序。",
+    "after": "这五项是企业AI落地条件的基本框架，不同企业还需要结合自己的业务责任和风险等级重新排序。"
+  },
+  "observedChanges": [
+    "删除不必要的艾氪智能自我归因",
+    "删除连续的防御性免责声明",
+    "将解释框架压缩为基本框架",
+    "保留不同企业需要结合责任和风险重新排序的必要边界"
+  ],
+  "userInstruction": "以后注意不要出现类似问题",
+  "status": "NORMALIZED"
+}

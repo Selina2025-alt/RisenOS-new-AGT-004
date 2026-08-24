@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0.0",
+  "agent": "balala",
+  "topicId": "TOPIC-INDUSTRIAL-AI-001",
+  "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-001-V1",
+  "sourceContentHash": "1d2869a9670f3e8224056678bcdbce083e6f3546a4b96c5be634cc61be650500",
+  "sourceApprovalDecisionId": "HGD-SOURCE-TOPIC-INDUSTRIAL-AI-001-R2",
+  "entries": [
+    {
+      "skillId": "balala-channel-adaptation",
+      "source": "local-agent",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "channel_structure",
+        "tone",
+        "asset_brief"
+      ],
+      "outputInfluence": "Adapted an approved immutable source without changing its factual boundary.",
+      "reviewStatus": "USED"
+    },
+    {
+      "skillId": "claim-evidence-inheritance",
+      "source": "content-core",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "claim_inheritance",
+        "evidence_boundary"
+      ],
+      "outputInfluence": "Restricted every channel proposal to the source ContentVersion claim snapshot.",
+      "reviewStatus": "USED"
+    }
+  ],
+  "formalContentVersionCreated": false,
+  "approvalCreated": false
+}

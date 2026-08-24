@@ -9,7 +9,7 @@ import {
   createV55TeamRuntime,
 } from "../src/index.js";
 
-describe("V5.5.1 team runtime bootstrap", () => {
+describe("V5.5.2 team runtime bootstrap", () => {
   const roots: string[] = [];
   afterEach(async () => {
     await Promise.all(roots.splice(0).map((root) => rm(root, { recursive: true, force: true })));

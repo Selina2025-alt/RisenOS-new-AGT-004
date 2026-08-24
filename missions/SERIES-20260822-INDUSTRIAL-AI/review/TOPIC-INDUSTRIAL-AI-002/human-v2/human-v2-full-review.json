@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "LILITH-TOPIC-INDUSTRIAL-AI-002-HUMAN-V2",
+  "reviewAgent": "lilith",
+  "reviewType": "FULL_HUMAN_REVISION_REVIEW",
+  "mode": "READ_ONLY",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "channel": "wechat",
+  "sourceArtifacts": {
+    "previousDocx": {
+      "path": "C:/Users/Administrator/Downloads/10、AI为什么在演示里很好用，一进业务却容易失灵？【codex】_JovaAI Nomos重点修订版.docx",
+      "sha256": "4ff2869d647d16fae8b8ad1d783bb336d103fdac872cdc067bc5310a0e0384b3"
+    },
+    "humanV2Docx": {
+      "path": "C:/Users/Administrator/Downloads/10、AI为什么在演示里很好用，一进业务却容易失灵？【codex】_JovaAI Nomos重点修订版_v2.docx",
+      "sha256": "cc595845ebec8b7f7c68cd68674699f4cf574e45ef3892da526843e0133e961f"
+    }
+  },
+  "reviewStatus": "REVISION_REQUIRED",
+  "nextRoute": ["content-orchestrator", "agt-004", "human"],
+  "severityCounts": { "P0": 0, "P1": 4, "P2": 4, "P3": 0 },
+  "humanEditLearning": [
+    {
+      "change": "Removed the unsolicited 'not the sixth layer' clarification.",
+      "generalRule": "Use defensive architecture clarification only when the audience or topic actually raises that misconception.",
+      "doesNotApplyWhen": ["technical architecture content", "Nomos origin/history content", "explicit sixth-layer misconception"]
+    },
+    {
+      "change": "Removed the three-stage R&D evolution and repeated exception list.",
+      "generalRule": "Give each mechanism one full explanation per article; later mentions should show application rather than repeat the definition.",
+      "doesNotApplyWhen": ["product history content", "technical audience requests evolution path", "R&D methodology content"]
+    }
+  ],
+  "issues": [
+    {
+      "issueId": "HV2-001",
+      "severity": "P1",
+      "module": "logic_repetition",
+      "location": "P23, P45, P51, P55-P59, P65-P71, P77-P88",
+      "duplicateSource": "P10 and P29-P37 already establish the business variables and five checks.",
+      "preserve": "P10 inquiry scene, P23 core distinction, P67 Nomos application, one closing judgment.",
+      "action": "Merge P45-P51 into the research conclusion; compress P55-P59 into one bridge; keep positioning+scenario+architecture in the Nomos section; reduce the ending to four field-test questions.",
+      "routeTo": "content-orchestrator",
+      "autoFixable": true,
+      "blocksApproval": true
+    },
+    {
+      "issueId": "HV2-002",
+      "severity": "P1",
+      "module": "story_human_voice",
+      "location": "P15-P61",
+      "duplicateSource": "The opening P4-P13 already supplies a concrete inquiry-and-quotation conflict, but the middle abandons it for report-style frameworks.",
+      "preserve": "The opening inquiry scene.",
+      "action": "Use the same quotation task to carry each transition; research should explain the failure, not replace the story.",
+      "routeTo": "content-orchestrator",
+      "autoFixable": true,
+      "blocksApproval": true
+    },
+    {
+      "issueId": "HV2-003",
+      "severity": "P1",
+      "module": "enterprise_nomos_fusion",
+      "location": "P53-P71",
+      "duplicateSource": "P31-P37, P45 and P49 already cover permissions, exceptions, human decisions and traceability.",
+      "preserve": "P63 origin, P65 dual-axis positioning and P67 quotation collaboration scene.",
+      "action": "Remove repeated role/boundary definitions; demonstrate Nomos through the existing quotation scene and mention JovaOS once.",
+      "routeTo": "content-orchestrator",
+      "autoFixable": true,
+      "blocksApproval": true
+    },
+    {
+      "issueId": "HV2-004",
+      "severity": "P1",
+      "module": "knowledge_snapshot",
+      "location": "knowledge/claim-evidence/TOPIC-INDUSTRIAL-AI-002.md",
+      "duplicateSource": "The current plan says Nomos=FORBIDDEN_INSERTION while the current human revision explicitly requires Nomos emphasis.",
+      "preserve": "The enterprise user's current explicit intent has the highest priority.",
+      "action": "Create a new MissionPreflight, FusionPlan, ClaimEvidencePlan and KnowledgeSnapshot that explicitly permits Nomos. Do not overwrite the old snapshot.",
+      "routeTo": "agt-004+human",
+      "autoFixable": false,
+      "blocksApproval": true
+    },
+    {
+      "issueId": "HV2-005",
+      "severity": "P2",
+      "module": "structure",
+      "location": "P27-P37 and P77-P82",
+      "duplicateSource": "Five checks are repeated as six questions.",
+      "preserve": "One field-test question set.",
+      "action": "Use four questions covering data, permissions, exception handoff and reconstruction of decisions.",
+      "routeTo": "content-orchestrator",
+      "autoFixable": true,
+      "blocksApproval": false
+    },
+    {
+      "issueId": "HV2-006",
+      "severity": "P2",
+      "module": "ai_style",
+      "location": "whole article",
+      "duplicateSource": "真正=8, 能否=8, 不能=7; 34 sentences exceed 30 characters and 15 exceed 50.",
+      "preserve": "Evidence-bearing sentences and core judgments.",
+      "action": "Break long sentences, reduce repeated diagnostic words and vary scene, judgment and explanation rhythm.",
+      "routeTo": "content-orchestrator",
+      "autoFixable": true,
+      "blocksApproval": false
+    },
+    {
+      "issueId": "HV2-007",
+      "severity": "P2",
+      "module": "report_tone",
+      "location": "P19-P23 and P47-P51",
+      "duplicateSource": "Two separate rounds of research summary interrupt the story.",
+      "preserve": "RAND/MIT as failure evidence and NIST/policy as governance evidence.",
+      "action": "Return to the quotation scene immediately after each research block.",
+      "routeTo": "content-orchestrator",
+      "autoFixable": true,
+      "blocksApproval": false
+    },
+    {
+      "issueId": "HV2-008",
+      "severity": "P2",
+      "module": "ending",
+      "location": "P84-P90",
+      "duplicateSource": "Restates capability, continuity, boundaries, responsibility and Nomos after they have already been explained.",
+      "preserve": "The judgment that a good demo is a starting point.",
+      "action": "Close by returning to the opening quotation task; remove the repeated product definition.",
+      "routeTo": "content-orchestrator",
+      "autoFixable": true,
+      "blocksApproval": false
+    }
+  ],
+  "factAndPolicyChecks": {
+    "rand": "PASS",
+    "mitCisr": "PASS",
+    "nist": "PASS",
+    "chinaAgentPolicy": "PASS",
+    "nomosOrigin": "PASS",
+    "nomosProductAxis": "PASS",
+    "nomosArchitectureAxis": "PASS",
+    "jovaOsPositioning": "PASS",
+    "customerClaims": 0,
+    "unsupportedMetrics": 0,
+    "forbiddenPositioning": 0,
+    "confidentialityIssues": 0
+  },
+  "lengthMetrics": {
+    "countingRule": "visible body characters excluding title, subheads, whitespace and public sources",
+    "previousV1": 2667,
+    "humanV2": 2571,
+    "proposedRevision": 1836,
+    "v1ToV2Delta": -96,
+    "v1ToV2Percent": -3.6,
+    "v2ToRevisionDelta": -735,
+    "v2ToRevisionPercent": -28.6
+  },
+  "revisionProposal": {
+    "path": "human-v2-revision-draft.md",
+    "sha256": "6ab0f4c5896ff90ff02a317d774aea32eab42319d89dfaf32d7887b3b3a1606a",
+    "newClaims": 0,
+    "contentVersionCreated": false,
+    "approved": false
+  },
+  "finalGates": {
+    "factSource": "PASS",
+    "logic": "FAIL",
+    "humanVoice": "FAIL",
+    "channelFit": "REVISION_REQUIRED",
+    "enterpriseNomosFusion": "REVISION_REQUIRED",
+    "complianceConfidentiality": "PASS",
+    "knowledgeSnapshot": "FAIL",
+    "formalApproval": "NOT_GRANTED"
+  },
+  "reviewedAt": "2026-08-24T03:22:55.5909092Z"
+}

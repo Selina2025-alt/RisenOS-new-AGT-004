@@ -2,7 +2,7 @@ export type ReviewGateStatus = "PASS" | "INFO" | "WARN" | "REVISION_REQUIRED" | 
 
 export interface ReviewGateIssue {
   code: string;
-  module: "ai_style" | "logic" | "enterprise_fusion";
+  module: "ai_style" | "repetition" | "narrative_quality" | "logic" | "enterprise_fusion";
   location: string;
   problem: string;
   suggestion: string;
@@ -24,13 +24,61 @@ export interface LogicReview {
   enterpriseInsertion: { level: "L0" | "L1" | "L2" | "L3" | "L4"; deletionTest: string };
 }
 
+export interface RepetitionReview {
+  status: ReviewGateStatus;
+  repeatedMotifs: Array<{ motif: string; paragraphIndexes: number[] }>;
+  similarParagraphPairs: Array<{ first: number; second: number; similarity: number }>;
+  issues: ReviewGateIssue[];
+  rule: "keep_first_earned_point_remove_paraphrase_without_new_value";
+}
+
+export interface NarrativeQualityReview {
+  status: ReviewGateStatus;
+  sceneParagraphIndexes: number[];
+  longestSceneGap: number;
+  issues: ReviewGateIssue[];
+  fabricatedExperienceAllowed: false;
+}
+
 const connectorPattern = /\b(因此|所以|同时|此外|进一步|换句话说|总的来说|显然|这意味着|in addition|therefore|more importantly)\b/gi;
 const abstractPattern = /(赋能|重塑|引领|全面升级|构建新范式|实现闭环|生态协同|strategic transformation)/gi;
 const boundaryPattern = /(边界|条件|风险|责任|确认|取决于|不能|不应|需要|建议|先问|如果|何时|撤销|阻断|复盘|还原)/;
 const enterpriseBridgePattern = /(企业|组织|业务|管理者|治理|运行|落地|这也是|这对|因此|所以|意味着|对应|场景)/;
 
+const repetitionMotifs: Array<{ motif: string; pattern: RegExp }> = [
+  { motif: "authority_boundary_responsibility", pattern: /(权限|边界|责任|谁负责|谁有权|最终决定权)/g },
+  { motif: "traceability", pattern: /(追溯|复盘|完整记录|留下.{0,6}证据|找到原因)/g },
+  { motif: "capability_to_business", pattern: /(能力片段|业务可用|生产能力|真实业务|持续.{0,4}(运行|做成))/g },
+  { motif: "human_handoff", pattern: /(交还给人|人工.{0,6}(判断|确认)|必须停下来|升级确认)/g },
+];
+
+const scenePattern = /(一次|一场|同一个|比如|业务现场|任务中|那一刻)/;
+
+function normalizeForSimilarity(value: string): string {
+  return value
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/^\s*[-*]\s+/gm, "")
+    .replace(/https?:\/\/\S+/g, "")
+    .replace(/[\s\p{P}\p{S}]/gu, "")
+    .toLowerCase();
+}
+
+function bigrams(value: string): Set<string> {
+  const normalized = normalizeForSimilarity(value);
+  const grams = new Set<string>();
+  for (let index = 0; index < normalized.length - 1; index += 1) grams.add(normalized.slice(index, index + 2));
+  return grams;
+}
+
+function jaccard(left: Set<string>, right: Set<string>): number {
+  if (!left.size || !right.size) return 0;
+  let intersection = 0;
+  for (const token of left) if (right.has(token)) intersection += 1;
+  return intersection / (left.size + right.size - intersection);
+}
+
 function paragraphs(text: string): string[] {
-  return text.split(/\n{2,}/).map((part) => part.trim()).filter(Boolean);
+  return text.split(/(?:\r?\n[\t ]*){2,}/).map((part) => part.trim()).filter(Boolean);
 }
 
 function issue(code: string, module: ReviewGateIssue["module"], problem: string, suggestion: string, location: string, blocking = false): ReviewGateIssue {
@@ -97,6 +145,94 @@ export function reviewLogic(text: string, enterpriseTerms: string[] = []): Logic
     path,
     issues,
     enterpriseInsertion: { level: hasEnterprise ? "L2" : "L0", deletionTest: hasEnterprise ? "保留后仍需服务主题，否则降低植入级别" : "不适用" },
+  };
+}
+
+export function reviewRepetition(text: string): RepetitionReview {
+  const parts = paragraphs(text).filter((part) => !/^#{1,6}\s/.test(part) && !/^\s*[-*]\s+/.test(part));
+  const repeatedMotifs = repetitionMotifs
+    .map(({ motif, pattern }) => ({
+      motif,
+      paragraphIndexes: parts
+        .map((part, index) => ({ index: index + 1, count: (part.match(pattern) ?? []).length }))
+        .filter((item) => item.count > 0)
+        .map((item) => item.index),
+    }))
+    .filter((item) => item.paragraphIndexes.length >= 4);
+  const similarParagraphPairs: Array<{ first: number; second: number; similarity: number }> = [];
+  const grams = parts.map(bigrams);
+  for (let first = 0; first < parts.length; first += 1) {
+    if (normalizeForSimilarity(parts[first] ?? "").length < 45) continue;
+    for (let second = first + 2; second < parts.length; second += 1) {
+      if (normalizeForSimilarity(parts[second] ?? "").length < 45) continue;
+      const similarity = jaccard(grams[first] ?? new Set(), grams[second] ?? new Set());
+      if (similarity >= 0.46) similarParagraphPairs.push({ first: first + 1, second: second + 1, similarity: Number(similarity.toFixed(3)) });
+    }
+  }
+  const issues: ReviewGateIssue[] = [];
+  for (const item of repeatedMotifs) {
+    issues.push(issue(
+      `REPEATED_MOTIF_${item.motif.toUpperCase()}`,
+      "repetition",
+      `“${item.motif}”在第 ${item.paragraphIndexes.join("、")} 段反复出现，需检查后文是否只是换词复述。`,
+      "保留第一次把观点讲透的段落；后文只有在新增事实、机制、场景、决策或边界时才保留，否则删除或并入首次出现处。",
+      `paragraphs-${item.paragraphIndexes.join("-")}`,
+    ));
+  }
+  for (const pair of similarParagraphPairs) {
+    issues.push(issue(
+      "PARAPHRASE_PAIR",
+      "repetition",
+      `第 ${pair.first} 与第 ${pair.second} 段语义词组高度重合（${pair.similarity}）。`,
+      `以第 ${pair.first} 段为主，检查第 ${pair.second} 段是否提供新信息；无新增价值则删除。`,
+      `paragraph-${pair.first},paragraph-${pair.second}`,
+      pair.similarity >= 0.62,
+    ));
+  }
+  const blocking = issues.some((item) => item.blocking);
+  return {
+    status: blocking ? "REVISION_REQUIRED" : issues.length ? "WARN" : "PASS",
+    repeatedMotifs,
+    similarParagraphPairs,
+    issues,
+    rule: "keep_first_earned_point_remove_paraphrase_without_new_value",
+  };
+}
+
+export function reviewNarrativeQuality(text: string, contentType = "long_article"): NarrativeQualityReview {
+  const parts = paragraphs(text).filter((part) => !/^#{1,6}\s/.test(part) && !/^\s*[-*]\s+/.test(part));
+  const sceneParagraphIndexes = parts
+    .map((part, index) => ({ part, index: index + 1 }))
+    .filter(({ part }) => scenePattern.test(part) && /(企业|业务|任务|智能体|AI|客户|系统|现场)/i.test(part))
+    .map(({ index }) => index);
+  const anchors = [0, ...sceneParagraphIndexes, parts.length + 1];
+  const longestSceneGap = anchors.slice(1).reduce((max, value, index) => Math.max(max, value - (anchors[index] ?? 0) - 1), 0);
+  const issues: ReviewGateIssue[] = [];
+  const isLongForm = ["long_article", "wechat_article", "article"].includes(contentType);
+  if (isLongForm && parts.length >= 10 && sceneParagraphIndexes.length < 2) {
+    issues.push(issue(
+      "NARRATIVE_SCENE_THIN",
+      "narrative_quality",
+      "长文只有开头判断，缺少能推动论证的具体业务场景。",
+      "在关键机制转折处补一个可验证或明确标注为假设的业务片段，用人物动作、冲突和选择承载观点；不得伪造第一人称经历。",
+      "全文",
+      true,
+    ));
+  } else if (isLongForm && longestSceneGap >= 10) {
+    issues.push(issue(
+      "NARRATIVE_SCENE_GAP",
+      "narrative_quality",
+      `连续 ${longestSceneGap} 个正文段落没有具体场景推进，容易形成报告说明腔。`,
+      "把其中一组抽象解释压缩为一段，并用前文同一任务继续推进：发生了什么、谁需要决定、结果为什么卡住、制度如何介入。",
+      "中段",
+    ));
+  }
+  return {
+    status: issues.some((item) => item.blocking) ? "REVISION_REQUIRED" : issues.length ? "WARN" : "PASS",
+    sceneParagraphIndexes,
+    longestSceneGap,
+    issues,
+    fabricatedExperienceAllowed: false,
   };
 }
 

@@ -1,4 +1,4 @@
-# AGT-RSN-004 V5.5 团队登记
+# AGT-RSN-004 V5.5.2 团队登记
 
 `registry.v5.5.json` 是运行时、文档和测试的共同清单。正式团队由 004 Supervisor 与七个内部子智能体构成：噜噜猫、依古比古、玛卡巴卡、唔西迪西、莉莉丝、小点点、巴啦啦。
 
@@ -11,5 +11,7 @@
 - `ENFORCING`：输出参与正式闸门。
 
 发布包中的登记值必须与 `createDefaultAgentRegistry()` 一致。`tools/validate_agent_rollout.py` 会阻止清单、代码和能力边界不一致的发布。
+
+项目版本由根目录 `VERSION` 管理，并必须与根 `package.json`、Registry `release`、各Agent `version/manifestHash`一致。任何Agent能力、Prompt、权限、路由或审核闸门变化都必须先升级项目版本并记录到 `CHANGELOG.md`；规则见 [`../docs/VERSIONING_POLICY.md`](../docs/VERSIONING_POLICY.md)。
 
 切换内部角色为 `ENFORCING` 必须在同一版本化清单项中增加 `rolloutApprovedBy` 和 ISO 时间格式的 `rolloutApprovedAt`。Bootstrap 从该清单加载 rolloutMode；缺少人工批准字段时拒绝启动。运行中的智能体无权修改该文件。

@@ -149,6 +149,8 @@ export const ReviewIssueV53Schema = z.object({
   severity: z.enum(["P0", "P1", "P2", "P3"]),
   module: z.enum([
     "ai_style",
+    "repetition",
+    "narrative_quality",
     "logic",
     "compliance",
     "evidence",

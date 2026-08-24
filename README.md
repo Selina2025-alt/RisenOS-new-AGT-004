@@ -1,6 +1,6 @@
 # AGT-RSN-004：艾氪智能内容生产团队
 
-> 当前版本：`v5.5.1` · 开发快照 · 纯内容域 · 7 个内部子智能体 · 本地文件可独立持久化
+> 当前版本：`v5.5.2` · 开发快照 · 纯内容域 · 7 个内部子智能体 · 本地文件可独立持久化
 
 AGT-RSN-004 是 RISEN 家族的内容资产生产与管理智能体。它把选题、公开研究、企业知识、品牌规则和证据转化为经过审核、可追溯、可复用的内容资产。
 
@@ -8,7 +8,7 @@ AGT-RSN-004 是 RISEN 家族的内容资产生产与管理智能体。它把选�
 
 1. **004 负责内容从选题到交付，不负责发布和效果监测。**
 2. **004 是 Supervisor，噜噜猫、依古比古、玛卡巴卡、唔西迪西、莉莉丝、小点点和巴啦啦是内部子智能体。**
-3. **当前 `v5.5.1` 已完成统一运行接线，但 7 个子智能体仍处于 `SHADOW`，尚未完成脱离宿主对话的生产验收。**
+3. **当前 `v5.5.2` 已完成统一运行接线，并为莉莉丝增加重复与叙事质量闸门；7 个子智能体仍处于 `SHADOW`，尚未完成脱离宿主对话的生产验收。**
 
 ## 一分钟看懂项目
 
@@ -40,7 +40,7 @@ flowchart LR
 - 微信公众号、短视频、小红书、X/Twitter、LinkedIn 变体；
 - Claim—Evidence 绑定；
 - 企业知识、品牌、合规、保密和案例口径检查；
-- AI 味儿、逻辑、内容完整度和企业融合审核；
+- AI 味儿、逻辑、车轱辘话、叙事质量、内容完整度和企业融合审核；
 - GEO/SEO 意图、问题覆盖和 AnswerBlock 优化；
 - 不可变版本、人工闸门、审计和内容包导出；
 - Codex 或 JovaAI 宿主模型适配；
@@ -68,7 +68,7 @@ flowchart LR
 | 依古比古 | `public-researcher` | 公开只读研究、ResearchPack 和 Evidence | 不可 |
 | 玛卡巴卡 | `makabaka` | 写前知识快照、融合计划、写后口径复查 | 不可 |
 | 唔西迪西 | `content-orchestrator` | ContentBrief、Outline 和 DraftProposal | 不可 |
-| 莉莉丝 | `lilith` | 事实、逻辑、AI 味、品牌、保密和合规审核 | 不可自批 |
+| 莉莉丝 | `lilith` | 事实、逻辑、AI 味、车轱辘话、叙事质量、品牌、保密和合规审核 | 不可自批 |
 | 小点点 | `xiaodiandian` | GEO/SEO 问题优化 Proposal | 不可直接改正式稿 |
 | 巴啦啦 | `balala` | 微信、短视频、小红书、X、LinkedIn 变体 | 不可绕过源稿批准 |
 
@@ -78,7 +78,7 @@ flowchart LR
 
 | 项目 | 状态 |
 |---|---|
-| 当前代码版本 | `v5.5.1` |
+| 当前代码版本 | `v5.5.2`（DEVELOPMENT） |
 | 7 个 Handler | 已注册，7/7 |
 | 子智能体 rolloutMode | 全部 `SHADOW` |
 | 本地任务、Artifact、Checkpoint | 已持久化 |
@@ -275,24 +275,27 @@ pnpm replay:v55
 
 ## 版本与回滚
 
-- 当前开发快照：[`v5.5.1`](https://github.com/Selina2025-alt/RisenOS-new-AGT-004/tree/v5.5.1)；
+- 当前工作区版本：`v5.5.2`（尚未提交和推送，发布说明见 [`docs/RELEASE_NOTES_V5.5.2.md`](docs/RELEASE_NOTES_V5.5.2.md)）；
+- 上一Git快照：[`v5.5.1`](https://github.com/Selina2025-alt/RisenOS-new-AGT-004/tree/v5.5.1)；
 - 前一稳定快照：[`v5.3.1`](https://github.com/Selina2025-alt/RisenOS-new-AGT-004/tree/v5.3.1)；
 - V5.5.1 上线前归档：[`archive-main-v5.3.1-before-v5.5.1-20260822`](https://github.com/Selina2025-alt/RisenOS-new-AGT-004/tree/archive-main-v5.3.1-before-v5.5.1-20260822)。
 
-回滚代码不能删除 V5.5.1 已生成的任务、Artifact 和审计记录。
+回滚代码不能删除新版本已生成的任务、Artifact 和审计记录。项目版本、内容版本、知识包版本和Prompt/Skill版本不得混用，规则见 [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md)。
 
 ## 权威文档
 
 阅读顺序建议：
 
 1. 本 README；
-2. [`docs/GETTING_STARTED_V5.5.1.md`](docs/GETTING_STARTED_V5.5.1.md)；
-3. [`docs/REPOSITORY_MAP_V5.5.1.md`](docs/REPOSITORY_MAP_V5.5.1.md)；
-4. [`docs/IMPLEMENTATION_PLAN_V5.5.md`](docs/IMPLEMENTATION_PLAN_V5.5.md)；
-5. [`docs/IMPLEMENTATION_PLAN_V5.5.1.md`](docs/IMPLEMENTATION_PLAN_V5.5.1.md)；
-6. [`docs/PRODUCTION_READINESS.md`](docs/PRODUCTION_READINESS.md)。
+2. [`docs/RELEASE_NOTES_V5.5.2.md`](docs/RELEASE_NOTES_V5.5.2.md)；
+3. [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md)；
+4. [`docs/GETTING_STARTED_V5.5.1.md`](docs/GETTING_STARTED_V5.5.1.md)；
+5. [`docs/REPOSITORY_MAP_V5.5.1.md`](docs/REPOSITORY_MAP_V5.5.1.md)；
+6. [`docs/IMPLEMENTATION_PLAN_V5.5.md`](docs/IMPLEMENTATION_PLAN_V5.5.md)；
+7. [`docs/IMPLEMENTATION_PLAN_V5.5.1.md`](docs/IMPLEMENTATION_PLAN_V5.5.1.md)；
+8. [`docs/PRODUCTION_READINESS.md`](docs/PRODUCTION_READINESS.md)。
 
-V5.3 文档保留为底层持久化历史设计。V5.5 定义内容和知识治理，V5.5.1 定义统一团队运行接线；发生冲突时，以 V5.5 和 V5.5.1 为准。
+V5.3 文档保留为底层持久化历史设计。V5.5定义内容和知识治理，V5.5.1定义统一团队运行接线，V5.5.2定义莉莉丝重复/叙事闸门与强制版本制度；发生冲突时，以最新版本的Release Notes和权威实施文档为准。
 
 ## 资料与许可说明
 

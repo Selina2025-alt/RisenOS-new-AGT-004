@@ -1,0 +1,296 @@
+{
+  "agent": "balala",
+  "variantId": "VAR-TOPIC-INDUSTRIAL-AI-002-XIAOHONGSHU-V1",
+  "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-002-V1",
+  "sourceContentHash": "12f20f7c7a4f04a834573c718b6d22f35ed436075b8eadbeb15de5d4a9d8f2c5",
+  "sourceReviewId": "LILITH-BATCH01-TOPIC002-R2-FINAL",
+  "sourceApprovalDecisionId": "HGD-SOURCE-TOPIC-INDUSTRIAL-AI-002-R2",
+  "channel": "xiaohongshu",
+  "language": "zh-CN",
+  "variantType": "xiaohongshu_carousel",
+  "variantMode": "DEEP_5_9_CARD",
+  "copy": {
+    "titleCandidates": [
+      "AI演示很惊艳，为什么一进业务就失灵？",
+      "企业AI落地难，先检查这5件事",
+      "别被Demo骗了：业务可用是另一套标准",
+      "从会回答到能做事，AI还要过几关？",
+      "AI项目POC很好，为什么规模化总卡住？"
+    ],
+    "recommendedTitle": "企业AI落地难，先检查这5件事",
+    "cards": [
+      {
+        "page": 1,
+        "title": "Demo很顺，业务却失灵",
+        "main": "演示验证的是理想条件下的能力片段；业务可用要面对变化、权限、异常和责任。",
+        "support": "模型会回答，不等于任务能持续完成。",
+        "evidence": [
+          "EXT-002-01",
+          "EXT-002-02"
+        ],
+        "structure": "矛盾封面"
+      },
+      {
+        "page": 2,
+        "title": "同一个任务，变量变多了",
+        "main": "询报价进入企业现场，要确认客户、商品、库存、价格、权限；缺货、冲突、信息不足时，还要知道找谁确认。",
+        "support": "最后还要能追溯信息、判断和结论。",
+        "evidence": [
+          "claim:S1-C02"
+        ],
+        "structure": "场景展开"
+      },
+      {
+        "page": 3,
+        "title": "失败不只因为模型",
+        "main": "RAND研究归纳：问题和指标不清、数据不可用、追新技术而忽视用户、基础设施不足、任务超出当前能力。",
+        "support": "研究访谈65位AI工程师和研究人员，覆盖50多个组织。",
+        "evidence": [
+          "EXT-002-01"
+        ],
+        "structure": "研究证据卡"
+      },
+      {
+        "page": 4,
+        "title": "第一关：目标与知识",
+        "main": "①是不是真实业务问题？②AI能否获得可信、适时且边界清楚的企业知识？",
+        "support": "目标不能只写‘引入大模型’，知识也要有更新与访问边界。",
+        "evidence": [
+          "claim:S1-C02"
+        ],
+        "structure": "双问题卡"
+      },
+      {
+        "page": 5,
+        "title": "第二关：权限与例外",
+        "main": "③AI能在什么权限内使用工具？④信息不全、规则冲突、服务中断时，何时继续、暂停或交还给人？",
+        "support": "越接近真实执行，越要明确人工确认节点。",
+        "evidence": [
+          "claim:S1-C02",
+          "EXT-002-02"
+        ],
+        "structure": "权限围栏图"
+      },
+      {
+        "page": 6,
+        "title": "第三关：持续与追溯",
+        "main": "⑤任务能否持续、可测量、可追溯？要保留输入版本、判断依据、执行记录、异常原因和最终责任。",
+        "support": "一次结果好，不代表下一次仍可靠。",
+        "evidence": [
+          "claim:S1-C02",
+          "EXT-002-02"
+        ],
+        "structure": "追溯链"
+      },
+      {
+        "page": 7,
+        "title": "从能力片段到协同单元",
+        "main": "艾氪智能让多个专业智能体围绕明确任务，在制度、数据权限、工具能力与人工决策边界内协同；JovaOS承载和治理这些协同关系。",
+        "support": "关键不是智能体数量，而是角色、工具、边界和交接。",
+        "evidence": [
+          "claim:S1-A02",
+          "claim:S1-A03"
+        ],
+        "structure": "角色协同图"
+      },
+      {
+        "page": 8,
+        "title": "下次评估，先问这5句",
+        "main": "问题和指标清楚吗？知识可靠吗？工具权限明确吗？异常怎么处理？证据与最终决定权在哪里？",
+        "support": "能持续做成一件事，才算走向业务可用。",
+        "evidence": [
+          "EXT-002-03",
+          "claim:S1-C02"
+        ],
+        "structure": "可收藏检查表"
+      }
+    ],
+    "body": "AI演示验证的是能力片段，真实业务检验的是一整套运行条件。把目标、知识、权限、例外和追溯五件事逐一检查，才知道一个项目离‘业务可用’还有多远。",
+    "tags": [
+      "企业AI",
+      "AI落地",
+      "智能体",
+      "AgenticOS",
+      "JovaOS"
+    ],
+    "cta": "保存这份五项检查表，复盘一下您的AI试点最先卡在哪里。",
+    "claimIds": [
+      "EXT-002-01",
+      "EXT-002-02",
+      "EXT-002-03",
+      "claim:S1-C02",
+      "claim:S1-A02",
+      "claim:S1-A03"
+    ]
+  },
+  "assetBrief": {
+    "assetType": "xiaohongshu_card",
+    "aspectRatio": "3:4",
+    "purpose": "深度图文知识卡",
+    "visualDirection": "每张卡一个核心判断；高信息密度但层级清楚，优先关系图、检查表和阶梯图。",
+    "textOverlay": "企业AI落地先查这5项",
+    "deliverables": [
+      "8张卡"
+    ],
+    "rightsRequired": true,
+    "restrictions": [
+      "不得使用未授权客户名称、Logo、界面或数据",
+      "不得把示意场景包装为真实客户案例",
+      "所有外部素材须单独完成版权清权"
+    ]
+  },
+  "inheritedClaimBindings": [
+    {
+      "claimId": "EXT-002-01",
+      "evidenceIds": [
+        "evidence:PUB-001",
+        "evidence:PUB-002"
+      ],
+      "statementHash": "923e4b5819252c2f95a776d0d0956cc118b9986d4851a74e9302908c14036fb5"
+    },
+    {
+      "claimId": "EXT-002-02",
+      "evidenceIds": [
+        "evidence:PUB-002",
+        "evidence:PUB-003",
+        "evidence:PUB-004"
+      ],
+      "statementHash": "d72c1ef0adb5a3c125389f90bb7ab64e26b2de083549b5df7eda0dcdd13acbe1"
+    },
+    {
+      "claimId": "EXT-002-03",
+      "evidenceIds": [
+        "evidence:PUB-001",
+        "evidence:PUB-002",
+        "evidence:PUB-003",
+        "evidence:PUB-004"
+      ],
+      "statementHash": "77f247affc58fd5405577324502c7e10b3127c29168799f8e2a23ee7d0abb105"
+    },
+    {
+      "claimId": "claim:S1-C02",
+      "evidenceIds": [
+        "EXT-002-01",
+        "EXT-002-02",
+        "evidence:S1-A02"
+      ],
+      "statementHash": "03ab3614c1ab9399c6ed8520d4de83663d83da7a61252a28ac3bb554a858874f"
+    },
+    {
+      "claimId": "claim:S1-A02",
+      "evidenceIds": [
+        "PROD-TEAM"
+      ],
+      "statementHash": "137b85c39ecaf295b409f4d7fa93385fe7ca9226705ff1d2cd2b91a007c5683a"
+    },
+    {
+      "claimId": "claim:S1-A03",
+      "evidenceIds": [
+        "PROD-2L4M"
+      ],
+      "statementHash": "662ca531cfec0585e5bcfbd606dc4758937e792e0fa03d3f64b5d5dd34426082"
+    }
+  ],
+  "inheritedCoverageMap": {
+    "sourceRef": "geo-seo/BATCH-01/revision-2/TOPIC-INDUSTRIAL-AI-002-content-coverage-map.json",
+    "sourceHash": "3eb17ba52f44696eaf6ccef684b71f4fa2be201a15199a72a25d8f28e10ef751",
+    "primarySeoIntent": {
+      "seoId": "SEO-0165",
+      "query": "企业AI落地难点",
+      "intentType": "PROBLEM_DIAGNOSIS",
+      "coverage": "FULL",
+      "coveredBy": [
+        "演示验证：只是能力片段",
+        "进入业务：变量开始叠加",
+        "业务可用：过程必须可追溯",
+        "判断落地：别只看那一刻"
+      ]
+    },
+    "geoQuestionIds": [
+      "GEO-0175",
+      "GEO-0168",
+      "GEO-0027",
+      "GEO-0024"
+    ],
+    "answerBlockIds": [
+      "AB-TOPIC002-R2-001",
+      "AB-TOPIC002-R2-002"
+    ],
+    "mustNotForceCoverage": [
+      {
+        "id": "GEO-0024",
+        "item": "企业从哪个高价值场景开始最合适？",
+        "reason": "只标记PARTIAL，完整场景选择和行动清单归入TOPIC-INDUSTRIAL-AI-005。",
+        "disposition": "DEFERRED_TO_TOPIC_005"
+      },
+      {
+        "id": "GEO-0008",
+        "item": "艾氪智能有哪些落地案例？",
+        "reason": "没有授权CaseEvidenceCard。"
+      },
+      {
+        "id": "GEO-0026",
+        "item": "如何评估智能体团队的ROI？",
+        "reason": "没有客户结果和归因证据。"
+      },
+      {
+        "id": "NOMOS",
+        "item": "Nomos产品植入",
+        "reason": "Supervisor对TOPIC-INDUSTRIAL-AI-002明确DO_NOT_INSERT。"
+      }
+    ]
+  },
+  "skillTrace": [
+    {
+      "skillId": "balala-channel-adaptation",
+      "source": "local-agent",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "channel_structure",
+        "tone",
+        "asset_brief"
+      ],
+      "outputInfluence": "Adapted an approved immutable source without changing its factual boundary.",
+      "reviewStatus": "USED",
+      "channel": "xiaohongshu"
+    },
+    {
+      "skillId": "claim-evidence-inheritance",
+      "source": "content-core",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "claim_inheritance",
+        "evidence_boundary"
+      ],
+      "outputInfluence": "Restricted every channel proposal to the source ContentVersion claim snapshot.",
+      "reviewStatus": "USED",
+      "channel": "xiaohongshu"
+    }
+  ],
+  "variantValidation": {
+    "sourceApproval": "PASS",
+    "sourceVersionHash": "PASS",
+    "channelStructure": "PASS",
+    "claimInheritance": "PASS_SELF_CHECK_PENDING_004_LILITH",
+    "evidenceInheritance": "PASS_SELF_CHECK_PENDING_004_LILITH",
+    "newClaims": 0,
+    "nomosInsertion": 0,
+    "forbiddenPlatformFields": 0,
+    "ctaCompliance": "PASS",
+    "xhsCardCount": 8
+  },
+  "selfCheck": {
+    "result": "PASS_FOR_LILITH_REVIEW",
+    "coreClaimChanged": false,
+    "productPositioningChanged": false,
+    "evidenceAdded": false,
+    "customerCaseAdded": false,
+    "formalContentVersionCreated": false,
+    "selfApproved": false
+  },
+  "reviewStatus": "RE_REVIEW_REQUIRED",
+  "contentHash": "5512f8d77a3e34de455991d5129431f79991edd56df8d66aa1b9da7deacecc51",
+  "contentHashScope": "copy+assetBrief",
+  "createdAt": "2026-08-22T09:31:14.499Z",
+  "traceId": "trace_industrial_ai_20260822_002"
+}

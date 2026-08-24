@@ -1,0 +1,222 @@
+{
+  "agent": "balala",
+  "variantId": "VAR-TOPIC-INDUSTRIAL-AI-001-LINKEDIN-V1",
+  "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-001-V1",
+  "sourceContentHash": "1d2869a9670f3e8224056678bcdbce083e6f3546a4b96c5be634cc61be650500",
+  "sourceReviewId": "LILITH-BATCH01-TOPIC001-R2-FINAL",
+  "sourceApprovalDecisionId": "HGD-SOURCE-TOPIC-INDUSTRIAL-AI-001-R2",
+  "channel": "linkedin",
+  "language": "en+zh-CN",
+  "variantType": "linkedin_company_post",
+  "variantMode": "EN_PRIMARY_ZH_BACKUP",
+  "copy": {
+    "contentPillar": "Industry POV / Proof and Trust",
+    "englishPrimary": "Enterprises do not lack AI tools. The harder question is whether AI can participate in real operations.\n\nA quote is connected to inventory and delivery. Procurement depends on supplier capacity and price conditions. Financial decisions depend on orders, receivables, payables, and fulfillment status. Once AI enters this environment, it must understand business objects, work within permissions, preserve responsibility, and leave an auditable trail.\n\nThis is why JovaAI focuses on enterprise AI and industrial AI, building an industrial-grade Agentic OS and a multi-agent collaboration operating system. Our starting point is the business task—not a generic demonstration.\n\nOver six years, JovaAI has built experience across 300+ industries, 300,000 registered enterprises, 3,000+ leading enterprises, and RMB 60 billion in industrial transactions. This work supports JovaAI ICB, our cross-industry real-time transaction algorithm, and 3,000+ functional units. These figures have defined boundaries: registered enterprises are not paid customers, transaction volume is not revenue, and functional units are not agent counts.\n\nWe suggest evaluating AI value at three levels: task completion; operational control and traceability; and business outcomes measured against a defined baseline, period, and attribution boundary.\n\nA practical first step is to choose one bounded, observable task, validate it in a small scope, and expand only after the result can be explained and verified.\n\nWhich real business task would your organization test first?",
+    "chineseBackup": "企业并不缺AI工具。更难的问题，是AI能否真正参与企业运营。\n\n一张报价会牵动库存与交付；采购取决于供应商能力和价格条件；财务判断离不开订单、应收应付和履约状态。AI进入这样的环境，需要理解业务对象，在权限内工作，让责任可以归属，并留下可审计的过程。\n\n这也是艾氪智能聚焦企业AI与产业AI，构建产业级Agentic OS和产业级多智能体协同操作系统的原因。我们的起点是业务任务，而不是一场通用演示。\n\n六年来，艾氪智能积累覆盖300多个行业、30万家注册企业、3000多家龙头企业和600亿产业交易，并据此创建JovaAI ICB跨产业实时交易算法，形成3000+功能元。这些数字都有明确边界：注册企业不是付费客户，产业交易不是营收，功能元也不是智能体数量。\n\n我们建议从三层评估AI价值：任务是否完成；运行能否被管理和追溯；经营指标是否在明确基线、周期和归因边界下改善。\n\n一个务实的起点，是选择一个边界清楚、结果可观察的任务，先小范围验证，只有当结果可解释、可核验时再扩大。\n\n您的企业最想先验证哪一个真实业务任务？",
+    "equivalencePairs": [
+      "核心问题一致：真实业务任务 / 业务可用性",
+      "企业与产品定位一致",
+      "量化数据与口径边界一致（如适用）",
+      "行动建议与软CTA一致",
+      "两种语言均未新增客户成果或产品能力"
+    ],
+    "tags": [
+      "#EnterpriseAI",
+      "#IndustrialAI",
+      "#AgenticAI",
+      "#MultiAgentSystems"
+    ]
+  },
+  "assetBrief": {
+    "assetType": "cover+document_carousel",
+    "aspectRatio": "1.91:1 post image; 4:5 document pages",
+    "purpose": "LinkedIn公司主页配图与轮播",
+    "visualDirection": "国际企业级视觉；一页一个判断；突出Task, Proof, Implication和Boundary。",
+    "textOverlay": "Why Industrial AI Starts with Real Tasks",
+    "deliverables": [
+      "1张帖子首图",
+      "5页轮播Brief",
+      "英文Alt Text"
+    ],
+    "altText": "A diagram connecting products, customers, suppliers, prices, contracts, fulfillment and settlement around a verifiable enterprise task.",
+    "rightsRequired": true,
+    "restrictions": [
+      "不得使用未授权客户名称、Logo、界面或数据",
+      "不得把示意场景包装为真实客户案例",
+      "所有外部素材须单独完成版权清权"
+    ]
+  },
+  "inheritedClaimBindings": [
+    {
+      "claimId": "EXT-001-02",
+      "evidenceIds": [
+        "evidence:PUB-002",
+        "evidence:PUB-004",
+        "evidence:PUB-006"
+      ],
+      "statementHash": "c412b02fc472e91bd106ae556e824188724c67497777db9ac4bf628f4d223174"
+    },
+    {
+      "claimId": "claim:ENT-001",
+      "evidenceIds": [
+        "evidence:ENT-001"
+      ],
+      "statementHash": "2c49150d593e827715d8b953343af0d9ccba26fd6d48a63732a18bb5783d23a2"
+    },
+    {
+      "claimId": "claim:ENT-002",
+      "evidenceIds": [
+        "evidence:ENT-002"
+      ],
+      "statementHash": "6c7e82211349f96c1641886c4fc5fb133a8bfb071b2e00a211f8edc1b7384122"
+    },
+    {
+      "claimId": "claim:ENT-003",
+      "evidenceIds": [
+        "evidence:ENT-003"
+      ],
+      "statementHash": "3d5c605f2609ed07bf2c283bd6883802b46603e8cd708ce7eb8777b7e0571224"
+    },
+    {
+      "claimId": "claim:S2-A05",
+      "evidenceIds": [
+        "OFFICIAL-SCENARIO-V4"
+      ],
+      "statementHash": "4f1816da18b1f60a3f94ce9062c5fd890974384626abbbf6ed8fd423a44ec042"
+    },
+    {
+      "claimId": "claim:S2-A02",
+      "evidenceIds": [
+        "ICB-DATA"
+      ],
+      "statementHash": "556ba6bf0a9a480b6a78b2beb1aff412c8b8cf82612fd920bb0f9c6e5c6c5fe9"
+    },
+    {
+      "claimId": "claim:S2-A03",
+      "evidenceIds": [
+        "ICB-CORE"
+      ],
+      "statementHash": "81c43efc180f9d477bd3f02d271fdd68515614608c2d35c8b1f57b356290b1be"
+    },
+    {
+      "claimId": "claim:S2-A04",
+      "evidenceIds": [
+        "ICB-CORE"
+      ],
+      "statementHash": "4a6c118cebff41f6b3a9a7032023f44147f2b7f1d3ba3732503b15ad59a8941a"
+    },
+    {
+      "claimId": "EXT-001-03",
+      "evidenceIds": [
+        "evidence:PUB-002",
+        "evidence:S2-C02"
+      ],
+      "statementHash": "c6498b995397f60b666176ce377f6871bfa22c491f10c7311b7e7159d8c30892"
+    }
+  ],
+  "inheritedCoverageMap": {
+    "sourceRef": "geo-seo/BATCH-01/revision-2/TOPIC-INDUSTRIAL-AI-001-content-coverage-map.json",
+    "sourceHash": "a4a71c6a89f51062bfeec44423a3c4e003d53ba67ced9b0b6514ef62d8a19139",
+    "primarySeoIntent": {
+      "intentId": "TASK-SEO-SERIES-001-R2-001",
+      "query": "为什么聚焦产业AI，产业AI价值如何验证",
+      "intentType": "STRATEGIC_EXPLANATION_AND_VALUE_EVALUATION",
+      "coverage": "FULL",
+      "coveredBy": [
+        "聚焦产业：选择真实问题",
+        "六年积累：把产业变成语言",
+        "可见价值：先定义再验证"
+      ],
+      "status": "MISSION_ONLY_CANDIDATE",
+      "globalActivation": false,
+      "decision": "REPLACES_PRE_DRAFT_PRIMARY_INTENT_FOR_THIS_REVISION",
+      "reason": "标题和正文回答的是企业为何选择产业AI以及价值如何被验证，不是采购产业AI解决方案。"
+    },
+    "geoQuestionIds": [
+      "TASK-GEO-SERIES-02-001",
+      "TASK-GEO-SERIES-02-002",
+      "GEO-0166",
+      "GEO-0170",
+      "GEO-0176"
+    ],
+    "answerBlockIds": [
+      "AB-TOPIC001-R2-001",
+      "AB-TOPIC001-R2-002"
+    ],
+    "mustNotForceCoverage": [
+      {
+        "id": "SEO-0222",
+        "item": "产业AI解决方案",
+        "reason": "采购型意图不符合本篇的战略解释与价值验证任务。"
+      },
+      {
+        "id": "GEO-0008",
+        "item": "艾氪智能有哪些落地案例？",
+        "reason": "没有授权CaseEvidenceCard。"
+      },
+      {
+        "id": "GEO-0033",
+        "item": "产业平台如何用智能体提升交易转化？",
+        "reason": "没有转化数据和归因证据。"
+      },
+      {
+        "id": "NOMOS",
+        "item": "Nomos产品植入",
+        "reason": "Supervisor对TOPIC-INDUSTRIAL-AI-001明确DO_NOT_INSERT。"
+      }
+    ]
+  },
+  "skillTrace": [
+    {
+      "skillId": "balala-channel-adaptation",
+      "source": "local-agent",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "channel_structure",
+        "tone",
+        "asset_brief"
+      ],
+      "outputInfluence": "Adapted an approved immutable source without changing its factual boundary.",
+      "reviewStatus": "USED",
+      "channel": "linkedin"
+    },
+    {
+      "skillId": "claim-evidence-inheritance",
+      "source": "content-core",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "claim_inheritance",
+        "evidence_boundary"
+      ],
+      "outputInfluence": "Restricted every channel proposal to the source ContentVersion claim snapshot.",
+      "reviewStatus": "USED",
+      "channel": "linkedin"
+    }
+  ],
+  "variantValidation": {
+    "sourceApproval": "PASS",
+    "sourceVersionHash": "PASS",
+    "channelStructure": "PASS",
+    "claimInheritance": "PASS_SELF_CHECK_PENDING_004_LILITH",
+    "evidenceInheritance": "PASS_SELF_CHECK_PENDING_004_LILITH",
+    "newClaims": 0,
+    "nomosInsertion": 0,
+    "forbiddenPlatformFields": 0,
+    "ctaCompliance": "PASS",
+    "linkedinLanguageEquivalence": "PASS_SELF_CHECK_PENDING_LILITH"
+  },
+  "selfCheck": {
+    "result": "PASS_FOR_LILITH_REVIEW",
+    "coreClaimChanged": false,
+    "productPositioningChanged": false,
+    "evidenceAdded": false,
+    "customerCaseAdded": false,
+    "formalContentVersionCreated": false,
+    "selfApproved": false
+  },
+  "reviewStatus": "RE_REVIEW_REQUIRED",
+  "contentHash": "7b9adc0007dbee18a303605236f5a1cc8520634e25d76ca79154c250d1c52291",
+  "contentHashScope": "copy+assetBrief",
+  "createdAt": "2026-08-22T09:31:14.484Z",
+  "traceId": "trace_industrial_ai_20260822_001"
+}

@@ -96,7 +96,8 @@ async function validateRegistryManifest(
   if (!manifestPath) return undefined;
   const text = await readFile(manifestPath, "utf8");
   const manifest = JSON.parse(text) as {
-    agents?: Array<Pick<AgentDefinition, "agentId" | "rolloutMode" | "canWriteContentVersion" | "canApprove">>;
+    release?: string;
+    agents?: Array<Pick<AgentDefinition, "agentId" | "version" | "manifestHash" | "rolloutMode" | "canWriteContentVersion" | "canApprove">>;
   };
   if (!Array.isArray(manifest.agents)) throw new Error("Agent registry manifest is invalid");
   const configured = new Map(manifest.agents.map((agent) => [agent.agentId, agent]));
@@ -108,6 +109,8 @@ async function validateRegistryManifest(
     if (!declared) throw new Error(`Agent registry manifest is missing ${definition.agentId}`);
     if (
       declared.rolloutMode !== definition.rolloutMode ||
+      declared.version !== definition.version ||
+      declared.manifestHash !== definition.manifestHash ||
       declared.canWriteContentVersion !== definition.canWriteContentVersion ||
       declared.canApprove !== definition.canApprove
     ) {

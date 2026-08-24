@@ -11,6 +11,14 @@
 - [x] 当前源版本未获 HUMAN 审核批准时，巴啦啦变体和 Localization 均被阻断；
 - [x] 发布前执行 `validate_nomos_canon.py` 与 `validate_agent_rollout.py`。
 
+## V5.5.2 审核与版本治理
+
+- [x] 莉莉丝车轱辘话和叙事质量闸门；
+- [x] Windows CRLF正文分段测试；
+- [x] `VERSION`、根包、Registry和Agent版本一致性校验；
+- [x] 项目、内容、知识包和Prompt/Skill版本分离；
+- [ ] 创建并推送 `v5.5.2` Git Tag；当前仍为DEVELOPMENT。
+
 ## V5.5.1 统一团队运行时
 
 - [x] API、Worker、CLI 使用同一 `createV55TeamRuntime()` Bootstrap；

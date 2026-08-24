@@ -1,8 +1,8 @@
 {
-  "workspaceVersion": "5.5.1",
+  "workspaceVersion": "5.5.2",
   "intelligenceVersion": "3.4",
   "mode": "standalone-chat",
-  "updatedAt": "2026-08-21",
+  "updatedAt": "2026-08-24",
   "modelPolicy": "use-current-host-model",
   "persistence": "local-files",
   "activeKnowledgeIndex": "knowledge/00_知识库索引.md",

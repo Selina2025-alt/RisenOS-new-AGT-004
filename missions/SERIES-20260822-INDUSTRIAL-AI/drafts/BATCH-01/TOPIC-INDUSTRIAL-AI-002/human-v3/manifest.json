@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifactId": "DRAFT-TOPIC-INDUSTRIAL-AI-002-HUMAN-V3-LILITH",
+  "artifactType": "HUMAN_REVIEW_DOCX",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "status": "DRAFT_FOR_HUMAN_REVIEW",
+  "createdBy": "agt-004",
+  "reviewedBy": "lilith",
+  "createdAt": "2026-08-24T03:29:24.0549766Z",
+  "sourceArtifact": {
+    "fileName": "10、AI为什么在演示里很好用，一进业务却容易失灵？【codex】_JovaAI Nomos重点修订版_v2.docx",
+    "sha256": "cc595845ebec8b7f7c68cd68674699f4cf574e45ef3892da526843e0133e961f"
+  },
+  "knowledgeSnapshot": {
+    "snapshotId": "KS-TOPIC-INDUSTRIAL-AI-002-HUMAN-V2-NOMOS",
+    "path": "../../../../knowledge/human-v2-nomos-focus/KNOWLEDGE-SNAPSHOT.json",
+    "sha256": "4bd2b47fb40f2173c0599f7de8a7a8f1ab8ddf116c6f3a50d2ea51f3d0665858"
+  },
+  "lilithReview": {
+    "path": "../../../../review/TOPIC-INDUSTRIAL-AI-002/human-v2/human-v2-full-review.json",
+    "sha256": "b7083c6f10fe4146827f7d85922e3308e32974dfe8e3019df7427db373b2ca27",
+    "decision": "REVISION_REQUIRED_APPLIED",
+    "p0": 0,
+    "p1BeforeRevision": 4
+  },
+  "revisionDraft": {
+    "path": "../../../../review/TOPIC-INDUSTRIAL-AI-002/human-v2/human-v2-revision-draft.md",
+    "sha256": "6ab0f4c5896ff90ff02a317d774aea32eab42319d89dfaf32d7887b3b3a1606a"
+  },
+  "docx": {
+    "fileName": "AI为什么在演示里很好用，一进业务却容易失灵_Nomos重点_莉莉丝精简叙事版.docx",
+    "sha256": "247b9244aeb130cad7c7cc9daa1be2b308562272c6320049351eb2adb89c4b8a",
+    "wordOpen": "PASS",
+    "pageCount": 3,
+    "zipValidation": "PASS"
+  },
+  "formalContentVersionCreated": false,
+  "humanApproved": false,
+  "variantGenerationAllowed": false
+}

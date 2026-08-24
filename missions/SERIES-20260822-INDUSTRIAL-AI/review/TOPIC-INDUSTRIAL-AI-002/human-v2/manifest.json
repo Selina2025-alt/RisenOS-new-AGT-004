@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "manifestId": "LILITH-HUMAN-V2-REVIEW-MANIFEST-20260824",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "reviewAgent": "lilith",
+  "mode": "READ_ONLY",
+  "status": "COMPLETED",
+  "reviewStatus": "REVISION_REQUIRED",
+  "sourceArtifacts": [
+    {
+      "type": "previous_docx",
+      "path": "C:/Users/Administrator/Downloads/10、AI为什么在演示里很好用，一进业务却容易失灵？【codex】_JovaAI Nomos重点修订版.docx",
+      "sha256": "4ff2869d647d16fae8b8ad1d783bb336d103fdac872cdc067bc5310a0e0384b3"
+    },
+    {
+      "type": "human_v2_docx",
+      "path": "C:/Users/Administrator/Downloads/10、AI为什么在演示里很好用，一进业务却容易失灵？【codex】_JovaAI Nomos重点修订版_v2.docx",
+      "sha256": "cc595845ebec8b7f7c68cd68674699f4cf574e45ef3892da526843e0133e961f"
+    }
+  ],
+  "outputArtifacts": [
+    {
+      "type": "review_report_markdown",
+      "path": "human-v2-full-review.md",
+      "sha256": "707234e8a0e8541836e5a6d95d1c53a6aaf20687c3be415e45f1c841d5963dc6"
+    },
+    {
+      "type": "review_report_json",
+      "path": "human-v2-full-review.json",
+      "sha256": "b7083c6f10fe4146827f7d85922e3308e32974dfe8e3019df7427db373b2ca27"
+    },
+    {
+      "type": "revision_draft_markdown",
+      "path": "human-v2-revision-draft.md",
+      "sha256": "6ab0f4c5896ff90ff02a317d774aea32eab42319d89dfaf32d7887b3b3a1606a"
+    }
+  ],
+  "severityCounts": {
+    "P0": 0,
+    "P1": 4,
+    "P2": 4,
+    "P3": 0
+  },
+  "sourceContentModified": false,
+  "contentVersionCreated": false,
+  "approved": false,
+  "completedAt": "2026-08-24T03:27:37.5130978Z"
+}

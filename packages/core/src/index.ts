@@ -21,3 +21,4 @@ export * from "./team-runtime.js";
 export * from "./topic-radar.js";
 export * from "./team-coordinator.js";
 export * from "./v55-handlers.js";
+export * from "./version.js";

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0.0",
+  "batchId": "BATCH-01",
+  "validatedAt": "2026-08-22T09:32:59.647Z",
+  "validatedBy": "balala-self-check",
+  "overallResult": "PASS_FOR_LILITH_LIGHT_REVIEW",
+  "checks": {
+    "sourceHumanReviewCopyHashes": {
+      "TOPIC-INDUSTRIAL-AI-001": {
+        "expected": "b72d52816ebfaef1f6f43ce105091081c1dfd69af72a3e21c86d58ade8391230",
+        "actual": "b72d52816ebfaef1f6f43ce105091081c1dfd69af72a3e21c86d58ade8391230",
+        "result": "PASS"
+      },
+      "TOPIC-INDUSTRIAL-AI-002": {
+        "expected": "be5c60f3b5445aab5676800fd725da537ff603cab3eb0fb3bc014aa259ac0c61",
+        "actual": "be5c60f3b5445aab5676800fd725da537ff603cab3eb0fb3bc014aa259ac0c61",
+        "result": "PASS"
+      }
+    },
+    "sourceApprovalDecisions": "PASS",
+    "sourceContentVersionHashes": "PASS",
+    "zodVariantBriefs": {
+      "count": 2,
+      "result": "PASS"
+    },
+    "zodVariantPackages": {
+      "count": 10,
+      "result": "PASS"
+    },
+    "jsonParse": "PASS",
+    "wechatContentSubheads": {
+      "TOPIC-INDUSTRIAL-AI-001": {
+        "compliantCount": 5,
+        "lengthsWithoutColon": [
+          10,
+          10,
+          11,
+          10,
+          11
+        ],
+        "result": "PASS"
+      },
+      "TOPIC-INDUSTRIAL-AI-002": {
+        "compliantCount": 5,
+        "lengthsWithoutColon": [
+          10,
+          10,
+          11,
+          12,
+          10
+        ],
+        "result": "PASS"
+      },
+      "note": "The final source-list heading is metadata, not a content-section subhead."
+    },
+    "xiaohongshuDeepCards": {
+      "TOPIC-INDUSTRIAL-AI-001": {
+        "count": 7,
+        "result": "PASS"
+      },
+      "TOPIC-INDUSTRIAL-AI-002": {
+        "count": 8,
+        "result": "PASS"
+      }
+    },
+    "xOfficialWeightedFallback": {
+      "TOPIC-INDUSTRIAL-AI-001": {
+        "counts": [
+          175,
+          208,
+          178,
+          185,
+          181,
+          189,
+          178,
+          191
+        ],
+        "maximum": 280,
+        "result": "PASS"
+      },
+      "TOPIC-INDUSTRIAL-AI-002": {
+        "counts": [
+          188,
+          206,
+          235,
+          166,
+          194,
+          147,
+          202,
+          199
+        ],
+        "maximum": 280,
+        "result": "PASS"
+      }
+    },
+    "linkedinBilingualSelfCheck": "PASS_PENDING_LILITH",
+    "claimEvidenceInheritance": "PASS_PENDING_004_AND_LILITH",
+    "newClaims": 0,
+    "customerCasesAdded": 0,
+    "nomosInsertions": 0,
+    "publicationActions": 0,
+    "contentVersionsCreatedByBalala": 0,
+    "humanGateDecisionsCreatedByBalala": 0
+  },
+  "nextRoute": "LILITH_VARIANT_LIGHT_REVIEW",
+  "formalApprovalGranted": false,
+  "finalVariantsApproved": false,
+  "validatedAtSource": "NTFS_CREATION_TIME_UTC",
+  "chronology": {
+    "variantCreatedAtMin": "2026-08-22T09:30:46.986Z",
+    "variantCreatedAtMax": "2026-08-22T09:31:14.503Z",
+    "validatedAt": "2026-08-22T09:32:59.647Z",
+    "lilithReviewedAtMin": "2026-08-22T09:38:17.5624920Z",
+    "condition": "variantCreatedAtMax <= validatedAt <= lilithReviewedAtMin",
+    "result": "PASS"
+  },
+  "hashReferences": {
+    "manifestDeclaredHash": "aa163b6d17dff595683e8cb6f11a25e24c58568081faa2c5d1e2f71beb8db306",
+    "manifestFileHash": "e6ddf53d17476a91dbe8f260b3e5cc7f172c9c3fe0772cc4fdb5635e0fca3f4c",
+    "variantProposalFileHashes": {
+      "VAR-TOPIC-INDUSTRIAL-AI-001-WECHAT-V1": "3a0326d4d15a0b5363233fabad8e82edc2c586aa227f9166fb7eb2103fd2463e",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-SHORT_VIDEO-V1": "5ab027f6dbb33b9dba41c0b3e1645da33ca6e3d89f57363079ebb56b98a7b487",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-XIAOHONGSHU-V1": "d9e7422f14cc7f6f37dc321d71b78924566e4396c4fb1cc7780671f75b74cd9d",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-X-V1": "0f87c2a121c26a0a57eca8d8cdaf57f1f5dd8bc3dc74d0554fa7c25ad6317090",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-LINKEDIN-V1": "4c08bd51e3fd8091b1edadf59226578fb7783e357eb74d36364a58238c24dcbe",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-WECHAT-V1": "2356ad4ee58722e2dd8619366006f07b8972c119605f818aa72e62d443115f93",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-SHORT_VIDEO-V1": "df13faf2d8c8fab6ad509d40df4bcddcdb2922c58645afba978912895e5e6f7c",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-XIAOHONGSHU-V1": "7a8fa4067d58c0761059260cd9436312727ac5da22d88bb6b3f482e401c5c7fd",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-X-V1": "cbb7e7f463085a31c1de1bbc54851ffa17ce0a4622acd71252d0a39031954379",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-LINKEDIN-V1": "72f587e2d40803f2e2edfa99e2b8d27431b9f48c90e68c64ce6337a290b35bfd"
+    },
+    "humanReviewArtifactHashes": {
+      "VAR-TOPIC-INDUSTRIAL-AI-001-WECHAT-V1": "e465139233a6d9f51bb7484d0cf58e8c2b56eebc544bdd1a8eb63fcac8725fbf",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-SHORT_VIDEO-V1": "cda1dcc35c60a76035d7495c5c0af1c2eb87f05d060a8e211b12f0db621af3bf",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-XIAOHONGSHU-V1": "52aa8b83a790d0d10d45119b8b2c05a89996d56e082f01b3fa10713c82d292e1",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-X-V1": "651fa121b81bae1a75412e0073d05459724eed048ef1df4f99efa8b4debf5afc",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-LINKEDIN-V1": "5e056a1aa20c45833cebc665dfd69fbad5cfe0dee27b80f6fa405b053fb56df7",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-WECHAT-V1": "c6c75d081bc41e7eeb05ca17d9e3a85edeb2f8ab2fd934aca88ec45c94c6b84b",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-SHORT_VIDEO-V1": "58b8bc4ce2a3b26768d36323367a38e179c259e19ea63ec45df4d73d072f1c07",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-XIAOHONGSHU-V1": "730fdcbb8e49f6a4609485d50cacf6cdc5130698b603e238199d1ae5e94de533",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-X-V1": "d338986f3d97770f9274c2c627cc6d024ae90f5ae5c77cf011180d9dceb4282b",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-LINKEDIN-V1": "3dc92516a69818118687bcead633e464cf75eaa543b342478aeaac62e1c63a53"
+    },
+    "semanticContentHashesUnchanged": {
+      "VAR-TOPIC-INDUSTRIAL-AI-001-WECHAT-V1": "ecc05bd9427e2e6f9e9e6b5ff11a1183b0b33c7ae89578bc1211d311ba8e5b46",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-SHORT_VIDEO-V1": "d6a788bd83dd848d164decccd1280393c8d38ca82cb641eb99491198199033dd",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-XIAOHONGSHU-V1": "f0370dc366c730f1b00e5d42a5a39c96079fc8d7b2f2cf8085d10c856beef0fa",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-X-V1": "bc6bc70d1798e7d50dc7dd9084165fd08aacf2c867f129cb5e5cb3c63142f230",
+      "VAR-TOPIC-INDUSTRIAL-AI-001-LINKEDIN-V1": "7b9adc0007dbee18a303605236f5a1cc8520634e25d76ca79154c250d1c52291",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-WECHAT-V1": "7b366ba499e1082459e82b1b61cf278f7bbe76e83b31233dd5a0d4c210360bb1",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-SHORT_VIDEO-V1": "e50855537bfe8ff09d8e6f9c87232ddb21a88ae9357687bebc8e5c76e4852451",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-XIAOHONGSHU-V1": "5512f8d77a3e34de455991d5129431f79991edd56df8d66aa1b9da7deacecc51",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-X-V1": "0265488f508249de6d2aece336faae44f1f4d190cbc177a8045a1e65ad65d52d",
+      "VAR-TOPIC-INDUSTRIAL-AI-002-LINKEDIN-V1": "e9f351e61a53426f6d7bbe243843174681ee5f729c2ed8280e9a6873d4d471bf"
+    }
+  }
+}

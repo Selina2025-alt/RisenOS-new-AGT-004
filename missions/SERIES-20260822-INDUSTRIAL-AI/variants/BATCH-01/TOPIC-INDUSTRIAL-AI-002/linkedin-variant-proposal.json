@@ -1,0 +1,193 @@
+{
+  "agent": "balala",
+  "variantId": "VAR-TOPIC-INDUSTRIAL-AI-002-LINKEDIN-V1",
+  "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-002-V1",
+  "sourceContentHash": "12f20f7c7a4f04a834573c718b6d22f35ed436075b8eadbeb15de5d4a9d8f2c5",
+  "sourceReviewId": "LILITH-BATCH01-TOPIC002-R2-FINAL",
+  "sourceApprovalDecisionId": "HGD-SOURCE-TOPIC-INDUSTRIAL-AI-002-R2",
+  "channel": "linkedin",
+  "language": "en+zh-CN",
+  "variantType": "linkedin_company_post",
+  "variantMode": "EN_PRIMARY_ZH_BACKUP",
+  "copy": {
+    "contentPillar": "Enterprise AI Governance / Industry POV",
+    "englishPrimary": "A controlled AI demo can be impressive. Enterprise readiness is a different test.\n\nIn a demo, a quoting task may read one request and return an answer. In real operations, the same task must verify the customer, product, inventory, price conditions, and permissions. It must know what to do when information is missing or rules conflict, and it must preserve the basis for each decision.\n\nResearch points to the same gap. RAND’s 2024 study interviewed 65 experienced AI engineers and researchers across more than 50 organizations. Reported failure drivers included unclear problems and metrics, unavailable data, infrastructure gaps, and applying AI beyond current technical capability. MIT CISR similarly argues that strategy, systems, people and team collaboration, and governance must mature together.\n\nJovaAI therefore uses five practical checks: Is the problem a real business problem? Is enterprise knowledge trusted, current, and access-controlled? Are tool permissions explicit? Are exceptions handled? Is the task repeatable, measurable, and traceable?\n\nOur product direction treats professional agents as a governed collaboration unit. Each role needs a clear task, tools, limits, escalation conditions, and handoffs. JovaOS is designed to carry and govern enterprise agents and their collaboration.\n\nThe goal is not unlimited autonomy or a larger number of agents. It is the move from visible capability to business usability—while keeping the process visible, the boundaries controllable, and accountability clear.\n\nWhich of these five checks is hardest in your current AI pilot?",
+    "chineseBackup": "一场受控的AI演示可以非常惊艳，但企业可用性是另一种检验。\n\n演示里的询报价任务，可能只要读取一份需求并给出答案。进入真实运营，同一个任务要确认客户、商品、库存、价格条件和权限；信息缺失或规则冲突时要知道怎样处理；每个决定还要保留依据。\n\n研究也指向同一差距。RAND在2024年的研究访谈了65位有经验的AI工程师和研究人员，覆盖50多个组织。报告中的失败原因包括问题和指标不清、数据不可用、基础设施不足，以及把AI用于超出当前技术能力的任务。MIT CISR同样指出，战略、系统、人员与团队协同、治理需要一起成熟。\n\n因此，艾氪智能用五个问题检查落地条件：是不是真实业务问题？企业知识是否可信、适时并有访问边界？工具权限是否明确？例外能否被处理？任务能否重复、测量和追溯？\n\n我们的产品方向，是把专业智能体作为受治理的协同单元。每个角色都需要明确任务、工具、边界、升级条件和交接方式；JovaOS用于承载和治理企业智能体及其协同关系。\n\n目标不是无限自主，也不是堆叠更多智能体，而是从能力可见走向业务可用，同时让过程看得见、边界管得住、责任找得到。\n\n在您的AI试点中，这五项里最难的是哪一项？",
+    "equivalencePairs": [
+      "核心问题一致：真实业务任务 / 业务可用性",
+      "企业与产品定位一致",
+      "量化数据与口径边界一致（如适用）",
+      "行动建议与软CTA一致",
+      "两种语言均未新增客户成果或产品能力"
+    ],
+    "tags": [
+      "#EnterpriseAI",
+      "#IndustrialAI",
+      "#AgenticAI",
+      "#MultiAgentSystems"
+    ]
+  },
+  "assetBrief": {
+    "assetType": "cover+document_carousel",
+    "aspectRatio": "1.91:1 post image; 4:5 document pages",
+    "purpose": "LinkedIn公司主页配图与轮播",
+    "visualDirection": "国际企业级视觉；一页一个判断；突出Task, Proof, Implication和Boundary。",
+    "textOverlay": "Enterprise AI: Demo vs. Business Usability",
+    "deliverables": [
+      "1张帖子首图",
+      "5页轮播Brief",
+      "英文Alt Text"
+    ],
+    "altText": "A five-part enterprise AI readiness checklist covering business goals, knowledge, permissions, exceptions and traceability.",
+    "rightsRequired": true,
+    "restrictions": [
+      "不得使用未授权客户名称、Logo、界面或数据",
+      "不得把示意场景包装为真实客户案例",
+      "所有外部素材须单独完成版权清权"
+    ]
+  },
+  "inheritedClaimBindings": [
+    {
+      "claimId": "EXT-002-01",
+      "evidenceIds": [
+        "evidence:PUB-001",
+        "evidence:PUB-002"
+      ],
+      "statementHash": "923e4b5819252c2f95a776d0d0956cc118b9986d4851a74e9302908c14036fb5"
+    },
+    {
+      "claimId": "EXT-002-02",
+      "evidenceIds": [
+        "evidence:PUB-002",
+        "evidence:PUB-003",
+        "evidence:PUB-004"
+      ],
+      "statementHash": "d72c1ef0adb5a3c125389f90bb7ab64e26b2de083549b5df7eda0dcdd13acbe1"
+    },
+    {
+      "claimId": "claim:S1-C02",
+      "evidenceIds": [
+        "EXT-002-01",
+        "EXT-002-02",
+        "evidence:S1-A02"
+      ],
+      "statementHash": "03ab3614c1ab9399c6ed8520d4de83663d83da7a61252a28ac3bb554a858874f"
+    },
+    {
+      "claimId": "claim:S1-A02",
+      "evidenceIds": [
+        "PROD-TEAM"
+      ],
+      "statementHash": "137b85c39ecaf295b409f4d7fa93385fe7ca9226705ff1d2cd2b91a007c5683a"
+    },
+    {
+      "claimId": "claim:S1-A03",
+      "evidenceIds": [
+        "PROD-2L4M"
+      ],
+      "statementHash": "662ca531cfec0585e5bcfbd606dc4758937e792e0fa03d3f64b5d5dd34426082"
+    }
+  ],
+  "inheritedCoverageMap": {
+    "sourceRef": "geo-seo/BATCH-01/revision-2/TOPIC-INDUSTRIAL-AI-002-content-coverage-map.json",
+    "sourceHash": "3eb17ba52f44696eaf6ccef684b71f4fa2be201a15199a72a25d8f28e10ef751",
+    "primarySeoIntent": {
+      "seoId": "SEO-0165",
+      "query": "企业AI落地难点",
+      "intentType": "PROBLEM_DIAGNOSIS",
+      "coverage": "FULL",
+      "coveredBy": [
+        "演示验证：只是能力片段",
+        "进入业务：变量开始叠加",
+        "业务可用：过程必须可追溯",
+        "判断落地：别只看那一刻"
+      ]
+    },
+    "geoQuestionIds": [
+      "GEO-0175",
+      "GEO-0168",
+      "GEO-0027",
+      "GEO-0024"
+    ],
+    "answerBlockIds": [
+      "AB-TOPIC002-R2-001",
+      "AB-TOPIC002-R2-002"
+    ],
+    "mustNotForceCoverage": [
+      {
+        "id": "GEO-0024",
+        "item": "企业从哪个高价值场景开始最合适？",
+        "reason": "只标记PARTIAL，完整场景选择和行动清单归入TOPIC-INDUSTRIAL-AI-005。",
+        "disposition": "DEFERRED_TO_TOPIC_005"
+      },
+      {
+        "id": "GEO-0008",
+        "item": "艾氪智能有哪些落地案例？",
+        "reason": "没有授权CaseEvidenceCard。"
+      },
+      {
+        "id": "GEO-0026",
+        "item": "如何评估智能体团队的ROI？",
+        "reason": "没有客户结果和归因证据。"
+      },
+      {
+        "id": "NOMOS",
+        "item": "Nomos产品植入",
+        "reason": "Supervisor对TOPIC-INDUSTRIAL-AI-002明确DO_NOT_INSERT。"
+      }
+    ]
+  },
+  "skillTrace": [
+    {
+      "skillId": "balala-channel-adaptation",
+      "source": "local-agent",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "channel_structure",
+        "tone",
+        "asset_brief"
+      ],
+      "outputInfluence": "Adapted an approved immutable source without changing its factual boundary.",
+      "reviewStatus": "USED",
+      "channel": "linkedin"
+    },
+    {
+      "skillId": "claim-evidence-inheritance",
+      "source": "content-core",
+      "versionOrHash": "v5.5.1",
+      "usedFor": [
+        "claim_inheritance",
+        "evidence_boundary"
+      ],
+      "outputInfluence": "Restricted every channel proposal to the source ContentVersion claim snapshot.",
+      "reviewStatus": "USED",
+      "channel": "linkedin"
+    }
+  ],
+  "variantValidation": {
+    "sourceApproval": "PASS",
+    "sourceVersionHash": "PASS",
+    "channelStructure": "PASS",
+    "claimInheritance": "PASS_SELF_CHECK_PENDING_004_LILITH",
+    "evidenceInheritance": "PASS_SELF_CHECK_PENDING_004_LILITH",
+    "newClaims": 0,
+    "nomosInsertion": 0,
+    "forbiddenPlatformFields": 0,
+    "ctaCompliance": "PASS",
+    "linkedinLanguageEquivalence": "PASS_SELF_CHECK_PENDING_LILITH"
+  },
+  "selfCheck": {
+    "result": "PASS_FOR_LILITH_REVIEW",
+    "coreClaimChanged": false,
+    "productPositioningChanged": false,
+    "evidenceAdded": false,
+    "customerCaseAdded": false,
+    "formalContentVersionCreated": false,
+    "selfApproved": false
+  },
+  "reviewStatus": "RE_REVIEW_REQUIRED",
+  "contentHash": "e9f351e61a53426f6d7bbe243843174681ee5f729c2ed8280e9a6873d4d471bf",
+  "contentHashScope": "copy+assetBrief",
+  "createdAt": "2026-08-22T09:31:14.503Z",
+  "traceId": "trace_industrial_ai_20260822_002"
+}

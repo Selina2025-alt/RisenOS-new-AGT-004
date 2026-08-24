@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "LILITH-BATCH01-TOPIC002-VARIANTS-V1",
+  "reviewType": "LILITH_VARIANT_LIGHT_REVIEW",
+  "reviewAgent": "lilith",
+  "mode": "READ_ONLY",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-002-V1",
+  "sourceContentHash": "12f20f7c7a4f04a834573c718b6d22f35ed436075b8eadbeb15de5d4a9d8f2c5",
+  "sourceApprovalDecisionId": "HGD-SOURCE-TOPIC-INDUSTRIAL-AI-002-R2",
+  "sourceApprovalGate": "SOURCE_DRAFT_APPROVED",
+  "reviewStatus": "PASS",
+  "nextRoute": "READY_FOR_HUMAN_FINAL_VARIANTS_REVIEW",
+  "severityCounts": { "P0": 0, "P1": 0, "P2": 2, "P3": 0 },
+  "checks": {
+    "sourceVersionAndHash": "PASS",
+    "contentHashAndManifest": "PASS",
+    "claimEvidenceInheritance": "PASS",
+    "newClaims": 0,
+    "newCustomerCases": 0,
+    "nomosInsertions": 0,
+    "productPositioning": "PASS",
+    "logic": "PASS",
+    "aiStyle": "PASS_WITH_P2_POLISH",
+    "channelStructure": "PASS",
+    "publicCopyInternalFieldLeakage": 0,
+    "reviewArtifactsContainInternalLineage": true,
+    "formalApprovalGranted": false
+  },
+  "channelReviews": [
+    {
+      "channel": "wechat",
+      "variantId": "VAR-TOPIC-INDUSTRIAL-AI-002-WECHAT-V1",
+      "contentHash": "7b366ba499e1082459e82b1b61cf278f7bbe76e83b31233dd5a0d4c210360bb1",
+      "humanReviewArtifactHash": "c6c75d081bc41e7eeb05ca17d9e3a85edeb2f8ab2fd934aca88ec45c94c6b84b",
+      "reviewStatus": "PASS",
+      "p0": 0, "p1": 0, "p2": 0,
+      "channelEvidence": { "compliantColonSubheads": 5, "duplicateH1": 0 }
+    },
+    {
+      "channel": "short-video",
+      "variantId": "VAR-TOPIC-INDUSTRIAL-AI-002-SHORT_VIDEO-V1",
+      "contentHash": "e50855537bfe8ff09d8e6f9c87232ddb21a88ae9357687bebc8e5c76e4852451",
+      "humanReviewArtifactHash": "58b8bc4ce2a3b26768d36323367a38e179c259e19ea63ec45df4d73d072f1c07",
+      "reviewStatus": "PASS",
+      "p0": 0, "p1": 0, "p2": 1,
+      "channelEvidence": { "durationSeconds": 116, "hooks": 3, "visualPlan": true, "subtitlePlan": true }
+    },
+    {
+      "channel": "xiaohongshu",
+      "variantId": "VAR-TOPIC-INDUSTRIAL-AI-002-XIAOHONGSHU-V1",
+      "contentHash": "5512f8d77a3e34de455991d5129431f79991edd56df8d66aa1b9da7deacecc51",
+      "humanReviewArtifactHash": "730fdcbb8e49f6a4609485d50cacf6cdc5130698b603e238199d1ae5e94de533",
+      "reviewStatus": "PASS",
+      "p0": 0, "p1": 0, "p2": 0,
+      "channelEvidence": { "mode": "DEEP_5_9_CARD", "cardCount": 8, "informationDensity": "PASS" }
+    },
+    {
+      "channel": "x",
+      "variantId": "VAR-TOPIC-INDUSTRIAL-AI-002-X-V1",
+      "contentHash": "0265488f508249de6d2aece336faae44f1f4d190cbc177a8045a1e65ad65d52d",
+      "humanReviewArtifactHash": "d338986f3d97770f9274c2c627cc6d024ae90f5ae5c77cf011180d9dceb4282b",
+      "reviewStatus": "PASS",
+      "p0": 0, "p1": 0, "p2": 0,
+      "channelEvidence": { "tweetCount": 8, "weightedCounts": [188, 206, 235, 166, 194, 147, 202, 199], "allWithin280": true }
+    },
+    {
+      "channel": "linkedin",
+      "variantId": "VAR-TOPIC-INDUSTRIAL-AI-002-LINKEDIN-V1",
+      "contentHash": "e9f351e61a53426f6d7bbe243843174681ee5f729c2ed8280e9a6873d4d471bf",
+      "humanReviewArtifactHash": "3dc92516a69818118687bcead633e464cf75eaa543b342478aeaac62e1c63a53",
+      "reviewStatus": "PASS",
+      "p0": 0, "p1": 0, "p2": 1,
+      "channelEvidence": { "englishPrimary": true, "chineseBackup": true, "factEquivalence": "PASS", "altText": true }
+    }
+  ],
+  "issues": [
+    {
+      "issueId": "LILITH-T002-VAR-P2-001",
+      "severity": "P2",
+      "module": "channel_tone",
+      "routeTo": "balala",
+      "location": "short-video / 22–42秒",
+      "problem": "20秒口播同时承载RAND受访规模和五类失败原因，真人口播负荷偏高。",
+      "suggestion": "人工终审如认为节奏紧，可口播三类代表性原因，完整五项留在屏幕研究卡；不得改变受访规模和研究归属。",
+      "autoFixable": true,
+      "blocksFinalHumanReview": false
+    },
+    {
+      "issueId": "LILITH-T002-VAR-P2-002",
+      "severity": "P2",
+      "module": "evidence_presentation",
+      "routeTo": "balala",
+      "location": "linkedin / research paragraph",
+      "problem": "正文提及RAND和MIT CISR但未给原始链接，内部Evidence完整，公开读者的即时核验路径可增强。",
+      "suggestion": "可在文末、轮播或首评加入已核验原始链接，不新增Claim。",
+      "autoFixable": true,
+      "blocksFinalHumanReview": false
+    }
+  ],
+  "deliveryGuard": "Export public copy only. Do not export review Markdown, claim IDs, evidence IDs, review state, gate IDs, or hashes as public content.",
+  "contentModified": false,
+  "contentVersionCreated": false,
+  "channelVariantCreated": false,
+  "finalVariantsApproved": false,
+  "reviewedAt": "2026-08-22T09:47:17.2433561Z"
+}

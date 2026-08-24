@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "eventId": "PROJECT-RELEASE-V5.5.2-20260824",
+  "eventType": "PROJECT_VERSION_CREATED",
+  "projectVersion": "5.5.2",
+  "previousVersion": "5.5.1",
+  "status": "DEVELOPMENT",
+  "createdAt": "2026-08-24T03:50:00Z",
+  "createdBy": "agt-004",
+  "authorizedBy": "user_enterprise",
+  "reason": "企业方要求所有项目层修改和能力进化必须标记版本；本轮莉莉丝新增重复与叙事质量审核。",
+  "changes": [
+    "新增repetition审核模块",
+    "新增narrative_quality审核模块",
+    "修复Windows CRLF段落识别",
+    "升级莉莉丝Prompt与Artifact Prompt版本",
+    "建立项目版本单一真源与fail-closed一致性校验",
+    "建立Changelog、Release Notes和版本制度"
+  ],
+  "compatibility": {
+    "databaseMigration": false,
+    "publicApiBreaking": false,
+    "schemaChange": "BACKWARD_COMPATIBLE_ENUM_EXTENSION",
+    "oldArtifactsRewritten": false
+  },
+  "validation": {
+    "typecheck": "PASS",
+    "coreTests": "56/56 PASS",
+    "teamRuntimeValidation": "PASS",
+    "gitDiffCheck": "PASS"
+  },
+  "rollback": {
+    "target": "v5.5.1",
+    "deleteNewArtifacts": false,
+    "gitTagCreated": false
+  }
+}

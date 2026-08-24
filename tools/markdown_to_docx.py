@@ -46,15 +46,19 @@ def add_page_number(paragraph) -> None:
 
 
 def clean_inline(text: str) -> str:
-    return (
+    cleaned = (
         text.replace("`", "")
         .replace("**", "")
         .replace("<br>", " ")
         .replace("<br/>", " ")
     )
+    return re.sub(r"\*([^*]+)\*", r"\1", cleaned)
 
 
-def configure_document(document: Document) -> None:
+def configure_document(
+    document: Document,
+    header_text: str = "艾氪智能｜AGT-RSN-004 内容合规知识库",
+) -> None:
     section = document.sections[0]
     section.page_width = Cm(21)
     section.page_height = Cm(29.7)
@@ -88,7 +92,7 @@ def configure_document(document: Document) -> None:
         style.paragraph_format.space_after = Pt(5)
 
     header = section.header.paragraphs[0]
-    header.text = "艾氪智能｜AGT-RSN-004 内容合规知识库"
+    header.text = header_text
     header.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     for run in header.runs:
         set_run_font(run, 9)
@@ -134,9 +138,13 @@ def parse_table(lines: list[str], start: int) -> tuple[list[list[str]], int]:
     return rows, index
 
 
-def convert(source: Path, target: Path) -> None:
+def convert(
+    source: Path,
+    target: Path,
+    header_text: str = "艾氪智能｜AGT-RSN-004 内容合规知识库",
+) -> None:
     document = Document()
-    configure_document(document)
+    configure_document(document, header_text=header_text)
     lines = source.read_text(encoding="utf-8").splitlines()
     index = 0
     title_seen = False
@@ -215,6 +223,10 @@ def convert(source: Path, target: Path) -> None:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        raise SystemExit("usage: markdown_to_docx.py SOURCE.md TARGET.docx")
-    convert(Path(sys.argv[1]), Path(sys.argv[2]))
+    if len(sys.argv) not in {3, 4}:
+        raise SystemExit("usage: markdown_to_docx.py SOURCE.md TARGET.docx [HEADER_TEXT]")
+    convert(
+        Path(sys.argv[1]),
+        Path(sys.argv[2]),
+        header_text=sys.argv[3] if len(sys.argv) == 4 else "艾氪智能｜AGT-RSN-004 内容合规知识库",
+    )

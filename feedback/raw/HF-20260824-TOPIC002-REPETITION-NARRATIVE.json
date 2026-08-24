@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "feedbackId": "HF-20260824-TOPIC002-REPETITION-NARRATIVE",
+  "organizationId": "org_jovaai",
+  "topicId": "TOPIC-INDUSTRIAL-AI-002",
+  "receivedAt": "2026-08-24T03:09:34+00:00",
+  "receivedFrom": "user_enterprise",
+  "sourceArtifact": {
+    "fileName": "10、AI为什么在演示里很好用，一进业务却容易失灵？【codex】_JovaAI Nomos重点修订版_v2.docx",
+    "sha256": "cc595845ebec8b7f7c68cd68674699f4cf574e45ef3892da526843e0133e961f"
+  },
+  "humanEdit": {
+    "removed": "这条研发路径经历了三个阶段：先用固定编排连接任务，再让智能体根据现场情况自主调度，最后走向制度约束下的自主协同。制度负责明确角色、权限、责任和例外边界，智能体在边界内保留判断；一旦超出权限、证据不足或规则冲突，就暂停并把决定交还给人。",
+    "mergedIntoPrevious": "制度负责明确角色、权限、责任和例外边界，智能体在边界内保留判断。"
+  },
+  "observedChanges": [
+    "删除与全文权限、边界、人工接管判断重复的研发阶段说明",
+    "将必要的制度作用压缩并入Nomos产品与架构段",
+    "缩短Nomos概念解释到业务场景之间的距离",
+    "不再为了展示知识完整度而保留对当前论证没有新增价值的段落"
+  ],
+  "userInstruction": "莉莉丝新增车轱辘话审核；翻来覆去讲的内容要删减；长文要有故事性，像真人在分享。",
+  "status": "NORMALIZED"
+}

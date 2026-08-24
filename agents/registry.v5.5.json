@@ -1,9 +1,11 @@
 {
   "schemaVersion": "1.0.0",
-  "release": "5.5.1",
+  "release": "5.5.2",
   "agents": [
     {
       "agentId": "agt-004",
+      "version": "5.5.2",
+      "manifestHash": "agt-004-v5.5.2",
       "displayName": "AGT-RSN-004",
       "role": "supervisor",
       "rolloutMode": "ENFORCING",
@@ -13,6 +15,8 @@
     },
     {
       "agentId": "topic-radar",
+      "version": "5.5.2",
+      "manifestHash": "topic-radar-v5.5.2",
       "displayName": "噜噜猫",
       "role": "topic_radar",
       "rolloutMode": "SHADOW",
@@ -22,6 +26,8 @@
     },
     {
       "agentId": "public-researcher",
+      "version": "5.5.2",
+      "manifestHash": "public-researcher-v5.5.2",
       "displayName": "依古比古",
       "role": "public_researcher",
       "rolloutMode": "SHADOW",
@@ -31,6 +37,8 @@
     },
     {
       "agentId": "makabaka",
+      "version": "5.5.2",
+      "manifestHash": "makabaka-v5.5.2",
       "displayName": "玛卡巴卡",
       "role": "enterprise_knowledge_matcher",
       "rolloutMode": "SHADOW",
@@ -40,6 +48,8 @@
     },
     {
       "agentId": "content-orchestrator",
+      "version": "5.5.2",
+      "manifestHash": "content-orchestrator-v5.5.2",
       "displayName": "唔西迪西",
       "role": "content_orchestrator",
       "rolloutMode": "SHADOW",
@@ -49,6 +59,8 @@
     },
     {
       "agentId": "lilith",
+      "version": "5.5.2",
+      "manifestHash": "lilith-v5.5.2",
       "displayName": "莉莉丝",
       "role": "reviewer",
       "rolloutMode": "SHADOW",
@@ -58,6 +70,8 @@
     },
     {
       "agentId": "xiaodiandian",
+      "version": "5.5.2",
+      "manifestHash": "xiaodiandian-v5.5.2",
       "displayName": "小点点",
       "role": "geo_seo_optimizer",
       "rolloutMode": "SHADOW",
@@ -67,6 +81,8 @@
     },
     {
       "agentId": "balala",
+      "version": "5.5.2",
+      "manifestHash": "balala-v5.5.2",
       "displayName": "巴啦啦",
       "role": "variant_agent",
       "rolloutMode": "SHADOW",

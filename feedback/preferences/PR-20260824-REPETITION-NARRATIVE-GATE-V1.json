@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "preferenceId": "PR-20260824-REPETITION-NARRATIVE-GATE-V1",
+  "sourceFeedbackIds": [
+    "HF-20260824-TOPIC002-REPETITION-NARRATIVE"
+  ],
+  "scope": "wechat_and_enterprise_longform_repetition_narrative_review",
+  "appliesWhen": [
+    "公众号或企业长文已经形成完整初稿",
+    "同一核心判断在多个章节以不同措辞出现",
+    "文章包含连续抽象解释、规则清单或产品说明"
+  ],
+  "doesNotApplyWhen": [
+    "标题、导语和结尾对核心判断的简短首尾呼应",
+    "合规、保密、版权或高风险事实必须重复提示边界",
+    "后文新增事实、证据、机制、场景、决策或适用边界",
+    "短视频等需要有意重复关键信息以适配听觉理解的渠道"
+  ],
+  "channel": ["wechat", "longform"],
+  "contentType": ["enterprise_ai_thought_leadership", "product_explanation", "deep_analysis"],
+  "audience": ["enterprise_decision_makers", "business_leaders"],
+  "topicType": ["enterprise_ai", "industrial_ai", "agentic_os", "product_narrative"],
+  "strength": "STRONG",
+  "rule": "莉莉丝必须识别同义反复和车轱辘话：保留第一次被事实、机制或场景讲透的段落；后文只有新增事实、机制、场景、决策或边界时才保留，否则删除或合并。公众号长文应沿可跟随的场景推进，使用人物动作、冲突、选择和后果承载观点；没有真实经历证据时不得伪造第一人称故事。",
+  "examples": [
+    {
+      "avoid": "在连续多个章节反复说明权限、边界、责任和人工接管，只更换句式。",
+      "prefer": "开头用询报价任务提出冲突，中段解释为什么卡住，Nomos章节给出制度协同机制，结尾只保留行动判断。"
+    }
+  ],
+  "confidence": 0.98,
+  "approvedByHuman": true,
+  "approvedBy": "user_enterprise",
+  "approvedAt": "2026-08-24T03:09:34+00:00",
+  "version": "1.0.0",
+  "status": "ACTIVE_SCOPED",
+  "rollbackAvailable": true
+}

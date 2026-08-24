@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "snapshotId": "KS-TOPIC-INDUSTRIAL-AI-002-HUMAN-V2-NOMOS",
+  "missionId": "TOPIC-INDUSTRIAL-AI-002",
+  "canonVersion": "nomos-canon-20260820-v1.0.0",
+  "sourceHashes": [
+    "0c9ce442db2f70bca2035500ae6375c0d0046d14667a6885d53e58b1f66cc152",
+    "a7feb656f5050bba8e2459414b80c3b355b946932894efc2ba1dbbe91c8be954",
+    "cc595845ebec8b7f7c68cd68674699f4cf574e45ef3892da526843e0133e961f"
+  ],
+  "claimCardIds": [
+    "kc_nomos_product_axis_20260820",
+    "kc_nomos_inside_os_20260820",
+    "kc_nomos_origin_problem_20260820"
+  ],
+  "excludedClaimIds": [
+    "kc_nomos_evolution_20260820",
+    "kc_nomos_human_api_20260820",
+    "kc_nomos_greek_origin_20260820",
+    "kc_nomos_260t_20260820"
+  ],
+  "conflictIds": ["OLD_TOPIC_002_NOMOS_FORBIDDEN_INSERTION_SUPERSEDED_FOR_HUMAN_V2_ONLY"],
+  "audienceLayer": "BUSINESS",
+  "publicationScope": "PUBLIC_WECHAT",
+  "knowledgePolicyVersion": "V5.5.1-human-v2-task-override",
+  "createdAt": "2026-08-24T03:29:24.0549766Z",
+  "createdBy": "agt-004",
+  "approvedByHuman": true,
+  "approvedBy": "user_enterprise",
+  "status": "ACTIVE_TASK_SCOPE",
+  "automaticKnowledgeWriteback": false
+}

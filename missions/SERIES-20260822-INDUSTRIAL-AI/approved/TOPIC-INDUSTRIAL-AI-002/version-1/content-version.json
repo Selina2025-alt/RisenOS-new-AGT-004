@@ -1,0 +1,165 @@
+{
+  "id": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-002-V1",
+  "organizationId": "org_jovaai",
+  "createdBy": "user_enterprise",
+  "traceId": "trace_industrial_ai_20260822_002",
+  "createdAt": "2026-08-22T09:23:46.273Z",
+  "updatedAt": "2026-08-22T09:23:46.273Z",
+  "status": "APPROVED",
+  "assetId": "CONTENT-ASSET-TOPIC-INDUSTRIAL-AI-002",
+  "versionNumber": 1,
+  "title": "AI为什么在演示里很好用，一进业务却容易失灵？",
+  "body": "# AI为什么在演示里很好用，一进业务却容易失灵？\n\n一场受控的AI演示，往往很顺。\n\n问题提前准备好了，输入材料相对干净，任务边界也足够清楚。AI在几分钟内完成分析、生成方案，甚至展示一段连续操作，很容易让人产生一个判断：既然它已经能做到这些，接进企业业务应该只是时间问题。\n\n真正进入业务，问题却变了。\n\n同一个询报价任务，演示时也许只需要读取一份需求，再给出一个结果。放进企业现场，系统还要确认客户身份、商品信息、库存和价格条件，判断谁有权查看、谁有权修改，遇到缺货、规则冲突或信息不足时该找谁确认。最后，结果还要能够追溯：用了什么信息，经过谁的判断，为什么形成这个结论。\n\n模型仍然会回答问题。但企业需要的，已经不只是一个回答。\n\n## 演示验证：只是能力片段\n\n把落地困难简单归结为“模型还不够聪明”，容易找错方向。\n\nRAND在2024年发布的一项研究访谈了65位有经验的AI工程师和研究人员，产业访谈覆盖50多个组织。报告归纳出的失败原因包括：没有真正理解要解决的问题和评价指标、缺少可用数据、追逐新技术而忽视用户问题、基础设施不足，以及把AI用在超出当前技术能力的任务上。\n\nMIT CISR对企业AI成熟度的研究也指出，从试点走向规模化，不能只看技术本身。战略、系统、人员与团队协同、治理需要同步成熟；企业首先要解决的是业务问题。\n\n这些研究提醒我们，一次演示主要验证某个能力片段：在给定输入和相对理想的条件下，模型能不能完成任务。业务可用验证的是另一件事：这项能力能否在变化的环境中持续运行，能否被管理，出了问题能否被发现、阻断和追溯。\n\n## 进入业务：变量开始叠加\n\n我们建议企业至少从五个方面重新检查AI项目。\n\n第一，AI解决的是不是一个真实业务问题。目标如果只写成“引入大模型”“建设智能体”，团队很容易围绕技术做出漂亮演示，却没有明确谁使用、解决什么问题、怎样算有效。\n\n第二，AI能否获得可信、适时且边界清楚的企业知识。公开知识可以回答常识，企业任务还涉及商品、客户、供应商、合同、制度和历史判断。哪些信息可以使用，哪些需要更新，哪些只能由特定角色读取，都会改变结果。\n\n第三，AI能否在权限内使用工具。生成一段建议与修改报价、提交订单或触发财务动作，风险完全不同。越接近真实执行，越要明确工具范围、操作权限和人工确认节点。\n\n第四，系统怎样处理例外。信息不完整、规则互相冲突、外部服务中断，都是业务常态。真正可用的系统不能假定每一步都成功，它需要知道什么时候继续，什么时候暂停，什么时候把决定交还给人。\n\n第五，任务能否持续、可测量、可追溯。一次结果很好，不代表下一次仍然可靠。输入版本、判断依据、执行记录、异常原因和最终责任都应被保留下来。\n\n这五项是艾氪智能对企业AI落地条件的解释框架，不是某份研究报告的原文，也不是放之四海而皆准的标准答案。不同企业还需要结合自己的业务责任和风险等级重新排序。\n\n## 业务可用：过程必须可追溯\n\n当AI开始进入业务，评价对象也要随之变化。\n\n我们不应只问“回答准不准”，还要问：任务有没有完整结束？信息不足时是否主动确认？权限越界时是否被拦截？关键决定是否保留人工判断？异常发生后能不能找到原因？\n\nNIST发布的生成式AI风险管理框架，把治理、场景映射、测量和管理放在贯穿设计、开发、使用与评估的生命周期中。2026年发布的《智能体规范应用与创新发展实施意见》同样强调实际需求牵引、先易后难、安全可控，并将任务理解、任务规划、工具使用、长期记忆和群体协同列入需要发展的基础能力。\n\n这意味着，企业AI落地既是技术问题，也是业务和组织问题。业务负责人要说清目标与例外，技术团队要保证数据、系统和工具能够被安全调用，管理者需要决定哪些权力可以授权给智能体，哪些判断必须留在人手中。\n\n任何一方缺席，演示能力都很难自然变成持续的生产能力。\n\n## 艾氪路径：从工具到协同单元\n\n艾氪智能聚焦企业AI与产业AI，正在构建产业级Agentic OS和产业级多智能体协同操作系统。背后的判断很直接：企业面对的，从来不是彼此孤立的问题。\n\n在艾氪智能的产品框架中，智能体团队不是聊天机器人的简单集合。多个专业智能体需要围绕明确任务，在企业制度、数据权限、工具能力和人工决策边界内形成协同单元；JovaOS平台则用于承载和治理企业智能体及其协同关系。\n\n这里的重点不在于堆叠多少个智能体，也不在于让智能体获得无限自主权。真正重要的是，每一个角色知道自己要做什么、可以调用什么、在什么情况下必须停下来，以及如何把结果交给下一个角色或人。\n\n我们把这条路径称为从“能力可见”走向“业务可用”。它是一套需要与企业共同建设、持续验证的系统方法，并不意味着任何场景都能直接套用，更不能用一场演示替代生产环境中的长期检验。\n\n## 判断落地：别只看那一刻\n\n企业下一次评估AI项目时，可以先不急着问模型参数，也不要只看演示的高光时刻。更值得问的是：\n\n- 它解决的业务问题和验收指标清楚吗？\n- 它使用的知识和数据可靠吗，权限边界明确吗？\n- 它能否在真实工具和系统中完成任务，而不只是生成建议？\n- 它遇到异常、冲突或信息不足时会怎样处理？\n- 它留下了哪些证据，谁拥有最终决定权？\n\n这些问题没有被回答，演示越精彩，企业越容易高估离真实落地还有多近。\n\nAI进入企业的价值，不应停留在“它能做什么”的瞬间。更重要的是，它能否在真实业务里持续做成一件事，同时让企业看得见过程、管得住边界、找得到责任。\n\n这也是产业AI真正开始的地方。\n\n## 公开来源\n\n1. RAND Corporation, *The Root Causes of Failure for Artificial Intelligence Projects*, 2024-08-13: https://www.rand.org/pubs/research_reports/RRA2680-1.html\n2. MIT CISR, *Grow Enterprise AI Maturity for Bottom-Line Impact*, 2025-08-21: https://cisr.mit.edu/publication/2025_0801_EnterpriseAIMaturityUpdate_WoernerSebastianWeillKaganer\n3. NIST, *Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile*, 2024-07-26: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence\n4. 国家互联网信息办公室等三部门，《智能体规范应用与创新发展实施意见》，2026-05-08: https://www.cac.gov.cn/2026-05/08/c_1779979789523320.htm\n",
+  "contentHash": "12f20f7c7a4f04a834573c718b6d22f35ed436075b8eadbeb15de5d4a9d8f2c5",
+  "changeReason": "Enterprise human approved the Lilith-reviewed source draft for channel variants.",
+  "changedBy": "user_enterprise",
+  "generationContextSnapshot": {
+    "seriesId": "SERIES-20260822-INDUSTRIAL-AI",
+    "missionId": "MISSION-INDUSTRIAL-AI-002",
+    "topicId": "TOPIC-INDUSTRIAL-AI-002",
+    "sourceHumanReviewCopyHash": "be5c60f3b5445aab5676800fd725da537ff603cab3eb0fb3bc014aa259ac0c61",
+    "sourceDraftHash": "966def7f89ea9a5fa5263949fa249540b2b28a5468902318481cb590caaa28a2",
+    "sourceReviewId": "LILITH-BATCH01-TOPIC002-R2-FINAL",
+    "knowledgeSnapshotHash": "8d59f8f0234dc3eedf6a2d24af3f73e77f35ad45c44cad236542504aabfad540",
+    "humanGateDecisionId": "HGD-SOURCE-TOPIC-INDUSTRIAL-AI-002-R2",
+    "claimBindingId": "claimbinding_industrial_ai_002_batch01_revision2",
+    "shortIdQualification": {
+      "EXT-002-01": {
+        "originalClaimId": "EXT-002-01",
+        "evidenceIdMap": {
+          "evidence:PUB-001": "PUB-001",
+          "evidence:PUB-002": "PUB-002"
+        }
+      },
+      "EXT-002-02": {
+        "originalClaimId": "EXT-002-02",
+        "evidenceIdMap": {
+          "evidence:PUB-002": "PUB-002",
+          "evidence:PUB-003": "PUB-003",
+          "evidence:PUB-004": "PUB-004"
+        }
+      },
+      "EXT-002-03": {
+        "originalClaimId": "EXT-002-03",
+        "evidenceIdMap": {
+          "evidence:PUB-001": "PUB-001",
+          "evidence:PUB-002": "PUB-002",
+          "evidence:PUB-003": "PUB-003",
+          "evidence:PUB-004": "PUB-004"
+        }
+      },
+      "claim:S1-C02": {
+        "originalClaimId": "S1-C02",
+        "evidenceIdMap": {
+          "EXT-002-01": "EXT-002-01",
+          "EXT-002-02": "EXT-002-02",
+          "evidence:S1-A02": "S1-A02"
+        }
+      },
+      "claim:ENT-001": {
+        "originalClaimId": "ENT-001",
+        "evidenceIdMap": {
+          "evidence:ENT-001": "ENT-001"
+        }
+      },
+      "claim:ENT-002": {
+        "originalClaimId": "ENT-002",
+        "evidenceIdMap": {
+          "evidence:ENT-002": "ENT-002"
+        }
+      },
+      "claim:ENT-003": {
+        "originalClaimId": "ENT-003",
+        "evidenceIdMap": {
+          "evidence:ENT-003": "ENT-003"
+        }
+      },
+      "claim:S1-A02": {
+        "originalClaimId": "S1-A02",
+        "evidenceIdMap": {
+          "PROD-TEAM": "PROD-TEAM"
+        }
+      },
+      "claim:S1-A03": {
+        "originalClaimId": "S1-A03",
+        "evidenceIdMap": {
+          "PROD-2L4M": "PROD-2L4M"
+        }
+      }
+    }
+  },
+  "bodyFormat": "plain_text",
+  "claimBindingSnapshot": [
+    {
+      "claimId": "EXT-002-01",
+      "evidenceIds": [
+        "evidence:PUB-001",
+        "evidence:PUB-002"
+      ],
+      "statementHash": "923e4b5819252c2f95a776d0d0956cc118b9986d4851a74e9302908c14036fb5"
+    },
+    {
+      "claimId": "EXT-002-02",
+      "evidenceIds": [
+        "evidence:PUB-002",
+        "evidence:PUB-003",
+        "evidence:PUB-004"
+      ],
+      "statementHash": "d72c1ef0adb5a3c125389f90bb7ab64e26b2de083549b5df7eda0dcdd13acbe1"
+    },
+    {
+      "claimId": "EXT-002-03",
+      "evidenceIds": [
+        "evidence:PUB-001",
+        "evidence:PUB-002",
+        "evidence:PUB-003",
+        "evidence:PUB-004"
+      ],
+      "statementHash": "77f247affc58fd5405577324502c7e10b3127c29168799f8e2a23ee7d0abb105"
+    },
+    {
+      "claimId": "claim:S1-C02",
+      "evidenceIds": [
+        "EXT-002-01",
+        "EXT-002-02",
+        "evidence:S1-A02"
+      ],
+      "statementHash": "03ab3614c1ab9399c6ed8520d4de83663d83da7a61252a28ac3bb554a858874f"
+    },
+    {
+      "claimId": "claim:ENT-001",
+      "evidenceIds": [
+        "evidence:ENT-001"
+      ],
+      "statementHash": "2c49150d593e827715d8b953343af0d9ccba26fd6d48a63732a18bb5783d23a2"
+    },
+    {
+      "claimId": "claim:ENT-002",
+      "evidenceIds": [
+        "evidence:ENT-002"
+      ],
+      "statementHash": "6c7e82211349f96c1641886c4fc5fb133a8bfb071b2e00a211f8edc1b7384122"
+    },
+    {
+      "claimId": "claim:ENT-003",
+      "evidenceIds": [
+        "evidence:ENT-003"
+      ],
+      "statementHash": "3d5c605f2609ed07bf2c283bd6883802b46603e8cd708ce7eb8777b7e0571224"
+    },
+    {
+      "claimId": "claim:S1-A02",
+      "evidenceIds": [
+        "PROD-TEAM"
+      ],
+      "statementHash": "137b85c39ecaf295b409f4d7fa93385fe7ca9226705ff1d2cd2b91a007c5683a"
+    },
+    {
+      "claimId": "claim:S1-A03",
+      "evidenceIds": [
+        "PROD-2L4M"
+      ],
+      "statementHash": "662ca531cfec0585e5bcfbd606dc4758937e792e0fa03d3f64b5d5dd34426082"
+    }
+  ]
+}

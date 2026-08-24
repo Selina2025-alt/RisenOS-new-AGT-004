@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "LILITH-BATCH01-TOPIC001-VARIANTS-V1",
+  "reviewType": "LILITH_VARIANT_LIGHT_REVIEW",
+  "reviewAgent": "lilith",
+  "mode": "READ_ONLY",
+  "topicId": "TOPIC-INDUSTRIAL-AI-001",
+  "sourceContentVersionId": "CONTENT-VERSION-TOPIC-INDUSTRIAL-AI-001-V1",
+  "sourceContentHash": "1d2869a9670f3e8224056678bcdbce083e6f3546a4b96c5be634cc61be650500",
+  "sourceApprovalDecisionId": "HGD-SOURCE-TOPIC-INDUSTRIAL-AI-001-R2",
+  "sourceApprovalGate": "SOURCE_DRAFT_APPROVED",
+  "reviewStatus": "PASS",
+  "nextRoute": "READY_FOR_HUMAN_FINAL_VARIANTS_REVIEW",
+  "severityCounts": { "P0": 0, "P1": 0, "P2": 2, "P3": 0 },
+  "checks": {
+    "sourceVersionAndHash": "PASS",
+    "contentHashAndManifest": "PASS",
+    "claimEvidenceInheritance": "PASS",
+    "newClaims": 0,
+    "newCustomerCases": 0,
+    "nomosInsertions": 0,
+    "productPositioning": "PASS",
+    "logic": "PASS",
+    "aiStyle": "PASS_WITH_P2_POLISH",
+    "channelStructure": "PASS",
+    "publicCopyInternalFieldLeakage": 0,
+    "reviewArtifactsContainInternalLineage": true,
+    "formalApprovalGranted": false
+  },
+  "channelReviews": [
+    {
+      "channel": "wechat",
+      "variantId": "VAR-TOPIC-INDUSTRIAL-AI-001-WECHAT-V1",
+      "contentHash": "ecc05bd9427e2e6f9e9e6b5ff11a1183b0b33c7ae89578bc1211d311ba8e5b46",
+      "humanReviewArtifactHash": "e465139233a6d9f51bb7484d0cf58e8c2b56eebc544bdd1a8eb63fcac8725fbf",
+      "reviewStatus": "PASS",
+      "p0": 0, "p1": 0, "p2": 0,
+      "channelEvidence": { "compliantColonSubheads": 5, "duplicateH1": 0 }
+    },
+    {
+      "channel": "short-video",
+      "variantId": "VAR-TOPIC-INDUSTRIAL-AI-001-SHORT_VIDEO-V1",
+      "contentHash": "d6a788bd83dd848d164decccd1280393c8d38ca82cb641eb99491198199033dd",
+      "humanReviewArtifactHash": "cda1dcc35c60a76035d7495c5c0af1c2eb87f05d060a8e211b12f0db621af3bf",
+      "reviewStatus": "PASS",
+      "p0": 0, "p1": 0, "p2": 1,
+      "channelEvidence": { "durationSeconds": 118, "hooks": 3, "visualPlan": true, "subtitlePlan": true }
+    },
+    {
+      "channel": "xiaohongshu",
+      "variantId": "VAR-TOPIC-INDUSTRIAL-AI-001-XIAOHONGSHU-V1",
+      "contentHash": "f0370dc366c730f1b00e5d42a5a39c96079fc8d7b2f2cf8085d10c856beef0fa",
+      "humanReviewArtifactHash": "52aa8b83a790d0d10d45119b8b2c05a89996d56e082f01b3fa10713c82d292e1",
+      "reviewStatus": "PASS",
+      "p0": 0, "p1": 0, "p2": 0,
+      "channelEvidence": { "mode": "DEEP_5_9_CARD", "cardCount": 7, "informationDensity": "PASS" }
+    },
+    {
+      "channel": "x",
+      "variantId": "VAR-TOPIC-INDUSTRIAL-AI-001-X-V1",
+      "contentHash": "bc6bc70d1798e7d50dc7dd9084165fd08aacf2c867f129cb5e5cb3c63142f230",
+      "humanReviewArtifactHash": "651fa121b81bae1a75412e0073d05459724eed048ef1df4f99efa8b4debf5afc",
+      "reviewStatus": "PASS",
+      "p0": 0, "p1": 0, "p2": 0,
+      "channelEvidence": { "tweetCount": 8, "weightedCounts": [175, 208, 178, 185, 181, 189, 178, 191], "allWithin280": true }
+    },
+    {
+      "channel": "linkedin",
+      "variantId": "VAR-TOPIC-INDUSTRIAL-AI-001-LINKEDIN-V1",
+      "contentHash": "7b9adc0007dbee18a303605236f5a1cc8520634e25d76ca79154c250d1c52291",
+      "humanReviewArtifactHash": "5e056a1aa20c45833cebc665dfd69fbad5cfe0dee27b80f6fa405b053fb56df7",
+      "reviewStatus": "PASS",
+      "p0": 0, "p1": 0, "p2": 1,
+      "channelEvidence": { "englishPrimary": true, "chineseBackup": true, "factEquivalence": "PASS_WITH_P2_WORDING_POLISH", "altText": true }
+    }
+  ],
+  "issues": [
+    {
+      "issueId": "LILITH-T001-VAR-P2-001",
+      "severity": "P2",
+      "module": "channel_tone",
+      "routeTo": "balala",
+      "location": "short-video / 45–70秒",
+      "problem": "单段口播同时承载多组数据、ICB和功能元，口语信息密度偏高。",
+      "suggestion": "人工终审如认为语速紧，可把数据边界放到屏幕证据卡并适度缩短口播，但不得删除口径边界。",
+      "autoFixable": true,
+      "blocksFinalHumanReview": false
+    },
+    {
+      "issueId": "LILITH-T001-VAR-P2-002",
+      "severity": "P2",
+      "module": "language_equivalence",
+      "routeTo": "balala",
+      "location": "linkedin / englishPrimary / paragraph 4",
+      "problem": "built experience across 300,000 registered enterprises 可能被理解为对30万家企业均有直接服务经验。",
+      "suggestion": "可改为 draws on six years of accumulated industrial data spanning ... 300,000 registered enterprises，并保留边界句。",
+      "autoFixable": true,
+      "blocksFinalHumanReview": false
+    }
+  ],
+  "deliveryGuard": "Export public copy only. Do not export review Markdown, claim IDs, evidence IDs, review state, gate IDs, or hashes as public content.",
+  "contentModified": false,
+  "contentVersionCreated": false,
+  "channelVariantCreated": false,
+  "finalVariantsApproved": false,
+  "reviewedAt": "2026-08-22T09:47:17.2433561Z"
+}
