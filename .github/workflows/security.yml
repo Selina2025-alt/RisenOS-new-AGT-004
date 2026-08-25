@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   osv:
-    uses: google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@8dc09193bb540e09b23da07ad7e30bd33bf87018
+    uses: google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@ffa0a5f39214d80778c9b494822d94d0d9668458
     with:
       scan-args: |-
         --lockfile=pnpm-lock.yaml
