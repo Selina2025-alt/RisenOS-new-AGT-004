@@ -2,6 +2,45 @@
 
 > 当前版本：`v5.5.1` · 开发快照 · 纯内容域 · 7 个内部子智能体 · 本地文件可独立持久化
 
+
+## 📦 content-output/ 说明
+
+`content-output/` 目录为本项目内容生产团队的**产出成果展示文件夹**，包含 100 篇产业 AI 主题文章（持续补充）。
+
+**如你部署本项目并使用 git clone，强烈建议排除此目录：**
+
+```bash
+# 方法一：克隆后删除（推荐）
+git clone https://github.com/Selina2025-alt/RisenOS-new-AGT-004.git
+cd RisenOS-new-AGT-004
+rm -rf content-output/
+
+# 方法二：稀疏克隆
+git clone --depth 1 https://github.com/Selina2025-alt/RisenOS-new-AGT-004.git
+cd RisenOS-new-AGT-004
+mkdir -p .git/info
+echo "content-output/" >> .git/info/sparse-checkout
+git config core.sparseCheckout true
+```
+
+> ⚠️ 该目录仅作为结果展示，不参与项目代码运行，不需要随项目一起下载。
+
+## 📊 内容产出效率数据
+
+在资料齐全的情况下，本项目曾达成以下生产效率：
+
+| 指标 | 数据 |
+|------|------|
+| 总产出 | 100 篇文章 |
+| 主题类型 | 30产品深度 / 20行业场景 / 20产业AI方法论 / 15技术解读 / 15方案选型 |
+| 总耗时 | 约 **2.5 小时** |
+| 平均单篇 | 约 1.5 分钟/篇 |
+| 生产方式 | AGT-RSN-004 内容团队 + 直接写作双轨并行 |
+
+> 💡 实际效率受内容深度要求、资料完备度影响，上述数据为参考值。
+
+
+
 AGT-RSN-004 是 RISEN 家族的内容资产生产与管理智能体。它把选题、公开研究、企业知识、品牌规则和证据转化为经过审核、可追溯、可复用的内容资产。
 
 如果你第一次打开这个仓库，只需要先记住三件事：
