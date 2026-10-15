@@ -22,13 +22,13 @@ jobs:
     runs-on: ubuntu-latest
     container: semgrep/semgrep:1.164.0
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: semgrep scan --config p/typescript --config p/nodejs --error .
 
   verify:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: pnpm/action-setup@v4
         with:
           version: 10.15.1
